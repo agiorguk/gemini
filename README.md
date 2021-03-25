@@ -24,6 +24,7 @@ This is how we use the labels:
 |help wanted|whoever raised this issue is asking for help, not (yet) specifically saying something is wrong|
 |Encoding|This issue primarily refers to the (XML) encoding of a GEMINI record|
 |invalid|something that's wrong but probably not causing people to create invalid records|
+|samples|This issue relates to the XML sample files (in the GEMINI-schematron repository)|
 
 Note: overlaps between "Guidance" and "documentation", "bug" and "invalid"
 
