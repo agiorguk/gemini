@@ -51,3 +51,5 @@ They all work on a stem of [https://www.agi.org.uk/gemini/40-gemini/](https://ww
 | INSPIRE metadata requirements | 1050 | 1050-inspire-metadata-requirements | Intention had been to delete |
 | GEMINI Bibliography | 1245 | 1245-gemini-bibliography | Not useful |
 | &quot;Checklist for Conformity 2&quot; (but actually a copy of 1051 with some minor changes!) | 1244 | 1244-uk-gemini-introduction | Should have been deleted |
+
+![Page map](page-map.png)
