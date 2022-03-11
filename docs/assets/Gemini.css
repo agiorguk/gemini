@@ -1,0 +1,87 @@
+	.gem .box {
+		display:block;
+		padding:9.5px;
+		margin:20px 0 10px;
+		font-size:16px;
+		line-height:1.5;
+		color:#333;
+		word-break:break-all;
+		word-wrap:break-word;
+		background-color:#f5f5f5;
+		border:1px solid #ccc;
+		border-radius:4px
+	}
+	.gem .spacer { padding-bottom: 80px }
+	.gem .box a {
+		text-decoration:none;
+		color:inherit;
+	}
+	.gem .readmore {
+		padding-left:10px;
+	}
+	.gem .readmore a {
+		cursor:pointer;
+	}
+	.gem .gemini-list {
+		/*  background:#e5e1e0;  */
+		padding:10px 0;
+		border-top:1px solid #7f7f7f;
+		border-bottom:1px solid #7f7f7f;
+		margin-bottom:20px;
+	}
+	.gem .gemini-item {
+		border-bottom:1px solid #7f7f7f;
+		padding-bottom:15px;
+		margin-bottom:15px;
+	}
+	.gem .gemini-expander {
+		display: none;
+	}
+	.gem .gemini-mono {
+	  font-size:12px;
+	  font-weight:bold;
+	}
+	.gem .gemini-xml {
+	  font-family: monospace;
+	  font-size:12px;
+	  color:red;
+	}
+	.gem pre {
+	  font-family: monospace;
+	  font-size:12px;
+	  color:red;
+	  overflow: auto;
+	  word-wrap: normal;
+	  white-space: pre;
+	}
+	.gem table {
+	  border: 1px solid #ddd;
+	  border-collapse: collapse;
+	  margin:15px 0;
+	}
+	.gem table table {
+		margin:0;
+	}
+	.gem th,
+	.gem td {
+	  border: 1px solid #ddd;	
+	  padding: 3px;
+	  text-align: left;  
+	  vertical-align: top;
+	  font-size:12px;
+	}
+	.gem .thOther {
+	  background-color: #7f7f7f;
+	  color: white;
+	}
+	.gem .tbold {
+	  font-size:12px;
+	  font-weight:bold;
+	  background-color: #7f7f7f;
+	  color: white;
+	}
+	.gem .tgrey {
+	  font-size:12px;
+	  background-color: #cdcdcd;
+	  color: grey;
+	}
