@@ -27,7 +27,7 @@ jobs:
     - name: asciidoctor-ghpages
       uses: manoelcampos/asciidoctor-ghpages-action@v2
       with:
-        asciidoctor_params: --attribute=nofooter
+        asciidoctor_params: --attribute=nofooter -a stylesheet=assets/gemini.css
         pdf_build: false
         adoc_file_ext: .adoc # default is .adoc
         source_dir: ./docs # default is .
