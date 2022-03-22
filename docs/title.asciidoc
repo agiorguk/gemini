@@ -1,0 +1,118 @@
+= Name: Title
+:figure-caption: Figure
+:toc: left
+:docinfo: shared
+:docinfodir: {assetdir}
+:docinfosubs: attributes
+:safe-mode-unsafe:
+:iconfont-remote!:
+:stylesheet: asciidoctor.css
+:scriptsdir: {assetdir}
+:linkcss:
+:data-uri:
+:iconfont-name: font-awesome.min
+:imagesdir: media
+:icons: font
+:nofooter:
+:sectnums:
+:sectnumlevels: 3
+:sectlinks:
+:sectanchors:
+:experimental:
+:stem:
+ifdef::variant-dataset[]
+:outfilesuffix: datasets-title{outfilesuffix}
+endif::[]
+ifdef::variant-service[]
+:outfilesuffix: services-title{outfilesuffix}
+endif::[]
+
+
+[width="100%",cols="50%,50%",]
+|===
+|UK GEMINI id |1
+
+|Definition |Name given to the resource
+
+|Purpose and meaning |The purpose of this element is to provide a
+readily recognisable name for the resource.
+
+|Obligation |Mandatory
+
+|Occurrence |Single
+
+|Data type |CharacterString
+
+|Domain |Free text
+
+|Guidance a|
+. The name should be readily recognisable
+. The title should be the formal or product name for the data resource,
+if existing.
+. If no name exists, then a title should be created that is short,
+encapsulates the subject, temporal and spatial coverage of the data
+resource, and does not contain terms or jargon that make it
+incomprehensible.
+. Acronyms are acceptable in the Title providing they are fully expanded
+in the abstract or Alternative Title.
+
+|Comment |
+
+|Examples a|
+* OS MasterMap Topography Layer
+* Voter participation in Liverpool local elections, 1994, by ward
+
+|Revision date |March 2019
+|===
+
+Corresponding element in other standards...
+
+[%collapsible]
+====
+|===
+|Standard|Name|Comparison
+
+|INSPIRE Metadata|Resource title|Equivalent
+
+|ISO 19115:2003|MD_Identification.citation > CI_Citation.title|Equivalent
+
+|ISO 19139:2007|[.dataset]/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:title
+[.service]/gmd:MD_Metadata/gmd:identificationInfo/srv:SV_ServiceIdentification/gmd:citation/gmd:CI_Citation/gmd:title|Equivalent
+|===
+====
+
+Change history...
+
+[%collapsible]
+====
+====
+Encoding guidelines...
+
+[%collapsible]
+====
+|===
+|Guidelines |Cannot be empty
+
+|Example a|
+[#dataset]
+....
+ifdef::variant-dataset[]
+
+include::partials/dataset-title.adoc[]  
+
+endif::[]                
+....
+[#service]
+....
+
+ifdef::variant-service[]
+
+include::partials/service-title.adoc[] 
+
+endif::[]  
+....
+|===
+
+====
+
+No error information available

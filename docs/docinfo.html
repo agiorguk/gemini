@@ -1,0 +1,34 @@
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="Gemini.css">
+<script>
+    /* this approach depends on receiving a URL parameter of dataset or service - no parameter defaults to 'dataset'
+    i.e. path/1-title.html and path/1-title.html?view=dataset are equivalent; path/1-title.html?view=service will display the service stuff; at present (with no other views defined) path/1-title.html?view=stuff leaves both bits not displayed
+    and on the elements that should switch having the right HTML name, and being set to display:none to begin with */
+    function chosenView(view="dataset") {
+        matches=document.getElementsByClassName(view);
+        for (var j=0; j < matches.length; j++) {
+            matches[j].style.display = "block";
+        }
+        /* leave the other ones display="none" */
+    }
+            
+    /* rather than including jquery just for this one function, which is used to support the 'GEMINI expander' styled elements */
+    /* oddly, on first call the element style.display is an empty string, even thought the CSS gemini-expander should be inherited, which sets it to 'none', so expand the condition test */
+    function toggle(x) {
+        if (x.style.display == "none" || x.style.display == "") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+            
+    function getUrlParameter(name) {
+        /* generic function copied from the web; amended to return undefined instead of the empty string if no matching parameter is found, because that allows a function to default the input parameter */
+        name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+        var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+        var results = regex.exec(location.search);
+        return results === null ? undefined : decodeURIComponent(results[1].replace(/\+/g, ' '));
+    }
+</script>

@@ -3,5 +3,5 @@
 Simple readme for testing conversion of asciidoctor files
 
 
-* [Services](services.html) 
-* [Datasets](datasets.html)
+* [Services](titleservices-title.html) 
+* [Datasets](titledatasets-datasets.html)
