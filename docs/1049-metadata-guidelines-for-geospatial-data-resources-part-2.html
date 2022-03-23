@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 2.0.17">
+<title>Metadata Guidelines for Geospatial Data Resources Part 2</title>
+<link rel="stylesheet" href="./asciidoctor.css">
+<link rel="stylesheet" href="./font-awesome.min.css">
+</head>
+<body class="article toc2 toc-left">
+<div id="header">
+<h1>Metadata Guidelines for Geospatial Data Resources Part 2</h1>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel2">
+<li><a href="#_creating_metadata_using_uk_gemini_v2_3_may_2018_being_revised">Creating metadata using UK GEMINI (v2.3) May 2018 -&#160;_being revised_</a></li>
+<li><a href="#_preface">Preface</a></li>
+<li><a href="#_intro1_introduction">[<mark>intro]</mark>#&#160;1. Introduction</a></li>
+<li><a href="#_gemini2_gemini2">[<mark>gemini]</mark>#&#160;2. GEMINI2</a></li>
+<li><a href="#_errors3_possible_metadata_errors">[<mark>errors]</mark>#&#160;3. Possible metadata errors</a></li>
+<li><a href="#_4_guidance_for_individual_metadata_elements"><span id="guidance">#</span>#4. Guidance for individual metadata elements</a></li>
+<li><a href="#_privacy_overview">Privacy Overview</a></li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div class="sect2">
+<h3 id="_creating_metadata_using_uk_gemini_v2_3_may_2018_being_revised"><a class="anchor" href="#_creating_metadata_using_uk_gemini_v2_3_may_2018_being_revised"></a><a class="link" href="#_creating_metadata_using_uk_gemini_v2_3_may_2018_being_revised">Creating metadata using UK GEMINI (v2.3) May 2018 -&#160;_being revised_</a></h3>
+<div class="paragraph">
+<p>Return
+to&#160;<a href="https://www.agi.org.uk/gemini/40-gemini/1037-uk-gemini-standard-and-inspire-implementing-rules">GEMINI
+2.3 home page</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/gemini/40-gemini/1049-metadata-guidelines-for-geospatial-data-resources-part-2#Intro">1.
+Introduction</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/gemini/40-gemini/1049-metadata-guidelines-for-geospatial-data-resources-part-2#gemini">2.
+GEMINI2</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/gemini/40-gemini/1049-metadata-guidelines-for-geospatial-data-resources-part-2#2.1">2.1
+Metadata elements</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/gemini/40-gemini/1049-metadata-guidelines-for-geospatial-data-resources-part-2#2.2">2.2
+Additional metadata elements</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/gemini/40-gemini/1049-metadata-guidelines-for-geospatial-data-resources-part-2#2.3">2.3
+Extension code lists</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/gemini/40-gemini/1049-metadata-guidelines-for-geospatial-data-resources-part-2#errors">3.
+Possible metadata errors</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/gemini/40-gemini/1049-metadata-guidelines-for-geospatial-data-resources-part-2#3.1">3.1
+Impact of metadata errors</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/gemini/40-gemini/1049-metadata-guidelines-for-geospatial-data-resources-part-2#3.2">3.2
+Effect on searches</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/gemini/40-gemini/1049-metadata-guidelines-for-geospatial-data-resources-part-2#3.3">3.3
+Prevention and correction of errors</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/gemini/40-gemini/1049-metadata-guidelines-for-geospatial-data-resources-part-2#3.4">3.4
+Common errors</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/gemini/40-gemini/1049-metadata-guidelines-for-geospatial-data-resources-part-2#guidance">4.
+Guidance for individual metadata elements</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_preface"><a class="anchor" href="#_preface"></a><a class="link" href="#_preface">Preface</a></h3>
+<div class="paragraph">
+<p>This is the second part of a set of guidelines for metadata for
+geospatial data resources. These metadata guidelines are primarily
+concerned with geospatial data (i.e. that which references data to a
+location on the surface of the Earth), and which has a limited
+geographic extent (i.e. is restricted to a defined territory). The
+guidelines have been developed within the context of a UK Location
+Discovery metadata service meeting the requirements of the EU INSPIRE
+Directive and the UK GEMINI2 metadata standard. However, they are
+sufficiently broadly based to be applicable in a wider context of
+geospatial metadata creation and management.</p>
+</div>
+<div class="paragraph">
+<p>The Guidelines are aimed at data managers and creators of metadata,
+providers of metadata services and general data users. They include
+guidance on quality management such that they could be used in the
+context of a national metadata service.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/gemini/40-gemini/1052-metadata-guidelines-for-geospatial-data-resources-part-1">Part
+1 of the Guidelines&#160;</a>covers the basics of metadata and provides an
+introduction to the other two parts. It includes a glossary of terms and
+set of references. Part 3</p>
+</div>
+<div class="paragraph agi org uk/gemini/40-gemini/1047-metadata-guidelines-for-geospatial-data-resources-part-3[3]">
+<p>deals with metadata quality and covers quality evaluation and quality
+management of metadata including guidance on establishing acceptable
+quality levels. This Part of the Guidelines provides a set of detailed
+guidelines for UK GEMINI2 metadata elements. It has been revised to
+correspond to version 2.3 of UK GEMINI.</p>
+</div>
+<div class="paragraph">
+<p>Any comments on these guidelines or on the UK GEMINI2 metadata standard
+should be sent
+to&#160;<a href="mailto:gemini@agi.org.uk">gemini@agi.org.uk</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_intro1_introduction"><a class="anchor" href="#_intro1_introduction"></a><a class="link" href="#_intro1_introduction">[<mark>intro]</mark>#&#160;1. Introduction</a></h3>
+<div class="paragraph">
+<p>UK GEMINI2 defines a core set of metadata elements for discovery of data
+resources and other essential purposes. It provides details of what
+metadata should be collected for geospatial data resources and is
+designed for use in a geospatial discovery metadata service. The data
+resources may be datasets, dataset series, services delivering
+geographic data, or any other information resource with a geospatial
+content. This includes datasets that relate to a limited geographic
+area. The data resources may be graphical or textual (tabular or free
+text), hardcopy or digital.</p>
+</div>
+<div class="paragraph">
+<p>This part of the&#160;_Metadata Guidelines for Geospatial Data
+Resources_&#160;provides detailed guidance for the application of UK GEMINI2.
+It is aimed at those creating metadata conforming to UK GEMINI2. This
+expands on existing guidance given in the UK GEMINI2
+specification[<a href="https://www.agi.org.uk/gemini/40-gemini/1047-metadata-guidelines-for-geospatial-data-resources-part-3">4</a>].
+It also describes possible errors that might occur in such metadata and
+suggests actions to guard against them. It explains how to expand the
+metadata elements in addition to those in UK GEMINI2 if required, and
+how to extend code lists of allowable values.</p>
+</div>
+<div class="paragraph">
+<p>This Part should be read in conjunction with the other parts of these
+guidelines.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_gemini2_gemini2"><a class="anchor" href="#_gemini2_gemini2"></a><a class="link" href="#_gemini2_gemini2">[<mark>gemini]</mark>#&#160;2. GEMINI2</a></h3>
+<div class="sect3">
+<h4 id="_2_1_metadata_elements"><a class="anchor" href="#_2_1_metadata_elements"></a><a class="link" href="#_2_1_metadata_elements"><strong><em><span id="2" class="1">#</span>#2.1 Metadata elements</em></strong></a></h4>
+<div class="paragraph">
+<p>UK GEMINI2 specifies a set of metadata elements for describing
+geospatial data resources. These resources may be a dataset, data set
+series (collection of datasets with a common specification) or data
+service. The type of resource is identified in the element Resource Type
+(39). The metadata elements are summarised
+in&#160;<a href="https://www.agi.org.uk/gemini/40-gemini/1250-element-summary">element
+summary</a>.</p>
+</div>
+<div class="paragraph">
+<p>Detailed guidance on how to create each of these elements can be found
+here:</p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/gemini/40-gemini/1027-citizens-as-sensors-a-solution-to-pollution">GEMINI
+- Datasets and data series</a></p>
+</div>
+<div class="paragraph">
+<p>GEMINI - Services</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_2_2_additional_metadata_elements"><a class="anchor" href="#_2_2_additional_metadata_elements"></a><a class="link" href="#_2_2_additional_metadata_elements"><strong><em><span id="2" class="2">#</span>#2.2 Additional metadata elements</em></strong></a></h4>
+<div class="paragraph">
+<p>In many organisations, there is a need to record additional items of
+metadata to meet specific local requirements. This may be to incorporate
+particular characteristics of the data resources, or for particular
+applications. Additional metadata elements may be included in a metadata
+implementation. These elements should be taken from ISO
+19115&#160;_Geographic information -
+Metadata&#160;_[<a href="https://www.agi.org.uk/gemini/40-gemini/1047-metadata-guidelines-for-geospatial-data-resources-part-3">18</a>],
+which includes a comprehensive collection of metadata elements for
+geographic information. An example would be Dataset character set and
+Metadata character set where non-standard characters are used.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_2_3_extension_of_code_lists"><a class="anchor" href="#_2_3_extension_of_code_lists"></a><a class="link" href="#_2_3_extension_of_code_lists"><strong><em><span id="2" class="3">#</span>#2.3 Extension of code lists</em></strong></a></h4>
+<div class="paragraph">
+<p>Several of the metadata elements specified in UK GEMINI2 use enumerated
+code lists. These are pre-defined sets of values identified by codes.
+They are useful to standardise the entries to aid searches of metadata
+for specified values. The code lists included in UK GEMINI2 are taken
+from ISO 19115. In some cases, the explanations of the values have been
+modified to make them more appropriate to the UK context.</p>
+</div>
+<div class="paragraph">
+<p>Some of these code lists will require extension. Additional codes may be
+created as follows:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Identify the new value, which should be distinct from existing values;</p>
+</li>
+<li>
+<p>Choose a name that encapsulates the essential concept;</p>
+</li>
+<li>
+<p>Provide a definition that is understandable and concise;</p>
+</li>
+<li>
+<p>Choose a new code that has not been used before for this element;</p>
+</li>
+<li>
+<p>Document the new codes, and disseminate them to users.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Such code extensions may be either specific to a metadata implementation
+in an organisation or sector, or for general usage. In the latter case,
+proposed new codes should be submitted
+(to&#160;mailto:standards@agi.org[<a href="mailto:gemini@agi.org.uk">gemini@agi.org.uk</a>)
+for inclusion in the next version of UK GEMINI2. It is expected that
+future editions of UK GEMINI will incorporate such modified code lists.</p>
+</div>
+<div class="paragraph">
+<p><strong>Note that any new code values cannot be used in a national metadata
+service until incorporated in the Standard, neither will they be valid
+for the purposes of INSPIRE.</strong></p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_errors3_possible_metadata_errors"><a class="anchor" href="#_errors3_possible_metadata_errors"></a><a class="link" href="#_errors3_possible_metadata_errors">[<mark>errors]</mark>#&#160;3. Possible metadata errors</a></h3>
+<div class="sect3">
+<h4 id="_3_1_impact_of_metadata_errors"><a class="anchor" href="#_3_1_impact_of_metadata_errors"></a><a class="link" href="#_3_1_impact_of_metadata_errors"><strong><em><span id="3" class="1">#</span>#3.1 Impact of metadata errors</em></strong></a></h4>
+<div class="paragraph">
+<p>Errors having the greatest impact are likely to be those that affect
+searches based on:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Where?</strong>&#160;- geographical extent expressed in latitude and longitude or
+some named standard area (e.g. administrative area, postcode, country);</p>
+</li>
+<li>
+<p><strong>What?</strong>&#160;- theme, subject or topic;</p>
+</li>
+<li>
+<p><strong>When?</strong>&#160;- date when data resource was current.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Errors in the metadata elements used by these searches will result in
+over- or under-selection of data resources and will degrade the quality
+of the discovery service that is providing the search facility.
+Inconsistencies in the capture or updating of metadata, such as the
+categorisation of data subject or topic, will further erode the quality
+of the discovery service.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_3_2_effect_on_searches"><a class="anchor" href="#_3_2_effect_on_searches"></a><a class="link" href="#_3_2_effect_on_searches"><strong><em><span id="3" class="2">#</span>#3.2 Effect on searches</em></strong></a></h4>
+<div class="paragraph">
+<p>Having discovered a number of candidate data resources, the discovery
+service user then assesses the likelihood that any of these meet their
+requirements. They will need the information in the other metadata
+elements such as abstract, lineage, data format, and constraints to make
+their assessment. Inaccuracies, inconsistencies, or incompleteness will
+detract from the quality of the discovery service.</p>
+</div>
+<div class="paragraph">
+<p>Information also needs to be topical or up-to-date. Discovery services
+are bedevilled by metadata containing information current at the
+inception of the service but never maintained since. The service user
+needs to have reliable information about where they can find out more
+about the data resource and how they can obtain that resource. It is not
+uncommon for this to be out-of-date or have incorrect URLs or contact
+details.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_3_3_prevention_and_correction_of_errors"><a class="anchor" href="#_3_3_prevention_and_correction_of_errors"></a><a class="link" href="#_3_3_prevention_and_correction_of_errors"><strong><em><span id="3" class="3">#</span>#3.3 Prevention and correction of errors</em></strong></a></h4>
+<div class="paragraph">
+<p>Prevention and correction of these errors is usually a combination of:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Understanding the nature of the errors;</p>
+</li>
+<li>
+<p>Clear guidance on avoidance of errors at time of entry – metadata
+capture tools may help here in validating entries;</p>
+</li>
+<li>
+<p>Staff trained in metadata capture who understand the nature of the
+data resources being documented;</p>
+</li>
+<li>
+<p>Independent quality control with specified quality evaluation
+procedures, acceptable quality levels and procedures for dealing with
+metadata that fails;</p>
+</li>
+<li>
+<p>Periodic reviews of existing metadata to check that all information is
+current;</p>
+</li>
+<li>
+<p>Procedures for dealing with errors reported by service providers or
+users;</p>
+</li>
+<li>
+<p>Overall quality assurance process which reviews procedures in the
+light of experience and aims to improve overall metadata quality.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Further guidance on how to prevent and correct errors is given in Part 3
+[<a href="https://www.agi.org.uk/gemini/40-gemini/1047-metadata-guidelines-for-geospatial-data-resources-part-3">3</a>]&#160;of
+these Guidelines.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_3_4_common_errors"><a class="anchor" href="#_3_4_common_errors"></a><a class="link" href="#_3_4_common_errors"><strong><em><span id="3" class="4">#</span>#3.4 Common errors</em></strong></a></h4>
+<div class="paragraph">
+<p>Some common errors that lead to inconsistent results when searching
+across metadatasets are:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Documentation is too general;</p>
+</li>
+<li>
+<p>Extent is over-generalised;</p>
+</li>
+<li>
+<p>Subjects and topic categories are under-reported;</p>
+</li>
+<li>
+<p>Incorrect or inconsistent date entries;</p>
+</li>
+<li>
+<p>Different names are used for the same item in different places;</p>
+</li>
+<li>
+<p>Missing values;</p>
+</li>
+<li>
+<p>Data is not current.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The nature and impact of these types of error are described in more
+detail below, together with suggested ways in which these errors can be
+prevented or corrected.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"><strong>Type of error</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Description and impact</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Examples of errors</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Prevention or correction</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Documentation too general</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">There are no absolute rules about how data
+resources should be “chunked” and individually documented. A metadata
+record can therefore refer to a dataset covering a single topic relating
+to a small area or major dataset series covering all or parts of UK
+containing many topics. This can lead to inconsistent search results
+with either over- or under-selection of data resources.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Topographic mapping covering whole of GB at different scales to
+different specifications documented using one metadata record.</p>
+</li>
+<li>
+<p>Reports produced by an organisation relating to a variety of locations
+and dates documented using one metadata record.</p>
+</li>
+</ol>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Have clear guidance on the “chunking” of data resources for individual
+documentation[See&#160;<a href="https://www.agi.org.uk/gemini/40-gemini/1052-metadata-guidelines-for-geospatial-data-resources-part-1">Part
+1 of these Guidelines</a>] based on:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>how the data is used (stand-alone or as part of wider set);</p>
+</li>
+<li>
+<p>continuity and extent of coverage;</p>
+</li>
+<li>
+<p>date of capture or maintenance;</p>
+</li>
+<li>
+<p>topics or subjects covered, and</p>
+</li>
+<li>
+<p>uniformity of specification within data resource.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Introduce checks to ensure consistency of approach across all metadata.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Extent over-generalised</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This particularly applies when extent is
+described in terms of standard geographical areas such as postcode
+districts, counties, or countries. Inconsistencies in relating data
+resource coverage to these areas and the use of different extent names
+to refer to the same coverage results in either over- or under-selection
+of data resources.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Coverage given as UK or GB when restricted to England.</p>
+</li>
+<li>
+<p>Coverage of UK referred to as GB.</p>
+</li>
+<li>
+<p>Coverage given as England when restricted to Hampshire only.</p>
+</li>
+</ol>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Have clear rules and user guidance on the relating of named extents to
+the coverage of data resources and guidelines on the types of extents to
+be used. Where named extents form part of a nesting hierarchy (e.g.
+administrative areas) then any guidance should cover the possible need
+for inclusion of levels in the hierarchy.</p>
+</div>
+<div class="paragraph">
+<p>Introduce checks to ensure consistency of approach across all metadata.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Subjects and topic categories under-reported</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This particularly applies
+where there are enumerated lists of topics. Inconsistency in the
+inclusion of individual topics can lead to over- or under-selection of
+data resources.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Metadata for topographic map series does not include
+boundaries, elevation, inland waters, structure, and transportation as
+topics.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Use guidance on the recording of topics or themes to promote
+consistency.</p>
+</div>
+<div class="paragraph">
+<p>Use closed lists wherever possible and discourage the use of free text.</p>
+</div>
+<div class="paragraph">
+<p>Introduce checks to ensure consistency of approach across all metadata.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Incorrect or inconsistent date entries</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>There is often confusion between the date that the data was current, the
+date when the data was captured or last updated and the date when the
+data resource was released, published or made available.</p>
+</div>
+<div class="paragraph">
+<p>There can be further inconsistencies between the frequency of update and
+the recorded currency of the data resource. This can lead to &#160; false
+returns for searches based on dates.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Date of capture of data resource later than date of publication.</p>
+</li>
+<li>
+<p>Update reported as continuous but date of last update reported as 10
+years ago.</p>
+</li>
+</ol>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Use guidance on the recording of different dates to promote consistency.</p>
+</div>
+<div class="paragraph">
+<p>Introduce checks, preferably by software, to ensure that the ordering of
+dates is consistent.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Same item, different name</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This is particularly relevant where there is
+no closed list but a name or descriptor recurs which is common to many
+metadatasets. This may lead to inconsistent results or, more frequently
+misinterpretation of results.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">National Grid, British National Grid,
+National Grid of Great Britain.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Include frequently used standard names in any internal guidance.</p>
+</div>
+<div class="paragraph">
+<p>Introduce checks to ensure consistency of approach across all metadata.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Missing values</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Omission of values relating to extent, date or topic
+will have great impact on searches since these are the usual criteria
+used.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Omission of geographical extent.</p>
+</li>
+<li>
+<p>Omission of dataset reference date.</p>
+</li>
+<li>
+<p>Missing topic categories.</p>
+</li>
+</ol>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Introduce checks, preferably software checks, to ensure that mandatory
+fields contain values.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Information not current</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This can impact both on searches and the
+interpretation of search results since the metadata does not reflect the
+current information or only does so partially.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Content of data resource extended but no change to topic categories.</p>
+</li>
+<li>
+<p>Abstract not updated to reflect change of specification.</p>
+</li>
+<li>
+<p>Data resource updated but later date not entered in the metadata.</p>
+</li>
+</ol>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Introduce a regime of regular checks on all metadata to ensure that
+currency is assessed and updates made where needed.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Other errors that may lead to misinterpretation of results are:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Correct value, but for the wrong metadata element;</p>
+</li>
+<li>
+<p>Values incorrect, incomplete or inaccurate;</p>
+</li>
+<li>
+<p>Incomprehensible, misleading or uninformative entries.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The nature and impact of these types of error are described in more
+detail below, together with suggested ways in which these errors can be
+prevented or corrected.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Type of error</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Description and impact</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Examples of errors</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Prevention or correction</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Correct value, wrong metadata element</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Confusion between the
+definitions of metadata elements can lead to correct values entered
+against the wrong metadata element.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Lineage information given for abstract.</p>
+</li>
+<li>
+<p>Limitations on public access given for use constraints.</p>
+</li>
+</ol>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Use guidance on the definition and use of the metadata elements
+especially those most commonly confused (see examples).</p>
+</div>
+<div class="paragraph">
+<p>Introduce training and checks to ensure correct use of elements.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Values incorrect, incomplete or inaccurate</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This can apply to both
+quantitative and non-quantitative entries and can impact on the way that
+results are interpreted and used.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>URL given as additional information source incorrect and not
+accessible.</p>
+</li>
+<li>
+<p>Contact details for obtaining data resource are incorrect.</p>
+</li>
+</ol>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Check values are correct as far as can be established e.g.
+independently check URLs, contact details.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Incomprehensible, misleading or uninformative&#160; entries</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Entries need to
+be understandable by the discovery service user who needs to interpret
+the search results. The impact can be that results are misinterpreted
+and candidate datasets ignored.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Where dataset does not have a recognised title, uninformative title
+given.</p>
+</li>
+<li>
+<p>Abstract is uninformative with no information on content.</p>
+</li>
+<li>
+<p>Lineage contains no information about sources or reasons for creation.</p>
+</li>
+<li>
+<p>Use of terms and abbreviations unlikely to be understood by service
+user.</p>
+</li>
+</ol>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Use guidance and checklists for compiling entries e.g. abstracts.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_4_guidance_for_individual_metadata_elements"><a class="anchor" href="#_4_guidance_for_individual_metadata_elements"></a><a class="link" href="#_4_guidance_for_individual_metadata_elements"><span id="guidance">#</span>#4. Guidance for individual metadata elements</a></h3>
+<div class="paragraph">
+<p>Detailed guidance on how to create each of these elements can be found
+here:</p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/gemini/40-gemini/1062-gemini-datasets-and-data-series/">GEMINI
+- Datasets and data series</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/gemini/40-gemini/1063-gemini-services/">GEMINI -
+Services</a></p>
+</div>
+<div class="paragraph">
+<p>Each metadata element is listed&#160;separately, as described
+in&#160;<a href="https://www.agi.org.uk/gemini/40-gemini/1244-uk-gemini-introduction#4.3">UK
+GEMINI Introduction</a>.</p>
+</div>
+<div class="paragraph">
+<p><em>Last updated: May 2018</em></p>
+</div>
+<div class="paragraph">
+<p><a href="http://creativecommons.org/licenses/by/4.0/"><span class="image"><img src="https://i.creativecommons.org/l/by/4.0/88x31.png" alt="Creative Commons Licence"></span></a><br>
+This work is licensed under
+a&#160;<a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons
+Attribution 4.0 International License</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://twitter.com/geocommunity/" class="bare">https://twitter.com/geocommunity/</a></p>
+</div>
+<div class="paragraph">
+<p><span class="x-graphic">__</span></p>
+</div>
+<div class="paragraph">
+<p><a href="https://vimeo.com/geocommunity" class="bare">https://vimeo.com/geocommunity</a></p>
+</div>
+<div class="paragraph">
+<p><span class="x-graphic">__</span></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.linkedin.com/company/2892612/" class="bare">https://www.linkedin.com/company/2892612/</a></p>
+</div>
+<div class="paragraph">
+<p><span class="x-graphic">__</span></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.flickr.com/people/104116295@N06/" class="bare">https://www.flickr.com/people/104116295@N06/</a></p>
+</div>
+<div class="paragraph">
+<p><span class="x-graphic">__</span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><span id="menu-item-1746"><a href="https://www.agi.org.uk/privacy-policy/" class="bare">https://www.agi.org.uk/privacy-policy/</a></span></p>
+<div class="paragraph">
+<p><span class="x-anchor-text-primary">Privacy Policy</span></p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>__
+* <span id="menu-item-1251"><a href="https://www.agi.org.uk/website-terms-and-conditions/" class="bare">https://www.agi.org.uk/website-terms-and-conditions/</a></span></p>
+</div>
+<div class="paragraph">
+<p>+
+<span class="x-anchor-text-primary">Website Terms and Conditions</span></p>
+</div>
+<div class="paragraph">
+<p>__</p>
+</div>
+<div class="paragraph">
+<p>Copyright © AGI.&#160; All rights reserved</p>
+</div>
+<div id="e1170-26-off-canvas" class="paragraph">
+<p>[.x-off-canvas-bg]##</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="data:image/svg+xml;base64,PHN2ZyB2aWV3Ym94PSIwIDAgMTYgMTYiPjxnPjxwYXRoIGQ9Ik0xNC43LDEuM2MtMC40LTAuNC0xLTAuNC0xLjQsMEw4LDYuNkwyLjcsMS4zYy0wLjQtMC40LTEtMC40LTEuNCwwcy0wLjQsMSwwLDEuNEw2LjYsOGwtNS4zLDUuMyBjLTAuNCwwLjQtMC40LDEsMCwxLjRDMS41LDE0LjksMS43LDE1LDIsMTVzMC41LTAuMSwwLjctMC4zTDgsOS40bDUuMyw1LjNjMC4yLDAuMiwwLjUsMC4zLDAuNywwLjNzMC41LTAuMSwwLjctMC4zIGMwLjQtMC40LDAuNC0xLDAtMS40TDkuNCw4bDUuMy01LjNDMTUuMSwyLjMsMTUuMSwxLjcsMTQuNywxLjN6Ij48L3BhdGg+PC9nPjwvc3ZnPg==" alt="image"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><span id="menu-item-853"><a href="https://www.agi.org.uk/">[.ubermenu-target-title .ubermenu-target-text</a>#Home</span>]#</p>
+</li>
+<li>
+<p><span id="menu-item-116"><a href="</span>"><span class="ubermenu-target-title  ubermenu-target-text">About
+Us#__</a></span></p>
+<div class="paragraph">
+<p>__ Close</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>__</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><span id="menu-item-460"><a href="https://www.agi.org.uk/mission-and-role/">[.ubermenu-target-title .ubermenu-target-text</a>#Mission
+and Role</span>]#</p>
+</li>
+<li>
+<p><span id="menu-item-461"><a href="https://www.agi.org.uk/council-members/">[.ubermenu-target-title .ubermenu-target-text</a>#Council
+Members</span>]#</p>
+</li>
+<li>
+<p><span id="menu-item-463"><a href="https://www.agi.org.uk/our-partners/">[.ubermenu-target-title .ubermenu-target-text</a>#Our
+Partners</span>]#</p>
+</li>
+<li>
+<p><span id="menu-item-1197"><a href="https://www.agi.org.uk/contact-us/">[.ubermenu-target-title .ubermenu-target-text</a>#Contact
+us</span>]#</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><em> Close
+* <span id="menu-item-10"><a href="</span>"><span class="ubermenu-target-title  ubermenu-target-text">Groups</span></em></a>#</p>
+</div>
+<div class="paragraph">
+<p>+
+__ Close</p>
+</div>
+<div class="paragraph">
+<p>__</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><span id="menu-item-454"><a href="https://www.agi.org.uk/agi-cymru/">[.ubermenu-target-title .ubermenu-target-text</a>#AGI
+Cymru</span>]#</p>
+</li>
+<li>
+<p><span id="menu-item-455"><a href="https://www.agi.org.uk/agi-northern-ireland/">[.ubermenu-target-title .ubermenu-target-text</a>#AGI
+Northern Ireland</span>]#</p>
+</li>
+<li>
+<p><span id="menu-item-456"><a href="https://www.agi.org.uk/agi-scotland/">[.ubermenu-target-title .ubermenu-target-text</a>#AGI
+Scotland</span>]#</p>
+</li>
+<li>
+<p><span id="menu-item-459"><a href="https://www.agi.org.uk/agi-early-careers-network/">[.ubermenu-target-title .ubermenu-target-text</a>#AGI
+Early Careers Network</span>]#</p>
+</li>
+<li>
+<p><span id="menu-item-910"><a href="https://www.agi.org.uk/agi-uk-gemini/">[.ubermenu-target-title .ubermenu-target-text</a>#AGI
+GEMINI Working Group</span>]#</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><em> Close
+* <span id="menu-item-1262"><a href="</span>"><span class="ubermenu-target-title  ubermenu-target-text">Resources</span></em></a>#
+<strong> <em> Close
+</strong> </em>
+<strong> <span id="menu-item-1901"><a href="https://www.agi.org.uk/news/">[.ubermenu-target-title .ubermenu-target-text</a>#News
+&amp; Insights</span>]#
+</strong> <span id="menu-item-1046"><a href="https://www.agi.org.uk/uk-gemini/">[.ubermenu-target-title .ubermenu-target-text</a>#UK
+GEMINI</span>]#
+<strong>* <span id="menu-item-1043"><a href="https://www.agi.org.uk/why-uk-gemini/">[.ubermenu-target-title .ubermenu-target-text</a>#Why
+UK GEMINI</span>]#
+</strong>* <span id="menu-item-1045"><a href="https://www.agi.org.uk/bs-7666-guidelines/">[.ubermenu-target-title .ubermenu-target-text</a>#BS
+7666 Guidelines</span>]#
+<strong> <span id="menu-item-1542"><a href="</span>"><span class="ubermenu-target-title  ubermenu-target-text">AGI</span></a>#
+</strong>* <span id="menu-item-1553"><a href="https://www.agi.org.uk/foresight-report/">[.ubermenu-target-title .ubermenu-target-text</a>#Foresight
+Report</span>]#
+<strong> <span id="menu-item-1622"><a href="https://www.agi.org.uk/case-studies/">[.ubermenu-target-title .ubermenu-target-text</a>#Case
+Studies</span>]#
+</strong> <em> Close
+* <span id="menu-item-393"><a href="https://www.agi.org.uk/membership-levels/">[.ubermenu-target-title .ubermenu-target-text</a>#Membership</span>]#
+* <span id="menu-item-293"><a href="</span>"><span class="ubermenu-target-title  ubermenu-target-text">Events</span></em></a>#</p>
+</div>
+<div class="paragraph">
+<p>+
+__ Close</p>
+</div>
+<div class="paragraph">
+<p>__</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><span id="menu-item-426"><a href="https://www.agi.org.uk/upcoming-events/">[.ubermenu-target-title .ubermenu-target-text</a>#All
+Upcoming Events</span>]#</p>
+</li>
+<li>
+<p><span id="menu-item-1725"><a href="https://www.agi.org.uk/geocom/">[.ubermenu-target-title .ubermenu-target-text</a>#GeoCom</span>]#</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>__ Close
+* <span id="menu-item-1242"><a href="https://members.agi.org.uk/login/">[.ubermenu-target-title .ubermenu-target-text</a>#Login</span>]#</p>
+</div>
+<div id="cookie-law-info-bar" class="paragraph">
+<p>We use cookies on our website to give you the most relevant experience
+by remembering your preferences and repeat visits. By clicking “Accept”,
+you consent to the use of ALL the cookies.</p>
+</div>
+<div class="paragraph">
+<p><span class="cli_settings_button">Cookie
+settings</span>[<mark>cookie_action_close_header .medium .cli-plugin-button .cli-plugin-main-button .cookie_action_close_header .cli_action_button]#ACCEPT</mark></p>
+</div>
+<div id="cookie-law-info-again" class="paragraph">
+<p><span id="cookie_hdr_showagain">Manage consent</span></p>
+</div>
+<div id="cliSettingsPopup" class="paragraph">
+<p><span class="image"><img src="data:image/svg+xml;base64,PHN2ZyBjbGFzcyB2aWV3Ym94PSIwIDAgMjQgMjQiPjxwYXRoIGQ9Ik0xOSA2LjQxbC0xLjQxLTEuNDEtNS41OSA1LjU5LTUuNTktNS41OS0xLjQxIDEuNDEgNS41OSA1LjU5LTUuNTkgNS41OSAxLjQxIDEuNDEgNS41OS01LjU5IDUuNTkgNS41OSAxLjQxLTEuNDEtNS41OS01LjU5eiI+PC9wYXRoPjxwYXRoIGQ9Ik0wIDBoMjR2MjRoLTI0eiIgZmlsbD0ibm9uZSI+PC9wYXRoPjwvc3ZnPg==" alt="image"></span>
+<span class="wt-cli-sr-only">Close</span></p>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_privacy_overview"><a class="anchor" href="#_privacy_overview"></a><a class="link" href="#_privacy_overview">Privacy Overview</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This website uses cookies to improve your experience while you navigate
+through the website. Out of these, the cookies that are categorized as
+necessary are stored on your browser as they are essential for the
+working of basic functionalities of the website. We also use third-party
+cookies that help us analyze and understand how you use this website.
+These cookies will be stored in your browser only with your consent. You
+also have the option to opt-out of these cookies. But opting out of some
+of these cookies may affect your browsing experience.</p>
+</div>
+<div class="paragraph">
+<p>[.cli-privacy-readmore]##</p>
+</div>
+<div class="paragraph">
+<p><span class="cli-nav-link  cli-settings-mobile">Necessary</span></p>
+</div>
+<div class="paragraph">
+<p>Necessary</p>
+</div>
+<div class="paragraph">
+<p><span class="cli-necessary-caption">Always Enabled</span></p>
+</div>
+<div class="paragraph">
+<p>Necessary cookies are absolutely essential for the website to function
+properly. These cookies ensure basic functionalities and security
+features of the website, anonymously.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Cookie</th>
+<th class="tableblock halign-left valign-top">Duration</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cookielawinfo-checbox-analytics</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">11 months</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This cookie is set by GDPR
+Cookie Consent plugin. The cookie is used to store the user consent for
+the cookies in the category "Analytics".</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cookielawinfo-checbox-functional</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">11 months</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The cookie is set by GDPR
+cookie consent to record the user consent for the cookies in the
+category "Functional".</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cookielawinfo-checbox-others</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">11 months</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This cookie is set by GDPR
+Cookie Consent plugin. The cookie is used to store the user consent for
+the cookies in the category "Other.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cookielawinfo-checkbox-necessary</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">11 months</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This cookie is set by GDPR
+Cookie Consent plugin. The cookies is used to store the user consent for
+the cookies in the category "Necessary".</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cookielawinfo-checkbox-performance</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">11 months</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This cookie is set by
+GDPR Cookie Consent plugin. The cookie is used to store the user consent
+for the cookies in the category "Performance".</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">viewed_cookie_policy</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">11 months</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The cookie is set by the GDPR Cookie
+Consent plugin and is used to store whether or not user has consented to
+the use of cookies. It does not store any personal data.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><span class="cli-nav-link  cli-settings-mobile">Functional</span></p>
+</div>
+<div class="paragraph">
+<p><span class="wt-cli-sr-only">Functional</span></p>
+</div>
+<div class="paragraph">
+<p>Functional cookies help to perform certain functionalities like sharing
+the content of the website on social media platforms, collect feedbacks,
+and other third-party features.</p>
+</div>
+<div class="paragraph">
+<p><span class="cli-nav-link  cli-settings-mobile">Performance</span></p>
+</div>
+<div class="paragraph">
+<p><span class="wt-cli-sr-only">Performance</span></p>
+</div>
+<div class="paragraph">
+<p>Performance cookies are used to understand and analyze the key
+performance indexes of the website which helps in delivering a better
+user experience for the visitors.</p>
+</div>
+<div class="paragraph">
+<p><span class="cli-nav-link  cli-settings-mobile">Analytics</span></p>
+</div>
+<div class="paragraph">
+<p><span class="wt-cli-sr-only">Analytics</span></p>
+</div>
+<div class="paragraph">
+<p>Analytical cookies are used to understand how visitors interact with the
+website. These cookies help provide information on metrics the number of
+visitors, bounce rate, traffic source, etc.</p>
+</div>
+<div class="paragraph">
+<p><span class="cli-nav-link  cli-settings-mobile">Advertisement</span></p>
+</div>
+<div class="paragraph">
+<p><span class="wt-cli-sr-only">Advertisement</span></p>
+</div>
+<div class="paragraph">
+<p>Advertisement cookies are used to provide visitors with relevant ads and
+marketing campaigns. These cookies track visitors across websites and
+collect information to provide customized ads.</p>
+</div>
+<div class="paragraph">
+<p><span class="cli-nav-link  cli-settings-mobile">Others</span></p>
+</div>
+<div class="paragraph">
+<p><span class="wt-cli-sr-only">Others</span></p>
+</div>
+<div class="paragraph">
+<p>There are non at present.</p>
+</div>
+<div class="paragraph">
+<p><span id="wt-cli-privacy-save-btn " class="wt-cli-privacy-btn  cli_setting_save_button  wt-cli-privacy-accept-btn  cli-btn">SAVE
+&amp; ACCEPT</span></p>
+</div>
+</div>
+</div>
+</div>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  messageStyle: "none",
+  tex2jax: {
+    inlineMath: [["\\(", "\\)"]],
+    displayMath: [["\\[", "\\]"]],
+    ignoreClass: "nostem|nolatexmath"
+  },
+  asciimath2jax: {
+    delimiters: [["\\$", "\\$"]],
+    ignoreClass: "nostem|noasciimath"
+  },
+  TeX: { equationNumbers: { autoNumber: "none" } }
+})
+MathJax.Hub.Register.StartupHook("AsciiMath Jax Ready", function () {
+  MathJax.InputJax.AsciiMath.postfilterHooks.Add(function (data, node) {
+    if ((node = data.script.parentNode) && (node = node.parentNode) && node.classList.contains("stemblock")) {
+      data.math.root.display = "block"
+    }
+    return data
+  })
+})
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_HTMLorMML"></script>
+</body>
+</html>

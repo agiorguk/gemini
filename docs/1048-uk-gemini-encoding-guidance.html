@@ -1,0 +1,1644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 2.0.17">
+<title>UK GEMINI Encoding Guidance</title>
+<link rel="stylesheet" href="./asciidoctor.css">
+<link rel="stylesheet" href="./font-awesome.min.css">
+</head>
+<body class="article toc2 toc-left">
+<div id="header">
+<h1>UK GEMINI Encoding Guidance</h1>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel2">
+<li><a href="#_technical_guidance_on_the_encoding_of_uk_gemini">Technical guidance on the encoding of UK GEMINI</a></li>
+<li><a href="#_1_introduction"><span id="1">#</span>#1. Introduction</a></li>
+<li><a href="#_2_encoding_guidelines"><span id="2">#</span>#2. Encoding Guidelines</a></li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div class="sect2">
+<h3 id="_technical_guidance_on_the_encoding_of_uk_gemini"><a class="anchor" href="#_technical_guidance_on_the_encoding_of_uk_gemini"></a><a class="link" href="#_technical_guidance_on_the_encoding_of_uk_gemini">Technical guidance on the encoding of UK GEMINI</a></h3>
+<div class="paragraph">
+<p>Return
+to&#160;<a href="https://www.agi.org.uk/gemini/40-gemini/1037-uk-gemini-standard-and-inspire-implementing-rules">GEMINI
+2.3 home page</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/40-gemini/1048-uk-gemini-encoding-guidance#1">1.
+Introduction</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/40-gemini/1048-uk-gemini-encoding-guidance#1.1">1.1
+Purpose of guidelines</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/40-gemini/1048-uk-gemini-encoding-guidance#1.2">1.2
+Scope</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/40-gemini/1048-uk-gemini-encoding-guidance#1.3">1.3
+Assumed knowledge</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/40-gemini/1048-uk-gemini-encoding-guidance#1.4">1.4
+Terminology</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/40-gemini/1048-uk-gemini-encoding-guidance#1.5">1.5
+Structure of document</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/40-gemini/1048-uk-gemini-encoding-guidance#1.6">1.6
+XML fragments</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/40-gemini/1048-uk-gemini-encoding-guidance#2">2.
+Encoding Guidelines</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/40-gemini/1048-uk-gemini-encoding-guidance#2.1">2.1
+Schemas</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/40-gemini/1048-uk-gemini-encoding-guidance#2.2">2.2
+Common concepts</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/40-gemini/1048-uk-gemini-encoding-guidance#2.3">2.3
+Metadata for datasets and dataset series</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/40-gemini/1048-uk-gemini-encoding-guidance#2.4">2.4
+Metadata for services</a></p>
+</div>
+<div class="paragraph">
+<p>Appendices</p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/40-gemini/1046-xml-element-order">XML Element
+Order</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/40-gemini/1044-dataset-metadata-instance-example">Dataset
+metadata instance example</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/40-gemini/1043-series-metadata-example-old">Series
+metadata instance example</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/40-gemini/1042-service-metadata-instance-example">Service
+metadata instance example</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_1_introduction"><a class="anchor" href="#_1_introduction"></a><a class="link" href="#_1_introduction"><span id="1">#</span>#1. Introduction</a></h3>
+<div class="sect3">
+<h4 id="_1_1_purpose_of_guidelines"><a class="anchor" href="#_1_1_purpose_of_guidelines"></a><a class="link" href="#_1_1_purpose_of_guidelines"><span id="1" class="1">#</span>#1.1 Purpose of guidelines</a></h4>
+<div class="paragraph">
+<p>The purpose of these guidelines is to explain, with the aid of examples,
+how to encode UK GEMINI metadata using XSD schemas of ISO / TC 211.
+Examples are in the form of fragments of XML.</p>
+</div>
+<div class="paragraph">
+<p>UK GEMINI metadata may be for a dataset, dataset series or a service.
+The encoding of all types is covered.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_1_2_scope"><a class="anchor" href="#_1_2_scope"></a><a class="link" href="#_1_2_scope"><span id="1" class="2">#</span>#1.2 Scope</a></h4>
+<div class="paragraph">
+<p>The scope of these guidelines is the encoding of UK GEMINI
+[<a href="https://www.agi.org.uk/40-gemini/1047-metadata-guidelines-for-geospatial-data-resources-part-3">4</a>]according
+to ISO 19139, ISO 19119 and ISO 19136, in a way that adheres to the
+INSPIRE technical guidelines</p>
+</div>
+<div class="paragraph agi org uk/40-gemini/1047-metadata-guidelines-for-geospatial-data-resources-part-3[9]">
+<p>for encoding metadata.</p>
+</div>
+<div class="paragraph">
+<p>Outside the scope of this document is the description of GEMINI2
+metadata items, their content, obligation and meaning. Readers seeking
+this information should consult the GEMINI2 standard
+[<a href="https://www.agi.org.uk/40-gemini/1047-metadata-guidelines-for-geospatial-data-resources-part-3">4</a>].</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_1_3_assumed_knowledge"><a class="anchor" href="#_1_3_assumed_knowledge"></a><a class="link" href="#_1_3_assumed_knowledge"><span id="1" class="3">#</span>#1.3 Assumed knowledge</a></h4>
+<div class="paragraph">
+<p>It is assumed that readers will be familiar with XML. Readers who
+require background information are referred to the W3Schools
+introduction to XML:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>XML -&#160;<a href="http://www.w3schools.com/xml/xml_whatis.asp" class="bare">http://www.w3schools.com/xml/xml_whatis.asp</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Readers requiring an introduction to XML Schemas are referred to the
+W3Schools XML Schema tutorial:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>XSD&#160;-&#160;<a href="http://www.w3schools.com/xml/xml_schema.asp" class="bare">http://www.w3schools.com/xml/xml_schema.asp</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_1_4_terminology"><a class="anchor" href="#_1_4_terminology"></a><a class="link" href="#_1_4_terminology"><span id="1" class="4">#</span>#1.4 Terminology</a></h4>
+<div class="paragraph">
+<p>A Glossary is
+provided&#160;<a href="https://www.agi.org.uk/40-gemini/1056-glossary">here</a>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_1_5_structure_of_document"><a class="anchor" href="#_1_5_structure_of_document"></a><a class="link" href="#_1_5_structure_of_document"><span id="1" class="5">#</span>#1.5 Structure of document</a></h4>
+<div class="paragraph">
+<p>The core section,&#160;Encoding Guidelines,&#160;is split into four principal
+sections</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The first section deals with the schemas</p>
+</li>
+<li>
+<p>The second deals with concepts which are common to all kinds of
+GEMINI2 metadata instances.</p>
+</li>
+<li>
+<p>The third explains the encoding of metadata for datasets and dataset
+series.</p>
+</li>
+<li>
+<p>The fourth section explains the encoding of encoding metadata for
+services.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>There is some overlap, and therefore duplication, between the sections
+but it is felt that this approach is best in that it clearly indicates
+the requirements for each type of metadata.</p>
+</div>
+<div class="paragraph">
+<p>The 'Metadata for datasets and dataset series' and 'Metadata for
+services' sections&#160;list metadata items from GEMINI2 in the order that
+they appear in GEMINI2. XML elements in an XML document must follow
+the&#160;<a href="https://www.agi.org.uk/40-gemini/1046-xml-element-order">order&#160;</a>expressed
+in the XSD schema to which the XML document conforms. The order of XML
+element expressed by the XSD schema will not be the same as the order of
+metadata items in GEMINI2.</p>
+</div>
+<div class="paragraph">
+<p>Examples are provided by way of XML fragments throughout the document.
+Full metadata instances are shown here:</p>
+</div>
+<div class="paragraph">
+<p><a href="https://github.com/AGIuk/Schematron/blob/master/samples/1044-ds.xml">Dataset
+metadata instance example</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://github.com/AGIuk/Schematron/blob/master/samples/1042-sv.xml">Service
+metadata instance example</a></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_1_6_xml_fragments"><a class="anchor" href="#_1_6_xml_fragments"></a><a class="link" href="#_1_6_xml_fragments"><span id="1" class="6">#</span>#1.6 XML Fragments</a></h4>
+<div class="paragraph">
+<p>This document contains examples of XML encoding. The examples are
+considered fragments in that they are not complete XML documents. The
+following conventions are used:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The root element will generally be shown and it shall be
+gmd:MD_Metadata</p>
+</li>
+<li>
+<p>XML element tags will generally be shown on a single line</p>
+</li>
+<li>
+<p>XML will be tabbed in where possible to aid reading</p>
+</li>
+<li>
+<p>Where an XML element, including the start tag, end tag and content, is
+too long to show on a single line, it shall break across more than one
+line automatically (i.e. under the control of browser justification and
+text wrapping)</p>
+</li>
+<li>
+<p>Missing XML content, removed while forming the fragment, shall be
+represented by an ellipsis (&#8230;&#8203;)</p>
+</li>
+</ul>
+</div>
+<div class="sect4">
+<h5 id="_figure_1_xml_fragment_tabbing"><a class="anchor" href="#_figure_1_xml_fragment_tabbing"></a><a class="link" href="#_figure_1_xml_fragment_tabbing"><strong>Figure 1 – XML fragment – tabbing</strong></a></h5>
+<div class="paragraph">
+<p><code>&lt;gmd:MD_Metadata&gt;</code><br>
+<code>&#160;&#160; &lt;gmd:fileIdentifier&gt;</code><br>
+<code>&#160;&#160;&#160;&#160; &lt;gco:CharacterString&gt;98e25be5-388d-4be3-bc5f-ba07ef6009b2&lt;/gco:CharacterString&gt;</code><br>
+<code>&#160;&#160; &lt;/gmd:fileIdentifier&gt;</code><br>
+<code>&#160;&#160; &#8230;&#8203;</code><br>
+<code>&lt;/gmd:MD_Metadata&gt;</code></p>
+</div>
+<div class="paragraph">
+<p>Figure 1 shows an example of an XML fragment. Note that it starts with
+the XML element gmd:MD_Metadata. The next XML element in order is
+gmd:fileIdentifier and its start-tag is on the next line and is tabbed
+in. The following line is the content of gmd:fileIdentifier.</p>
+</div>
+<div class="paragraph">
+<p>An ellipsis follows the end tag of the XML element gmd:fileIdentifier
+indicating that other content is missing</p>
+</div>
+<div class="paragraph">
+<p>Also deliberately omitted from XML fragments is:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The XML declaration</p>
+</li>
+<li>
+<p>XML namespace identifiers</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>In the example in Figure 1 CharacterString is an XML element in the
+namespace gco. It has the start-tag&#160;`&lt;gco:CharacterString&gt;`&#160;and the
+end-tag&#160;`&lt;/gco:CharacterString&gt;.<code>&#160;The
+string&#160;_98e25be5-388d-4be3-bc5f-ba07ef6009b2_&#160;is the element’s content.
+The CharacterString element forms the content of another element:
+fileIdentifier. Its start-tag is&#160;</code>&lt;gmd:fileIdentifier&gt;`&#160;and its end-tag
+is&#160;`&lt;/gmd:fileIdentifier&gt;`. &#160;In the example
+below&#160;`gml:id`&#160;and&#160;`codeSpace`&#160;are XML attributes. XML attributes are
+encoded in the start-tag of an element with the
+form&#160;`[namespace]:[attributeName]="[content]"`.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_figure_2_xml_attributes"><a class="anchor" href="#_figure_2_xml_attributes"></a><a class="link" href="#_figure_2_xml_attributes"><strong>Figure 2 - XML attributes&#160;</strong></a></h5>
+<div class="paragraph">
+<p><code>&#8230;&#8203;</code><br>
+<code>&lt;gmx:CodeDefinition gml:id="MD_ScopeCode_dataset"&gt;</code><br>
+<code>&#160;&#160; &lt;gml:description&gt;information applies to the dataset&lt;/gml:description&gt;</code><br>
+<code>&#160;&#160; &lt;gml:identifier codeSpace="ISOTC211/19115"&gt;dataset&lt;/gml:identifier&gt;</code><br>
+<code>&lt;/gmx:CodeDefinition&gt;</code><br>
+<code>&#8230;&#8203;</code></p>
+</div>
+<div class="paragraph">
+<p>Note that there is no reason in practice to tab in XML and to present
+each XML element on a new line other than to aid humans in reading raw
+XML. XML parsers, on the other hand, would have no problem reading the
+XML were it encoded without carriage returns as shown in Figure 3.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_figure_3_xml_fragment_no_tabbing"><a class="anchor" href="#_figure_3_xml_fragment_no_tabbing"></a><a class="link" href="#_figure_3_xml_fragment_no_tabbing"><strong>Figure 3 - XML fragment - no tabbing&#160;</strong></a></h5>
+<div class="paragraph">
+<p><code>&lt;gmd:MD_Metadata&gt;&lt;gmd:fileIdentifier&gt;&lt;gco:CharacterString&gt;98e25be5-388d-4be3-bc5f-ba07ef6009b2&lt;/gco:CharacterString&gt;&lt;/gmd:fileIdentifier&gt;&lt;/gmd:MD_Metadata&gt;</code></p>
+</div>
+<div class="paragraph">
+<p><span id="1" class="6">#</span>#The UK Location Information Infrastructure will accept any
+valid XML document that conforms to these guidelines. This includes
+canonical XML encodings</p>
+</div>
+<div class="paragraph agi org uk/40-gemini/1047-metadata-guidelines-for-geospatial-data-resources-part-3[5]">
+<p>and files laid out with additional white space for human readability,
+and other variants in between. Similarly, XML attribute values could be
+delimited using single or double quotes.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_figure_2_xml_attributes_2"><a class="anchor" href="#_figure_2_xml_attributes_2"></a><a class="link" href="#_figure_2_xml_attributes_2"><strong>Figure 2 - XML attributes&#160;</strong></a></h5>
+<div class="paragraph">
+<p><code>&#8230;&#8203;</code><br>
+<code>&lt;gmx:CodeDefinition gml:id="MD_ScopeCode_dataset"&gt;</code><br>
+<code>&#160;&#160; &lt;gml:description&gt;information applies to the dataset&lt;/gml:description&gt;</code><br>
+<code>&#160;&#160; &lt;gml:identifier codeSpace="ISOTC211/19115"&gt;dataset&lt;/gml:identifier&gt;</code><br>
+<code>&lt;/gmx:CodeDefinition&gt;</code><br>
+<code>&#8230;&#8203;</code></p>
+</div>
+<div class="paragraph">
+<p>Note that there is no reason in practice to tab in XML and to present
+each XML element on a new line other than to aid humans in reading raw
+XML. XML parsers, on the other hand, would have no problem reading the
+XML were it encoded without carriage returns as shown in Figure 3.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_figure_3_xml_fragment_no_tabbing_2"><a class="anchor" href="#_figure_3_xml_fragment_no_tabbing_2"></a><a class="link" href="#_figure_3_xml_fragment_no_tabbing_2"><strong>Figure 3 - XML fragment - no tabbing&#160;</strong></a></h5>
+<div class="paragraph">
+<p><code>&lt;gmd:MD_Metadata&gt;&lt;gmd:fileIdentifier&gt;&lt;gco:CharacterString&gt;98e25be5-388d-4be3-bc5f-ba07ef6009b2&lt;/gco:CharacterString&gt;&lt;/gmd:fileIdentifier&gt;&lt;/gmd:MD_Metadata&gt;</code></p>
+</div>
+<div class="paragraph">
+<p>The UK Location Information Infrastructure will accept any valid XML
+document that conforms to these guidelines. This includes canonical XML
+encodings</p>
+</div>
+<div class="paragraph agi org uk/40-gemini/1047-metadata-guidelines-for-geospatial-data-resources-part-3[5]">
+<p>and files laid out with additional white space for human readability,
+and other variants in between. Similarly, XML attribute values could be
+delimited using single or double quotes.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_2_encoding_guidelines"><a class="anchor" href="#_2_encoding_guidelines"></a><a class="link" href="#_2_encoding_guidelines"><span id="2">#</span>#2. Encoding Guidelines</a></h3>
+<div class="sect3">
+<h4 id="_2_1_schemas"><a class="anchor" href="#_2_1_schemas"></a><a class="link" href="#_2_1_schemas"><span id="2" class="1">#</span>#2.1 Schemas</a></h4>
+<div class="paragraph">
+<p>The schemas defining the structure of GEMINI2 metadata instances must
+implement:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>ISO 19139:2007 – for a physical implementation of ISO 19115:2003</p>
+</li>
+<li>
+<p>ISO 19119:2005 – for service metadata</p>
+</li>
+<li>
+<p>ISO 19136:2007 – for GML</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Several schema sets have been identified as meeting these requirements:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><a href="http://schemas.opengis.net/csw/2.0.2/profiles/apiso/1.0.0/apiso.xsd" class="bare">http://schemas.opengis.net/csw/2.0.2/profiles/apiso/1.0.0/apiso.xsd</a>,
+provided by OGC</p>
+</li>
+<li>
+<p><a href="http://inspire.ec.europa.eu/draft-schemas/inspire-md-schemas/apiso-inspire/apiso-inspire.xsd" class="bare">http://inspire.ec.europa.eu/draft-schemas/inspire-md-schemas/apiso-inspire/apiso-inspire.xsd</a>,
+provided by JRC</p>
+</li>
+<li>
+<p><a href="http://schemas.opengis.net/iso/19139/20070417" class="bare">http://schemas.opengis.net/iso/19139/20070417</a>, provided by OGC.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Both 1 &amp; 2 import the same dataset schemas, which are authoritatively at
+the ISO TC211 resource
+site:&#160;<a href="https://schemas.isotc211.org/schemas/19139/" class="bare">https://schemas.isotc211.org/schemas/19139/</a>. Note: this is a human
+browsable site; if you want to validate correctly against this set of
+schemas, you can 'deep link' to
+e.g.&#160;<a href="https://schemas.isotc211.org/schemas/19139/-/gmx/1.0/gmx.xsd">https://schemas.isotc211.org/schemas/19139/-/gmx/1.0/gmx.xsd</a></p>
+</div>
+<div class="paragraph">
+<p>The schema files that shall be used for validating GEMINI2 metadata
+instances are:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>gmx.xsd (Datasets and dataset series metadata)</p>
+</li>
+<li>
+<p>gmx.xsd and srv.xsd (Service metadata)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The AP-ISO schema files given above import both of these, so a validator
+does not need to determine what type of record it is validating.</p>
+</div>
+<div class="paragraph">
+<p>With schema set 3, the dataset and service schemas have separate entry
+points: gmx/gmx.xsd and srv/srv.xsd</p>
+</div>
+<div class="paragraph">
+<p>Notes:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>the schemas provided by ISO TC211 do not include anything for ISO
+19119 service metadata, but could be used directly to validate dataset
+metadata</p>
+</li>
+<li>
+<p>the older draft schemas published
+at&#160;<a href="http://schemas.opengis.net/iso/19139/20060504/&#160;import" class="bare">http://schemas.opengis.net/iso/19139/20060504/&#160;import</a> GML version 3.1
+instead of GML 3.2, so records that validate with one will not validate
+with the other.</p>
+</li>
+<li>
+<p>the UK GEMINI schema that was published on GI Gateway [service
+withdrawn in 2012] encodes GEMINI1, not GEMINI2. Also, it does not
+conform with INSPIRE technical guidance. Therefore, it cannot be used to
+encode GEMINI2 and shall not be used for metadata instances within UK
+Location.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><strong>Schema Validation</strong></p>
+</div>
+<div class="paragraph">
+<p>The XML schemaLocation property officially provides only a ‘hint’ to the
+validator, but many validators do use the schemas at that location.</p>
+</div>
+<div class="paragraph">
+<p>The INSPIRE Validator available
+through&#160;<a href="https://inspire.ec.europa.eu/validator/about/&#160;includes" class="bare">https://inspire.ec.europa.eu/validator/about/&#160;includes</a> metadata
+validation.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_2_2_common_concepts"><a class="anchor" href="#_2_2_common_concepts"></a><a class="link" href="#_2_2_common_concepts"><span id="2" class="2">#</span>#2.2 Common concepts</a></h4>
+<div class="sect4">
+<h5 id="_2_2_1_xml_declaration"><a class="anchor" href="#_2_2_1_xml_declaration"></a><a class="link" href="#_2_2_1_xml_declaration">2.2.1 XML declaration</a></h5>
+<div class="paragraph">
+<p>Metadata instances are XML documents. XML documents should, but do not
+have to, begin with an XML declaration. If a metadata instance has an
+XML declaration then it must be the first line in the document. It must
+not be preceded by anything else, other than an invisible Unicode
+byte-order mark.</p>
+</div>
+<div class="paragraph">
+<p>Figure 4&#160;shows an XML declaration. The version attribute must always
+have the value 1.0. The encoding attribute is optional. Its value
+specifies which character set is in use in the document. By default
+(i.e. if the encoding attribute is omitted) XML documents are assumed to
+be encoded in the UTF-8 encoding of the Unicode character set. Care
+should be taken when using text editing software to edit XML, or writing
+XML using bespoke software code, that the XML’s actual physical encoding
+conforms with the encoding stated with this attribute. It is expected
+that the UTF-8 character set will be sufficient in nearly all cases.</p>
+</div>
+<div class="paragraph">
+<p>An XML declaration may include a “standalone” attribute. However, this
+attribute is only relevant if an XML document is using a DTD. Metadata
+instances of GEMINI2 shall not use a DTD so it is out of scope.</p>
+</div>
+<div class="sect5">
+<h6 id="_figure_4_xml_declaration"><a class="anchor" href="#_figure_4_xml_declaration"></a><a class="link" href="#_figure_4_xml_declaration"><strong>Figure 4 - XML declaration&#160;</strong></a></h6>
+<div class="paragraph">
+<p><code>&lt;?xml version="1.0" encoding="utf-8"?&gt;</code></p>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_2_2_2_root_element"><a class="anchor" href="#_2_2_2_root_element"></a><a class="link" href="#_2_2_2_root_element">2.2.2 Root element</a></h5>
+<div class="paragraph">
+<p>The root element of a GEMINI2 metadata instance shall be
+gmd:MD_Metadata. The root element shall contain namespace references to,
+at least, gmd, gco, gml and xlink. Metadata for services shall, in
+addition, contain a namespace reference to srv. In addition reference
+may be made to the gmx namespace if XML elements such as gmx:Anchor are
+used.</p>
+</div>
+<div class="paragraph">
+<p>An example is shown in Figure 5. Subsequent examples omit the namespace
+references for brevity. An ellipsis is used to indicate that required
+content has been omitted.</p>
+</div>
+<div class="sect5">
+<h6 id="_figure_5_root_element"><a class="anchor" href="#_figure_5_root_element"></a><a class="link" href="#_figure_5_root_element"><strong>Figure&#160; 5 - Root Element</strong></a></h6>
+<div class="paragraph">
+<p><code>&lt;?xml version="1.0" encoding="utf-8"?&gt;</code><br>
+<code>&lt;gmd:MD_Metadata xmlns:gmd="http://www.isotc211.org/2005/gmd"</code><br>
+<code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; xmlns:gco="http://www.isotc211.org/2005/gco"</code><br>
+<code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; xmlns:srv="http://www.isotc211.org/2005/srv"</code><br>
+<code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; xmlns:gml="http://www.opengis.net/gml/3.2"</code><br>
+<code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; xmlns:xlink="http://www.w3.org/1999/xlink"&gt;</code><br>
+<code>&#160; &#8230;&#8203;</code><br>
+<code>&lt;/gmd:MD_Metadata&gt;</code></p>
+</div>
+<div class="paragraph">
+<p>The namespace identifier for gmd shall be:
+<a href="http://www.isotc211.org/2005/gmd" class="bare">http://www.isotc211.org/2005/gmd</a></p>
+</div>
+<div class="paragraph">
+<p>The namespace identifier for gco shall be:
+<a href="http://www.isotc211.org/2005/gco" class="bare">http://www.isotc211.org/2005/gco</a></p>
+</div>
+<div class="paragraph">
+<p>The namespace identifier for srv shall be:
+<a href="http://www.isotc211.org/2005/srv" class="bare">http://www.isotc211.org/2005/srv</a></p>
+</div>
+<div class="paragraph">
+<p>The namespace identifier for gmx shall be:
+<a href="http://www.isotc211.org/2005/gmx" class="bare">http://www.isotc211.org/2005/gmx</a></p>
+</div>
+<div class="paragraph">
+<p>The namespace identifier for xlink shall be:
+<a href="http://www.w3.org/1999/xlink" class="bare">http://www.w3.org/1999/xlink</a></p>
+</div>
+<div class="paragraph">
+<p>The namespace identifier for gml shall be:
+<a href="http://www.opengis.net/gml/3.2" class="bare">http://www.opengis.net/gml/3.2</a></p>
+</div>
+<div class="paragraph">
+<p>Note that &#160;<a href="http://www.opengis.net/gml/3.2&#160;refers" class="bare">http://www.opengis.net/gml/3.2&#160;refers</a> to GML version
+3.2.1&#160;*not*&#160;GML version 3.2.0.</p>
+</div>
+<div class="paragraph">
+<p>The root element, and in fact any element in an XML instance, may have
+an attribute called xsi:schemaLocation which contains a value or set of
+values&#160;<strong>hinting&#160;</strong>at the physical location of schemas which may be used
+for validation. Since this attribute provides only a hint, validating
+parsers are allowed to ignore it and use other means of locating the
+relevant schemas.</p>
+</div>
+<div class="paragraph">
+<p>Figure 6 shows a root element containing an xsi:schemaLocation
+attribute. Here the schemas referenced are in the INSPIRE Metadata&#160;XSD
+repository.</p>
+</div>
+<div class="paragraph">
+<p>Since the xsi:schemaLocation attribute exists in the xsi namespace, this
+namespace must be referenced. The xsi:schemaLocation attribute contains
+a pair of space separated values when one schema is identified. The
+first value specifies the namespace and the second value specifies the
+schema to use to validate elements in that namespace. When more than one
+schema is identified, as would be the case for validating a service
+metadata instance, the attribute contains a space separated sequence of
+namespace / schema pairs. The xsi:schemaLocation attribute is not
+required in a GEMINI2 metadata instance.</p>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_figure_6_using_the_xsischemalocation_attribute"><a class="anchor" href="#_figure_6_using_the_xsischemalocation_attribute"></a><a class="link" href="#_figure_6_using_the_xsischemalocation_attribute"><strong>Figure 6 - Using the xsi:schemaLocation attribute</strong></a></h6>
+<div class="paragraph">
+<p><code>&lt;?xml version="1.0" encoding="utf-8"?&gt;</code><br>
+<code>&lt;gmd:MD_Metadata xmlns:gmx="http://www.isotc211.org/2005/gmx"</code><br>
+<code>&#160; &#160; xmlns:gmd="http://www.isotc211.org/2005/gmd"</code><br>
+<code>&#160; &#160; xmlns:gco="http://www.isotc211.org/2005/gco"</code><br>
+<code>&#160; &#160; xmlns:srv="http://www.isotc211.org/2005/srv"</code><br>
+<code>&#160; &#160; xmlns:gml="http://www.opengis.net/gml/3.2"</code><br>
+<code>&#160; &#160; xmlns:xlink="http://www.w3.org/1999/xlink"</code><br>
+<code>&#160; &#160; xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"</code><br>
+<code>&#160; &#160; xsi:schemaLocation="http://www.isotc211.org/2005/gmx</code><br>
+<code>&#160; &#160; &#160; &#160; <a href="https://schemas.isotc211.org/schemas/19139/-/gmx/1.0/gmx.xsd" class="bare">https://schemas.isotc211.org/schemas/19139/-/gmx/1.0/gmx.xsd</a></code><br>
+<code>&#160; &#160; &#160; &#160; <a href="http://www.isotc211.org/2005/srv" class="bare">http://www.isotc211.org/2005/srv</a></code><br>
+<code>&#160; &#160; &#160; &#160; <a href="http://inspire.ec.europa.eu/draft-schemas/inspire-md-schemas/srv/1.0/srv.xsd"&gt" class="bare">http://inspire.ec.europa.eu/draft-schemas/inspire-md-schemas/srv/1.0/srv.xsd"&gt</a>;</code><br>
+<code>&#160; &#8230;&#8203;</code><br>
+<code>&lt;/gmd:MD_Metadata&gt;</code></p>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_2_2_3_dates_and_times"><a class="anchor" href="#_2_2_3_dates_and_times"></a><a class="link" href="#_2_2_3_dates_and_times"><span id="2" class="2 3">#</span>#2.2.3 Dates and Times</a></h5>
+<div class="paragraph">
+<p>Dates and date-time shall be expressed in the Gregorian calendar and UTC
+as per ISO 8601. The formatting shall be as follows, in order of
+increasing precision:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>yyyy (e.g. 1995)</p>
+</li>
+<li>
+<p>yyyy-MM (e.g. 1995-01)</p>
+</li>
+<li>
+<p>yyyy-MM-dd (e.g. 1995-01-25)</p>
+</li>
+<li>
+<p>yyyy-MM-ddThh:mm:ss (e.g. 1995-01-25T12:01:55)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The ISO 8601 encoding also allows negative dates to represent BC.
+However, gco:Date and gco:DateTime XML elements do not accept negative
+values.</p>
+</div>
+<div class="paragraph">
+<p>The GEMINI2 standard states that temporal extents may be given with as
+coarse a granularity as century (e.g. yy or 19). However, unfortunately
+this cannot be encoded in ISO 19139 XML and will result in a schema
+validation error. The lowest level of granularity allowable is the year.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_2_2_4_element_order"><a class="anchor" href="#_2_2_4_element_order"></a><a class="link" href="#_2_2_4_element_order">2.2.4 Element order</a></h5>
+<div class="paragraph">
+<p>XML elements in a metadata instance must follow the order in which the
+elements are defined in an XSD schema. Failure to do so will result in
+schema validation errors. The order of XML elements and their
+corresponding GEMINI2 metadata items is
+shown&#160;<a href="https://www.agi.org.uk/40-gemini/1046-xml-element-order">here</a>.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_2_2_5_patterns_for_multiple_instances"><a class="anchor" href="#_2_2_5_patterns_for_multiple_instances"></a><a class="link" href="#_2_2_5_patterns_for_multiple_instances">2.2.5 Patterns for multiple instances</a></h5>
+<div class="paragraph">
+<p>Some metadata items, such as alternative title, have cardinalities for
+more than one. This means that more than one instance of the item can be
+encoded in metadata instances. The general approach in ISO 19139 XML is
+that an XML element expressing the property, in Figure7
+gmd:alternateTitle, contains an XML element which expresses the data
+type and contains the value, in this case gco:CharacterString. Note that
+more than one alternative title is expressed by repeating the
+gmd:alternateTitle XML element, not the gco:CharacterString XML element
+(shown in an invalid example in Figure 8). This pattern is followed
+throughout ISO 19139 XML including for XML elements that have complex
+content, such as gmd:identificationInfo (Figure 9).</p>
+</div>
+<div class="sect5">
+<h6 id="_figure_7_multiple_alternative_title_elements"><a class="anchor" href="#_figure_7_multiple_alternative_title_elements"></a><a class="link" href="#_figure_7_multiple_alternative_title_elements"><strong>Figure 7 - Multiple alternative title elements</strong></a></h6>
+<div class="paragraph">
+<p>&#160;`&#8230;&#8203;`<br>
+<code>&lt;gmd:alternateTitle&gt;</code><br>
+<code>&#160; &lt;gco:CharacterString&gt;Digital Geological Map Data of Great Britain - 625k&lt;/gco:CharacterString&gt;</code><br>
+<code>&lt;/gmd:alternateTitle&gt;</code><br>
+<code>&lt;gmd:alternateTitle&gt;</code><br>
+<code>&#160; &lt;gco:CharacterString&gt;DiGMapGB-625&lt;/gco:CharacterString&gt;</code><br>
+<code>&lt;/gmd:alternateTitle&gt;</code><br>
+<code>&#8230;&#8203;</code></p>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_figure_8_multiple_alternative_title_elements_invalid_encoding"><a class="anchor" href="#_figure_8_multiple_alternative_title_elements_invalid_encoding"></a><a class="link" href="#_figure_8_multiple_alternative_title_elements_invalid_encoding"><strong>Figure 8 - Multiple alternative title elements - invalid encoding</strong></a></h6>
+<div class="paragraph">
+<p><code>&#8230;&#8203;</code><br>
+<code>&lt;gmd:alternateTitle&gt;</code><br>
+<code>&#160; &lt;gco:CharacterString&gt;Digital Geological Map Data of Great Britain - 625k&lt;/gco:CharacterString&gt;</code><br>
+<code>&#160; &lt;gco:CharacterString&gt;DiGMapGB-625&lt;/gco:CharacterString&gt;</code><br>
+<code>&lt;/gmd:alternateTitle&gt;</code><br>
+<code>&#8230;&#8203;</code></p>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_figure_9_multiple_identification_information_elements"><a class="anchor" href="#_figure_9_multiple_identification_information_elements"></a><a class="link" href="#_figure_9_multiple_identification_information_elements"><strong>Figure 9 - Multiple identification information elements&#160;</strong></a></h6>
+<div class="paragraph">
+<p><code>&lt;gmd:MD_Metadata&gt;</code><br>
+<code>&#160; &#8230;&#8203;</code><br>
+<code>&#160; &lt;gmd:identificationInfo&gt;</code><br>
+<code>&#160;&#160; &lt;gmd:MD_DataIdentification id="_local-id1"&gt;</code><br>
+<code>&#160;&#160;&#160;&#160; &#8230;&#8203;</code><br>
+&#160;`&#160;&#160;&lt;/gmd:MD_DataIdentification&gt;`<br>
+<code>&lt;/gmd:identificationInfo&gt;</code><br>
+<code>&#160; &lt;gmd:identificationInfo&gt;</code><br>
+<code>&#160;&#160;&#160; &lt;gmd:MD_DataIdentification id="_local-id2"&gt;</code><br>
+<code>&#160;&#160;&#160;&#160; &#8230;&#8203;</code><br>
+<code>&#160;&#160;&#160; &lt;/gmd:MD_DataIdentification&gt;</code><br>
+<code>&#160; &lt;/gmd:identificationInfo&gt;</code><br>
+<code>&#160; &#8230;&#8203;</code><br>
+<code>&lt;/gmd:MD_Metadata&gt;&#160;</code></p>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_2_2_6_file_identifier"><a class="anchor" href="#_2_2_6_file_identifier"></a><a class="link" href="#_2_2_6_file_identifier"><span id="2" class="2 6">#</span>#2.2.6 File identifier</a></h5>
+<div class="paragraph">
+<p>The first XML child element of any GEMINI2 metadata instance shall be
+gmd:fileIdentifier. The content of this XML element is the identifier of
+the metadata instance. &#160; File identifier is not to be confused with the
+metadata
+item&#160;<a href="https://www.agi.org.uk/40-gemini/1062-gemini-datasets-and-data-series#36">Resource
+Identifier</a>.</p>
+</div>
+<div class="paragraph">
+<p>The content of the XML element shall be a unique managed identifier,
+such as a system generated UUID. Once the identifier has been set for a
+metadata instance it shall not change.</p>
+</div>
+<div class="sect5">
+<h6 id="_figure_10_file_identifier"><a class="anchor" href="#_figure_10_file_identifier"></a><a class="link" href="#_figure_10_file_identifier"><strong>Figure 10 - File Identifier</strong></a></h6>
+<div class="paragraph">
+<p><code>&lt;gmd:MD_Metadata&gt;</code><br>
+<code>&#160; &lt;gmd:fileIdentifier&gt;</code><br>
+<code>&#160; &#160; &lt;gco:CharacterString&gt;98e25be5-388d-4be3-bc5f-ba07ef6009b2&lt;/gco:CharacterString&gt;</code><br>
+<code>&#160; &lt;/gmd:fileIdentifier&gt;</code><br>
+<code>&#160; &#8230;&#8203;</code><br>
+<code>&lt;/gmd:MD_Metadata&gt;&#160;</code></p>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_2_2_7_citation"><a class="anchor" href="#_2_2_7_citation"></a><a class="link" href="#_2_2_7_citation">2.2.7 Citation</a></h5>
+<div class="paragraph">
+<p>External resources, such as publications, controlled vocabularies, are
+expressed using the ISO 19115 class CI_Citation and its XML element
+instance, gmd:CI_Citation. This is a common structure that is used to
+encode:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Resource reference information about datasets and series</p>
+</li>
+<li>
+<p>Resource reference information about services</p>
+</li>
+<li>
+<p>Information about the originating controlled vocabulary of keywords</p>
+</li>
+<li>
+<p>The specification for conformance statements</p>
+</li>
+<li>
+<p>The authority of Spatial Reference System</p>
+</li>
+<li>
+<p>The authority of Extent</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>A citation must include at least a title, a date and a date type.&#160;Figure
+11 shows the citation structure used to encode information about the
+GEMET Concepts dictionary.</p>
+</div>
+<div class="paragraph">
+<p>In any one citation there may be more than one date. However, there
+shall be only one date with a date type of ‘creation’ and there shall be
+only one date with type 'revision'.</p>
+</div>
+<div class="sect5">
+<h6 id="_figure_11_ci_citation_structure"><a class="anchor" href="#_figure_11_ci_citation_structure"></a><a class="link" href="#_figure_11_ci_citation_structure"><strong>Figure 11 - CI_Citation structure</strong></a></h6>
+<div class="paragraph">
+<p><code>&#8230;&#8203;</code><br>
+<code>&lt;gmd:CI_Citation&gt;</code><br>
+<code>&#160; &lt;gmd:title&gt;</code><br>
+<code>&#160;&#160;&#160; &lt;gco:CharacterString&gt;GEMET - Concepts, version 2.4&lt;/gco:CharacterString&gt;</code><br>
+<code>&#160; &lt;/gmd:title&gt;</code><br>
+<code>&#160; &lt;gmd:date&gt;</code><br>
+<code>&#160;&#160;&#160; &lt;gmd:CI_Date&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160; &lt;gmd:date&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;gco:Date&gt;2010-01-13&lt;/gco:Date&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160; &lt;/gmd:date&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160; &lt;gmd:dateType&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;gmd:CI_DateTypeCode codeList="<code><a href="https://schemas.isotc211.org/schemas/19139/resources/gmxCodelists.xml" class="bare">https://schemas.isotc211.org/schemas/19139/resources/gmxCodelists.xml</a></code>#CI_DateTypeCode" codeListValue="revision"&gt;revision&lt;/gmd:CI_DateTypeCode&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160; &lt;/gmd:dateType&gt;</code><br>
+<code>&#160;&#160;&#160; &lt;/gmd:CI_Date&gt;</code><br>
+<code>&#160; &lt;/gmd:date&gt;</code><br>
+<code>&lt;/gmd:CI_Citation&gt;</code><br>
+<code>&#8230;&#8203;</code></p>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_2_2_82_2_8_responsible_party"><a class="anchor" href="#_2_2_82_2_8_responsible_party"></a><a class="link" href="#_2_2_82_2_8_responsible_party">&#160;[<mark>2.2.8]</mark>###2.2.8 Responsible party</a></h5>
+<div class="sect5">
+<h6 id="_figure_12_ci_responsibleparty_structure"><a class="anchor" href="#_figure_12_ci_responsibleparty_structure"></a><a class="link" href="#_figure_12_ci_responsibleparty_structure"><strong>Figure 12 - CI_ResponsibleParty structure&#160;</strong></a></h6>
+<div class="paragraph">
+<p><code>&#8230;&#8203;</code><br>
+<code>&lt;gmd:CI_ResponsibleParty&gt;</code><br>
+<code>&#160; &lt;gmd:organisationName&gt;</code><br>
+<code>&#160;&#160;&#160; &lt;gco:CharacterString&gt;SeaZone Solutions&lt;/gco:CharacterString&gt;</code><br>
+<code>&#160; &lt;/gmd:organisationName&gt;</code><br>
+<code>&#160; &lt;gmd:positionName&gt;</code><br>
+<code>&#160;&#160;&#160; &lt;gco:CharacterString&gt;Data Product Manager&lt;/gco:CharacterString&gt;</code><br>
+<code>&#160; &lt;/gmd:positionName&gt;</code><br>
+<code>&#160; &lt;gmd:contactInfo&gt;</code><br>
+<code>&#160;&#160;&#160; &lt;gmd:CI_Contact&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160; &lt;gmd:phone&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;gmd:CI_Telephone&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;gmd:voice&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;gco:CharacterString&gt;+44 (0) 870 013 0607&lt;/gco:CharacterString&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;/gmd:voice&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;gmd:facsimile&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;gco:CharacterString&gt;+44 (0) 870 013 0608&lt;/gco:CharacterString&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;/gmd:facsimile&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;/gmd:CI_Telephone&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160; &lt;/gmd:phone&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160; &lt;gmd:address&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;gmd:CI_Address&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;gmd:deliveryPoint&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;gco:CharacterString&gt;Red Lion House&lt;/gco:CharacterString&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;/gmd:deliveryPoint&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;gmd:deliveryPoint&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;gco:CharacterString&gt;Bentley&lt;/gco:CharacterString&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;/gmd:deliveryPoint&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;gmd:administrativeArea&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;gco:CharacterString&gt;Hampshire&lt;/gco:CharacterString&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;/gmd:administrativeArea&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;gmd:postalCode&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;gco:CharacterString&gt;GU10 5HY&lt;/gco:CharacterString&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;/gmd:postalCode&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;gmd:electronicMailAddress&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;gco:CharacterString&gt;<a href="mailto:info@seazone.com">info@seazone.com</a>&lt;/gco:CharacterString&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;/gmd:electronicMailAddress&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;/gmd:CI_Address&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160; &lt;/gmd:address&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160; &lt;gmd:onlineResource&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;gmd:CI_OnlineResource&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;gmd:linkage&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;gmd:URL&gt;<a href="http://www.seazone.com/index.php&lt;/gmd:URL&gt" class="bare">http://www.seazone.com/index.php&lt;/gmd:URL&gt</a>;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;/gmd:linkage&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;/gmd:CI_OnlineResource&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160; &lt;/gmd:onlineResource&gt;</code><br>
+<code>&#160;&#160;&#160; &lt;/gmd:CI_Contact&gt;</code><br>
+<code>&#160; &lt;/gmd:contactInfo&gt;</code><br>
+<code>&#160; &lt;gmd:role&gt;</code><br>
+<code>&#160;&#160;&#160; &lt;gmd:CI_RoleCode codeList="<code><a href="https://schemas.isotc211.org/schemas/19139/resources/gmxCodelists.xml" class="bare">https://schemas.isotc211.org/schemas/19139/resources/gmxCodelists.xml</a></code>#CI_RoleCode" codeListValue="author"&gt;author&lt;/gmd:CI_RoleCode&gt;</code><br>
+<code>&#160; &lt;/gmd:role&gt;</code><br>
+<code>&lt;/gmd:CI_ResponsibleParty&gt;</code><br>
+<code>&#8230;&#8203;</code></p>
+</div>
+<div class="paragraph">
+<p>Addresses are expressed using the ISO 19115 class CI_ResponsibleParty
+and its XML element instance, gmd:CI_ResponsibleParty. This is a common
+structure that is used to encode:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Metadata contact</p>
+</li>
+<li>
+<p>Responsible organisation</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>In the context of GEMINI2 a responsible party set shall include at least
+the organisation name (encoded using gmd:organisationName), an email
+address (encoded using gmd:electronicMailAddress) and a role (encoded
+using gmd:role).</p>
+</div>
+<div class="paragraph">
+<p>The XML element role takes values from the ISO 19115 codelist
+CI_RoleCode. Any value in the code list may be chosen.</p>
+</div>
+<div class="paragraph">
+<p>Additionally, the contact position (encoded using gmd:positionName), the
+postal address (encoded using a combination of gmd:deliveryPoint,
+gmd:city, gmd:administrativeArea, gmd:postalCode and gmd:country),
+telephone number (encoded using gmd:voice) and facsimile number (encoded
+using gmd:facsimile) may be provided.</p>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_2_2_9_code_lists"><a class="anchor" href="#_2_2_9_code_lists"></a><a class="link" href="#_2_2_9_code_lists"><span id="2" class="2 9">#</span>#2.2.9 Code lists</a></h5>
+<div class="paragraph">
+<p>Where a sub-item takes its value from a code list, which may or may not
+be expressed in ISO 19115, the source code list catalogue and code list
+value shall be expressed using the attributes gmd:codeList and
+gmd:codeListValue respectively.</p>
+</div>
+<div class="paragraph">
+<p>Figure 13 shows the encoding where a code list is specified in ISO
+19115. The value of the codeList attribute should be the URL for the ISO
+19115 code list catalogue that is published on the ISO website:</p>
+</div>
+<div class="paragraph">
+<p><a href="https://standards.iso.org/iso/19139/resources/gmxCodelists.xml">https://schemas.isotc211.org/schemas/19139/resources/gmxCodelists.xml</a></p>
+</div>
+<div class="paragraph">
+<p>Plus a hash character acting as a delimiter, and then the identifier of
+the code list, in this case ‘MD_ScopeCode’, that contains the code list
+value that is used. This information could be used to validate the code
+list value and ensure that it is a member of the code list.</p>
+</div>
+<div class="paragraph">
+<p>The value of the code list value attribute (gmd:codeListValue) shall be
+a valid entry from the specified code list dictionary.</p>
+</div>
+<div class="paragraph">
+<p>The element value (i.e. in Figure
+13&#160;&#160;`&lt;gmd:MD_ScopeCode &#8230;&#8203;&gt;dataset&lt;/gmd:MD_ScopeCode&gt;`) is human
+readable text. It can be omitted or given a value different from that of
+the attribute codeListValue (e.g. Dataset). &#160;Developers of GEMINI aware
+applications should note that reliance should not be placed on the
+element value of code list elements but rather on the value of the
+attribute gmd:codeListValue.</p>
+</div>
+<div class="sect5">
+<h6 id="_figure_13_code_list"><a class="anchor" href="#_figure_13_code_list"></a><a class="link" href="#_figure_13_code_list"><strong>Figure 13 - Code list</strong></a></h6>
+<div class="paragraph">
+<p><code>&lt;gmd:MD_ScopeCode codeList="https://schemas.isotc211.org/schemas/19139/resources/gmxCodelists.xml`</code>#MD_ScopeCode" `<br>
+<code>&#160; codeListValue="dataset"&gt;dataset&lt;/gmd:MD_ScopeCode&gt;</code></p>
+</div>
+<div class="paragraph">
+<p>Figure 14 shows a fragment of the code list catalogue with the entries
+of MD_ScopeCode that are relevant to GEMINI2 metadata.</p>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_figure_14_fragment_of_the_code_list_catalogue"><a class="anchor" href="#_figure_14_fragment_of_the_code_list_catalogue"></a><a class="link" href="#_figure_14_fragment_of_the_code_list_catalogue"><strong>Figure 14 - Fragment of the code list catalogue</strong></a></h6>
+<div class="paragraph">
+<p><code>&lt;CT_CodelistCatalogue xmlns="http://www.isotc211.org/2005/gmx" `<br>
+`&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; xmlns:gco="http://www.isotc211.org/2005/gco" `<br>
+`&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; xmlns:gml="http://www.opengis.net/gml/3.2" `<br>
+`&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; xmlns:xlink="http://www.w3.org/1999/xlink" `<br>
+`&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;</code><br>
+<code>&#160; &#8230;&#8203;</code><br>
+<code>&#160; &lt;!--=== MD_ScopeCode ===-&#8594;</code><br>
+<code>&#160; &lt;codelistItem&gt;</code><br>
+<code>&#160;&#160;&#160; &lt;CodeListDictionary gml:id="MD_ScopeCode"&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160; &lt;gml:description&gt;class of information to which the referencing entity applies&lt;/gml:description&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160; &lt;gml:identifier codeSpace="ISOTC211/19115"&gt;MD_ScopeCode&lt;/gml:identifier&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160; &#8230;&#8203;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160; &lt;codeEntry&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;CodeDefinition gml:id="MD_ScopeCode_dataset"&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;gml:description&gt;information applies to the dataset&lt;/gml:description&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;gml:identifier codeSpace="ISOTC211/19115"&gt;dataset&lt;/gml:identifier&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;/CodeDefinition&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160; &lt;/codeEntry&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160; &lt;codeEntry&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;CodeDefinition gml:id="MD_ScopeCode_series"&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;gml:description&gt;information applies to the series&lt;/gml:description&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;gml:identifier codeSpace="ISOTC211/19115"&gt;series&lt;/gml:identifier&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;/CodeDefinition&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160; &lt;/codeEntry&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160; &#8230;&#8203;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160; &lt;codeEntry&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;CodeDefinition gml:id="MD_ScopeCode_service"&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;gml:description&gt;information applies to a capability which a service provider entity makes available to a service user entity through a set of interfaces that define a behaviour, such as a use case&lt;/gml:description&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;gml:identifier codeSpace="ISOTC211/19115"&gt;service&lt;/gml:identifier&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;/CodeDefinition&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160; &lt;/codeEntry&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160; &#8230;&#8203;</code><br>
+<code>&#160;&#160;&#160; &lt;/CodeListDictionary&gt;</code><br>
+<code>&#160; &lt;/codelistItem&gt;</code><br>
+<code>&lt;/CT_CodelistCatalogue&gt;&#160;</code></p>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_2_2_10_null_values"><a class="anchor" href="#_2_2_10_null_values"></a><a class="link" href="#_2_2_10_null_values">2.2.10 Null Values</a></h5>
+<div class="paragraph">
+<p>The ISO 19139 XML schemas provide a means for indicating that the
+contents of an element may be unknown or withheld, through the use of
+the gco:nilReason attribute. This attribute can be added to any element
+in the gmd namespace. It can take the following values:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>inapplicable</p>
+</li>
+<li>
+<p>missing</p>
+</li>
+<li>
+<p>template</p>
+</li>
+<li>
+<p>unknown</p>
+</li>
+<li>
+<p>withheld</p>
+</li>
+<li>
+<p>other:[any text]</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Empty XML elements (see Figure 15) are not permitted in ISO 19139
+metadata instances. Although this is not checked by the “Table A”
+schematron rules in use in UK Location, those creating metadata records
+should avoid creating empty XML elements if at all possible. If an
+optional element is not required, don’t include it; if a mandatory
+element is not available use gco:nilReason.</p>
+</div>
+<div class="sect5">
+<h6 id="_figure_15_examples_of_empty_elements_not_permitted_in_gemini_metadata_instances"><a class="anchor" href="#_figure_15_examples_of_empty_elements_not_permitted_in_gemini_metadata_instances"></a><a class="link" href="#_figure_15_examples_of_empty_elements_not_permitted_in_gemini_metadata_instances"><strong>Figure 15 - Examples of empty elements not permitted in GEMINI metadata instances</strong></a></h6>
+<div class="paragraph">
+<p><code>&lt;gco:CharacterString/&gt;</code></p>
+</div>
+<div class="paragraph">
+<p><code>&lt;gco:CharacterString&gt;&lt;/gco:CharacterString&gt;</code></p>
+</div>
+<div class="paragraph">
+<p><code>&lt;gmx:Anchor /&gt;</code></p>
+</div>
+<div class="paragraph">
+<p><code>&lt;gmx:Anchor&gt;&lt;/gmx:Anchor&gt;</code></p>
+</div>
+<div class="paragraph">
+<p>The following metadata items shall not be nillable:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Title</p>
+</li>
+<li>
+<p>Abstract</p>
+</li>
+<li>
+<p>Bounding box (west, east, south and north coordinates)</p>
+</li>
+<li>
+<p>Unique resource identifier</p>
+</li>
+<li>
+<p>Responsible organization</p>
+</li>
+<li>
+<p>Metadata point of contact</p>
+</li>
+<li>
+<p>Topic category</p>
+</li>
+<li>
+<p>Originating controlled vocabulary title</p>
+</li>
+<li>
+<p>File identifier</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_2_2_11_by_value_or_by_reference"><a class="anchor" href="#_2_2_11_by_value_or_by_reference"></a><a class="link" href="#_2_2_11_by_value_or_by_reference">2.2.11 By Value or By Reference</a></h5>
+<div class="paragraph">
+<p>The content of a metadata instance may be expressed&#160;_by value_&#160;or&#160;_by
+reference_.&#160;_By value_&#160;means that the metadata instance carries all the
+necessary information.&#160;_By reference_&#160;means that a metadata instance
+indicates that content is to be found in an external repository or
+another place within the same instance. The&#160;_by reference_&#160;case is
+supported by the object reference (gco:ObjectReference) attribute group.
+This provides two mechanisms for referencing remote resources:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>XLink, primarily using the xlink:href attribute</p>
+</li>
+<li>
+<p>By UUID using the uuidref attribute</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Figure 16&#160;shows the use of the XLink href attribute to specify a
+vertical CRS by reference to the EPSG Geodetic parameter dataset
+while&#160;Figure 17&#160;shows the same information encoded by value (note
+however, that in this case the domain of validity
+(gml:domainOfValidity), vertical coordinate system (gml:verticalCS) and
+vertical datum (gml:verticalDatum) are themselves encoded&#160;_by
+reference_).</p>
+</div>
+<div class="paragraph">
+<p>Encoding information&#160;_by reference_&#160;is clearly advantageous in the sense
+that it is more efficient (in terms of file size but also avoiding data
+duplication) than by value. However, it presupposes that an XML software
+application will ‘know’ how to dereference the reference. Dereferencing
+is the act of obtaining the externally referenced information. It is
+also important that the referenced information is universally available
+in a structured machine readable form so that it can be incorporated by
+value. In the case of the examples below the EPSG web service endpoint
+can be used to dereference the EPSG URN to return the GML encoded
+vertical CRS. The GML can be directly incorporated in an XML metadata
+instance, where the metadata element accepts a GML value (noting that
+there will be a difference in the GML namespace identifier – EPSG
+returning GML 3.1.1 while metadata instances shall identify the GML
+3.2.1 namespace – in the case of the CRS XML elements of GML there is no
+difference between these versions of GML).</p>
+</div>
+<div class="paragraph">
+<p>Typically,&#160;_by reference_&#160;shall be used for identifying the vertical CRS
+of a vertical extent and the implementation of coupled resource
+(following INSPIRE guidelines) alone. The XLink mechanism shall be used
+(see&#160;Figure 16&#160;for vertical CRS and Figure 18 for coupled resource).
+Note that in encoding coupled resource by referencing the uuidref
+attribute may also be used, in addition to XLink. All other metadata
+items shall be implemented&#160;_by value_.</p>
+</div>
+<div class="sect5">
+<h6 id="_figure_16_vertical_crs_by_reference"><a class="anchor" href="#_figure_16_vertical_crs_by_reference"></a><a class="link" href="#_figure_16_vertical_crs_by_reference"><strong>Figure 16 - Vertical CRS by reference</strong></a></h6>
+<div class="paragraph">
+<p><code>&lt;gmd:verticalCRS xlink:href="http://www.opengis.net/def/crs/EPSG/0/5701"/&gt;</code></p>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_figure_17_vertical_crs_by_value"><a class="anchor" href="#_figure_17_vertical_crs_by_value"></a><a class="link" href="#_figure_17_vertical_crs_by_value"><strong>Figure 17 - Vertical CRS by value</strong></a></h6>
+<div class="paragraph">
+<p><code>&#8230;&#8203;</code><br>
+<code>&lt;gmd:verticalCRS&gt;</code><br>
+<code>&#160; &lt;gml:VerticalCRS gml:id="epsg-crs-5701"&gt;</code><br>
+<code>&#160;&#160;&#160; &lt;gml:identifier codeSpace="OGP"&gt;<a href="http://www.opengis.net/def/crs/EPSG/0/5701/&lt;/gml:identifier&gt" class="bare">http://www.opengis.net/def/crs/EPSG/0/5701/&lt;/gml:identifier&gt</a>;</code><br>
+<code>&#160;&#160;&#160; &lt;gml:name&gt;ODN height&lt;/gml:name&gt;</code><br>
+<code>&#160;&#160;&#160; &lt;gml:domainOfValidity xlink:href="http://www.opengis.net/def/crs/EPSG/0/2792/"/&gt;</code><br>
+<code>&#160;&#160;&#160; &lt;gml:scope&gt;Geodetic and engineering surveying.&lt;/gml:scope&gt;</code><br>
+<code>&#160;&#160;&#160; &lt;gml:verticalCS xlink:href="http://www.opengis.net/def/crs/EPSG/0/6499/"/&gt;</code><br>
+<code>&#160;&#160;&#160; &lt;gml:verticalDatum xlink:href="http://www.opengis.net/def/crs/EPSG/0/5701/"&gt;</code><br>
+<code>&#160; &lt;/gml:VerticalCRS&gt;</code><br>
+<code>&lt;/gmd:verticalCRS&gt;</code><br>
+<code>&#8230;&#8203;&#160;</code></p>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_figure_18_coupled_resource_by_reference"><a class="anchor" href="#_figure_18_coupled_resource_by_reference"></a><a class="link" href="#_figure_18_coupled_resource_by_reference"><strong>Figure 18 - Coupled resource by reference</strong></a></h6>
+<div class="paragraph">
+<p><code>&lt;srv:operatesOn xlink:title="Digital Geological Map Data of Great Britain - 625k (DiGMapGB-625) 2008" `<br>
+`xlink:href="http://metadata.bgs.ac.uk/geonetwork/srv/en/csw?SERVICE=CSW&amp;REQUEST=GetRecordById</code><br>
+<code>&amp;ID=9df8df52-d788-37a8-e044-0003ba9b0d98&amp;OutputSchema=http://www.isotc211.org/2005/gmd&amp;elementSetName=full#BGS-13480426&amp;" uuidref="9df8df52-d788-37a8-e044-0003ba9b0d98" /&gt;</code></p>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_2_2_12_identifiers"><a class="anchor" href="#_2_2_12_identifiers"></a><a class="link" href="#_2_2_12_identifiers"><span id="2" class="2 12">#</span>#2.2.12 Identifiers</a></h5>
+<div class="paragraph">
+<p>GML XML elements which are used in metadata have an optional gml:id
+attribute. The value domain of the identifier is referred to as&#160;_XML
+name_. XML names have certain restrictions. They may contain any
+alphanumeric character, non-English alphanumeric characters, ideograms
+and the underscore, hyphen and period. They may not contain any other
+punctuation characters. The colon is allowed, but its use is reserved
+for namespaces, so it cannot appear in an identifier. XML names may not
+include any whitespace including spaces and carriage returns. All names
+beginning with the letters XML (in uppercase, lowercase or any mixture
+thereof) are reserved (see</p>
+</div>
+<div class="paragraph agi org uk/40-gemini/1047-metadata-guidelines-for-geospatial-data-resources-part-3[11]">
+<p>pages 18 and 19).</p>
+</div>
+<div class="paragraph">
+<p>XML names may only start with letters, ideograms and the underscore
+character. Consequently, care must be taken when using the value of a
+UUID as the value of an identifier because these can begin with numeric
+characters. &#160;If using UUIDs as the basis of such an identifier best
+practice is to prefix the UUIDs with an underscore.</p>
+</div>
+<div class="paragraph">
+<p>An identifier must be unique within the scope of any&#160;XML document (i.e.
+there shall not be more than one id type attribute with a particular
+identifier value) that the metadata record might occur in, such as a
+result set from a CSW query and not just the metadata document itself.</p>
+</div>
+<div class="paragraph">
+<p>If an id type attribute contains an illegally formed XML name the result
+will be a schema validation error.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_2_2_13_free_text"><a class="anchor" href="#_2_2_13_free_text"></a><a class="link" href="#_2_2_13_free_text">2.2.13 Free text</a></h5>
+<div class="paragraph">
+<p>In GEMINI2 there are two ways of encoding free text. &#160;The basic&#160;element
+for providing text of unrestricted length with no internal XML structure
+is gco:CharacterString. This element is appropriate when the text does
+not refer to a specific external resource or registry. &#160;When the
+&#160;provided text is a term or code referring to an externally defined
+explanation or registry value, gmx:Anchor element is&#160;*recommended*&#160;over
+gco:CharacterString. gmx:Anchor contains an additional attribute group
+enabling linking the provided piece of text with an external describing
+resource. The most important of these attributes in this context is
+xlink:href, which contains the actual reference in Uniform Resource
+Identifier (URI) format.</p>
+</div>
+<div class="paragraph">
+<p>For example the encoding of an identifier/code value should be done with
+gmx:Anchor as in Figure 19, rather than gco:CharacterString (Figure 20),
+when the unique resource identifier is referenceable,</p>
+</div>
+<div class="sect5">
+<h6 id="_figure_19_non_empty_free_text_with_gmxanchor"><a class="anchor" href="#_figure_19_non_empty_free_text_with_gmxanchor"></a><a class="link" href="#_figure_19_non_empty_free_text_with_gmxanchor"><strong>Figure 19 - Non-empty free text, with gmx:Anchor</strong></a></h6>
+<div class="literalblock">
+<div class="content">
+<pre>&lt;gmd:identifier&gt;
+  &lt;gmd:MD_Identifier&gt;
+    &lt;gmd:code&gt;
+      &lt;gmx:Anchor xlink:href="http://data.bgs.ac.uk/id/dataHolding/13480180"&gt;
+       World Mineral Statistics Dataset
+      &lt;/gmx:Anchor&gt;
+    &lt;/gmd:code&gt;
+  &lt;/gmd:MD_Identifier&gt;
+&lt;/gmd:identifier&gt;</pre>
+</div>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_figure_20_non_empty_free_text_with_gcocharacterstring"><a class="anchor" href="#_figure_20_non_empty_free_text_with_gcocharacterstring"></a><a class="link" href="#_figure_20_non_empty_free_text_with_gcocharacterstring"><strong>Figure 20 - Non-empty free text, with gco:CharacterString</strong></a></h6>
+<div class="literalblock">
+<div class="content">
+<pre>&lt;gmd:identifier&gt;
+  &lt;gmd:MD_Identifier&gt;
+    &lt;gmd:code&gt;
+      &lt;gco:CharacterString&gt;
+        http://data.bgs.ac.uk/id/dataHolding/13605835
+      &lt;/gco:CharacterString&gt;
+    &lt;/gmd:code&gt;
+  &lt;/gmd:MD_Identifier&gt;
+&lt;/gmd:identifier&gt;</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_2_2_14_limitations_conditions_and_licences"><a class="anchor" href="#_2_2_14_limitations_conditions_and_licences"></a><a class="link" href="#_2_2_14_limitations_conditions_and_licences"><span id="2" class="2 14">#</span>#2.2.14 Limitations, conditions, and licences</a></h5>
+<div class="paragraph">
+<p>GEMINI contains two elements, 25&#160;_Limitations on public access_&#160;and
+26&#160;_Use constraints_. These represent the two INSPIRE
+elements&#160;_Limitations on public access_&#160;and&#160;_Conditions applying to
+access and use_, and are therefore both encoded with ISO 19115
+MD_LegalConstraints elements. INSPIRE requires that they are encoded in
+separate MD_LegalConstraints elements. This means that a GEMINI metadata
+record must contain at least two MD_LegalConstraints elements.</p>
+</div>
+<div class="paragraph">
+<p>INSPIRE requires that both of these elements use MD_RestrictionCode =
+otherRestrictions. Because GEMINI element 26 is for&#160;*use*&#160;constraints,
+it makes sense for both elements to place this inside a useConstraints
+element. Having specified&#160;_otherRestrictions_, each shall then use one
+or more&#160;_otherConstraints_&#160;elements to specify the actual constraints.</p>
+</div>
+<div class="paragraph">
+<p>For&#160;_Limitations on public access_, at least one of
+the&#160;<em>otherConstraints&#160;</em>elements shall use gmx:Anchor to indicate the
+kind of constraint, by reference to the appropriate entry in the INSPIRE
+registry
+(<a href="http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess" class="bare">http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess</a>).
+The free text within the anchor can provide human readable detail.</p>
+</div>
+<div class="paragraph">
+<p>For&#160;_Use constraints_, if there are no conditions, or the conditions are
+unknown, then use gmx:Anchor to reference the appropriate entry in the
+INSPIRE registry
+(<a href="http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse" class="bare">http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse</a>).
+Similarly, if the conditions are documented in a license, use gmx:Anchor
+to reference the full license text. The free text within the anchor can
+provide a human readable summary. If the conditions are not available at
+a URL, they can be entered as plain text; see FIgure 22b.</p>
+</div>
+<div class="paragraph">
+<p>Three examples:</p>
+</div>
+<div class="paragraph">
+<p>Figure 21 describes a commercial product, not available to the public
+for IPR reasons, and with a web page describing licences</p>
+</div>
+<div class="sect5">
+<h6 id="_figure_21_os_licence"><a class="anchor" href="#_figure_21_os_licence"></a><a class="link" href="#_figure_21_os_licence"><strong>Figure 21 - OS licence</strong></a></h6>
+<div class="literalblock">
+<div class="content">
+<pre>&lt;!-- INSPIRE C.17; GEMINI 25 Limitations on public access --&gt;
+
+&lt;gmd:resourceConstraints&gt;
+
+{nbsp}&lt;gmd:MD_LegalConstraints&gt;
+
+{nbsp} &lt;gmd:accessConstraints&gt;
+
+{nbsp}{nbsp} &lt;gmd:MD_RestrictionCode
+
+codeList="https://schemas.isotc211.org/schemas/19139/resources/gmxCodelists.xml#MD_RestrictionCode"
+
+{nbsp}codeListValue="otherRestrictions"&gt;otherRestrictions&lt;/gmd:MD_RestrictionCode&gt;
+
+{nbsp}{nbsp} &lt;/gmd:accessConstraints&gt;
+
+{nbsp} &lt;gmd:otherConstraints&gt;
+
+{nbsp}{nbsp} &lt;gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/INSPIRE_Directive_Article13_1e"/&gt;
+
+{nbsp} &lt;/gmd:otherConstraints&gt;
+
+{nbsp}&lt;/gmd:MD_LegalConstraints&gt;
+
+&lt;/gmd:resourceConstraints&gt;
+
+
+
+{nbsp}&lt;!-- INSPIRE C.18; GEMINI 26 use constraints --&gt;
+
+&lt;gmd:resourceConstraints&gt;
+
+{nbsp}&lt;gmd:MD_LegalConstraints&gt;
+
+{nbsp} &lt;gmd:useConstraints&gt;
+
+{nbsp}{nbsp} &lt;gmd:MD_RestrictionCode
+
+codeList="https://schemas.isotc211.org/schemas/19139/resources/gmxCodelists.xml#MD_RestrictionCode"
+
+{nbsp}codeListValue="otherRestrictions"&gt;otherRestrictions&lt;/gmd:MD_RestrictionCode&gt;
+
+{nbsp}{nbsp} &lt;/gmd:useConstraints&gt;
+
+{nbsp} &lt;gmd:otherConstraints&gt;
+
+{nbsp}{nbsp} &lt;gmx:Anchor xlink:href="https://os.uk/business/licences/index.html"&gt;Use limitation dependent upon licence&lt;/gmx:Anchor&gt;
+
+{nbsp} &lt;/gmd:otherConstraints&gt;
+
+{nbsp}&lt;/gmd:MD_LegalConstraints&gt;
+
+&lt;/gmd:resourceConstraints&gt;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Figure 22a describes an open data product, with no limitations on public
+access, the Open Government Licence referenced, and summarised in plain
+text.</p>
+</div>
+<div class="paragraph">
+<p>Figure 22a describes an open data product, with no limitations on public
+access, the Open Government Licence referenced, and summarised in plain
+text.</p>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_figure_22a_inspire_no_limitations_ogl"><a class="anchor" href="#_figure_22a_inspire_no_limitations_ogl"></a><a class="link" href="#_figure_22a_inspire_no_limitations_ogl"><strong>Figure 22a - INSPIRE no limitations; OGL</strong></a></h6>
+<div class="literalblock">
+<div class="content">
+<pre>&lt;!-- INSPIRE C.17; GEMINI 25 Limitations on public access --&gt;
+
+&lt;gmd:resourceConstraints&gt;
+
+{nbsp}&lt;gmd:MD_LegalConstraints&gt;
+
+{nbsp} &lt;gmd:accessConstraints&gt;
+
+{nbsp}{nbsp} &lt;gmd:MD_RestrictionCode
+
+codeList="https://schemas.isotc211.org/schemas/19139/resources/gmxCodelists.xml#MD_RestrictionCode"
+
+{nbsp}codeListValue="otherRestrictions"&gt;otherRestrictions&lt;/gmd:MD_RestrictionCode&gt;
+
+{nbsp}{nbsp} &lt;/gmd:accessConstraints&gt;
+
+{nbsp} &lt;gmd:otherConstraints&gt;
+
+{nbsp}{nbsp} &lt;gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations"&gt;no limitations&lt;/gmx:Anchor&gt;
+
+{nbsp} &lt;/gmd:otherConstraints&gt;
+
+{nbsp}&lt;/gmd:MD_LegalConstraints&gt;
+
+&lt;/gmd:resourceConstraints&gt;
+
+
+
+{nbsp}&lt;!-- INSPIRE C.18; GEMINI 26 use constraints --&gt;
+
+&lt;gmd:resourceConstraints&gt;
+
+{nbsp}&lt;gmd:MD_LegalConstraints&gt; &lt;!-- change existing example here, was MD_Constraints --&gt;
+
+{nbsp} &lt;gmd:useConstraints&gt;
+
+{nbsp}{nbsp} &lt;gmd:MD_RestrictionCode
+
+codeList="https://schemas.isotc211.org/schemas/19139/resources/gmxCodelists.xml#MD_RestrictionCode"
+
+{nbsp}codeListValue="otherRestrictions"&gt;otherRestrictions&lt;/gmd:MD_RestrictionCode&gt;
+
+{nbsp}{nbsp} &lt;/gmd:useConstraints&gt;
+
+{nbsp} &lt;gmd:otherConstraints&gt;
+
+{nbsp}{nbsp} &lt;gmx:Anchor xlink:href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"&gt;Attribution required&lt;/gmx:Anchor&gt;
+
+{nbsp} &lt;/gmd:otherConstraints&gt;
+
+{nbsp}&lt;/gmd:MD_LegalConstraints&gt;
+
+&lt;/gmd:resourceConstraints&gt;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Figure 22b describes an open data product, with no limitations on public
+access, but plain text conditions of use.</p>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_figure_22b_inspire_no_limitations_on_access_constraint_on_use"><a class="anchor" href="#_figure_22b_inspire_no_limitations_on_access_constraint_on_use"></a><a class="link" href="#_figure_22b_inspire_no_limitations_on_access_constraint_on_use"><strong>Figure 22b - INSPIRE no limitations on access; constraint on use</strong></a></h6>
+<div class="literalblock">
+<div class="content">
+<pre>&lt;!-- INSPIRE C.17; GEMINI 25 Limitations on public access --&gt;
+
+&lt;gmd:resourceConstraints&gt;
+
+ &lt;gmd:MD_LegalConstraints&gt;
+
+  &lt;gmd:accessConstraints&gt;
+
+   &lt;gmd:MD_RestrictionCode
+
+codeList="https://schemas.isotc211.org/schemas/19139/resources/gmxCodelists.xml#MD_RestrictionCode"
+
+codeListValue="otherRestrictions"&gt;otherRestrictions&lt;/gmd:MD_RestrictionCode&gt;
+
+&lt;/gmd:accessConstraints&gt;
+
+&lt;gmd:otherConstraints&gt;
+
+&lt;gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations"&gt;no limitations&lt;/gmx:Anchor&gt;
+
+&lt;/gmd:otherConstraints&gt;
+
+&lt;/gmd:MD_LegalConstraints&gt;
+
+&lt;/gmd:resourceConstraints&gt;
+
+
+
+&lt;!-- INSPIRE C.18; GEMINI 26 use constraints --&gt;
+
+&lt;gmd:resourceConstraints&gt;
+
+&lt;gmd:MD_LegalConstraints&gt; &lt;!-- change existing example here, was MD_Constraints --&gt;
+
+&lt;gmd:useConstraints&gt;
+
+&lt;gmd:MD_RestrictionCode
+
+codeList="https://schemas.isotc211.org/schemas/19139/resources/gmxCodelists.xml#MD_RestrictionCode"
+
+codeListValue="otherRestrictions"&gt;otherRestrictions&lt;/gmd:MD_RestrictionCode&gt;
+
+&lt;/gmd:useConstraints&gt;
+
+&lt;gmd:otherConstraints&gt;
+
+&lt;gco:CharacterString&gt;Not to be used for navigation&lt;/gco:CharacterString&gt;
+
+&lt;/gmd:otherConstraints&gt;
+
+&lt;/gmd:MD_LegalConstraints&gt;
+
+&lt;/gmd:resourceConstraints&gt;</pre>
+</div>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_2_3_metadata_for_datasets_and_dataset_series"><a class="anchor" href="#_2_3_metadata_for_datasets_and_dataset_series"></a><a class="link" href="#_2_3_metadata_for_datasets_and_dataset_series"><span id="2" class="3">#</span>#2.3 Metadata for datasets and dataset series</a></h6>
+
+</div>
+</div>
+<div class="sect4">
+<h5 id="_2_3_1_data_identification"><a class="anchor" href="#_2_3_1_data_identification"></a><a class="link" href="#_2_3_1_data_identification">2.3.1 Data identification</a></h5>
+<div class="paragraph">
+<p>XML elements for encoding metadata for datasets and series of datasets
+are drawn, primarily, from the gmd and gco namespaces and also the gml
+and xlink namespaces. Identification information is encoded using the
+gmd:MD_DataIdentification type (Figure 23).</p>
+</div>
+<div class="paragraph">
+<p>Metadata instances may include more than one gmd:identificationInfo XML
+element. The first gmd:identificationInfo XML element in a GEMINI
+metadata instance for datasets or series shall have as its first and
+only child XML element gmd:MD_DataIdentification. The ISO 19115
+hierarchyLevel element shall be set to “dataset” or “series”. For a
+series, ISO 19115 hierarchyLevelName element must also be set, to
+"dataset" or "series" as appropriate.</p>
+</div>
+<div class="sect5">
+<h6 id="_figure_23_metadata_for_datasets_using_the_gmdmd_dataidentification_type"><a class="anchor" href="#_figure_23_metadata_for_datasets_using_the_gmdmd_dataidentification_type"></a><a class="link" href="#_figure_23_metadata_for_datasets_using_the_gmdmd_dataidentification_type"><strong>Figure 23 - Metadata for datasets using the gmd:MD_DataIdentification type&#160;</strong></a></h6>
+<div class="paragraph">
+<p><code>&lt;gmd:MD_Metadata&gt;</code><br>
+<code>&#160; &#8230;&#8203;</code><br>
+<code>&#160; &lt;gmd:hierarchyLevel&gt;</code><br>
+<code>&#160;&#160;&#160; &lt;gmd:MD_ScopeCode codeList="<code><a href="https://schemas.isotc211.org/schemas/19139/resources/gmxCodelists.xml" class="bare">https://schemas.isotc211.org/schemas/19139/resources/gmxCodelists.xml</a></code>#MD_ScopeCode" codeListValue="dataset"&gt;dataset&lt;/gmd:MD_ScopeCode&gt;</code><br>
+<code>&#160; &lt;/gmd:hierarchyLevel&gt;</code><br>
+<code>&#160; &#8230;&#8203;</code><br>
+<code>&#160; &lt;gmd:identificationInfo&gt;</code><br>
+<code>&#160;&#160;&#160; &lt;gmd:MD_DataIdentification&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160; &#8230;&#8203;</code><br>
+<code>&#160;&#160;&#160; &lt;/gmd:MD_DataIdentification&gt;</code><br>
+<code>&#160; &lt;/gmd:identificationInfo&gt;</code><br>
+<code>&#160; &#8230;&#8203;</code><br>
+<code>&lt;/gmd:MD_Metadata&gt;</code></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_2_3_2_detailed_guidance_for_each_metadata_element"><a class="anchor" href="#_2_3_2_detailed_guidance_for_each_metadata_element"></a><a class="link" href="#_2_3_2_detailed_guidance_for_each_metadata_element"><span id="2" class="3 2">#</span>#2.3.2 Detailed guidance for each metadata element</a></h4>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://www.agi.org.uk/40-gemini/1062-gemini-datasets-and-data-series">Datasets
+and series</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_2_4_metadata_for_services"><a class="anchor" href="#_2_4_metadata_for_services"></a><a class="link" href="#_2_4_metadata_for_services"><span id="2" class="4">#</span>#2.4 Metadata for services</a></h4>
+<div class="sect4">
+<h5 id="_2_4_1_service_identification"><a class="anchor" href="#_2_4_1_service_identification"></a><a class="link" href="#_2_4_1_service_identification">2.4.1 Service identification</a></h5>
+<div class="paragraph">
+<p>XML elements for encoding metadata for services are drawn from the gmd,
+gco, gml, xlink and srv namespaces. Identification information is
+encoded using the srv:SV_ServiceIdentification type (Figure 24).</p>
+</div>
+<div class="paragraph">
+<p>Metadata may include more than one gmd:identificationInfo XML element.
+The first gmd:identificationInfo XML element in a GEMINI metadata
+instance for services shall have as its first child XML element
+srv:SV_ServiceIdentification. The ISO 19115 hierarchyLevel element shall
+be set to “service”, ISO 19115 hierarchyLevelName element must also be
+set, to "service".</p>
+</div>
+<div class="sect5">
+<h6 id="_figure_24_metadata_for_services_using_the_srvsv_serviceidentification_type"><a class="anchor" href="#_figure_24_metadata_for_services_using_the_srvsv_serviceidentification_type"></a><a class="link" href="#_figure_24_metadata_for_services_using_the_srvsv_serviceidentification_type"><strong>Figure 24 - Metadata for services using the srv:SV_ServiceIdentification type</strong></a></h6>
+<div class="paragraph">
+<p><code>&lt;gmd:MD_Metadata&gt;</code><br>
+<code>&#160; &#8230;&#8203;</code><br>
+<code>&#160; &lt;gmd:hierarchyLevel&gt;</code><br>
+<code>&#160;&#160;&#160; &lt;gmd:MD_ScopeCode `<br>
+`&#160;&#160;&#160;&#160;&#160; codeList="<code><a href="https://schemas.isotc211.org/schemas/19139/r" class="bare">https://schemas.isotc211.org/schemas/19139/r</a></code>esources/codelist/gmxCodelists.xml#MD_ScopeCode" `<br>
+`&#160;&#160;&#160;&#160;&#160; codeListValue="service"&gt;service</code><br>
+<code>&#160;&#160;&#160; &lt;/gmd:MD_ScopeCode&gt;</code><br>
+<code>&#160; &lt;/gmd:hierarchyLevel&gt;</code><br>
+<code>&#160; &lt;gmd:hierarchyLevelName&gt;</code><br>
+<code>&#160;&#160;&#160; &lt;gco:CharacterString&gt;service&lt;/gco:CharacterString&gt;</code><br>
+<code>&#160; &lt;/gmd:hierarchyLevelName&gt;</code><br>
+<code>&#160; &#8230;&#8203;</code><br>
+<code>&#160; &lt;gmd:identificationInfo&gt;</code><br>
+<code>&#160;&#160;&#160; &lt;srv:SV_ServiceIdentification&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160; &#8230;&#8203;</code><br>
+<code>&#160;&#160;&#160; &lt;/srv:SV_ServiceIdentification&gt;</code><br>
+<code>&#160; &lt;/gmd:identificationInfo&gt;</code></p>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_2_4_2_service_metadata_null_values"><a class="anchor" href="#_2_4_2_service_metadata_null_values"></a><a class="link" href="#_2_4_2_service_metadata_null_values">2.4.2 Service metadata null values</a></h5>
+<div class="paragraph">
+<p>The ISO 19119 class SV_ServiceIdentification includes two mandatory
+properties that are out of scope of GEMINI2 metadata. These are
+srv:couplingType and srv:containsOperations. Both shall be implemented
+with null values with the nil reason being missing (Figure 23).</p>
+</div>
+<div class="sect5">
+<h6 id="_figure_25_coupling_type_and_contains_operations_null_values"><a class="anchor" href="#_figure_25_coupling_type_and_contains_operations_null_values"></a><a class="link" href="#_figure_25_coupling_type_and_contains_operations_null_values"><strong>Figure 25 – Coupling Type and Contains Operations – Null values</strong></a></h6>
+<div class="paragraph">
+<p><code>&lt;gmd:MD_Metadata&gt;</code><br>
+<code>&#160; &#8230;&#8203;</code><br>
+<code>&#160; &lt;gmd:identificationInfo&gt;</code><br>
+<code>&#160;&#160;&#160; &lt;srv:SV_ServiceIdentification&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160; &#8230;&#8203;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160; &lt;srv:couplingType gco:nilReason="missing"/&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160; &lt;srv:containsOperations gco:nilReason="missing"/&gt;</code><br>
+<code>&#160;&#160;&#160;&#160;&#160; &#8230;&#8203;</code><br>
+<code>&#160;&#160;&#160; &lt;/srv:SV_ServiceIdentification&gt;</code><br>
+<code>&#160; &lt;/gmd:identificationInfo&gt;</code><br>
+<code>&#160; &#8230;&#8203;</code><br>
+<code>&lt;/gmd:MD_Metadata&gt;</code></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_2_4_3_detailed_guidance_for_each_metadata_element"><a class="anchor" href="#_2_4_3_detailed_guidance_for_each_metadata_element"></a><a class="link" href="#_2_4_3_detailed_guidance_for_each_metadata_element"><span id="2" class="4 3">#</span>#2.4.3 Detailed guidance for each metadata element</a></h4>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://www.agi.org.uk/40-gemini/1063-gemini-services">Services</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><em>Last technical update: March 2019</em></p>
+</div>
+<div class="paragraph">
+<p><a href="http://creativecommons.org/licenses/by/4.0/"><span class="image"><img src="https://i.creativecommons.org/l/by/4.0/88x31.png" alt="Creative Commons Licence"></span></a><br>
+This work is licensed under
+a&#160;<a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons
+Attribution 4.0 International License</a></p>
+</div>
+</div>
+</div>
+</div>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  messageStyle: "none",
+  tex2jax: {
+    inlineMath: [["\\(", "\\)"]],
+    displayMath: [["\\[", "\\]"]],
+    ignoreClass: "nostem|nolatexmath"
+  },
+  asciimath2jax: {
+    delimiters: [["\\$", "\\$"]],
+    ignoreClass: "nostem|noasciimath"
+  },
+  TeX: { equationNumbers: { autoNumber: "none" } }
+})
+MathJax.Hub.Register.StartupHook("AsciiMath Jax Ready", function () {
+  MathJax.InputJax.AsciiMath.postfilterHooks.Add(function (data, node) {
+    if ((node = data.script.parentNode) && (node = node.parentNode) && node.classList.contains("stemblock")) {
+      data.math.root.display = "block"
+    }
+    return data
+  })
+})
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_HTMLorMML"></script>
+</body>
+</html>

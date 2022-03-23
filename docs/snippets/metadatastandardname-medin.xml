@@ -1,0 +1,6 @@
+ <gmd:metadataStandardName>
+     <gmx:Anchor xlink:href="http://vocab.nerc.ac.uk/collection/M25/current/MEDIN/">MEDIN</gmx:Anchor>
+  </gmd:metadataStandardName>
+  <gmd:metadataStandardVersion>
+      <gco:CharacterString>3.0</gco:CharacterString>
+  </gmd:metadataStandardVersion>

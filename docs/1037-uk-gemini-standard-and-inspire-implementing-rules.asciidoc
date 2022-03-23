@@ -1,0 +1,139 @@
+= UK-GEMINI Standard and Inspire Implementing Rules
+:figure-caption: Figure
+:toc: left
+:docinfo: shared
+:docinfodir: {assetdir}
+:docinfosubs: attributes
+:safe-mode-unsafe:
+:iconfont-remote!:
+:stylesheet: asciidoctor.css
+:scriptsdir: {assetdir}
+:linkcss:
+:data-uri:
+:iconfont-name: font-awesome.min
+:imagesdir: media
+:icons: font
+:nofooter:
+:sectnumlevels: 3
+:sectlinks:
+:sectanchors:
+:experimental:
+:stem:
+ifdef::variant-dataset[]
+:outfilesuffix: datasets-title{outfilesuffix}
+endif::[]
+ifdef::variant-service[]
+:outfilesuffix: services-title{outfilesuffix}
+endif::[]
+
+=== Introduction{nbsp} _(GEMINI 2.3, June 2018)_
+
+This section of the website is for those producing or maintaining
+metadata for geographic information.
+
+It describes the requirements and guidance for metadata conforming to
+the UK standard known as UK GEMINI. Conformance to GEMINI should ensure
+conformance to the INSPIRE Implementing Rules. UK specific guidance is
+provided.
+
+Both UK GEMINI and the INSPIRE Technical Guidance have been developed
+from the International
+Standard{nbsp}http://www.iso.org/iso/catalogue_detail?csnumber=26020[ISO
+19115:2003]{nbsp}Geographic information - Metadata, with supplementary
+material from ISO 19119:2005 Geographic information - Services. The XML
+encoding follows ISO 19139:2007 Geographic information - Metadata - XML
+encoding.
+
+If you're thinking, why GEMINI? Why not just use the INSPIRE Metadata
+guidance or the ISO
+standards?{nbsp}https://www.agi.org.uk/why-uk-gemini/[Click here for some
+reasons.]
+
+The requirements and guidance are comprehensive and accessible whether
+the metadata is about datasets and dataset series, or services. It
+should prove of value not only to those documenting metadata about
+geographic data and services, but also those responsible for encoding
+the metadata. Note that GEMINI (and the INSPIRE Guidance) are about
+metadata for datasets, series, and services (collectively, 'resources');
+not everything in a GEMINI record can be assumed to be true individually
+for each feature instance in the resource. The underlying ISO standards
+(19115, 19139) do allow for metadata at the instance level.
+
+The information here has been derived from a number of sources
+originally created as standalone documents which partially overlapped in
+their scope. For GEMINI 2.3, the content of these documents has been
+aggregated and presented in a more consistent and complete manner. The
+original documents relating to GEMINI 2.2 and the INSPIRE Implementing
+Rules remain available on
+the{nbsp}https://www.agi.org.uk/uk-gemini/[AGI{nbsp}]and{nbsp}UK Location{nbsp}websites.
+This work was sponsored by{nbsp}Defra, and carried out by members of
+the{nbsp}https://www.agi.org.uk/agi-uk-gemini/[AGI GEMINI Working Group].
+
+Here is
+a{nbsp}https://www.agi.org.uk/40-gemini/1055-uk-gemini-major-changes-since-1-0[summary
+of changes]{nbsp}from earlier versions.
+
+Here is
+a{nbsp}https://www.agi.org.uk/gemini/40-gemini/1250-element-summary/[summary]{nbsp}of
+the GEMINI elements (similar to Table 1 and Table 2 in GEMINI 2.2).
+
+Note: in GEMINI 2.3, the GEMINI Element number is called "GEMINI id";
+the actual numbers have not changed, where the same element was in
+GEMINI 2.2.
+
+=== How to use
+
+If you are:
+
+* *new to metadata*{nbsp}then
+follow{nbsp}https://www.agi.org.uk/40-gemini/1052-metadata-guidelines-for-geospatial-data-resources-part-1[this
+link]{nbsp}to gain a general introduction to metadata for geographic
+information before going any further.
+The{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary[glossary of
+terms]{nbsp}and{nbsp}https://www.agi.org.uk/40-gemini/1047-metadata-guidelines-for-geospatial-data-resources-part-3[list
+of references]{nbsp}may also be useful;
+* *starting to compile metadata conforming to UK GEMINI2*{nbsp}and are
+unfamiliar with the standard, then
+follow{nbsp}https://www.agi.org.uk/40-gemini/1051-uk-gemini-v2-2-specification-for-discovery-metadata-for-geospatial-resources[this
+link]{nbsp}to understand the scope, terms used and the requirements and
+also{nbsp}https://www.agi.org.uk/40-gemini/1049-metadata-guidelines-for-geospatial-data-resources-part-2[this
+one]{nbsp}which provides general guidance;
+* *familiar with UK GEMINI*{nbsp}and require specific information about the
+requirements and guidance for the metadata elements, then follow one of
+these links: to
+describe{nbsp}https://www.agi.org.uk/40-gemini/1062-gemini-datasets-and-data-series[datasets
+or series]{nbsp}or
+for{nbsp}https://www.agi.org.uk/40-gemini/1063-gemini-services[services];
+* *encoding UK GEMINI metadata in XML*,
+then{nbsp}https://www.agi.org.uk/gemini/40-gemini/1048-uk-gemini-encoding-guidance/[general
+guidance]{nbsp}is supplemented with detailed guidance for each metadata
+element
+at{nbsp}https://www.agi.org.uk/40-gemini/1062-gemini-datasets-and-data-series[datasets
+or series]{nbsp}or
+for{nbsp}https://www.agi.org.uk/40-gemini/1063-gemini-services[services]
+* *quality assuring metadata*, then information on common metadata
+errors can
+found{nbsp}https://www.agi.org.uk/40-gemini/1053-common-metadata-errors-uk-location-discovery-metadata-service[here].
+* *Schematron rules*{nbsp}which check many of the constraints in GEMINI is
+available as a{nbsp}https://github.com/AGIGemini/Schematron[on GitHub (free
+link)], under a Creative Commons license.
+
+=== Feedback
+
+This is a new service which we hope will provide better and more
+accessible information for the metadata compiler and also lead to
+improvements in the quality of metadata collected. By publishing the
+content on the web, it will mean that any changes, such as those to the
+INSPIRE Implementing Rules can be published more quickly.
+
+We realise that the various aspects of the website could be improved and
+that there may be some errors and inconsistencies in the content,
+therefore we would like to hear from you if you spot any of these or you
+would like to see improvements in terms of presentation and usability.
+
+Please send any comments
+to{nbsp}mailto:gemini@agi.org.uk?subject=GEMINI2.3%20Release%20candidate[gemini@agi.org.uk],
+copied to Peter Parslow at Ordnance Survey (chair of AGI Standards
+Committee)
+
+_Last updated: May 2018_

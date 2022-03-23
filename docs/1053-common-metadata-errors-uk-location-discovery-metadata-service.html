@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 2.0.17">
+<title>Common Metadata Errors UK Location Discovery Metadata Service</title>
+<link rel="stylesheet" href="./asciidoctor.css">
+<link rel="stylesheet" href="./font-awesome.min.css">
+</head>
+<body class="article toc2 toc-left">
+<div id="header">
+<h1>Common Metadata Errors UK Location Discovery Metadata Service</h1>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel2">
+<li><a href="#_1_introduction"><span id="Intro">#</span>#1. Introduction</a></li>
+<li><a href="#_2_schema_errors"><span id="schema_errors">#</span>#2. Schema errors</a></li>
+<li><a href="#_3_iso_19139_schematron_errors"><span id="ISO_errors">#</span>#3. ISO 19139 Schematron errors</a></li>
+<li><a href="#_4_processing_errors"><span id="proc_errors">#</span>#4. Processing errors</a></li>
+<li><a href="#_5_european_inspire_geoportal_errors_warnings"><span id="inspire_warnings">#</span>#5. European INSPIRE Geoportal errors &amp; warnings</a></li>
+<li><a href="#_6_soft_errors"><span id="soft_errors">#</span>#6. “Soft” errors</a></li>
+<li><a href="#_7_and_the_winner"><span id="winner">#</span>#7. And the winner?</a></li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Return
+to&#160;<a href="https://www.agi.org.uk/gemini/40-gemini/1037-uk-gemini-standard-and-inspire-implementing-rules">GEMINI
+2.3 home page</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/gemini/40-gemini/1053-common-metadata-errors-uk-location-discovery-metadata-service#Intro">1.
+Introduction</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/gemini/40-gemini/1053-common-metadata-errors-uk-location-discovery-metadata-service#schema_errors">2.
+Schema errors</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/gemini/40-gemini/1053-common-metadata-errors-uk-location-discovery-metadata-service#ISO_errors">3.
+ISO 19139 Schematron errors</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/gemini/40-gemini/1053-common-metadata-errors-uk-location-discovery-metadata-service#proc_errors">4.
+Processing Errors</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/gemini/40-gemini/1053-common-metadata-errors-uk-location-discovery-metadata-service#inspire_warnings">5.
+European INSPIRE Geoportal errors and warnings</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/gemini/40-gemini/1053-common-metadata-errors-uk-location-discovery-metadata-service#soft_errors">6.
+"Soft" errors</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/gemini/40-gemini/1053-common-metadata-errors-uk-location-discovery-metadata-service#winner">7.
+And the winner?</a></p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_1_introduction"><a class="anchor" href="#_1_introduction"></a><a class="link" href="#_1_introduction"><span id="Intro">#</span>#1. Introduction</a></h3>
+<div class="paragraph">
+<p>The UK Location Discovery Metadata Service (DMS) lies at the heart of UK
+Location and the delivery of the UK Location Strategy and INSPIRE - 'to
+know what data we have'.</p>
+</div>
+<div class="paragraph">
+<p>The DMS operates by collecting valid metadata records from data
+publishers and making them available on data.gov.uk, and for further
+collection to the European INSPIRE Geoportal.</p>
+</div>
+<div class="sect3">
+<h4 id="_1_1_target_audience"><a class="anchor" href="#_1_1_target_audience"></a><a class="link" href="#_1_1_target_audience">1.1 Target Audience</a></h4>
+<div class="paragraph">
+<p>The primary audience for this document are those responsible for
+creating and maintaining metadata records, located within data provider
+organisations, and their technical partners.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_1_2_background"><a class="anchor" href="#_1_2_background"></a><a class="link" href="#_1_2_background">1.2 Background</a></h4>
+<div class="paragraph">
+<p>This document is largely based on an analysis of validation failures
+when metadata validation was first run on the records that had already
+been collected into&#160;<a href="https://data.gov.uk/">data.gov.uk</a>. Approximately
+half the records present in data.gov.uk at that time initially failed.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_1_3_assumed_knowledge"><a class="anchor" href="#_1_3_assumed_knowledge"></a><a class="link" href="#_1_3_assumed_knowledge">1.3 Assumed Knowledge</a></h4>
+<div class="paragraph">
+<p>This guide assumes that the reader is familiar with the creation and
+management of metadata and has read the&#160;UK Location “Getting Started'
+series of
+guides&#160;[<a href="https://www.agi.org.uk/gemini/40-gemini/1047-metadata-guidelines-for-geospatial-data-resources-part-3">27</a>],
+and the DMS Operational Guide.</p>
+</div>
+<div class="paragraph">
+<p>Readers requiring an introduction to discovery metadata for geospatial
+data resources are referred to the UK GEMINI guide “Metadata Guidelines
+for Geospatial Data Resources, Introduction – Part 1”
+[<a href="https://www.agi.org.uk/gemini/40-gemini/1047-metadata-guidelines-for-geospatial-data-resources-part-3">1</a>].</p>
+</div>
+<div class="paragraph">
+<p>Other useful reading includes AGI’s Guidelines for UK GEMINI Part 3
+Metadata Quality</p>
+</div>
+<div class="paragraph">
+<p>*GEMINI 2.3 note: the DMS Operational Guide, UK GEMINI Encoding Guidance
+and AGI&#8217;s Guidelines - Part 2 have all been consolidated into this
+content.<br>
+*</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_1_4_where_to_obtain_more_information"><a class="anchor" href="#_1_4_where_to_obtain_more_information"></a><a class="link" href="#_1_4_where_to_obtain_more_information">1.4 Where to Obtain More Information</a></h4>
+<div class="paragraph">
+<p>The latest information, and additional resources, can be obtained by
+visiting the&#160;UK Location&#160;web site.</p>
+</div>
+<div class="paragraph">
+<p>If you would like to contact the UK Location Coordination Unit, contact
+details are at&#160;<a href="http://data.gov.uk/location/contact_points" class="bare">http://data.gov.uk/location/contact_points</a></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_1_5_validation"><a class="anchor" href="#_1_5_validation"></a><a class="link" href="#_1_5_validation">1.5 Validation</a></h4>
+
+</div>
+<div class="sect3">
+<h4 id="_gemini_2_3"><a class="anchor" href="#_gemini_2_3"></a><a class="link" href="#_gemini_2_3">GEMINI 2.3</a></h4>
+<div class="paragraph">
+<p>There is no currently no validation tool for GEMINI 2.3, but some
+software companies are developing tools. &#160;To validate a metadata record
+in your own software you should:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Validate using the ISO 19139 (APISO) schemas.
+&#160;(<a href="http://inspire.ec.europa.eu/draft-schemas/inspire-md-schemas/apiso-inspire/apiso-inspire.xsd">http://inspire.ec.europa.eu/draft-schemas/inspire-md-schemas/apiso-inspire/apiso-inspire.xsd</a>)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>It doesn&#8217;t matter which order validation is done in, but to be valid,
+records must validate against both the APISO schema and the GEMINI 2.3
+Schematron.</p>
+</div>
+<div class="paragraph">
+<p>In addition a second (supplemental) schematron is provided to test for
+recommendations in your metadata structure.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_gemini_2_2_and_data_gov_uk"><a class="anchor" href="#_gemini_2_2_and_data_gov_uk"></a><a class="link" href="#_gemini_2_2_and_data_gov_uk">GEMINI 2.2 and data.gov.uk</a></h4>
+<div class="paragraph">
+<p>Currently, validating a UK Location metadata (GEMINI 2.2) record is a
+three stage process:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>First, a metadata set is validated against the ISO 19139 schemas. UK
+Location / data.gov.uk use the XSD files provided by EDEN;
+see&#160;<a href="https://www.agi.org.uk/gemini/40-gemini/1048-uk-gemini-encoding-guidance"><em>UK
+GEMINI Encoding Guidance&#160;</em></a>for details.</p>
+</li>
+<li>
+<p>If the metadata set proves to be schema valid, it is then validated
+against the ISO 19139 Table A.1 Constraints Schematron schema. The
+Schematron schema relies on hardcoded XPath statements which will only
+work effectively on a schema valid XML set.</p>
+</li>
+<li>
+<p>Finally, if the XML is still valid it is validated against the GEMINI2
+Profile Schematron schema.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Any failure of this validation is logged for attention by the
+administrator of the harvest source. The record is loaded into
+data.gov.uk, assuming it passes a very minimal subset.</p>
+</div>
+<div class="paragraph">
+<p>This is expected to change before late 2019, to only accept GEMINI 2.3
+records.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_european_inspire_geoportal"><a class="anchor" href="#_european_inspire_geoportal"></a><a class="link" href="#_european_inspire_geoportal">European INSPIRE Geoportal</a></h4>
+<div class="paragraph">
+<p>The European INSPIRE Geoportal carries out its own validation. This uses
+basically the same rules. No records are rejected, but errors are
+reported,
+at&#160;<a href="https://inspire-geoportal.ec.europa.eu/proxybrowser/">inspire-geoportal.ec.europa.eu/proxybrowser/.</a></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_warnings_soft_errors_recommendations"><a class="anchor" href="#_warnings_soft_errors_recommendations"></a><a class="link" href="#_warnings_soft_errors_recommendations">Warnings, soft errors, recommendations</a></h4>
+<div class="paragraph">
+<p>Even where the metadata is valid, there can be 'soft errors', where the
+metadata may be misleading.</p>
+</div>
+<div class="paragraph">
+<p>With GEMINI 2.3,&#160;a second (supplemental) schematron is provided to test
+for recommendations.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_2_schema_errors"><a class="anchor" href="#_2_schema_errors"></a><a class="link" href="#_2_schema_errors"><span id="schema_errors">#</span>#2. Schema errors</a></h3>
+<div class="sect3">
+<h4 id="_2_1_confusion_of_date_and_datetime"><a class="anchor" href="#_2_1_confusion_of_date_and_datetime"></a><a class="link" href="#_2_1_confusion_of_date_and_datetime">2.1 Confusion of Date and DateTime</a></h4>
+<div class="paragraph">
+<p>In ISO 19115, Date and DateTime are distinct types. Although in many
+elements, either is allowed, the XML encoding needs to be explicit about
+which is given. It is an error to put a date (such as 2010-05-12) in a
+DateTime element.</p>
+</div>
+<div class="paragraph">
+<p>Example of invalid structure:</p>
+</div>
+<div class="paragraph">
+<p><code>&lt;gmd:dateStamp&gt;</code></p>
+</div>
+<div class="paragraph">
+<p><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;gco:DateTime&gt;2012-11-15&lt;/gco:DateTime&gt;</code></p>
+</div>
+<div class="paragraph">
+<p><code>&lt;/gmd:dateStamp&gt;</code></p>
+</div>
+<div class="paragraph">
+<p>Examples of valid structure:</p>
+</div>
+<div class="paragraph">
+<p>This should either include the time, e.g.</p>
+</div>
+<div class="paragraph">
+<p><code>&lt;gmd:dateStamp&gt;</code></p>
+</div>
+<div class="paragraph">
+<p><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;gco:DateTime&gt;2012-11-15T13:50:38&lt;/gco:DateTime&gt;</code></p>
+</div>
+<div class="paragraph">
+<p><code>&lt;/gmd:dateStamp&gt;</code></p>
+</div>
+<div class="paragraph">
+<p>Or be explicit that it doesn’t:</p>
+</div>
+<div class="paragraph">
+<p><code>&lt;gmd:dateStamp&gt;</code></p>
+</div>
+<div class="paragraph">
+<p><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;gco:Date&gt;2012-11-15&lt;/gco:Date&gt;</code></p>
+</div>
+<div class="paragraph">
+<p><code>&lt;/gmd:dateStamp&gt;</code></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_2_2_elements_in_the_wrong_order"><a class="anchor" href="#_2_2_elements_in_the_wrong_order"></a><a class="link" href="#_2_2_elements_in_the_wrong_order">2.2 Elements in the wrong order</a></h4>
+<div class="paragraph">
+<p>Although there is no “logical” ordering of the elements in ISO 19115,
+INSPIRE, or GEMINI, the XML pattern adopted by ISO 19139 means that the
+elements must appear in the correct order. The order enforced is the
+order the elements appear in ISO 19115; the GEMINI Encoding Guidance
+contains an appendix giving the correct order for the subset of elements
+used by GEMINI.</p>
+</div>
+<div class="paragraph">
+<p>The example found contained the ISO 19115 metadata characterSet element
+before the metadata language element.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_3_iso_19139_schematron_errors"><a class="anchor" href="#_3_iso_19139_schematron_errors"></a><a class="link" href="#_3_iso_19139_schematron_errors"><span id="ISO_errors">#</span>#3. ISO 19139 Schematron errors</a></h3>
+<div class="paragraph">
+<p>See
+also&#160;<a href="https://www.agi.org.uk/gemini/40-gemini/1053-common-metadata-errors-uk-location-discovery-metadata-service#soft_errors">“Empty
+strings”</a>.</p>
+</div>
+<div class="sect3">
+<h4 id="_3_1_no_level_description"><a class="anchor" href="#_3_1_no_level_description"></a><a class="link" href="#_3_1_no_level_description">3.1 No level description</a></h4>
+<div class="paragraph">
+<p>ISO 19115 requires that a “level description” is given for any quality
+statement that is not describing the “dataset” or “series” level.
+INSPIRE and GEMINI use the quality statement for both lineage and
+conformity. This means that any “service” record must provide a
+gmd:DQ_Scope/gmd:levelDescription element, such as:</p>
+</div>
+<div class="paragraph">
+<p><code>&lt;gmd:DQ_Scope&gt;</code></p>
+</div>
+<div class="paragraph">
+<p><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;gmd:level&gt;</code></p>
+</div>
+<div class="paragraph">
+<p><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;gmd:MD_ScopeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#MD_ScopeCode" codeListValue="service"&gt;service&lt;/gmd:MD_ScopeCode&gt;</code></p>
+</div>
+<div class="paragraph">
+<p><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;/gmd:level&gt;</code></p>
+</div>
+<div class="paragraph">
+<p><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;gmd:levelDescription&gt;</code></p>
+</div>
+<div class="paragraph">
+<p><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;gmd:MD_ScopeDescription&gt;</code></p>
+</div>
+<div class="paragraph">
+<p><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;gmd:other&gt;</code></p>
+</div>
+<div class="paragraph">
+<p><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;gco:CharacterString&gt;Geographic web service&lt;/gco:CharacterString&gt;</code></p>
+</div>
+<div class="paragraph">
+<p><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;/gmd:other&gt;</code></p>
+</div>
+<div class="paragraph">
+<p><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;/gmd:MD_ScopeDescription&gt;</code></p>
+</div>
+<div class="paragraph">
+<p><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;/gmd:levelDescription&gt;</code></p>
+</div>
+<div class="paragraph">
+<p><code>&lt;/gmd:DQ_Scope&gt;</code></p>
+</div>
+<div class="paragraph">
+<p>A similar rule applies to “hierarchyLevelName”, which must be provided
+for any record that is not describing a dataset.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_3_4_no_format_provided"><a class="anchor" href="#_3_4_no_format_provided"></a><a class="link" href="#_3_4_no_format_provided">3.4 No Format provided</a></h4>
+<div class="paragraph">
+<p>ISO 19139 requires that a format is given, either within the
+“distribution” section or the “distributor” section. INSPIRE &amp; UK GEMINI
+encoding guidance only expects the distribution section, as the place to
+encode the Resource locator, which effectively renders distribution
+format mandatory.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_4_processing_errors"><a class="anchor" href="#_4_processing_errors"></a><a class="link" href="#_4_processing_errors"><span id="proc_errors">#</span>#4. Processing errors</a></h3>
+<div class="paragraph">
+<p>These errors do not result in invalid records on an individual basis,
+but may well result in the wrong records being available to the public.</p>
+</div>
+<div class="sect3">
+<h4 id="_4_1_non_compliant_web_accessible_folder_waf"><a class="anchor" href="#_4_1_non_compliant_web_accessible_folder_waf"></a><a class="link" href="#_4_1_non_compliant_web_accessible_folder_waf">4.1 Non-compliant Web Accessible Folder (WAF)</a></h4>
+<div class="paragraph">
+<p>The collection definition is very precise. Just because you can browse
+to a page that appears to contain the records, it does not mean that the
+system can collect from them. For example, the page may just contain
+links to records that are elsewhere.</p>
+</div>
+<div class="paragraph">
+<p>Similarly, collection differentiates between a single XML record at the
+end of a URL, and a WAF.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_4_2_fileidentifier"><a class="anchor" href="#_4_2_fileidentifier"></a><a class="link" href="#_4_2_fileidentifier">4.2 FileIdentifier</a></h4>
+<div class="paragraph">
+<p>This is the identifier for a metadata record through time, so do ensure
+that it remains the same when you update a record, and is different in
+each record you create.</p>
+</div>
+<div class="paragraph">
+<p>If you accidently change the identifier, the new record will not replace
+the old one.</p>
+</div>
+<div class="paragraph">
+<p>If you accidently provide two records with the same identifier, one will
+replace the other.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_4_3_metadata_date"><a class="anchor" href="#_4_3_metadata_date"></a><a class="link" href="#_4_3_metadata_date">4.3 Metadata date</a></h4>
+<div class="paragraph">
+<p>This is used to distinguish which of two records with the same
+fileIdentifier the system will keep.</p>
+</div>
+<div class="paragraph">
+<p>Even if the records are moved to a different server, if the
+fileIdentifier and metadata date are the same, the harvester will not
+collect the new files.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_5_european_inspire_geoportal_errors_warnings"><a class="anchor" href="#_5_european_inspire_geoportal_errors_warnings"></a><a class="link" href="#_5_european_inspire_geoportal_errors_warnings"><span id="inspire_warnings">#</span>#5. European INSPIRE Geoportal errors &amp; warnings</a></h3>
+<div class="sect3">
+<h4 id="_5_1_conformity_statement_missing"><a class="anchor" href="#_5_1_conformity_statement_missing"></a><a class="link" href="#_5_1_conformity_statement_missing">5.1 Conformity statement missing</a></h4>
+<div class="paragraph">
+<p>INSPIRE requires a ‘conformity’ statement, which can say that the
+resource conforms, does not conform, or has not been evaluated against,
+a specification. This is encoded with an ISO 19115 quality report. The
+INSPIRE encoding guidelines say that “not evaluated” should be encoded
+by leaving out the quality report. For this reason, GEMINI says that it
+is conditional, “required if claiming conformance to INSPIRE”.</p>
+</div>
+<div class="paragraph">
+<p>However, the INSPIRE Geoportal reports a validation issue if the element
+is missing: “The metadata element "Conformity" is missing, empty or
+incomplete but it is required”. This can be ignored.</p>
+</div>
+<div class="paragraph">
+<p><strong>GEMINI Consolidation Note: The INSPIRE Encoding Guidelines were updated
+in 2013; GEMINI 2.3 will be updated on this point.</strong></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_5_2_missing_coupled_resource"><a class="anchor" href="#_5_2_missing_coupled_resource"></a><a class="link" href="#_5_2_missing_coupled_resource">5.2 Missing “coupled resource”</a></h4>
+<div class="paragraph">
+<p>INSPIRE requires “Coupled resource” to be populated “where relevant”.
+This effectively makes it mandatory for View &amp; Download services, and
+the INSPIRE Geoportal reports this as a validation issue. However, the
+Geoportal also reports this issue for a Discovery service metadata
+record, where coupled resource is not mandatory.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_6_soft_errors"><a class="anchor" href="#_6_soft_errors"></a><a class="link" href="#_6_soft_errors"><span id="soft_errors">#</span>#6. “Soft” errors</a></h3>
+<div class="sect3">
+<h4 id="_6_1_empty_strings"><a class="anchor" href="#_6_1_empty_strings"></a><a class="link" href="#_6_1_empty_strings">6.1 Empty strings</a></h4>
+<div class="paragraph">
+<p>When first run, approximately half the rejections were down to this
+error. UK Location decided to remove this check, so the records can be
+harvested, although it is strongly recommended that this structure is
+avoided.</p>
+</div>
+<div class="paragraph">
+<p>ISO 19139 clause A.2.1 states “a property element following the default
+XCPT pattern is designed to have content (by-value) or attributes
+(by-reference or NULL with reason).” In context, this states that (with
+very few exceptions) no metadata element shall be entirely empty: it
+will either have (valid) content, or it will have a gco:nilReason
+attribute stating why the content is absent. If the element is optional,
+it shall be entirely absent from the XML document, not “present but
+empty”.</p>
+</div>
+<div class="paragraph">
+<p>The most common examples were structures like:</p>
+</div>
+<div class="paragraph">
+<p><code>&lt;gmd:phone&gt;</code></p>
+</div>
+<div class="paragraph">
+<p><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;gmd:CI_Telephone/&gt;</code></p>
+</div>
+<div class="paragraph">
+<p><code>&lt;/gmd:phone&gt;</code></p>
+</div>
+<div class="paragraph">
+<p>(in this case, as gmd:phone is optional, it should be entirely missing)</p>
+</div>
+<div class="paragraph">
+<p>and</p>
+</div>
+<div class="paragraph">
+<p><code>&lt;gmd:administrativeArea gco:nilReason="missing"&gt;</code></p>
+</div>
+<div class="paragraph">
+<p><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;gco:CharacterString/&gt;</code></p>
+</div>
+<div class="paragraph">
+<p><code>&lt;/gmd:administrativeArea&gt;</code></p>
+</div>
+<div class="paragraph">
+<p>Examples of valid structures are:</p>
+</div>
+<div class="paragraph">
+<p><code>&lt;gmd:administrativeArea gco:nilReason="missing"/&gt;</code></p>
+</div>
+<div class="paragraph">
+<p>(although again, it would be equally valid to leave the element out
+entirely)</p>
+</div>
+<div class="paragraph">
+<p><code>&lt;gmd:deliveryPoint&gt;</code></p>
+</div>
+<div class="paragraph">
+<p><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;gco:CharacterString&gt;Explorer House, Adanac Drive&lt;/gco:CharacterString&gt;</code></p>
+</div>
+<div class="paragraph">
+<p><code>&lt;/gmd:deliveryPoint&gt;</code></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_6_2_short_relative_urls"><a class="anchor" href="#_6_2_short_relative_urls"></a><a class="link" href="#_6_2_short_relative_urls">6.2 Short relative URLs</a></h4>
+<div class="paragraph">
+<p>The issues discussed here have just been noted whilst browsing the
+records in data.gov.uk</p>
+</div>
+<div class="paragraph">
+<p>Quite a lot of records use the ISO 19115 element “browseGraphic”, which
+could usefully provide a quick visualisation of the dataset. However,
+mostly these are populated with a local path, which is then impossible
+to use once the dataset is harvested to any other location – even if it
+did work in the data publisher’s original location. For example:</p>
+</div>
+<div class="paragraph">
+<p><code>&lt;gmd:MD_BrowseGraphic&gt;</code></p>
+</div>
+<div class="paragraph">
+<p><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;gmd:fileName&gt;</code></p>
+</div>
+<div class="paragraph">
+<p><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;gco:CharacterString&gt;Council_Housing_s.png&lt;/gco:CharacterString&gt;</code></p>
+</div>
+<div class="paragraph">
+<p><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;/gmd:fileName&gt;</code></p>
+</div>
+<div class="paragraph">
+<p><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; …</code></p>
+</div>
+<div class="paragraph">
+<p><code>&lt;/gmd:MD_BrowseGraphic&gt;</code></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_6_3_incorrect_code_list_url"><a class="anchor" href="#_6_3_incorrect_code_list_url"></a><a class="link" href="#_6_3_incorrect_code_list_url">6.3 Incorrect code list URL</a></h4>
+<div class="paragraph">
+<p>The INSPIRE encoding guidance, and therefore earlier versions of the
+GEMINI Encoding Guidance had a minor spelling (capitalisation) mistake
+in the path for the code list dictionary. This is used a number of times
+in most records.</p>
+</div>
+<div class="paragraph">
+<p><code>&lt;gmd:CI_OnLineFunctionCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="information"&gt;information&lt;/gmd:CI_OnLineFunctionCode&gt;</code></p>
+</div>
+<div class="paragraph">
+<p>Should be</p>
+</div>
+<div class="paragraph">
+<p><code>&lt;gmd:CI_OnLineFunctionCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="information"&gt;information&lt;/gmd:CI_OnLineFunctionCode&gt;</code></p>
+</div>
+<div class="paragraph">
+<p>(a lower case ‘c’ in the first occurrence of ‘codelist’ within the URL)</p>
+</div>
+<div class="paragraph">
+<p><strong>GEMINI Consolidation Note: The INSPIRE Encoding Guidelines have been
+updated to correct this, in 2016.</strong></p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_7_and_the_winner"><a class="anchor" href="#_7_and_the_winner"></a><a class="link" href="#_7_and_the_winner"><span id="winner">#</span>#7. And the winner?</a></h3>
+<div class="paragraph">
+<p>This table, for interest, gives the approximate error rate for each of
+the above errors, in the sample tested in late 2012. This does not
+include those soft errors only found by inspection.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Proportion</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Empty strings</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">50%</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No level description</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">25%</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No format</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">24%</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Four other errors, one occurrence each</em></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><em>&#160;Last updated: August 2018</em></p>
+</div>
+<div class="paragraph">
+<p><a href="http://creativecommons.org/licenses/by/4.0/"><span class="image"><img src="https://i.creativecommons.org/l/by/4.0/88x31.png" alt="Creative Commons Licence"></span></a><br>
+This work is licensed under
+a&#160;<a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons
+Attribution 4.0 International License</a></p>
+</div>
+</div>
+</div>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  messageStyle: "none",
+  tex2jax: {
+    inlineMath: [["\\(", "\\)"]],
+    displayMath: [["\\[", "\\]"]],
+    ignoreClass: "nostem|nolatexmath"
+  },
+  asciimath2jax: {
+    delimiters: [["\\$", "\\$"]],
+    ignoreClass: "nostem|noasciimath"
+  },
+  TeX: { equationNumbers: { autoNumber: "none" } }
+})
+MathJax.Hub.Register.StartupHook("AsciiMath Jax Ready", function () {
+  MathJax.InputJax.AsciiMath.postfilterHooks.Add(function (data, node) {
+    if ((node = data.script.parentNode) && (node = node.parentNode) && node.classList.contains("stemblock")) {
+      data.math.root.display = "block"
+    }
+    return data
+  })
+})
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_HTMLorMML"></script>
+</body>
+</html>

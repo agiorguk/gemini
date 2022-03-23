@@ -1,0 +1,112 @@
+= Name : Metadata point of contact
+:assetdir: ../assets
+:stylesdir: {assetdir}
+:figure-caption: Figure
+:toc: left
+:docinfo: shared
+:docinfodir: {assetdir}
+:docinfosubs: attributes
+:safe-mode-unsafe:
+:iconfont-remote!:
+:stylesheet: ../assets/asciidoctor.css
+:scriptsdir: {assetdir}
+:linkcss:
+:data-uri:
+:iconfont-name: font-awesome.min
+:imagesdir: media
+:icons: font
+:nofooter:
+:sectnumlevels: 3
+:sectlinks:
+:sectanchors:
+:experimental:
+:stem:
+ifdef::variant-dataset[]
+:outfilesuffix: datasets-title{outfilesuffix}
+endif::[]
+ifdef::variant-service[]
+:outfilesuffix: services-title{outfilesuffix}
+endif::[]
+
+[cols=",",]
+|===
+|UK GEMINI id |35
+
+|Definition |Party responsible for the creation and maintenance of the
+metadata
+
+|Purpose and meaning |This is the organisation or role in an
+organisation responsible for this metadata.
+
+|Obligation |Mandatory
+
+|Occurrence |Multiple
+
+|Data type |CharacterString
+
+|Domain |Free text
+
+|Guidance |Should include organisation name and contact email address,
+as described under Responsible party.
+
+|Comment |
+
+|Examples |Large-scale Topographic Data Manager, Ordnance Survey.
+
+|Revision date |July 2009
+|===
+
+Corresponding element in other standards...
+
+[%collapsible]
+====
+|===
+|Standard |Name |Comparison
+
+|INSPIRE Metadata |Metadata point of contact |Equivalent
+
+|ISO 19115:2003 |MD_Metadata.contact > CI_ResponsibleParty |ISO 19115
+has a general class
+
+|ISO 19139:2007 |/gmd:MD_Metadata/gmd:contact/gmd:CI_ResponsibleParty |
+|===
+====
+
+Change history...
+
+[%collapsible]
+====
+GEMINI 1 to 2.0: New element
+====
+
+Encoding guidelines...
+
+[%collapsible]
+====
+|===
+|Guidelines a|
+* The encoding example for metadata point of contact is shown below.
+Note that the example shows the minimum required information.
+* The format of address and contact information is described at
+link:component/content/article?id=1048#2.2.8[Responsible party], with a
+more fully populated example.
+* More than one metadata point of contact may be expressed in metadata.
+The role of at least one metadata point of contact shall be
+'pointOfContact'.
+
+|Example a|
+Example showing minimum required information
+
+....
+include::../snippets/metadatapointofcontact.xml[]
+....
+
+|===
+====
+
+Metadata errors observed...
+
+[%collapsible]
+====
+No error information available
+====

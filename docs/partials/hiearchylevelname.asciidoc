@@ -1,0 +1,123 @@
+= Name : Hierarchy level name
+:assetdir: ../assets
+:stylesdir: {assetdir}
+:figure-caption: Figure
+:toc: left
+:docinfo: shared
+:docinfodir: {assetdir}
+:docinfosubs: attributes
+:safe-mode-unsafe:
+:iconfont-remote!:
+:stylesheet: ../assets/asciidoctor.css
+:scriptsdir: {assetdir}
+:linkcss:
+:data-uri:
+:iconfont-name: font-awesome.min
+:imagesdir: media
+:icons: font
+:nofooter:
+:sectnumlevels: 3
+:sectlinks:
+:sectanchors:
+:experimental:
+:stem:
+ifdef::variant-dataset[]
+:outfilesuffix: datasets-title{outfilesuffix}
+endif::[]
+ifdef::variant-service[]
+:outfilesuffix: services-title{outfilesuffix}
+endif::[]
+
+[width="100%",cols="50%,50%",]
+|===
+|UK GEMINI id |47
+
+|Definition |Name of the hierarchy level for which the metadata is
+provided
+
+|Purpose and meaning |Required in the ISO 19115 encoding of GEMINI 2.3
+metadata records, where it allows for multiple scoped sections in the
+metadata.
+
+|Obligation |Conditional, required when Resource type (ISO
+hierarchyLevel) is not "dataset".
+
+|Occurrence |Single
+
+|Data type |CharacterString
+
+|Domain |Free text
+
+|Guidance |Set to "service", "series" as appropriate. Can be set
+"dataset", but in that case it is optional
+
+|Comment |
+
+|Examples a|
+* series
+
+|Revision date |April 2020
+|===
+
+Corresponding element in other standards...
+
+[%collapsible]
+====
+|===
+|Standard |Name |Comparison
+
+|INSPIRE Metadata |see metadata/2.0/req/sds/resource-type, even for
+series |Equivalent
+
+|ISO 19115:2003 |MD_Metadata.hierarchyLevelName |Equivalent
+
+|ISO 19139:2007 |/gmd:MD_Metadata/gmd:hierarchyLevelName |Equivalent
+|===
+====
+
+Change history...
+
+[%collapsible]
+====
+New element in GEMINI 2.3
+====
+
+Encoding guidelines...
+
+[%collapsible]
+====
+|===
+|Guidelines |No specific rules for this metadata element
+|Example a|
+ifdef::variant-dataset[]
+
+Example 1 - dataset, where hierarchyLevelName could just be omitted
+
+....
+include::../snippets/dataset-hierarchylevelname.xml[]
+          
+....
+
+Example 2 - series, where hierarchyLevelName is required
+
+....
+include::../snippets/series-hierarchylevelname.xml[]
+....
+endif::[]
+ifdef::variant-service[]
+|Example a|
+....
+include::../snippets/service-hierarchylevelname.xml[]
+          
+....
+endif::[]
+
+
+
+|===
+====
+
+Metadata errors observed...
+
+[[errors47]]
+No error information available

@@ -1,4 +1,6 @@
 = Name: Title
+:assetdir: ../assets
+:stylesdir: {assetdir}
 :figure-caption: Figure
 :toc: left
 :docinfo: shared
@@ -6,7 +8,7 @@
 :docinfosubs: attributes
 :safe-mode-unsafe:
 :iconfont-remote!:
-:stylesheet: asciidoctor.css
+:stylesheet: ../assets/asciidoctor.css
 :scriptsdir: {assetdir}
 :linkcss:
 :data-uri:
@@ -14,7 +16,6 @@
 :imagesdir: media
 :icons: font
 :nofooter:
-:sectnums:
 :sectnumlevels: 3
 :sectlinks:
 :sectanchors:
@@ -98,7 +99,7 @@ Encoding guidelines...
 ....
 ifdef::variant-dataset[]
 
-include::partials/dataset-title.adoc[]  
+include::snippets/dataset-title.xml[]  
 
 endif::[]                
 ....
@@ -107,7 +108,7 @@ endif::[]
 
 ifdef::variant-service[]
 
-include::partials/service-title.adoc[] 
+include::snippets/service-title.xml[] 
 
 endif::[]  
 ....

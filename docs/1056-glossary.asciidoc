@@ -1,0 +1,388 @@
+= Glossary
+:figure-caption: Figure
+:toc: left
+:docinfo: shared
+:docinfodir: {assetdir}
+:docinfosubs: attributes
+:safe-mode-unsafe:
+:iconfont-remote!:
+:stylesheet: asciidoctor.css
+:scriptsdir: {assetdir}
+:linkcss:
+:data-uri:
+:iconfont-name: font-awesome.min
+:imagesdir: media
+:icons: font
+:nofooter:
+:sectnumlevels: 3
+:sectlinks:
+:sectanchors:
+:experimental:
+:stem:
+ifdef::variant-dataset[]
+:outfilesuffix: datasets-title{outfilesuffix}
+endif::[]
+ifdef::variant-service[]
+:outfilesuffix: services-title{outfilesuffix}
+endif::[]
+
+https://www.agi.org.uk/40-gemini/1056-glossary#A[A]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#B[B]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#C[C]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#D[D]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#E[E]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#F[F]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#G[G]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#H[H]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#I[I]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#J[J]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#K[K]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#L[L]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#M[M]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#N[N]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#O[O]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#P[P]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#Q[Q]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#R[R]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#S[S]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#T[T]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#U[U]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#V[V]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#W[W]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#X[X]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#Y[Y]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#Z[Z]
+
+Return
+to{nbsp}https://www.agi.org.uk/gemini/40-gemini/1037-uk-gemini-standard-and-inspire-implementing-rules[GEMINI
+2.3 home page]
+
+[#A]##*acceptable quality level (AQL)*
+
+threshold value applied to the results of testing data quality to
+determine whether the data meets criteria determined from a standard,
+specification or user requirements
+
+*aggregated AQL*
+
+acceptable quality level for aggregated results from a number of tests,
+e.g. 100% correct
+
+[#C]##*Coordinate Reference System*
+
+a coordinate system that is related to an object by a datum [ISO 19111]
+
+*CRS*
+
+Coordinate Reference System
+
+*CSW*
+
+Catalogue Services for the{nbsp}Web. Http protocol request/respond binding
+for OGC Catalogue Service.
+
+Note: see{nbsp}http://www.opengeospatial.org/standards/specifications/catalog
+
+[#D]##*Data Provider*
+
+the organisation that creates the data and supplies the data for web
+publication, along with its metadata.
+
+Note: for INSPIRE data, the Public Authority with the statutory
+obligation under the INSPIRE regulations.
+
+*Data Publisher*
+
+the organisation that publishes the data on the web and supplies data
+services to data users
+
+*data resource*
+
+dataset, collection of datasets or service supplying data
+
+*dataset*
+
+identifiable collection of data [ISO 19101]
+
+*dataset series*
+
+collection of datasets sharing the same specification, e.g. a 1:1250
+scale map series [ISO 19115]
+
+*discovery metadata*
+
+information about a data or service resource, used to discover and
+access its suitability for sharing or re-use.
+
+*DMS*
+
+Discovery Metadata Service.
+
+Note: one of a number of business services associated with the UK
+Location Information Infrastructure. Implemented by the CSW interface
+at{nbsp}http://csw.data.gov.uk/geonetwork/srv/en/main.home[http://csw.data.gov.uk/geonetwork/]
+
+*domain*
+
+set of allowable values
+
+*DTD*
+
+Document Type Definition
+
+Note: DTD is an XML schema language which defines the legal building
+blocks of an XML document. It is not relevant in the context of GEMINI2
+metadata instances where{nbsp}_XSD_{nbsp}schemas are used to define the structure
+of XML documents.
+
+*[#E]####EDEN*
+
+l’Equipe D’Experts en Normalisation
+
+Note: a collaborative workspace for standardisation in the domain of
+geographic information. See{nbsp}http://eden.ign.fr/welcome
+
+*enumerated list*
+
+set of values, each of which is identified by a code
+
+*EPSG*
+
+European Petroleum Survey Group (defunct but the abbreviation is
+retained in the name of the EPSG Geodetic Parameter Dataset). Since
+2005{nbsp}_OGP_{nbsp}Surveying and Positioning Committee.
+
+Note: examples are given of the use of EPSG{nbsp}__URI__s in{nbsp}_metadata
+instances_. This does not imply that the EPSG registry is the{nbsp}_de
+jure_{nbsp}registry of geodetic parameters for UK Location.
+
+*[#G]####GEMET*
+
+General Multilingual Environmental Thesaurus.
+
+Note: developed by the European Topic Centre for the European
+Environment Agency.
+
+Note: currently published and managed by the European Environmental
+Information and Observation Network.
+
+Note: GEMET can be browsed and searched on-line, accessed through web
+services or downloaded as HTML or SKOS files,
+see{nbsp}http://www.eionet.europa.eu/gemet
+
+*GEMINI2*
+
+the UK discovery metadata profile of ISO 19115.
+
+Note: in this document the term GEMINI2 means version 2.2 of UK GEMINI.
+
+*geographic identifier*
+
+label or code that identifies a location [adapted from ISO 19112]
+
+*GML*
+
+Geography Markup Language [ISO 19136]
+
+*granularity*
+
+resolution in terms of density or frequency
+
+*[#I]####INSPIRE*
+
+infrastructure for Spatial Information in Europe
+
+*ISO*
+
+International Organisation for Standardisation
+
+*ISO/TC 211*
+
+The committee is responsible for standards such as ISO 19115, ISO 19136
+and ISO 19139.
+
+Notes: ISO Technical Committee 211 is responsible for standardisation in
+the field of digital geographic information. The home page of ISO / TC
+211 is{nbsp}http://www.isotc211.org/
+
+*[#L]####location*
+
+identifiable geographic place
+
+*[#M]####metadata*
+
+data about data [ISO 19115]
+
+*metadatabase*
+
+collection of metadata about a set of data resources
+
+*metadata element*
+
+individual item of metadata relating to a data resource, e.g. Extent,
+Topic
+
+*metadata instance*
+
+physically instantiated metadata.
+
+Note: in the context of this document a metadata instance will be
+an{nbsp}_XML document_{nbsp}conforming to ISO / TS 19139 and other associated
+standards.
+
+*metadata item*
+
+a top level metadata concept in the UK GEMINI standard. Title, for
+example, is a metadata item.
+
+Note: metadata items may comprise sub-items.
+
+*metadata service*
+
+service that supplies information about data resources
+
+*metadataset*
+
+identifiable set of metadata relating to a single data resource
+
+*[#O]####OGC*
+
+Open Geospatial Consortium.
+
+Note: an industry consortium of companies, government agencies and
+universities developing publicly available interface standards to
+geo-enable the Web, wireless, location-based services, and mainstream
+IT. See{nbsp}http://www.opengeospatial.org/
+
+*OGP*
+
+International Association of Oil and Gas Producers
+
+*[#P]####profile*
+
+set of one or more base standards or subsets of base standards for a
+particular application
+
+*[#Q]####quality assessment*
+
+review of quality of a data resource
+
+*quality assurance*
+
+process to ensure that quality is of an acceptable level
+
+*quality control*
+
+process of checking items to ensure that they are of an acceptable level
+of quality
+
+*quality management*
+
+overall process for assessing and controlling quality
+
+*quality result*
+
+value of a quality measure
+
+*[#S]####Schematron*
+
+a{nbsp}language for making assertions about patterns in XML documents; ISO
+19757 Document Schema Definition Language
+
+*service*
+
+application that provides information and /or functionality to other
+applications [adapted from Draft Implementing Rules for INSPIRE
+Transformation Services]
+
+*SRS*
+
+Spatial Reference System.
+
+Note: a system for specifying position in the real world [ISO 19112]
+
+*[#U]####UK Information Infrastructure*
+
+Infrastructure for the publication of location information as part of
+the implementation of the UK Location Strategy.{nbsp} Incorporates the UK
+member state implementation of INSPIRE.
+
+*UK Location Coordination Unit*
+
+legal entity for the day-to-day coordination and management of the UK
+Location Information Infrastructure and the UK member state element of
+INSPIRE.
+
+*UKLII*
+
+UK Location Information Infrastructure
+
+*universe of discourse*
+
+view of the real or hypothetical world that includes everything of
+interest
+
+*URI*
+
+Uniform Resource Identifier.
+
+Notes: URIs identify resources and may allow access to representations
+of the resources. A URL is a URI. An overview of W3C materials relating
+to address can be found at{nbsp}http://www.w3.org/Addressing/
+
+*URL*
+
+Uniform Resource Locator. Specifies where an identified resource is
+available on the Web and the mechanism for retrieving it.
+
+*UTC*
+
+Coordinated Universal Time
+
+*UUID (or GUID)*
+
+Universally (or Global) Unique IDentifier (UUID) is a unique 128-bit
+integer that is represented as a 36 (or 32 ignoring the dashes)
+character string of hexadecimal numbers.
+
+Note: UUIDs are system generated and ideally a UUID will never be
+generated twice by any computer in existence.
+
+* Format: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+* Example: 3ce4f380-b394-4e5d-b222-6914ea311156
+
+*[#W]####WAF*
+
+a Web Accessible Folder (WAF) is an HTTP accessible directory of files
+
+Note:{nbsp}typically metadata files in XML format in which all files and
+their time-stamps are visible to a web browser or client. Crawlers are
+able to parse the file listings and date-time stamps and provide a
+search interface on these documents.
+
+*WMS*
+
+Web Mapping Service
+
+*WFS*
+
+Web Feature Service
+
+*[#X]####XLink*
+
+XML Linking Language
+
+Note: used to include metadata element data by-reference rather than
+by-value.
+
+Note: the XLink specification can be found
+at{nbsp}http://www.w3.org/TR/xlink/
+
+*XML*
+
+eXtensible Markup Language
+
+Note: the XML specification can be found
+at{nbsp}http://www.w3.org/TR/REC-xml/
+
+*XML Document*
+
+a collection of data represented in XML
+
+*XML parser{nbsp}*
+
+software component responsible for reading an XML document and dividing
+it into individual elements and attributes.
+
+Note: parsers will check that an XML document is well-formed. Some
+parsers will undertake a schema validation.
+
+*XSD*
+
+XML Schema Definition language.
+
+Note: an XSD is a document written in XML that defines the structure of
+an XML document.
+
+_Last updated: March 2017_
+
+http://creativecommons.org/licenses/by/4.0/[image:https://i.creativecommons.org/l/by/4.0/88x31.png[Creative
+Commons Licence]] +
+This work is licensed under
+a{nbsp}http://creativecommons.org/licenses/by/4.0/[Creative Commons
+Attribution 4.0 International License]

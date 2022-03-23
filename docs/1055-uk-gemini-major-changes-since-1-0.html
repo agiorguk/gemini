@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 2.0.17">
+<title>UK GEMINI Changes Log</title>
+<link rel="stylesheet" href="./asciidoctor.css">
+<link rel="stylesheet" href="./font-awesome.min.css">
+</head>
+<body class="article toc2 toc-left">
+<div id="header">
+<h1>UK GEMINI Changes Log</h1>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel2">
+<li><a href="#_uk_gemini_2_3">UK GEMINI 2.3</a></li>
+<li><a href="#_uk_gemini_2_2">UK GEMINI 2.2</a></li>
+<li><a href="#_uk_gemini_2_1">UK GEMINI 2.1</a></li>
+<li><a href="#_uk_gemini_2_0">UK GEMINI 2.0</a></li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Return
+to&#160;<a href="https://www.agi.org.uk/gemini/40-gemini/1037-uk-gemini-standard-and-inspire-implementing-rules">GEMINI
+2.3 home page</a></p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_uk_gemini_2_3"><a class="anchor" href="#_uk_gemini_2_3"></a><a class="link" href="#_uk_gemini_2_3">UK GEMINI 2.3</a></h3>
+<div class="paragraph">
+<p>In UK GEMINI 2.3, as well as restructuring the content, the following
+changes have been made:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>There is one new element which is mandatory for datasets and series:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Spatial representation type (Note: this element was in GEMINI v1, but
+was removed from GEMINI v2)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>The XML encodings for Use constraints &amp; Limitations on public access
+have changed</p>
+</li>
+<li>
+<p>There are several additional mandatory "metadata on metadata"
+elements, which were already required to encode the record:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>File identifier</p>
+</li>
+<li>
+<p>Hierarchy level name</p>
+</li>
+<li>
+<p>Quality scope</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>There is one additional optional "metadata on metadata" elements:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Parent identifier</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>There are two additional conditional elements:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Character encoding</p>
+</li>
+<li>
+<p>Data quality</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Four elements have been made mandatory</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Conformity</p>
+</li>
+<li>
+<p>Dataset language</p>
+</li>
+<li>
+<p>Data format</p>
+</li>
+<li>
+<p>Spatial reference system</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Unique resource identifier renamed to Resource identifier</p>
+</li>
+<li>
+<p>The element Maintenance information has replaced Frequency of update</p>
+</li>
+<li>
+<p>Vertical extent information may now have multiple occurrence.</p>
+</li>
+<li>
+<p>There are changes to the guidance for a lot elements, bringing in
+guidance relating to INSPIRE and data.gov.uk:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Title</p>
+</li>
+<li>
+<p>Alternative title</p>
+</li>
+<li>
+<p>Abstract</p>
+</li>
+<li>
+<p>Keyword</p>
+</li>
+<li>
+<p>Temporal extent</p>
+</li>
+<li>
+<p>Vertical extent information</p>
+</li>
+<li>
+<p>Spatial reference system</p>
+</li>
+<li>
+<p>Spatial resolution</p>
+</li>
+<li>
+<p>Resource locator</p>
+</li>
+<li>
+<p>Data format</p>
+</li>
+<li>
+<p>Responsible organisation</p>
+</li>
+<li>
+<p>Limitations on public access</p>
+</li>
+<li>
+<p>Additional information source</p>
+</li>
+<li>
+<p>Metadata language</p>
+</li>
+<li>
+<p>Resource identifier</p>
+</li>
+<li>
+<p>Resource type</p>
+</li>
+<li>
+<p>Conformity</p>
+</li>
+<li>
+<p>Coupled resource</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Dates (in both Temporal extent, and Dataset reference date) can no
+longer just be the century.</p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="_editorial_changes_since_the_launch_of_gemini_2_3"><a class="anchor" href="#_editorial_changes_since_the_launch_of_gemini_2_3"></a><a class="link" href="#_editorial_changes_since_the_launch_of_gemini_2_3">Editorial changes since the launch of GEMINI 2.3</a></h4>
+<div class="sect4">
+<h5 id="_april_2020"><a class="anchor" href="#_april_2020"></a><a class="link" href="#_april_2020">April 2020</a></h5>
+<div class="paragraph">
+<p>Changed
+the&#160;<a href="https://www.agi.org.uk/40-gemini/1048-uk-gemini-encoding-guidance">XML
+guidance</a>&#160;and examples to cope with the disappearance of the XML
+resources
+from&#160;<a href="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/" class="bare">http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/</a>.
+The authoritative location is now on&#160;<a href="https://schemas.isotc211.org/" class="bare">https://schemas.isotc211.org/</a>.
+Note: I didn&#8217;t mark this as a revision to each element.</p>
+</div>
+<div class="paragraph">
+<p>Fixed example file on&#160;<a href="https://github.com/AGIGemini/Schematron">GitHub</a>,
+and changed links to point there.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/gemini/40-gemini/1062-gemini-datasets-and-data-series#53">Maintenance
+information</a>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>corrected maximum multiplicity;</p>
+</li>
+<li>
+<p>expanded the description of the domain</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/40-gemini/1062-gemini-datasets-and-data-series#25">Limitations
+on public access</a>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>clarified guidance on how to express more than one limitation, and
+added an example</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/40-gemini/1062-gemini-datasets-and-data-series#54">Metadata
+standard name</a>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>minor change to guidance and example</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/gemini/40-gemini/1062-gemini-datasets-and-data-series#41">Conformity</a>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>correct the description of what has changed in cases where the
+resource has not been tested against an INSPIRE specification</p>
+</li>
+<li>
+<p>add note that it is mandatory for at least one conformity statement to
+relate to an INSPIRE document</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_january_2020"><a class="anchor" href="#_january_2020"></a><a class="link" href="#_january_2020">January 2020</a></h5>
+<div class="paragraph">
+<p>Added guidance for two additional
+elements:&#160;<a href="https://www.agi.org.uk/1062-gemini-datasets-and-data-series#54">Metadata
+standard name</a>,
+and&#160;<a href="https://www.agi.org.uk/1062-gemini-datasets-and-data-series#54">Metadata
+standard version</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/1062-gemini-datasets-and-data-series#6">Keyword</a>&#160;for
+INSPIRE theme: fixed the URL in the encoding example</p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/1062-gemini-datasets-and-data-series#47">Hierarchy
+level name</a>: changed guidance and example to match INSPIRE. Note: this
+means the value is fixed depending on the value chosen for Resource type
+(Hierarchy level).<br></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/1062-gemini-datasets-and-data-series#41">Conformity</a>&#160;to
+an INSPIRE specification: minor fix to guidance, and added a new 'known
+error'</p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/1062-gemini-datasets-and-data-series#25">Limitations
+on public access</a>: improve guidance by listing the allowable INSPIRE
+reasons, with a hyperlink to the register</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_march_2019"><a class="anchor" href="#_march_2019"></a><a class="link" href="#_march_2019">March 2019</a></h5>
+<div class="paragraph">
+<p>Change
+to&#160;<a href="https://www.agi.org.uk/40-gemini/1048-uk-gemini-encoding-guidance#2.1" class="bare">https://www.agi.org.uk/40-gemini/1048-uk-gemini-encoding-guidance#2.1</a>,[<a href="https://www.agi.org.uk/1048-uk-gemini-encoding-guidance#2.1" class="bare">https://www.agi.org.uk/1048-uk-gemini-encoding-guidance#2.1</a>,]&#160;to
+describe a wider choice of relevant XML Schema Definition Files (XSDs)
+that can be used to validate GEMINI instances.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/40-gemini/1062-gemini-datasets-and-data-series#8"><em>Dataset</em>&#160;reference
+date</a>: removed mention of the maximum occurrence for service records,
+when viewing this element for dataset records.</p>
+</div>
+<div class="paragraph">
+<p>Corrected the INSPIRE "corresponding element" entry
+for&#160;<a href="https://www.agi.org.uk/40-gemini/1062-gemini-datasets-and-data-series#41">Conformity</a>,&#160;<a href="https://www.agi.org.uk/40-gemini/1062-gemini-datasets-and-data-series#4">Abstract</a>,&#160;<a href="https://www.agi.org.uk/40-gemini/1062-gemini-datasets-and-data-series#5">Topic
+category</a>,&#160;<a href="https://www.agi.org.uk/40-gemini/1062-gemini-datasets-and-data-series#6">Keyword</a>,&#160;<a href="https://www.agi.org.uk/40-gemini/1062-gemini-datasets-and-data-series#17">Spatial
+reference
+system</a>,&#160;<a href="https://www.agi.org.uk/40-gemini/1062-gemini-datasets-and-data-series#21">Data
+format</a>,&#160;<a href="https://www.agi.org.uk/40-gemini/1062-gemini-datasets-and-data-series#45">File
+Identifier</a>,&#160;<a href="https://www.agi.org.uk/40-gemini/1062-gemini-datasets-and-data-series#47">Hierarchy
+level name</a>,
+and&#160;<a href="https://www.agi.org.uk/40-gemini/1062-gemini-datasets-and-data-series#48">Quality
+scope</a>.</p>
+</div>
+<div class="paragraph">
+<p>Corrected the "corresponding element" entries for service elements to
+reference ISO 19119
+for&#160;<a href="https://www.agi.org.uk/gemini/40-gemini/1063-gemini-services#15">Extent</a>,&#160;<a href="https://www.agi.org.uk/gemini/40-gemini/1063-gemini-services#16">Vertical
+extent
+information</a>,&#160;<a href="https://www.agi.org.uk/gemini/40-gemini/1063-gemini-services#37">Spatial
+data service type</a>,
+and&#160;<a href="https://www.agi.org.uk/gemini/40-gemini/1063-gemini-services#38">Coupled
+resource</a>.</p>
+</div>
+<div class="paragraph">
+<p>Corrected the ISO 19139 "corresponding element" entries for service
+elements&#160;<a href="https://www.agi.org.uk/gemini/40-gemini/1063-gemini-services#15">Extent</a>,&#160;<a href="https://www.agi.org.uk/gemini/40-gemini/1063-gemini-services#16">Vertical
+extent information</a>,
+and&#160;<a href="https://www.agi.org.uk/gemini/40-gemini/1063-gemini-services#18">Spatial
+resolution</a></p>
+</div>
+<div class="paragraph">
+<p>Corrected the ISO 19139 "corresponding element" entries
+for&#160;<a href="https://www.agi.org.uk/gemini/40-gemini/1062-gemini-datasets-and-data-series#1">Title</a>,&#160;<a href="https://www.agi.org.uk/gemini/40-gemini/1062-gemini-datasets-and-data-series#2">Alternative
+title</a>,
+and&#160;<a href="https://www.agi.org.uk/gemini/40-gemini/1062-gemini-datasets-and-data-series#4">Abstract</a>.</p>
+</div>
+<div class="paragraph">
+<p><em>Note: these are all minor corrections of the way the element is
+referenced, rather than substantive changes to which element we consider
+equivalent. The largest impact is to note that INSPIRE only allows one
+Quality scope element - i.e. the metadata has to describe the whole
+dataset.</em></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_january_2019"><a class="anchor" href="#_january_2019"></a><a class="link" href="#_january_2019">January 2019</a></h5>
+<div class="paragraph">
+<p>New&#160;Schematron package, in which the only change is to the "Technical
+Documentation" file (to version 1.7.1), clarifying in one paragraph that
+the Schematron file itself changed from 2.2 to 2.3, but the way one
+should use it didn&#8217;t.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_october_2018"><a class="anchor" href="#_october_2018"></a><a class="link" href="#_october_2018">October 2018</a></h5>
+<div class="paragraph">
+<p><strong><a href="https://www.agi.org.uk/gemini/40-gemini/1062-gemini-datasets-and-data-series#27">Additional
+information</a>&#160;(source)
+and&#160;<a href="https://www.agi.org.uk/gemini/40-gemini/1062-gemini-datasets-and-data-series#19">Resource
+locator</a></strong></p>
+</div>
+<div class="paragraph">
+<p>Clarified that, in line with the underlying ISO standards, Resource
+locator is for links to access the resource, or obtain more information
+about accessing the resource. Links to further information about the
+resource itself, e.g. a user guide, should go in Additional information</p>
+</div>
+<div class="paragraph">
+<p>Note: this is a change from the earlier UK Location guidance, which
+wanted all URLs (except licensing) in Resource locator.</p>
+</div>
+<div class="paragraph">
+<p>The actual changes are in the 'purpose and meaning', guidance, and
+examples of both elements. Also noted that there is an INSPIRE element
+corresponding to Additional information, although it is only mentioned
+in an Annex of the Technical Guidance. We have also changed the name
+from 'Additional information source' to 'Additional information',
+because it is quite possible to provide the information in line, rather
+than by citation or link.</p>
+</div>
+<div class="paragraph">
+<p>Note: additional information is not available for services.</p>
+</div>
+<div class="paragraph">
+<p><strong><a href="https://www.agi.org.uk/gemini/40-gemini/1062-gemini-datasets-and-data-series#36">Resource
+identifier</a></strong></p>
+</div>
+<div class="paragraph">
+<p>Fixed two typos.</p>
+</div>
+<div class="paragraph">
+<p>We have also turned internal cross references from one element to
+another, into hyperlinks.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_september_2018"><a class="anchor" href="#_september_2018"></a><a class="link" href="#_september_2018">September 2018</a></h5>
+<div class="paragraph">
+<p><strong><a href="https://www.agi.org.uk/gemini/40-gemini/1062-gemini-datasets-and-data-series#3">Dataset
+language</a>&#160;and&#160;<a href="https://www.agi.org.uk/gemini/40-gemini/1062-gemini-datasets-and-data-series#33">metadata</a>https://www.agi.org.uk/gemini/40-gemini/1062-gemini-datasets-and-data-series#33[&#160;language]</strong></p>
+</div>
+<div class="paragraph">
+<p>Corrected the name of the Irish language.</p>
+</div>
+<div class="paragraph">
+<p>*https://www.agi.org.uk/gemini/40-gemini/1062-gemini-datasets-and-data-series#17[Spatial
+reference
+system]&#160;and&#160;<a href="https://www.agi.org.uk/gemini/40-gemini/1062-gemini-datasets-and-data-series#48">Quality
+scope</a><br>
+*</p>
+</div>
+<div class="paragraph">
+<p>Corrected that there is an equivalent INSPIRE requirement, although not
+a 'named' metadata element.</p>
+</div>
+<div class="paragraph">
+<p><strong><a href="https://www.agi.org.uk/gemini/40-gemini/1062-gemini-datasets-and-data-series#25">Limitations
+on public access</a></strong></p>
+</div>
+<div class="paragraph">
+<p>Corrected the equivalent ISO 19115 &amp; 19139 elements</p>
+</div>
+<div class="paragraph">
+<p><strong><a href="https://www.agi.org.uk/gemini/40-gemini/1062-gemini-datasets-and-data-series#26">Use
+constraints</a></strong></p>
+</div>
+<div class="paragraph">
+<p>Corrected encoding rules &amp; examples, from "gmd:LegalConstraints" (which
+doesn&#8217;t exist) to "gmd:MD_LegalConstraints".</p>
+</div>
+<div class="paragraph">
+<p>Corrected the service Example One.</p>
+</div>
+<div class="paragraph">
+<p>Corrected the equivalent ISO 19115 &amp; 19139 elements.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_august_2018"><a class="anchor" href="#_august_2018"></a><a class="link" href="#_august_2018">August 2018</a></h5>
+<div class="paragraph">
+<p><strong>Description of validation</strong></p>
+</div>
+<div class="paragraph">
+<p>Fixed the description in section 1.5 of
+the&#160;<a href="https://www.agi.org.uk/gemini/40-gemini/1053-common-metadata-errors-uk-location-discovery-metadata-service">Common
+Metadata Errors article</a>, which only described the GEMINI 2.2 / UK
+Location / data.gov.uk validation.</p>
+</div>
+<div class="paragraph">
+<p><strong>Parent identifier</strong></p>
+</div>
+<div class="paragraph">
+<p>Corrected to be slightly different guidance for service metadata.</p>
+</div>
+<div class="paragraph">
+<p><strong>Spatial data service type</strong></p>
+</div>
+<div class="paragraph">
+<p>Given that it is only relevant to service metadata, corrected the
+obligation (in that context) to mandatory</p>
+</div>
+<div class="paragraph">
+<p><strong>Minimum length of Abstract</strong></p>
+</div>
+<div class="paragraph">
+<p>Add mention in the guidance that the Schematron will complain if it&#8217;s
+&lt;100 characters</p>
+</div>
+<div class="paragraph">
+<p><strong>INSPIRE Default CRSs</strong></p>
+</div>
+<div class="paragraph">
+<p>Fixed the reference - the list of INSPIRE CRSs is in Annex D.4 of the
+Metadata TG, not the Regulations</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_july_2018"><a class="anchor" href="#_july_2018"></a><a class="link" href="#_july_2018">July 2018</a></h5>
+<div class="paragraph">
+<p><strong><a href="https://www.agi.org.uk/40-gemini/1048-uk-gemini-encoding-guidance">UK
+GEMINI Encoding Guidance</a></strong></p>
+</div>
+<div class="paragraph">
+<p><strong>first line</strong>: remove misleading phrase "using XSD schemas"*<br>
+*</p>
+</div>
+<div class="paragraph">
+<p><strong>section 2.2.14</strong>: minor clarifications, and improved the placement of
+figure captions.</p>
+</div>
+<div class="paragraph">
+<p><strong>Change log&#160;</strong>(this article): reordered to bring newest to top; added
+this section (editorial changes)</p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/gemini/40-gemini/1037-uk-gemini-standard-and-inspire-implementing-rules">"<strong>Home
+page</strong>"</a>: fixed link to encoding guidance</p>
+</div>
+<div class="paragraph">
+<p><strong><a href="https://www.agi.org.uk/gemini/40-gemini/1052-metadata-guidelines-for-geospatial-data-resources-part-1">Guidelines
+- part 1 Introduction to Metadata</a></strong>: clarifications &amp; general update</p>
+</div>
+<div class="paragraph">
+<p><strong>All pages</strong>: introduce a link back to the GEMINI 2.3 "home page".</p>
+</div>
+<div class="paragraph">
+<p><strong><a href="https://www.agi.org.uk/gemini/40-gemini/1062-gemini-datasets-and-data-series#3">Guidance
+for element 3 Dataset language</a></strong>: fix typo in anchor text for ISO 639
+link</p>
+</div>
+<div class="paragraph">
+<p><strong><a href="https://www.agi.org.uk/gemini/40-gemini/1062-gemini-datasets-and-data-series#44">Guidance
+for element 44 Bounding box</a></strong>: fix typos in two domain sub element names</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_uk_gemini_2_2"><a class="anchor" href="#_uk_gemini_2_2"></a><a class="link" href="#_uk_gemini_2_2">UK GEMINI 2.2</a></h3>
+<div class="paragraph">
+<p>In UK GEMINI 2.2, the following changes were made:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The elements Frequency of update and Spatial reference system become
+optional;</p>
+</li>
+<li>
+<p>For the elements Temporal extent, Spatial reference system, Spatial
+resolution, Unique resource identifier, Equivalent scale, multiple
+occurrences are allowed;</p>
+</li>
+<li>
+<p>The elements West bounding longitude, East bounding longitude, North
+bounding latitude, South bounding latitude are merged to form Bounding
+Box for which multiple occurrences are allowed.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_uk_gemini_2_1"><a class="anchor" href="#_uk_gemini_2_1"></a><a class="link" href="#_uk_gemini_2_1">UK GEMINI 2.1</a></h3>
+<div class="paragraph">
+<p>&#160;Resource language, Metadata language:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The code for the Ulster Scots language was changed to "sco".</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>&#160;</strong>Dataset reference date:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Occurrence changed to multiple</p>
+</li>
+<li>
+<p>Data type changed to a class comprising the elements:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>date</p>
+</li>
+<li>
+<p>date type (publication/revision/creation)</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Extent:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Deletion of "by country or subdivision of country" from definition,
+with data type changed to character string and domain to an identifier.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Data format:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Data type changed to a class comprising the elements:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Name of format</p>
+</li>
+<li>
+<p>Version of the format (date, number etc.)</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Limitations on public access:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Equivalent ISO 19115 element changed from accessConstraint to
+otherConstraints, making domain free text.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Unique resource identifier:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Data type changed to class, comprising the elements:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>code</p>
+</li>
+<li>
+<p>codespace</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Resource type:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Domain values changed dataset, series, service to match INSPIRE.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Conformity, Specification:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Combined into a new class Conformity, comprising the elements:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Specification</p>
+</li>
+<li>
+<p>Degree</p>
+</li>
+<li>
+<p>Explanation</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Keyword, Originating controlled vocabulary:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Combined into new class Keyword, comprising the elements</p>
+<div class="ulist">
+<ul>
+<li>
+<p>keyword value</p>
+</li>
+<li>
+<p>originating controlled vocabulary.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>An optional element, Equivalent scale has been added.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_uk_gemini_2_0"><a class="anchor" href="#_uk_gemini_2_0"></a><a class="link" href="#_uk_gemini_2_0">UK GEMINI 2.0</a></h3>
+<div class="paragraph">
+<p>The following elements were deleted:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Presentation type</p>
+</li>
+<li>
+<p>Supply media</p>
+</li>
+<li>
+<p>Spatial representation type</p>
+</li>
+<li>
+<p>Browse graphic</p>
+</li>
+<li>
+<p>Metadata standard name</p>
+</li>
+<li>
+<p>Metadata standard version</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>None of these were mandatory, and they are all part of the larger ISO
+19115 set.</p>
+</div>
+<div class="paragraph">
+<p>The following element names were changed:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Subject to Keyword</p>
+</li>
+<li>
+<p>Online resource to Resource locator</p>
+</li>
+<li>
+<p>Date to Temporal extent</p>
+</li>
+<li>
+<p>West bounding coordinate to West bounding longitude</p>
+</li>
+<li>
+<p>East bounding coordinate to East bounding longitude</p>
+</li>
+<li>
+<p>North bounding coordinate to North bounding latitude</p>
+</li>
+<li>
+<p>South bounding coordinate to South bounding latitude</p>
+</li>
+<li>
+<p>Access constraints to Limitations on public access</p>
+</li>
+<li>
+<p>Date of update of data to Metadata date</p>
+</li>
+<li>
+<p>Distributor and Originator (merged) to Responsible organisation</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The following elements were added to meet the requirements of INSPIRE:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Unique resource identifier</p>
+</li>
+<li>
+<p>Resource type</p>
+</li>
+<li>
+<p>Conformity</p>
+</li>
+<li>
+<p>Equivalent scale</p>
+</li>
+<li>
+<p>Metadata language</p>
+</li>
+<li>
+<p>Metadata point of contact</p>
+</li>
+<li>
+<p>Spatial data service type (for services)</p>
+</li>
+<li>
+<p>Coupled resource (for services)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Other minor changes are identified in the element tables.</p>
+</div>
+<div class="paragraph">
+<p><em>Last updated: August 2018</em></p>
+</div>
+<div class="paragraph">
+<p><a href="http://creativecommons.org/licenses/by/4.0/"><span class="image"><img src="https://i.creativecommons.org/l/by/4.0/88x31.png" alt="Creative Commons Licence"></span></a><br>
+This work is licensed under
+a&#160;<a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons
+Attribution 4.0 International License</a></p>
+</div>
+</div>
+</div>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  messageStyle: "none",
+  tex2jax: {
+    inlineMath: [["\\(", "\\)"]],
+    displayMath: [["\\[", "\\]"]],
+    ignoreClass: "nostem|nolatexmath"
+  },
+  asciimath2jax: {
+    delimiters: [["\\$", "\\$"]],
+    ignoreClass: "nostem|noasciimath"
+  },
+  TeX: { equationNumbers: { autoNumber: "none" } }
+})
+MathJax.Hub.Register.StartupHook("AsciiMath Jax Ready", function () {
+  MathJax.InputJax.AsciiMath.postfilterHooks.Add(function (data, node) {
+    if ((node = data.script.parentNode) && (node = node.parentNode) && node.classList.contains("stemblock")) {
+      data.math.root.display = "block"
+    }
+    return data
+  })
+})
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_HTMLorMML"></script>
+</body>
+</html>
