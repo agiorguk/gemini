@@ -99,7 +99,7 @@ Encoding guidelines...
 ....
 ifdef::variant-dataset[]
 
-include::snippets/dataset-title.xml[]  
+include::../snippets/dataset-title.xml[]  
 
 endif::[]                
 ....
@@ -108,7 +108,7 @@ endif::[]
 
 ifdef::variant-service[]
 
-include::snippets/service-title.xml[] 
+include::../snippets/service-title.xml[] 
 
 endif::[]  
 ....
