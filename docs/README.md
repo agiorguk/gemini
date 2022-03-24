@@ -6,7 +6,7 @@ Simple readme for testing conversion of asciidoctor files
 * [Services](partials/titleservices-title.html) 
 * [Datasets](partials/titledatasets-title.html)
 
-Both files are generated from [title.asciidoc](https://github.com/archaeogeek/gemini/blob/main/docs/partials/title.asciidoc) with different snippets for datasets and services in the partials folder.
+Both files are generated from [title.asciidoc](https://github.com/archaeogeek/gemini/blob/main/docs/partials/title.asciidoc) with different xml snippets for datasets and services in the snippets folder.
 
 To generate, use the `-a` parameter, eg with docker (from the docs folder):
 
