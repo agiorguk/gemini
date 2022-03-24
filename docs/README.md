@@ -11,5 +11,5 @@ Both files are generated from [title.asciidoc](https://github.com/archaeogeek/ge
 To generate, use the `-a` parameter, eg with docker (from the docs folder):
 
 ```
-docker run --rm -v $(pwd):/documents/ asciidoctor/docker-asciidoctor asciidoctor -a variant-dataset title.asciidoc
+docker run --rm -v $(pwd):/documents/ asciidoctor/docker-asciidoctor asciidoctor -a variant-dataset partials/title.asciidoc
 ```
