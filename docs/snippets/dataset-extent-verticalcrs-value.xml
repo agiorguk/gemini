@@ -1,0 +1,57 @@
+<gmd:MD_Metadata>
+  ...
+  <gmd:dataIdentification>
+    <gmd:MD_DataIdentification id="XYZ-101010">
+      ...
+      <gmd:extent>
+        <gmd:EX_Extent>
+          ...
+          <gmd:verticalElement>
+            <gmd:EX_VerticalExtent>
+              <gmd:minimumValue>
+                <gco:Real>42</gco:Real>
+              </gmd:minimumValue>
+              <gmd:maximumValue>
+                <gco:Real>94</gco:Real>
+              </gmd:maximumValue>
+              <gmd:verticalCRS>
+                <gml:VerticalCRS gml:id='epsg-crs-5701'>
+                  <gml:identifier codeSpace='OGP'>
+                    urn:ogc:def:crs:EPSG::5701</gml:identifier>
+                  <gml:name>ODN height</gml:name>
+                  <gml:scope>Geodetic and engineering surveying.</gml:scope>
+                  <gml:verticalCS>
+                    <gml:VerticalCS gml:id='epsg-cs-6499'>
+                      <gml:identifier codeSpace='OGP'>urn:ogc:def:cs:EPSG::6499</gml:identifier>
+                      <gml:name>Vertical CS. Axis: height (H). Orientation: up. UoM: m.</gml:name>
+                      <gml:remarks>Used in vertical coordinate reference systems.</gml:remarks>
+                      <gml:axis>
+                        <gml:CoordinateSystemAxis gml:id='epsg-axis-114' gml:uom='urn:ogc:def:uom:EPSG::9001'>
+                          <gml:descriptionReference xlink:href='http://www.opengis.net/def/crs/EPSG/0/9904'/>
+                          <gml:identifier codeSpace='OGP'>urn:ogc:def:axis:EPSG::114</gml:identifier>
+                          <gml:axisAbbrev>H</gml:axisAbbrev>
+                          <gml:axisDirection codeSpace='EPSG'>up</gml:axisDirection>
+                        </gml:CoordinateSystemAxis>
+                      </gml:axis>
+                    </gml:VerticalCS>
+                  </gml:verticalCS>
+                  <gml:verticalDatum>
+                    <gml:VerticalDatum gml:id='epsg-datum-5101'>
+                      <gml:identifier codeSpace='OGP'>urn:ogc:def:datum:EPSG::5101</gml:identifier>
+                      <gml:name>Ordnance Datum Newlyn</gml:name>
+                      <gml:remarks>Orthometric heights.</gml:remarks>
+                      <gml:scope>Topographic mapping, geodetic survey.</gml:scope>
+                      <gml:anchorDefinition>Mean Sea Level at Newlyn between 1915 and 1921.</gml:anchorDefinition>
+                    </gml:VerticalDatum>
+                  </gml:verticalDatum>
+                </gml:VerticalCRS>
+              </gmd:verticalCRS>
+            </gmd:EX_VerticalExtent>
+          </gmd:verticalElement>
+        </gmd:EX_Extent>
+      </gmd:extent>
+      ...
+    </gmd:MD_DataIdentification>
+  </gmd:dataIdentification>
+  ...
+</gmd:MD_Metadata>

@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 2.0.17">
+<title>Name : Keyword</title>
+<link rel="stylesheet" href="../assets/asciidoctor.css">
+<link rel="stylesheet" href="../assets/font-awesome.min.css">
+</head>
+<body class="article">
+<div id="header">
+<h1>Name : Keyword</h1>
+</div>
+<div id="content">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">UK GEMINI id</th>
+<th class="tableblock halign-left valign-top">6</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Topic of the content of the data resource</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Purpose and meaning</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The purpose of this element is to indicate the
+general subject area of the data resource using keywords. This enables
+searches to eliminate resources that are of no interest. Ideally, a
+standardised set of keywords should be used, so that resources can be
+identified in any search. This element is similar to <a href="#5">Topic
+category</a>, which has a coded list of high-level categories, whereas
+Keyword allows more appropriate terms to describe the data resource.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Obligation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mandatory</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Occurrence</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Multiple</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Data type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Class</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Domain</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>This class comprises the following elements:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Keyword value (mandatory)</p>
+</li>
+<li>
+<p>Originating controlled vocabulary (conditional - if keywords originate
+from a controlled vocabulary)</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>These are specified as follows:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 34%;">
+<col style="width: 33%;">
+<col style="width: 33%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"></th>
+<th class="tableblock halign-left valign-top">Keyword value</th>
+<th class="tableblock halign-left valign-top">Originating controlled vocabulary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">topic of the content of the data resource</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">name of the
+formally registered thesaurus or a similar authoritative source of
+keywords</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Obligation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">mandatory</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">conditional - required if keywords originate
+from a controlled vocabulary</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Occurrence</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">multiple</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">single</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Data type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Class CI_Citation (from ISO19115)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Domain</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">free text</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Other Comments</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">a default value will generally be assigned for this</p></td>
+</tr>
+</tbody>
+</table></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Guidance</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Keyword values should if possible be taken from a list of standard
+subject categories, identified in the element 'Originating controlled
+vocabulary'.</p>
+</li>
+<li>
+<p>Possible vocabularies include the
+<a href="http://www.esd.org.uk/standards/ipsv/">Integrated Public Sector
+Vocabulary (IPSV)</a> from the esd-toolkit, which should be used by public
+sector bodies, and <a href="http://www.eionet.europa.eu/gemet/en/themes/">GEMET</a></p>
+</li>
+<li>
+<p>For other Keywords, if drawn from a Controlled Vocabulary, this must
+be stated.</p>
+</li>
+<li>
+<p>Terms covering the subject of the data resource should be selected.</p>
+</li>
+<li>
+<p>For conformance with INSPIRE, the keyword should describe the relevant
+INSPIRE spatial data theme, such as those contained in GEMET INSPIRE;</p>
+</li>
+<li>
+<p>The formal citation for the vocabulary should be given, including at
+least the title and reference date.</p>
+</li>
+<li>
+<p>Acronyms and their expanded versions as separate keywords are
+acceptable within the Keyword element.</p>
+</li>
+<li>
+<p>Other standard subject category areas may be used, and different user
+communities may need to create their own lists of subject areas.</p>
+</li>
+<li>
+<p>Multiple keywords may be stored in an individual metadata record, and
+these may come from more than one originating controlled vocabulary.</p>
+</li>
+</ol>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Comment</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This element is similar to Topic Category, but allows a
+broader range of values.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Examples</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Land cover, General Environmental Multi-Lingual Thesaurus (GEMET)</p>
+</li>
+<li>
+<p>Gazetteer service, General Environmental Multi-Lingual Thesaurus
+(GEMET)</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Revision date</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">May 2019</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Corresponding element in other standards&#8230;&#8203;</p>
+</div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Standard</th>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Comparison</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">INSPIRE Metadata</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">inspire-theme-keyword and additional-keywords</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Equivalent</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19115:2003</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">MD_Identification.descriptiveKeywords &gt; MD_Keywords</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Equivalent</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19139:2007</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">/gmd:MD_Metadata/gmd:identificationInfo/srv:SV_ServiceIdentification/gmd:descriptiveKeywords/gmd:MD_Keywords</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Equivalent</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<div class="paragraph">
+<p>Change history&#8230;&#8203;</p>
+</div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>GEMINI 1 to 2.0: Change of name from 'Subject'</p>
+</li>
+<li>
+<p>GEMINI 2.0 to 2.1: expansion to include keyword value and originating
+controlled vocabulary</p>
+</li>
+</ol>
+</div>
+</div>
+</details>
+<div class="paragraph">
+<p>Encoding guidelines&#8230;&#8203;</p>
+</div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Guidelines</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>The GEMINI2 keyword item comprises keyword value(s) and, conditionally, the specification of an originating controlled vocabulary. If keywords are not selected from a controlled vocabulary the encoding shown in Example One shall be used.</p>
+</li>
+<li>
+<p>In the context of INSPIRE the presence of at least one keyword is mandated. For service metadata there shall be at least one keyword defining the category or subcategory of the service using its language neutral name as defined in Part D 4 of the Metadata Implementing Rules (the language neutral names are the words in brackets using lower camel case notation). The keyword shown in Example Two is an example of this</p>
+</li>
+<li>
+<p>Where keywords do originate from a controlled vocabulary the encoding shown in Example Two shall be used. Note the inclusion of the gmd:thesaurusName XML element which contains the XML element gmd:CI_Citation. This element must contain at least a title, reference date and date type. In the example keywords have been selected from the GEMET Concepts controlled vocabulary.</p>
+</li>
+<li>
+<p>Example Three shows how the GEMET INSPIRE themes and the GEMET concepts controlled vocabularies should be cited according to the INSPIRE guidance [9].</p>
+</li>
+<li>
+<p>Note that more than one keyword value may be selected from a single controlled vocabulary. Note also that keywords may be selected from more than one controlled vocabulary. In this case the encoding shown in Example One shall be used.</p>
+</li>
+<li>
+<p>The srv:SV_ServiceIdentification XML element has an optional property srv:keywords which exhibits the same behaviour as gmd:descriptiveKeywords. Consequently keywords for service metadata could be encoded in the way shown in Example Five. This approach shall not be followed in GEMINI2 metadata instances</p>
+</li>
+<li>
+<p>This case arises because the XML element gmd:descriptiveKeywords is a an instance of the property (or role in fact) on the ISO 19115 abstract class MD_Identification, from which both SV_ServiceIdentification and MD_DataIdentification inherit. Therefore, SV_ServiceIdentification inherits the descriptiveKeywords property and adds a similar property called keywords.</p>
+</li>
+<li>
+<p>Recommended best practice is to select a human readable value from a controlled vocabulary. An example from the Marine Geospatial community is <a href="http://seadatanet.maris2.nl/v_bodc_vocab_v2/search.asp?lib=P02" class="bare">http://seadatanet.maris2.nl/v_bodc_vocab_v2/search.asp?lib=P02</a></p>
+</li>
+</ol>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Example</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>`Example One (services) - without controlled vocabulary</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>&lt;gmd:MD_Metadata&gt;
+  ...
+  &lt;gmd:identificationInfo&gt;
+    &lt;srv:SV_ServiceIdentification&gt;
+      ...
+      &lt;gmd:descriptiveKeywords&gt;
+        &lt;gmd:MD_Keywords&gt;
+          &lt;gmd:keyword&gt;
+            &lt;gco:CharacterString&gt;sounding&lt;/gco:CharacterString&gt;
+          &lt;/gmd:keyword&gt;
+        &lt;/gmd:MD_Keywords&gt;
+      &lt;/gmd:descriptiveKeywords&gt;
+      ...
+    &lt;/srv:SV_ServiceIdentification&gt;
+  &lt;/gmd:identificationInfo&gt;
+  ...
+&lt;/gmd:MD_Metadata&gt;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Example Two (services) - service keyword from part D4 on the INSPIRE
+Metadata Implementing Rules</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>&lt;gmd:MD_Metadata&gt;
+  ...
+  &lt;gmd:identificationInfo&gt;
+    &lt;srv:SV_ServiceIdentification&gt;
+      ...
+      &lt;gmd:keywords&gt;
+        &lt;gmd:MD_Keywords&gt;
+          &lt;gmd:keyword&gt;
+            &lt;gco:CharacterString&gt;humanCatalogueViewer&lt;/gco:CharacterString&gt;
+          &lt;/gmd:keyword&gt;
+          &lt;gmd:thesaurusName&gt;
+            &lt;gmd:CI_Citation&gt;
+          &lt;gmd:title&gt;
+            &lt;gco:CharacterString&gt;Commission Regulation (EC) No 1205/2008 of 3 December 2008 implementing Directive 2007/2/
+              EC of the European Parliament and of the Council as regards metadata&lt;/gco:CharacterString&gt;
+          &lt;/gmd:title&gt;
+          &lt;gmd:alternateTitle&gt;
+                    &lt;gco:CharacterString&gt;INSPIRE Metadata Implementing Rules&lt;/gco:CharacterString&gt;
+          &lt;/gmd:alternateTitle&gt;
+            &lt;gmd:date&gt;
+              &lt;gmd:CI_Date&gt;
+            &lt;gmd:date&gt;
+              &lt;gco:Date&gt;2008-12-03&lt;/gco:Date&gt;
+            &lt;/gmd:date&gt;
+                  &lt;gmd:dateType&gt;
+                    &lt;gmd:CI_DateTypeCode 
+                      codeList='https://schemas.isotc211.org/schemas/19139/resources/codelist/gmxCodelists.xml#CI_DateTypeCode' 
+                      codeListValue='publication'&gt;publication&lt;/gmd:CI_DateTypeCode&gt;
+                  &lt;/gmd:dateType&gt;
+                &lt;/gmd:CI_Date&gt;
+          &lt;/gmd:date&gt;
+              &lt;gmd:identifier&gt;
+              &lt;gmd:MD_Identifier&gt;
+              &lt;gmd:code&gt;
+                        &lt;gco:CharacterString&gt;OJ:L:2008:326:0012:01&lt;/gco:CharacterString&gt;
+                  &lt;/gmd:code&gt;
+                &lt;/gmd:MD_Identifier&gt;
+              &lt;/gmd:identifier&gt;
+              &lt;gmd:otherCitationDetails&gt;
+                &lt;gco:CharacterString&gt;D 4 CLASSIFICATION OF SPATIAL DATA SERVICES&lt;/gco:CharacterString&gt;
+              &lt;/gmd:otherCitationDetails&gt;
+          &lt;/gmd:CI_Citation&gt;
+          &lt;/gmd:thesaurusName&gt;
+        &lt;/gmd:MD_Keywords&gt;
+      &lt;/gmd:keywords&gt;
+      ...
+    &lt;/srv:SV_ServiceIdentification&gt;
+  &lt;/gmd:identificationInfo&gt;
+  ...
+&lt;/gmd:MD_Metadata&gt;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Example Three (services) - GEMET concepts</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>&lt;gmd:MD_Metadata&gt;
+  ...
+  &lt;gmd:identificationInfo&gt;
+    &lt;srv:SV_ServiceIdentification&gt;
+      ...
+      &lt;gmd:descriptiveKeywords&gt;
+        &lt;gmd:MD_Keywords&gt;
+          &lt;gmd:keyword&gt;
+            &lt;gco:CharacterString&gt;water monitoring&lt;/gco:CharacterString&gt;
+          &lt;/gmd:keyword&gt;
+          &lt;gmd:keyword&gt;
+            &lt;gco:CharacterString&gt;water quality&lt;/gco:CharacterString&gt;
+          &lt;/gmd:keyword&gt;
+          &lt;gmd:thesaurusName&gt;
+            &lt;gmd:CI_Citation&gt;
+              &lt;gmd:title&gt;
+                &lt;gco:CharacterString&gt;GEMET - Concepts, version 2.4&lt;/gco:CharacterString&gt;
+              &lt;/gmd:title&gt;
+              &lt;gmd:date&gt;
+                &lt;gmd:CI_Date&gt;
+                  &lt;gmd:date&gt;
+                    &lt;gco:Date&gt;2010-01-13&lt;/gco:Date&gt;
+                  &lt;/gmd:date&gt;
+                  &lt;gmd:dateType&gt;
+                    &lt;gmd:CI_DateTypeCode 
+                      codeList='https://schemas.isotc211.org/schemas/19139/resources/codelist/gmxCodelists.xml#CI_DateTypeCode' 
+                      codeListValue='publication'&gt;publication&lt;/gmd:CI_DateTypeCode&gt;
+                  &lt;/gmd:dateType&gt;
+                &lt;/gmd:CI_Date&gt;
+              &lt;/gmd:date&gt;
+            &lt;/gmd:CI_Citation&gt;
+          &lt;/gmd:thesaurusName&gt;
+        &lt;/gmd:MD_Keywords&gt;
+      &lt;/gmd:descriptiveKeywords&gt;
+      ...
+    &lt;/srv:SV_ServiceIdentification&gt;
+  &lt;/gmd:identificationInfo&gt;
+  ...
+&lt;/gmd:MD_Metadata&gt;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Example Four (services) - keywords from two controlled vocabularies</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>&lt;gmd:MD_Metadata&gt;
+  ...
+  &lt;gmd:identificationInfo&gt;
+    &lt;srv:SV_ServiceIdentification&gt;
+      ...
+      &lt;gmd:descriptiveKeywords&gt;
+        &lt;gmd:MD_Keywords&gt;
+          &lt;gmd:keyword&gt;
+            &lt;gco:CharacterString&gt;humanCatalogueViewer&lt;/gco:CharacterString&gt;
+          &lt;/gmd:keyword&gt;
+        &lt;/gmd:MD_Keywords&gt;
+      &lt;/gmd:descriptiveKeywords&gt;
+      &lt;gmd:descriptiveKeywords&gt;
+        &lt;gmd:MD_Keywords&gt;
+          &lt;gmd:keyword&gt;
+            &lt;gco:CharacterString&gt;water monitoring&lt;/gco:CharacterString&gt;
+          &lt;/gmd:keyword&gt;
+          &lt;gmd:keyword&gt;
+            &lt;gco:CharacterString&gt;water quality&lt;/gco:CharacterString&gt;
+          &lt;/gmd:keyword&gt;
+          &lt;gmd:thesaurusName&gt;
+            &lt;gmd:CI_Citation&gt;
+              &lt;gmd:title&gt;
+                &lt;gco:CharacterString&gt;GEMET - Concepts, version 2.4&lt;/gco:CharacterString&gt;
+              &lt;/gmd:title&gt;
+              &lt;gmd:date&gt;
+                &lt;gmd:CI_Date&gt;
+                  &lt;gmd:date&gt;
+                    &lt;gco:Date&gt;2010-01-13&lt;/gco:Date&gt;
+                  &lt;/gmd:date&gt;
+                  &lt;gmd:dateType&gt;
+                    &lt;gmd:CI_DateTypeCode 
+                      codeList='https://schemas.isotc211.org/schemas/19139/resources/codelist/gmxCodelists.xml#CI_DateTypeCode' 
+                      codeListValue='publication'&gt;publication&lt;/gmd:CI_DateTypeCode&gt;
+                  &lt;/gmd:dateType&gt;
+                &lt;/gmd:CI_Date&gt;
+              &lt;/gmd:date&gt;
+            &lt;/gmd:CI_Citation&gt;
+          &lt;/gmd:thesaurusName&gt;
+        &lt;/gmd:MD_Keywords&gt;
+      &lt;/gmd:descriptiveKeywords&gt;
+      ...
+    &lt;/srv:SV_ServiceIdentification&gt;
+  &lt;/gmd:identificationInfo&gt;
+  ...
+&lt;/gmd:MD_Metadata&gt;</pre>
+</div>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<div class="paragraph">
+<p>Metadata errors observed&#8230;&#8203;</p>
+</div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Errors observed</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Incorrect INSPIRE keywords</strong> -<br>
+Putting in more than one INSPIRE keyword, where the first keyword in the
+list is not the correct Annex/Theme</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+</div>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  messageStyle: "none",
+  tex2jax: {
+    inlineMath: [["\\(", "\\)"]],
+    displayMath: [["\\[", "\\]"]],
+    ignoreClass: "nostem|nolatexmath"
+  },
+  asciimath2jax: {
+    delimiters: [["\\$", "\\$"]],
+    ignoreClass: "nostem|noasciimath"
+  },
+  TeX: { equationNumbers: { autoNumber: "none" } }
+})
+MathJax.Hub.Register.StartupHook("AsciiMath Jax Ready", function () {
+  MathJax.InputJax.AsciiMath.postfilterHooks.Add(function (data, node) {
+    if ((node = data.script.parentNode) && (node = node.parentNode) && node.classList.contains("stemblock")) {
+      data.math.root.display = "block"
+    }
+    return data
+  })
+})
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_HTMLorMML"></script>
+</body>
+</html>

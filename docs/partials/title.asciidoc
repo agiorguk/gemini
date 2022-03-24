@@ -1,26 +1,5 @@
 = Name: Title
-:assetdir: ../assets
-:stylesdir: {assetdir}
-:figure-caption: Figure
-:toc: left
-:docinfo: shared
-:docinfodir: {assetdir}
-:docinfosubs: attributes
-:safe-mode-unsafe:
-:iconfont-remote!:
-:stylesheet: ../assets/asciidoctor.css
-:scriptsdir: {assetdir}
-:linkcss:
-:data-uri:
-:iconfont-name: font-awesome.min
-:imagesdir: media
-:icons: font
-:nofooter:
-:sectnumlevels: 3
-:sectlinks:
-:sectanchors:
-:experimental:
-:stem:
+include::includes/partials-attributes.adoc[]
 ifdef::variant-dataset[]
 :outfilesuffix: datasets-title{outfilesuffix}
 endif::[]

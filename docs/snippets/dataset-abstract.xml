@@ -1,0 +1,20 @@
+<gmd:MD_Metadata>
+  ...
+  <gmd:identificationInfo>
+    <gmd:MD_DataIdentification id="BGS-13603180">
+      ...
+      <gmd:abstract>
+        <gco:CharacterString>The data shows polygonal and selected linear geological information, sourced from published 
+          BGS 1:625 000 scale maps of Great Britain. 
+          However, geological units are identified using the most up-to-date nomenclature that may differ from that on the 
+          printed maps. The maps are generally based on published material at 1:50 000 scale and compiled using techniques of 
+          selection, generalisation and exaggeration. The geology is fitted to a relevant topographic base at the time of 
+          production. Full UK coverage is available. The data is available in vector format. BGS licensing terms and 
+          conditions apply to external use of the data.
+        </gco:CharacterString>
+      </gmd:abstract>
+      ...
+    </gmd:MD_DataIdentification>
+  </gmd:identificationInfo>
+  ...
+</gmd:MD_Metadata>

@@ -1,0 +1,37 @@
+<gmd:MD_Metadata>
+  ...
+  <gmd:distributionInfo>
+    <gmd:MD_Distribution>
+      <gmd:distributionFormat>
+        ...
+      </gmd:distributionFormat>
+      ...
+      <gmd:transferOptions>
+        <gmd:MD_DigitalTransferOptions>
+          <gmd:onLine>
+            <gmd:CI_OnlineResource>
+              <gmd:linkage>
+                <gmd:URL>https://services.bgr.de/wms/geologie/emodnet2_prequaternary_seafloor_geology/?REQUEST=GetCapabilities&SERVICE=WMS&</gmd:URL>
+              </gmd:linkage>
+              ...
+              <gmd:name>
+                <gco:CharacterString>BGR Geologie: EMODnet2</gco:CharacterString>
+              </gmd:name>
+              <gmd:description>
+                <gmx:Anchor
+                  xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/endPoint">
+                  Capabilities document for BGR Geologie: EMODnet2 Web Map Service</gmx:Anchor>
+              </gmd:description>  
+              <gmd:function>
+                <gmd:CI_OnLineFunctionCode 
+                  codeList='https://schemas.isotc211.org/schemas/19139/resources/codelist/gmxCodelists.xml#CI_OnLineFunctionCode' 
+                  codeListValue='information'>View Service</gmd:CI_OnLineFunctionCode>
+              </gmd:function>
+            </gmd:CI_OnlineResource>
+          </gmd:onLine>
+        </gmd:MD_DigitalTransferOptions>
+      </gmd:transferOptions>
+    </gmd:MD_Distribution>
+  </gmd:distributionInfo>
+    ...
+</gmd:MD_Metadata>

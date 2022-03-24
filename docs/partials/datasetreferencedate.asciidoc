@@ -1,0 +1,200 @@
+= Name : Dataset reference date
+include::includes/partials-attributes.adoc[]
+ifdef::variant-dataset[]
+:outfilesuffix: datasets-title{outfilesuffix}
+endif::[]
+ifdef::variant-service[]
+:outfilesuffix: services-title{outfilesuffix}
+endif::[]
+
+|===
+|UK GEMINI id |8
+
+|Definition |Reference date for the data resource
+
+|Purpose and meaning |Dataset reference date is an identifying date for
+the data resource. It is a notional date of 'publication' of the data
+resource. It is different from Temporal extent which is the actual date
+of the currency of the data. For example, an atlas might have the
+reference date '2007', but the data will have been collected over a
+period prior to this.
+
+|Obligation |Mandatory
+
+|Occurrence |Multiple
+
+|Data type |Class
+
+|Domain a|
+This class comprises two elements:
+
+* Date as defined by BS ISO 8601
+* Date type (publication/revision/creation).
+
+The extended date format (YYYY-MM-DD) defined in BS ISO 8601 should be
+used, where YYYY is the year, MM is the month and DD is the day. It may
+be extended to include time (HH:MM:SS), where HH is the hour, MM the
+minutes and SS the seconds, with the two parts separated by the
+character 'T'.
+
+[width="100%",cols="34%,33%,33%",options="header",]
+!===
+! !Date !Date Type
+!Definition !date used to reference data resource !event used to
+describe reference date
+
+!Obligation !mandatory !mandatory
+
+!Occurrence !single !single
+
+!Data type !Date !CodeList
+
+!Domain !date as defined in ISO8601 !
+!===
+
+|Guidance a|
+. Dates may be to any degree of precision, from year (YYYY) to full date
+and time. The extended date format (YYYY-MM-DD) defined in BS ISO 8601
+should be used, where YYYY is the year, MM the month and DD the day. It
+may be extended to include time (-HH:MM:SS, where HH is the hour, MM the
+minute and SS the second), with 'T' separating the two parts.
+. Identify whether date refers to creation, last revision or
+publication.
+. More than one Dataset Reference Date may be defined, but there must
+only be one of type 'creation' and only one of type 'revision'
+. The date should be completed to a resolution sufficient to identify
+the version. Thus if the data resource is updated annually, only a year
+is required, whilst if it is updated weekly, a day is required.
+. If the resource is continuously updated or is a dataset series (e.g. a
+map series), then a notional current date should be provided at a
+suitable level of resolution.
+
+|Comment |INSPIRE recommends that at least the date of the last revision
+should be reported for spatial datasets
+
+|Examples a|
+* 2001, publication
+* 2005-05, publication
+* 1997-10-01, publication
+* 2009-05-02T09:10:01, publication
+
+|Revision date |March 2019
+|===
+
+Corresponding element in other standards...
+
+[%collapsible]
+====
+|===
+|Standard |Name |Comparison
+
+|INSPIRE Metadata |Date of publication |Equivalent
+
+|ISO 19115:2003 |MD_Identification.citation > CI_Citation.date
+|Equivalent
+
+|ISO 19139:2007
+ifdef::variant-dataset[]
+|/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:date
+|Equivalent
+endif::[]
+ifdef::variant-service[]
+|/gmd:MD_Metadata/gmd:identificationInfo/srv:SV_ServiceIdentification/gmd:citation/gmd:CI_Citation/gmd:date
+|Equivalent
+|===
+endif::[]
+====
+
+Change history...
+
+[%collapsible]
+====
+GEMINI 1 to 2.0: Addition of date type
+====
+
+Encoding guidelines...
+
+[%collapsible]
+====
+|===
+|Guidelines a|
+* The encoding for dataset reference date is shown in Example One.
+* Dates may be expressed with low precision, as shown in the example.
+GEMINI2 also allows the date and time to be published in metadata. In
+this case the date encoding shown in Example Two must be used.
+* The format of date and date-time values is described at
+link:component/content/article?id=1048#2.2.3[Dates and Times]
+* Dataset reference date shall include a date type. The content of this
+XML element is drawn from a
+link:component/content/article?id=1048#2.2.9[code list].
+
+|Example a|
+ifdef::variant-dataset[]
+Example One (datasets/series): dataset reference date encoding example
+
+....
+include::../snippets/dataset-datasetreferencedate-date.xml[]
+....
+
+Example Two - date and time 
+
+....
+...
+include::../snippets/datasetreferencedate-datetime.xml[]
+...
+....
+endif::[]
+ifdef::variant-service[]
+Example One: date
+
+....
+include::../snippets/service-datasetreferencedate-date.xml[]
+...
+include::../snippets/datasetreferencedate-datetime.xml[]
+...
+....
+endif::[]
+
+|===
+====
+
+Metadata errors observed...
+
+[%collapsible]
+====
+|===
+|Errors observed a|
+*Confusion of Date and DateTime* +
+In ISO 19115, Date and DateTime are distinct types. Although in many
+elements, either is allowed, the XML encoding needs to be explicit about
+which is given. It is an error to put a date (such as 2010-05-12) in a
+DateTime element. +
+Example of invalid structure: +
+
+....
+      
+<gmd:dateStamp>
+  <gco:DateTime>2012-11-15</gco:DateTime>
+</gmd:dateStamp>
+       
+....
+
+This should either include the time, for example: +
+
+....
+<gmd:dateStamp>
+  <gco:DateTime>2012-11-15T13:50:38</gco:DateTime>
+</gmd:dateStamp>
+       
+....
+
+Or be explicit that it doesn't: +
+
+....
+<gmd:dateStamp>
+  <gco:Date>2012-11-15</gco:Date>
+</gmd:dateStamp>
+....
+
+|===
+====

@@ -1,0 +1,296 @@
+= Name : Resource locator
+include::includes/partials-attributes.adoc[]
+ifdef::variant-dataset[]
+:outfilesuffix: datasets-title{outfilesuffix}
+endif::[]
+ifdef::variant-service[]
+:outfilesuffix: services-title{outfilesuffix}
+endif::[]
+
+[width="100%",cols="50%,50%",]
+|===
+|UK GEMINI id |19
+
+|Definition |Location (address) for online access using a Uniform
+Resource Locator (URL) address or similar addressing scheme
+
+|Purpose and meaning |The purpose of this element is to point to where
+the dataset, or dataset series may be directly accessed online +
+OR, if no direct access is available, to an online resource providing
+more information about accessing the dataset or dataset series.
+
+|Obligation |Conditional - Must be supplied when online access is
+available
+
+|Occurrence |Multiple
+
+|Data type |CharacterString
+
+|Domain |Valid URL
+ifdef::variant-dataset[]
+|Guidance a|
+. Identify whether the resource may be accessed.
+. Determine the location of the resource (may be a URL).
+. The URL of a DOI landing page should be given as a Resource locator
+with a CI_OnlineFunctionCode value of "information".
+. If no online access for the dataset or dataset series is available,
+but there is a publicly available online resource providing additional
+information about how to access the dataset of dataset series being
+described, the URL pointing to this shall be given instead.
+. Although not mandatory, the following ISO 19115 sub-elements should be
+included, for best results with data.gov.uk:
+* function (if provided, the gmd:CI_OnLineFunctionCode element should
+point to one of the values of the ISO 19139 code list
+CI_OnLineFunctionCode)
+* name (this appears on the data.gov.uk site)
+* description (data.gov.uk uses this if no 'name' provided)
+
+|Comment a|
+The URL provided as the value of the gmd:linkage element should point to
+one of following type of resources:
+
+* direct access for downloading the described dataset
+* a service metadata (capabilities) document of a Spatial Data Service
+used for providing this dataset
+* a service WSDL document of a Spatial Data Service used for providing
+this data set
+* a client application that directly accesses the described dataset
+* a web page with further instructions for accessing the described
+dataset
+
+|Examples |A DOI landing page:
+http://doi.org/10.5285/1e7d5e08-9e24-471b-ae37-49b477f695e3
+
+|Revision date |July 2009
+endif::[]
+ifdef::variant-service[]
+|Guidance a|
+. Specify a valid URL to the service.
+. If no online access for the service is available, but there is a
+publicly available online resource providing additional information
+about accessing the described service, the URL pointing to this resource
+shall be given instead.
+. Conditionally (required for invocable spatial data services otherwise
+optional) a description should be provided
+* For an invocable spatial data service, the gmd:linkage/gmd:description
+child element gmd:CI_OnlineResource shall contain a gmx:Anchor element
+pointing to the value "accessPoint" of the code list
+OnLineDescriptionCode in the INSPIRE Registry
+. Although not mandatory, the following ISO 19115 sub-elements should be
+included, for best results with data.gov.uk:
+.. function
+.. name (this appears on the data.gov.uk site)
+. In relation to online INSPIRE network services, special guidance
+applies (see
+link:component/content/article?id=1054#data_servce_linking['Data and
+Service Linking']).
+* Identify whether the resource may be accessed.
+* Determine the location of the resource (may be a URL).
+. For an invocable spatial data service the gmd:CI_OnLineFunctionCode
+element should point to value "information"
+
+|Comment a|
+The URL provided as the value of the gmd:linkage element should point to
+one of following type of resources:
+
+* a service metadata (capabilities) document of the described Spatial
+Data Service
+* a service WSDL document of the described Spatial Data Service
+* a web page with further instructions for accessing the described
+service
+
+|Examples |A Web Map Service (WMS) capabilities document would be given
+like: +
+http://myserver/INSPIREWM/MapServer/WMSServer?service=WMS&request=GetCapabilities&
+
+|Revision date |July 2009
+endif::[]
+|===
+
+Corresponding element in other standards...
+
+[%collapsible]
+====
+|===
+|Standard |Name |Comparison
+
+|INSPIRE Metadata |Resource locator |Equivalent
+
+|ISO 19115:2003 |MD_Distribution > MD_DigitalTransferOptions.online >
+CI_OnlineResource.linkage |Equivalent
+
+|ISO 19139:2007
+|/gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource/gmd:linkage
+|Equivalent
+|===
+====
+
+Change history...
+
+[%collapsible]
+====
+GEMINI 1 to 2.0: Modification of Online resource
+====
+
+Encoding guidelines...
+
+[%collapsible]
+====
+|===
+|Guidelines a|
+ifdef::variant-dataset[]
+. The two examples illustrate different uses of Resource locator.
+Example one gives direct access to the dataset. Example two gives the
+location of further information about ordering the dataset. ISO 19115
+and the ISO 19139 encoding provides a means of indicating the function
+of the online resource using the CI_OnLineFunctionCode code list. Two
+values from this code list provide a means of discriminating between a
+URL that is provided for information (code list value of 'information')
+and a URL that is the address used for downloading (code list value of
+'download') the data.
+. The gmd:transferOptions XML element of gmd:MD_Distribution is used to
+encode a URL. Note that it is necessary to encode distribution format
+information in all cases. If the URL that is provided is the location of
+a point of contact then the distribution format is moot. However, the
+distribution format property is required by an ISO 19115 constraint. In
+this case the INSPIRE guidelines show the encoding using gmd:MD_Format.
+Note that the element gmd:MD_Distribution must have the element
+gmd:distributionFormat as its first child according to a constraint in
+ISO 19115. Format information may not always be known in which case the
+encoding of the element gmd:MD_Format shown in Example One shall be
+used, following the
+https://inspire.ec.europa.eu/documents/inspire-metadata-implementing-rules-technical-guidelines-based-en-iso-19115-and-en-iso-1[INSPIRE
+guidance] link:component/content/article?id=1047[[9]]. If the format and
+version values are known, then they should be given (see link:#21[Data
+format]).
+
+|Example a|
+Example one, showing only required linkage content (for a dataset)
+
+....
+include::../snippets/dataset-resourcelocator-required.xml[]
+....
+
+Example two - including name, description, and indication of function
+(for a dataset ordering page)
+
+....
+include::../snippets/dataset-resourcelocator-information.xml[]
+....
+
+|===
+endif::[]
+ifdef::variant-service[]
+|Guidelines a|
+. In the examples, the URLs provided are for OGC GetCapabilities
+requests.
+. The gmd:transferOptions XML element of gmd:MD_Distribution is used to
+encode a URL. Note that it is necessary to encode distribution format
+information in all cases. If the URL that is provided is the location of
+a point of contact then the distribution format is moot. However, the
+distribution format property is required by an ISO 19115 constraint. In
+this case the INSPIRE guidelines show the encoding using gmd:MD_Format.
+Note that the element gmd:MD_Distribution must have the element
+gmd:distributionFormat as its first child according to a constraint in
+ISO 19115. Format information may not always be known in which case the
+encoding of the element gmd:MD_Format shown in Example One shall be
+used, following the
+https://inspire.ec.europa.eu/documents/inspire-metadata-implementing-rules-technical-guidelines-based-en-iso-19115-and-en-iso-1[INSPIRE
+guidance] link:component/content/article?id=1047[[9]]. If the format and
+version values are known, then they should be given (see link:#21[Data
+format]).
+. GEMINI2 allows for a URL which is a link to a point of contact where
+more information is available or where the dataset can be downloaded.
+. ISO 19115 and the ISO 19139 encoding provides a means of indicating
+the function of the online resource by means of the
+CI_OnLineFunctionCode code list. Two values from this code list provide
+a means of discriminating between a URL that is provided for information
+(code list value of 'information') and a URL that is the address used
+for downloading (code list value of 'download') the data.
+. The INSPIRE
+link:inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode[OnLineDescriptionCode]
+provides a way of further distinguishing between access point URLs and
+end point URLs. Access points call an operation directly; end points
+list operations and their access points.
+. Note that the GetCapabilities URL contains an entity reference
+(sometimes known as an escape sequence) for the ampersand character.
+When an XML parser reads &amp; it replaces the sequence with &. When
+writing XML, XML aware software will escape characters automatically but
+text editing software will not. The ampersand character alone in XML is
+interpreted as beginning an entity or character reference. XML defines
+five entity references:
+* &lt; - The character <
+* &amp; - The character &
+* &gt; - The character >
+* &quot; - The character "
+* &apos; - The character '
+
+|Example a|
+`Example one, showing only required linkage content (for a WMS)                   `
+
+....
+include::../snippets/service-resourcelocator-required.xml[]
+....
+
+Example Two - including name, description, and indication of function
+(for a WMS)
+
+....
+include::../snippets/service-resourcelocator-function-wms.xml[]
+....
+
+Example Three - including name, description, and indication of function
+(for a WCS)
+
+....
+include::../snippets/service-resourcelocator-function-wcs.xml[]
+....
+
+Example Four - including name, description, and indication of function
+(for an invocable spatial data service)
+
+....
+include::../snippets/service-resourcelocator-function-invocable.xml[]
+....
+
+|===
+endif::[]
+====
+
+Metadata errors observed...
+
+[%collapsible]
+====
+|===
+|Errors observed a|
+In a Resource Locator, a WMS service that does not end in an ampersand
+or question mark is incorrect, for example: +
+
+....
+<gmd:linkage>
+  <gmd:URL>https://map.bgs.ac.uk/ArcGIS/services/BGS_Detailed_Geology/MapServer/WMSServer</gmd:URL>
+</gmd:linkage>
+....
+
+Should be: +
+
+....
+<gmd:linkage>
+  <gmd:URL>https://map.bgs.ac.uk/ArcGIS/services/BGS_Detailed_Geology/MapServer/WMSServer?service=WMS&request=GetCapabilities&</gmd:URL>
+</gmd:linkage>
+....
+
+or: +
+
+....
+<gmd:linkage>
+  <gmd:URL>https://map.bgs.ac.uk/ArcGIS/services/BGS_Detailed_Geology/MapServer/WMSServer?</gmd:URL>
+</gmd:linkage>
+....
+
+ +
+Defra metadata audit, October 2015: Very few records included direct
+links to WMS end points.
+
+|===
+====
