@@ -1,0 +1,2533 @@
+== UK GEMINI 2.3 2020-06-29 dataset or series
+:figure-caption: Figure
+:toc: left
+:docinfo: shared
+:docinfodir: {assetdir}
+:docinfosubs: attributes
+:safe-mode-unsafe:
+:iconfont-remote!:
+:stylesheet: asciidoctor.css
+:scriptsdir: {assetdir}
+:linkcss:
+:data-uri:
+:iconfont-name: font-awesome.min
+:imagesdir: media
+:icons: font
+:nofooter:
+:sectnumlevels: 3
+:sectlinks:
+:sectanchors:
+:experimental:
+:stem:
+
+== Contents
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Metadata about the metadata record |Metadata about the resource
+|link:#45[File Identifier] +
+link:#47[Hierarchy level name] +
+link:#30[Metadata date] +
+link:#33[Metadata language] +
+link:#35[Metadata point of contact] +
+link:#54[Metadata standard name] +
+link:#55[Metadata standard version] +
+link:#49[Parent identifier] +
+link:#39[Resource type] + 
+link:#4[Abstract] +
+link:#27[Additional information] +
+link:#2[Alternative title] +
+link:#44[Bounding box] +
+link:#51[Character encoding] +
+link:#41[Conformity] +
+link:#21[Data format] +
+link:#52[Data quality] +
+link:#3[Dataset language] +
+link:#8[Dataset reference date] +
+link:#43[Equivalent scale] +
+link:#15[Extent] +
+link:#6[Keyword] +
+link:#25[Limitations on public access] +
+link:#10[Lineage] +
+link:#53[Maintenance information] +
+link:#48[Quality scope] +
+link:#36[Resource identifier] +
+link:#19[Resource locator] +
+link:#23[Responsible organisation] +
+link:#17[Spatial reference system] +
+link:#50[Spatial representation type] +
+link:#18[Spatial resolution] +
+link:#7[Temporal extent] +
+link:#1[Title] +
+link:#5[Topic Category] +
+link:#26[Use constraints] +
+link:#16[Vertical extent information] +
+|===
+
+Return to
+https://www.agi.org.uk/gemini/40-gemini/1037-uk-gemini-standard-and-inspire-implementing-rules[GEMINI
+2.3 home page]
+
+'''''
+
+Expand all
+
+Collapse all
+
+== Metadata about the metadata record
+
+[[30]]
+
+include::./partials/metadatadate.asciidoc[]
+
+
+[[33]]
+
+include::./partials/metalanguage.asciidoc[]
+
+[[35]]
+
+include::./partials/metapointofcontact.asciidoc[]
+
+[[39]]
+
+include::./partials/resourcetype.asciidoc[]
+
+[[45]]
+
+include::./partials/fileidentifier.asciidoc[]
+
+[[47]]
+
+include::./partials/hierarchylevelname.asciidoc[]
+
+[[49]]
+
+include::./partials/parentidentifier.asciidoc[]
+
+[[54]]
+
+include::./partials/metadatastandardname.asciidoc[]
+
+[[55]]
+
+include::./partials/metadatastandardversion.asciidoc[]
+
+== Metadata about the resource
+
+[[1]]
+
+include::./partials/metadatastandardversion.asciidoc[]
+
+[[2]]
+
+Name : Alternative title
+
+[[requirements2]]
+[width="100%",cols="50%,50%",]
+|===
+|UK GEMINI id |2
+
+|Definition |Short name, other name, acronym or alternative language
+title for the data resource
+
+|Purpose and meaning |The purpose of this element is to record any
+alternative titles by which the data resource is known.
+
+|Obligation |Optional
+
+|Occurrence |Multiple
+
+|Data type |CharacterString
+
+|Domain |Free text
+
+|Guidance a|
+. Should be provided when the data resource has more than one title.
+. There is no need to fill in this entry unless there are other names
+used for the dataset, for example historic names.
+. Commonly used abbreviations or acronyms should be recorded. If the
+acronym or abbreviation has been used in the main Title, then use the
+full name in the Alternative Title.
+. Other language equivalents should be recorded where they exist, for
+example the Welsh language title (although this title may refer to a
+different data resource).
+. Entries should be short and concise.
+
+|Comment |
+
+|Examples |OS large-scale data
+
+|Revision date |May 2021
+|===
+
+Corresponding element in other standards...
+
+[[compare2]]
+[cols=",,",]
+|===
+|Standard |Name |Comparison
+
+|INSPIRE Metadata |None |INSPIRE has no Alternative title, only a single
+title
+
+|ISO 19115:2003 |MD_Identification.citation > CI_Citation.alternateTitle
+|Equivalent
+
+|ISO 19139:2007
+|/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:alternateTitle
+|Equivalent
+|===
+
+Change history...
+
+[[history2]]
+
+Encoding guidelines...
+
+[[coding2]]
+[width="100%",cols="50%,50%",]
+|===
+|Guidelines |Note that more than one alternative title may be presented,
+as shown in the example below.
+
+|Example a|
+`Example one                   `
+
+....
+<gmd:MD_Metadata>
+...
+<gmd:identificationInfo>
+  <gmd:MD_DataIdentification id="BGS-13480426">
+    <gmd:citation>
+      <gmd:CI_Citation>
+    ...
+    <gmd:alternateTitle>
+      <gco:CharacterString>Geology onshore digital maps 1:625 000 scale</gco:CharacterString>
+    </gmd:alternateTitle>
+    <gmd:alternateTitle>
+      <gco:CharacterString>DiGMapGB-625</gco:CharacterString>
+    </gmd:alternateTitle>
+    ...
+      </gmd:CI_Citation>
+    </gmd:citation>
+  </gmd:MD_DataIdentification>
+</gmd:identificationInfo>
+...
+</gmd:MD_Metadata>
+....
+
+Example two
+
+....
+<gmd:MD_Metadata>
+...
+<gmd:identificationInfo>
+  <gmd:MD_DataIdentification id="CEH-LCM2007">
+    <gmd:citation>
+      <gmd:CI_Citation>
+    ...
+    <gmd:alternateTitle>
+      <gco:CharacterString>Land Cover Map 2007 (1km raster, percentage aggregate class, N.Ireland)</gco:CharacterString>
+    </gmd:alternateTitle>
+    ...
+      </gmd:CI_Citation>
+    </gmd:citation>
+  </gmd:MD_DataIdentification>
+</gmd:identificationInfo>
+...
+</gmd:MD_Metadata>
+....
+
+|===
+
+Metadata errors observed...
+
+[[errors2]]
+No error information available
+
+[[3]]
+
+Name : Dataset language
+
+[[requirements3]]
+[width="100%",cols="50%,50%",]
+|===
+|UK GEMINI id |3
+
+|Definition |Language used in the data resource
+
+|Purpose and meaning |This is the written language used for any text in
+the dataset.
+
+|Obligation |Mandatory
+
+|Occurrence |Multiple
+
+|Data type |CharacterString
+
+|Domain |Free text
+
+|Guidance a|
+. A code should be selected from ISO 639-2, which uses three-letter
+primary tags with optional subtags – see
+http://www.loc.gov/standards/iso639-2/php/code_list.php
+. The values for the UK languages are:
++
+[cols=",",]
+!===
+!*English* !eng
+!*Welsh* !cym
+!*Irish* !gle
+!*Gaelic (Scottish)* !gla
+!*Cornish* !cor
+!*Ulster Scots* !sco
+!===
++
+ISO 639-2 allows either 'cym' or 'wel' for Welsh, but two values for the
+same language causes confusion, and it is recommended that 'cym' be
+used.
+. In many cases, a default value of 'eng' can be applied.
+. Other official European languages are listed at
+http://ec.europa.eu/languages/policy/linguistic-diversity/official-languages-eu_en.htm[Official
+languages of the EU].
+. If there is no textual information in the data resource, then the
+special code value *zxx* of ISO 639-2/B reserved for "no linguistic
+content; not applicable" shall be used.
+
+|Comment |
+
+|Examples |eng
+
+|Revision date |September 2018
+|===
+
+Corresponding element in other standards...
+
+[[compare3]]
+[cols=",,",]
+|===
+|Standard |Name |Comparison
+
+|INSPIRE Metadata |Resource language |Equivalent
+
+|ISO 19115:2003 |MD_DataIdentification.language |Equivalent, but ISO
+19115 only allows a single value
+
+|ISO 19139:2007
+|/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:language/gmd:LanguageCode
+|Equivalent
+|===
+
+Change history...
+
+[[history3]]
+. GEMINI 1 to 2: Obligation changed from mandatory
+. GEMINI 2 to 2.2: Obligation changed (back) to mandatory
+
+Encoding guidelines...
+
+[[coding3]]
+[width="100%",cols="50%,50%",]
+|===
+|Guidelines a|
+. Note that according to the ISO 19115 logical model the language
+property is typed as a CharacterString. The use of the
+gco:CharacterString type is permitted by the ISO 19139 schemas but this
+approach shall not be used to encode GEMINI2 metadata. Instead the XML
+element gmd:LanguageCode, which substitutes for gco:CharacterString,
+shall be used.
+. The XML element gmd:LanguageCode is implemented as a code list
+element. Note that the codeList attribute should have the following
+value in GEMINI2 metadata instances:
+http://www.loc.gov/standards/iso639-2/php/code_list.php
+. Note however, that this URL resolves to an HTML web page rather than a
+service endpoint providing ISO 639-2 language codes.
+
+|Example a|
+`Example following the INSPIRE recommendation of using the name of the language as                   the                   content of the gmd:LanguageCode                   `
+
+....
+<gmd:MD_Metadata>
+  ...
+  <gmd:identificationInfo>
+    <gmd:MD_DataIdentification id="DS-123456">
+      ...
+      <gmd:language>
+        <gmd:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/php/code_list.php"
+            codeListValue="eng">
+          English
+        </gmd:LanguageCode>
+      </gmd:language>
+      ...
+    </gmd:MD_DataIdentification>
+  </gmd:identificationInfo>
+  ...
+</gmd:MD_Metadata>
+....
+
+|===
+
+Metadata errors observed...
+
+[[errors3]]
+No error information available
+
+[[4]]
+
+include::./partials/abstract.asciidoc[]
+
+[[5]]
+
+include::./partials/topiccategory.asciidoc[]
+
+[[6]]
+
+include::./partials/keyword.asciidoc[]
+
+[[7]]
+
+include::./partials/temporalextent.asciidoc[]
+
+[[8]]
+
+include::./partials/datasetreferencedate.asciidoc[]
+
+[[10]]
+
+include::./partials/lineage.asciidoc[]
+
+[[15]]
+
+include::./partials/extent.asciidoc[]
+
+[[16]]
+
+include::./partials/vertical.asciidoc[]
+
+[[17]]
+
+include::./partials/spatialreferencesystem.asciidoc[]
+
+[[18]]
+
+include::./partials/spatialresolution.asciidoc[]
+
+[[19]]
+
+include::./partials/resourcelocator.asciidoc[]
+
+[[21]]
+
+include::./partials/dataformat.asciidoc[]
+
+[[23]]
+
+include::./partials/responsibleorganisation.asciidoc[]
+
+[[25]]
+
+Name : Limitations on public access
+
+[[requirements25]]
+[width="100%",cols="50%,50%",]
+|===
+|UK GEMINI id |25
+
+|Definition |Restrictions imposed on accessing the data resource for
+security and other reasons
+
+|Purpose and meaning |The purpose of this element is to identify any
+external restrictions on access to the data such as licence
+arrangements.
+
+|Obligation |Mandatory
+
+|Occurrence |Multiple
+
+|Data type |CharacterString
+
+|Domain |Free text
+
+|Guidance a|
+. Provide information on any limitations.
+. The most common access restriction should be identified.
+. Where there are no limitations on public access, this should be
+stated.
+. More than one value may be included.
+. For INSPIRE: If no limitations apply, enter 'No limitations'.
+. INSPIRE recognises the following kinds of reasons for limiting public
+access, listed in Article 13(1):
+* (a) confidentiality of the proceedings of public authorities
+* (b) international relations, public security or national defence
+* (c) the course of justice
+* (d) confidentiality of commercial or industrial information
+* (e) intellectual property rights
+* (f) confidentiality of personal data
+* (g) interests of a person who supplied the data on a voluntary basis
+* (h) protection of the environment
++
+Each has an entry with the full text, in the INSPIRE registry,
+http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess
+. At least one limitation on public access shall give an INSPIRE reason
+
+|Comment |Limitations on public access are different from Use
+constraints which are warnings about its suitability for particular
+types of usage, or constraints on the use that can be made of the data.
+
+|Examples |No restriction on public access.
+
+|Revision date |June 2021
+|===
+
+Corresponding element in other standards...
+
+[[compare25]]
+[cols=",,",]
+|===
+|Standard |Name |Comparison
+
+|INSPIRE Metadata |Limitations on public access |Equivalent
+
+|ISO 19115:2003 |MD_Identification.resourceConstraints >
+MD_LegalConstraints.accessConstraints & otherConstraints |Equivalent
+
+|ISO 19139:2007
+|/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:resourceConstraints/gmd:MD_LegalConstraints/gmd:accessConstraints
+& otherConstraints |Equivalent
+|===
+
+Change history...
+
+[[history25]]
+. GEMINI 1 to 2.0: Change of name from 'access constraint', and
+modification of definition. +
+Made mandatory, to conform to INSPIRE.
+. GEMINI 2.0 to 2.1: Change to equivalent ISO 19115 element from
+accessConstraint making domain free text.
+. GEMINI 2.2 to 2.3: Change of encoding
+. GEMINI 2.3 June 2021 fixed typo in Guidance 6 (a) and (f)
+
+Encoding guidelines...
+
+[[coding25]]
+[width="100%",cols="50%,50%",]
+|===
+|Guidelines a|
+. This element shall be encoded in a different
+resourceConstraints/MD_LegalConstraints XML element to GEMINI element 26
+Use constraints
+. The LegalConstraints element shall contain a
+accessConstraints/MD_RestrictionCode element with code list value
+"otherRestrictions"
+. The LegalConstraints element shall also contain a gmd:otherConstraints
+element, with free text.
+. If there are no limitations the value of gmd:otherConstraints shall be
+'no limitations' (see Example Two).
+. The free text shall be encoded in a gmx:Anchor element, with
+xlink:href pointing to the relevant kind of limitation from the INSPIRE
+Metadata registry:
+http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess
+. Free text content cannot be empty
+. To encode multiple limitations, include more than one
+gmd:otherConstraints element
+
+|Example a|
+`Example One                   `
+
+....
+<gmd:MD_Metadata>
+  ...
+  <gmd:identificationInfo>
+    <gmd:MD_DataIdentification id="DEF-2000">
+      ...
+      <gmd:resourceConstraints>
+        <gmd:MD_LegalConstraints>
+          ...
+          <gmd:accessConstraints>
+            <gmd:MD_RestrictionCode 
+            codeList='https://schemas.isotc211.org/schemas/19139/resources/codelist/gmxCodelists.xml#MD_RestrictionCode' 
+            codeListValue='otherRestrictions'>otherRestrictions</gmd:MD_RestrictionCode>
+          </gmd:accessConstraints>
+          <gmd:otherConstraints>
+            <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/INSPIRE_Directive_Article13_1e">
+            [Document other restrictions here - the example 1e covers IPR]</gmx:Anchor>
+          </gmd:otherConstraints>
+        </gmd:MD_LegalConstraints>
+      </gmd:resourceConstraints>
+      ...
+    </gmd:MD_DataIdentification>
+  </gmd:identificationInfo>
+  ...
+</gmd:MD_Metadata>
+....
+
+`                   Example Two - no limitations                   `
+
+....
+...
+<gmd:otherConstraints>
+  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations">no limitations</gmx:Anchor>
+</gmd:otherConstraints>
+...
+          
+....
+
+Example Three - two limitations
+
+....
+...
+      <gmd:resourceConstraints>
+        <gmd:MD_LegalConstraints>
+          ...
+          <gmd:accessConstraints>
+            <gmd:MD_RestrictionCode 
+              codeList='https://schemas.isotc211.org/schemas/19139/resources/codelist/gmxCodelists.xml#MD_RestrictionCode' 
+              codeListValue='otherRestrictions'>otherRestrictions</gmd:MD_RestrictionCode>
+          </gmd:accessConstraints>
+          <gmd:otherConstraints>
+            <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/INSPIRE_Directive_Article13_1b">
+            publishing this data could prejudice public security</gmx:Anchor>
+          </gmd:otherConstraints>
+          <gmd:otherConstraints>
+            <gmx:Anchor xlink:href="http://example.com/dsra_report.htm">
+            Report of Data Sharing Risk Assessment</gmx:Anchor>
+          </gmd:otherConstraints>
+        </gmd:MD_LegalConstraints>
+      </gmd:resourceConstraints>
+...          
+....
+
+|===
+
+Metadata errors observed...
+
+[[errors25]]
+[width="100%",cols="50%,50%",]
+|===
+|Errors observed |*Missing or incorrect information* +
+Licence information should be provided, preferably by a URL. +
+It is an error to state 'no limitations' in Limitations on Public
+Access, when the resource is not open access. +
+Defra metadata audit, October 2015: In many cases either this field has
+been left empty or where the PSMA (or similar) licensing arrangements
+are referenced there is either a lack of detail or no links to the
+appropriate sites.
+|===
+
+[[26]]
+
+Name : Use constraints
+
+[[requirements26]]
+[width="100%",cols="50%,50%",]
+|===
+|UK GEMINI id |26
+
+|Definition |Restrictions and legal restraints on using the data
+resource
+
+|Purpose and meaning |The purpose of this element is to describe any
+restrictions on usage of the data (as opposed to access)
+
+|Obligation |Mandatory
+
+|Occurrence |Multiple
+
+|Data type |CharacterString
+
+|Domain |Free text
+
+|Guidance a|
+. Provide information on any constraints to using the resource, e.g.
+licensing, fees, usage restrictions, or refer to a URL where this
+information is available, e.g. a licence document. If entering a URL,
+enter this as a sub-element, not as part of free text. Where relevant,
+Data Provider licence information should be provided in the form of a
+Licence Title, and where possible, a licence URL. If more than one type
+of licence is included then the URL should point to a Data Providers
+page.
+. Any known constraints should be identified. If no conditions apply,
+then 'no conditions apply' should be recorded.
+
+|Comment |Use constraints are different from Restrictions on public
+access which describe limitations on access to the data. A data resource
+can have open access (e.g. to look at it), but restricted use.
+
+|Examples |Should not be used for navigation purposes.
+
+|Revision date |September 2018
+|===
+
+Corresponding element in other standards...
+
+[[compare26]]
+[cols=",,",]
+|===
+|Standard |Name |Comparison
+
+|INSPIRE Metadata |Conditions applying to access and use |Equivalent
+
+|ISO 19115:2003 |MD_Identification.resourceConstraints >
+MD_LegalConstraints.useConstraints & otherConstraints |Equivalent
+
+|ISO 19139:2007
+|/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:resourceConstraints/gmd:MD_LegalConstraints/gmd:useConstraints
+& gmd:otherConstraints |Equivalent
+|===
+
+Change history...
+
+[[history26]]
+* GEMINI 1 to 2.0: Change to free text field from enumerated list, and
+making mandatory to conform with INSPIRE.
+* GEMINI 2.2 to 2.3: Change of encoding
+
+Encoding guidelines...
+
+[[coding26]]
+[width="100%",cols="50%,50%",]
+|===
+|Guidelines a|
+. This element shall be encoded in a different
+resourceConstraints/MD_LegalConstraints XML element to GEMINI element 25
+Limitations on public access
+. The MD_LegalConstraints element shall contain a useConstraints element
+. Note: INSPIRE allows an accessConstraints element here; GEMINI
+recommends using Limitations on public access for these
+. The useConstraints element shall contain an MD_RestrictionCode element
+with code list value "otherRestrictions"
+. The LegalConstraints element shall also contain a gmd:otherConstraints
+element, with free text.
+. "No conditions" and "conditions unknown" shall be specified using a
+gmx:Anchor link to the relevant entry in the INSPIRE metadata registry,
+http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse
+. In certain circumstances it might be appropriate to refer to an
+external document describing constraints. In this case the encoding
+shown in Example Two may be used. This is recommended for licenses, even
+the use of ISO 19115 otherRestrictions would not generally include
+license restrictions, as they have their own term in the ISO 19115 code
+list.
+. If there are no limitations the value of gmd:otherConstraints shall be
+'no limitations' (see Example Three).
+. There may be more than one gmd:otherConstraints element
+
+|Example a|
+`Example One                   `
+
+....
+<gmd:MD_Metadata>
+  ...
+  <gmd:identificationInfo>
+    <gmd:MD_DataIdentification id="bgs-0000-1">
+      ...
+      <gmd:resourceConstraints>
+        <gmd:MD_LegalConstraints>
+          <gmd:useConstraints>
+            <gmd:MD_RestrictionCode 
+              codeList='https://schemas.isotc211.org/schemas/19139/resources/codelist/gmxCodelists.xml#MD_RestrictionCode' 
+              codeListValue='otherRestrictions'>otherRestrictions</gmd:MD_RestrictionCode>
+          </gmd:useConstraints>
+          <gmd:otherConstraints>
+            <gco:CharacterString>Not to be used for navigation</gco:CharacterString>
+          </gmd:otherConstraints>
+          ...
+        </gmd:MD_LegalConstraints>
+      </gmd:resourceConstraints>
+      ...
+    </gmd:MD_DataIdentification>
+  </gmd:identificationInfo>
+  ...
+</gmd:MD_Metadata>
+....
+
+`                   Example Two - with external file                   `
+
+....
+...
+        <gmd:MD_LegalConstraints>
+          <gmd:useConstraints>
+            <gmd:MD_RestrictionCode 
+              codeList='https://schemas.isotc211.org/schemas/19139/resources/codelist/gmxCodelists.xml#MD_RestrictionCode' 
+              codeListValue='otherRestrictions'>otherRestrictions</gmd:MD_RestrictionCode>
+          </gmd:useConstraints>
+          <gmd:otherConstraints>
+      <gmx:Anchor xlink:href='http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/'>Open Government Licence</gmx:Anchor>
+          </gmd:otherConstraints>
+          ...
+        </gmd:MD_LegalConstraints>
+...
+....
+
+Example Three - no conditions apply
+
+....
+        <gmd:MD_LegalConstraints>
+          <gmd:useConstraints>
+            <gmd:MD_RestrictionCode 
+              codeList='https://schemas.isotc211.org/schemas/19139/resources/codelist/gmxCodelists.xml#MD_RestrictionCode' 
+              codeListValue='otherRestrictions'>otherRestrictions</gmd:MD_RestrictionCode>
+          </gmd:useConstraints>
+          <gmd:otherConstraints>
+      <gmx:Anchor xlink:href='http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply'>no conditions apply</gmx:Anchor>
+          </gmd:otherConstraints>
+          ...
+        </gmd:MD_LegalConstraints>
+          
+....
+
+|===
+
+Metadata errors observed...
+
+[[errors26]]
+[width="100%",cols="50%,50%",]
+|===
+|Errors observed |*Missing or incorrect constraints information* +
+Licence information should be provided, preferably by a URL. +
+It is an error to state 'no conditions apply' in Use Constraints, when
+restrictions do in fact exist.
+|===
+
+[[27]]
+
+Name : Additional information
+
+[[requirements27]]
+[width="100%",cols="50%,50%",]
+|===
+|UK GEMINI id |27
+
+|Definition |Other descriptive information about the data resource
+
+|Purpose and meaning |The purpose of this element is to record relevant
+information that does not clearly belong in another element. This may be
+a reference (e.g. a URL).
+
+|Obligation |Optional
+
+|Occurrence |Single
+
+|Data type |CharacterString
+
+|Domain |Free text
+
+|Guidance a|
+. Information about access to the resource should be in
+link:#19[Resource locator].
+. Information about fees should be in link:#25[Limitations on public
+access]
+. Other relevant information should be in this element, or provided by a
+link which is given in this element.
+. References to other documents may be by URL, DOI, or other means.
+
+|Comment |
+
+|Examples |For full details about this dataset, see
+'https://os.uk/business-and-government/products/addressbase.html'
+
+|Revision date |June 2021
+|===
+
+Corresponding element in other standards...
+
+[[compare27]]
+[cols=",,",]
+|===
+|Standard |Name |Comparison
+
+|INSPIRE Metadata |supplemental information |
+
+|ISO 19115:2003 |MD_Identification >
+MD_DataIdentification.supplementalInformation |Equivalent
+
+|ISO 19139:2007
+|/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:supplementalInformation
+|Equivalent
+|===
+
+Change history...
+
+[[history27]]
+* GEMINI 2.3 20181031 Rename 'Additional information source' to
+'Additional information'
+* GEMINI 2.3 June 2021 fixed typo (XML syntax error) in example 2
+
+Encoding guidelines...
+
+[[coding27]]
+[width="100%",cols="50%,50%",]
+|===
+|Guidelines |No specific rules for this metadata element
+
+|Example a|
+`                   Example one                   `
+
+....
+<gmd:MD_Metadata>
+  ...
+  <gmd:identificationInfo>
+    <gmd:MD_DataIdentification id="BGS-625-001">
+      ...
+      <gmd:supplementalInformation>
+        <gco:CharacterString>Ongoing modifications to dataset as appropriate. UK coverage except for western and southern margin 
+          of Northern Ireland. As accurate as the underlying geological interpretation. 1:625k scale resolution. Bedrock theme 
+          numerically coded. Superficial theme lex-rock coded.
+        </gco:CharacterString>
+      </gmd:supplementalInformation>
+    </gmd:MD_DataIdentification>
+  </gmd:identificationInfo>
+  ...
+</gmd:MD_Metadata>
+....
+
+`                   Example two - a link, using gmx:Anchor                   `
+
+....
+      <gmd:supplementalInformation>
+        <gmx:Anchor xlink:href="http://www.bgs.ac.uk/mineralsuk/statistics/worldStatistics.html/">Background information</gmx:Anchor>
+      </gmd:supplementalInformation>
+          
+....
+
+|===
+
+Metadata errors observed...
+
+[[errors27]]
+No error information available
+
+[[36]]
+
+Name : Resource identifier
+
+[[requirements36]]
+[width="100%",cols="50%,50%",]
+|===
+|UK GEMINI id |36
+
+|Definition |Value uniquely identifying the data resource
+
+|Purpose and meaning |The purpose of this is to uniquely identify the
+data resource.
+
+|Obligation |Mandatory for datasets and dataset series
+
+|Occurrence |Multiple
+
+|Data type |Class
+
+|Domain a|
+The class comprises the following elements:
+
+* Code - Identifier code or name, often from a controlled list or
+pattern defined by a code space.
+* Codespace - Identifier of a code space within which one or more codes
+are defined.
+
+These elements are described in the table below
+
+[cols=",,",]
+!===
+!Metadata element name !code !codeSpace
+
+!Definition !Identifier code or name, often from a controlled list or
+pattern defined by a code pace !Identifier of a code space within which
+one or more codes are defined
+
+!Obligation !mandatory !conditional ~ must be suppled if the code by
+itself does not uniquely identify the resource.
+
+!Occurrence !single !single
+
+!Data type !CharacterString !CharacterString
+
+!Domain !free text !free text
+
+!Other comments !- !This code space is often defined by some authority
+organization, were one organization may define multiple code spaces. The
+range and format of each code space identifier is defined by that code
+space authority.
+!===
+
+|Guidance a|
+. The code is generally assigned by some authority, with a codespace
+uniquely identifying the context of the identifier code.
+. The codespace must be a character string that uniquely identifies the
+namespace for the identifier code. This should be the internet domain of
+the data owner/provider, +
+e.g.: data.bgs.ac.uk/id/dataHolding/
+. The resource is identified by a unique identifier code, generally
+assigned by the data owner. A character string namespace uniquely
+identifying the context of the identifier code may be added for
+uniqueness. This is usually allocated by an appropriate authority such
+as the manager of the spatial data infrastructure.
+. Where present, a DOI should be recorded as a resource identifier, with
+the codespace being doi. If a DOI landing page is also available, then
+include this using an Anchor.
+
+|Comment |Since INSPIRE metadata technical guidance version 2, it is no
+longer required to use RS_Identifier if a value for code space value is
+provided. +
+In such cases (where there is a code space provided) it is now strongly
+recommended to use MD_Identifier and encode the complete URI in the code
+element.
+
+|Examples a|
+* image2000_1_nl2_multi
+* doi:10.5285/1e7d5e08-9e24-471b-ae37-49b477f695e3
+* 527c4cac-070c-4bca-9aaf-92bece7be902
+
+|Revision date |May 2018
+|===
+
+Corresponding element in other standards...
+
+[[compare36]]
+[cols=",,",]
+|===
+|Standard |Name |Comparison
+
+|INSPIRE Metadata |Unique resource identifier |Equivalent
+
+|ISO 19115:2003 |MD_Identification.citation > CI_Citation.identifier
+|Equivalent
+
+|ISO 19139:2007
+|/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:identifier
+|Equivalent
+|===
+
+Change history...
+
+[[history36]]
+. GEMINI 1 to 2.0: New item 'Unique resource identifier', required for
+INSPIRE
+. GEMINI 2.2 to 2.3: Name changed from Unique resource identifier, to
+reduce confusion with W3C URI
+
+Encoding guidelines...
+
+[[coding36]]
+[width="100%",cols="50%,50%",]
+|===
+|Guidelines a|
+. The resource identifier can be a globally unique identifier such as a
+UUID, in which case it is encoded as shown in Example One.
+. The form used in Example One can also be used if the identifier is
+expressed as a code space and code in URI form like
+http://image2000.jrc.it#image2000_1_nl2_multi However a better way to do
+this is to use the gmx:Anchor as in Example Two.
+. Note that the identifier is encoded in the citation of the metadata
+instance
+. A resource identifier (which may be the same as the code) should also
+be added to the 'id' attribute of the gmd:MD_DataIdentification type.
+This follows the examples in the
+https://inspire.ec.europa.eu/documents/inspire-metadata-implementing-rules-technical-guidelines-based-en-iso-19115-and-en-iso-1[INSPIRE
+guidance] link:component/content/article?id=1047[[9]].
+. Care must be taken with the value of the id attribute code. The
+attribute 'id' has the data type xs:ID which must have as its value an
+XML name. This means that it cannot start with a number, and has a
+restricted set of characters it can include. This means that normally it
+cannot be an UUID or an URI. The id must also be unique across all id
+attributes in the metadata document
+. See notes on link:component/content/article?id=1048#2.2.12[XML
+Identifiers].
+
+|Example a|
+`Example One                   `
+
+....
+<gmd:MD_Metadata>
+  ...
+  <gmd:identificationInfo>
+    <gmd:MD_DataIdentification id="_99999-def">
+      <gmd:citation>
+        <gmd:CI_Citation>
+          ...
+          <gmd:identifier>
+            <gmd:MD_Identifier>
+              <gmd:code>
+                <gco:CharacterString>527c4cac-070c-4bca-9aaf-92bece7be902</gco:CharacterString>
+              </gmd:code>
+              ...
+            </gmd:MD_Identifier>
+          </gmd:identifier>
+          ...
+        </gmd:CI_Citation>
+      </gmd:citation>
+      ...
+    </gmd:MD_DataIdentification>
+  </gmd:identificationInfo>
+  ...
+</gmd:MD_Metadata>
+....
+
+Example Two - resolveable identifier using gmx:Anchor
+
+....
+<gmd:MD_Metadata>
+  ...
+  <gmd:identificationInfo>
+    <gmd:MD_DataIdentification id="image2000_1_nl2_multi">
+      <gmd:citation>
+        <gmd:CI_Citation>
+          ...
+            <gmd:MD_Identifier>
+              <gmd:code>
+                <gmx:Anchor xlink:href='http://image2000.jrc.it#image2000_1_nl2_multi'>Image 2000 and Corine Land Cover 2000 Project</gmx:Anchor>
+              </gmd:code>
+            </gmd:MD_Identifier>
+          </gmd:identifier>
+          ...
+        </gmd:CI_Citation>
+      </gmd:citation>
+      ...
+    </gmd:MD_DataIdentification>
+  </gmd:identificationInfo>
+  ...
+</gmd:MD_Metadata>
+....
+
+|===
+
+Metadata errors observed...
+
+[[errors36]]
+No error information available
+
+[[41]]
+
+Name : Conformity
+
+[[requirements41]]
+[width="100%",cols="50%,50%",]
+|===
+|UK GEMINI id |41
+
+|Definition |Statement of conformity with the product specification or
+user requirement against which the data is being evaluated
+
+|Purpose and meaning |The purpose of this is to record the conformity to
+the INSPIRE or other data specification
+
+|Obligation |Mandatory
+
+|Occurrence |Multiple
+
+|Data type |Class
+
+|Domain a|
+This class comprises the following elements:
+
+* Specification
+* Degree
+* Explanation
+
+For details see below. +
+
+[width="100%",cols="25%,25%,25%,25%",options="header",]
+!===
+!Metadata element name !specification !degree !explanation
+!Definition !Citation of the product specification or user requirement
+against which data resource is evaluated !degree of conformity with the
+specification !meaning of conformance for this result
+
+!Meaning !The purpose of this element is to identify the specification
+against which conformity is evaluated !The purpose of this element is to
+identify the conformity of the data resource to the cited specification
+!The purpose of this element is to explain the meaning of conformity in
+this context
+
+!Obligation !Mandatory !Mandatory !Mandatory
+
+!Occurrence !single !single !single
+
+!Data type !Class CI_Citation (from ISO19115) !Boolean !CharacterString
+
+!Domain ! !true if conformant +
+false if not conformant !free text
+
+!Rules !Cite the specification to which the data resource should conform
+!The data resource should be evaluated against the specification and the
+result recorded !Include a statement about which aspects of the
+specification the data resource conforms and any exceptions
+
+!Examples !D2.8.I.5 INSPIRE Data Specification on Addresses -
+Guidelines, publication, 2010-04-26 !true !Only mandatory items included
+!===
+
+|Guidance a|
+. At least one conformity statement shall be to an INSPIRE
+specification, even if simply to say that the data set is not conformant
+or not tested
+. Other conformity statements may be added, citing INSPIRE technical
+guidance or other specifications
+. Each conformity statement shall relate to only one specification
+. Assess the conformity of the data resource against its product
+specification or the INSPIRE thematic data specification.
+. State the data specification to which the degree of conformity applied
+and optionally an 'Explanation', for example to reference the
+conformance criteria in the specification against which conformance is
+being claimed.
+. For INSPIRE, Datasets and dataset series shall declare conformity to
+[Regulation 1089/2010].
+
+|Comment a|
+. The specification is identified in the element Specification.
+. The conformance of a data resource may be considered with respect to
+more than one specification.
+. For INSPIRE, the citation title shall be the official title of the
+INSPIRE Implementing Rule, specification document or Conformance Class
+. For INSPIRE, the date given will be the date of publication of the
+INSPIRE Implementing Rule, specification document or Conformance Class
+. For INSPIRE Implementing Rule documents, the value of the title
+element shall match exactly the official title of the cited document in
+the language of the metadata.
+
+|Examples |Conformance of a dataset to Regulation 1089/2010 would have
+the title: +
+Commission Regulation (EU) No 1089/2010 of 23 November 2010 implementing
+Directive 2007/2/EC of the European Parliament and of the Council as
+regards interoperability of spatial data sets and services., +
+and would give a publication date of 2010-12-08
+
+|Revision date |April 2020
+|===
+
+Corresponding element in other standards...
+
+[[compare41]]
+[cols=",,",]
+|===
+|Standard |Name |Comparison
+
+|INSPIRE Metadata |Conformity |Equivalent
+
+|ISO 19115:2003 |DQ_DataQuality > DQ_Element.result >
+DQ_ConformanceResult |Equivalent
+
+|ISO 19139:2007
+|/gmd:MD_Metadata/gmd:dataQualityInfo/gmd:DQ_DataQuality/gmd:report/gmd:DQ_DomainConsistency/gmd:result/gmd:DQ_ConformanceResult
+|Equivalent
+|===
+
+Change history...
+
+[[history41]]
+* GEMINI 1 to 2.0: New element
+* GEMINI 2.2 to 2.3: changed the way to encode that a resource has not
+been tested against the relevant INSPIRE specification
+
+Encoding guidelines...
+
+[[coding41]]
+[width="100%",cols="50%,50%",]
+|===
+|Guidelines a|
+. The encoding for Conformity is shown in the example.
+. Note that the encoding of conformity requires a specification (encoded
+using gmd:CI_Citation), an explanation and a pass.
+. INSPIRE Metadata Implementing Rules state that there are three
+possible conformance results: conformant, not conformant and not
+evaluated. Not evaluated is expressed by a conformity statement with a
+nilReason (unknown) specified in the pass element.
+
+[start=4]
+. All gmd:dataQualityInfo XML element shall have a gmd:scope XML
+element, set to 'dataset' or 'series' as appropriate.
+
+|Example a|
+`                   `
+
+....
+<gmd:MD_Metadata>
+  ...
+  <gmd:dataQualityInfo>
+    <gmd:DQ_DataQuality>
+      <gmd:scope>
+        <gmd:DQ_Scope>
+          <gmd:level>
+            <gmd:MD_ScopeCode codeListValue='dataset' 
+              codeList='https://schemas.isotc211.org/schemas/19139/resources/codelist/gmxCodelists.xml#MD_ScopeCode'>dataset</gmd:MD_ScopeCode>
+          </gmd:level>
+          ...
+        </gmd:DQ_Scope>
+      </gmd:scope>
+      <gmd:report>
+        <gmd:DQ_DomainConsistency>
+          <gmd:result>
+            <gmd:DQ_ConformanceResult>
+              <gmd:specification>
+                <gmd:CI_Citation>
+                  <gmd:title>
+                    <gco:CharacterString>INSPIRE Implementing rules laying down technical arrangements for the interoperability 
+                      and harmonisation of orthoimagery</gco:CharacterString>
+                  </gmd:title>
+                  <gmd:date>
+                    <gmd:CI_Date>
+                      <gmd:date>
+                        <gco:Date>2011-05-15</gco:Date>
+                      </gmd:date>
+                      <gmd:dateType>
+                        <gmd:CI_DateTypeCode
+                          codeList='https://schemas.isotc211.org/schemas/19139/resources/codelist/                            gmxCodelists.xml#CI_DateTypeCode' 
+                          codeListValue='publication'>publication</gmd:CI_DateTypeCode>
+                      </gmd:dateType>
+                    </gmd:CI_Date>
+                  </gmd:date>
+                </gmd:CI_Citation>
+              </gmd:specification>
+              <gmd:explanation>
+                <gco:CharacterString>See the referenced specification</gco:CharacterString>
+              </gmd:explanation>
+              <gmd:pass>
+                <gco:Boolean>true</gco:Boolean>
+              </gmd:pass>
+            </gmd:DQ_ConformanceResult>
+          </gmd:result>
+        </gmd:DQ_DomainConsistency>
+      </gmd:report>
+      ...
+    </gmd:DQ_DataQuality>
+  </gmd:dataQualityInfo>
+</gmd:MD_Metadata>
+....
+
+Example of a conformity report for Implementing Rule 1089/2010, where
+conformance is not evaluated. +
+Example follows updated guidance to use gmx:Anchor over
+gco:CharacterString for Citation titles
+
+....
+ <gmd:report 
+    xmlns:gmd="http://www.isotc211.org/2005/gmd" 
+    xmlns:gco="http://www.isotc211.org/2005/gco" 
+    xmlns:gmx="http://www.isotc211.org/2005/gmx" 
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <gmd:DQ_DomainConsistency>
+        <gmd:result>
+            <gmd:DQ_ConformanceResult>
+                <gmd:specification>
+                    <gmd:CI_Citation>
+                        <gmd:title>
+                            <gmx:Anchor xlink:href="http://data.europa.eu/eli/reg/2010/1089">
+                                Commission Regulation (EU) No 1089/2010 of 23 November 2010 implementing Directive 
+                                2007/2/EC of the European Parliament and of the Council as regards interoperability 
+                                of spatial data sets and services</gmx:Anchor>
+                        </gmd:title>
+                        <gmd:date>
+                            <gmd:CI_Date>
+                                <gmd:date>
+                                    <gco:Date>2010-12-08</gco:Date>
+                                </gmd:date>
+                                <gmd:dateType>
+                                    <gmd:CI_DateTypeCode 
+                                        codeList='https://schemas.isotc211.org/schemas/19139/resources/codelist/gmxCodelists.xml#CI_DateTypeCode' 
+                                        codeListValue='publication' />
+                                </gmd:dateType>
+                            </gmd:CI_Date>
+                        </gmd:date>
+                    </gmd:CI_Citation>
+                </gmd:specification>
+                <!-- Explanation is a required element but can be empty -->
+                <gmd:explanation gco:nilReason="inapplicable"/>
+                <!-- Conformance has not been evaluated -->
+                <gmd:pass gco:nilReason="unknown" />
+            </gmd:DQ_ConformanceResult>
+        </gmd:result>
+    </gmd:DQ_DomainConsistency>
+</gmd:report>
+....
+
+Example three ~ Topological consistency, showing mandatory elements for
+a descriptive topological consistency report
+
+....
+<gmd:report>
+   <gmd:DQ_TopologicalConsistency>
+      <gmd:result>
+         <gmd:DQ_ConformanceResult>
+            <gmd:specification>
+               <gmd:CI_Citation>
+                  <gmd:title>
+                     <!-- The title for this report shall always be "INSPIRE Data Specifications - Base Models - Generic Network Model" -->
+                     <gco:CharacterString>INSPIRE Data Specifications - Base Models - Generic Network Model</gco:CharacterString>
+                  </gmd:title>
+                  <gmd:date>
+                     <gmd:CI_Date>
+                        <gmd:date>
+                           <!-- The date shall be the date of publication of the Generic Network Model -->
+                           <gco:Date>2013-04-05</gco:Date>
+                        </gmd:date>
+                        <gmd:dateType>
+                           <!-- The code list value shall always be publication -->
+                           <gmd:CI_DateTypeCode codeList='https://schemas.isotc211.org/schemas/19139/resources/codelist/gmxCodelists.xml' 
+                           codeListValue='publication'/>
+                        </gmd:dateType>
+                     </gmd:CI_Date>
+                  </gmd:date>
+               </gmd:CI_Citation>
+            </gmd:specification>
+            <!-- An explanation must be provided -->
+            <gmd:explanation><gco:CharacterString>[Some statement on topological consistency]</gco:CharacterString></gmd:explanation>
+            <gmd:pass>
+               <!-- The value shall always be false to indicate that the data does not assure the centerline topology for the network -->
+               <gco:Boolean>false</gco:Boolean>
+            </gmd:pass>
+         </gmd:DQ_ConformanceResult>
+      </gmd:result>
+   </gmd:DQ_TopologicalConsistency>
+</gmd:report>
+....
+
+|===
+
+Metadata errors observed...
+
+[[errors41]]
+[width="100%",cols="50%,50%",]
+|===
+|Errors observed |*Conformity statement missing* +
+INSPIRE requires a 'conformity' statement, which can say that the
+resource conforms, or does not conform to a specification, or that it
+hasn't been tested. +
+This is encoded with an ISO 19139 quality report. +
+*Incorrect citation of INSPIRE regulation* +
+When citing the INSPIRE regulation, the title and publication date need
+to match exactly. +
+Any deviation may result in the validation failure message "The gmd:pass
+element is not nillable and shall have a value" - even if the error is
+in the spelling of the title.
+|===
+
+[[43]]
+
+Name : Equivalent scale
+
+[[requirements43]]
+[cols=",",]
+|===
+|UK GEMINI id |43
+
+|Definition |Level of detail expressed as the scale denominator of a
+comparable hardcopy map or chart
+
+|Purpose and meaning |This is purely to conform to INSPIRE, and has
+little meaning for most digital data
+
+|Obligation |Optional
+
+|Occurrence |Multiple
+
+|Data type |Integer
+
+|Domain |Positive integer
+
+|Guidance |Where the data is captured from a map, the scale of that map
+should be recorded.
+
+|Comment |Expression of spatial resolution by distance is preferred.
+Spatial resolution should only be expressed by equivalent scale where a
+distance cannot be determined.
+
+|Examples |5,000
+
+|Revision date |July 2009
+|===
+
+Corresponding element in other standards...
+
+[[compare43]]
+[cols=",,",]
+|===
+|Standard |Name |Comparison
+
+|INSPIRE Metadata |Spatial resolution |Spatial resolution may also be
+expressed as distance
+
+|ISO 19115:2003 |MD_DataIdentification.spatialResolution >
+MD_Resolution.equivalentScale > MD_RepresentativeFraction.denominator
+|Equivalent
+
+|ISO 19139:2007
+|/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:spatialResolution/gmd:MD_Resolution/gmd:equivalentScale
+|Equivalent
+|===
+
+Change history...
+
+[[history43]]
+GEMINI 1 to 2.0: New element
+
+Encoding guidelines...
+
+[[coding43]]
+[width="100%",cols="50%,50%",]
+|===
+|Guidelines |
+|Example a|
+`                   `
+
+....
+   
+<gmd:MD_Metadata>
+  ...
+  <gmd:identificationInfo>
+    <gmd:MD_DataIdentification id="def-005000">
+      ...
+      <gmd:spatialResolution>
+        <gmd:MD_Resolution>
+          <gmd:equivalentScale>
+            <gmd:MD_RepresentativeFraction>
+              <gmd:denominator>
+                <gco:Integer>50000</gco:Integer>
+              </gmd:denominator>
+            </gmd:MD_RepresentativeFraction>
+          </gmd:equivalentScale>
+        </gmd:MD_Resolution>
+      </gmd:spatialResolution>
+      ...
+    </gmd:MD_DataIdentification>
+  </gmd:identificationInfo>
+  ...
+</gmd:MD_Metadata>
+....
+
+|===
+
+Metadata errors observed...
+
+[[errors43]]
+No error information available
+
+[[44]]
+
+Name : Bounding box
+
+[[requirements44]]
+[width="100%",cols="50%,50%",]
+|===
+|UK GEMINI id |44
+
+|Definition |Rectangle enclosing the extent of the data resource
+described in latitude and longitude
+
+|Purpose and meaning |This is to enable the resource to be located
+geographically
+
+|Obligation |Mandatory
+
+|Occurrence |Multiple
+
+|Data type |Class
+
+|Domain a|
+EX_GeographicBoundingBox
+
+[cols=",,,,",]
+!===
+!Metadata element name !West bounding longitude !East bounding longitude
+!South bounding latitude !North bounding latitude
+
+!Definition !western-most limit of the data resource extent, expressed
+in longitude in decimal degrees (positive east) !eastern-most limit of
+the data resource extent, expressed in longitude in decimal degrees
+(positive east) !southern-most limit of the data resource extent,
+expressed in latitude in decimal degrees (positive north) !northern-most
+limit of the data resource extent, expressed in latitude in decimal
+degrees (positive north)
+
+!Obligation !mandatory !mandatory !mandatory !mandatory
+
+!Occurrence !single !single !single !single
+
+!Data type !Decimal, expressed in degrees to at least two decimal places
+! ! !
+
+!Domain !-180.00 <= west bounding longitude <= 180.00 !-180.00 <= east
+bounding longitude <= 180.00 !-90.00 <= south bounding latitude <= north
+bounding latitude !south bounding latitude <= north bounding latitude <=
+90.00
+
+!Other comments !The West bounding coordinate usually has a value less
+than the value of the East bounding coordinate, except when the extent
+straddles the 180 degree meridian. !The East bounding longitude usually
+has a value greater than the value of the West bounding longitude,
+except when the extent straddles the 180 degree meridian. ! !
+!===
+
+|Guidance a|
+. Identify a bounding box slightly larger than the extent of the data
+resource, and determine the coordinates of the boundaries. It may be
+necessary to convert from another coordinate system (e.g. National Grid)
+into lat/long.
+. Only approximate values are required, sufficient to identify the
+extent on a global basis. The bounding box is implicitly in WGS84.
+
+|Comment |The bounding box will often cover areas that are not directly
+related to the area covered by the resource.
+
+|Examples |-9.23, 2.69, 49.84, 60.85
+
+|Revision date |December 2012
+|===
+
+Corresponding element in other standards...
+
+[[compare44]]
+[cols=",,",]
+|===
+|Standard |Name |Comparison
+
+|INSPIRE Metadata |Geographic bounding box |Identical
+
+|ISO 19115:2003 |MD_DataIdentification.extent > EX_Extent >
+EX_GeographicExtent > EX_GeographicBoundingBox |Minor difference in name
+
+|ISO 19139:2007
+|/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:extent/gmd:EX_Extent/gmd:geographicElement/gmd:EX_GeographicBoundingBox
+|
+|===
+
+Change history...
+
+[[history44]]
+* GEMINI 1 to 2.0: Slight change of name of each element
+* GEMINI 2.1 to 2.2: the four separate elements were merged to form
+Bounding box, which was made multiple
+
+Encoding guidelines...
+
+[[coding44]]
+[width="100%",cols="50%,50%",]
+|===
+|Guidelines a|
+. The encoding example for geographic bounding box for datasets is shown
+in the example
+. Note that the extent XML element is in the gmd namespace. This differs
+from service metadata instances where the extent XML element will be in
+the srv namespace.
+. The definition of the equivalent ISO 19115 class,
+EX_GeographicBoundingBox, is 'Geographic area of the entire dataset
+referenced to WGS 84'. Consequently, the CRS of the coordinates
+expressed in metadata is always WGS 84 (identified by the EPSG URI
+http://www.opengis.net/def/crs/EPSG/0/4326). This means that the
+coordinate values shall be expressed in units of degrees (encoded using
+decimal numbers) with axes orientated north and east. The geodetic datum
+is WGS 84.
+
+|Example a|
+`                   `
+
+....
+<gmd:MD_Metadata>
+  ...
+  <gmd:identificationInfo>
+    <gmd:MD_DataIdentification id="xxx-27700-x">
+      ...
+      <gmd:extent>
+        <gmd:EX_Extent>
+          <gmd:geographicElement>
+            <gmd:EX_GeographicBoundingBox>
+              <gmd:westBoundLongitude>
+                <gco:Decimal>-8.14</gco:Decimal>
+              </gmd:westBoundLongitude>
+              <gmd:eastBoundLongitude>
+                <gco:Decimal>2.96</gco:Decimal>
+              </gmd:eastBoundLongitude>
+              <gmd:southBoundLatitude>
+                <gco:Decimal>49.79</gco:Decimal>
+              </gmd:southBoundLatitude>
+              <gmd:northBoundLatitude>
+                <gco:Decimal>60.77</gco:Decimal>
+              </gmd:northBoundLatitude>
+            </gmd:EX_GeographicBoundingBox>
+          </gmd:geographicElement>
+          ...
+        </gmd:EX_Extent>
+      </gmd:extent>
+      ...
+    </gmd:MD_DataIdentification>
+  </gmd:identificationInfo>
+  ...
+</gmd:MD_Metadata>
+....
+
+|===
+
+Metadata errors observed...
+
+[[errors44]]
+[width="100%",cols="50%,50%",]
+|===
+|Errors observed a|
+*Overly precise bounding box* +
+GEMINI states that the bounding latitude and longitude should be stated
+to at least two decimal places. The INSPIRE geoportal used to report two
+decimal places as an error; it does not now. However, some software
+defaults to values that are unnecessarily "precise". For example: +
+
+....
+<gmd:westBoundLongitude>
+  <gco:Decimal>-8.17548890898914</gco:Decimal>
+</gmd:westBoundLongitude>
+....
+
+Six decimal places of a degree is something like 1cm, so the longitude
+above is being given to roughly the nearest molecule.
+
+|===
+
+[[48]]
+
+Name : Quality scope
+
+[[requirements48]]
+[width="100%",cols="50%,50%",]
+|===
+|UK GEMINI id |48
+
+|Definition |The specific data to which the data quality information
+applies
+
+|Purpose and meaning |To enable data quality to be reported on a subset
+of the data resource
+
+|Obligation |Mandatory
+
+|Occurrence |Multiple
+
+|Data type |Class
+
+|Domain |DQ_Scope from ISO 19115
+
+|Guidance a|
+. For the conformity statement and lineage of metadata describing:
+* a dataset, set quality scope to 'dataset'
+* a dataset series, set quality scope 'series'
+. If using a Data Quality element to describe something other than the
+whole dataset or series, then provide additional DQ_DataQuality elements
+with their Scope set appropriately
+
+|Comment |Required in the ISO 19115 encoding of GEMINI 2 metadata
+records, to assist in managing related metadata records.
+
+|Examples |
+
+|Revision date |March 2019
+|===
+
+Corresponding element in other standards...
+
+[[compare48]]
+[cols=",,",]
+|===
+|Standard |Name |Comparison
+
+|INSPIRE Metadata
+|metadata/2.0/req/datasets-and-series/one-data-quality-element |INSPIRE
+only allows a maximum of one Data quality element, so only one scope -
+the whole resource
+
+|ISO 19115:2003 |DQ_DataQuality.scope |Equivalent
+
+|ISO 19139:2007
+|/gmd:MD_Metadata/gmd:dataQualityInfo/gmd:DQ_DataQuality/gmd:scope
+|Equivalent
+|===
+
+Change history...
+
+[[history48]]
+New element in GEMINI 2.3
+
+Encoding guidelines...
+
+[[coding48]]
+[width="100%",cols="50%,50%",]
+|===
+|Guidelines a|
+All gmd:dataQualityInfo XML element shall have a gmd:scope XML element,
+set to as appropriate.
+
+There shall be exactly one gmd:dataQualityInfo/gmd:DQ_DataQuality
+element scoped to the entire described data set or data set series. This
+shall contain the Conformity and Lineage elements, and any Quality
+measures that relate to the the entire dataset or series
+
+Other quality measures, e.g. for specific feature types, shall be
+separate DQ_DataQuality elements, with the relevant Quality scope. In
+these cases the Level Description must also be set
+
+|Example a|
+`                   `
+
+....
+<gmd:MD_Metadata>
+  ...
+  <gmd:dataQualityInfo>
+    <gmd:DQ_DataQuality>
+      <gmd:scope>
+        <gmd:DQ_Scope>
+          <gmd:level>
+            <gmd:MD_ScopeCode codeListValue='dataset' 
+              codeList='https://schemas.isotc211.org/schemas/19139/resources/codelist/gmxCodelists.xml#MD_ScopeCode'>dataset</gmd:MD_ScopeCode>
+          </gmd:level>
+          ...
+        </gmd:DQ_Scope>
+      </gmd:scope>
+      ...
+    </gmd:DQ_DataQuality>
+  </gmd:dataQualityInfo>
+</gmd:MD_Metadata>
+....
+
+|===
+
+Metadata errors observed...
+
+[[errors48]]
+No error information available
+
+[[50]]
+
+Name : Spatial representation type
+
+[[requirements50]]
+[width="100%",cols="50%,50%",]
+|===
+|UK GEMINI id |50
+
+|Definition |The method used to spatially represent geographic
+information
+
+|Purpose and meaning |The type in which the spatial data is represented
+may be of importance when evaluating the fit for purpose of the dataset.
+The code list value of this element is intended for describing this
+information.
+
+|Obligation |Mandatory
+
+|Occurrence |Multiple
+
+|Data type |Class (CodeList)
+
+|Domain a|
+MD_SpatialRepresentationTypeCode from ISO 19115. Codes to be used are:
+
+. vector
+. grid
+. tin
+. textTable
+
+|Guidance a|
+. tin stands for triangulated irregular network. TIN is a digital data
+structure used in a geographic information system (GIS) for the
+representation of a surface
+. textTable should be used for datasets with an indirect spatial
+reference
+. grid should be used for images and coverage data
+
+|Comment |This element is regarded by the INSPIRE metadata technical
+guidance as interoperability metadata for datasets and dataset series
+
+|Examples |vector
+
+|Revision date |May 2018
+|===
+
+Corresponding element in other standards...
+
+[[compare50]]
+[width="100%",cols="34%,33%,33%",]
+|===
+|Standard |Name |Comparison
+
+|INSPIRE Metadata |Spatial representation type
+(metadata/2.0/req/isdss/spatial-representation-type) |
+
+|ISO 19115:2003 |MD_DataIdentification.spatialRepresentationType +
+references: B.5.26 MD_SpatialRepresentationTypeCode CodeList |CodeList
+is a superset of values used by INSPIRE
+
+|ISO 19139:2007
+|/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:spatialRepresentationType/gmd:MD_SpatialRepresentationTypeCode
+|
+|===
+
+Change history...
+
+[[history50]]
+* In original GEMINI, but removed in 2
+* Reintroduced in GEMINI 2.3
+
+Encoding guidelines...
+
+[[coding50]]
+[width="100%",cols="50%,50%",]
+|===
+|Guidelines |Only the codeListValue is required, the codeList and the
+free text content are optional and informative only
+
+|Example a|
+`                   `
+
+....
+   <gmd:identificationInfo>
+      <gmd:MD_DataIdentification id="CEH-barrcj2015">
+        ...
+         <gmd:resourceConstraints>
+            ...
+         </gmd:resourceConstraints>
+         <gmd:spatialRepresentationType>
+            <gmd:MD_SpatialRepresentationTypeCode 
+            codeList='https://schemas.isotc211.org/schemas/19139/resources/codelist/gmxCodelists.xml#MD_SpatialRepresentationTypeCode' 
+            codeListValue='textTable' />
+         </gmd:spatialRepresentationType>
+         <gmd:language>
+            ...
+         </gmd:language>
+        ...
+      </gmd:MD_DataIdentification>
+....
+
+|===
+
+Metadata errors observed...
+
+[[errors50]]
+No error information available
+
+[[51]]
+
+Name : Character encoding
+
+[[requirements51]]
+[cols=",",]
+|===
+|UK GEMINI id |51
+
+|Definition |The character encoding used in the dataset
+
+|Purpose and meaning |To enable data in non-standard character encodings
+to be handled
+
+|Obligation |Conditional (mandatory if an encoding is used that is not
+based on UTF-8, otherwise optional)
+
+|Occurrence |Multiple
+
+|Data type |Class (CodeList)
+
+|Domain |MD_CharacterSetCode from ISO 19115
+
+|Guidance |If more than one charater encoding is used within the dataset
+or dataset series, all used character encodings Including UTF-8, shall
+be given.
+
+|Comment |This element is regarded by the INSPIRE metadata technical
+guidance as interoperability metadata for datasets and dataset series
+
+|Examples |
+
+|Revision date |May 2018
+|===
+
+Corresponding element in other standards...
+
+[[compare51]]
+[width="100%",cols="34%,33%,33%",]
+|===
+|Standard |Name |Comparison
+
+|INSPIRE Metadata |Character encoding
+(metadata/2.0/req/isdss/character-encoding) |
+
+|ISO 19115:2003 |MD_DataIdentification.characterSet +
+references: B.5.10 MD_CharacterSetCode CodeList |Equivalent
+
+|ISO 19139:2007
+|/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:characterSet/gmd:MD_CharacterSetCode
+|Equivalent
+|===
+
+Change history...
+
+[[history51]]
+New element in GEMINI 2.3
+
+Encoding guidelines...
+
+[[coding51]]
+[width="100%",cols="50%,50%",]
+|===
+|Guidelines |Only the codeListValue is required, the codeList and the
+free text content are optional and informative only
+
+|Example a|
+`                   `
+
+....
+   <gmd:identificationInfo>
+      <gmd:MD_DataIdentification id="UKHO-12mfihlimit">
+         <gmd:citation>
+            ...
+         </gmd:citation>
+        ...
+         <gmd:language>
+            ...
+         </gmd:language>
+         <gmd:characterSet>
+            <gmd:MD_CharacterSetCode 
+              codeList='https://schemas.isotc211.org/schemas/19139/resources/codelist/gmxCodelists.xml#MD_CharacterSetCode' 
+              codeListValue='8859part1'>ISO/IEC 8859-1 (also known as Latin 1)</gmd:MD_CharacterSetCode>
+         </gmd:characterSet>
+         <gmd:topicCategory>
+            ...
+         </gmd:topicCategory>
+         <gmd:extent>
+            ...
+         </gmd:extent>
+            ...
+      </gmd:MD_DataIdentification>
+   </gmd:identificationInfo>
+....
+
+|===
+
+Metadata errors observed...
+
+[[errors51]]
+No error information available
+
+[[52]]
+
+Name : Data quality
+
+[[requirements52]]
+[width="100%",cols="50%,50%",]
+|===
+|UK GEMINI id |52
+
+|Definition |Quantitative aspects of data quality
+
+|Purpose and meaning |To allow quantitative description of the
+completeness, consistency, accuracy, and correctness of the data
+
+|Obligation |Conditional: Topological consistency report is mandatory if
+the dataset includes types from the INSPIRE Generic Network Model and
+does not assure centerline topology (connectivity of centrelines) for
+the network, otherwise optional
+
+|Occurrence |Multiple
+
+|Data type |Class, subtypes of DQ_Element
+
+|Domain a|
+DQ_Element from ISO 19115
+
+DQ_Element is an abstract complex type and has to be expressed by a
+corresponding DQ_xxx subelement concerning the particular data quality
+issue e.g. DQ_ConceptualConsistency. All these types have the same
+sub-attributes, such as nameOfMeasure, dateTime, result. It is important
+to choose the correct subelement, to clearly indicate the type of
+quality statement being made. Only the result sub-element (value, value
+type) is mandatory. All DQ_Element subtypes have the same sub-elements.
+
+.Table 1 Data Quality sub-elements
+[cols=",,,",options="header",]
+!===
+!Data Quality sub-element name !result !dateTime !nameOfMeasure
+!Definition !value (or set of values) obtained from applying a data
+quality measure or the outcome of evaluating the obtained value (or set
+of values) against a specified acceptable conformance quality level
+!date or range of dates on which a data quality measure was applied
+!name of the test applied to the data
+
+!Obligation !mandatory !optional !optional
+
+!Occurence !single !single !single
+
+!Data type !DQ_QuantitativeResult !DateTime !CharacterString
+
+!Domain !see table two below ! !see table three below
+!===
+
+.Table 2: DQ_QuantitativeResult
+[cols=",,,",options="header",]
+!===
+!Data Quantitative Result sub-element name !valueUnit !value !valueType
+!Definition !the units in which the result is reported !the quantitative
+result !the data type of the result
+
+!Obligation !mandatory !mandatory !mandatory
+
+!Occurence !single !multiple !single
+
+!Data type !UnitOfMeasure !Record !RecordType
+
+!Domain !see table three below ! !see table three below
+!===
+
+.Table 3: Details for various types of quality measure
+[width="99%",cols="20%,16%,16%,16%,16%,16%",options="header",]
+!===
+!Name !DQ_Element subtype !Definition !nameOfMeasure !Value type
+!Example INSPIRE themes
+! ! ! !As given in the
+https://inspire.ec.europa.eu/Themes/Data%20Specifications/2892[INSPIRE
+Data Specifications] ! !See the relevant specification for more details
+of each measure
+
+!Completeness - Commission !DQ_CompletenessCommission !excess data
+present in the dataset, as described by the scope !Rate of excess items
+!Real !AU, AD, TN, HY, PS, EL, LC, SU, BU, LU, US
+
+! ! ! !Number of duplicate feature instances !Integer !TN
+
+!Completeness - Omission !DQ_CompletenessOmission !data absent from the
+dataset, as described by the scope !Rate of missing items !Real !GN, AU,
+AD, CP, TN, HY, PS, EL, LC, OI, (not GE), SU, BY, SO, LU, US, PF, AF, OF
+
+!Conceptual consistency !DQ_ConceptualConsistency !adherence to rules of
+the conceptual schema !Non-compliance rate with respect to the rules of
+the conceptual schema !Real !EL
+
+! ! ! !Number of items not compliant with the rules of the conceptual
+schema !Integer !AU, TN
+
+! ! ! !Conceptual schema non-compliance !Boolean !LC
+
+!Domain consistency !DQ_DomainConsistency !adherence of values to the
+value domains !Number of items not in conformance with their value
+domain !Integer !AU
+
+! ! ! !Value domain non-conformance rate !Real !EL
+
+! ! ! !Value domain conformance rate !Real !HY
+
+! ! ! !Value domain non-conformance !Boolean !LC
+
+!Topological consistency !DQ_TopologicalConsistency !Correctness of the
+explicitly encoded topological characteristics of the dataset +
+Note: Only use this if the topological consistency can be quantified,
+otherwise provide a descriptive result with a DQ_ConformanceResult
+element; see GEMINI Conformity element !Number of faulty point-curve
+connections !Integer !AU, TN, HY
+
+! ! ! !Number of missing connections due to undershoots !Integer !AU,
+TN, HY
+
+! ! ! !Rate of missing connections due to undershoots !Real !EL
+
+! ! ! !Number of missing connections due to overshoots !Integer !TN, HY
+
+! ! ! !Rate of missing connections due to overshoots !Real !EL
+
+! ! ! !Number of missing connections due to crossing of bridge/road
+!Integer !HY
+
+! ! ! !Number of invalid overlaps of surfaces !Integer !HY
+
+! ! ! !Slivers !Integer !SU
+
+! ! ! !Number of invalid slivers !Integer !
+
+! ! ! !Number of invalid self-intersect errors !Integer !TN, HY, LC
+
+! ! ! !Rate of invalid self-intersect errors !Real !EL
+
+! ! ! !Number of invalid self-overlap errors !Integer !TN, HY
+
+! ! ! !Rate of invalid self-overlap errors !Rate !EL
+
+! ! ! !Number of watercourse links below threshold length !Integer !HY
+
+! ! ! !Number of closed watercourse links !Integer !HY
+
+! ! ! !Number of multi-part watercourse links !Integer !HY
+
+!Format consistency !DQ_FormatConsistency !Degree to which data is
+stored in accordance with the physical structure of the dataset
+!Physical structure conflict rate ! !EL
+
+! ! ! !Physical structure conflicts !Boolean !LC
+
+!Absolute or external accuracy !DQ_AbsoluteExternalPositionalAccuracy
+!closeness of reported coordinate values to values accepted as or being
+true !Mean value of positional uncertainties !Measure !
+
+! ! ! !Positional accuracy !Measure !SU
+
+! ! ! !Root mean square error of planimetry !Measure !EL, LC
+
+! ! ! !Root mean square error !Measure !EL
+
+!Gridded positional accuracy !DQ_GriddedDataPositionalAccuracy
+!Closeness of gridded data position values to values accepted as or
+being true !Root mean square error of planimetry !Measure !EL
+
+!Relative positional accuracy !DQ_RelativeInternalPositionalAccuracy
+!closeness of the relative positions of features in the scope to their
+respective relative positions accepted as or being true !Relative
+horizontal error !Measure !
+
+! ! ! !Root mean square error of planimetry !Real !LC
+
+!Temporal validity !DQ_TemporalValidity ! !Temporal accuracy !Boolean
+!SU
+
+!Thematic accuracy - classification
+!DQ_ThematicClassificationCorrectness !Comparison of the classes
+assigned to features or their attributes to a universe of discourse
+!Misclassification rate !Real !TN, LC
+
+! ! ! !Thematic accuracy !Real !SU
+
+! ! ! !Misclassification matrix !Matrix of integers !LC
+
+!Quantitative attribute accuracy !DQ_QuantitativeAttributeAccuracy
+!Accuracy of quantitative attributes !Attribute value uncertainty at 95%
+significance level !Real !HY
+
+! ! ! !Scatter plot !Graphical !LC
+
+!non-quantitative attribute correctness
+!DQ_NonQuantitiveAttributeAccuracy !correctness of non-quantitative
+attributes !Rate of incorrect attribute values !Real !
+
+! ! ! !Number of incorrect attribute values !Integer !
+!===
+
+Other attributes of ISO 19115 DQ_Element may be included, e.g.:
+
+.Table 4 Optional data quality sub-elements
+[width="100%",cols="34%,33%,33%",]
+!===
+! !evaluationMethodType !evaluationMethodDescription
+
+!Definition !type of method used to evaluate quality of the dataset
+!description of the evaluation method
+
+!Obligation !optional !optional
+
+!Occurence !single !single
+
+!Data type !DQ_EvaluationMethodTypeCode !free text
+
+!Domain ! !For example, in the INSPIRE Metadata Technical Guidelines,
+recommendation 2.3 says “It is recommended to provide a short
+description of the evaluation method used for topological consistency
+check”.
+!===
+
+|Guidance |
+
+|Comment |This element is regarded by the INSPIRE metadata technical
+guidance as interoperability metadata for datasets and dataset series
+
+|Examples |
+
+|Revision date |May 2018
+|===
+
+Corresponding element in other standards...
+
+[[compare52]]
+[width="100%",cols="34%,33%,33%",]
+|===
+|Standard |Name |Comparison
+
+|INSPIRE Metadata |Topological consistency +
+either:
+metadata/2.0/req/isdss/topological-consistency-quantitative-results +
+or: metadata/2.0/req/isdss/topological-consistency-descriptive-results +
+Other types are specified in the data specifications |
+
+|ISO 19115:2003 |DQ_DataQuality.report->__DQ_Element__ |Equivalent
+
+|ISO 19139:2007
+|/gmd:MD_Metadata/gmd:dataQualityInfo/gmd:DQ_DataQuality/gmd:report/gmd:DQ_********
+|Equivalent
+|===
+
+Change history...
+
+[[history52]]
+New element in GEMINI 2.3
+
+Encoding guidelines...
+
+[[coding52]]
+[width="100%",cols="50%,50%",]
+|===
+|Guidelines a|
+There shall be exactly one gmd:dataQualityInfo/gmd:DQ_DataQuality
+element scoped to the entire described data set or data set series. So
+if the scope of the quality measure is the entire dataset or series,
+then the result shall be in the same DQ_DataQuality element as the
+Conformity and Lineage elements
+
+Other quality measures, e.g. for specific feature types, shall be
+separate DQ_DataQuality elements, with the relevant Quality scope
+
+Quantitative results shall be reported using the relevant
+gmd:report/gmd:DQ_XXXXX element with a gmd:DQ_QuantitativeResult element
+as the value of its mandatory gmd:result property.
+
+The gmd:valueUnit and gmd:value/gco:Record child elements of
+gmd:DQ_QuantitativeResult shall be used for giving a numerical or
+otherwise quantitative value.
+
+The value type of the result shall be declared using the xsi:type
+attribute of the gco:Record element. Note that many of the INSPIRE Data
+Specifications give a value type of “Real, percentage, ratio”; GEMINI
+recommends using real numbers in all these cases, which should be
+declared as xs:double.
+
+As well as the mandatory elements, it is also recommended to supply a
+name of the measure, a short description of the evaluation method, and a
+date for the evaluation of the consistency check
+
+|Example a|
+`                   `
+
+....
+<gmd:dataQualityInfo>
+    <gmd:DQ_DataQuality>
+        <gmd:scope>
+            <gmd:DQ_Scope>
+                <gmd:level>
+            <gmd:MD_ScopeCode codeListValue='dataset' 
+              codeList='https://schemas.isotc211.org/schemas/19139/resources/codelist/gmxCodelists.xml#MD_ScopeCode'>dataset</gmd:MD_ScopeCode>
+                </gmd:level>
+            </gmd:DQ_Scope>
+        </gmd:scope>
+        <gmd:report>
+            <gmd:DQ_CompletenessCommission>
+                <gmd:nameOfMeasure>
+                    <gco:CharacterString>Rate of excess items</gco:CharacterString>
+                </gmd:nameOfMeasure>
+                <gmd:dateTime>
+                    <gco:DateTime>2017-04-01T01:00:00</gco:DateTime>
+                </gmd:dateTime>
+                <gmd:result>
+                    <gmd:DQ_QuantitativeResult>
+                        <gmd:valueUnit gco:nilReason="inapplicable"/>
+                        <gmd:value>
+                            <gco:Record
+                                xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                                xsi:type="xs:double">0.01</gco:Record>
+                        </gmd:value>
+                    </gmd:DQ_QuantitativeResult>
+                </gmd:result>
+            </gmd:DQ_CompletenessCommission>
+        </gmd:report>
+        <gmd:report>
+            <gmd:DQ_AbsoluteExternalPositionalAccuracy>
+                <gmd:nameOfMeasure><gco:CharacterString>Root mean square error</gco:CharacterString></gmd:nameOfMeasure>
+                <gmd:dateTime><gco:DateTime>2017-04-01T02:00:00</gco:DateTime></gmd:dateTime>
+                <gmd:result><gmd:DQ_QuantitativeResult>
+                    <gmd:valueUnit>
+                        <gml:BaseUnit gml:id="ID001">
+                            <gml:identifier codeSpace="SI">meters</gml:identifier>
+                            <gml:unitsSystem xlink:href="http://www.bipm.org/en/si/"/>
+                        </gml:BaseUnit>
+                    </gmd:valueUnit>
+                    <gmd:value>
+                     <gco:Record
+                        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                        xsi:type="xs:real">0.1</gco:Record></gmd:value>
+                </gmd:DQ_QuantitativeResult></gmd:result>
+            </gmd:DQ_AbsoluteExternalPositionalAccuracy>
+        </gmd:report>
+    </gmd:DQ_DataQuality>
+</gmd:dataQualityInfo>
+          
+....
+
+Example two - Topological consistency
+
+....
+ <gmd:report>
+    <gmd:DQ_TopologicalConsistency>
+       <gmd:result>
+          <gmd:DQ_QuantitativeResult>
+             <!--The mandatory elements are valueUnit and value/Record with xsi:type  -->
+             <gmd:valueUnit xlink:href="http://www.opengis.net/def/uom/OGC/1.0/unity"/>
+             <gmd:value>
+                 <gco:Record 
+                   xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                   xsi:type="xs:integer">12</gco:Record>
+             </gmd:value>
+          </gmd:DQ_QuantitativeResult>
+       </gmd:result>
+    </gmd:DQ_TopologicalConsistency>
+</gmd:report>
+....
+
+Example three ~ Topological consistency, showing a quantitative
+topological consistency report with recommended elements included
+
+....
+ <gmd:report>
+   <gmd:DQ_TopologicalConsistency>
+      <gmd:nameOfMeasure>
+         <gco:CharacterString>
+         Number of faulty point-curve connections
+         </gco:CharacterString>
+      </gmd:nameOfMeasure>
+      <gmd:evaluationMethodType>
+         <gmd:DQ_EvaluationMethodTypeCode 
+           codeList='https://schemas.isotc211.org/schemas/19139/resources/codelist/gmxCodelists.xml#DQ_EvaluationMethodTypeCode' 
+           codeListValue='indirect' />
+      </gmd:evaluationMethodType>
+      <gmd:evaluationMethodDescription>
+         <gco:CharacterString>
+           A point-curve connection exists where different curves touch... 
+         </gco:CharacterString>
+      </gmd:evaluationMethodDescription>
+      <gmd:dateTime>2017-01-21T19:21:30</gmd:dateTime>
+      <gmd:result>
+         <gmd:DQ_QuantitativeResult>
+            <!--The mandatory elements are valueUnit and value/Record with xsi:type  -->
+            <gmd:valueUnit xlink:href="http://www.opengis.net/def/uom/OGC/1.0/unity"/>
+            <gmd:value>
+               <gco:Record 
+                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                 xsi:type="xs:integer">12</gco:Record>
+            </gmd:value>
+         </gmd:DQ_QuantitativeResult>
+      </gmd:result>
+   </gmd:DQ_TopologicalConsistency>
+</gmd:report>
+....
+
+|===
+
+Metadata errors observed...
+
+[[errors52]]
+No error information available
+
+[[53]]
+
+Name : Maintenance information
+
+[[requirements53]]
+[width="100%",cols="50%,50%",]
+|===
+|UK GEMINI id |53
+
+|Definition |Information about the scope and frequency of updating
+
+|Purpose and meaning |
+
+|Obligation |Optional
+
+|Occurrence |Single
+
+|Data type |MD_MaintenanceInformation
+
+|Domain a|
+ISO 19115 MD_MaintenanceInformation
+
+At least maintenanceAndUpdateFrequency should be used, in addition it is
+recommended to supply updateScope/MD_ScopeCode and maintenanceNote, but
+only one of each
+
+.Table 1 Maintenance information sub-elements
+[cols=",,,",]
+!===
+!Sub element name !maintenance and update frequency !update scope
+!maintenance note
+
+!Definition !frequency with which changes and additions are made to the
+resource after the initial resource is completed !scope of data to which
+maintenance is applied !information regarding specific requirements for
+maintaining the resource
+
+!Obligation !Mandatory !Optional !Optional
+
+!Occurence !single !single !single
+
+!Domain !Maintenance frequency code (ISO 19115) !Scope code (ISO 19115)
+!free text
+!===
+
+Maintenance frequency code has values such as _continual, weekly,
+monthly, annually, notPlanned, unknown_
+
+Scope code has values such as _dataset, series, feature, tile_
+
+|Guidance |
+
+|Comment |Recommended for all INSPIRE themes +
+See the relevant INSPIRE data specifications, section 8.3.1 for further
+theme specific information
+
+|Examples |
+
+|Revision date |April 2020
+|===
+
+Corresponding element in other standards...
+
+[[compare53]]
+[cols=",,",]
+|===
+|Standard |Name |Comparison
+
+|INSPIRE Metadata |Maintenance information |identical
+
+|ISO 19115:2003 |MD_DataIdentification.resourceMaintenance |19115 allows
+more than one resourceMaintenance
+
+|ISO 19139:2007
+|/gmd:MD_Metadata/gmd:identificationInfo[1]/gmd:MD_DataIdentification/gmd:resourceMaintenance/
+|19139 allows more than one resourceMaintenance
+|===
+
+Change history...
+
+[[history53]]
+New element in GEMINI 2.3
+
+Encoding guidelines...
+
+[[coding53]]
+[width="100%",cols="50%,50%",]
+|===
+|Guidelines |No specific rules for this metadata element
+
+|Example a|
+`                   `
+
+....
+         <gmd:resourceMaintenance>
+            <gmd:MD_MaintenanceInformation>
+               <!-- At least maintenanceAndUpdateFrequency should be used -->
+               <gmd:maintenanceAndUpdateFrequency>
+                  <gmd:MD_MaintenanceFrequencyCode 
+                     codeList='https://schemas.isotc211.org/schemas/19139/resources/codelist/gmxCodelists.xml#MD_MaintenanceFrequencyCode' 
+                     codeListValue='annually'>annually</gmd:MD_MaintenanceFrequencyCode>
+               </gmd:maintenanceAndUpdateFrequency>
+               <!-- The following elements are recommended-->
+               <gmd:updateScope>
+            <gmd:MD_ScopeCode codeListValue='dataset' 
+              codeList='https://schemas.isotc211.org/schemas/19139/resources/codelist/gmxCodelists.xml#MD_ScopeCode'>dataset</gmd:MD_ScopeCode>
+               </gmd:updateScope>
+               <gmd:maintenanceNote>
+                  <gco:CharacterString>[Information regarding specific requirements for maintaining the resource]</gco:CharacterString>
+               </gmd:maintenanceNote>
+            </gmd:MD_MaintenanceInformation>
+         </gmd:resourceMaintenance>
+....
+
+|===
+
+Metadata errors observed...
+
+[[errors53]]
+No error information available
