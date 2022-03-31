@@ -1,11 +1,6 @@
 = Name : Resource locator
 include::includes/partials-attributes.adoc[]
-ifdef::variant-dataset[]
-:outfilesuffix: datasets-title{outfilesuffix}
-endif::[]
-ifdef::variant-service[]
-:outfilesuffix: services-title{outfilesuffix}
-endif::[]
+[#19]
 
 [width="100%",cols="50%,50%",]
 |===

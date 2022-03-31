@@ -1,0 +1,161 @@
+= Name : Resource identifier
+include::includes/partials-attributes.adoc[]
+[#36]
+
+[width="100%",cols="50%,50%",]
+|===
+|UK GEMINI id |36
+
+|Definition |Value uniquely identifying the data resource
+
+|Purpose and meaning |The purpose of this is to uniquely identify the
+data resource.
+
+|Obligation |Mandatory for datasets and dataset series
+
+|Occurrence |Multiple
+
+|Data type |Class
+
+|Domain a|
+The class comprises the following elements:
+
+* Code - Identifier code or name, often from a controlled list or
+pattern defined by a code space.
+* Codespace - Identifier of a code space within which one or more codes
+are defined.
+
+These elements are described in the table below
+
+[cols=",,",]
+!===
+!Metadata element name !code !codeSpace
+
+!Definition !Identifier code or name, often from a controlled list or
+pattern defined by a code pace !Identifier of a code space within which
+one or more codes are defined
+
+!Obligation !mandatory !conditional ~ must be suppled if the code by
+itself does not uniquely identify the resource.
+
+!Occurrence !single !single
+
+!Data type !CharacterString !CharacterString
+
+!Domain !free text !free text
+
+!Other comments !- !This code space is often defined by some authority
+organization, were one organization may define multiple code spaces. The
+range and format of each code space identifier is defined by that code
+space authority.
+!===
+
+|Guidance a|
+. The code is generally assigned by some authority, with a codespace
+uniquely identifying the context of the identifier code.
+. The codespace must be a character string that uniquely identifies the
+namespace for the identifier code. This should be the internet domain of
+the data owner/provider, +
+e.g.: data.bgs.ac.uk/id/dataHolding/
+. The resource is identified by a unique identifier code, generally
+assigned by the data owner. A character string namespace uniquely
+identifying the context of the identifier code may be added for
+uniqueness. This is usually allocated by an appropriate authority such
+as the manager of the spatial data infrastructure.
+. Where present, a DOI should be recorded as a resource identifier, with
+the codespace being doi. If a DOI landing page is also available, then
+include this using an Anchor.
+
+|Comment |Since INSPIRE metadata technical guidance version 2, it is no
+longer required to use RS_Identifier if a value for code space value is
+provided. +
+In such cases (where there is a code space provided) it is now strongly
+recommended to use MD_Identifier and encode the complete URI in the code
+element.
+
+|Examples a|
+* image2000_1_nl2_multi
+* doi:10.5285/1e7d5e08-9e24-471b-ae37-49b477f695e3
+* 527c4cac-070c-4bca-9aaf-92bece7be902
+
+|Revision date |May 2018
+|===
+
+Corresponding element in other standards...
+
+[%collapsible]
+====
+|===
+|Standard |Name |Comparison
+
+|INSPIRE Metadata |Unique resource identifier |Equivalent
+
+|ISO 19115:2003 |MD_Identification.citation > CI_Citation.identifier
+|Equivalent
+
+|ISO 19139:2007
+|/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:identifier
+|Equivalent
+|===
+====
+
+Change history...
+
+[%collapsible]
+====
+. GEMINI 1 to 2.0: New item 'Unique resource identifier', required for
+INSPIRE
+. GEMINI 2.2 to 2.3: Name changed from Unique resource identifier, to
+reduce confusion with W3C URI
+====
+
+Encoding guidelines...
+
+[%collapsible]
+====
+|===
+|Guidelines a|
+. The resource identifier can be a globally unique identifier such as a
+UUID, in which case it is encoded as shown in Example One.
+. The form used in Example One can also be used if the identifier is
+expressed as a code space and code in URI form like
+http://image2000.jrc.it#image2000_1_nl2_multi However a better way to do
+this is to use the gmx:Anchor as in Example Two.
+. Note that the identifier is encoded in the citation of the metadata
+instance
+. A resource identifier (which may be the same as the code) should also
+be added to the 'id' attribute of the gmd:MD_DataIdentification type.
+This follows the examples in the
+https://inspire.ec.europa.eu/documents/inspire-metadata-implementing-rules-technical-guidelines-based-en-iso-19115-and-en-iso-1[INSPIRE
+guidance] link:component/content/article?id=1047[[9]].
+. Care must be taken with the value of the id attribute code. The
+attribute 'id' has the data type xs:ID which must have as its value an
+XML name. This means that it cannot start with a number, and has a
+restricted set of characters it can include. This means that normally it
+cannot be an UUID or an URI. The id must also be unique across all id
+attributes in the metadata document
+. See notes on link:component/content/article?id=1048#2.2.12[XML
+Identifiers].
+
+|Example a|
+Example One
+
+....
+include::../snippets/resourceidentifier-characterstring.xml[]
+....
+
+Example Two - resolveable identifier using gmx:Anchor
+
+....
+include::../snippets/resourceidentifier-anchor.xml[]
+....
+
+|===
+====
+
+Metadata errors observed...
+
+[%collapsible]
+====
+No error information available
+====

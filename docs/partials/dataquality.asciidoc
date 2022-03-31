@@ -1,0 +1,319 @@
+= Name : Data quality
+include::includes/partials-attributes.adoc[]
+[#52]
+
+[width="100%",cols="50%,50%",]
+|===
+|UK GEMINI id |52
+
+|Definition |Quantitative aspects of data quality
+
+|Purpose and meaning |To allow quantitative description of the
+completeness, consistency, accuracy, and correctness of the data
+
+|Obligation |Conditional: Topological consistency report is mandatory if
+the dataset includes types from the INSPIRE Generic Network Model and
+does not assure centerline topology (connectivity of centrelines) for
+the network, otherwise optional
+
+|Occurrence |Multiple
+
+|Data type |Class, subtypes of DQ_Element
+
+|Domain a|
+DQ_Element from ISO 19115
+
+DQ_Element is an abstract complex type and has to be expressed by a
+corresponding DQ_xxx subelement concerning the particular data quality
+issue e.g. DQ_ConceptualConsistency. All these types have the same
+sub-attributes, such as nameOfMeasure, dateTime, result. It is important
+to choose the correct subelement, to clearly indicate the type of
+quality statement being made. Only the result sub-element (value, value
+type) is mandatory. All DQ_Element subtypes have the same sub-elements.
+
+.Table 1 Data Quality sub-elements
+[cols=",,,",options="header",]
+!===
+!Data Quality sub-element name !result !dateTime !nameOfMeasure
+!Definition !value (or set of values) obtained from applying a data
+quality measure or the outcome of evaluating the obtained value (or set
+of values) against a specified acceptable conformance quality level
+!date or range of dates on which a data quality measure was applied
+!name of the test applied to the data
+
+!Obligation !mandatory !optional !optional
+
+!Occurence !single !single !single
+
+!Data type !DQ_QuantitativeResult !DateTime !CharacterString
+
+!Domain !see table two below ! !see table three below
+!===
+
+.Table 2: DQ_QuantitativeResult
+[cols=",,,",options="header",]
+!===
+!Data Quantitative Result sub-element name !valueUnit !value !valueType
+!Definition !the units in which the result is reported !the quantitative
+result !the data type of the result
+
+!Obligation !mandatory !mandatory !mandatory
+
+!Occurence !single !multiple !single
+
+!Data type !UnitOfMeasure !Record !RecordType
+
+!Domain !see table three below ! !see table three below
+!===
+
+.Table 3: Details for various types of quality measure
+[width="99%",cols="20%,16%,16%,16%,16%,16%",options="header",]
+!===
+!Name !DQ_Element subtype !Definition !nameOfMeasure !Value type
+!Example INSPIRE themes
+! ! ! !As given in the
+https://inspire.ec.europa.eu/Themes/Data%20Specifications/2892[INSPIRE
+Data Specifications] ! !See the relevant specification for more details
+of each measure
+
+!Completeness - Commission !DQ_CompletenessCommission !excess data
+present in the dataset, as described by the scope !Rate of excess items
+!Real !AU, AD, TN, HY, PS, EL, LC, SU, BU, LU, US
+
+! ! ! !Number of duplicate feature instances !Integer !TN
+
+!Completeness - Omission !DQ_CompletenessOmission !data absent from the
+dataset, as described by the scope !Rate of missing items !Real !GN, AU,
+AD, CP, TN, HY, PS, EL, LC, OI, (not GE), SU, BY, SO, LU, US, PF, AF, OF
+
+!Conceptual consistency !DQ_ConceptualConsistency !adherence to rules of
+the conceptual schema !Non-compliance rate with respect to the rules of
+the conceptual schema !Real !EL
+
+! ! ! !Number of items not compliant with the rules of the conceptual
+schema !Integer !AU, TN
+
+! ! ! !Conceptual schema non-compliance !Boolean !LC
+
+!Domain consistency !DQ_DomainConsistency !adherence of values to the
+value domains !Number of items not in conformance with their value
+domain !Integer !AU
+
+! ! ! !Value domain non-conformance rate !Real !EL
+
+! ! ! !Value domain conformance rate !Real !HY
+
+! ! ! !Value domain non-conformance !Boolean !LC
+
+!Topological consistency !DQ_TopologicalConsistency !Correctness of the
+explicitly encoded topological characteristics of the dataset +
+Note: Only use this if the topological consistency can be quantified,
+otherwise provide a descriptive result with a DQ_ConformanceResult
+element; see GEMINI Conformity element !Number of faulty point-curve
+connections !Integer !AU, TN, HY
+
+! ! ! !Number of missing connections due to undershoots !Integer !AU,
+TN, HY
+
+! ! ! !Rate of missing connections due to undershoots !Real !EL
+
+! ! ! !Number of missing connections due to overshoots !Integer !TN, HY
+
+! ! ! !Rate of missing connections due to overshoots !Real !EL
+
+! ! ! !Number of missing connections due to crossing of bridge/road
+!Integer !HY
+
+! ! ! !Number of invalid overlaps of surfaces !Integer !HY
+
+! ! ! !Slivers !Integer !SU
+
+! ! ! !Number of invalid slivers !Integer !
+
+! ! ! !Number of invalid self-intersect errors !Integer !TN, HY, LC
+
+! ! ! !Rate of invalid self-intersect errors !Real !EL
+
+! ! ! !Number of invalid self-overlap errors !Integer !TN, HY
+
+! ! ! !Rate of invalid self-overlap errors !Rate !EL
+
+! ! ! !Number of watercourse links below threshold length !Integer !HY
+
+! ! ! !Number of closed watercourse links !Integer !HY
+
+! ! ! !Number of multi-part watercourse links !Integer !HY
+
+!Format consistency !DQ_FormatConsistency !Degree to which data is
+stored in accordance with the physical structure of the dataset
+!Physical structure conflict rate ! !EL
+
+! ! ! !Physical structure conflicts !Boolean !LC
+
+!Absolute or external accuracy !DQ_AbsoluteExternalPositionalAccuracy
+!closeness of reported coordinate values to values accepted as or being
+true !Mean value of positional uncertainties !Measure !
+
+! ! ! !Positional accuracy !Measure !SU
+
+! ! ! !Root mean square error of planimetry !Measure !EL, LC
+
+! ! ! !Root mean square error !Measure !EL
+
+!Gridded positional accuracy !DQ_GriddedDataPositionalAccuracy
+!Closeness of gridded data position values to values accepted as or
+being true !Root mean square error of planimetry !Measure !EL
+
+!Relative positional accuracy !DQ_RelativeInternalPositionalAccuracy
+!closeness of the relative positions of features in the scope to their
+respective relative positions accepted as or being true !Relative
+horizontal error !Measure !
+
+! ! ! !Root mean square error of planimetry !Real !LC
+
+!Temporal validity !DQ_TemporalValidity ! !Temporal accuracy !Boolean
+!SU
+
+!Thematic accuracy - classification
+!DQ_ThematicClassificationCorrectness !Comparison of the classes
+assigned to features or their attributes to a universe of discourse
+!Misclassification rate !Real !TN, LC
+
+! ! ! !Thematic accuracy !Real !SU
+
+! ! ! !Misclassification matrix !Matrix of integers !LC
+
+!Quantitative attribute accuracy !DQ_QuantitativeAttributeAccuracy
+!Accuracy of quantitative attributes !Attribute value uncertainty at 95%
+significance level !Real !HY
+
+! ! ! !Scatter plot !Graphical !LC
+
+!non-quantitative attribute correctness
+!DQ_NonQuantitiveAttributeAccuracy !correctness of non-quantitative
+attributes !Rate of incorrect attribute values !Real !
+
+! ! ! !Number of incorrect attribute values !Integer !
+!===
+
+Other attributes of ISO 19115 DQ_Element may be included, e.g.:
+
+.Table 4 Optional data quality sub-elements
+[width="100%",cols="34%,33%,33%",]
+!===
+! !evaluationMethodType !evaluationMethodDescription
+
+!Definition !type of method used to evaluate quality of the dataset
+!description of the evaluation method
+
+!Obligation !optional !optional
+
+!Occurence !single !single
+
+!Data type !DQ_EvaluationMethodTypeCode !free text
+
+!Domain ! !For example, in the INSPIRE Metadata Technical Guidelines,
+recommendation 2.3 says “It is recommended to provide a short
+description of the evaluation method used for topological consistency
+check”.
+!===
+
+|Guidance |
+
+|Comment |This element is regarded by the INSPIRE metadata technical
+guidance as interoperability metadata for datasets and dataset series
+
+|Examples |
+
+|Revision date |May 2018
+|===
+
+Corresponding element in other standards...
+
+[%collapsible]
+====
+|===
+|Standard |Name |Comparison
+
+|INSPIRE Metadata |Topological consistency +
+either:
+metadata/2.0/req/isdss/topological-consistency-quantitative-results +
+or: metadata/2.0/req/isdss/topological-consistency-descriptive-results +
+Other types are specified in the data specifications |
+
+|ISO 19115:2003 |DQ_DataQuality.report->__DQ_Element__ |Equivalent
+
+|ISO 19139:2007
+|/gmd:MD_Metadata/gmd:dataQualityInfo/gmd:DQ_DataQuality/gmd:report/gmd:DQ_********
+|Equivalent
+|===
+====
+
+Change history...
+
+[%collapsible]
+====
+New element in GEMINI 2.3
+====
+
+Encoding guidelines...
+
+[%collapsible]
+====
+|===
+|Guidelines a|
+There shall be exactly one gmd:dataQualityInfo/gmd:DQ_DataQuality
+element scoped to the entire described data set or data set series. So
+if the scope of the quality measure is the entire dataset or series,
+then the result shall be in the same DQ_DataQuality element as the
+Conformity and Lineage elements
+
+Other quality measures, e.g. for specific feature types, shall be
+separate DQ_DataQuality elements, with the relevant Quality scope
+
+Quantitative results shall be reported using the relevant
+gmd:report/gmd:DQ_XXXXX element with a gmd:DQ_QuantitativeResult element
+as the value of its mandatory gmd:result property.
+
+The gmd:valueUnit and gmd:value/gco:Record child elements of
+gmd:DQ_QuantitativeResult shall be used for giving a numerical or
+otherwise quantitative value.
+
+The value type of the result shall be declared using the xsi:type
+attribute of the gco:Record element. Note that many of the INSPIRE Data
+Specifications give a value type of “Real, percentage, ratio”; GEMINI
+recommends using real numbers in all these cases, which should be
+declared as xs:double.
+
+As well as the mandatory elements, it is also recommended to supply a
+name of the measure, a short description of the evaluation method, and a
+date for the evaluation of the consistency check
+
+|Example a|
+
+....
+include::../snippets/dataquality-mixed.xml[]          
+....
+
+Example two - Topological consistency
+
+....
+include::../snippets/dataquality-topo-qualitative.xml[]  
+....
+
+Example three ~ Topological consistency, showing a quantitative
+topological consistency report with recommended elements included
+
+....
+include::../snippets/dataquality-topo-quantitative.xml[] 
+....
+
+|===
+====
+
+Metadata errors observed...
+
+[%collapsible]
+====
+No error information available
+====

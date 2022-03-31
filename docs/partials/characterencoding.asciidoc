@@ -1,0 +1,83 @@
+= Name : Character encoding
+include::includes/partials-attributes.adoc[]
+[#51]
+
+[cols=",",]
+|===
+|UK GEMINI id |51
+
+|Definition |The character encoding used in the dataset
+
+|Purpose and meaning |To enable data in non-standard character encodings
+to be handled
+
+|Obligation |Conditional (mandatory if an encoding is used that is not
+based on UTF-8, otherwise optional)
+
+|Occurrence |Multiple
+
+|Data type |Class (CodeList)
+
+|Domain |MD_CharacterSetCode from ISO 19115
+
+|Guidance |If more than one charater encoding is used within the dataset
+or dataset series, all used character encodings Including UTF-8, shall
+be given.
+
+|Comment |This element is regarded by the INSPIRE metadata technical
+guidance as interoperability metadata for datasets and dataset series
+
+|Examples |
+
+|Revision date |May 2018
+|===
+
+Corresponding element in other standards...
+
+[%collapsible]
+====
+|===
+|Standard |Name |Comparison
+
+|INSPIRE Metadata |Character encoding
+(metadata/2.0/req/isdss/character-encoding) |
+
+|ISO 19115:2003 |MD_DataIdentification.characterSet +
+references: B.5.10 MD_CharacterSetCode CodeList |Equivalent
+
+|ISO 19139:2007
+|/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:characterSet/gmd:MD_CharacterSetCode
+|Equivalent
+|===
+====
+
+Change history...
+
+[%collapsible]
+====
+New element in GEMINI 2.3
+====
+
+Encoding guidelines...
+
+[%collapsible]
+====
+|===
+|Guidelines |Only the codeListValue is required, the codeList and the
+free text content are optional and informative only
+
+|Example a|
+
+....
+include::../snippets/characterencoding.xml[]  
+....
+
+|===
+====
+
+Metadata errors observed...
+
+[%collapsible]
+====
+No error information available
+====

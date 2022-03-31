@@ -1,0 +1,13 @@
+<gmd:MD_Metadata>
+   ...
+   <gmd:identificationInfo>
+     <srv:SV_ServiceIdentification>
+       ...
+       <srv:serviceType>
+         <gco:LocalName>view</gco:LocalName>
+       </srv:serviceType>
+       ...
+     </srv:SV_ServiceIdentification>
+   </gmd:identificationInfo>
+   ...
+</gmd:MD_Metadata>

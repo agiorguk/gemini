@@ -1,11 +1,6 @@
 = Name : Dataset reference date
 include::includes/partials-attributes.adoc[]
-ifdef::variant-dataset[]
-:outfilesuffix: datasets-title{outfilesuffix}
-endif::[]
-ifdef::variant-service[]
-:outfilesuffix: services-title{outfilesuffix}
-endif::[]
+[#8]
 
 |===
 |UK GEMINI id |8
@@ -101,8 +96,9 @@ endif::[]
 ifdef::variant-service[]
 |/gmd:MD_Metadata/gmd:identificationInfo/srv:SV_ServiceIdentification/gmd:citation/gmd:CI_Citation/gmd:date
 |Equivalent
-|===
 endif::[]
+|===
+
 ====
 
 Change history...

@@ -1,0 +1,117 @@
+= Name : Dataset language
+include::includes/partials-attributes.adoc[]
+[#3]
+
+[width="100%",cols="50%,50%",]
+|===
+|UK GEMINI id |3
+
+|Definition |Language used in the data resource
+
+|Purpose and meaning |This is the written language used for any text in
+the dataset.
+
+|Obligation |Mandatory
+
+|Occurrence |Multiple
+
+|Data type |CharacterString
+
+|Domain |Free text
+
+|Guidance a|
+. A code should be selected from ISO 639-2, which uses three-letter
+primary tags with optional subtags – see
+http://www.loc.gov/standards/iso639-2/php/code_list.php
+. The values for the UK languages are:
++
+[cols=",",]
+!===
+!*English* !eng
+!*Welsh* !cym
+!*Irish* !gle
+!*Gaelic (Scottish)* !gla
+!*Cornish* !cor
+!*Ulster Scots* !sco
+!===
++
+ISO 639-2 allows either 'cym' or 'wel' for Welsh, but two values for the
+same language causes confusion, and it is recommended that 'cym' be
+used.
+. In many cases, a default value of 'eng' can be applied.
+. Other official European languages are listed at
+http://ec.europa.eu/languages/policy/linguistic-diversity/official-languages-eu_en.htm[Official
+languages of the EU].
+. If there is no textual information in the data resource, then the
+special code value *zxx* of ISO 639-2/B reserved for "no linguistic
+content; not applicable" shall be used.
+
+|Comment |
+
+|Examples |eng
+
+|Revision date |September 2018
+|===
+
+Corresponding element in other standards...
+
+[%collapsible]
+====
+|===
+|Standard |Name |Comparison
+
+|INSPIRE Metadata |Resource language |Equivalent
+
+|ISO 19115:2003 |MD_DataIdentification.language |Equivalent, but ISO
+19115 only allows a single value
+
+|ISO 19139:2007
+|/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:language/gmd:LanguageCode
+|Equivalent
+|===
+====
+
+Change history...
+
+[%collapsible]
+====
+. GEMINI 1 to 2: Obligation changed from mandatory
+. GEMINI 2 to 2.2: Obligation changed (back) to mandatory
+====
+
+Encoding guidelines...
+
+[%collapsible]
+====
+[width="100%",cols="50%,50%",]
+|===
+|Guidelines a|
+. Note that according to the ISO 19115 logical model the language
+property is typed as a CharacterString. The use of the
+gco:CharacterString type is permitted by the ISO 19139 schemas but this
+approach shall not be used to encode GEMINI2 metadata. Instead the XML
+element gmd:LanguageCode, which substitutes for gco:CharacterString,
+shall be used.
+. The XML element gmd:LanguageCode is implemented as a code list
+element. Note that the codeList attribute should have the following
+value in GEMINI2 metadata instances:
+http://www.loc.gov/standards/iso639-2/php/code_list.php
+. Note however, that this URL resolves to an HTML web page rather than a
+service endpoint providing ISO 639-2 language codes.
+
+|Example a|
+Example following the INSPIRE recommendation of using the name of the language as the content of the gmd:LanguageCode
+
+....
+include::../snippets/datasetlanguage.xml[]
+....
+
+|===
+====
+
+Metadata errors observed...
+
+[%collapsible]
+====
+No error information available
+====

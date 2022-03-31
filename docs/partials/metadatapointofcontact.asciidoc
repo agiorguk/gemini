@@ -1,11 +1,6 @@
 = Name : Metadata point of contact
 include::includes/partials-attributes.adoc[]
-ifdef::variant-dataset[]
-:outfilesuffix: datasets-title{outfilesuffix}
-endif::[]
-ifdef::variant-service[]
-:outfilesuffix: services-title{outfilesuffix}
-endif::[]
+[#35]
 
 [cols=",",]
 |===

@@ -1,7 +1,7 @@
 = UK-GEMINI Standard and Inspire Implementing Rules
-include::includes/attributes.adoc[]
+include::./includes/attributes.asciidoc[]
 
-=== Introduction{nbsp} _(GEMINI 2.3, June 2018)_
+== Introduction{nbsp} _(GEMINI 2.3, June 2018)_
 
 This section of the website is for those producing or maintaining
 metadata for geographic information.

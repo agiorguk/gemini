@@ -1,0 +1,96 @@
+= Name : Additional information
+include::includes/partials-attributes.adoc[]
+[#27]
+
+[width="100%",cols="50%,50%",]
+|===
+|UK GEMINI id |27
+
+|Definition |Other descriptive information about the data resource
+
+|Purpose and meaning |The purpose of this element is to record relevant
+information that does not clearly belong in another element. This may be
+a reference (e.g. a URL).
+
+|Obligation |Optional
+
+|Occurrence |Single
+
+|Data type |CharacterString
+
+|Domain |Free text
+
+|Guidance a|
+. Information about access to the resource should be in
+<<19[Resource locator].
+. Information about fees should be in <<25[Limitations on public
+access]
+. Other relevant information should be in this element, or provided by a
+link which is given in this element.
+. References to other documents may be by URL, DOI, or other means.
+
+|Comment |
+
+|Examples |For full details about this dataset, see
+'https://os.uk/business-and-government/products/addressbase.html'
+
+|Revision date |June 2021
+|===
+
+Corresponding element in other standards...
+
+[%collapsible]
+====
+|===
+|Standard |Name |Comparison
+
+|INSPIRE Metadata |supplemental information |
+
+|ISO 19115:2003 |MD_Identification >
+MD_DataIdentification.supplementalInformation |Equivalent
+
+|ISO 19139:2007
+|/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:supplementalInformation
+|Equivalent
+|===
+====
+
+Change history...
+
+[%collapsible]
+====
+* GEMINI 2.3 20181031 Rename 'Additional information source' to
+'Additional information'
+* GEMINI 2.3 June 2021 fixed typo (XML syntax error) in example 2
+====
+
+Encoding guidelines...
+
+[%collapsible]
+====
+[width="100%",cols="50%,50%",]
+|===
+|Guidelines |No specific rules for this metadata element
+
+|Example a|
+Example one
+
+....
+include::../snippets/additionalinformation-characterstring.xml[]
+....
+
+Example two - a link, using gmx:Anchor
+
+....
+include::../snippets/additionalinformation-anchor.xml[]          
+....
+
+|===
+====
+
+Metadata errors observed...
+
+[%collapsible]
+====
+No error information available
+====

@@ -1,11 +1,6 @@
 = Name : Metadata standard version
 include::includes/partials-attributes.adoc[]
-ifdef::variant-dataset[]
-:outfilesuffix: datasets-title{outfilesuffix}
-endif::[]
-ifdef::variant-service[]
-:outfilesuffix: services-title{outfilesuffix}
-endif::[]
+[#55]
 
 |===
 |UK GEMINI id |55

@@ -1,0 +1,142 @@
+== UK GEMINI 2.3 2020-06-29 service
+include::./includes/attributes.asciidoc[]
+
+== Contents
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Metadata about the metadata record |Metadata about the resource
+|<<45, File Identifier>>
+|<<4, Abstract>>
+
+|<<47, Hierarchy level name>>
+|<<2, Alternative title>>
+
+|<<30, Metadata date>>
+|<<44, Bounding box>>
+
+|<<33, Metadata language>>
+|<<41, Conformity>>
+
+|<<35, Metadata point of contact>>
+|<<38, Coupled resource>>
+
+|<<54, Metadata standard name>>
+|<<8, Dataset reference date>>
+
+|<<55, Metadata standard version>>
+|<<43, Equivalent scale>>
+
+|<<49, Parent identifier>>
+|<<15, Extent>>
+
+|<<39, Resource type>> 
+|<<15, Extent>>
+
+|
+|<<6, Keyword>>
+
+|
+|<<25, Limitations on public access>>
+
+|
+|<<48, Quality scope>>
+
+|
+|<<19, Resource locator>>
+
+|
+|<<23, Responsible organisation>>
+
+|
+|<<37, Spatial data service type>>
+
+|
+|<<17, Spatial reference system>>
+
+|
+|<<18, Spatial resolution>>
+
+|
+|<<7, Temporal extent>>
+
+|
+|<<1, Title>>
+
+|
+|<<26, Use constraints>>
+
+|
+|<<16, Vertical extent information>>
+|===
+
+Return to link:1037-uk-gemini-standard-and-inspire-implementing-rules.html[GEMINI
+2.3 home page]
+
+'''''
+== Metadata about the resource
+
+include::./partials/metadatadate.asciidoc[]
+
+include::./partials/metadatalanguage.asciidoc[]
+
+include::./partials/metadatapointofcontact.asciidoc[]
+
+include::./partials/resourcetype.asciidoc[]
+
+include::./partials/fileidentifier.asciidoc[]
+
+include::./partials/hierarchylevelname.asciidoc[]
+
+include::./partials/parentidentifier.asciidoc[]
+
+include::./partials/metadatastandardname.asciidoc[]
+
+include::./partials/metadatastandardversion.asciidoc[]
+
+Go to <<UK GEMINI 2.3 2020-06-29 service, top of page>>
+
+== Metadata about the resource
+
+include::./partials/title.asciidoc[]
+
+include::./partials/alternatetitle.asciidoc[]
+
+include::./partials/abstract.asciidoc[]
+
+include::./partials/keyword.asciidoc[]
+
+include::./partials/temporalextent.asciidoc[]
+
+include::./partials/datasetreferencedate.asciidoc[]
+
+include::./partials/extent.asciidoc[]
+
+include::./partials/verticalextent.asciidoc[]
+
+include::./partials/spatialreferencesystem.asciidoc[]
+
+include::./partials/spatialresolution.asciidoc[]
+
+include::./partials/resourcelocator.asciidoc[]
+
+include::./partials/responsibleorganisation.asciidoc[]
+
+include::./partials/limitationsonpublicaccess.asciidoc[]
+
+include::./partials/useconstraints.asciidoc[]
+
+include::./partials/spatialdataservicetype.asciidoc[]
+
+include::./partials/coupledresource.asciidoc[]
+
+include::./partials/conformity.asciidoc[]
+
+include::./partials/equivalentscale.asciidoc[]
+
+include::./partials/boundingbox.asciidoc[]
+
+include::./partials/qualityscope.asciidoc[]
+
+Go to <<UK GEMINI 2.3 2020-06-29 service, top of page>>
+

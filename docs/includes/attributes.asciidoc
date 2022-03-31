@@ -1,3 +1,5 @@
+:assetdir: ./assets
+:stylesdir: {assetdir}
 :figure-caption: Figure
 :toc: left
 :docinfo: shared
@@ -5,7 +7,7 @@
 :docinfosubs: attributes
 :safe-mode-unsafe:
 :iconfont-remote!:
-:stylesheet: asciidoctor.css
+:stylesheet: ./assets/asciidoctor.css
 :scriptsdir: {assetdir}
 :linkcss:
 :data-uri:

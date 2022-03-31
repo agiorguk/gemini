@@ -1,0 +1,107 @@
+= Name : Maintenance information
+include::includes/partials-attributes.adoc[]
+[#53]
+
+[width="100%",cols="50%,50%",]
+|===
+|UK GEMINI id |53
+
+|Definition |Information about the scope and frequency of updating
+
+|Purpose and meaning |
+
+|Obligation |Optional
+
+|Occurrence |Single
+
+|Data type |MD_MaintenanceInformation
+
+|Domain a|
+ISO 19115 MD_MaintenanceInformation
+
+At least maintenanceAndUpdateFrequency should be used, in addition it is
+recommended to supply updateScope/MD_ScopeCode and maintenanceNote, but
+only one of each
+
+.Table 1 Maintenance information sub-elements
+[cols=",,,",]
+!===
+!Sub element name !maintenance and update frequency !update scope
+!maintenance note
+
+!Definition !frequency with which changes and additions are made to the
+resource after the initial resource is completed !scope of data to which
+maintenance is applied !information regarding specific requirements for
+maintaining the resource
+
+!Obligation !Mandatory !Optional !Optional
+
+!Occurence !single !single !single
+
+!Domain !Maintenance frequency code (ISO 19115) !Scope code (ISO 19115)
+!free text
+!===
+
+Maintenance frequency code has values such as _continual, weekly,
+monthly, annually, notPlanned, unknown_
+
+Scope code has values such as _dataset, series, feature, tile_
+
+|Guidance |
+
+|Comment |Recommended for all INSPIRE themes +
+See the relevant INSPIRE data specifications, section 8.3.1 for further
+theme specific information
+
+|Examples |
+
+|Revision date |April 2020
+|===
+
+Corresponding element in other standards...
+
+[%collapsible]
+====
+|===
+|Standard |Name |Comparison
+
+|INSPIRE Metadata |Maintenance information |identical
+
+|ISO 19115:2003 |MD_DataIdentification.resourceMaintenance |19115 allows
+more than one resourceMaintenance
+
+|ISO 19139:2007
+|/gmd:MD_Metadata/gmd:identificationInfo[1]/gmd:MD_DataIdentification/gmd:resourceMaintenance/
+|19139 allows more than one resourceMaintenance
+|===
+====
+
+Change history...
+
+[%collapsible]
+====
+New element in GEMINI 2.3
+====
+
+Encoding guidelines...
+
+[%collapsible]
+====
+|===
+|Guidelines |No specific rules for this metadata element
+
+|Example a|
+
+....
+include::../snippets/maintenanceinformation.xml[]       
+....
+
+|===
+====
+
+Metadata errors observed...
+
+[%collapsible]
+====
+No error information available
+====

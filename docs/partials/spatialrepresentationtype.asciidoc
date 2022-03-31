@@ -1,0 +1,97 @@
+= Name : Spatial representation type
+include::includes/partials-attributes.adoc[]
+[#50]
+
+[width="100%",cols="50%,50%",]
+|===
+|UK GEMINI id |50
+
+|Definition |The method used to spatially represent geographic
+information
+
+|Purpose and meaning |The type in which the spatial data is represented
+may be of importance when evaluating the fit for purpose of the dataset.
+The code list value of this element is intended for describing this
+information.
+
+|Obligation |Mandatory
+
+|Occurrence |Multiple
+
+|Data type |Class (CodeList)
+
+|Domain a|
+MD_SpatialRepresentationTypeCode from ISO 19115. Codes to be used are:
+
+. vector
+. grid
+. tin
+. textTable
+
+|Guidance a|
+. tin stands for triangulated irregular network. TIN is a digital data
+structure used in a geographic information system (GIS) for the
+representation of a surface
+. textTable should be used for datasets with an indirect spatial
+reference
+. grid should be used for images and coverage data
+
+|Comment |This element is regarded by the INSPIRE metadata technical
+guidance as interoperability metadata for datasets and dataset series
+
+|Examples |vector
+
+|Revision date |May 2018
+|===
+
+Corresponding element in other standards...
+
+[%collapsible]
+====
+|===
+|Standard |Name |Comparison
+
+|INSPIRE Metadata |Spatial representation type
+(metadata/2.0/req/isdss/spatial-representation-type) |
+
+|ISO 19115:2003 |MD_DataIdentification.spatialRepresentationType +
+references: B.5.26 MD_SpatialRepresentationTypeCode CodeList |CodeList
+is a superset of values used by INSPIRE
+
+|ISO 19139:2007
+|/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:spatialRepresentationType/gmd:MD_SpatialRepresentationTypeCode
+|
+|===
+====
+
+Change history...
+
+[%collapsible]
+====
+* In original GEMINI, but removed in 2
+* Reintroduced in GEMINI 2.3
+====
+
+Encoding guidelines...
+
+[%collapsible]
+====
+|===
+|Guidelines |Only the codeListValue is required, the codeList and the
+free text content are optional and informative only
+
+|Example a|
+
+....
+include::../snippets/spatialrepresentationtype.xml[]
+....
+
+|===
+====
+
+Metadata errors observed...
+
+[%collapsible]
+====
+No error information available
+====
