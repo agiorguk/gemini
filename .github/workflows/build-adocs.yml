@@ -1,0 +1,37 @@
+name: build adocs
+
+on:
+  push:
+    branches:
+    - master
+jobs:
+  adoc_build:
+    runs-on: ubuntu-latest
+    name: Asciidoctoring the docs to pretty HTML!
+    steps:
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    - uses: actions/checkout@v2
+    # Includes the AsciiDoctor GitHub Pages Action to convert adoc files to html and publish to gh-pages branch
+    - name: asciidoctor-ghpages-variant-dataset
+      uses: manoelcampos/asciidoctor-ghpages-action@v2
+      with:
+        asciidoctor_params: --attribute=variant-dataset
+        pdf_build: true
+        source_dir: docs/ # default is .
+        # adoc_file_ext: .ascii # default is .adoc
+        # slides_build: true
+        # pre_build:
+        # post_build:
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    - uses: actions/checkout@v2
+    # Includes the AsciiDoctor GitHub Pages Action to convert adoc files to html and publish to gh-pages branch
+    - name: asciidoctor-ghpages-variant-service
+      uses: manoelcampos/asciidoctor-ghpages-action@v2
+      with:
+        asciidoctor_params: --attribute=variant-service
+        pdf_build: true
+        source_dir: docs/ # default is .
+        # adoc_file_ext: .ascii # default is .adoc
+        # slides_build: true
+        # pre_build:
+        # post_build:
