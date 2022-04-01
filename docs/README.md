@@ -1,6 +1,6 @@
 # Gemini documentation
 
-Gemini web pages, converted from html to asciidoc and back again!
+Gemini web pages, converted from html to asciidoc, and back again!
 
 * [Services](services.html) 
 * [Datasets](datasets.html)
@@ -39,4 +39,4 @@ docker run --rm -v $(pwd):/documents/ asciidoctor/docker-asciidoctor asciidoctor
 
 ## Styling
 
-All files share a common attributes file, which indicates the basic attributes to be used when processing. This includes a reference to the stylesheet. Work has begun to integrate the styling from Gemini.css into asciidoctor.css but this is far from complete.
+All files share a common attributes file, which indicates the basic attributes to be used when processing. This includes a linked reference to the asciidoc html stylesheet rather than the default embedding. Work has begun to integrate the styling from [Gemini.css](https://github.com/archaeogeek/gemini/blob/main/docs/Gemini.css) into [asciidoctor.css](https://github.com/archaeogeek/gemini/blob/main/docs/assets/asciidoctor.css) but this is far from complete.
