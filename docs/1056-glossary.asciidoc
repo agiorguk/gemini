@@ -1,30 +1,5 @@
 = Glossary
-:figure-caption: Figure
-:toc: left
-:docinfo: shared
-:docinfodir: {assetdir}
-:docinfosubs: attributes
-:safe-mode-unsafe:
-:iconfont-remote!:
-:stylesheet: asciidoctor.css
-:scriptsdir: {assetdir}
-:linkcss:
-:data-uri:
-:iconfont-name: font-awesome.min
-:imagesdir: media
-:icons: font
-:nofooter:
-:sectnumlevels: 3
-:sectlinks:
-:sectanchors:
-:experimental:
-:stem:
-ifdef::variant-dataset[]
-:outfilesuffix: datasets-title{outfilesuffix}
-endif::[]
-ifdef::variant-service[]
-:outfilesuffix: services-title{outfilesuffix}
-endif::[]
+include::includes/attributes.adoc[]
 
 https://www.agi.org.uk/40-gemini/1056-glossary#A[A]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#B[B]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#C[C]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#D[D]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#E[E]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#F[F]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#G[G]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#H[H]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#I[I]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#J[J]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#K[K]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#L[L]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#M[M]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#N[N]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#O[O]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#P[P]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#Q[Q]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#R[R]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#S[S]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#T[T]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#U[U]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#V[V]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#W[W]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#X[X]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#Y[Y]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#Z[Z]
 
