@@ -7,33 +7,20 @@ on:
   workflow_dispatch:
 
 jobs:
-  adoc_build:
+  adoc_build-dataset:
     runs-on: ubuntu-latest
-    name: Asciidoctoring the docs to pretty HTML!
+    name: Asciidoctor conversion, dataset variant
     steps:
-    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    - uses: actions/checkout@v2
-    # Includes the AsciiDoctor GitHub Pages Action to convert adoc files to html and publish to gh-pages branch
-    - name: asciidoctor-ghpages-variant-dataset
-      uses: manoelcampos/asciidoctor-ghpages-action@v2
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Get build container
+      id: adocbuild
+      uses: avattathil/asciidoctor-action@master
       with:
-        asciidoctor_params: --attribute=variant-dataset
-        pdf_build: true
-        source_dir: docs/ # default is .
-        # adoc_file_ext: .ascii # default is .adoc
-        # slides_build: true
-        # pre_build:
-        # post_build:
-    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    - uses: actions/checkout@v2
-    # Includes the AsciiDoctor GitHub Pages Action to convert adoc files to html and publish to gh-pages branch
-    - name: asciidoctor-ghpages-variant-service
-      uses: manoelcampos/asciidoctor-ghpages-action@v2
-      with:
-        asciidoctor_params: --attribute=variant-service
-        pdf_build: true
-        source_dir: docs/ # default is .
-        # adoc_file_ext: .ascii # default is .adoc
-        # slides_build: true
-        # pre_build:
-        # post_build:
+          program: "asciidoctor -D docs -a variant-dataset *.asiidoc && echo 'gemini.agi.org.uk' > docs/CNAME"
+    - name: Deploy docs to ghpages
+      uses: peaceiris/actions-gh-pages@v3
+      with: 
+        deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+        publish_branch: gh-pages
+        publish_dir: ./docs/
