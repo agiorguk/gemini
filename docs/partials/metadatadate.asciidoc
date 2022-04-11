@@ -1,4 +1,4 @@
-= Name: Metadata Date
+= Metadata Date
 include::includes/partials-attributes.adoc[]
 [#30]
 

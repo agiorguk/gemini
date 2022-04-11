@@ -31,9 +31,6 @@ include::./includes/attributes.asciidoc[]
 |<<15, Extent>>
 
 |<<39, Resource type>> 
-|<<15, Extent>>
-
-|
 |<<6, Keyword>>
 
 |

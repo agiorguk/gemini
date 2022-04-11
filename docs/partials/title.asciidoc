@@ -1,4 +1,4 @@
-= Name: Title
+= Title
 include::includes/partials-attributes.adoc[]
 [#1]
 
