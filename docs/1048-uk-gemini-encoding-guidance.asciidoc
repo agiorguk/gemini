@@ -147,10 +147,10 @@ represented by an ellipsis (...)
 [source, xml]
 ----
 <gmd:MD_Metadata>
-{nbsp}{nbsp} <gmd:fileIdentifier>
-{nbsp}{nbsp}{nbsp}{nbsp} <gco:CharacterString>98e25be5-388d-4be3-bc5f-ba07ef6009b2</gco:CharacterString>
-{nbsp}{nbsp} </gmd:fileIdentifier>
-{nbsp}{nbsp} ...
+ 	<gmd:fileIdentifier>
+		<gco:CharacterString>98e25be5-388d-4be3-bc5f-ba07ef6009b2</gco:CharacterString>
+		</gmd:fileIdentifier>
+		 ...
 </gmd:MD_Metadata>
 ----
 
