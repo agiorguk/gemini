@@ -19,7 +19,7 @@ include::./includes/attributes.asciidoc[]
 |<<44, Bounding box>>
 
 |<<35, Metadata point of contact>>
-|<<3, [Character encoding>>
+|<<51, Character encoding>>
 
 |<<54, Metadata standard name>>
 |<<41, Conformity>>
