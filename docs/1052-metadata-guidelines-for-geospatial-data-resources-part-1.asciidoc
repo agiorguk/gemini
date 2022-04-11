@@ -1,5 +1,5 @@
 = Introduction to Metadata
-include::includes/attributes.adoc[]
+include::./includes/attributes.asciidoc[]
 
 === July 2018
 

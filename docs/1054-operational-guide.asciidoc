@@ -1,5 +1,5 @@
 = Operational Guide
-include::includes/attributes.adoc[]
+include::./includes/attributes.asciidoc[]
 
 === UK Location Discovery Metadata Service
 

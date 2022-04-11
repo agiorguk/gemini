@@ -1,5 +1,5 @@
 = UK GEMINI Encoding Guidance
-include::includes/attributes.adoc[]
+include::./includes/attributes.asciidoc[]
 
 === Technical guidance on the encoding of UK GEMINI
 

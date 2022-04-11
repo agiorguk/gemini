@@ -1,5 +1,5 @@
 = Metadata Guidelines for Geospatial Data Resources Part 2
-include::includes/attributes.adoc[]
+include::./includes/attributes.asciidoc[]
 
 === Creating metadata using UK GEMINI (v2.3) May 2018 -{nbsp}_being revised_
 
