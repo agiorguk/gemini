@@ -45,7 +45,7 @@ This work was sponsored by{nbsp}Defra, and carried out by members of
 the{nbsp}https://www.agi.org.uk/agi-uk-gemini/[AGI GEMINI Working Group].
 
 Here is
-a{nbsp}https://www.agi.org.uk/40-gemini/1055-uk-gemini-major-changes-since-1-0[summary
+a{nbsp}link:1055-uk-gemini-major-changes-since-1-0.html[summary
 of changes]{nbsp}from earlier versions.
 
 Here is
@@ -61,18 +61,18 @@ GEMINI 2.2.
 If you are:
 
 * *new to metadata*{nbsp}then
-follow{nbsp}https://www.agi.org.uk/40-gemini/1052-metadata-guidelines-for-geospatial-data-resources-part-1[this
+follow{nbsp}link:1052-metadata-guidelines-for-geospatial-data-resources-part-1.html[this
 link]{nbsp}to gain a general introduction to metadata for geographic
 information before going any further.
-The{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary[glossary of
+The{nbsp}link:1056-glossary.html[glossary of
 terms]{nbsp}and{nbsp}https://www.agi.org.uk/40-gemini/1047-metadata-guidelines-for-geospatial-data-resources-part-3[list
 of references]{nbsp}may also be useful;
 * *starting to compile metadata conforming to UK GEMINI2*{nbsp}and are
 unfamiliar with the standard, then
-follow{nbsp}https://www.agi.org.uk/40-gemini/1051-uk-gemini-v2-2-specification-for-discovery-metadata-for-geospatial-resources[this
+follow{nbsp}link:1051-uk-gemini-v2-2-specification-for-discovery-metadata-for-geospatial-resources.html[this
 link]{nbsp}to understand the scope, terms used and the requirements and
-also{nbsp}https://www.agi.org.uk/40-gemini/1049-metadata-guidelines-for-geospatial-data-resources-part-2[this
-one]{nbsp}which provides general guidance;
+also{nbsp}link:1049-metadata-guidelines-for-geospatial-data-resources-part-2.html[this
+one]{nbsp}which provides general guidance;https://www.agi.org.uk/40-gemini/
 * *familiar with UK GEMINI*{nbsp}and require specific information about the
 requirements and guidance for the metadata elements, then follow one of
 these links: to
@@ -80,7 +80,7 @@ describe{nbsp}https://www.agi.org.uk/40-gemini/1062-gemini-datasets-and-data-ser
 or series]{nbsp}or
 for{nbsp}https://www.agi.org.uk/40-gemini/1063-gemini-services[services];
 * *encoding UK GEMINI metadata in XML*,
-then{nbsp}https://www.agi.org.uk/gemini/40-gemini/1048-uk-gemini-encoding-guidance/[general
+then{nbsp}link:1048-uk-gemini-encoding-guidance.html[general
 guidance]{nbsp}is supplemented with detailed guidance for each metadata
 element
 at{nbsp}https://www.agi.org.uk/40-gemini/1062-gemini-datasets-and-data-series[datasets
@@ -88,7 +88,7 @@ or series]{nbsp}or
 for{nbsp}https://www.agi.org.uk/40-gemini/1063-gemini-services[services]
 * *quality assuring metadata*, then information on common metadata
 errors can
-found{nbsp}https://www.agi.org.uk/40-gemini/1053-common-metadata-errors-uk-location-discovery-metadata-service[here].
+found{nbsp}link:1053-common-metadata-errors-uk-location-discovery-metadata-service.html[here].
 * *Schematron rules*{nbsp}which check many of the constraints in GEMINI is
 available as a{nbsp}https://github.com/AGIGemini/Schematron[on GitHub (free
 link)], under a Creative Commons license.

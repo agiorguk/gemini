@@ -1,47 +1,36 @@
 = UK GEMINI Encoding Guidance
 include::./includes/attributes.asciidoc[]
+:sectnums!:
 
-=== Technical guidance on the encoding of UK GEMINI
+== Technical guidance on the encoding of UK GEMINI
 
 Return
-to{nbsp}https://www.agi.org.uk/gemini/40-gemini/1037-uk-gemini-standard-and-inspire-implementing-rules[GEMINI
+to{nbsp}link:1037-uk-gemini-standard-and-inspire-implementing-rules.html[GEMINI
 2.3 home page]
 
-https://www.agi.org.uk/40-gemini/1048-uk-gemini-encoding-guidance#1[1.
-Introduction]
+<<_introduction, Introduction>>
 
-https://www.agi.org.uk/40-gemini/1048-uk-gemini-encoding-guidance#1.1[1.1
-Purpose of guidelines]
+<<_purpose_of_guidelines, Purpose of guidelines>>
 
-https://www.agi.org.uk/40-gemini/1048-uk-gemini-encoding-guidance#1.2[1.2
-Scope]
+<<_scope, Scope>>
 
-https://www.agi.org.uk/40-gemini/1048-uk-gemini-encoding-guidance#1.3[1.3
-Assumed knowledge]
+<<_assumed_knowledge, Assumed knowledge>>
 
-https://www.agi.org.uk/40-gemini/1048-uk-gemini-encoding-guidance#1.4[1.4
-Terminology]
+<<_terminology, Terminology>>
 
-https://www.agi.org.uk/40-gemini/1048-uk-gemini-encoding-guidance#1.5[1.5
-Structure of document]
+<<1.5, Structure of document>>
 
-https://www.agi.org.uk/40-gemini/1048-uk-gemini-encoding-guidance#1.6[1.6
-XML fragments]
+<<1.6, XML fragments>>
 
-https://www.agi.org.uk/40-gemini/1048-uk-gemini-encoding-guidance#2[2.
-Encoding Guidelines]
+<<2, Encoding Guidelines>>
 
-https://www.agi.org.uk/40-gemini/1048-uk-gemini-encoding-guidance#2.1[2.1
-Schemas]
+<<2.1, Schemas>>
 
-https://www.agi.org.uk/40-gemini/1048-uk-gemini-encoding-guidance#2.2[2.2
-Common concepts]
+<<2.2, Common concepts>>
 
-https://www.agi.org.uk/40-gemini/1048-uk-gemini-encoding-guidance#2.3[2.3
-Metadata for datasets and dataset series]
+<<2.3, Metadata for datasets and dataset series>>
 
-https://www.agi.org.uk/40-gemini/1048-uk-gemini-encoding-guidance#2.4[2.4
-Metadata for services]
+<<2.4, Metadata for services>>
 
 Appendices
 
@@ -57,9 +46,12 @@ metadata instance example]
 https://www.agi.org.uk/40-gemini/1042-service-metadata-instance-example[Service
 metadata instance example]
 
-=== [#1]####1. Introduction
+:sectnums:
+:sectnumlevels: 3
 
-==== [#1.1]####1.1 Purpose of guidelines
+== Introduction
+
+=== Purpose of guidelines
 
 The purpose of these guidelines is to explain, with the aid of examples,
 how to encode UK GEMINI metadata using XSD schemas of ISO / TC 211.
@@ -68,7 +60,7 @@ Examples are in the form of fragments of XML.
 UK GEMINI metadata may be for a dataset, dataset series or a service.
 The encoding of all types is covered.
 
-==== [#1.2]####1.2 Scope
+=== Scope
 
 The scope of these guidelines is the encoding of UK GEMINI
 [https://www.agi.org.uk/40-gemini/1047-metadata-guidelines-for-geospatial-data-resources-part-3[4]]according
@@ -82,7 +74,7 @@ metadata items, their content, obligation and meaning. Readers seeking
 this information should consult the GEMINI2 standard
 [https://www.agi.org.uk/40-gemini/1047-metadata-guidelines-for-geospatial-data-resources-part-3[4]].
 
-==== [#1.3]####1.3 Assumed knowledge
+=== Assumed knowledge
 
 It is assumed that readers will be familiar with XML. Readers who
 require background information are referred to the W3Schools
@@ -95,12 +87,12 @@ W3Schools XML Schema tutorial:
 
 * XSD{nbsp}-{nbsp}http://www.w3schools.com/xml/xml_schema.asp
 
-==== [#1.4]####1.4 Terminology
+=== Terminology
 
 A Glossary is
 provided{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary[here].
 
-==== [#1.5]####1.5 Structure of document
+=== Structure of document
 
 The core section,{nbsp}Encoding Guidelines,{nbsp}is split into four principal
 sections
@@ -134,7 +126,7 @@ metadata instance example]
 https://github.com/AGIuk/Schematron/blob/master/samples/1042-sv.xml[Service
 metadata instance example]
 
-==== [#1.6]####1.6 XML Fragments
+=== XML Fragments
 
 This document contains examples of XML encoding. The examples are
 considered fragments in that they are not complete XML documents. The
@@ -151,21 +143,23 @@ text wrapping)
 * Missing XML content, removed while forming the fragment, shall be
 represented by an ellipsis (...)
 
-===== *Figure 1 – XML fragment – tabbing*
-
-`<gmd:MD_Metadata>` +
-`{nbsp}{nbsp} <gmd:fileIdentifier>` +
-`{nbsp}{nbsp}{nbsp}{nbsp} <gco:CharacterString>98e25be5-388d-4be3-bc5f-ba07ef6009b2</gco:CharacterString>` +
-`{nbsp}{nbsp} </gmd:fileIdentifier>` +
-`{nbsp}{nbsp} ...` +
-`</gmd:MD_Metadata>`
+.XML fragment – tabbing
+[source, xml]
+----
+<gmd:MD_Metadata>
+{nbsp}{nbsp} <gmd:fileIdentifier>
+{nbsp}{nbsp}{nbsp}{nbsp} <gco:CharacterString>98e25be5-388d-4be3-bc5f-ba07ef6009b2</gco:CharacterString>
+{nbsp}{nbsp} </gmd:fileIdentifier>
+{nbsp}{nbsp} ...
+</gmd:MD_Metadata>
+----
 
 Figure 1 shows an example of an XML fragment. Note that it starts with
-the XML element gmd:MD_Metadata. The next XML element in order is
-gmd:fileIdentifier and its start-tag is on the next line and is tabbed
-in. The following line is the content of gmd:fileIdentifier.
+the XML element `gmd:MD_Metadata`. The next XML element in order is
+`gmd:fileIdentifier` and its start-tag is on the next line and is tabbed
+in. The following line is the content of `gmd:fileIdentifier`.
 
-An ellipsis follows the end tag of the XML element gmd:fileIdentifier
+An ellipsis follows the end tag of the XML element `gmd:fileIdentifier`
 indicating that other content is missing
 
 Also deliberately omitted from XML fragments is:
@@ -174,17 +168,18 @@ Also deliberately omitted from XML fragments is:
 * XML namespace identifiers
 
 In the example in Figure 1 CharacterString is an XML element in the
-namespace gco. It has the start-tag{nbsp}`<gco:CharacterString>`{nbsp}and the
-end-tag{nbsp}`</gco:CharacterString>.`{nbsp}The
-string{nbsp}_98e25be5-388d-4be3-bc5f-ba07ef6009b2_{nbsp}is the element’s content.
+namespace gco. It has the start-tag `<gco:CharacterString>` and the
+end-tag `</gco:CharacterString>`. The
+string `98e25be5-388d-4be3-bc5f-ba07ef6009b2` is the element’s content.
 The CharacterString element forms the content of another element:
-fileIdentifier. Its start-tag is{nbsp}`<gmd:fileIdentifier>`{nbsp}and its end-tag
-is{nbsp}`</gmd:fileIdentifier>`. {nbsp}In the example
-below{nbsp}`gml:id`{nbsp}and{nbsp}`codeSpace`{nbsp}are XML attributes. XML attributes are
+fileIdentifier. Its start-tag is `<gmd:fileIdentifier>` and its end-tag
+is `</gmd:fileIdentifier>`. In the example
+below `gml:id` and `codeSpace` are XML attributes. XML attributes are
 encoded in the start-tag of an element with the
-form{nbsp}`[namespace]:[attributeName]="[content]"`.
+form `[namespace]:[attributeName]="[content]"`.
 
-===== *Figure 2 - XML attributes{nbsp}*
+.XML attributes
+[example]
 
 `...` +
 `<gmx:CodeDefinition gml:id="MD_ScopeCode_dataset">` +
@@ -198,7 +193,8 @@ each XML element on a new line other than to aid humans in reading raw
 XML. XML parsers, on the other hand, would have no problem reading the
 XML were it encoded without carriage returns as shown in Figure 3.
 
-===== *Figure 3 - XML fragment - no tabbing{nbsp}*
+.XML fragment - no tabbing
+[example]
 
 `<gmd:MD_Metadata><gmd:fileIdentifier><gco:CharacterString>98e25be5-388d-4be3-bc5f-ba07ef6009b2</gco:CharacterString></gmd:fileIdentifier></gmd:MD_Metadata>`
 
@@ -236,9 +232,9 @@ and files laid out with additional white space for human readability,
 and other variants in between. Similarly, XML attribute values could be
 delimited using single or double quotes.
 
-=== [#2]####2. Encoding Guidelines
+== Encoding Guidelines
 
-==== [#2.1]####2.1 Schemas
+=== Schemas
 
 The schemas defining the structure of GEMINI2 metadata instances must
 implement:
@@ -298,9 +294,9 @@ The INSPIRE Validator available
 through{nbsp}https://inspire.ec.europa.eu/validator/about/{nbsp}includes metadata
 validation.
 
-==== [#2.2]####2.2 Common concepts
+=== Common concepts
 
-===== 2.2.1 XML declaration
+==== XML declaration
 
 Metadata instances are XML documents. XML documents should, but do not
 have to, begin with an XML declaration. If a metadata instance has an
@@ -326,7 +322,7 @@ instances of GEMINI2 shall not use a DTD so it is out of scope.
 
 `<?xml version="1.0" encoding="utf-8"?>`
 
-===== 2.2.2 Root element
+==== Root element
 
 The root element of a GEMINI2 metadata instance shall be
 gmd:MD_Metadata. The root element shall contain namespace references to,
@@ -409,7 +405,7 @@ required in a GEMINI2 metadata instance.
 `{nbsp} ...` +
 `</gmd:MD_Metadata>`
 
-===== [#2.2.3]####2.2.3 Dates and Times
+==== Dates and Times
 
 Dates and date-time shall be expressed in the Gregorian calendar and UTC
 as per ISO 8601. The formatting shall be as follows, in order of
@@ -429,7 +425,7 @@ coarse a granularity as century (e.g. yy or 19). However, unfortunately
 this cannot be encoded in ISO 19139 XML and will result in a schema
 validation error. The lowest level of granularity allowable is the year.
 
-===== 2.2.4 Element order
+==== Element order
 
 XML elements in a metadata instance must follow the order in which the
 elements are defined in an XSD schema. Failure to do so will result in
@@ -437,7 +433,7 @@ schema validation errors. The order of XML elements and their
 corresponding GEMINI2 metadata items is
 shown{nbsp}https://www.agi.org.uk/40-gemini/1046-xml-element-order[here].
 
-===== 2.2.5 Patterns for multiple instances
+==== Patterns for multiple instances
 
 Some metadata items, such as alternative title, have cardinalities for
 more than one. This means that more than one instance of the item can be
@@ -488,7 +484,7 @@ content, such as gmd:identificationInfo (Figure 9).
 `{nbsp} ...` +
 `</gmd:MD_Metadata>{nbsp}`
 
-===== [#2.2.6]####2.2.6 File identifier
+==== File identifier
 
 The first XML child element of any GEMINI2 metadata instance shall be
 gmd:fileIdentifier. The content of this XML element is the identifier of
@@ -510,7 +506,7 @@ metadata instance it shall not change.
 `{nbsp} ...` +
 `</gmd:MD_Metadata>{nbsp}`
 
-===== 2.2.7 Citation
+==== Citation
 
 External resources, such as publications, controlled vocabularies, are
 expressed using the ISO 19115 class CI_Citation and its XML element
@@ -552,7 +548,7 @@ only one date with type 'revision'.
 `</gmd:CI_Citation>` +
 `...`
 
-===== {nbsp}[#2.2.8]####2.2.8 Responsible party
+==== Responsible party
 
 ====== *Figure 12 - CI_ResponsibleParty structure{nbsp}*
 
@@ -631,7 +627,7 @@ gmd:city, gmd:administrativeArea, gmd:postalCode and gmd:country),
 telephone number (encoded using gmd:voice) and facsimile number (encoded
 using gmd:facsimile) may be provided.
 
-===== [#2.2.9]####2.2.9 Code lists
+==== Code lists
 
 Where a sub-item takes its value from a code list, which may or may not
 be expressed in ISO 19115, the source code list catalogue and code list
@@ -706,7 +702,7 @@ of MD_ScopeCode that are relevant to GEMINI2 metadata.
 `{nbsp} </codelistItem>` +
 `</CT_CodelistCatalogue>{nbsp}`
 
-===== 2.2.10 Null Values
+==== Null Values
 
 The ISO 19139 XML schemas provide a means for indicating that the
 contents of an element may be unknown or withheld, through the use of
@@ -749,7 +745,7 @@ The following metadata items shall not be nillable:
 * Originating controlled vocabulary title
 * File identifier
 
-===== 2.2.11 By Value or By Reference
+==== By Value or By Reference
 
 The content of a metadata instance may be expressed{nbsp}_by value_{nbsp}or{nbsp}_by
 reference_.{nbsp}_By value_{nbsp}means that the metadata instance carries all the
@@ -819,7 +815,7 @@ items shall be implemented{nbsp}_by value_.
 `xlink:href="http://metadata.bgs.ac.uk/geonetwork/srv/en/csw?SERVICE=CSW&REQUEST=GetRecordById` +
 `&ID=9df8df52-d788-37a8-e044-0003ba9b0d98&OutputSchema=http://www.isotc211.org/2005/gmd&elementSetName=full#BGS-13480426&" uuidref="9df8df52-d788-37a8-e044-0003ba9b0d98" />`
 
-===== [#2.2.12]####2.2.12 Identifiers
+==== Identifiers
 
 GML XML elements which are used in metadata have an optional gml:id
 attribute. The value domain of the identifier is referred to as{nbsp}_XML
@@ -894,7 +890,7 @@ when the unique resource identifier is referenceable,
 </gmd:identifier>
 ....
 
-===== [#2.2.14]####2.2.14 Limitations, conditions, and licences
+===== [#2.2.14]###2.2.14 Limitations, conditions, and licences
 
 GEMINI contains two elements, 25{nbsp}_Limitations on public access_{nbsp}and
 26{nbsp}_Use constraints_. These represent the two INSPIRE
@@ -1116,7 +1112,7 @@ codeListValue="otherRestrictions">otherRestrictions</gmd:MD_RestrictionCode>
 </gmd:resourceConstraints>
 ....
 
-====== [#2.3]####2.3 Metadata for datasets and dataset series
+====== [#2.3]##2.3 Metadata for datasets and dataset series
 
 ===== 2.3.1 Data identification
 
@@ -1149,12 +1145,12 @@ series, ISO 19115 hierarchyLevelName element must also be set, to
 `{nbsp} ...` +
 `</gmd:MD_Metadata>`
 
-==== [#2.3.2]####2.3.2 Detailed guidance for each metadata element
+==== [#2.3.2]###2.3.2 Detailed guidance for each metadata element
 
 * https://www.agi.org.uk/40-gemini/1062-gemini-datasets-and-data-series[Datasets
 and series]
 
-==== [#2.4]####2.4 Metadata for services
+==== [#2.4]##2.4 Metadata for services
 
 ===== 2.4.1 Service identification
 
@@ -1211,7 +1207,7 @@ with null values with the nil reason being missing (Figure 23).
 `{nbsp} ...` +
 `</gmd:MD_Metadata>`
 
-==== [#2.4.3]####2.4.3 Detailed guidance for each metadata element
+==== [#2.4.3]###2.4.3 Detailed guidance for each metadata element
 
 * https://www.agi.org.uk/40-gemini/1063-gemini-services[Services]
 
