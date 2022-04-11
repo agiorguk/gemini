@@ -1,4 +1,4 @@
-= Name : Responsible organisation
+= Responsible organisation
 include::includes/partials-attributes.adoc[]
 [#23]
 

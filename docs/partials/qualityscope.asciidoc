@@ -1,4 +1,4 @@
-= Name : Quality scope
+= Quality scope
 include::includes/partials-attributes.adoc[]
 [#48]
 

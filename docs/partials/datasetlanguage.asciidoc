@@ -1,4 +1,4 @@
-= Name : Dataset language
+= Dataset language
 include::includes/partials-attributes.adoc[]
 [#3]
 

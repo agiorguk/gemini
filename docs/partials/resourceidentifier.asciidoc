@@ -1,4 +1,4 @@
-= Name : Resource identifier
+= Resource identifier
 include::includes/partials-attributes.adoc[]
 [#36]
 

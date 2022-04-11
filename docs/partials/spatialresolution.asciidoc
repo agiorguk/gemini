@@ -1,4 +1,4 @@
-= Name : Spatial resolution
+= Spatial resolution
 include::includes/partials-attributes.adoc[]
 [#18]
 

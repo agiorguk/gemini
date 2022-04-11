@@ -1,4 +1,4 @@
-= Name : Conformity
+= Conformity
 include::includes/partials-attributes.adoc[]
 [#41]
 

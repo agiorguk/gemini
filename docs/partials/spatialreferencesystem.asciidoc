@@ -1,4 +1,4 @@
-= Name : Spatial reference system
+= Spatial reference system
 include::includes/partials-attributes.adoc[]
 [#17]
 

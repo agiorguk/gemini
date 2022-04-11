@@ -1,4 +1,4 @@
-= Name : Metadata standard version
+= Metadata standard version
 include::includes/partials-attributes.adoc[]
 [#55]
 

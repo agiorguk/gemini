@@ -1,4 +1,4 @@
-= Name : Equivalent scale
+= Equivalent scale
 include::includes/partials-attributes.adoc[]
 [#43]
 

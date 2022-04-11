@@ -1,4 +1,4 @@
-= Name : Parent identifier
+= Parent identifier
 include::includes/partials-attributes.adoc[]
 [#49]
 

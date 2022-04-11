@@ -1,4 +1,4 @@
-= Name : Metadata point of contact
+= Metadata point of contact
 include::includes/partials-attributes.adoc[]
 [#35]
 

@@ -1,4 +1,4 @@
-= Name : Dataset reference date
+= Dataset reference date
 include::includes/partials-attributes.adoc[]
 [#8]
 

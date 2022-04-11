@@ -1,4 +1,4 @@
-= Name : Spatial data service type
+= Spatial data service type
 include::includes/partials-attributes.adoc[]
 [#37]
 

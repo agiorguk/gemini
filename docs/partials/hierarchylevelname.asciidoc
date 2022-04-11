@@ -1,4 +1,4 @@
-= Name : Hierarchy level name
+= Hierarchy level name
 include::includes/partials-attributes.adoc[]
 [#47]
 

@@ -1,4 +1,4 @@
-= Name : Spatial representation type
+= Spatial representation type
 include::includes/partials-attributes.adoc[]
 [#50]
 

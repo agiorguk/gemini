@@ -1,4 +1,4 @@
-= Name : Data quality
+= Data quality
 include::includes/partials-attributes.adoc[]
 [#52]
 

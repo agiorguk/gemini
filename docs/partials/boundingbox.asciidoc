@@ -1,4 +1,4 @@
-= Name : Bounding box
+= Bounding box
 include::includes/partials-attributes.adoc[]
 [#44]
 

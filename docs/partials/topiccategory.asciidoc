@@ -1,4 +1,4 @@
-= Name : Topic Category
+= Topic Category
 include::includes/partials-attributes.adoc[]
 [#5]
 

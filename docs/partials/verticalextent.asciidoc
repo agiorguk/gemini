@@ -1,4 +1,4 @@
-= Name : Vertical extent information
+= Vertical extent information
 include::includes/partials-attributes.adoc[]
 [#16]
 

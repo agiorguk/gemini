@@ -1,4 +1,4 @@
-= Name : Character encoding
+= Character encoding
 include::includes/partials-attributes.adoc[]
 [#51]
 

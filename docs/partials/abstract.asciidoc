@@ -1,4 +1,4 @@
-= Name : Abstract
+= Abstract
 include::includes/partials-attributes.adoc[]
 [#4]
 
