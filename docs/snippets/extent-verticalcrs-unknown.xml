@@ -1,0 +1,11 @@
+<gmd:verticalElement>
+  <gmd:EX_VerticalExtent>
+    <gmd:minimumValue>
+      <gco:Real>42</gco:Real>
+    </gmd:minimumValue>
+    <gmd:maximumValue>
+      <gco:Real>94</gco:Real>
+    </gmd:maximumValue>
+    <gmd:verticalCRS gco:nilReason='unknown'/>
+  </gmd:EX_VerticalExtent>
+</gmd:verticalElement>

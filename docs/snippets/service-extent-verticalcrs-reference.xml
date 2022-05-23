@@ -1,0 +1,26 @@
+<gmd:MD_Metadata>
+  ...
+  <gmd:identificationInfo>
+    <gmd:MD_DataIdentification id="XYZ-323232">
+      ...
+      <srv:extent>
+        <gmd:EX_Extent>
+          ...
+          <gmd:verticalElement>
+            <gmd:EX_VerticalExtent>
+              <gmd:minimumValue>
+                <gco:Real>42</gco:Real>
+              </gmd:minimumValue>
+              <gmd:maximumValue>
+                <gco:Real>94</gco:Real>
+              </gmd:maximumValue>
+              <gmd:verticalCRS xlink:href='http://www.opengis.net/def/crs/EPSG/0/5701'/>
+            </gmd:EX_VerticalExtent>
+          </gmd:verticalElement>
+        </gmd:EX_Extent>
+      </srv:extent>
+      ...
+    </gmd:MD_DataIdentification>
+  </gmd:identificationInfo>
+  ...
+</gmd:MD_Metadata>

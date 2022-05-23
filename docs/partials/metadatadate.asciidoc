@@ -1,0 +1,100 @@
+= Metadata Date
+include::includes/partials-attributes.adoc[]
+[#30]
+
+[width="100%",cols="50%,50%",]
+|===
+|UK GEMINI id |30
+
+|Definition |Date on which the metadata was last updated, or was
+confirmed as being up-to-date, or if not updated, then the date it was
+created
+
+|Purpose and meaning |This is the date at which the metadata can be
+considered current (rather than the dataset itself). It may be the date
+at which the metadata was reviewed and confirmed as being 'current'. It
+is used to distinguish which of two records with the same fileIdentifier
+the system will keep.
+
+|Obligation |Mandatory
+
+|Occurrence |Single
+
+|Data type |Date
+
+|Domain |Single date as specified by BS ISO 8601 in the extended date
+format (YYYY-MM-DD), where YYYY is the year, MM is the month and DD is
+the day. Time (HH:MM:SS, where HH is the hour, MM the minutes and SS the
+seconds) may be added if required, separated from the day by 'T'.
+
+|Guidance a|
+. This should be updated whenever the metadata is updated due to a
+change in the dataset, or when it is reviewed and confirmed as wholly
+correct.
+. The date should be at an appropriate level of resolution (e.g. the
+day, or the day and month).
+. The date should not be in the future.
+
+|Comment |If the metadata has not been updated, then this should be the
+date when it was created.
+
+|Examples |2001-09-02
+
+|Revision date |May 2018
+|===
+
+Corresponding element in other standards...
+
+[%collapsible]
+====
+|===
+|Standard |Name |Comparison
+|INSPIRE Metadata |Metadata date |Equivalent
+|ISO 19115:2003 |MD_Metadata.dateStamp |Equivalent
+|ISO 19139:2007 |/gmd:MD_Metadata/gmd:dateStamp/gco:Date |Equivalent
+|===
+====
+
+Change history...
+
+[%collapsible]
+====
+GEMINI 1 to 2.0: Change of name from Date of last update of metadata
+====
+
+Encoding guidelines...
+
+[%collapsible]
+====
+|===
+|Guidelines |The encoding example for metadata date is shown in Example
+One. Note that it is possible to record the date and time of the
+metadata instance using the encoding shown in Example Two.
+
+|Example a|
+`Example One
+
+....
+include::../snippets/metadatadate.xml[]
+....
+
+Example Two (date and time)
+
+....
+include::../snippets/metadatadatetime.xml[]
+....
+
+|===
+====
+
+Metadata errors observed...
+
+[%collapsible]
+====
+|===
+|Errors observed |This is used to distinguish which of two records with
+the same fileIdentifier the system will keep. Even if the records are
+moved to a different server, if the fileIdentifier and metadata date are
+the same, the harvester will not collect the new files.
+|===
+====

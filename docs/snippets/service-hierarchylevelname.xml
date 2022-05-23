@@ -1,0 +1,15 @@
+<gmd:MD_Metadata>
+  ...
+  <gmd:hierarchyLevel>
+            <gmd:MD_ScopeCode codeListValue='service' 
+              codeList='https://schemas.isotc211.org/schemas/19139/resources/codelist/gmxCodelists.xml#MD_ScopeCode'>INSPIRE View Service</gmd:MD_ScopeCode>
+  </gmd:hierarchyLevel>
+  <gmd:hierarchyLevelName>
+    <gco:CharacterString>service</gco:CharacterString>
+  </gmd:hierarchyLevelName>
+  ...
+  <gmd:identificationInfo>
+    <srv:SV_ServiceIdentification>
+      ...
+    </srv:SV_ServiceIdentification>
+  </gmd:identificationInfo>

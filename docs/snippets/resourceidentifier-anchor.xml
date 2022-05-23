@@ -1,0 +1,21 @@
+<gmd:MD_Metadata>
+  ...
+  <gmd:identificationInfo>
+    <gmd:MD_DataIdentification id="image2000_1_nl2_multi">
+      <gmd:citation>
+        <gmd:CI_Citation>
+          ...
+            <gmd:MD_Identifier>
+              <gmd:code>
+                <gmx:Anchor xlink:href='http://image2000.jrc.it#image2000_1_nl2_multi'>Image 2000 and Corine Land Cover 2000 Project</gmx:Anchor>
+              </gmd:code>
+            </gmd:MD_Identifier>
+          </gmd:identifier>
+          ...
+        </gmd:CI_Citation>
+      </gmd:citation>
+      ...
+    </gmd:MD_DataIdentification>
+  </gmd:identificationInfo>
+  ...
+</gmd:MD_Metadata>

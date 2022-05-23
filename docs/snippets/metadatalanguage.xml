@@ -1,0 +1,9 @@
+<gmd:MD_Metadata>
+  ...
+  <gmd:language>
+    <gmd:LanguageCode 
+      codeList='http://www.loc.gov/standards/iso639-2/php/code_list.php' 
+      codeListValue='eng'>English</gmd:LanguageCode>
+  </gmd:language>
+  ...
+</gmd:MD_Metadata>

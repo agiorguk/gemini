@@ -1,0 +1,189 @@
+= Responsible organisation
+include::includes/partials-attributes.adoc[]
+[#23]
+
+[width="100%",cols="50%,50%",]
+|===
+|UK GEMINI id |23
+
+|Definition |Details of the organisation(s) responsible for the
+establishment, management, maintenance and distribution of the data
+resource
+
+|Purpose and meaning |This informs the user about who is responsible for
+the data resource
+
+|Obligation |Mandatory
+
+|Occurrence |Multiple
+
+|Data type |Class
+
+|Domain a|
+This class comprises eight elements relating to the responsible
+organisation:
+
+[width="99%",cols="16%,14%,14%,14%,14%,14%,14%",options="header",]
+!===
+!Metadata element name !Definition !Obligation !Occurrence !Data type
+!Domain !Rules for how to fill in the entry
+!contact position !role or position of the responsible person !optional
+!single !CharacterString !free text !A general job title or generic role
+should be identified for someone in a position of responsibility for the
+data resource. +
+Do not identify an individual by name, as this is subject to change
+without warning and the information is impossible to keep up-to-date.
+
+!organisation name !name of organisation !mandatory !single
+!CharacterString !free text !The name of the organisation should be
+given in full, without abbreviations
+
+!postal address !postal address of the organisation !optional !single
+!CharacterString !free text !The full formal postal address (as defined
+for example by Royal Mail) should be given, including the postcode.
+
+!telephone number !telephone number by which individuals can talk to the
+organisation or individual !optional !single !CharacterString !free text
+!The full telephone number should be given.
+
+!email address !internet email address which individuals can use to
+contact the organisation or individual !mandatory !single
+!CharacterString !free text !A valid email address should be given. Do
+not provide a personal email address.
+
+!web address !World Wide Web address of organisation !optional !single
+!CharacterString !free text !A valid World Wide Web address should be
+given.
+
+!responsible party role !role of the responsible organisation !mandatory
+!multiple !CodeList !see
+http://inspire.ec.europa.eu/metadata-codelist/ResponsiblePartyRole[INSPIRE
+registry] !The role of the responsible party should be identified. +
+For datasets and dataset series, at least a distributor should be given.
+!===
+
+|Guidance a|
+. The organisation name, email address and responsible party role are
+mandatory. Other entries should only be given that are relevant and
+known.
+. Where no single individual is responsible, a generic role may be
+given.
+. Where there are multiple Distributors / Responsible Organisations,
+then a separate entry should be given for each.
+. For dataset and dataset series, one of the Responsible Organisations
+must be in the role of Distributor (If there is only one Responsible
+Organisation recorded, then it must be in the role of Distributor.).
+. Where there are several distributors, a separate entry should be given
+for each.
+. For best result with data.gov.uk:
+* Enter 'Owner' for UK Location Data Provider role.
+* Enter 'Publisher' For UK Location Data Publisher role.
++
+These appear in the data.gov.uk search results.
+. If the data was created by someone other than the Data Provider, this
+should also be recorded, using the role value 'Originator'.
+
+|Comment |Facsimile number is no longer required
+
+|Examples a|
+See individual elements below. +
+
+[cols=",,",options="header",]
+!===
+!Metadata element name !Purpose and Meaning !Examples
+!contact position !Role or post of the person to contact in the
+organisation !The mapping product manager
+
+!organisation name ! !Ordnance Survey, Great Britain
+
+!postal address ! !Adanac Drive, Southampton, United Kingdom, SO16 0AS
+
+!telephone number ! !+44 8456 050505
+
+!email address ! !customerservices@os.uk
+
+!web address !for further information about the organisation
+!http://os.uk
+
+!responsible party role !indicates whether this responsible party is
+acting as distributor, publisher, author, etc. !distributor
+!===
+
+|Revision date |July 2009
+|===
+
+Corresponding element in other standards...
+
+[%collapsible]
+====
+|===
+|Standard |Name |Comparison
+
+|INSPIRE Metadata |Responsible party |Equivalent
+
+|ISO 19115:2003 |MD_Identification.pointOfContact |Similar high-level
+class
+ifdef::variant-dataset[]
+|ISO 19139:2007
+|/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:pointOfContact/gmd:CI_ResponsibleParty
+|Equivalent
+|===
+endif::[]
+ifdef::variant-service[]
+|ISO 19139:2007
+|/gmd:MD_Metadata/gmd:identificationInfo/srv:SV_ServiceIdentification/gmd:pointOfContact/gmd:CI_ResponsibleParty
+|Equivalent
+|===
+endif::[]
+====
+
+Change history...
+
+[%collapsible]
+====
+GEMINI 1 to 2.0: This has been generalised from Distributor (and
+Originator) to cover a range of possible roles, by the addition of
+'responsible party role' and minor errors in the class details have been
+corrected.
+====
+
+Encoding guidelines...
+
+[%collapsible]
+====
+|===
+|Guidelines a|
+. The encoding example for responsible organisation is shown below. The
+example shows the minimum required information.
+. The format of address and contact information is described at
+link:component/content/article?id=1048#2.2.8[Responsible party], with a
+more fully populated example.
+. Note on role code: the UK Location portal (data.gov.uk site)
+interprets ISO 'owner' as Data Provider, and ISO 'publisher' as Data
+Publisher.
+
+|Example a|
+ifdef::variant-dataset[]
+Example One (datasets/series)
+
+....
+include::../snippets/dataset-responsibleorganisation.xml[]
+....
+endif::[]
+ifdef::variant-service[]
+Example One (service)
+
+....
+include::../snippets/service-responsibleorganisation.xml[]
+....
+endif::[]
+
+|===
+====
+
+Metadata errors observed...
+
+[%collapsible]
+====
+No error information available
+====

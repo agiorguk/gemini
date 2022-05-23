@@ -1,0 +1,12 @@
+<gmd:MD_Metadata>
+  ...
+  <gmd:identificationInfo>
+    <srv:SV_ServiceIdentification>
+      ...
+      <srv:operatesOn 
+        xlink:href='http://metadata.bgs.ac.uk/geonetwork/srv/en/csw?SERVICE=CSW&REQUEST=GetRecordById
+          &ID=9df8df52-d788-37a8-e044-0003ba9b0d98&elementSetName=full&OutputSchema=http://www.isotc211.org/2005/gmd'/>
+    </srv:SV_ServiceIdentification>
+  </gmd:identificationInfo>
+  ...
+</gmd:MD_Metadata>

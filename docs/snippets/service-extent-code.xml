@@ -1,0 +1,26 @@
+<gmd:MD_Metadata>
+  ...
+  <gmd:identificationInfo>
+    <srv:SV_ServiceIdentification>
+      ...
+      <srv:extent>
+        <gmd:EX_Extent>
+          <gmd:geographicElement>
+            <gmd:EX_GeographicDescription>
+              <gmd:geographicIdentifier>
+                <gmd:MD_Identifier>
+                  <gmd:code>
+                    <gco:CharacterString>http://data.os.uk/id/7000000000041546</gco:CharacterString>
+                  </gmd:code>
+                </gmd:MD_Identifier>
+              </gmd:geographicIdentifier>
+            </gmd:EX_GeographicDescription>
+          </gmd:geographicElement>
+          ...
+        </gmd:EX_Extent>
+      </srv:extent>
+      ...
+    </srv:SV_ServiceIdentification>
+  </gmd:identificationInfo>
+  ...
+</gmd:MD_Metadata>

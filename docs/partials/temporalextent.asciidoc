@@ -1,0 +1,230 @@
+= Temporal extent
+include::includes/partials-attributes.adoc[]
+[#7]
+
+|===
+|UK GEMINI id |7
+
+|Definition |Date for the content of the data resource
+
+|Purpose and meaning |This is the date or date range that identifies the
+currency of the data. It may refer to the period of collection, or the
+date at which it is deemed to be current.
+ifdef::variant-dataset[]
+|Obligation |Mandatory for datasets and dataset series
+endif::[]
+ifdef::variant-service[]
+|Obligation |Conditional for services - where a temporal extent is
+relevant to the service
+endif::[]
+|Occurrence |Multiple
+
+|Data type |Date
+
+|Domain |Date, or two dates defining the duration of the period, as
+defined by BS ISO 8601.
+
+|Guidance a|
+. Dates may be to any degree of precision, from year (YYYY) to full date
+and time.
+. The extended date format (YYYY-MM-DD) should be used, where YYYY is
+the year, MM the month and DD the day.
+. If required, time (HH:MM:SS, where HH is the hour, MM the minute and
+SS the second) may be added, with T separating the two parts.
+. Periods are recorded as \{fromdate/todate} (e.g.
+2006-04-01/2007-03-31). Either fromdate or todate (but not both) may be
+left blank to indicate uncertainty.
+. There may be more than one Temporal Extent.
+. The coarsest resolution allowable is 'year'.
+
+|Comment a|
+. If the data resource relates to a historic period, then this is part
+of the subject, e.g. 'cretaceous period'. In this case the date is the
+date of discovery or observation.
+. This element should not be confused with Dataset reference date which
+is an identifying date for the data resource.
+. Temporal extent is the date of the validity of the data and is
+different from link:#8[Dataset reference date] which is an identifying
+date for the data resource. For example, an atlas might represent data
+collected up to the end of one year, but have a reference date of the
+following year.
+
+|Examples a|
+* 2001-01-01
+* 2009-05-02T09:10:01
+* 1939/1945
+* /2003-03-31
+* 2000/
+* 19
+
+|Revision date |May 2018
+|===
+
+Corresponding element in other standards...
+
+[%collapsible]
+====
+|===
+|Standard |Name |Comparison
+
+|INSPIRE Metadata |Temporal Extent |Similar, but in INSPIRE it is
+optional if another temporal reference is provided.
+
+|ISO 19115:2003 |EX_Extent > EX_TemporalExtent.extent |Identical
+
+|ISO 19139:2007
+ifdef::variant-dataset[]
+|/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:extent/gmd:EX_Extent/gmd:temporalElement
+|Identical
+endif::[]
+ifdef::variant-service[]
+|/gmd:MD_Metadata/gmd:identificationInfo/srv:SV_ServiceIdentification/srv:extent/gmd:EX_Extent/gmd:temporalElement
+|Identical
+endif::[]  
+|===
+====
+
+Change history...
+
+[%collapsible]
+====
+. GEMINI 1 to 2.0: Name changed from Date
+. GEMINI 2.1 to 2.2: Coarsest resolution changed from 'century' to
+'year'
+====
+
+Encoding guidelines...
+
+[%collapsible]
+====
+|===
+|Guidelines a|
+. The basic encoding for temporal extent is shown in Example One
+(datasets/series). The temporal extent data shall be encoded using the
+gml:TimePeriod type from the gml namespace. The underlying schemas and
+standards in fact allow greater flexibility here but for the purposes of
+GEMINI2 only the gml:TimePeriod XML element and the gml:TimeInstant XML
+element (for single dates) shall be used. In addition gml:TimePeriod
+shall contain only gml:beginPosition followed by gml:endPosition. Time
+positions shall be expressed in the Gregorian calendar and UTC as per BS
+ISO 8601.
+. The gml:TimePeriod and gml:TimeInstant XML elements must have an
+identifier in order to be schema valid. A UUID can be used, as is shown
+in the Example One (datasets/series). The identifier only needs to be
+unique in the scope of the metadata instance so a value of 't1' (see
+Example Two - datasets/series) is acceptable. Allowable content of id
+attributes:
+* GML XML elements which are used in metadata have a mandatory gml:id
+attribute. The value domain of the identifier is referred to as XML
+name. XML names have certain restrictions. They may contain any
+alphanumeric character, non-English alphanumeric characters, ideograms
+and the underscore, hyphen and period. They may not contain any other
+punctuation characters. The colon is allowed, but its use is reserved
+for namespaces, so it cannot appear in an identifier. XML names may not
+include any whitespace including spaces and carriage returns. All names
+beginning with the letters XML (in uppercase, lowercase or any mixture
+thereof) are reserved.
+* XML names may only start with letters, ideograms and the underscore
+character. Consequently, care must be taken when using the value of a
+UUID as the value of an identifier because these can begin with numeric
+characters. It is normal to append an underscore to the beginning of
+identifier values where they begin with numbers.
+* Furthermore, an identifier must be unique within the scope of the XML
+document (i.e. there shall not be more than one id type attribute with a
+particular identifier value).
+* If an id type attribute contains an illegally formed XML name the
+result will be a schema validation error.
+. For format of date and date-time values:
+* Dates and date-time shall be expressed in the Gregorian calendar and
+UTC as per BS ISO 8601. The formatting shall be as follows, in order of
+increasing precision:
+** yyyy (e.g. 1995)
+** yyyy-MM (e.g. 1995-01)
+** yyyy-MM-dd (e.g. 1995-01-25)
+** yyyy-MM-ddThh:mm:ss (e.g. 1995-01-25T12:01:55)
+* The BS ISO 8601 encoding also allows negative dates to represent BC.
+However, gco:Date and gco:DateTime XML elements do not accept negative
+values.
+* The GEMINI2 standard states that temporal extents may be given with as
+coarse a granularity as century (e.g. yy or 19). However, unfortunately
+this cannot be encoded in ISO 19139 XML and will result in a schema
+validation error. The lowest level of granularity allowable is the year.
+. GEMINI2 allows for uncertainty in the temporal extent so that one or
+other, but not both, begin position or end position may be blank. The
+corresponding encoding in this case makes use of the
+indeterminatePosition attribute which may take a value of 'unknown'
+(Example Three for datasets/series). The indeterminatePosition attribute
+may also take the following values:
+* 'now': in which case the current date will be taken as the value +
+the now value must be used for an ongoing end position (INSPIRE)
+* 'before': in which case the actual date is unknown but known to be
+before the specified date
+* 'after': in which case the actual date is unknown but known to be
+after the specified date
+. Example Four shows encoding examples using these values.
+
+
+|Example a|
+ifdef::variant-dataset[]
+Example One (datasets/series) : (gml:TimePeriod)
+
+....
+include::../snippets/dataset-temporalextent-timeperiod.xml[]
+           
+
+....
+
+Example Two (datasets/series): (gml:TimeInstant)
+
+....
+include::../snippets/dataset-temporalextent-timeinstant.xml[]
+                
+
+....
+
+Example Three (datasets/series): unknown dates
+
+....
+include::../snippets/temporalextent-unknowndates.xml[]
+....
+
+Example Four: other unknown or unspecified dates
+
+....
+include::../snippets/temporalextent-other.xml[]
+....
+endif::[]
+ifdef::variant-service[]
+Example One (services) : (gml:TimePeriod)
+....
+include::../snippets/service-temporalextent-timeperiod.xml[]
+....
+
+Example Two (services) : (gml:TimeInstant)
+
+....
+include::../snippets/service-temporalextent-timeinstant.xml[]
+....
+
+Example Three (services) : unknown dates
+
+....
+include::../snippets/temporalextent-unknowndates.xml[]
+....
+
+Example Four: other unkown or unspecified dates
+
+....
+include::../snippets/temporalextent-other.xml[]
+....
+endif::[]
+
+|===
+====
+
+Metadata errors observed...
+
+[%collapsible]
+====
+No error information available
+====

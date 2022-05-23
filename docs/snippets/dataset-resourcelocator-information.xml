@@ -1,0 +1,34 @@
+<gmd:MD_Metadata>
+  ...
+  <gmd:distributionInfo>
+    <gmd:MD_Distribution>
+      <gmd:distributionFormat>
+        ...
+      </gmd:distributionFormat>
+      ...
+      <gmd:transferOptions>
+        <gmd:MD_DigitalTransferOptions>
+          <gmd:onLine>
+            <gmd:CI_OnlineResource>
+              <gmd:linkage>
+                <gmd:URL>https://os.uk/opendatadownload/products.html</gmd:URL>
+              </gmd:linkage>
+              <gmd:name>
+                <gco:CharacterString>Order OS OpenData</gco:CharacterString>
+              </gmd:name>
+              <gmd:description>
+                <gco:CharacterString>general ordering page for all OS Open Data</gco:CharacterString>
+              </gmd:description>
+              <gmd:function>
+                <gmd:CI_OnLineFunctionCode 
+                  codeList='https://schemas.isotc211.org/schemas/19139/resources/codelist/gmxCodelists.xml#CI_OnLineFunctionCode' 
+                  codeListValue='information'/>
+              </gmd:function>
+            </gmd:CI_OnlineResource>
+          </gmd:onLine>
+        </gmd:MD_DigitalTransferOptions>
+      </gmd:transferOptions>
+    </gmd:MD_Distribution>
+  </gmd:distributionInfo>
+  ...
+</gmd:MD_Metadata>
