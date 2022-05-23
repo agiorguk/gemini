@@ -1,0 +1,8 @@
+<gmd:MD_Metadata>
+  ...
+  <gmd:hierarchyLevel>
+            <gmd:MD_ScopeCode codeListValue='dataset' 
+              codeList='https://schemas.isotc211.org/schemas/19139/resources/codelist/gmxCodelists.xml#MD_ScopeCode'>dataset</gmd:MD_ScopeCode>
+  </gmd:hierarchyLevel>
+  ...
+</gmd:MD_Metadata>

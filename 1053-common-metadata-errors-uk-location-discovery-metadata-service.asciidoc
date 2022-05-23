@@ -1,0 +1,406 @@
+= Common Metadata Errors UK Location Discovery Metadata Service
+include::./includes/attributes.asciidoc[]
+
+Return
+to{nbsp}https://www.agi.org.uk/gemini/40-gemini/1037-uk-gemini-standard-and-inspire-implementing-rules[GEMINI
+2.3 home page]
+
+https://www.agi.org.uk/gemini/40-gemini/1053-common-metadata-errors-uk-location-discovery-metadata-service#Intro[1.
+Introduction]
+
+https://www.agi.org.uk/gemini/40-gemini/1053-common-metadata-errors-uk-location-discovery-metadata-service#schema_errors[2.
+Schema errors]
+
+https://www.agi.org.uk/gemini/40-gemini/1053-common-metadata-errors-uk-location-discovery-metadata-service#ISO_errors[3.
+ISO 19139 Schematron errors]
+
+https://www.agi.org.uk/gemini/40-gemini/1053-common-metadata-errors-uk-location-discovery-metadata-service#proc_errors[4.
+Processing Errors]
+
+https://www.agi.org.uk/gemini/40-gemini/1053-common-metadata-errors-uk-location-discovery-metadata-service#inspire_warnings[5.
+European INSPIRE Geoportal errors and warnings]
+
+https://www.agi.org.uk/gemini/40-gemini/1053-common-metadata-errors-uk-location-discovery-metadata-service#soft_errors[6.
+"Soft" errors]
+
+https://www.agi.org.uk/gemini/40-gemini/1053-common-metadata-errors-uk-location-discovery-metadata-service#winner[7.
+And the winner?]
+
+=== [#Intro]####1. Introduction
+
+The UK Location Discovery Metadata Service (DMS) lies at the heart of UK
+Location and the delivery of the UK Location Strategy and INSPIRE - 'to
+know what data we have'.
+
+The DMS operates by collecting valid metadata records from data
+publishers and making them available on data.gov.uk, and for further
+collection to the European INSPIRE Geoportal.
+
+==== 1.1 Target Audience
+
+The primary audience for this document are those responsible for
+creating and maintaining metadata records, located within data provider
+organisations, and their technical partners.
+
+==== 1.2 Background
+
+This document is largely based on an analysis of validation failures
+when metadata validation was first run on the records that had already
+been collected into{nbsp}https://data.gov.uk/[data.gov.uk]. Approximately
+half the records present in data.gov.uk at that time initially failed.
+
+==== 1.3 Assumed Knowledge
+
+This guide assumes that the reader is familiar with the creation and
+management of metadata and has read the{nbsp}UK Location “Getting Started'
+series of
+guides{nbsp}[https://www.agi.org.uk/gemini/40-gemini/1047-metadata-guidelines-for-geospatial-data-resources-part-3[27]],
+and the DMS Operational Guide.
+
+Readers requiring an introduction to discovery metadata for geospatial
+data resources are referred to the UK GEMINI guide “Metadata Guidelines
+for Geospatial Data Resources, Introduction – Part 1”
+[https://www.agi.org.uk/gemini/40-gemini/1047-metadata-guidelines-for-geospatial-data-resources-part-3[1]].
+
+Other useful reading includes AGI’s Guidelines for UK GEMINI Part 3
+Metadata Quality
+
+*GEMINI 2.3 note: the DMS Operational Guide, UK GEMINI Encoding Guidance
+and AGI's Guidelines - Part 2 have all been consolidated into this
+content. +
+*
+
+==== 1.4 Where to Obtain More Information
+
+The latest information, and additional resources, can be obtained by
+visiting the{nbsp}UK Location{nbsp}web site.
+
+If you would like to contact the UK Location Coordination Unit, contact
+details are at{nbsp}http://data.gov.uk/location/contact_points
+
+==== 1.5 Validation
+
+==== GEMINI 2.3
+
+There is no currently no validation tool for GEMINI 2.3, but some
+software companies are developing tools. {nbsp}To validate a metadata record
+in your own software you should:
+
+* Validate using the ISO 19139 (APISO) schemas.
+{nbsp}(http://inspire.ec.europa.eu/draft-schemas/inspire-md-schemas/apiso-inspire/apiso-inspire.xsd[http://inspire.ec.europa.eu/draft-schemas/inspire-md-schemas/apiso-inspire/apiso-inspire.xsd])
+
+It doesn't matter which order validation is done in, but to be valid,
+records must validate against both the APISO schema and the GEMINI 2.3
+Schematron.
+
+In addition a second (supplemental) schematron is provided to test for
+recommendations in your metadata structure.
+
+==== GEMINI 2.2 and data.gov.uk
+
+Currently, validating a UK Location metadata (GEMINI 2.2) record is a
+three stage process:
+
+* First, a metadata set is validated against the ISO 19139 schemas. UK
+Location / data.gov.uk use the XSD files provided by EDEN;
+see{nbsp}https://www.agi.org.uk/gemini/40-gemini/1048-uk-gemini-encoding-guidance[_UK
+GEMINI Encoding Guidance{nbsp}_]for details.
+* If the metadata set proves to be schema valid, it is then validated
+against the ISO 19139 Table A.1 Constraints Schematron schema. The
+Schematron schema relies on hardcoded XPath statements which will only
+work effectively on a schema valid XML set.
+* Finally, if the XML is still valid it is validated against the GEMINI2
+Profile Schematron schema.
+
+Any failure of this validation is logged for attention by the
+administrator of the harvest source. The record is loaded into
+data.gov.uk, assuming it passes a very minimal subset.
+
+This is expected to change before late 2019, to only accept GEMINI 2.3
+records.
+
+==== European INSPIRE Geoportal
+
+The European INSPIRE Geoportal carries out its own validation. This uses
+basically the same rules. No records are rejected, but errors are
+reported,
+at{nbsp}https://inspire-geoportal.ec.europa.eu/proxybrowser/[inspire-geoportal.ec.europa.eu/proxybrowser/.]
+
+==== Warnings, soft errors, recommendations
+
+Even where the metadata is valid, there can be 'soft errors', where the
+metadata may be misleading.
+
+With GEMINI 2.3,{nbsp}a second (supplemental) schematron is provided to test
+for recommendations.
+
+=== [#schema_errors]####2. Schema errors
+
+==== 2.1 Confusion of Date and DateTime
+
+In ISO 19115, Date and DateTime are distinct types. Although in many
+elements, either is allowed, the XML encoding needs to be explicit about
+which is given. It is an error to put a date (such as 2010-05-12) in a
+DateTime element.
+
+Example of invalid structure:
+
+`<gmd:dateStamp>`
+
+`{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp} <gco:DateTime>2012-11-15</gco:DateTime>`
+
+`</gmd:dateStamp>`
+
+Examples of valid structure:
+
+This should either include the time, e.g.
+
+`<gmd:dateStamp>`
+
+`{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp} <gco:DateTime>2012-11-15T13:50:38</gco:DateTime>`
+
+`</gmd:dateStamp>`
+
+Or be explicit that it doesn’t:
+
+`<gmd:dateStamp>`
+
+`{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp} <gco:Date>2012-11-15</gco:Date>`
+
+`</gmd:dateStamp>`
+
+==== 2.2 Elements in the wrong order
+
+Although there is no “logical” ordering of the elements in ISO 19115,
+INSPIRE, or GEMINI, the XML pattern adopted by ISO 19139 means that the
+elements must appear in the correct order. The order enforced is the
+order the elements appear in ISO 19115; the GEMINI Encoding Guidance
+contains an appendix giving the correct order for the subset of elements
+used by GEMINI.
+
+The example found contained the ISO 19115 metadata characterSet element
+before the metadata language element.
+
+=== [#ISO_errors]####3. ISO 19139 Schematron errors
+
+See
+also{nbsp}https://www.agi.org.uk/gemini/40-gemini/1053-common-metadata-errors-uk-location-discovery-metadata-service#soft_errors[“Empty
+strings”].
+
+==== 3.1 No level description
+
+ISO 19115 requires that a “level description” is given for any quality
+statement that is not describing the “dataset” or “series” level.
+INSPIRE and GEMINI use the quality statement for both lineage and
+conformity. This means that any “service” record must provide a
+gmd:DQ_Scope/gmd:levelDescription element, such as:
+
+`<gmd:DQ_Scope>`
+
+`{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp} <gmd:level>`
+
+`{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp} <gmd:MD_ScopeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#MD_ScopeCode" codeListValue="service">service</gmd:MD_ScopeCode>`
+
+`{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp} </gmd:level>`
+
+`{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp} <gmd:levelDescription>`
+
+`{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp} <gmd:MD_ScopeDescription>`
+
+`{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp} <gmd:other>`
+
+`{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp} <gco:CharacterString>Geographic web service</gco:CharacterString>`
+
+`{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp} </gmd:other>`
+
+`{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp} </gmd:MD_ScopeDescription>`
+
+`{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp} </gmd:levelDescription>`
+
+`</gmd:DQ_Scope>`
+
+A similar rule applies to “hierarchyLevelName”, which must be provided
+for any record that is not describing a dataset.
+
+==== 3.4 No Format provided
+
+ISO 19139 requires that a format is given, either within the
+“distribution” section or the “distributor” section. INSPIRE & UK GEMINI
+encoding guidance only expects the distribution section, as the place to
+encode the Resource locator, which effectively renders distribution
+format mandatory.
+
+=== [#proc_errors]####4. Processing errors
+
+These errors do not result in invalid records on an individual basis,
+but may well result in the wrong records being available to the public.
+
+==== 4.1 Non-compliant Web Accessible Folder (WAF)
+
+The collection definition is very precise. Just because you can browse
+to a page that appears to contain the records, it does not mean that the
+system can collect from them. For example, the page may just contain
+links to records that are elsewhere.
+
+Similarly, collection differentiates between a single XML record at the
+end of a URL, and a WAF.
+
+==== 4.2 FileIdentifier
+
+This is the identifier for a metadata record through time, so do ensure
+that it remains the same when you update a record, and is different in
+each record you create.
+
+If you accidently change the identifier, the new record will not replace
+the old one.
+
+If you accidently provide two records with the same identifier, one will
+replace the other.
+
+==== 4.3 Metadata date
+
+This is used to distinguish which of two records with the same
+fileIdentifier the system will keep.
+
+Even if the records are moved to a different server, if the
+fileIdentifier and metadata date are the same, the harvester will not
+collect the new files.
+
+=== [#inspire_warnings]####5. European INSPIRE Geoportal errors & warnings
+
+==== 5.1 Conformity statement missing
+
+INSPIRE requires a ‘conformity’ statement, which can say that the
+resource conforms, does not conform, or has not been evaluated against,
+a specification. This is encoded with an ISO 19115 quality report. The
+INSPIRE encoding guidelines say that “not evaluated” should be encoded
+by leaving out the quality report. For this reason, GEMINI says that it
+is conditional, “required if claiming conformance to INSPIRE”.
+
+However, the INSPIRE Geoportal reports a validation issue if the element
+is missing: “The metadata element "Conformity" is missing, empty or
+incomplete but it is required”. This can be ignored.
+
+*GEMINI Consolidation Note: The INSPIRE Encoding Guidelines were updated
+in 2013; GEMINI 2.3 will be updated on this point.*
+
+==== 5.2 Missing “coupled resource”
+
+INSPIRE requires “Coupled resource” to be populated “where relevant”.
+This effectively makes it mandatory for View & Download services, and
+the INSPIRE Geoportal reports this as a validation issue. However, the
+Geoportal also reports this issue for a Discovery service metadata
+record, where coupled resource is not mandatory.
+
+=== [#soft_errors]####6. “Soft” errors
+
+==== 6.1 Empty strings
+
+When first run, approximately half the rejections were down to this
+error. UK Location decided to remove this check, so the records can be
+harvested, although it is strongly recommended that this structure is
+avoided.
+
+ISO 19139 clause A.2.1 states “a property element following the default
+XCPT pattern is designed to have content (by-value) or attributes
+(by-reference or NULL with reason).” In context, this states that (with
+very few exceptions) no metadata element shall be entirely empty: it
+will either have (valid) content, or it will have a gco:nilReason
+attribute stating why the content is absent. If the element is optional,
+it shall be entirely absent from the XML document, not “present but
+empty”.
+
+The most common examples were structures like:
+
+`<gmd:phone>`
+
+`{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp} <gmd:CI_Telephone/>`
+
+`</gmd:phone>`
+
+(in this case, as gmd:phone is optional, it should be entirely missing)
+
+and
+
+`<gmd:administrativeArea gco:nilReason="missing">`
+
+`{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp} <gco:CharacterString/>`
+
+`</gmd:administrativeArea>`
+
+Examples of valid structures are:
+
+`<gmd:administrativeArea gco:nilReason="missing"/>`
+
+(although again, it would be equally valid to leave the element out
+entirely)
+
+`<gmd:deliveryPoint>`
+
+`{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp} <gco:CharacterString>Explorer House, Adanac Drive</gco:CharacterString>`
+
+`</gmd:deliveryPoint>`
+
+==== 6.2 Short relative URLs
+
+The issues discussed here have just been noted whilst browsing the
+records in data.gov.uk
+
+Quite a lot of records use the ISO 19115 element “browseGraphic”, which
+could usefully provide a quick visualisation of the dataset. However,
+mostly these are populated with a local path, which is then impossible
+to use once the dataset is harvested to any other location – even if it
+did work in the data publisher’s original location. For example:
+
+`<gmd:MD_BrowseGraphic>`
+
+`{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp} <gmd:fileName>`
+
+`{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp} <gco:CharacterString>Council_Housing_s.png</gco:CharacterString>`
+
+`{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp} </gmd:fileName>`
+
+`{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp} …`
+
+`</gmd:MD_BrowseGraphic>`
+
+==== 6.3 Incorrect code list URL
+
+The INSPIRE encoding guidance, and therefore earlier versions of the
+GEMINI Encoding Guidance had a minor spelling (capitalisation) mistake
+in the path for the code list dictionary. This is used a number of times
+in most records.
+
+`<gmd:CI_OnLineFunctionCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="information">information</gmd:CI_OnLineFunctionCode>`
+
+Should be
+
+`<gmd:CI_OnLineFunctionCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="information">information</gmd:CI_OnLineFunctionCode>`
+
+(a lower case ‘c’ in the first occurrence of ‘codelist’ within the URL)
+
+*GEMINI Consolidation Note: The INSPIRE Encoding Guidelines have been
+updated to correct this, in 2016.*
+
+=== [#winner]####7. And the winner?
+
+This table, for interest, gives the approximate error rate for each of
+the above errors, in the sample tested in late 2012. This does not
+include those soft errors only found by inspection.
+
+[cols=",",]
+|===
+|*Error* |*Proportion*
+|Empty strings |50%
+|No level description |25%
+|No format |24%
+|_Four other errors, one occurrence each_ |
+|===
+
+_{nbsp}Last updated: August 2018_
+
+http://creativecommons.org/licenses/by/4.0/[image:https://i.creativecommons.org/l/by/4.0/88x31.png[Creative
+Commons Licence]] +
+This work is licensed under
+a{nbsp}http://creativecommons.org/licenses/by/4.0/[Creative Commons
+Attribution 4.0 International License]

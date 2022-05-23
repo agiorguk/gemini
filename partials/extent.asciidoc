@@ -1,0 +1,163 @@
+= Extent
+include::includes/partials-attributes.adoc[]
+[#15]
+
+[width="100%",cols="50%,50%",]
+|===
+|UK GEMINI id |15
+
+|Definition |Extent of data resource
+
+|Purpose and meaning |This element defines the geographical extent of
+coverage of the data resource relative to an administrative hierarchy.
+It enables searches to be carried out to find data relevant to the area
+of interest. Extent polygons can be implied through reference to an
+external gazetteer. Note that Extent is the coverage of the data
+resource, not the individual objects in the data resource. Thus if the
+data resource was national parks in England, the Extent would be
+'England', even though many parts of England do not have National Parks.
+
+|Obligation |Optional
+
+|Occurrence |Multiple
+
+|Data type |Class
+
+|Domain a|
+The class comprises two elements:
+
+* (Optional) Authority code
+* Code identifying the extent
+
+|Guidance a|
+. An area approximating to the extent of coverage of the data resource
+should be chosen. Where the extent does not coincide with any defined
+area or areas, then either the nearest equivalent including the area of
+coverage, or a set of multiple areas that make up the coverage should be
+provided.
+. This should not be over-generalised (i.e. do not take it as Great
+Britain if it only covers England and Wales).
+
+|Comment |
+
+|Examples a|
+* England
+* East Anglia
+* The Wash
+* http://data.os.uk/id/7000000000041546 Central Scotland, using OS
+linked data as a gazetteer
+* https://local-authority-eng.register.gov.uk/record/GLA, Greater London
+Authority, using GDS "Local authorities in England" as a controlled list
+* http://vocab.nerc.ac.uk/collection/C64/current/5/, Irish Sea, in the
+NERC Vocabulary "C64, United Kingdom Charting Progress 2 sea regions"
+
+|Revision date |August 2010
+|===
+
+Corresponding element in other standards...
+
+[%collapsible]
+====
+|===
+|Standard |Name |Comparison
+
+|INSPIRE Metadata |None |
+ifdef::variant-dataset[]
+|ISO 19115:2003 |MD_DataIdentification.extent > EX_Extent >
+EX_GeographicExtent > EX_ GeographicDescription.geographicIdentifier
+|Identical
+
+|ISO 19139:2007
+|/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:extent/gmd:EX_Extent/gmd:geographicElement/gmd:EX_GeographicDescription/gmd:geographicIdentifier
+|Identical
+endif::[]
+ifdef::variant-service[]
+|ISO 19119:2006+Amd:1 |SV_ServiceIdentification.extent > EX_Extent >
+EX_GeographicExtent > EX_ GeographicDescription.geographicIdentifier
+|Identical
+
+|ISO 19139:2007
+|/gmd:MD_Metadata/gmd:identificationInfo/srv:SV_ServiceIdentification/srv:extent/gmd:EX_Extent/gmd:geographicElement/gmd:EX_GeographicDescription/gmd:geographicIdentifier
+|Identical
+endif::[]
+|===
+====
+
+
+Change history...
+
+[%collapsible]
+====
+GEMINI 1 to 2.0: Made optional
+====
+
+Encoding guidelines...
+
+[%collapsible]
+====
+|===
+|Guidelines a|
+. The examples shown below use codes (URIs in URL form) from the
+http://data.os.uk[Ordnance Survey Linked Data]
+link:component/content/article?id=1047[[22]]
+http://data.os.uk/datasets/boundary-line[boundary data]. The code
+element can be used as a URL returning a page on the internet providing
+further information. The code in Example One, ending in
+7000000000041546, is the URL for Central Scotland. Associated with this
+code is further information, such as the geometry of Central Scotland.
+. The entity responsible for managing the extent code can be expressed
+in GEMINI metadata. An example of the encoding is shown in Example Two
+. Recommended best practice is to select a human readable value from a
+controlled vocabulary. An example from the Marine Geospatial community
+is http://seadatanet.maris2.nl/v_bodc_vocab_v2/search.asp?lib=C19
+. INSPIRE recommendations for encoding free text values which reference
+a specific external resource or registry is to use gmx:Anchor instead of
+gco:CharacterString
+ifdef::variant-dataset[]
+Note that the extent XML element is in the gmd namespace for
+datasets/series. This differs from service metadata instances where the
+extent XML element will be in the srv namespace.
+endif::[]
+ifdef::variant-service[]
+Note that the extent XML element is in the srv namespace. This differs
+from dataset metadata instances where the extent XML element will be in
+the gmd namespace.
+endif::[]
+
+|Example a|
+ifdef::variant-dataset[]
+Example One (datasets/series)
+
+....
+include::../snippets/dataset-extent-code.xml[]
+....
+
+Example Two (datasets/series) - Extent encoding example with authority
+
+....
+include::../snippets/dataset-extent-codeauthority.xml[]
+....
+endif::[]
+ifdef::variant-service[]
+Example One (services)                   `
+
+....
+include::../snippets/service-extent-code.xml[]
+....
+
+Example Two (services) - Extent encoding example with authority
+
+....
+include::../snippets/service-extent-codeauthority.xml[]
+....
+endif::[]
+
+|===
+====
+
+Metadata errors observed...
+
+[%collapsible]
+====
+No error information available
+====

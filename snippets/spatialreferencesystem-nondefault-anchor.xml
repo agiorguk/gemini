@@ -1,0 +1,12 @@
+<referenceSystemInfo>
+  <MD_ReferenceSystem>
+    <referenceSystemIdentifier>
+      <RS_Identifier>
+        <code>
+          <gmx:Anchor xlink:href='http://www.opengis.net/def/crs/EPSG/0/27700'>
+            British National Grid (EPSG::27700)</gmx:Anchor>
+        </code>
+      </RS_Identifier>
+    </referenceSystemIdentifier>
+  </MD_ReferenceSystem>
+</referenceSystemInfo>

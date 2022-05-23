@@ -1,0 +1,78 @@
+= Parent identifier
+include::includes/partials-attributes.adoc[]
+[#49]
+
+
+|===
+|UK GEMINI id |49
+
+|Definition |File identifier of the metadata that is a parent to this
+child metadata
+
+|Purpose and meaning |Supports parent-child relationships in metadata.
+Allows navigation from a dataset record to the series record of which it
+forms a part.
+
+|Obligation |Optional
+
+|Occurrence |Single
+
+|Data type |CharacterString
+
+|Domain |free text
+
+|Guidance | 
+ifdef::variant-dataset[]
+Only to be used if the dataset is part of a series
+endif::[]
+ifdef::variant-service[]
+Only to be used if the service is designed to be part of a set of services
+endif::[]
+
+|Comment |
+
+|Examples |
+
+|Revision date |May 2018
+|===
+
+Corresponding element in other standards...
+
+[%collapsible]
+====
+|===
+|Standard |Name |Comparison
+|ISO 19115:2003 |MD_parentidentifier.scope |Equivalent
+|ISO 19139:2007 |/gmd:MD_Metadata/gmd:parentIdentifier |Equivalent
+|===
+====
+
+Change history...
+
+[%collapsible]
+====
+New element in GEMINI 2.3
+====
+
+Encoding guidelines...
+
+[%collapsible]
+====
+|===
+|Guidelines |No specific rules for this metadata element
+
+|Example a|
+
+....
+include::../snippets/parentidentifier.xml[]
+....
+
+|===
+====
+
+Metadata errors observed...
+
+[%collapsible]
+====
+No error information available
+====

@@ -1,0 +1,187 @@
+= Topic Category
+include::includes/partials-attributes.adoc[]
+[#5]
+
+|===
+|UK GEMINI id |5
+
+|Definition |Main theme(s) of the data resource
+
+|Purpose and meaning |The purpose of this element is to provide a basic
+classification for the data resource for use in initial searches
+
+|Obligation |Mandatory when the data resource is a dataset or dataset
+series. Not applicable to services.
+
+|Occurrence |Multiple
+
+|Data type |Class
+
+|Domain a|
+Enumeration MD_TopicCategoryCode taken from ISO 19115:
+
+[width="100%",cols="34%,33%,33%",options="header",]
+!===
+!Name !Domain code !Definition
+!farming !001 !rearing of animals and/or cultivation of plants +
+Examples: agriculture, plantations, herding, pests and diseases
+affecting crops and livestock
+
+!biota !002 !flora and/or fauna in natural environment +
+Examples: wildlife, vegetation, biological sciences, ecology, sea-life,
+habitat
+
+!boundaries !003 !legal land descriptions +
+Examples: political and administrative boundaries
+
+!climatologyMeteorologyAtmosphere !004 !processes and phenomena of the
+atmosphere +
+Examples: weather, climate, atmospheric conditions
+
+!economy !005 !economic activities, conditions and employment +
+Examples: production, labour, revenue, commerce, industry
+
+!elevation !006 !height above or below sea level +
+Examples: altitude, bathymetry, digital elevation models, slope
+
+!environment !007 !environmental resources, protection and
+conservation +
+Examples: environmental pollution, waste storage and treatment,
+environmental impact assessment, monitoring environmental risk, nature
+reserves, landscape
+
+!geoscientificInformation !008 !information pertaining to earth
+sciences +
+Examples: geophysical features and processes, geology, minerals, soils
+
+!health !009 !health, health services, human ecology, and safety +
+Examples: disease and illness, factors affecting health, health services
+
+!imageryBaseMapsEarthCover !010 !base maps +
+Examples: land cover, topographic maps, imagery, unclassified images
+
+!intelligenceMilitary !011 !military bases, structures, activities +
+Examples: barracks, training grounds, military transportation
+
+!inlandWaters !012 !inland water features, drainage systems and their
+characteristics +
+Examples: rivers, salt lakes, dams, floods, water quality, hydrographic
+charts
+
+!location !013 !positional information and services +
+Examples: addresses, geodetic networks, control points, postal zones and
+services, place names
+
+!oceans !014 !features and characteristics of salt water bodies +
+(excluding inland waters) +
+Examples: tides, tidal waves, coastal information, reefs
+
+!planningCadastre !015 !information used for appropriate actions for
+future use of the land +
+Examples: land use maps, zoning maps, cadastral surveys, land ownership
+
+!society !016 !characteristics of society and cultures +
+Examples: settlements, anthropology, archaeology, education, demographic
+data, recreational areas and activities, social impact assessments,
+crime and justice, census information
+
+!structure !017 !man-made construction +
+Examples: buildings, museums, churches, factories, housing, monuments,
+shops
+
+!transportation !018 !means and aids for conveying persons and/or
+goods +
+Examples: roads, airports/airstrips, shipping routes, tunnels, nautical
+charts, vehicle or vessel location, aeronautical charts, railways
+
+!utilitiesCommunication !019 !energy, water and waste systems and
+communications infrastructure and services +
+Examples: sources of energy, water purification and distribution, sewage
+collection and disposal, electricity and gas distribution, data
+communication, telecommunication, radio
+!===
+
+|Guidance a|
+. Select one or more categories that most closely represent the topic of
+the data resource.
+. If in doubt, go by the topic categories rather than the examples.
+. It is not necessary to include all categories which may be applicable,
+but only a limited number of most relevant should be chosen (e.g.
+topographic maps should not be classified as farming).
+
+|Comment |For greater detail within a topic, use the element
+link:#6[Keyword]
+
+|Examples |location
+
+|Revision date |March 2019
+|===
+
+Corresponding element in other standards...
+
+[%collapsible]
+====
+|===
+|Standard |Name |Comparison
+
+|INSPIRE Metadata |Topic category |Equivalent
+
+|ISO 19115:2003 |MD_DataIdentification.topicCategory |Equivalent
+
+|ISO 19139:2007
+|/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:topicCategory/gmd:MD_TopicCategoryCode
+|Equivalent
+|===
+====
+
+Change history...
+
+[[history5]]
+
+Encoding guidelines...
+
+[%collapsible]
+====
+|===
+|Guidelines a|
+. The encoding example for topic category is shown in Example One. Note
+that it is possible to include more than one topic category.
+. The value of the XML element gmd:MD_TopicCategoryCode must not contain
+whitespace because the values are specified by an enumerated list in the
+XSD schemas. The encoding shown in Example Two, for example, will result
+in an XSD schema validation error because the element content will be
+parsed as shown in Example 3 (excluding the square brackets denoting the
+start and end) resulting in a value that does not exist in the
+enumerated list.
+
+|Example a|
+
+....
+include::../snippets/topiccategory.xml[]
+
+....
+
+|===
+====
+
+Metadata errors observed...
+
+[%collapsible]
+====
+|===
+|Errors observed a|
+The topic category is a schema controlled list, not plain text. The
+following example is not valid:
+
+....
+...
+<gmd:topicCategory>
+  <gmd:MD_TopicCategoryCode>
+    environment
+  </gmd:MD_TopicCategoryCode>
+</gmd:topicCategory>
+...
+....
+
+|===
+====

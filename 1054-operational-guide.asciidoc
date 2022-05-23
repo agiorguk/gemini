@@ -1,0 +1,928 @@
+= Operational Guide
+include::./includes/attributes.asciidoc[]
+
+=== UK Location Discovery Metadata Service
+
+Return
+to{nbsp}https://www.agi.org.uk/gemini/40-gemini/1037-uk-gemini-standard-and-inspire-implementing-rules[GEMINI
+2.3 home page]
+
+Contents
+
+https://www.agi.org.uk/gemini/40-gemini/1054-operational-guide#Intro[1.
+Introduction]
+
+https://www.agi.org.uk/gemini/40-gemini/1054-operational-guide#1.1[1.1
+Target audience]
+
+https://www.agi.org.uk/gemini/40-gemini/1054-operational-guide#1.2[1.2
+Assumed knowledge]
+
+https://www.agi.org.uk/gemini/40-gemini/1054-operational-guide#1.3[1.3
+DMS resources]
+
+https://www.agi.org.uk/gemini/40-gemini/1054-operational-guide#1.4[1.4
+Where to obtain more information]
+
+https://www.agi.org.uk/gemini/40-gemini/1054-operational-guide#Pub_Dis_Met[2.
+Publishing Discovery Metadata]
+
+https://www.agi.org.uk/gemini/40-gemini/1054-operational-guide#2.1[2.1
+Requirements on data providers and publishers]
+
+https://www.agi.org.uk/gemini/40-gemini/1054-operational-guide#2.2[2.2
+Accountability]
+
+https://www.agi.org.uk/gemini/40-gemini/1054-operational-guide#2.3[2.3
+Publishing discovery metadata for data]
+
+https://www.agi.org.uk/gemini/40-gemini/1054-operational-guide#2.4[2.4
+Publishing discovery metadata for on-line services]
+
+https://www.agi.org.uk/gemini/40-gemini/1054-operational-guide#2.5[2.5
+Maintaining discovery metadata]
+
+https://www.agi.org.uk/gemini/40-gemini/1054-operational-guide#2.6[2.6
+Data sharing and charging and licensing]
+
+https://www.agi.org.uk/gemini/40-gemini/1054-operational-guide#Dis_Met_Req[3.
+Discovery Metadata Requirements]
+
+https://www.agi.org.uk/gemini/40-gemini/1054-operational-guide#3.1[3.1
+Elements of importance to the DMS]
+
+https://www.agi.org.uk/gemini/40-gemini/1054-operational-guide#3.2[3.2
+Data provider licence information]
+
+https://www.agi.org.uk/gemini/40-gemini/1054-operational-guide#3.3[3.3
+Metadata encoding]
+
+https://www.agi.org.uk/gemini/40-gemini/1054-operational-guide#3.4[3.4
+Metadata validation]
+
+https://www.agi.org.uk/gemini/40-gemini/1054-operational-guide#3.5[3.5
+Community extensions to UK GEMINI2]
+
+https://www.agi.org.uk/gemini/40-gemini/1054-operational-guide#3.6[3.6
+Extensions to code lists]
+
+https://www.agi.org.uk/gemini/40-gemini/1054-operational-guide#3.7[3.7
+Local guidance]
+
+https://www.agi.org.uk/gemini/40-gemini/1054-operational-guide#Pub_Dis_Met_rec[4.
+Publishing Discovery Metadata records]
+
+https://www.agi.org.uk/gemini/40-gemini/1054-operational-guide#4.1[4.1
+Publishing discovery metadata records]
+
+https://www.agi.org.uk/gemini/40-gemini/1054-operational-guide#4.2[4.2
+Registering the harvest location]
+
+https://www.agi.org.uk/gemini/40-gemini/1054-operational-guide#4.3[4.3
+Collection]
+
+https://www.agi.org.uk/gemini/40-gemini/1054-operational-guide#Met_Pub_Tec[5.
+Metadata Publishing and Technology Choices]
+
+https://www.agi.org.uk/gemini/40-gemini/1054-operational-guide#5.1[5.1
+UK Location metadata editor]
+
+https://www.agi.org.uk/gemini/40-gemini/1054-operational-guide#5.2[5.2
+Geonetwork publishing solution]
+
+https://www.agi.org.uk/gemini/40-gemini/1054-operational-guide#5.3[5.3
+Third party solutions]
+
+=== [#Intro]####1. Introduction
+
+The UK Location Discovery Metadata Service (DMS) lies at the heart of UK
+Location and the delivery of the UK Location Strategy and INSPIRE - 'to
+know what data we have'.
+
+The DMS underpins the coordinated and regulated publishing of public
+sector location information to the INSPIRE and UK Location specified
+standards. It provides the discovery component for a set of on-line
+services that will allow data users to evaluate and use public sector
+location information, that is to view, download and invoke as part of an
+end business application.
+
+This guide sets out detailed guidance on the creation, publishing and
+maintenance of UK Location discovery metadata.
+
+It covers both location information being published under INSPIRE and
+all other location information published through UK Location. The DMS is
+being implemented by extending the functionality of the UK public data
+publishing platform{nbsp}http://data.gov.uk/[data.gov.uk].
+
+The guide is a living document and will be continuously revised in the
+light of operational experience and feedback.
+
+Please note that whilst the Devolved Administrations of Scotland, Wales
+and Northern Ireland are part of UK Location, they may have different
+publishing mechanisms to those described here. Therefore in the first
+instance, please use the appropriate contact information listed under
+“Where to obtain more information” below.
+
+==== *[#1.1]####1.1 Target Audience*
+
+The primary audience for the Guide are business managers and information
+officers, located within data provider organisations, and their
+technical partners.
+
+It is chiefly written for those data providers who have obligations
+under the INSPIRE Themes, but is also relevant to those who wish to
+publish location information into UK Location on a voluntary basis.
+
+The guide will also be of interest to anyone who requires a general
+understanding of the UK Location Discovery Metadata Service and how it
+is intended to operate.
+
+==== *[#1.2]####1.2 Assumed Knowledge*
+
+This guide assumes that the reader is familiar with the creation and
+management of metadata and has read the UK Location “Getting Started'
+series of
+guides[https://www.agi.org.uk/gemini/40-gemini/1047-metadata-guidelines-for-geospatial-data-resources-part-3[27]].
+
+Readers requiring an introduction to discovery metadata for geospatial
+data resources are referred to the UK GEMINI guide
+“https://www.agi.org.uk/gemini/40-gemini/1052-metadata-guidelines-for-geospatial-data-resources-part-1[Metadata
+Guidelines for Geospatial Data Resources, Introduction – Part
+1]”[https://www.agi.org.uk/gemini/40-gemini/1047-metadata-guidelines-for-geospatial-data-resources-part-3[1]]
+.
+
+===== *1.2.1 Do you know your “Data Provider” from your “Data Publisher”*
+
+Throughout this guide we refer to “Data Providers” and “Data
+Publishers”. Within UK Location, the definition and distinction being
+made between these two roles is very important.{nbsp} So what is the
+difference?:
+
+====== The Data Provider
+
+The organisation that creates the data and supplies the data for web
+publication, along with its metadata
+
+====== The Data Publisher
+
+The organisation that publishes the data on the web and supplies data
+services to data users
+
+If you as a Data Provider publish directly, then you will perform both
+the roles of Data Provider and Data Publisher.
+
+==== *[#1.3]####1.3 DMS Resources*
+
+The latest versions of all the UK Location resources referred to in this
+guide can be found via the UK Location Resource Centre:
+
+https://data.gov.uk/[http://data.gov.uk/location]
+
+==== *[#1.4]####1.4 Where to Obtain More Information*
+
+The latest information, and additional resources, can be obtained by
+visiting the{nbsp}UK Location{nbsp}web site.
+
+If you would like to contact the UK Location Coordination Unit, please
+use the contact form at:{nbsp}https://defra.gov.uk
+
+If you are looking to publish location information specific to Scotland,
+Wales or Northern Ireland, please contact:
+
+*Scotland*
+
+Alex Ramage, Spatial Information Policy, Scottish Government
+
+Email:{nbsp}[#cloak0b5016abbce4537d6078242300c59c9c]#Alex.Ramage@transportscotland.gsi.gov.uk#
+
+*Wales*
+
+Geography & Technology, Welsh Assembly Government
+
+E-mail:{nbsp}[#cloak0de48b02b62ff6b0733df4ab33e5b829]#mailto:Bill.Oates@wales.gsi.gov.uk[data@wales.gsi.gov.uk]#
+
+*Northern Ireland*
+
+Email:{nbsp}[#cloak4e2ac9d8ddb12cb122f38a77142a18f4]#ProgrammeOffice@dfpni.gov.uk#{nbsp}or
+visit the{nbsp}Spatial NI{nbsp}website at{nbsp}https://www.spatialni.gov.uk/
+
+=== [#Pub_Dis_Met]####2. Publishing Discovery Metadata
+
+Data Providers publish their data and on-line services into UK Location
+by creating and publishing discovery metadata. These resources are
+registered with UK Location and made discoverable through its central
+metadata catalogue, which forms part of the public data access portal,
+data.gov.uk.
+
+==== *[#2.1]####2.1 Requirements on Data Providers and Publishers*
+
+Deciding to publish data into UK Location is a major commitment. INSPIRE
+and UK Location is not a simple cataloguing service of what data exists
+– it is a network of on-line services for that data and an operational
+framework for future harmonisation and interoperability, such that it
+can be more easily combined within a data user application, or used
+directly through a range of on-line data services.
+
+If you choose to publish, the following operational commitments apply:
+
+* You will support data users in their evaluation and re-use of your
+data, e.g. by using UK Location and INSPIRE community networking
+services, such as those provided on the UK Location discovery portal,
+data.gov.uk
+* You will endeavour to adopt a process of continuous improvement for
+the resources you publish, based on the feedback you receive, as this
+will be beneficial to both data provider and user
+* You
+will{nbsp}https://www.agi.org.uk/gemini/40-gemini/1054-operational-guide#2.5[maintain
+your discovery metadata]:
+** assuring its quality against appropriate standards
+** reviewing it and updating it regularly and ensuring it is updated
+when new versions of data, data series or on-line services are published
+(see Maintaining Discovery Metadata)
+** maintaining metadata record FileIdentifers (UUID) throughout the life
+of the metadata record (new UUIDs should only be created when new
+resources are published, to prevent duplicate metadata records )
+* You will release your data, data series and on-line services with
+clear licensing and charging policies
+* You will provide e-commerce services where charges apply for INSPIRE
+data
+* You will have clear procedures to make complaints received under data
+access legislation, where appropriate
+* You will agree to your data being viewable using data.gov.uk and other
+evaluation clients, including the EU GeoPortal. If you require an
+exemption from this requirement you should contact the UK Location
+Coordination Unit
+
+*The following service requirements apply*:
+
+* For all data:
+** compliance with the INSPIRE Metadata Regulation
+[https://www.agi.org.uk/gemini/40-gemini/1047-metadata-guidelines-for-geospatial-data-resources-part-3[6]]
+and the UK Location operational requirements as set out in this guide
+** if publishing INSPIRE Network (on-line) Services, compliance with the
+INSPIRE Network Services Regulation
+[https://www.agi.org.uk/gemini/40-gemini/1047-metadata-guidelines-for-geospatial-data-resources-part-3[9]]
+** the publishing of INSPIRE View Services for a given dataset or data
+series
+* For data that comes under an INSPIRE Theme and contains features
+listed in the INSPIRE Data Specifications:
+** legal compliance with the INSPIRE Directive
+[https://www.agi.org.uk/gemini/40-gemini/1047-metadata-guidelines-for-geospatial-data-resources-part-3[8]]
+
+==== *[#2.2]####2.2 Accountability*
+
+Accountability for publishing data and associated resources rests with
+you the Data Provider. If you are a Data Provider and are publishing
+through a third party, they are responsible for providing a service to
+you as the Data Provider, but they are not accountable for the data and
+services published.{nbsp} Accountability at all times remains with you as
+Data Provider, e.g. in relation to INSPIRE compliance and conformance to
+INSPIRE and UK Location technical guidance.
+
+==== *[#2.3]####2.3 Publishing Discovery Metadata for Data*
+
+The process for publishing metadata records for data is shown as a
+process model below.
+
+This is highly generalised and you will need to view it in the context
+of your own internal data management processes and integrate it into
+this existing fabric.
+
+image:https://www.agi.org.uk/images/xslt/Process_DataPublishing.jpg[Data
+Metadata Publishing Process,width=960,height=720]
+
+The creation and publishing of discovery metadata for a dataset or
+series is triggered by the business decision (event) to publish the
+data.
+
+The Data Provider creates the discovery metadata for the dataset or
+series, to the metadata requirements specified in this guide. The Data
+Provider should then apply internal quality controls on this metadata,
+before releasing it for publication.
+
+Ideally, the metadata should be created by the part of the organisation
+responsible for the data itself and based on metadata created at the
+time the data was created, or updated.
+
+The next stage of the process passes to the Data Publisher. This role
+may be within the same organisation as the Data Provider, or a third
+party acting on behalf of the Data Provider.{nbsp} Even if within the same
+organisation, it is quite likely to be a different part of the
+organisation, e.g. the data & knowledge management department, or within
+the IT department.
+
+The Data Publisher needs to update the metadata, creating the links to
+any on-line resources associated with the data, e.g. data
+specifications, licences and services. If these do not already exist,
+then they may need to be created before the data can be published.
+
+Once updated, the metadata needs to be passed through the Data
+Publisher’s own internal quality controls. At this point the metadata
+can be released for publication and registered with UK Location.
+
+The final stage of the process passes to UK Location. At the point of
+registration, the discovery metadata is collected automatically from the
+Data Publisher, and subjected to a number of quality controls.{nbsp} Once
+complete, the Data Publisher is notified of the results.{nbsp} If no errors
+are recorded, the resource is added to the UK Location Catalogue and
+becomes discoverable through the UK Location discovery service.{nbsp} If
+errors are found, then the Data Publisher will need to correct these and
+re-submit the resource.
+
+==== *[#2.4]####2.4 Publishing Discovery Metadata for On-line Services*
+
+The process for publishing metadata records for on-line services is
+shown as a process model below.
+
+This is highly generalised and you will need to view it in the context
+of your own internal data publishing processes and integrate it into
+this existing fabric.
+
+image:https://www.agi.org.uk/images/xslt/Process_ServicePublishing.jpg[Service
+Metadata Publishing Process,width=960,height=720]
+
+The process is triggered by the creation of an on-line service for a
+published dataset or series. This may be a new service, or the use of an
+existing service, which has been extended to support the additional data
+resource.{nbsp} If the former, a service metadata record will need to be
+created.{nbsp} If the latter, than the existing service metadata record will
+need to be revised to couple it to the new dataset or series.
+
+Having created or revised the service metadata, then as with data
+metadata records, it needs to be subject to internal quality controls
+and release management.
+
+Collection of the service metadata record is as for data, unless it is
+an existing service, in which case it will be an update of the existing
+registration.
+
+==== *[#2.5]####2.5 Maintaining Discovery Metadata*
+
+UK Location requires that Data Providers and their Data Publishers
+maintain their published metadata records in line with the INSPIRE
+Metadata Implementing Rule. This requires that the metadata elements and
+the record itself are kept up to date. For example, if you decide to
+change your published dataset, or move the location of a resource e.g.
+view service, then you are responsible for ensuring that these changes
+are updated in your metadata.
+
+==== *[#2.6]####2.6 Data Sharing and Charging and Licensing*
+
+Data sharing, including charging and licensing, 3rd party intellectual
+property, and e-commerce issues are covered under separate UK Location
+data sharing operational guidance. This is in the process of being
+published.{nbsp} Please visit the UK Location Resource Centre for more
+details.
+
+=== [#Dis_Met_Req]####3. Discovery Metadata Requirements
+
+UK Location discovery metadata will be used by potential data users to
+discover and evaluate published location information for use in a range
+of applications. To enable the data user to do this, they require
+comprehensive information about the data and services.{nbsp} The better the
+discovery metadata, the more likely the data will be shared and re-used
+in an appropriate way.
+
+GEMINI 2.3 has been updated so that UK Location discovery no longer
+needs an application profile.
+
+*Considerable care needs to be taken over the creation of discovery
+metadata. It is strongly recommended that you use a metadata editor
+tool, that fully supports the encoding requirements defined in
+[https://www.agi.org.uk/gemini/40-gemini/1047-metadata-guidelines-for-geospatial-data-resources-part-3[28]]
+and uses the UK Location XSD and Schematron schemas
+[https://www.agi.org.uk/gemini/40-gemini/1047-metadata-guidelines-for-geospatial-data-resources-part-3[28,30]],
+to ensure that your metadata is fully compliant with UKL and INSPIRE
+requirements.*
+
+GEMINI 2.3 metadata is encoded in XML, as described in
+the{nbsp}https://www.agi.org.uk/gemini/40-gemini/1048-uk-gemini-encoding-guidance[encoding
+guidance{nbsp}]{nbsp}and a Schematron ruled-based validation Schema
+[https://www.agi.org.uk/gemini/40-gemini/1047-metadata-guidelines-for-geospatial-data-resources-part-3[30]]
+can be used to check these XML instances.
+
+For a detailed explanation of each element, please refer to
+the{nbsp}https://www.agi.org.uk/gemini/40-gemini/1037-uk-gemini-standard-and-inspire-implementing-rules[UK
+GEMINI2 standard{nbsp}]and associated guidance. For metadata describing data
+(datasets and services),
+click{nbsp}https://www.agi.org.uk/gemini/40-gemini/1062-gemini-datasets-and-data-series[here].
+For metadata describing services,
+click{nbsp}https://www.agi.org.uk/gemini/40-gemini/1063-gemini-services[here].
+
+==== [#3.1]####3.1 Elements of importance to the DMS
+
+Some metadata elements are particularly important to the operation of
+the DMS, rather than to the users of the DMS.
+
+===== 3.1.1 Metadata record File Identifier
+
+To support the operation of UK Location and INSPIRE, discovery metadata
+records must include a File Identifier for the resource. The file
+identifier is the unique persistant identifier of the metadata record;
+it must not change when the record is updated.
+
+===== 3.1.2 Metadata date
+
+This must be updated when ever the metadata record is edited.
+Data.gov.uk harvesting will only collect the new record if the Metadata
+date is more recent than the old one.
+
+===== [#data_servce_linking]####3.1.3 Data and Service Linking
+
+UK Location and INSPIRE is a network of distributed on-line services
+that provide access to published location information. To provide this
+access, the discovery metadata about the data needs to tell the data
+user what services are available and how to access them, in a
+machine-readable way.{nbsp} This is achieved using the discovery metadata
+element “Resource Locator”.
+
+*For the network to operate, it is critical that these links are
+correct:*
+
+[width="100%",cols="50%,50%",]
+|===
+|Data Metadata a|
+The Resource Locator must define the Uniform Resource Locator (URL) for
+the on-line services that provide access to it.
+
+As well as the URL, it is also necessary to provide distribution format
+information in all cases.
+
+If the format and version are known, then they should be given.
+
+If no on-line services are available for access, then you should enter
+the URL for further information about access.
+
+|Service Metadata |Depending on the nature of the on-line service,
+machine-readable or human readable, one of two URLs should be provided -
+one giving the URL of an OGC web service ‘GetCapabilities request’,
+e.g.service=WMS&amp;request=GetCapabilities&amp;, or the location of
+further information about a service.
+|===
+
+==== *[#3.2]####3.2 Data Provider Licence information*
+
+The following Data Provider licensing information must be provided:
+
+* Include a Licence Title within the free text field 'Use Constraints',
+and where possible a Licence URL as an ‘anchor’ reference.
+* If more than one type of licence is included in the dataset then the
+URL should point to a Data Providers page, explaining this and linking
+to these licenses.
+
+Upon collection, UK Location will record the Use Constraints text and
+URL in the 'licence' field displayed on data.gov.uk. The UK Government
+encourages public bodies to release data explicitly under an open
+licence, which on data.gov.uk currently includes the "Open Government
+Licence" and the "OS OpenData Licence". For data.gov.uk to correctly
+categorise your data as open, ensure these licence titles are stated in
+the Use Constraints text field exactly as quoted here, for example “Open
+Government Licence”.
+
+==== *[#3.3]####3.3 Metadata Encoding*
+
+UK Location discovery metadata records must be published as an
+Extensible Markup Language (XML) document. This must follow
+the{nbsp}https://www.agi.org.uk/gemini/40-gemini/1048-uk-gemini-encoding-guidance[UK
+Location UK GEMINI Encoding
+Guidance]{nbsp}[https://www.agi.org.uk/gemini/40-gemini/1047-metadata-guidelines-for-geospatial-data-resources-part-3[28]].
+
+==== *[#3.4]####3.4 Metadata Validation*
+
+Published discovery metadata XML document resources will be validated in
+a three stage process, using:
+
+* The ISO XML schemas
+* The UK Location variant of the ISO Schematron rules
+* A{nbsp}UK Location GEMINI Schematron schema
+[https://www.agi.org.uk/gemini/40-gemini/1047-metadata-guidelines-for-geospatial-data-resources-part-3[30]]
+
+Data Publishers are required to validate their metadata records using
+these before resource registration. UK Location has published guidance
+on using its Schematron rules
+[https://www.agi.org.uk/gemini/40-gemini/1047-metadata-guidelines-for-geospatial-data-resources-part-3[29]].
+
+==== *[#3.5]####3.5 Community Extensions to UK GEMINI2*
+
+Within a given organisation or thematic community, there may be the need
+to record additional items of metadata to meet local requirements.
+Existing examples include Marine Environmental Data and Information
+Network (MEDIN) and Academic Geospatial Metadata Application Profile
+(AGMAP).
+
+UK Location will accept additional metadata elements within a metadata
+record XML document. These elements must be taken from ISO 19115 and be
+encoded in conformance with ISO 19139.
+
+==== *[#3.7]####3.6 Extension to Code Lists*
+
+UK GEMINI2 includes a number of code lists taken from ISO 19115. Within
+a given organisation or thematic community, you may wish to extend these
+code lists. {nbsp}These extensions need to be incorporated into the INSPIRE
+and/or UK Location specified code lists before they can be used.{nbsp} If you
+wish to extend a code list for an INSPIRE metadata element, please
+contact the UK Location Coordination Unit.
+
+==== *[#3.7]####3.7 Local Guidance*
+
+The type of data being published will have a strong bearing on the
+content of the metadata created. It is strongly recommended that data
+providers create local guidance, based on UK GEMINI2 and this
+operational guide.
+
+=== [#Pub_Dis_Met_rec]####4. Publishing Discovery Metadata records
+
+Publishing discovery metadata for UK Location for data and services is a
+three stage process:
+
+. *Publish discovery metadata records*{nbsp}to a harvest location, from which
+the resources can be machine-accessed from the Internet
+. *Register your harvest location*{nbsp}with data.gov.uk.
+. *Collection*. Sometimes known as ‘harvesting’, this is where
+data.gov.uk collects the metadata records from the registered location,
+makes them available within data.gov.uk, and for further collection on
+to Europe.
+
+==== *[#4.1]####4.1 Publishing Discovery Metadata records*
+
+This involves transferring your completed discovery metadata records to
+an on-line location, which can be machine accessed through the Internet.
+The records must be accessible using one of two mechanisms:
+
+* OGC Catalogue Service for the Web (CSW),{nbsp}_or_
+* Web Accessible Folder (WAF)
+
+These mechanisms will be used by the Discovery Metadata Service, to
+collect registered discovery metadata records. For more information
+about this interface, please refer to the DMS Collection Interface
+Specification
+[https://www.agi.org.uk/gemini/40-gemini/1047-metadata-guidelines-for-geospatial-data-resources-part-3[26]].
+
+===== 4.1.1 Discovery Metadata Harvest location
+
+This can take a number of forms. It may be local to your business unit,
+or organisation, or a community resource, shared across a number of
+organisations.
+
+The most important aspect of the harvest location is that it holds the
+published{nbsp}*MASTER*{nbsp}of the resources being published, i.e. it is your
+control point for their publication to UK Location and that it is the
+endpoint for services and their Coupled Resources.
+
+If publishing elsewhere, e.g. to thematic or regional catalogues and
+information portals, you should consider using this same control point –
+applying the ‘publish only once principle’.
+
+====== *_Record Organisation_*
+
+How you organise your records will be subject to your own local needs
+and practices. Possible catalogue/file directory structures include:
+
+* By business unit
+* By theme
+* By data and services and/or
+* By Data Provider (if shared)
+
+You can reflect this structure when you register harvest locations with
+UK Location, i.e. you can register all of the resources under a
+particular business unit or theme, and apply a filter against the rest
+of the contents.
+
+The only mandatory structure to apply is if the location contains
+resources associated with more than one Data Provider. These need to be
+registered separately, so your harvest location must be structured such
+that these can be identified as a group.
+
+*Please note that initially the above will only be supported if using
+WAF as your publishing mechanism. If using CSW, then the specified URL
+must contain only files for publication to UK Location, published under
+a single registration, relating to a single Data Provider.*
+
+*Subject to demand, CSW filtering will be introduced as part of a later
+release.*
+
+If you have an immediate requirement for UK Location to support CSW
+Filtering, by category or element, please contact the UK Location
+Coordination Unit, using the contact form at:{nbsp}https://defra.gov.uk/.
+
+==== *[#4.2]####4.2 Registering the harvest location*
+
+UK Location discovery metadata records are registered using the UK
+Government data publishing and discovery
+portal{nbsp}http://data.gov.uk/[data.gov.uk].
+
+Data.gov.uk is a single point of registration, discovery and access for
+a range of data, not purely location information. It provides two
+channels for registering discovery metadata.
+
+Data and services published through UK Location must be registered using
+the dedicated data.gov.uk channel –{nbsp}*Collection{nbsp}*(discovery metadata).
+
+The end-to-end process for publishing UK Location discovery metadata
+records for data and services, using data.gov.uk, is shown below.
+
+image:https://www.agi.org.uk/images/xslt/RegisterDiscoveryMetadata.jpg[Register
+Discovery Metadata Records,width=960,height=720]
+
+===== 4.2.1 Data.gov.uk Publisher Accounts
+
+Data and services are published against a registered organisation, e.g.
+government department or agency. This is the organisation{nbsp}*legally
+accountable*{nbsp}for the data being published -{nbsp}*the UK Location “Data
+Provider”.*
+
+*Please note that within data.gov.uk, the Data Provider is referred to
+as the “Publisher” for metadata and data resources, irrespective of
+whether they are publishing directly, or indirectly through a third
+party.*
+
+The registration of data.gov.uk “Publishers” is through a process of
+‘request and approval’. The process is explained within the “Data” tab
+of data.gov.uk
+
+If publishing directly, you will need to determine if a data.gov.uk
+Publisher account already exists for your organisation (this is clear
+within the online application process).
+
+You can then either apply for{nbsp}*_editor access_*{nbsp}(which lets you register
+and administer published data resources) or{nbsp}*_administrator
+access,_*{nbsp}which gives you the same powers as{nbsp}_editor access_{nbsp}but also
+lets you edit publisher’s details (including name, description, and
+contact information), and authorize access for other users to be editor
+or administrator for the organisation.
+
+====== *_Special Guidance for Third Party Publishers_*
+
+If you are a third party Data Publisher, i.e. publishing on behalf of a
+Data Provider, you will need to adopt a different approach for data and
+services. For data, discovery metadata records must be published under
+the Data Provider’s name.{nbsp} For Services, these must be published under
+your Data Publisher’s name.
+
+You will need to ensure that you have formal approval to publish from
+your Data Provider. This will be checked by The National Archives before
+approval is given.
+
+====== *_Signing up for{nbsp}__data.gov.uk accounts_*
+
+Before you can publish data and services on data.gov.uk, you will need
+to sign up and associate yourself with one or more Publishers.
+
+For further information, see the data.gov.uk User Guide
+[https://www.agi.org.uk/gemini/40-gemini/1047-metadata-guidelines-for-geospatial-data-resources-part-3[31]]
+
+====== *_Creating a Publisher_*
+
+If there is not an existing data.gov.uk Publisher for the UK Location
+Data Provider, you will need to contact the Cabinet Office data.gov.uk
+team to request the addition of your publisher:
+http://data.gov.uk/publisher/apply/cabinet-office
+
+====== *_Publisher Administrators and Editors_*
+
+Publishers are associated with two tiers of user:
+
+* *Administrators*, with profile edit and publishing rights, e.g. the
+ability to change the published details for the organization and add
+editors
+* *Editors*, with publishing rights only
+
+Typically, a Publisher will only have one Administrator, although
+additional Administrators may be added, e.g. to provide cover, or
+temporarily to facilitate a hand-over.
+
+But, a Publisher may have a number of Editors, i.e. users with
+responsibility for publishing different datasets associated with
+different parts of the organisation.
+
+Please note that Administrators and Editors can see and edit ALL
+resources associated with a Publisher, not just their own.
+
+The addition of Administrators and Editors can only be done by the
+account Administrators; you can request this via the data.gov.uk site,
+or by contacting the account administrator directly.
+
+===== 4.2.2 Registering Metadata Harvesting Resources
+
+Having created an account on data.gov.uk and gained editor rights to the
+relevant Publisher, you are now in a position to register metadata
+harvesting resources, for that Publisher.
+
+To register a metadata harvesting resource, select [Dataset Harvesting]
+from the Publisher tools sub-menu, which appears on the “Data” tab.
+
+Select [Add a harvesting resource]. Using the displayed form, enter:
+
+* Collection Interface Type – indicating whether the source is a CSW, a
+single document, or WAF
+* Source – the root URL of the CSW or WAF, e.g.
+http://www.someserver.com/csw/csw.cgi or
+http://www.example.org/metadata.
+* Description – an optional free text field for recording any relevant
+details about the registration. Use this to help you manage your
+Registrations and is not displayed publically on data.gov.uk
+* Select the relevant Publisher (Data Provider) from the drop down list.
+* Leave the State set to active
+* Click “Save”
+
+The registration will establish a collection task, which will collect
+the discovery metadata records located from the specified URL.
+
+It should be noted that in time, this same mechanism will be used to
+publish other resources, associated with a given Publisher, e.g.
+machine-readable Licences. It is also the intention to extend the
+functionality to support:
+
+* CSW Filtering
+* Scheduled Collection (automatic refresh of discovery metadata records
+at an interval specified by the Data Publisher
+* Response handling – automatic forwarding of error messages to an
+address specified by the Data Publisher, e.g. to a central error log
+
+==== *[#4.3]####4.3 Collection*
+
+The collection task created as described above is only run when
+requested, that is, when you click the ‘Refresh’ button for that harvest
+source, which is on the list of harvesting sources visible to the
+administrators of the publisher.
+
+===== 4.3.1 Validation
+
+Once collected, the individual data and service discovery metadata
+records will be subject to the following validation checks:
+
+* XSD validation of XML document
+* Schematron Schema validation of XML document
+* Data Provider validation against registered “Publisher” details on
+data.gov.uk
+* URL validation (http response)
+
+If the validation is successful, the metadata record will be visible
+within data.gov.uk, and will also be passed on to the Catalogue
+Publishing Service (data.gov.uk’s OGC CSW interface), from which it will
+be collected by the{nbsp}http://inspire-geoportal.ec.europa.eu/[European
+INSPIRE GeoPortal].
+
+In the event of an error being found, an error message will be returned
+to the Discovery Metadata status panel. Those that pass validation, will
+be added to the data.gov.uk metadata catalogue and the XML documents
+stored for subsequent use. Resources will take approximately 30 minutes
+to appear on data.gov.uk once successfully collected.
+
+===== 4.3.2 Error Handling
+
+If, having harvested from a metadata resource, the collection task
+fails, errors will be returned to the Discovery Metadata status panel.
+Potential errors include:
+
+* HTTP time outs, that may suggest the CSW is ‘down’ or the Web
+Accessible Folder cannot be accessed
+* CSW error responses
+* Validation errors
+
+INSPIRE carries out its own validation. At present, it does not reject
+any records. A searchable collection of validation reports is available
+at{nbsp}http://inspire-geoportal.ec.europa.eu/proxybrowser/ProxyBrowser/;
+this includes validation reports on metadata records, services, and
+layers within services.
+
+===== 4.3.3 Maintaining Registered Discovery Metadata records
+
+To maintain previous discovery metadata registrations, first select
+[Data] then [Dataset Harvesting] from the Publisher tools sub-menu.
+
+From this list of harvesting sources, you can
+
+* Edit the URL, source type, description or status of a harvesting
+source
+* View the status, including errors during the last harvest
+* Refresh, i.e. request that the source be harvested again soon. We may
+add a refresh scheduling option to the service in the future. If you
+have an immediate requirement for this please contact the UK Location
+Coordination Unit, using the contact form
+at:{nbsp}http://location.defra.gov.uk/resources/contact-us/.
+* A “refresh” harvest will collect new and updated metadata records from
+the source. An updated record is one with the same file identifier, but
+a more recent metadata date.
+
+====== *_Withdrawing Discovery Metadata records_*
+
+Once a discovery metadata record has been registered, the record should
+not be removed from the source location. If, in exceptional cases, you
+need to withdraw a metadata record:
+
+* Remove the record from your harvesting source
+* Login to{nbsp}www.data.gov.uk/data{nbsp}using a username (account) that has
+administrator permissions for that metadata record;
+* Click on the metadata page for the metadata record you wish to
+“Withdraw”;
+* Check you are withdrawing the FAULTY version (for example
+OLDER/out-of-date data) of the two duplicate datasets (you could check
+the “Date updated” and the “Harvest Date” to find most recent version) ;
+* Note that the Unique identifier for your metadata record is the file
+identifier, for example:{nbsp}{nbsp} 661856f3-e718-4c37-93ff-f0860bb28e52
+* On the right-hand side under heading “Withdrawal” click on “Withdraw
+this dataset” (all UK Location metadata records are known as ‘datasets’
+on data.gov.uk);
+* Click on the “Cancel” button if you are not sure, or click on the “OK”
+button if this is the metadata record you need to “Withdraw”
+* You should see a message highlighted in red to confirm this metadata
+record has been withdrawn, and you will not now be able to find this
+metadata record in a{nbsp}http://www.gov.uk/[www.gov.uk]{nbsp}text keyword search.
+
+Remember to ensure that you fix any links between metadata records. That
+is, if you withdraw a{nbsp}*service record*, check that no dataset records
+still point to it, e.g. by Resource locator. If you withdraw a{nbsp}*dataset
+record*, check that no series or service records still point to it, e.g.
+by Coupled resource,
+
+This will then be promulgated to the Catalogue Publishing Service
+(data.gov.uk CSW interface) within a few hours, and from there should
+result in the record being removed from the European INSPIRE GeoPortal.
+
+If you would like advice, please email both the metadata record’s URL
+weblink and the unique Harvest GUID for the metadata record that you
+would like to withdraw, and email to the UK Location
+Helpdesk:{nbsp}[#cloak8b865acef497806498058eabbfa4f7da]#UKLocation.Helpdesk@defra.gsi.gov.uk#
+
+====== *_Reinstating a withdrawn record_*
+
+This should be an even rarer exception. If your harvest source contains
+a metadata record with the same file identifier as has been used before,
+but with a more recent metadata date, then when that record is
+harvested, it will be re-instated at data.gov.uk, and from there will
+appear in the Catalogue Publishing Service and the INSPIRE GeoPortal.
+
+=== [#Met_Pub_Tec]####5. Metadata Publishing and Technology Choices
+
+There are a number of technical solution options that will help you
+create UK Location discovery metadata records and publish them to UK
+Location. These can cover some or all of the following elements of a
+metadata record creation and publishing environment:
+
+* Discovery metadata record creation
+* Change control and release management
+* Publishing (exposing discovery metadata records to a harvestable
+Internet endpoint)
+
+These options are outlined below. Using the information provided here,
+it is recommended that you then discuss your specific requirements with
+your IT department and/or system supplier.
+
+==== *[#5.1]####5.1 UK Location Metadata Editor*
+
+UK Location includes its own Metadata Editor that can be used by Data
+Providers and Publishers to create compliant discovery metadata records.
+
+The Editor is a web browser application, based on the open source
+product Geonetwork. It is available both as an on-line service and as a
+downloadable configuration package for use as part of a local
+server-based installation of Geonetwork.
+
+For more information, to register for the on-line service or to download
+the configuration package, please visit the UK Location Resource Centre.
+
+==== *[#5.2]####5.2 Geonetwork Publishing Solution*
+
+The use of Geonetwork as the basis for the UK Location Metadata Editor
+provides the option for Data Providers and Publishers to extend a local
+instance of the editor to provide cataloguing, change and release
+management and publishing (using CSW) services. This is all
+out-of-the-box Geonetwork functionality.{nbsp} In addition, there are other
+open source products that enable you to integrate Geonetwork with your
+existing GIS and build a full data publishing environment, supporting
+the delivery of on-line services, e.g. View (WMS) and Download (WFS)
+services.
+
+For more information on Geonetwork and links to other open source Geoweb
+products, please
+visit:{nbsp}http://geonetwork-opensource.org/[http://geonetwork-opensource.org]
+
+==== *[#5.3]####5.3 Third Party Solutions*
+
+Most of the providers of Geospatial Information Systems provide metadata
+creation and publishing tools as part of their solution packages.
+
+UK Location have created a number of resources to help solution
+providers integrate the support for UK Location discovery metadata
+creation and publishing into these existing packages:
+
+* https://www.agi.org.uk/gemini/40-gemini/1048-uk-gemini-encoding-guidance[UK
+GEMINI Encoding Guidance]
+* http://data.gov.uk/library/uk-gemini-schematron-schema-technical-guidance[UK
+GEMINI Schematron Schema and Guidance]
+* http://data.gov.uk/sites/default/files/DMS_Collection_Interface_Specification_10.pdf[UK
+Location Collection Interface Specification]
+
+All these resources are available through the UK Location Resource
+Centre. We would recommend that you speak to your system supplier to
+determine the support they can provide and to discuss how this can be
+best integrated into your existing systems.
+
+_Last updated: February 2018_
+
+http://creativecommons.org/licenses/by/4.0/[image:https://i.creativecommons.org/l/by/4.0/88x31.png[Creative
+Commons Licence]] +
+This work is licensed under
+a{nbsp}http://creativecommons.org/licenses/by/4.0/[Creative Commons
+Attribution 4.0 International License]

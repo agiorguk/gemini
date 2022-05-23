@@ -1,0 +1,169 @@
+= Coupled resource
+include::includes/partials-attributes.adoc[]
+[#38]
+
+[width="100%",cols="50%,50%",]
+|===
+|UK GEMINI id |38
+
+|Definition |Identifier of a dataset that the service operates on
+
+|Purpose and meaning |This identifies the dataset(s) associated with the
+service
+
+|Obligation |Conditional - mandatory for View and Download services,
+optional for other service types.
+
+|Occurrence |Multiple
+
+|Data type |CharacterString
+
+|Domain |Resource identifier or locator of the data resource
+
+|Guidance a|
+. Identify the data resources on which the service operates
+. Enter the corresponding URL for the published data metadata record.
+This may be:
+* an OGC CSW GetRecordById request
+* an address of a metadata instance in a WAF
+
+|Comment |
+
+|Examples |http://image2000.jrc.ec.europa.eu/#image2000_1_n12_multi
+
+|Revision date |March 2019
+|===
+
+Corresponding element in other standards...
+
+[%collapsible]
+====
+|===
+|Standard |Name |Comparison
+
+|INSPIRE Metadata |Coupled resource |Equivalent
+
+|ISO 19119:2006+Amd:1 |9 operatesOn |Equivalent
+
+|ISO 19139:2007
+|/gmd:MD_Metadata/gmd:identificationInfo/srv:SV_ServiceIdentification/srv:operatesOn
+|Equivalent
+|===
+====
+
+Change history...
+
+[%collapsible]
+====
+GEMINI 1 to 2.0: New element, required for INSPIRE
+====
+
+Encoding guidelines...
+
+[%collapsible]
+====
+|===
+|Guidelines a|
+. https://inspire.ec.europa.eu/documents/inspire-metadata-implementing-rules-technical-guidelines-based-en-iso-19115-and-en-iso-1[INSPIRE
+guidance] link:component/content/article?id=1047[[9]] states that
+Coupled resource shall be implemented by reference, i.e. through a URL
+that points to the metadata record of the data on which the service
+operates; a Coupled resource is implemented using XLinking.
+. Coupled resource is encoded using the operatesOn XML element in the
+srv namespace. The data type of this element is the
+MD_DataIdentification XML element in the gmd namespace.
+. The srv:operatesOn element shall contain a Unique Resource Identifier,
+(not to be confused with a W3C URI) through an an xlink:href attribute,
+pointing to the gmd:MD_DataIdentification element of the metadata record
+of the provided dataset or dataset series. The value of the xlink
+attribute shall be a URL that allows access to an unambiguous metadata
+instance, which may be:
+* an OGC CSW GetRecordById request
+* an address of a metadata instance in a WAF
+. The approach defined here follows
+https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-view-services-1[INSPIRE
+technical guidance for view services]
+link:component/content/article?id=1047[[16]] (see page 23 Implementation
+Requirement 14)
+. The obligation on coupled resource is conditional: it is mandatory (in
+INSPIRE metadata regulations and hence GEMINI2) if a linkage to the
+datasets on which the service operates is available. This is always the
+case for view and download services so if the service metadata is about
+a view (e.g a WMS) or download service (e.g. a WCS or WFS), Coupled
+resource is effectively mandatory. Other types of service, such as
+transformation, may not be coupled to a data resource so the constraint
+on the element is not enforced by validation (i.e. XSD schema or
+Schematron). Implementers may wish to declare a Coupled resource for
+other non-view service types and in these cases the coupled resource
+will not necessarily be a dataset.
+. Example One shows encoding coupled resource using the by reference
+mechanism and an OGC CSW GetRecordById request.
+. Example Two shows encoding Coupled resource with a reference to a
+metadata instance in a WAF.
+. Example Three shows a variant of a CSW GetRecordById request, where a
+fragment identifier is used to identify the specific
+MD_DataIdentification element operated on by the service.
+. It should be noted that both an OGC CSW GetRecordById and a WAF
+available metadata instance are full metadata instances which may
+contain more than one MD_DataIdentification element, in accordance with
+ISO 19115. Therefore, an application wishing to dereference the
+operatesOn element must 'know' which MD_DataIdentification element to
+obtain from the metadata instance. In the case of GEMINI and INSPIRE
+metadata it will be the first MD_DataIdentification element in the
+instance (XPath //gmd:identificationInfo[1]) unless a fragment
+identifier is used, in which case it may be in any location.
+
+|Example a|
+`Example One using the by reference mechanism and an OGC CSW request                   `
+
+....
+include::../snippets/coupledresource-cswrequest.xml[]
+....
+
+Example Two using WAF
+
+....
+include::../snippets/coupledresource-waf.xml[]
+....
+
+Example Three using the by reference mechanism and an OGC CSW request
+with a fragment identifier.
+
+....
+include::../snippets/coupledresource-cswrequest-fragment.xml[]
+....
+
+In this example the fragment identifier #BGS-13480426 would correspond
+to the value of the id attribute of the gmd:MD_DataIdentification
+element of the dataset metadata record, like below
+
+....
+<gmd:MD_DataIdentification id="BGS-13480426">
+....
+
+|===
+====
+
+Metadata errors observed...
+
+[%collapsible]
+====
+|===
+|Errors observed a|
+*Missing coupled resource* +
+INSPIRE requires Coupled resource to be populated where relevant. +
+This effectively makes it mandatory for View & Download services, and
+the INSPIRE Geoportal reports this as a validation issue. +
+However, the Geoportal also reports this issue for a Discovery service
+metadata record, where coupled resource is not mandatory. +
+*Encoding by value* A by value encoding is shown below; this is not
+allowed by the INSPIRE encoding guidance. Note that the xlink:href
+attribute of the operatesOn element has been removed and that the
+operatesOn element now contains an MD_DataIdentification element.
+
+....
+include::../snippets/coupledresource-missing.xml[]
+....
+
+|===
+====

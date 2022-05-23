@@ -1,0 +1,22 @@
+<gmd:MD_Metadata>
+  ...
+  <gmd:identificationInfo>
+    <srv:SV_ServiceIdentification>
+      ...
+      <srv:operatesOn>
+        <gmd:MD_DataIdentification id="BGS-625-13480426">
+          <gmd:citation>
+            <gmd:CI_Citation>
+              <gmd:title>
+                <gco:CharacterString>Digital Geological Map Data of Great Britain - 625k (DiGMapGB-625)</gco:CharacterString>
+              </gmd:title>
+              ...
+            </gmd:CI_Citation>
+          </gmd:citation>
+          ...
+        </gmd:MD_DataIdentification>
+      </srv:operatesOn>
+    </srv:SV_ServiceIdentification>
+  </gmd:identificationInfo>
+  ...
+</gmd:MD_Metadata>
