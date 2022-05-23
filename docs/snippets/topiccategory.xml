@@ -1,0 +1,16 @@
+<gmd:MD_Metadata>
+  ...
+  <gmd:identificationInfo>
+    <gmd:MD_DataIdentification id="OS-234567">
+      ...
+      <gmd:topicCategory>
+    <gmd:MD_TopicCategoryCode>geoscientificInformation</gmd:MD_TopicCategoryCode>
+      </gmd:topicCategory>
+      <gmd:topicCategory>
+        <gmd:MD_TopicCategoryCode>environment</gmd:MD_TopicCategoryCode>
+      </gmd:topicCategory>
+      ...
+    </gmd:MD_DataIdentification>
+  </gmd:identificationInfo>
+  ...
+</gmd:MD_Metadata>

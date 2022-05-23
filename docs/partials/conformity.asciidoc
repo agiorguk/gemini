@@ -1,0 +1,200 @@
+= Conformity
+include::includes/partials-attributes.adoc[]
+[#41]
+
+[width="100%",cols="50%,50%",]
+|===
+|UK GEMINI id |41
+
+|Definition |Statement of conformity with the product specification or
+user requirement against which the data is being evaluated
+
+|Purpose and meaning |The purpose of this is to record the conformity to
+the INSPIRE or other data specification
+
+|Obligation |Mandatory
+
+|Occurrence |Multiple
+
+|Data type |Class
+
+|Domain a|
+This class comprises the following elements:
+
+* Specification
+* Degree
+* Explanation
+
+For details see below. +
+
+[width="100%",cols="25%,25%,25%,25%",options="header",]
+!===
+!Metadata element name !specification !degree !explanation
+!Definition !Citation of the product specification or user requirement
+against which data resource is evaluated !degree of conformity with the
+specification !meaning of conformance for this result
+
+!Meaning !The purpose of this element is to identify the specification
+against which conformity is evaluated !The purpose of this element is to
+identify the conformity of the data resource to the cited specification
+!The purpose of this element is to explain the meaning of conformity in
+this context
+
+!Obligation !Mandatory !Mandatory !Mandatory
+
+!Occurrence !single !single !single
+
+!Data type !Class CI_Citation (from ISO19115) !Boolean !CharacterString
+
+!Domain ! !true if conformant +
+false if not conformant !free text
+
+!Rules !Cite the specification to which the data resource should conform
+!The data resource should be evaluated against the specification and the
+result recorded !Include a statement about which aspects of the
+specification the data resource conforms and any exceptions
+
+!Examples !D2.8.I.5 INSPIRE Data Specification on Addresses -
+Guidelines, publication, 2010-04-26 !true !Only mandatory items included
+!===
+
+|Guidance a|
+. At least one conformity statement shall be to an INSPIRE
+specification, even if simply to say that the data set is not conformant
+or not tested
+. Other conformity statements may be added, citing INSPIRE technical
+guidance or other specifications
+. Each conformity statement shall relate to only one specification
+. Assess the conformity of the data resource against its product
+specification or the INSPIRE thematic data specification.
+. State the data specification to which the degree of conformity applied
+and optionally an 'Explanation', for example to reference the
+conformance criteria in the specification against which conformance is
+being claimed.
+. For INSPIRE, Datasets and dataset series shall declare conformity to
+[Regulation 1089/2010].
+
+|Comment a|
+. The specification is identified in the element Specification.
+. The conformance of a data resource may be considered with respect to
+more than one specification.
+. For INSPIRE, the citation title shall be the official title of the
+INSPIRE Implementing Rule, specification document or Conformance Class
+. For INSPIRE, the date given will be the date of publication of the
+INSPIRE Implementing Rule, specification document or Conformance Class
+. For INSPIRE Implementing Rule documents, the value of the title
+element shall match exactly the official title of the cited document in
+the language of the metadata.
+
+|Examples |Conformance of a dataset to Regulation 1089/2010 would have
+the title: +
+Commission Regulation (EU) No 1089/2010 of 23 November 2010 implementing
+Directive 2007/2/EC of the European Parliament and of the Council as
+regards interoperability of spatial data sets and services., +
+and would give a publication date of 2010-12-08
+
+|Revision date |April 2020
+|===
+
+Corresponding element in other standards...
+
+[%collapsible]
+====
+|===
+|Standard |Name |Comparison
+
+|INSPIRE Metadata |Conformity |Equivalent
+
+|ISO 19115:2003 |DQ_DataQuality > DQ_Element.result >
+DQ_ConformanceResult |Equivalent
+
+|ISO 19139:2007
+|/gmd:MD_Metadata/gmd:dataQualityInfo/gmd:DQ_DataQuality/gmd:report/gmd:DQ_DomainConsistency/gmd:result/gmd:DQ_ConformanceResult
+|Equivalent
+|===
+====
+
+Change history...
+
+[%collapsible]
+====
+* GEMINI 1 to 2.0: New element
+* GEMINI 2.2 to 2.3: changed the way to encode that a resource has not
+been tested against the relevant INSPIRE specification
+====
+
+Encoding guidelines...
+
+[%collapsible]
+====
+[width="100%",cols="50%,50%",]
+|===
+|Guidelines a|
+. The encoding for Conformity is shown in the example.
+. Note that the encoding of conformity requires a specification (encoded
+using gmd:CI_Citation), an explanation and a pass.
+. INSPIRE Metadata Implementing Rules state that there are three
+possible conformance results: conformant, not conformant and not
+evaluated. Not evaluated is expressed by a conformity statement with a
+nilReason (unknown) specified in the pass element.
+
+ifdef::variant-dataset[]
+. All gmd:dataQualityInfo XML element shall have a gmd:scope XML
+element, set to 'dataset' or 'series' as appropriate.
+endif::[]
+ifdef::variant-service[]
+. All gmd:dataQualityInfo XML element shall have a gmd:scope XML
+element, set to 'service'.
+. It is important to note that if the scope of the data quality
+information is 'service' then the gmd:levelDescription XML element is
+required, as shown below.
+endif::[]
+|Example a|
+
+....
+ifdef::variant-dataset[]
+include::../snippets/dataset-conformity-inspire-ortho.xml[]
+endif::[]
+ifdef::variant-service[]
+include::../snippets/service-conformity-abstracttestsuite.xml[]
+endif::[]
+....
+ifdef::variant-dataset[]
+
+Example of a conformity report for Implementing Rule 1089/2010, where
+conformance is not evaluated. +
+Example follows updated guidance to use gmx:Anchor over
+gco:CharacterString for Citation titles
+
+....
+include::../snippets/dataset-conformity-inspire-notevaluated.xml[]
+....
+
+Example three ~ Topological consistency, showing mandatory elements for
+a descriptive topological consistency report
+
+....
+include::../snippets/dataset-conformity-inspire-topo.xml[]
+....
+endif::[]
+|===
+====
+
+Metadata errors observed...
+
+[%collapsible]
+====
+|===
+|Errors observed |*Conformity statement missing* +
+INSPIRE requires a 'conformity' statement, which can say that the
+resource conforms, or does not conform to a specification, or that it
+hasn't been tested. +
+This is encoded with an ISO 19139 quality report. +
+*Incorrect citation of INSPIRE regulation* +
+When citing the INSPIRE regulation, the title and publication date need
+to match exactly. +
+Any deviation may result in the validation failure message "The gmd:pass
+element is not nillable and shall have a value" - even if the error is
+in the spelling of the title.
+|===
+====

@@ -1,0 +1,25 @@
+<gmd:MD_Metadata>
+  ...
+  <gmd:dataQualityInfo>
+    <gmd:DQ_DataQuality>
+      <gmd:scope>
+        <gmd:DQ_Scope>
+          <gmd:level>
+            <gmd:MD_ScopeCode 
+              codeListValue='service'
+              codeList='https://schemas.isotc211.org/schemas/19139/resources/codelist/gmxCodelists.xml#MD_ScopeCode'>service</gmd:MD_ScopeCode>
+          </gmd:level>
+          ...
+          <gmd:levelDescription>
+            <gmd:MD_ScopeDescription>
+              <gmd:other>
+            <gco:CharacterString>service</gco:CharacterString>
+              </gmd:other>
+            </gmd:MD_ScopeDescription>
+          </gmd:levelDescription>
+        </gmd:DQ_Scope>
+      </gmd:scope>
+      ...
+    </gmd:DQ_DataQuality>
+  </gmd:dataQualityInfo>
+</gmd:MD_Metadata>

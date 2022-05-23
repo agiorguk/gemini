@@ -1,0 +1,105 @@
+= Lineage
+include::includes/partials-attributes.adoc[]
+[#10]
+
+[width="100%",cols="50%,50%",]
+|===
+|UK GEMINI id |10
+
+|Definition |Information about the events or source data used in the
+construction of the data resource
+
+|Purpose and meaning |The purpose of this element is to give an
+indication of how the data resource was created. It is useful in
+determining its fitness for purpose.
+
+|Obligation |Mandatory
+
+|Occurrence |Single
+
+|Data type |CharacterString
+
+|Domain |Free text
+
+|Guidance a|
+. Some information should be provided. Include statements on the
+following:
+* source material
+* processes used to create the data, including resolution of measurement
+* method of updating
+* any quality control processes
+. Acronyms should be expanded to the full name along with the
+abbreviated version at the beginning of the lineage. The abbreviated
+version can then be used.
+
+|Comment |This element is similar to Abstract, and some information may
+be included in either element. +
+Further details included in an external file may be referenced under
+link:#27[Additional information].
+
+|Examples |Addresses are taken from the Postcode Address File (PAF) and
+the property found on the large-scale Ordnance Survey map. The
+coordinates of an approximate centroid for the property are recorded to
+a resolution of 1 metre. The dataset is updated from the PAF monthly
+updates. All results are checked by plotting a group of related
+addresses on the map and visually checking for errors.
+
+|Revision date |March 2019
+|===
+
+Corresponding element in other standards...
+
+[%collapsible]
+====
+|===
+|Standard |Name |Comparison
+
+|INSPIRE Metadata |Lineage |Equivalent
+
+|ISO 19115:2003 |DQ_DataQuality.lineage > LI_Lineage.statement
+|Equivalent
+
+|ISO 19139:2007
+|/gmd:MD_Metadata/gmd:dataQualityInfo/gmd:DQ_DataQuality/gmd:lineage
+|Equivalent
+|===
+====
+
+Change history...
+
+[%collapsible]
+====
+GEMINI 1 to 2.0: Made mandatory for datasets and dataset series to
+conform to INSPIRE
+====
+
+Encoding guidelines...
+
+[%collapsible]
+====
+|===
+|Guidelines a|
+. The encoding for lineage is shown in the example below.
+. Note that, in addition to the lineage statement, the data quality
+scope shall be encoded. For dataset metadata instances the MD_ScopeCode
+code list value shall be 'dataset'. For series metadata instances the
+code list value shall be 'series'.
+. For INSPIRE, the lineage statement must appear in the
+gmd:dataQualityInfo/gmd:DQ_DataQuality element scoped to the entire
+described dataset or series
+
+|Example a|
+
+....
+include::../snippets/lineage.xml[]
+....
+
+|===
+====
+
+Metadata errors observed...
+
+[%collapsible]
+====
+No error information available
+====

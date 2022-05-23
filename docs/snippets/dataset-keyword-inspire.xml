@@ -1,0 +1,36 @@
+<gmd:MD_Metadata>
+  ...
+  <gmd:identificationInfo>
+    <gmd:MD_DataIdentification id="EA-100100">
+      ...
+      <gmd:descriptiveKeywords>
+        <gmd:MD_Keywords>
+          <gmd:keyword>
+            <gmx:Anchor xlink:href='http://inspire.ec.europa.eu/theme/mf'>Meteorological geographical features</gmx:Anchor>
+          </gmd:keyword>
+          <gmd:thesaurusName>
+            <gmd:CI_Citation>
+              <gmd:title>
+                <gmx:Anchor xlink:href='https://www.eionet.europa.eu/gemet/inspire_themes/'>GEMET - INSPIRE themes, version 1.0</gmx:Anchor>
+              </gmd:title>
+              <gmd:date>
+                <gmd:CI_Date>
+                  <gmd:date>
+                    <gco:Date>2008-06-01</gco:Date>
+                  </gmd:date>
+                  <gmd:dateType>
+                    <gmd:CI_DateTypeCode 
+                      codeList='https://schemas.isotc211.org/schemas/19139/resources/codelist/gmxCodelists.xml#CI_DateTypeCode' 
+                      codeListValue='publication'>publication</gmd:CI_DateTypeCode>
+                  </gmd:dateType>
+                </gmd:CI_Date>
+              </gmd:date>
+            </gmd:CI_Citation>
+          </gmd:thesaurusName>
+        </gmd:MD_Keywords>
+      </gmd:descriptiveKeywords>
+      ...
+    </gmd:MD_DataIdentification>
+  </gmd:identificationInfo>
+  ...
+</gmd:MD_Metadata>

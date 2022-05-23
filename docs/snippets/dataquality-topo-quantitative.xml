@@ -1,0 +1,31 @@
+ <gmd:report>
+   <gmd:DQ_TopologicalConsistency>
+      <gmd:nameOfMeasure>
+         <gco:CharacterString>
+         Number of faulty point-curve connections
+         </gco:CharacterString>
+      </gmd:nameOfMeasure>
+      <gmd:evaluationMethodType>
+         <gmd:DQ_EvaluationMethodTypeCode 
+           codeList='https://schemas.isotc211.org/schemas/19139/resources/codelist/gmxCodelists.xml#DQ_EvaluationMethodTypeCode' 
+           codeListValue='indirect' />
+      </gmd:evaluationMethodType>
+      <gmd:evaluationMethodDescription>
+         <gco:CharacterString>
+           A point-curve connection exists where different curves touch... 
+         </gco:CharacterString>
+      </gmd:evaluationMethodDescription>
+      <gmd:dateTime>2017-01-21T19:21:30</gmd:dateTime>
+      <gmd:result>
+         <gmd:DQ_QuantitativeResult>
+            <!--The mandatory elements are valueUnit and value/Record with xsi:type  -->
+            <gmd:valueUnit xlink:href="http://www.opengis.net/def/uom/OGC/1.0/unity"/>
+            <gmd:value>
+               <gco:Record 
+                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                 xsi:type="xs:integer">12</gco:Record>
+            </gmd:value>
+         </gmd:DQ_QuantitativeResult>
+      </gmd:result>
+   </gmd:DQ_TopologicalConsistency>
+</gmd:report>

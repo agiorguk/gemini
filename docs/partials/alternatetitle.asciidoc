@@ -1,0 +1,104 @@
+= Alternative title
+include::includes/partials-attributes.adoc[]
+[#2]
+
+[width="100%",cols="50%,50%",]
+|===
+|UK GEMINI id |2
+
+|Definition |Short name, other name, acronym or alternative language
+title for the data resource
+
+|Purpose and meaning |The purpose of this element is to record any
+alternative titles by which the data resource is known.
+
+|Obligation |Optional
+
+|Occurrence |Multiple
+
+|Data type |CharacterString
+
+|Domain |Free text
+
+|Guidance a|
+. Should be provided when the data resource has more than one title.
+. There is no need to fill in this entry unless there are other names
+used for the dataset, for example historic names.
+. Commonly used abbreviations or acronyms should be recorded. If the
+acronym or abbreviation has been used in the main Title, then use the
+full name in the Alternative Title.
+. Other language equivalents should be recorded where they exist, for
+example the Welsh language title (although this title may refer to a
+different data resource).
+. Entries should be short and concise.
+
+|Comment |
+
+|Examples |OS large-scale data
+
+|Revision date |May 2021
+|===
+
+Corresponding element in other standards...
+
+[%collapsible]
+====
+|===
+|Standard |Name |Comparison
+
+|INSPIRE Metadata |None |INSPIRE has no Alternative title, only a single
+title
+
+|ISO 19115:2003 |MD_Identification.citation > CI_Citation.alternateTitle
+|Equivalent
+
+|ISO 19139:2007
+ifdef::variant-dataset[]
+|/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:alternateTitle
+endif::[]
+ifdef::variant-service[]
+|/gmd:MD_Metadata/gmd:identificationInfo/srv:SV_ServiceIdentification/gmd:citation/gmd:CI_Citation/gmd:alternateTitle
+endif::[]
+|Equivalent
+|===
+====
+
+Change history...
+
+Encoding guidelines...
+
+[%collapsible]
+====
+[width="100%",cols="50%,50%",]
+|===
+|Guidelines |Note that more than one alternative title may be presented,
+as shown in the example below.
+
+|Example a|
+ifdef::variant-dataset[]
+Example one
+....
+include::../snippets/dataset-alternatetitle-multi.xml[]
+....
+
+Example two
+
+....
+include::../snippets/dataset-alternatetitle-multi.xml[]
+....
+endif::[]
+ifdef::variant-service[]
+....
+include::../snippets/service-alternatetitle-multi.xml[]
+....
+endif::[]
+
+|===
+====
+
+Metadata errors observed...
+
+[%collapsible]
+====
+No error information available
+====

@@ -1,0 +1,16 @@
+<gmd:identificationInfo>
+      <gmd:MD_DataIdentification id="CEH-barrcj2015">
+        ...
+         <gmd:resourceConstraints>
+            ...
+         </gmd:resourceConstraints>
+         <gmd:spatialRepresentationType>
+            <gmd:MD_SpatialRepresentationTypeCode 
+            codeList='https://schemas.isotc211.org/schemas/19139/resources/codelist/gmxCodelists.xml#MD_SpatialRepresentationTypeCode' 
+            codeListValue='textTable' />
+         </gmd:spatialRepresentationType>
+         <gmd:language>
+            ...
+         </gmd:language>
+        ...
+      </gmd:MD_DataIdentification>

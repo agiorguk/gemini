@@ -1,0 +1,179 @@
+== UK GEMINI 2.3 2020-06-29 dataset or series
+include::./includes/attributes.asciidoc[]
+
+== Contents
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Metadata about the metadata record |Metadata about the resource
+|<<45, File Identifier>>
+|<<4, Abstract>>
+
+|<<47, Hierarchy level name>>
+|<<27, Additional information>>
+
+|<<30, Metadata date>>
+|<<2, Alternative title>>
+
+|<<33, Metadata language>>
+|<<44, Bounding box>>
+
+|<<35, Metadata point of contact>>
+|<<51, Character encoding>>
+
+|<<54, Metadata standard name>>
+|<<41, Conformity>>
+
+|<<55, Metadata standard version>>
+|<<21, Data format>>
+
+|<<49, Parent identifier>>
+|<<52, Data quality>>
+
+|<<39, Resource type>>
+|<<3, Dataset language>>
+
+|
+|<<8, Dataset reference date>>
+
+|
+|<<43, Equivalent scale>>
+
+|
+|<<15, Extent>>
+
+|
+|<<6, Keyword>>
+
+|
+|<<25, Limitations on public access>>
+
+|
+|<<10, Lineage>>
+
+|
+|<<53, Maintenance information>>
+
+|
+|<<48, Quality scope>>
+
+|
+|<<36, Resource identifier>>
+
+|
+|<<19, Resource locator>>
+
+|
+|<<23, Responsible organisation>>
+
+|
+|<<17, Spatial reference system>>
+
+|
+|<<50, Spatial representation type>>
+
+|
+|<<18, Spatial resolution>>
+
+|
+|<<7, Temporal extent>>
+
+|
+|<<1, Title>>
+
+|
+|<<5, Topic Category>>
+
+|
+|<<26, Use constraints>>
+
+|
+|<<16, Vertical extent information>>
+|===
+
+Return to link:1037-uk-gemini-standard-and-inspire-implementing-rules.html[GEMINI
+2.3 home page]
+
+'''''
+
+== Metadata about the metadata record
+
+include::./partials/metadatadate.asciidoc[]
+
+include::./partials/metadatalanguage.asciidoc[]
+
+include::./partials/metadatapointofcontact.asciidoc[]
+
+include::./partials/resourcetype.asciidoc[]
+
+include::./partials/fileidentifier.asciidoc[]
+
+include::./partials/hierarchylevelname.asciidoc[]
+
+include::./partials/parentidentifier.asciidoc[]
+
+include::./partials/metadatastandardname.asciidoc[]
+
+include::./partials/metadatastandardversion.asciidoc[]
+
+Go to <<UK GEMINI 2.3 2020-06-29 dataset or series, top of page>>
+
+== Metadata about the resource
+
+include::./partials/title.asciidoc[]
+
+include::./partials/alternatetitle.asciidoc[]
+
+include::./partials/datasetlanguage.asciidoc[]
+
+include::./partials/abstract.asciidoc[]
+
+include::./partials/topiccategory.asciidoc[]
+
+include::./partials/keyword.asciidoc[]
+
+include::./partials/temporalextent.asciidoc[]
+
+include::./partials/datasetreferencedate.asciidoc[]
+
+include::./partials/lineage.asciidoc[]
+
+include::./partials/extent.asciidoc[]
+
+include::./partials/verticalextent.asciidoc[]
+
+include::./partials/spatialreferencesystem.asciidoc[]
+
+include::./partials/spatialresolution.asciidoc[]
+
+include::./partials/resourcelocator.asciidoc[]
+
+include::./partials/dataformat.asciidoc[]
+
+include::./partials/responsibleorganisation.asciidoc[]
+
+include::./partials/limitationsonpublicaccess.asciidoc[]
+
+include::./partials/useconstraints.asciidoc[]
+
+include::./partials/additionalinformation.asciidoc[]
+
+include::./partials/resourceidentifier.asciidoc[]
+
+include::./partials/conformity.asciidoc[]
+
+include::./partials/equivalentscale.asciidoc[]
+
+include::./partials/boundingbox.asciidoc[]
+
+include::./partials/qualityscope.asciidoc[]
+
+include::./partials/spatialrepresentationtype.asciidoc[]
+
+include::./partials/characterencoding.asciidoc[]
+
+include::./partials/dataquality.asciidoc[]
+
+include::./partials/maintenanceinformation.asciidoc[]
+
+Go to <<UK GEMINI 2.3 2020-06-29 dataset or series, top of page>>

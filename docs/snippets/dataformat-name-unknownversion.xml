@@ -1,0 +1,10 @@
+...
+     <gmd:distributionFormat>
+        <gmd:MD_Format>
+          <gmd:name>
+            <gmx:Anchor xlink:href="https://inspire.ec.europa.eu/media-types/application/x-shapefile">Esri shapefile</gmx:Anchor>
+          </gmd:name>
+          <gmd:version gco:nilReason="unknown"/> 
+        </gmd:MD_Format>
+      </gmd:distributionFormat>
+      ...

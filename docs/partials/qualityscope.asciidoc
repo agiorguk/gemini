@@ -1,0 +1,142 @@
+= Quality scope
+include::includes/partials-attributes.adoc[]
+[#48]
+
+[width="100%",cols="50%,50%",]
+|===
+|UK GEMINI id |48
+
+|Definition |The specific data to which the data quality information
+applies
+
+|Purpose and meaning |To enable data quality to be reported on a subset
+of the data resource
+
+|Obligation |Mandatory
+ifdef::variant-dataset[]
+|Occurrence |Multiple
+endif::[]
+ifdef::variant-service[]
+|Occurrence |Single
+endif::[]
+
+|Data type |Class
+
+|Domain |DQ_Scope from ISO 19115
+ifdef::variant-dataset[]
+|Guidance a|
+. For the conformity statement and lineage of metadata describing:
+* a dataset, set quality scope to 'dataset'
+* a dataset series, set quality scope 'series'
+. If using a Data Quality element to describe something other than the
+whole dataset or series, then provide additional DQ_DataQuality elements
+with their Scope set appropriately
+
+|Comment |Required in the ISO 19115 encoding of GEMINI 2 metadata
+records, to assist in managing related metadata records.
+endif::[]
+ifdef::variant-service[]
+|Guidance |
+
+|Comment |
+endif::[]
+
+|Examples |
+
+|Revision date |March 2019
+|===
+
+Corresponding element in other standards...
+
+[%collapsible]
+====
+|===
+|Standard |Name |Comparison
+
+|INSPIRE Metadata
+ifdef::variant-dataset[]
+|metadata/2.0/req/datasets-and-series/one-data-quality-element |INSPIRE
+only allows a maximum of one Data quality element, so only one scope -
+the whole resource
+endif::[]
+ifdef::variant-service[]
+|INSPIRE Metadata |metadata/2.0/req/sds/only-one-dq-element |INSPIRE
+only allows a maximum of one Data quality element, so only one scope -
+the whole resource
+endif::[]
+
+|ISO 19115:2003 |DQ_DataQuality.scope |Equivalent
+
+|ISO 19139:2007
+|/gmd:MD_Metadata/gmd:dataQualityInfo/gmd:DQ_DataQuality/gmd:scope
+|Equivalent
+|===
+====
+
+Change history...
+
+[%collapsible]
+====
+New element in GEMINI 2.3
+====
+
+Encoding guidelines...
+
+[%collapsible]
+====
+|===
+|Guidelines a|
+ifdef::variant-dataset[]
+All gmd:dataQualityInfo XML element shall have a gmd:scope XML element,
+set to as appropriate.
+
+There shall be exactly one gmd:dataQualityInfo/gmd:DQ_DataQuality
+element scoped to the entire described data set or data set series. This
+shall contain the Conformity and Lineage elements, and any Quality
+measures that relate to the the entire dataset or series
+
+Other quality measures, e.g. for specific feature types, shall be
+separate DQ_DataQuality elements, with the relevant Quality scope. In
+these cases the Level Description must also be set
+endif::[]
+ifdef::variant-service[]
+* It is important to note that if the scope of the data quality
+information is 'service' then the gmd:levelDescription XML element is
+required
+* The value of gmd:other must be *service* (in the language of the
+metadata), as shown below.
+endif::[]
+
+
+|Example a|
+
+....
+ifdef::variant-dataset[]
+include::../snippets/dataset-qualityscope.xml[]
+endif::[]
+ifdef::variant-service[]
+include::../snippets/service-qualityscope.xml[]
+endif::[]
+....
+
+|===
+====
+
+Metadata errors observed...
+
+[%collapsible]
+====
+ifdef::variant-dataset[]
+No error information available
+endif::[]
+ifdef::variant-service[]
+|Errors observed |*No level description* +
+ISO 19115 requires that a 'level description' is given for any quality
+statement that is not describing the 'dataset' or 'series' level.
+INSPIRE and GEMINI use the quality statement for both lineage and
+conformity. This means that any 'service' record must provide a
+gmd:DQ_Scope/gmd:levelDescription element, as shown above. +
+A similar rule applies to link:#47[hierarchyLevelName], which must be
+provided for any record that is not describing a dataset.
+endif::[]
+====

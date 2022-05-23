@@ -1,0 +1,45 @@
+<gmd:MD_Metadata>
+  ...
+  <gmd:identificationInfo>
+    <gmd:MD_DataIdentification id="XY-000001">
+      ...
+      <srv:extent>
+        <gmd:EX_Extent>
+          <gmd:geographicElement>
+            <gmd:EX_GeographicDescription>
+              <gmd:geographicIdentifier>
+                <gmd:MD_Identifier>
+                  <gmd:authority>
+                    <gmd:CI_Citation>
+                      <gmd:title>
+                        <gco:CharacterString>ISO 3166-2</gco:CharacterString>
+                      </gmd:title>
+                      <gmd:date>
+                        <gmd:CI_Date>
+                          <gmd:date>
+                            <gco:Date>1998</gco:Date>
+                          </gmd:date>
+                          <gmd:dateType>
+                             <gmd:CI_DateTypeCode 
+                               codeList='https://schemas.isotc211.org/schemas/19139/resources/codelist/gmxCodelists.xml#CI_DateTypeCode' 
+                               codeListValue='revision'>revision</gmd:CI_DateTypeCode>
+                          </gmd:dateType>
+                        </gmd:CI_Date>
+                      </gmd:date>
+                    </gmd:CI_Citation>
+                  </gmd:authority>
+                  <gmd:code>
+                    <gco:CharacterString>GB-ENG</gco:CharacterString>
+                  </gmd:code>
+                </gmd:MD_Identifier>
+              </gmd:geographicIdentifier>
+            </gmd:EX_GeographicDescription>
+          </gmd:geographicElement>
+          ...
+        </gmd:EX_Extent>
+      </srv:extent>
+      ...
+    </gmd:MD_DataIdentification>
+  </gmd:identificationInfo>
+  ...
+</gmd:MD_Metadata>
