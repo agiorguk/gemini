@@ -20,7 +20,7 @@ based on UTF-8, otherwise optional)
 
 |Domain |MD_CharacterSetCode from ISO 19115
 
-|Guidance |If more than one charater encoding is used within the dataset
+|Guidance |If more than one character encoding is used within the dataset
 or dataset series, all used character encodings Including UTF-8, shall
 be given.
 
