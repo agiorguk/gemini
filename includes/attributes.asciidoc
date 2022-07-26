@@ -7,7 +7,7 @@
 :docinfosubs: attributes
 :safe-mode-unsafe:
 :iconfont-remote!:
-:stylesheet: ./assets/asciidoctor.css
+:stylesheet: ./assets/gemini.css
 :scriptsdir: {assetdir}
 :linkcss:
 :data-uri:
