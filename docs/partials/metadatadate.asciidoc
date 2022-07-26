@@ -2,7 +2,6 @@
 include::includes/partials-attributes.adoc[]
 [#30]
 
-[width="100%",cols="50%,50%",]
 |===
 |UK GEMINI id |30
 

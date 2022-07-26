@@ -1,4 +1,4 @@
-== UK GEMINI 2.3 2020-06-29 service
+== [[top]]UK GEMINI 2.3 2020-04-07 service
 include::./includes/attributes.asciidoc[]
 
 == Contents
@@ -135,5 +135,4 @@ include::./partials/boundingbox.asciidoc[]
 
 include::./partials/qualityscope.asciidoc[]
 
-Go to <<UK GEMINI 2.3 2020-06-29 service, top of page>>
-
+Go to <<top, top of page>>
