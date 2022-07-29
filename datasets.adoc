@@ -1,5 +1,6 @@
 == [[top]]UK GEMINI 2.3 2020-04-07 dataset or series
-include::./includes/attributes.asciidoc[]
+
+include::includes/attributes.asciidoc[]
 
 == Contents
 
