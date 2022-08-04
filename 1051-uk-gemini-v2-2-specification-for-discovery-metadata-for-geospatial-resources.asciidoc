@@ -1,4 +1,4 @@
-= UK GEMINI v2-2 Specification for Discovery Metadata for Geospatial Resources
+== UK GEMINI v2-2 Specification for Discovery Metadata for Geospatial Resources
 include::./includes/attributes.asciidoc[]
 
 Return

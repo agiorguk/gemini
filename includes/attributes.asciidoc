@@ -5,7 +5,7 @@
 :docinfo: shared
 :safe-mode-unsafe:
 :iconfont-remote!:
-:stylesheet: ./assets/gemini.css
+:stylesheet: gemini.css
 :scriptsdir: {assetdir}
 :linkcss:
 :data-uri:

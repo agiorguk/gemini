@@ -1,4 +1,5 @@
 = UK-GEMINI Standard and Inspire Implementing Rules
+
 include::./includes/attributes.asciidoc[]
 
 == Introduction{nbsp} _(GEMINI 2.3, June 2018)_

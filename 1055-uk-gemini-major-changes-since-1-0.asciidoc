@@ -1,11 +1,11 @@
-= UK GEMINI Changes Log
+== UK GEMINI Changes Log
 include::./includes/attributes.asciidoc[]
 
 Return
 to{nbsp}https://www.agi.org.uk/gemini/40-gemini/1037-uk-gemini-standard-and-inspire-implementing-rules[GEMINI
 2.3 home page]
 
-=== UK GEMINI 2.3
+== UK GEMINI 2.3
 
 In UK GEMINI 2.3, as well as restructuring the content, the following
 changes have been made:
@@ -56,9 +56,9 @@ guidance relating to INSPIRE and data.gov.uk:
 * Dates (in both Temporal extent, and Dataset reference date) can no
 longer just be the century.
 
-==== Editorial changes since the launch of GEMINI 2.3
+=== Editorial changes since the launch of GEMINI 2.3
 
-===== April 2020
+==== April 2020
 
 Changed
 the{nbsp}https://www.agi.org.uk/40-gemini/1048-uk-gemini-encoding-guidance[XML
@@ -95,7 +95,7 @@ resource has not been tested against an INSPIRE specification
 * add note that it is mandatory for at least one conformity statement to
 relate to an INSPIRE document
 
-===== January 2020
+==== January 2020
 
 Added guidance for two additional
 elements:{nbsp}https://www.agi.org.uk/1062-gemini-datasets-and-data-series#54[Metadata
@@ -119,7 +119,7 @@ https://www.agi.org.uk/1062-gemini-datasets-and-data-series#25[Limitations
 on public access]: improve guidance by listing the allowable INSPIRE
 reasons, with a hyperlink to the register
 
-===== March 2019
+==== March 2019
 
 Change
 to{nbsp}https://www.agi.org.uk/40-gemini/1048-uk-gemini-encoding-guidance#2.1,[https://www.agi.org.uk/1048-uk-gemini-encoding-guidance#2.1,]{nbsp}to
@@ -167,14 +167,14 @@ equivalent. The largest impact is to note that INSPIRE only allows one
 Quality scope element - i.e. the metadata has to describe the whole
 dataset._
 
-===== January 2019
+==== January 2019
 
 New{nbsp}Schematron package, in which the only change is to the "Technical
 Documentation" file (to version 1.7.1), clarifying in one paragraph that
 the Schematron file itself changed from 2.2 to 2.3, but the way one
 should use it didn't.
 
-===== October 2018
+==== October 2018
 
 *https://www.agi.org.uk/gemini/40-gemini/1062-gemini-datasets-and-data-series#27[Additional
 information]{nbsp}(source)
@@ -207,7 +207,7 @@ Fixed two typos.
 We have also turned internal cross references from one element to
 another, into hyperlinks.
 
-===== September 2018
+==== September 2018
 
 *https://www.agi.org.uk/gemini/40-gemini/1062-gemini-datasets-and-data-series#3[Dataset
 language]{nbsp}and{nbsp}https://www.agi.org.uk/gemini/40-gemini/1062-gemini-datasets-and-data-series#33[metadata]https://www.agi.org.uk/gemini/40-gemini/1062-gemini-datasets-and-data-series#33[{nbsp}language]*
@@ -238,7 +238,7 @@ Corrected the service Example One.
 
 Corrected the equivalent ISO 19115 & 19139 elements.
 
-===== August 2018
+==== August 2018
 
 *Description of validation*
 
@@ -266,7 +266,7 @@ Add mention in the guidance that the Schematron will complain if it's
 Fixed the reference - the list of INSPIRE CRSs is in Annex D.4 of the
 Metadata TG, not the Regulations
 
-===== July 2018
+==== July 2018
 
 *https://www.agi.org.uk/40-gemini/1048-uk-gemini-encoding-guidance[UK
 GEMINI Encoding Guidance]*
@@ -295,7 +295,7 @@ link
 *https://www.agi.org.uk/gemini/40-gemini/1062-gemini-datasets-and-data-series#44[Guidance
 for element 44 Bounding box]*: fix typos in two domain sub element names
 
-=== UK GEMINI 2.2
+== UK GEMINI 2.2
 
 In UK GEMINI 2.2, the following changes were made:
 
@@ -308,7 +308,7 @@ occurrences are allowed;
 bounding latitude, South bounding latitude are merged to form Bounding
 Box for which multiple occurrences are allowed.
 
-=== UK GEMINI 2.1
+== UK GEMINI 2.1
 
 {nbsp}Resource language, Metadata language:
 
@@ -362,7 +362,7 @@ Keyword, Originating controlled vocabulary:
 
 An optional element, Equivalent scale has been added.
 
-=== UK GEMINI 2.0
+== UK GEMINI 2.0
 
 The following elements were deleted:
 

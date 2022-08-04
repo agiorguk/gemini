@@ -1,4 +1,4 @@
-= Introduction to Metadata
+== Introduction to Metadata
 include::./includes/attributes.asciidoc[]
 
 === July 2018

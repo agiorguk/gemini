@@ -1,7 +1,7 @@
-= Operational Guide
+== Operational Guide
 include::./includes/attributes.asciidoc[]
 
-=== UK Location Discovery Metadata Service
+== UK Location Discovery Metadata Service
 
 Return
 to{nbsp}https://www.agi.org.uk/gemini/40-gemini/1037-uk-gemini-standard-and-inspire-implementing-rules[GEMINI
