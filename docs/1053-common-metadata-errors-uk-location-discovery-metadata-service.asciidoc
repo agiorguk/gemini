@@ -1,4 +1,4 @@
-= Common Metadata Errors UK Location Discovery Metadata Service
+== Common Metadata Errors UK Location Discovery Metadata Service
 include::./includes/attributes.asciidoc[]
 
 Return
