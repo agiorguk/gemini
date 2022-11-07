@@ -1,7 +1,5 @@
 # Gemini documentation- dev branch
 
-Gemini web pages, converted from html to asciidoc, and back again!
-
 * [Services](https://agiorguk.github.io/gemini/services.html) 
 * [Datasets](https://agiorguk.github.io/gemini/datasets.html)
 
