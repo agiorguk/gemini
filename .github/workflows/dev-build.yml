@@ -1,0 +1,33 @@
+name: build dev adocs
+
+on:
+  push:
+    branches:
+    - dev
+  workflow_dispatch:
+
+jobs:
+  adoc_build-dataset:
+    runs-on: ubuntu-latest
+    name: Asciidoctor conversion, dataset variant
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Build datasets variant
+      id: adocbuild-datasets
+      uses: avattathil/asciidoctor-action@master
+      with:
+          program: "asciidoctor -a variant-dataset -a stylesheet=assets/gemini.css -a docinfo1 'docs/*.asciidoc' 'docs/*.adoc'"
+    - name: Build services variant
+      id: adocbuild-services
+      uses: avattathil/asciidoctor-action@master
+      with:
+          program: "asciidoctor -a variant-service -a stylesheet=assets/gemini.css -a docinfo1 'docs/*.asciidoc' 'docs/*.adoc'"
+    - name: Deploy docs to ghpages
+      uses: peaceiris/actions-gh-pages@v3
+      with: 
+        deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+        external_repository: archaeogeek/gemini-dev
+        publish_branch: gh-pages
+        publish_dir: ./docs/
+        enable_jekyll: true
