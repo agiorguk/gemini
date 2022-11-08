@@ -4,7 +4,7 @@ include::includes/attributes.asciidoc[]
 
 == Contents
 
-[width="100%",cols="50%,50%",options="header",]
+[width="50%",cols="50%,50%",options="header",float="right",]
 |===
 |Metadata about the metadata record |Metadata about the resource
 |<<45, File Identifier>>
