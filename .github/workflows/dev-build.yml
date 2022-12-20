@@ -26,7 +26,7 @@ jobs:
     - name: Deploy docs to ghpages
       uses: peaceiris/actions-gh-pages@v3
       with: 
-        deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+        personal_token: ${{ secrets.API_TOKEN_GITHUB }}
         external_repository: agiorguk/gemini-dev
         publish_branch: gh-pages
         publish_dir: ./docs/
