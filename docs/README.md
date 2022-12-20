@@ -1,8 +1,8 @@
 
 # Gemini documentation DEV branch
 
-* [Services](https://archaeogeek.github.io/gemini-dev/services.html) 
-* [Datasets](https://archaeogeek.github.io/gemini-dev/datasets.html)
+* [Services](https://agiorguk.github.io/gemini-dev/services.html) 
+* [Datasets](https://agiorguk.github.io/gemini-dev/datasets.html)
 
 The files below have been converted but have not been altered to work using the new workflow. Consequently internal links will go to the agi website and there may be other errors.
 * [1037-uk-gemini-standard-and-inspire-implementing-rules](https://archaeogeek.github.io/gemini-dev/1037-uk-gemini-standard-and-inspire-implementing-rules.html)
