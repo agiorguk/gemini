@@ -17,6 +17,15 @@ table th, table td {
 }
 
 table {
-    border: 1px solid #f2f2f2;
+    border: 1px solid #f2f2​f2;
 }
 
+details {
+    color: rgb(40,158,197);
+    cursor: pointer;
+    list-style: disclosure-closed inside;
+}
+
+details .content {
+    color: rgb(103, 97, 97);
+}
