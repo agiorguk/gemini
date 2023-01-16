@@ -25,7 +25,7 @@ elements, which were already required to encode the record:
 * There are two additional conditional elements:
 ** Character encoding
 ** Data quality
-* Four elements have been made mandatory
+* Four elements have been made mandatory:
 ** Conformity
 ** Dataset language
 ** Data format
