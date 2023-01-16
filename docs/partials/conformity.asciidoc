@@ -96,8 +96,7 @@ and would give a publication date of 2010-12-08
 |Revision date |April 2020
 |===
 
-Corresponding element in other standards...
-
+.Corresponding element in other standards...
 [%collapsible]
 ====
 |===
@@ -114,8 +113,7 @@ DQ_ConformanceResult |Equivalent
 |===
 ====
 
-Change history...
-
+.Change history...
 [%collapsible]
 ====
 * GEMINI 1 to 2.0: New element
@@ -123,8 +121,7 @@ Change history...
 been tested against the relevant INSPIRE specification
 ====
 
-Encoding guidelines...
-
+.Encoding guidelines...
 [%collapsible]
 ====
 [width="100%",cols="50%,50%",]
@@ -180,8 +177,7 @@ endif::[]
 |===
 ====
 
-Metadata errors observed...
-
+.Metadata errors observed...
 [%collapsible]
 ====
 |===

@@ -47,8 +47,7 @@ addresses on the map and visually checking for errors.
 |Revision date |March 2019
 |===
 
-Corresponding element in other standards...
-
+.Corresponding element in other standards...
 [%collapsible]
 ====
 |===
@@ -65,16 +64,14 @@ Corresponding element in other standards...
 |===
 ====
 
-Change history...
-
+.Change history...
 [%collapsible]
 ====
 GEMINI 1 to 2.0: Made mandatory for datasets and dataset series to
 conform to INSPIRE
 ====
 
-Encoding guidelines...
-
+.Encoding guidelines...
 [%collapsible]
 ====
 |===
@@ -97,8 +94,7 @@ include::../snippets/lineage.xml[]
 |===
 ====
 
-Metadata errors observed...
-
+.Metadata errors observed...
 [%collapsible]
 ====
 No error information available

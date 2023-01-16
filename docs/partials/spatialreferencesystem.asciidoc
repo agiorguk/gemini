@@ -64,8 +64,7 @@ reference systems in addition to that in which it is recorded.
 |Revision date |March 2019
 |===
 
-Corresponding element in other standards...
-
+.Corresponding element in other standards...
 [%collapsible]
 ====
 |===
@@ -86,15 +85,13 @@ RS_Identifier.code |Equivalent
 |===
 ====
 
-Change history...
-
+.Change history...
 [%collapsible]
 ====
 GEMINI 1 to 2.0: Changed from enumerated list
 ====
 
-Encoding guidelines...
-
+.Encoding guidelines...
 [%collapsible]
 ====
 |===
@@ -133,8 +130,7 @@ include::../snippets/spatialreferencesystem-identifiers.xml[]
 |===
 ====
 
-Metadata errors observed...
-
+.Metadata errors observed...
 [%collapsible]
 ====
 No error information available

@@ -46,8 +46,7 @@ the building, i.e. about 10 metres.
 |Revision date |March 2019
 |===
 
-Corresponding element in other standards...
-
+.Corresponding element in other standards...
 [%collapsible]
 ====
 |===
@@ -70,15 +69,13 @@ endif::[]
 
 ====
 
-Change history...
-
+.Change history...
 [%collapsible]
 ====
 GEMINI 1 to 2.0: made conditional
 ====
 
-Encoding guidelines...
-
+.Encoding guidelines...
 [%collapsible]
 ====
 |===
@@ -116,8 +113,7 @@ include::../snippets/spatialresolution.xml[]
 endif::[]
 ====
 
-Metadata errors observed...
-
+.Metadata errors observed...
 [%collapsible]
 ====
 No error information available

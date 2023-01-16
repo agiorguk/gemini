@@ -52,8 +52,7 @@ types of usage, or constraints on the use that can be made of the data.
 |Revision date |June 2021
 |===
 
-Corresponding element in other standards...
-
+.Corresponding element in other standards...
 [%collapsible]
 ====
 |===
@@ -76,8 +75,7 @@ endif::[]
 |===
 ====
 
-Change history...
-
+.Change history...
 [%collapsible]
 ====
 . GEMINI 1 to 2.0: Change of name from 'access constraint', and
@@ -89,8 +87,7 @@ accessConstraint making domain free text.
 . GEMINI 2.3 June 2021 fixed typo in Guidance 6 (a) and (f)
 ====
 
-Encoding guidelines...
-
+.Encoding guidelines...
 [%collapsible]
 ====
 [width="100%",cols="50%,50%",]
@@ -142,8 +139,7 @@ include::../snippets/limitationsonpublicaccess-twolimitations.xml[]
 |===
 ====
 
-Metadata errors observed...
-
+.Metadata errors observed...
 [%collapsible]
 ====
 |===

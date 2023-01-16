@@ -44,8 +44,7 @@ guidance as interoperability metadata for datasets and dataset series
 |Revision date |May 2018
 |===
 
-Corresponding element in other standards...
-
+.Corresponding element in other standards...
 [%collapsible]
 ====
 |===
@@ -64,16 +63,14 @@ is a superset of values used by INSPIRE
 |===
 ====
 
-Change history...
-
+.Change history...
 [%collapsible]
 ====
 * In original GEMINI, but removed in 2
 * Reintroduced in GEMINI 2.3
 ====
 
-Encoding guidelines...
-
+.Encoding guidelines...
 [%collapsible]
 ====
 |===
@@ -89,8 +86,7 @@ include::../snippets/spatialrepresentationtype.xml[]
 |===
 ====
 
-Metadata errors observed...
-
+.Metadata errors observed...
 [%collapsible]
 ====
 No error information available

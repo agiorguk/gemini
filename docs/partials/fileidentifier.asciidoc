@@ -46,8 +46,7 @@ resource being described. +
 |Revision date |March 2019
 |===
 
-Corresponding element in other standards...
-
+.Corresponding element in other standards...
 [%collapsible]
 ====
 |===
@@ -58,16 +57,14 @@ Corresponding element in other standards...
 |===
 ====
 
-Change history...
-
+.Change history...
 [%collapsible]
 ====
 * introduced in the UK Location application profile and XML encoding
 * New element in GEMINI 2.3
 ====
 
-Encoding guidelines...
-
+.Encoding guidelines...
 [%collapsible]
 ====
 |===
@@ -90,8 +87,7 @@ include::../snippets/fileidentifier.xml[]
 [%collapsible]
 ====
 
-Metadata errors observed...
-
+.Metadata errors observed...
 [%collapsible]
 ====
 |===

@@ -54,8 +54,7 @@ NERC Vocabulary "C64, United Kingdom Charting Progress 2 sea regions"
 |Revision date |August 2010
 |===
 
-Corresponding element in other standards...
-
+.Corresponding element in other standards...
 [%collapsible]
 ====
 |===
@@ -84,15 +83,13 @@ endif::[]
 ====
 
 
-Change history...
-
+.Change history...
 [%collapsible]
 ====
 GEMINI 1 to 2.0: Made optional
 ====
 
-Encoding guidelines...
-
+.Encoding guidelines...
 [%collapsible]
 ====
 |===
@@ -155,8 +152,7 @@ endif::[]
 |===
 ====
 
-Metadata errors observed...
-
+.Metadata errors observed...
 [%collapsible]
 ====
 No error information available

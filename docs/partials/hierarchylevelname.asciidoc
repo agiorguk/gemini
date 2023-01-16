@@ -33,8 +33,7 @@ hierarchyLevel) is not "dataset".
 |Revision date |April 2020
 |===
 
-Corresponding element in other standards...
-
+.Corresponding element in other standards...
 [%collapsible]
 ====
 |===
@@ -49,15 +48,13 @@ series |Equivalent
 |===
 ====
 
-Change history...
-
+.Change history...
 [%collapsible]
 ====
 New element in GEMINI 2.3
 ====
 
-Encoding guidelines...
-
+.Encoding guidelines...
 [%collapsible]
 ====
 |===

@@ -83,8 +83,7 @@ broader range of values.
 |Revision date |May 2019
 |===
 
-Corresponding element in other standards...
-
+.Corresponding element in other standards...
 [%collapsible]
 ====
 |===
@@ -107,8 +106,7 @@ endif::[]
 |===
 ====
 
-Change history...
-
+.Change history...
 [%collapsible]
 ====
 . GEMINI 1 to 2.0: Change of name from 'Subject'
@@ -116,8 +114,7 @@ Change history...
 controlled vocabulary
 ====
 
-Encoding guidelines...
-
+.Encoding guidelines...
 [%collapsible]
 ====
 |===
@@ -209,8 +206,7 @@ endif::[]
 |===
 ====
 
-Metadata errors observed...
-
+.Metadata errors observed...
 [%collapsible]
 ====
 |===

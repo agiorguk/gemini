@@ -37,8 +37,7 @@ link which is given in this element.
 |Revision date |June 2021
 |===
 
-Corresponding element in other standards...
-
+.Corresponding element in other standards...
 [%collapsible]
 ====
 |===
@@ -55,8 +54,7 @@ MD_DataIdentification.supplementalInformation |Equivalent
 |===
 ====
 
-Change history...
-
+.Change history...
 [%collapsible]
 ====
 * GEMINI 2.3 20181031 Rename 'Additional information source' to
@@ -64,8 +62,7 @@ Change history...
 * GEMINI 2.3 June 2021 fixed typo (XML syntax error) in example 2
 ====
 
-Encoding guidelines...
-
+.Encoding guidelines...
 [%collapsible]
 ====
 [width="100%",cols="50%,50%",]
@@ -88,8 +85,7 @@ include::../snippets/additionalinformation-anchor.xml[]
 |===
 ====
 
-Metadata errors observed...
-
+.Metadata errors observed...
 [%collapsible]
 ====
 No error information available

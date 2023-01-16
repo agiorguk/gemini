@@ -39,8 +39,7 @@ different data resource).
 |Revision date |May 2021
 |===
 
-Corresponding element in other standards...
-
+.Corresponding element in other standards...
 [%collapsible]
 ====
 |===
@@ -63,9 +62,8 @@ endif::[]
 |===
 ====
 
-Change history...
-
-Encoding guidelines...
+.Change history...
+[%collapsible]ncoding guidelines...
 
 [%collapsible]
 ====
@@ -96,8 +94,7 @@ endif::[]
 |===
 ====
 
-Metadata errors observed...
-
+.Metadata errors observed...
 [%collapsible]
 ====
 No error information available

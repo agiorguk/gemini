@@ -53,8 +53,7 @@ content; not applicable" shall be used.
 |Revision date |September 2018
 |===
 
-Corresponding element in other standards...
-
+.Corresponding element in other standards...
 [%collapsible]
 ====
 |===
@@ -71,16 +70,14 @@ Corresponding element in other standards...
 |===
 ====
 
-Change history...
-
+.Change history...
 [%collapsible]
 ====
 . GEMINI 1 to 2: Obligation changed from mandatory
 . GEMINI 2 to 2.2: Obligation changed (back) to mandatory
 ====
 
-Encoding guidelines...
-
+.Encoding guidelines...
 [%collapsible]
 ====
 [width="100%",cols="50%,50%",]
@@ -109,8 +106,7 @@ include::../snippets/datasetlanguage.xml[]
 |===
 ====
 
-Metadata errors observed...
-
+.Metadata errors observed...
 [%collapsible]
 ====
 No error information available

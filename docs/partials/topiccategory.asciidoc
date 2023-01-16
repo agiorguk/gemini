@@ -117,8 +117,7 @@ link:#6[Keyword]
 |Revision date |March 2019
 |===
 
-Corresponding element in other standards...
-
+.Corresponding element in other standards...
 [%collapsible]
 ====
 |===
@@ -138,8 +137,7 @@ Change history...
 
 [[history5]]
 
-Encoding guidelines...
-
+.Encoding guidelines...
 [%collapsible]
 ====
 |===
@@ -164,8 +162,7 @@ include::../snippets/topiccategory.xml[]
 |===
 ====
 
-Metadata errors observed...
-
+.Metadata errors observed...
 [%collapsible]
 ====
 |===

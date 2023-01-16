@@ -76,8 +76,7 @@ should be reported for spatial datasets
 |Revision date |March 2019
 |===
 
-Corresponding element in other standards...
-
+.Corresponding element in other standards...
 [%collapsible]
 ====
 |===
@@ -101,15 +100,13 @@ endif::[]
 
 ====
 
-Change history...
-
+.Change history...
 [%collapsible]
 ====
 GEMINI 1 to 2.0: Addition of date type
 ====
 
-Encoding guidelines...
-
+.Encoding guidelines...
 [%collapsible]
 ====
 |===
@@ -154,8 +151,7 @@ endif::[]
 |===
 ====
 
-Metadata errors observed...
-
+.Metadata errors observed...
 [%collapsible]
 ====
 |===

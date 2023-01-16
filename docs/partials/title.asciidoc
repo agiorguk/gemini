@@ -40,8 +40,7 @@ in the abstract or Alternative Title.
 |Revision date |March 2019
 |===
 
-Corresponding element in other standards...
-
+.Corresponding element in other standards...
 [%collapsible]
 ====
 |===
@@ -56,13 +55,11 @@ Corresponding element in other standards...
 |===
 ====
 
-Change history...
-
+.Change history...
 [%collapsible]
 ====
 ====
-Encoding guidelines...
-
+.Encoding guidelines...
 [%collapsible]
 ====
 |===

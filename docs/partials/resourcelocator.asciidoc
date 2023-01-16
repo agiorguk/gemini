@@ -102,8 +102,7 @@ http://myserver/INSPIREWM/MapServer/WMSServer?service=WMS&request=GetCapabilitie
 endif::[]
 |===
 
-Corresponding element in other standards...
-
+.Corresponding element in other standards...
 [%collapsible]
 ====
 |===
@@ -120,15 +119,13 @@ CI_OnlineResource.linkage |Equivalent
 |===
 ====
 
-Change history...
-
+.Change history...
 [%collapsible]
 ====
 GEMINI 1 to 2.0: Modification of Online resource
 ====
 
-Encoding guidelines...
-
+.Encoding guidelines...
 [%collapsible]
 ====
 |===
@@ -252,8 +249,7 @@ include::../snippets/service-resourcelocator-function-invocable.xml[]
 endif::[]
 ====
 
-Metadata errors observed...
-
+.Metadata errors observed...
 [%collapsible]
 ====
 |===

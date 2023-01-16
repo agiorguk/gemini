@@ -55,8 +55,7 @@ official European languages, such as English or Irish.
 |Revision date |September 2018
 |===
 
-Corresponding element in other standards...
-
+.Corresponding element in other standards...
 [%collapsible]
 ====
 |===
@@ -71,16 +70,14 @@ Corresponding element in other standards...
 |===
 ====
 
-Change history...
-
+.Change history...
 [%collapsible]
 ====
 [[history33]]
 GEMINI 1 to 2.0: New element
 ====
 
-Encoding guidelines...
-
+.Encoding guidelines...
 [%collapsible]
 ====
 [width="100%",cols="50%,50%",]
@@ -97,8 +94,7 @@ include::../snippets/metadatadate.xml[]
 |===
 ====
 
-Metadata errors observed...
-
+.Metadata errors observed...
 [%collapsible]
 ====
 [width="100%",cols="50%,50%",]

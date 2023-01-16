@@ -112,8 +112,7 @@ acting as distributor, publisher, author, etc. !distributor
 |Revision date |July 2009
 |===
 
-Corresponding element in other standards...
-
+.Corresponding element in other standards...
 [%collapsible]
 ====
 |===
@@ -137,8 +136,7 @@ ifdef::variant-service[]
 endif::[]
 ====
 
-Change history...
-
+.Change history...
 [%collapsible]
 ====
 GEMINI 1 to 2.0: This has been generalised from Distributor (and
@@ -147,8 +145,7 @@ Originator) to cover a range of possible roles, by the addition of
 corrected.
 ====
 
-Encoding guidelines...
-
+.Encoding guidelines...
 [%collapsible]
 ====
 |===
@@ -181,8 +178,7 @@ endif::[]
 |===
 ====
 
-Metadata errors observed...
-
+.Metadata errors observed...
 [%collapsible]
 ====
 No error information available

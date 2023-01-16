@@ -228,8 +228,7 @@ guidance as interoperability metadata for datasets and dataset series
 |Revision date |May 2018
 |===
 
-Corresponding element in other standards...
-
+.Corresponding element in other standards...
 [%collapsible]
 ====
 |===
@@ -249,15 +248,13 @@ Other types are specified in the data specifications |
 |===
 ====
 
-Change history...
-
+.Change history...
 [%collapsible]
 ====
 New element in GEMINI 2.3
 ====
 
-Encoding guidelines...
-
+.Encoding guidelines...
 [%collapsible]
 ====
 |===
@@ -311,8 +308,7 @@ include::../snippets/dataquality-topo-quantitative.xml[]
 |===
 ====
 
-Metadata errors observed...
-
+.Metadata errors observed...
 [%collapsible]
 ====
 No error information available

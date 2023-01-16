@@ -81,8 +81,7 @@ element.
 |Revision date |May 2018
 |===
 
-Corresponding element in other standards...
-
+.Corresponding element in other standards...
 [%collapsible]
 ====
 |===
@@ -99,8 +98,7 @@ Corresponding element in other standards...
 |===
 ====
 
-Change history...
-
+.Change history...
 [%collapsible]
 ====
 . GEMINI 1 to 2.0: New item 'Unique resource identifier', required for
@@ -109,8 +107,7 @@ INSPIRE
 reduce confusion with W3C URI
 ====
 
-Encoding guidelines...
-
+.Encoding guidelines...
 [%collapsible]
 ====
 |===
@@ -153,8 +150,7 @@ include::../snippets/resourceidentifier-anchor.xml[]
 |===
 ====
 
-Metadata errors observed...
-
+.Metadata errors observed...
 [%collapsible]
 ====
 No error information available

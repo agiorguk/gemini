@@ -65,8 +65,7 @@ endif::[]
 |===
 ====
 
-Change history...
-
+.Change history...
 [%collapsible]
 ====
 * GEMINI 1 to 2.0: Change to free text field from enumerated list, and
@@ -74,8 +73,7 @@ making mandatory to conform with INSPIRE.
 * GEMINI 2.2 to 2.3: Change of encoding
 ====
 
-Encoding guidelines...
-
+.Encoding guidelines...
 [%collapsible]
 ====
 |===
@@ -131,8 +129,7 @@ include::../snippets/useconstraints-noconditions.xml[]
 |===
 ====
 
-Metadata errors observed...
-
+.Metadata errors observed...
 [%collapsible]
 ====
 [width="100%",cols="50%,50%",]

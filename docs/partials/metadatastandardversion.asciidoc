@@ -33,8 +33,7 @@ metadata system to another.
 |Revision date |June 2021
 |===
 
-Corresponding element in other standards...
-
+.Corresponding element in other standards...
 [%collapsible]
 ====
 |===
@@ -49,8 +48,7 @@ guidance
 |===
 ====
 
-Change history...
-
+.Change history...
 [%collapsible]
 ====
 * GEMINI 1 to 2.0: deleted
@@ -59,8 +57,7 @@ Change history...
 link:#54[Metadata standard name]
 ====
 
-Encoding guidelines...
-
+.Encoding guidelines...
 [%collapsible]
 ====
 |===
@@ -76,8 +73,7 @@ include::../snippets/metadatastandardversion.xml[]
 |===
 ====
 
-Metadata errors observed...
-
+.Metadata errors observed...
 [%collapsible]
 ====
 No error information available

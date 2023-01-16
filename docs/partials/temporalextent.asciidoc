@@ -60,8 +60,7 @@ following year.
 |Revision date |May 2018
 |===
 
-Corresponding element in other standards...
-
+.Corresponding element in other standards...
 [%collapsible]
 ====
 |===
@@ -84,8 +83,7 @@ endif::[]
 |===
 ====
 
-Change history...
-
+.Change history...
 [%collapsible]
 ====
 . GEMINI 1 to 2.0: Name changed from Date
@@ -93,8 +91,7 @@ Change history...
 'year'
 ====
 
-Encoding guidelines...
-
+.Encoding guidelines...
 [%collapsible]
 ====
 |===
@@ -222,8 +219,7 @@ endif::[]
 |===
 ====
 
-Metadata errors observed...
-
+.Metadata errors observed...
 [%collapsible]
 ====
 No error information available

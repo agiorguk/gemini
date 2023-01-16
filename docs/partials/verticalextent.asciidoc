@@ -63,8 +63,7 @@ significant, e.g. in geology, mining, meteorology etc.
 |Revision date |March 2019
 |===
 
-Corresponding element in other standards...
-
+.Corresponding element in other standards...
 [%collapsible]
 ====
 |===
@@ -91,8 +90,7 @@ EX_VerticalExtent |Identical
 endif::[]
 ====
 
-Change history...
-
+.Change history...
 [%collapsible]
 ====
 * GEMINI 1 to 2.0: made optional; +
@@ -102,8 +100,7 @@ description of class EX_VerticalExtent changed to match change to ISO
 * GEMINI 2.1 to 2.2: made multiple again
 ====
 
-Encoding guidelines...
-
+.Encoding guidelines...
 [%collapsible]
 ====
 |===
@@ -176,8 +173,7 @@ include::../snippets/extent-verticalcrs-unknown.xml[]
 |===
 ====
 
-Metadata errors observed...
-
+.Metadata errors observed...
 [%collapsible]
 ====
 No error information available

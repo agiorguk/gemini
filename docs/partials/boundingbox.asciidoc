@@ -69,8 +69,7 @@ related to the area covered by the resource.
 |Revision date |December 2012
 |===
 
-Corresponding element in other standards...
-
+.Corresponding element in other standards...
 [%collapsible]
 ====
 |===
@@ -95,8 +94,7 @@ endif::[]
 |===
 ====
 
-Change history...
-
+.Change history...
 [%collapsible]
 ====
 * GEMINI 1 to 2.0: Slight change of name of each element
@@ -104,8 +102,7 @@ Change history...
 Bounding box, which was made multiple
 ====
 
-Encoding guidelines...
-
+.Encoding guidelines...
 [%collapsible]
 ====
 |===
@@ -147,8 +144,7 @@ endif::[]
 |===
 ====
 
-Metadata errors observed...
-
+.Metadata errors observed...
 [%collapsible]
 ====
 |===
