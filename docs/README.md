@@ -1,21 +1,21 @@
-# Gemini documentation
 
-Gemini web pages, converted from html to asciidoc, and back again!
+# Gemini documentation DEV branch
 
-* [Services](https://agiorguk.github.io/gemini/services.html) 
-* [Datasets](https://agiorguk.github.io/gemini/datasets.html)
+* [Services](https://agiorguk.github.io/gemini-dev/services.html) 
+* [Datasets](https://agiorguk.github.io/gemini-dev/datasets.html)
 
 The files below have been converted but have not been altered to work using the new workflow. Consequently internal links will go to the agi website and there may be other errors.
-* [1037-uk-gemini-standard-and-inspire-implementing-rules](https://agiorguk.github.io/gemini/1037-uk-gemini-standard-and-inspire-implementing-rules.html)
-* [1048-uk-gemini-encoding-guidance](https://agiorguk.github.io/gemini/1048-uk-gemini-encoding-guidance.html)
-* [1049-metadata-guidelines-for-geospatial-data-resources-part-2](https://agiorguk.github.io/gemini/1049-metadata-guidelines-for-geospatial-data-resources-part-2.html)
-* [1051-uk-gemini-v2-2-specification-for-discovery-metadata-for-geospatial-resources](https://agiorguk.github.io/gemini/1051-uk-gemini-v2-2-specification-for-discovery-metadata-for-geospatial-resources.html)
-* [1052-metadata-guidelines-for-geospatial-data-resources-part-1](https://agiorguk.github.io/gemini/1052-metadata-guidelines-for-geospatial-data-resources-part-1.html)
-* [1053-common-metadata-errors-uk-location-discovery-metadata-service](https://agiorguk.github.io/gemini/1053-common-metadata-errors-uk-location-discovery-metadata-service.html)
-* [1054-operational-guide](https://agiorguk.github.io/gemini/1054-operational-guide.html)
-* [1055-uk-gemini-major-changes-since-1-0](https://agiorguk.github.io/gemini/1055-uk-gemini-major-changes-since-1-0.html)
-* [1056-glossary](https://agiorguk.github.io/gemini/1056-glossary.html)
+* [1037-uk-gemini-standard-and-inspire-implementing-rules](https://archaeogeek.github.io/gemini-dev/1037-uk-gemini-standard-and-inspire-implementing-rules.html)
+* [1048-uk-gemini-encoding-guidance](https://archaeogeek.github.io/gemini-dev/1048-uk-gemini-encoding-guidance.html)
+* [1049-metadata-guidelines-for-geospatial-data-resources-part-2](https://archaeogeek.github.io/gemini-dev/1049-metadata-guidelines-for-geospatial-data-resources-part-2.html)
+* [1051-uk-gemini-v2-2-specification-for-discovery-metadata-for-geospatial-resources](https://archaeogeek.github.io/gemini-dev/1051-uk-gemini-v2-2-specification-for-discovery-metadata-for-geospatial-resources.html)
+* [1052-metadata-guidelines-for-geospatial-data-resources-part-1](https://archaeogeek.github.io/gemini-dev/1052-metadata-guidelines-for-geospatial-data-resources-part-1.html)
+* [1053-common-metadata-errors-uk-location-discovery-metadata-service](https://archaeogeek.github.io/gemini-dev/1053-common-metadata-errors-uk-location-discovery-metadata-service.html)
+* [1054-operational-guide](https://archaeogeek.github.io/gemini-dev/1054-operational-guide.html)
+* [1055-uk-gemini-major-changes-since-1-0](https://archaeogeek.github.io/gemini-dev/1055-uk-gemini-major-changes-since-1-0.html)
+* [1056-glossary](https://archaeogeek.github.io/gemini-dev/1056-glossary.html)
 
+Links above this are to the Gitpages published in https://archaeogeek.github.io/gemini-dev/
 ## Services and Datasets workflow
 
 * These files are generated from [include files](https://docs.asciidoctor.org/asciidoc/latest/directives/include/), one per element, in the [docs/partials](https://github.com/archaeogeek/gemini/tree/main/docs/partials) folder. 
@@ -39,4 +39,4 @@ docker run --rm -v $(pwd):/documents/ asciidoctor/docker-asciidoctor asciidoctor
 
 ## Styling
 
-All files share a common attributes file, which indicates the basic attributes to be used when processing. This includes a linked reference to the asciidoc html stylesheet rather than the default embedding. Work has begun to integrate the styling from [Gemini.css](https://github.com/archaeogeek/gemini/blob/main/docs/Gemini.css) into [asciidoctor.css](https://github.com/archaeogeek/gemini/blob/main/docs/assets/asciidoctor.css) but this is far from complete.
+All files share a common attributes file, which indicates the basic attributes to be used when processing. This includes a linked reference to the asciidoc html stylesheet rather than the default embedding. Work has begun to integrate the styling from [Gemini.css](blob/main/docs/Gemini.css) into [asciidoctor.css](blob/main/docs/assets/asciidoctor.css) but this is far from complete.
