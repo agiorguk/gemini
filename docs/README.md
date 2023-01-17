@@ -15,7 +15,8 @@ The files below have been converted but have not been altered to work using the 
 * [1055-uk-gemini-major-changes-since-1-0](https://agiorguk.github.io/gemini-dev/1055-uk-gemini-major-changes-since-1-0.html)
 * [1056-glossary](https://agiorguk.github.io/gemini-dev/1056-glossary.html)
 
-Links above this are to the Gitpages published in https://agiorguk.github.io/gemini-dev/
+Links above this are to the GitHub pages published in https://agiorguk.github.io/gemini-dev/
+
 ## Services and Datasets workflow
 
 * These files are generated from [include files](https://docs.asciidoctor.org/asciidoc/latest/directives/include/), one per element, in the [docs/partials](https://github.com/agiorguk/gemini/tree/main/docs/partials) folder. 
