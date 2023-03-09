@@ -442,7 +442,7 @@ content, such as gmd:identificationInfo (Figure 9).
 The first XML child element of any GEMINI2 metadata instance shall be
 gmd:fileIdentifier. The content of this XML element is the identifier of
 the metadata instance. File identifier is not to be confused with the
-metadata item link:datasets.htm#36[Resource Identifier].
+metadata item link:datasets.html#36[Resource Identifier].
 
 The content of the XML element shall be a unique managed identifier,
 such as a system generated UUID. Once the identifier has been set for a
@@ -1052,7 +1052,7 @@ series, ISO 19115 hierarchyLevelName element must also be set, to
 
 ==== Detailed guidance for each metadata element
 
-link:datasets.htm[Datasets]
+link:datasets.html[Datasets]
 
 === Metadata for services
 
@@ -1119,7 +1119,7 @@ with null values with the nil reason being missing (Figure 25).
 
 ==== Detailed guidance for each metadata element
 
-link:services.htm[Services]
+link:services.html[Services]
 
 _Last technical update: March 2019_
 
