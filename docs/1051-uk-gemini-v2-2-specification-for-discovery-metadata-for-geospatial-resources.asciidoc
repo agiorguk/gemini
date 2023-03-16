@@ -1,43 +1,13 @@
 == UK GEMINI v2-2 Specification for Discovery Metadata for Geospatial Resources
 include::./includes/attributes.asciidoc[]
 
-Return
-to{nbsp}https://www.agi.org.uk/gemini/40-gemini/1037-uk-gemini-standard-and-inspire-implementing-rules[GEMINI
+Return to https://www.agi.org.uk/gemini/40-gemini/1037-uk-gemini-standard-and-inspire-implementing-rules[GEMINI
 2.3 home page]
 
-https://www.agi.org.uk/gemini/40-gemini/1051-uk-gemini-v2-2-specification-for-discovery-metadata-for-geospatial-resources#Intro[Introduction]
+:sectnums:
+:sectnumlevels: 3
 
-https://www.agi.org.uk/gemini/40-gemini/1051-uk-gemini-v2-2-specification-for-discovery-metadata-for-geospatial-resources#scope[1.
-Scope]
-
-https://www.agi.org.uk/gemini/40-gemini/1051-uk-gemini-v2-2-specification-for-discovery-metadata-for-geospatial-resources#normative_ref[2.
-Normative Reference]
-
-https://www.agi.org.uk/gemini/40-gemini/1051-uk-gemini-v2-2-specification-for-discovery-metadata-for-geospatial-resources#terms[3.
-Terms and Definitions]
-
-https://www.agi.org.uk/gemini/40-gemini/1051-uk-gemini-v2-2-specification-for-discovery-metadata-for-geospatial-resources#requirements[4.
-Requirements]
-
-https://www.agi.org.uk/gemini/40-gemini/1051-uk-gemini-v2-2-specification-for-discovery-metadata-for-geospatial-resources#4.1[4.1
-Datasets and dataset series]
-
-https://www.agi.org.uk/gemini/40-gemini/1051-uk-gemini-v2-2-specification-for-discovery-metadata-for-geospatial-resources#4.2[4.2
-Services]
-
-https://www.agi.org.uk/gemini/40-gemini/1051-uk-gemini-v2-2-specification-for-discovery-metadata-for-geospatial-resources#4.3[4.3
-Element details]
-
-https://www.agi.org.uk/gemini/40-gemini/1051-uk-gemini-v2-2-specification-for-discovery-metadata-for-geospatial-resources#extended[5.
-Extended metadata]
-
-https://www.agi.org.uk/gemini/40-gemini/1051-uk-gemini-v2-2-specification-for-discovery-metadata-for-geospatial-resources#5.1[5.1
-Additional metadata elements]
-
-https://www.agi.org.uk/gemini/40-gemini/1051-uk-gemini-v2-2-specification-for-discovery-metadata-for-geospatial-resources#5.2[5.2
-Extension of code lists]
-
-=== Foreword
+== Foreword
 
 UK GEMINI was originally produced in 2004 by collaboration between the
 Association for Geographic Information (AGI), the (then) e-Government
@@ -86,10 +56,10 @@ Programme Metadata Working Group.
 
 In 2018, changes were made that had been requested by various user
 communities as well as the revised metadata technical guidance from
-INSPIRE. {nbsp}This updated version is known as UK GEMINI2.3.
+INSPIRE. This updated version is known as UK GEMINI2.3.
 
 Further details of all these changes are
-given{nbsp}https://www.agi.org.uk/40-gemini/1055-uk-gemini-major-changes-since-1-0[here].
+given link:1055-uk-gemini-major-changes-since-1-0[here].
 
 A set of guidelines for metadata for geospatial datasets was originally
 produced in 2006. The Guidelines were in three parts:
@@ -100,22 +70,18 @@ produced in 2006. The Guidelines were in three parts:
 
 These Guidelines were intended for general use in the UK geographic
 information environment, and particularly in support of the national
-geospatial metadata service,{nbsp}_gigateway_. They were developed within the
+geospatial metadata service, _gigateway_. They were developed within the
 context of a national geospatial metadata service, and UK GEMINI. These
 Guidelines have now been updated to incorporate the changes made in the
 revised version of UK GEMINI, 2.3, and their content made available on
-the AGI
-website:{nbsp}https://www.agi.org.uk/gemini/40-gemini/1052-metadata-guidelines-for-geospatial-data-resources-part-1[Introduction
-to Metadata]; parts
-of{nbsp}https://www.agi.org.uk/gemini/40-gemini/1049-metadata-guidelines-for-geospatial-data-resources-part-2[Creating
-metadata using GEMINI]; material in Part 2 which was specific to
-particular elements has been moved to the element descriptions.
+the AGI website: link:1052-metadata-guidelines-for-geospatial-data-resources-part-1[Introduction to Metadata]; 
+parts of link:1049-metadata-guidelines-for-geospatial-data-resources-part-2[Creating metadata using GEMINI]; 
+material in Part 2 which was specific to particular elements has been moved to the element descriptions.
 
 This Standard is maintained by the AGI Standards Committee. Any feedback
-on it should be sent
-to{nbsp}mailto:standards@agi.org.uk[gemini@agi.org.uk]
+on it should be sent to mailto:standards@agi.org.uk[gemini@agi.org.uk]
 
-=== [#Intro]####Introduction
+== Introduction
 
 Geospatial data is data containing a locational element relative to the
 Earth. Many datasets that at first sight do not appear to be geospatial
@@ -141,17 +107,16 @@ There are many metadata standards in existence. These have been produced
 at different times by different bodies for different purposes. The main
 one that is relevant to geospatial datasets is:
 
-* **ISO 19115,{nbsp}**the International Standard which describes all aspects
+* *ISO 19115*, the International Standard which describes all aspects
 of geospatial metadata and provides a comprehensive set of metadata
 elements that are widely used as the basis for geospatial metadata
 services.
 
-The{nbsp}https://inspire.ec.europa.eu/about-inspire/563[EU INSPIRE
-Directive]{nbsp}[https://www.agi.org.uk/gemini/40-gemini/1047-metadata-guidelines-for-geospatial-data-resources-part-3[7]]{nbsp}mandates
+The https://inspire.ec.europa.eu/about-inspire/563[EU INSPIRE Directive] mandates
 the collection of metadata for use in Europe. Implementing Rules define
 the requirements for metadata for discovery purposes. These are based on
 ISO 19115, and
-outlined{nbsp}https://www.agi.org.uk/40-gemini/1055-uk-gemini-major-changes-since-1-0[here].
+outlined link:1055-uk-gemini-major-changes-since-1-0[here].
 
 The aim of UK GEMINI is to provide a core set of metadata elements for
 use in a UK geospatial metadata service, that are compatible with the
@@ -163,35 +128,30 @@ In this document the term ‘data resource’ is used, in preference to
 ‘dataset’. This is to allow UK GEMINI to be applied to resources in
 addition to datasets, such as services supplying data.
 
-=== [#scope]##{nbsp}1. Scope
+== Scope
 
 This Standard specifies a set of metadata elements for describing
 geographic information resources. These resources may be datasets,
 dataset series, services delivering geographic data, or any other
 information resource with a geospatial content. This includes datasets
-that relate to a limited geographic area
-[https://www.agi.org.uk/gemini/40-gemini/1047-metadata-guidelines-for-geospatial-data-resources-part-3[1]].
+that relate to a limited geographic area.
 The data resources may be graphical or textual (tabular or free text),
 hardcopy or digital.
 
 The metadata elements are intended for use in a metadata service for
 discovering what data resources exist. The elements include the
-mandatory core set defined in ISO 19115 Geographic information –
-Metadata, and comply with
-the{nbsp}https://inspire.ec.europa.eu/metadata/6541[INSPIRE Implementing
-Rules for
-Metadata]{nbsp}[https://www.agi.org.uk/gemini/40-gemini/1047-metadata-guidelines-for-geospatial-data-resources-part-3[7]].
+mandatory core set defined in ISO 19115 Geographic information – Metadata,
+and comply with the https://inspire.ec.europa.eu/metadata/6541[INSPIRE Implementing Rules for Metadata].
 In any implementation or community, it is likely that additional
 metadata elements will be included for other purposes, such as data
 management, and a method for specifying such elements is defined. The UK
 specific guidance is designed to ensure that the metadata records work
 correctly with the national
-catalogue,{nbsp}https://data.gov.uk/[https://data.gov.uk]
+catalogue, https://data.gov.uk/[https://data.gov.uk]
 
 Guidance on transferring metadata records to the national catalogue are
 given
-at{nbsp}https://www.agi.org.uk/gemini/40-gemini/1054-operational-guide[Operational
-Guide].
+at link:1054-operational-guide[Operational Guide].
 
 This Standard is applicable to data creators, data owners, data
 publishers and suppliers of metadata services. Although it is primarily
@@ -199,7 +159,7 @@ designed for data resources held within the UK on a national basis, by
 following the principles and structures of ISO 19115, it is also
 applicable within an organisation, user community or nation.
 
-=== [#normative_ref]##{nbsp}2. Normative References
+== Normative References
 
 The following referenced documents are indispensable to the application
 of this document. For dated references, only the edition cited applies.
@@ -222,20 +182,19 @@ ISO 19119:2005 Geographic information – Services
 https://inspire.ec.europa.eu/Technical-Guidelines2/Metadata/6541[The
 INSPIRE Metadata Technical Guidance], v2.0.1, published 2017-03-02
 
-=== [#terms]##{nbsp}3. Terms and Definitions
+== Terms and Definitions
 
-See the{nbsp}https://www.agi.org.uk/gemini/40-gemini/1056-glossary[Glossary].
+See the link:1056-glossary[Glossary].
 
-=== [#requirements]##{nbsp}4. Requirements
+== Requirements
 
-==== *_[#4.1]####4.1 Datasets and dataset series_*
+=== Datasets and dataset series
 
 UK GEMINI specifies a set of metadata elements for use when describing
 geographic information resources.
 
 The metadata elements are listed in
-the{nbsp}https://www.agi.org.uk/40-gemini/1055-uk-gemini-major-changes-since-1-0[summary
-table], which shows the metadata element names, their GEMINI element id
+the link:1250-element-summary[summary table], which shows the metadata element names, their GEMINI element id
 (consistent with element numbers in previous versions of GEMINI), the
 obligation (whether their inclusion is mandatory, optional or
 conditional, and the number of possible occurrences of the element
@@ -250,10 +209,9 @@ by an organisation.
 For metadata to conform to this Standard, it is necessary that all
 mandatory elements are provided, and that all conditional elements are
 provided when the stated condition is met. Optional elements should be
-provided where they are applicable. A checklist for conformity is
-given{nbsp}https://www.agi.org.uk/gemini/40-gemini/1040-checklist-for-conformity2[here].
+provided where they are applicable.
 
-==== {nbsp}*_[#4.2]####4.2 Services_*
+=== Services
 
 The INSPIRE Implementing Rules apply not only to datasets and datasets
 series, but also to (data) services. These are external applications
@@ -267,78 +225,73 @@ Note that services are not described in ISO 19115, but in ISO 19119
 of approach regarding the way that metadata is recorded for services.
 Some of the other metadata elements may not apply to particular types of
 service. The UK GEMINI metadata elements for services are identified in
-the{nbsp}https://www.agi.org.uk/40-gemini/1055-uk-gemini-major-changes-since-1-0[summary
-table].
+the link:1250-element-summary[summary table].
 
-==== *_[#4.3]####4.3 Element details_*
+=== Element details
 
 Details of the metadata elements are given in :
 
-https://www.agi.org.uk/gemini/40-gemini/1062-gemini-datasets-and-data-series[GEMINI
-- Datasets and dataset series]
+link:datasets.html[GEMINI - Datasets and dataset series]
 
-https://www.agi.org.uk/gemini/40-gemini/1063-gemini-services[GEMINI -
-Services]
+link:services.html[GEMINI - Services]
 
-Each element listed{nbsp}separately, with the following information:
+Each element listed separately, with the following information:
 
--{nbsp}*Metadata element name*{nbsp}– the name of the UK GEMINI element;
+-*Metadata element name* – the name of the UK GEMINI element;
 
--{nbsp}*UK GEMINI id{nbsp}*– the identifier of the UK GEMINI element; note: these
+- *UK GEMINI id* – the identifier of the UK GEMINI element; note: these
 do not change between versions of GEMINI; ids of deleted elements are
 not re-used.
 
--{nbsp}*Definition*{nbsp}– the formal definition of the element;
+- *Definition* – the formal definition of the element;
 
--{nbsp}*Purpose and meaning*{nbsp}- an explanation of what the element is, and why
+- *Purpose and meaning* - an explanation of what the element is, and why
 it is required
 
--{nbsp}*Obligation*{nbsp}– whether the element is mandatory, optional or
+- *Obligation* – whether the element is mandatory, optional or
 conditional (where the element must be supplied when stated conditions
 apply);
 
--{nbsp}*Occurrence*{nbsp}– whether the element is single-valued or can have
+- *Occurrence* – whether the element is single-valued or can have
 multiple values;
 
--{nbsp}*Data type*{nbsp}– the form of the entry, whether it is a character string
+- *Data type* – the form of the entry, whether it is a character string
 (CharacterString), real number (real), integer, code or other class.
 Where the data type is another class, it is described as a set of
 sub-elements. Examples are Distributor and Vertical extent;
 
--{nbsp}*Domain*{nbsp}– the allowable set of values;
+- *Domain* – the allowable set of values;
 
--{nbsp}*Guidance*{nbsp}– advice on how to complete the entry
-[https://www.agi.org.uk/gemini/40-gemini/1047-metadata-guidelines-for-geospatial-data-resources-part-3[2]];
+- *Guidance* – advice on how to complete the entry
 
--{nbsp}*Comment*{nbsp}– other other information of relevance;
+- *Comment* – other other information of relevance;
 
--{nbsp}*Examples*
+- *Examples*
 
--**{nbsp}Corresponding element in{nbsp}**INSPIRE Metadata, ISO 19115:2003, ISO
+- Corresponding element** in INSPIRE Metadata, ISO 19115:2003, ISO
 19139:2007
 
--{nbsp}*Change history*{nbsp}– how the element has changed from v1.0 of the
+- *Change history* – how the element has changed from v1.0 of the
 Standard;
 
--*{nbsp}Encoding guidelines & example*{nbsp}- how to create an XML instance of
+- *Encoding guidelines & example* - how to create an XML instance of
 this element
 
--{nbsp}*Errors observed*{nbsp}- observations on errors noted with each element
+- *Errors observed* - observations on errors noted with each element
 
-=== [#extended]##{nbsp}5. Extended metadata
+== Extended metadata
 
-==== *_[#5.1]####5.1 Additional metadata elements_*
+=== Additional metadata elements
 
 In many organisations, there is a need to record additional items of
 metadata to meet specific local requirements. This may be to incorporate
 particular characteristics of the data resources, or for particular
 applications. Additional metadata elements may be included in a metadata
-implementation. These elements should be taken from ISO 19115
-[https://www.agi.org.uk/gemini/40-gemini/1047-metadata-guidelines-for-geospatial-data-resources-part-3[18]],
+implementation. These elements should be taken from ISO 19115,
 which includes a comprehensive collection of metadata elements for
 geographic information, and also allows for further extensions.
 
-==== *_[#5.2]####5.2 Extension of code lists_*
+=== Extension of code lists
 
 Several metadata elements specified in UK GEMINI use enumerated code
 lists. These are pre-defined sets of values identified by codes. They
@@ -369,8 +322,5 @@ the purposes of INSPIRE.*
 
 _Last updated: May 2018_
 
-http://creativecommons.org/licenses/by/4.0/[image:https://i.creativecommons.org/l/by/4.0/88x31.png[Creative
-Commons Licence]] +
-This work is licensed under
-a{nbsp}http://creativecommons.org/licenses/by/4.0/[Creative Commons
-Attribution 4.0 International License]
+http://creativecommons.org/licenses/by/4.0/[image:https://i.creativecommons.org/l/by/4.0/88x31.png[Creative Commons Licence]] +
+This work is licensed under a http://creativecommons.org/licenses/by/4.0/[Creative Commons Attribution 4.0 International License]
