@@ -115,8 +115,7 @@ services.
 The https://inspire.ec.europa.eu/about-inspire/563[EU INSPIRE Directive] mandates
 the collection of metadata for use in Europe. Implementing Rules define
 the requirements for metadata for discovery purposes. These are based on
-ISO 19115, and
-outlined link:1055-uk-gemini-major-changes-since-1-0[here].
+ISO 19115.
 
 The aim of UK GEMINI is to provide a core set of metadata elements for
 use in a UK geospatial metadata service, that are compatible with the
@@ -268,7 +267,7 @@ sub-elements. Examples are Distributor and Vertical extent;
 
 - *Examples*
 
-- Corresponding element** in INSPIRE Metadata, ISO 19115:2003, ISO
+- *Corresponding element* in INSPIRE Metadata, ISO 19115:2003, ISO
 19139:2007
 
 - *Change history* – how the element has changed from v1.0 of the
