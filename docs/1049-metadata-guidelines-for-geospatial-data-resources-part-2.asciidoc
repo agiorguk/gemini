@@ -129,10 +129,10 @@ for the purposes of INSPIRE.*
 Errors having the greatest impact are likely to be those that affect
 searches based on:
 
-* *Where?*{nbsp}- geographical extent expressed in latitude and longitude or
+* *Where?* - geographical extent expressed in latitude and longitude or
 some named standard area (e.g. administrative area, postcode, country);
-* *What?*{nbsp}- theme, subject or topic;
-* *When?*{nbsp}- date when data resource was current.
+* *What?* - theme, subject or topic;
+* *When?* - date when data resource was current.
 
 Errors in the metadata elements used by these searches will result in
 over- or under-selection of data resources and will degrade the quality
