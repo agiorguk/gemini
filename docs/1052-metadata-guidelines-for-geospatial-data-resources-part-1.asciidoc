@@ -324,7 +324,7 @@ defined in https://www.iso.org/iso-8601-date-and-time-format.html[ISO
 
 == Data resources in scope
 
-=== What is stated in{nbsp}__UK GEMINI2_*
+=== What is stated in UK GEMINI2
 
 The purpose of this section is to provide guidance on
 
