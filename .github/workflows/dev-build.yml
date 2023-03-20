@@ -4,6 +4,7 @@ on:
   push:
     branches:
     - dev
+    - patch-styling-code
   workflow_dispatch:
 
 jobs:
