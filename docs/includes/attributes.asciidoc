@@ -1,13 +1,10 @@
 :assetdir: ./assets
 :stylesdir: {assetdir}
 :figure-caption: Figure
-:toc: left
 :docinfo: shared
-:safe-mode-unsafe:
 :iconfont-remote!:
 :stylesheet: gemini.css
 :scriptsdir: {assetdir}
-:linkcss:
 :data-uri:
 :iconfont-name: font-awesome.min
 :imagesdir: media
@@ -15,6 +12,6 @@
 :sectnumlevels: 3
 :sectlinks:
 :sectanchors:
-:experimental:
-:stem:
 :toclevels: 4
+:source-highlighter: pygments
+:pygments-style: default

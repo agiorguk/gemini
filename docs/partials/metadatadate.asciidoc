@@ -1,4 +1,4 @@
-= Metadata Date
+== Metadata Date
 include::includes/partials-attributes.adoc[]
 [#30]
 
@@ -62,24 +62,23 @@ GEMINI 1 to 2.0: Change of name from Date of last update of metadata
 .Encoding guidelines...
 [%collapsible]
 ====
+[cols="a,a"]
 |===
 |Guidelines |The encoding example for metadata date is shown in Example
 One. Note that it is possible to record the date and time of the
 metadata instance using the encoding shown in Example Two.
-
-|Example a|
-`Example One
-
-....
+|Example One
+|
+[source,xml]
+----
 include::../snippets/metadatadate.xml[]
-....
-
-Example Two (date and time)
-
-....
+----
+|Example Two (date and time)
+|
+[source,xml]
+----
 include::../snippets/metadatadatetime.xml[]
-....
-
+----
 |===
 ====
 

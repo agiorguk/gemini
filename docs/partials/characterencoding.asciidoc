@@ -1,4 +1,4 @@
-= Character encoding
+== Character encoding
 include::includes/partials-attributes.adoc[]
 [#51]
 
@@ -59,16 +59,16 @@ New element in GEMINI 2.3
 .Encoding guidelines...
 [%collapsible]
 ====
+[cols="a,a"]
 |===
 |Guidelines |Only the codeListValue is required, the codeList and the
 free text content are optional and informative only
-
-|Example a|
-
-....
+|Example
+|
+[source,xml]
+----
 include::../snippets/characterencoding.xml[]  
-....
-
+----
 |===
 ====
 

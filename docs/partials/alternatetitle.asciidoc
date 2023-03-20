@@ -1,4 +1,4 @@
-= Alternative title
+== Alternative title
 include::includes/partials-attributes.adoc[]
 [#2]
 
@@ -63,35 +63,43 @@ endif::[]
 ====
 
 .Change history...
-[%collapsible]ncoding guidelines...
-
 [%collapsible]
 ====
-[width="100%",cols="50%,50%",]
+====
+
+.Encoding guidelines...
+[%collapsible]
+====
+[cols="a,a"]
 |===
 |Guidelines |Note that more than one alternative title may be presented,
 as shown in the example below.
-
-|Example a|
+|Example
 ifdef::variant-dataset[]
-Example one
-....
+|
+|Example one
+|
+[source,xml]
+----
 include::../snippets/dataset-alternatetitle-multi.xml[]
-....
-
-Example two
-
-....
+----
+|Example two
+|
+[source,xml]
+----
 include::../snippets/dataset-alternatetitle-multi.xml[]
-....
+----
+|===
 endif::[]
 ifdef::variant-service[]
-....
+|
+[source,xml]
+----
 include::../snippets/service-alternatetitle-multi.xml[]
 ....
-endif::[]
-
+----
 |===
+endif::[]
 ====
 
 .Metadata errors observed...
