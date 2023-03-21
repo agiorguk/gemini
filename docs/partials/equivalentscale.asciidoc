@@ -1,4 +1,4 @@
-= Equivalent scale
+== Equivalent scale
 include::includes/partials-attributes.adoc[]
 [#43]
 
@@ -64,17 +64,21 @@ GEMINI 1 to 2.0: New element
 .Encoding guidelines...
 [%collapsible]
 ====
+[cols="a,a"]
 |===
 ifdef::variant-dataset[]
-|Guidelines |
-|Example a|
-
-....
+|Guidelines
+|
+|Example
+|
+[source,xml]
+----
 include::../snippets/equivalentscale.xml[]
-....
+----
 endif::[]
 ifdef::variant-service[]
-|Guidelines a|
+|Guidelines
+|
 * For services, it is not possible to express the restriction of a
 service concerning the spatial resolution when using the ISO 19139 XML
 Schema.
@@ -83,7 +87,7 @@ Schema.
 equivalent scale as integer valued scale denominator or a resolution
 distance using a numerical length value and with a unit of length.
 endif::[]
-
+|
 |===
 ====
 
