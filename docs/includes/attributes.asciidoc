@@ -1,10 +1,8 @@
-:assetdir: ./assets
-:stylesdir: {assetdir}
+:stylesdir: assets
 :figure-caption: Figure
 :docinfo: shared
 :iconfont-remote!:
 :stylesheet: gemini.css
-:scriptsdir: {assetdir}
 :data-uri:
 :iconfont-name: font-awesome.min
 :imagesdir: media

@@ -1,4 +1,4 @@
-= Data format
+== Data format
 include::includes/partials-attributes.adoc[]
 [#21]
 
@@ -67,23 +67,22 @@ versioned, a nil reason attribute shall be specified with either
 .Encoding guidelines...
 [%collapsible]
 ====
+[cols="a,a"]
 |===
 |Guidelines |Both a gmd:name and gmd:version shall be provided for the
 format
-
-|Example a|
-Example One
-
-....
+|Example One
+|
+[source,xml]
+----
 include::../snippets/dataformat-name-version.xml[]
-....
-
-Example Two - unknown version
-
-....
+----
+|Example Two - unknown version
+|
+[source,xml]
+----
 include::../snippets/dataformat-name-unknownversion.xml[] 
-....
-
+----
 |===
 ====
 

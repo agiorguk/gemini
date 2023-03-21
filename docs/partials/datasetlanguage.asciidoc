@@ -1,4 +1,4 @@
-= Dataset language
+== Dataset language
 include::includes/partials-attributes.adoc[]
 [#3]
 
@@ -80,9 +80,10 @@ content; not applicable" shall be used.
 .Encoding guidelines...
 [%collapsible]
 ====
-[width="100%",cols="50%,50%",]
+[cols="a,a"]
 |===
-|Guidelines a|
+|Guidelines
+|
 . Note that according to the ISO 19115 logical model the language
 property is typed as a CharacterString. The use of the
 gco:CharacterString type is permitted by the ISO 19139 schemas but this
@@ -95,14 +96,12 @@ value in GEMINI2 metadata instances:
 http://www.loc.gov/standards/iso639-2/php/code_list.php
 . Note however, that this URL resolves to an HTML web page rather than a
 service endpoint providing ISO 639-2 language codes.
-
-|Example a|
-Example following the INSPIRE recommendation of using the name of the language as the content of the gmd:LanguageCode
-
-....
+|Example following the INSPIRE recommendation of using the name of the language as the content of the gmd:LanguageCode
+|
+[source,xml]
+----
 include::../snippets/datasetlanguage.xml[]
-....
-
+----
 |===
 ====
 
