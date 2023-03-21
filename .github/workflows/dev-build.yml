@@ -27,7 +27,7 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with: 
         personal_token: ${{ secrets.API_TOKEN_GITHUB }}
-        external_repository: agiorguk/gemini-dev
+        external_repository: archaeogeek/gemini-dev
         publish_branch: gh-pages
         publish_dir: ./docs/
         enable_jekyll: true
