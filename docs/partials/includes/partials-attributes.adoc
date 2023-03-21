@@ -5,11 +5,9 @@
 :docinfo: shared
 :docinfodir: {assetdir}
 :docinfosubs: attributes
-:safe-mode-unsafe:
 :iconfont-remote!:
-:stylesheet: ../assets/gemini.css
+:stylesheet: gemini.css
 :scriptsdir: {assetdir}
-:linkcss:
 :data-uri:
 :iconfont-name: font-awesome.min
 :imagesdir: media
@@ -17,5 +15,5 @@
 :sectnumlevels: 3
 :sectlinks:
 :sectanchors:
-:experimental:
-:stem:
+:source-highlighter: pygments
+:pygments-style: default

@@ -1,4 +1,4 @@
-= Bounding box
+== Bounding box
 include::includes/partials-attributes.adoc[]
 [#44]
 
@@ -105,8 +105,10 @@ Bounding box, which was made multiple
 .Encoding guidelines...
 [%collapsible]
 ====
+[cols="a,a"]
 |===
-|Guidelines a|
+|Guidelines
+|
 . The encoding example for geographic bounding box for datasets is shown
 in the example
 . Note that the extent XML element is in the gmd namespace. This differs
@@ -129,18 +131,17 @@ property of MD_DataIdentification (ISO 19115) and
 SV_ServiceIdentification (ISO 19119/Amd 1:2008), not a property of the
 parent MD_Identification.
 endif::[]
-
-|Example a|
-
-....
+|Example
+|
+[source,xml]
+----
 ifdef::variant-dataset[]
 include::../snippets/dataset-boundingbox.xml[]
 endif::[]
 ifdef::variant-service[]
 include::../snippets/service-boundingbox.xml[]
 endif::[]
-....
-
+----
 |===
 ====
 
