@@ -17,7 +17,7 @@ jobs:
       id: adocbuild-datasets
       uses: avattathil/asciidoctor-action@master
       with:
-          program: "asciidoctor -a variant-dataset-a docinfo1  -T templates -E slim 'docs/*.asciidoc' 'docs/*.adoc'"
+          program: "asciidoctor -a variant-dataset -a docinfo1  -T templates -E slim 'docs/*.asciidoc' 'docs/*.adoc'"
     - name: Build services variant
       id: adocbuild-services
       uses: avattathil/asciidoctor-action@master
