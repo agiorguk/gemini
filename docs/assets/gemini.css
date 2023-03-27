@@ -23,7 +23,7 @@ table {
 details {
     color: rgb(40,158,197);
     cursor: pointer;
-    list-style: disclosure-closed inside;
+    /*list-style: disclosure-closed inside;*/
 }
 
 details .content {
@@ -40,5 +40,17 @@ code[data-lang="xml"] {
     white-space: pre !important;
     line-height: 1.0 !important;
     background-color: transparent !important;
+}
+
+#content {
+    max-width: 1500px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#header {
+    max-width: 1500px;
+    margin-right: auto;
+    margin-left: auto;
 }
 

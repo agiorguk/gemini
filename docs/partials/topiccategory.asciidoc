@@ -1,4 +1,4 @@
-= Topic Category
+== Topic Category
 include::includes/partials-attributes.adoc[]
 [#5]
 
@@ -140,8 +140,10 @@ Change history...
 .Encoding guidelines...
 [%collapsible]
 ====
+[cols="a,a"]
 |===
-|Guidelines a|
+|Guidelines
+|
 . The encoding example for topic category is shown in Example One. Note
 that it is possible to include more than one topic category.
 . The value of the XML element gmd:MD_TopicCategoryCode must not contain
@@ -151,14 +153,12 @@ in an XSD schema validation error because the element content will be
 parsed as shown in Example 3 (excluding the square brackets denoting the
 start and end) resulting in a value that does not exist in the
 enumerated list.
-
-|Example a|
-
-....
+|Example
+|
+[source,xml]
+----
 include::../snippets/topiccategory.xml[]
-
-....
-
+----
 |===
 ====
 

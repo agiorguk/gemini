@@ -1,4 +1,4 @@
-= Temporal extent
+== Temporal extent
 include::includes/partials-attributes.adoc[]
 [#7]
 
@@ -94,8 +94,10 @@ endif::[]
 .Encoding guidelines...
 [%collapsible]
 ====
+[cols="a,a"]
 |===
-|Guidelines a|
+|Guidelines
+|
 . The basic encoding for temporal extent is shown in Example One
 (datasets/series). The temporal extent data shall be encoded using the
 gml:TimePeriod type from the gml namespace. The underlying schemas and
@@ -159,63 +161,58 @@ before the specified date
 * 'after': in which case the actual date is unknown but known to be
 after the specified date
 . Example Four shows encoding examples using these values.
-
-
-|Example a|
 ifdef::variant-dataset[]
-Example One (datasets/series) : (gml:TimePeriod)
-
-....
+| Example One (datasets/series) : (gml:TimePeriod)
+|
+[source,xml]
+----
 include::../snippets/dataset-temporalextent-timeperiod.xml[]
-           
-
-....
-
-Example Two (datasets/series): (gml:TimeInstant)
-
-....
+----
+| Example Two (datasets/series): (gml:TimeInstant)
+|
+[source,xml]
+----
 include::../snippets/dataset-temporalextent-timeinstant.xml[]
-                
-
-....
-
-Example Three (datasets/series): unknown dates
-
-....
+----
+| Example Three (datasets/series): unknown dates
+|
+[source,xml]
+----
 include::../snippets/temporalextent-unknowndates.xml[]
-....
-
-Example Four: other unknown or unspecified dates
-
-....
+----
+| Example Four: other unknown or unspecified dates
+|
+[source,xml]
+----
 include::../snippets/temporalextent-other.xml[]
-....
+----
 endif::[]
 ifdef::variant-service[]
-Example One (services) : (gml:TimePeriod)
-....
+| Example One (services) : (gml:TimePeriod)
+|
+[source,xml]
+----
 include::../snippets/service-temporalextent-timeperiod.xml[]
-....
-
-Example Two (services) : (gml:TimeInstant)
-
-....
+----
+|Example Two (services) : (gml:TimeInstant)
+|
+[source,xml]
+----
 include::../snippets/service-temporalextent-timeinstant.xml[]
-....
-
-Example Three (services) : unknown dates
-
-....
+----
+| Example Three (services) : unknown dates
+|
+[source,xml]
+----
 include::../snippets/temporalextent-unknowndates.xml[]
-....
-
-Example Four: other unkown or unspecified dates
-
-....
+----
+| Example Four: other unkown or unspecified dates
+|
+[source,xml]
+----
 include::../snippets/temporalextent-other.xml[]
-....
+----
 endif::[]
-
 |===
 ====
 
