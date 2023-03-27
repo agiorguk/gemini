@@ -17,12 +17,12 @@ jobs:
       id: adocbuild-datasets
       uses: avattathil/asciidoctor-action@master
       with:
-          program: "asciidoctor -a variant-dataset -a stylesheet=./assets/gemini.css -a docinfo1 'docs/*.asciidoc' 'docs/*.adoc'"
+          program: "asciidoctor -a variant-dataset -a stylesheet=./assets/gemini.css -a docinfo1  -T templates -E slim 'docs/*.asciidoc' 'docs/*.adoc'"
     - name: Build services variant
       id: adocbuild-services
       uses: avattathil/asciidoctor-action@master
       with:
-          program: "asciidoctor -a variant-service -a stylesheet=./assets/gemini.css -a docinfo1 'docs/*.asciidoc' 'docs/*.adoc'"
+          program: "asciidoctor -a variant-service -a stylesheet=./assets/gemini.css -a docinfo1  -T templates -E slim 'docs/*.asciidoc' 'docs/*.adoc'"
     - name: Deploy docs to ghpages
       uses: peaceiris/actions-gh-pages@v3
       with: 
