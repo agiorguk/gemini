@@ -1,4 +1,4 @@
-= Lineage
+== Lineage
 include::includes/partials-attributes.adoc[]
 [#10]
 
@@ -74,9 +74,10 @@ conform to INSPIRE
 .Encoding guidelines...
 [%collapsible]
 ====
+[cols="a,a"]
 |===
-|Guidelines a|
-. The encoding for lineage is shown in the example below.
+|Guidelines
+|. The encoding for lineage is shown in the example below.
 . Note that, in addition to the lineage statement, the data quality
 scope shall be encoded. For dataset metadata instances the MD_ScopeCode
 code list value shall be 'dataset'. For series metadata instances the
@@ -84,13 +85,12 @@ code list value shall be 'series'.
 . For INSPIRE, the lineage statement must appear in the
 gmd:dataQualityInfo/gmd:DQ_DataQuality element scoped to the entire
 described dataset or series
-
-|Example a|
-
-....
+|Example
+|
+[source,xml]
+----
 include::../snippets/lineage.xml[]
-....
-
+----
 |===
 ====
 

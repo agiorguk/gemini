@@ -1,4 +1,4 @@
-= Vertical extent information
+== Vertical extent information
 include::includes/partials-attributes.adoc[]
 [#16]
 
@@ -103,8 +103,10 @@ description of class EX_VerticalExtent changed to match change to ISO
 .Encoding guidelines...
 [%collapsible]
 ====
+[cols="a,a"]
 |===
-|Guidelines a|
+|Guidelines
+|
 . The encoding of the vertical extent information is explained. The
 vertical extent information is expressed by a minimum and maximum
 coordinate value and a vertical CRS. The vertical CRS expresses the CRS
@@ -135,41 +137,40 @@ CRS is unknown (Example Three) but this renders the vertical extent
 information ambiguous at best. Consequently it would be better to
 refrain from including vertical extent information in the metadata
 instance altogether.
-
-|Example a|
-Example One (datasets/series) - Vertical CRS by reference
 ifdef::variant-dataset[]
-....
+| Example One (datasets/series) - Vertical CRS by reference
+|
+[source,xml]
+----
 include::../snippets/dataset-extent-verticalcrs-reference.xml[]
-....
-
-Example Two (datasets/series) - Vertical CRS by value
-
-....
+----
+|Example Two (datasets/series) - Vertical CRS by value
+|
+[source,xml]
+----
 include::../snippets/dataset-extent-verticalcrs-value.xml[]
-....
+----
 endif::[]
 ifdef::variant-service[]
-Example One (services) - Vertical CRS by reference
-
-....
+| Example One (services) - Vertical CRS by reference
+|
+[source,xml]
+----
 include::../snippets/service-extent-verticalcrs-reference.xml[]
-....
-
-Example Two (services) - Vertical CRS by value
-
-....
+----
+|Example Two (services) - Vertical CRS by value
+|
+[source,xml]
+----
 include::../snippets/service-extent-verticalcrs-value.xml[]
-....
-
+----
 endif::[]
-
-Example Three - Vertical CRS unknown
-
-....
+|Example Three - Vertical CRS unknown
+|
+[source,xml]
+----
 include::../snippets/extent-verticalcrs-unknown.xml[]
-....
-
+----
 |===
 ====
 

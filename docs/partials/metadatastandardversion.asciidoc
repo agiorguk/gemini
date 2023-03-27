@@ -1,4 +1,4 @@
-= Metadata standard version
+== Metadata standard version
 include::includes/partials-attributes.adoc[]
 [#55]
 
@@ -60,16 +60,15 @@ link:#54[Metadata standard name]
 .Encoding guidelines...
 [%collapsible]
 ====
+[cols="a,a"]
 |===
 |Guidelines |No specific rules for this metadata element
-
-|Example a|
-`                   Example One – GEMINI 2.3                   `
-
-....
+| Example One – GEMINI 2.3
+|
+[source,xml]
+----
 include::../snippets/metadatastandardversion.xml[]        
-....
-
+----
 |===
 ====
 

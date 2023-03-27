@@ -1,0 +1,16 @@
+- if title?
+  figure.list.unordered id=id
+    figcaption=title
+    ul class=[style, role]
+      - items.each do |_item|
+        li
+          span.primary=_item.text
+          - if _item.blocks?
+            =_item.content
+- else
+  ul id=id class=[style, role]
+    - items.each do |_item|
+      li
+        span.primary=_item.text
+        - if _item.blocks?
+          =_item.content

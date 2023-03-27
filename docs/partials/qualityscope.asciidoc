@@ -1,4 +1,4 @@
-= Quality scope
+== Quality scope
 include::includes/partials-attributes.adoc[]
 [#48]
 
@@ -81,8 +81,10 @@ New element in GEMINI 2.3
 .Encoding guidelines...
 [%collapsible]
 ====
+[cols="a,a"]
 |===
-|Guidelines a|
+|Guidelines
+|
 ifdef::variant-dataset[]
 All gmd:dataQualityInfo XML element shall have a gmd:scope XML element,
 set to as appropriate.
@@ -103,19 +105,17 @@ required
 * The value of gmd:other must be *service* (in the language of the
 metadata), as shown below.
 endif::[]
-
-
-|Example a|
-
-....
+|Example
+|
+[source,xml]
+----
 ifdef::variant-dataset[]
 include::../snippets/dataset-qualityscope.xml[]
 endif::[]
 ifdef::variant-service[]
 include::../snippets/service-qualityscope.xml[]
 endif::[]
-....
-
+----
 |===
 ====
 

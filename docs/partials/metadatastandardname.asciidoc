@@ -1,4 +1,4 @@
-= Metadata standard name
+== Metadata standard name
 include::includes/partials-attributes.adoc[]
 [#54]
 
@@ -61,6 +61,7 @@ guidance
 .Encoding guidelines...
 [%collapsible]
 ====
+[cols="a,a"]
 |===
 |Guidelines |GEMINI is supported by a
 https://www.bodc.ac.uk/resources/vocabularies/vocabulary_search/M25/[register
@@ -68,20 +69,18 @@ of metadata standard and profile names], hosted on the NERC vocab
 server. +
 The relevant standard shall be cited with a reference to the appropriate
 register entry, using an Anchor.
-
-|Example a|
-`                   Example One – UK GEMINI 2.3
-
-....
+|Example One – UK GEMINI 2.3
+|
+[source,xml]
+----
 include::../snippets/metadatastandardname-gemini.xml[]
-            
-Example Two – MEDIN profile of GEMINI 2.3 
-...
+----      
+| Example Two – MEDIN profile of GEMINI 2.3 
+|
+[source,xml]
+----
 include::../snippets/metadatastandardname-medin.xml[]
-...
-         
-....
-
+----
 |===
 ====
 

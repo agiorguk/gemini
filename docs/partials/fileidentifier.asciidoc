@@ -1,4 +1,4 @@
-= File Identifier
+== File Identifier
 include::includes/partials-attributes.adoc[]
 [#45]
 
@@ -67,9 +67,10 @@ resource being described. +
 .Encoding guidelines...
 [%collapsible]
 ====
+[cols="a,a"]
 |===
-|Guidelines a|
-. The first XML child element of any GEMINI2 metadata instance shall be
+|Guidelines
+|. The first XML child element of any GEMINI2 metadata instance shall be
 gmd:fileIdentifier. The content of this XML element is the identifier of
 the metadata instance. File identifier is not a metadata item of
 GEMINI2. It is not to be confused with the metadata item
@@ -77,14 +78,13 @@ link:#36[Resource identifier].
 . The content of the XML element shall be a unique managed identifier,
 such as a system generated UUID. Once the identifier has been set for a
 metadata instance it shall not change.
-
-|Example a|
-....
+|Example
+|
+[source,xml]
+----
 include::../snippets/fileidentifier.xml[]
-....
-
+----
 |===
-[%collapsible]
 ====
 
 .Metadata errors observed...

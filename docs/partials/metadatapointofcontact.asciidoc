@@ -1,4 +1,4 @@
-= Metadata point of contact
+== Metadata point of contact
 include::includes/partials-attributes.adoc[]
 [#35]
 
@@ -54,8 +54,10 @@ GEMINI 1 to 2.0: New element
 .Encoding guidelines...
 [%collapsible]
 ====
+[cols="a,a"]
 |===
-|Guidelines a|
+|Guidelines
+|
 * The encoding example for metadata point of contact is shown below.
 Note that the example shows the minimum required information.
 * The format of address and contact information is described at
@@ -64,14 +66,12 @@ more fully populated example.
 * More than one metadata point of contact may be expressed in metadata.
 The role of at least one metadata point of contact shall be
 'pointOfContact'.
-
-|Example a|
-Example showing minimum required information
-
-....
+|Example showing minimum required information
+|
+[source,xml]
+----
 include::../snippets/metadatapointofcontact.xml[]
-....
-
+----
 |===
 ====
 

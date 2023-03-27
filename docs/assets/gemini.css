@@ -23,7 +23,7 @@ table {
 details {
     color: rgb(40,158,197);
     cursor: pointer;
-    list-style: disclosure-closed inside;
+    /*list-style: disclosure-closed inside;*/
 }
 
 details .content {

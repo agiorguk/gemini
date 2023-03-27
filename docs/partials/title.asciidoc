@@ -1,4 +1,4 @@
-= Title
+== Title
 include::includes/partials-attributes.adoc[]
 [#1]
 
@@ -58,33 +58,37 @@ in the abstract or Alternative Title.
 .Change history...
 [%collapsible]
 ====
+No error information available
 ====
+
 .Encoding guidelines...
 [%collapsible]
 ====
+[cols="a,a"]
 |===
 |Guidelines |Cannot be empty
-
-|Example a|
-[#dataset]
-....
+|Example
 ifdef::variant-dataset[]
-
+[#dataset]
+|
+[source,xml]
+----
 include::../snippets/dataset-title.xml[]  
-
-endif::[]                
-....
+----
+endif::[] 
+ifdef::variant-service[]               
 [#service]
-....
-
-ifdef::variant-service[]
-
+|
+[source,xml]
+----
 include::../snippets/service-title.xml[] 
-
+----
 endif::[]  
-....
 |===
-
 ====
 
+.Metadata errors observed...
+[%collapsible]
+====
 No error information available
+====

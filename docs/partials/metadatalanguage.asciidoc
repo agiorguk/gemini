@@ -1,4 +1,4 @@
-= Metadata language
+== Metadata language
 include::includes/partials-attributes.adoc[]
 [#33]
 
@@ -80,17 +80,16 @@ GEMINI 1 to 2.0: New element
 .Encoding guidelines...
 [%collapsible]
 ====
-[width="100%",cols="50%,50%",]
+[cols="a,a"]
 |===
 |Guidelines |INSPIRE recommends providing the name of the language as
 content of the gmd:LanguageCode element
-
-|Example a|
-
-....
+|Example
+|
+[source,xml]
+----
 include::../snippets/metadatadate.xml[] 
-....
-
+----
 |===
 ====
 
