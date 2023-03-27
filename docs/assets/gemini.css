@@ -42,3 +42,15 @@ code[data-lang="xml"] {
     background-color: transparent !important;
 }
 
+#content {
+    max-width: 1500px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#header {
+    max-width: 1500px;
+    margin-right: auto;
+    margin-left: auto;
+}
+

@@ -1,13 +1,13 @@
-= Glossary
+= [[top]]Glossary
 include::./includes/attributes.asciidoc[]
 
-https://www.agi.org.uk/40-gemini/1056-glossary#A[A]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#B[B]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#C[C]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#D[D]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#E[E]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#F[F]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#G[G]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#H[H]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#I[I]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#J[J]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#K[K]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#L[L]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#M[M]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#N[N]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#O[O]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#P[P]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#Q[Q]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#R[R]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#S[S]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#T[T]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#U[U]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#V[V]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#W[W]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#X[X]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#Y[Y]{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary#Z[Z]
+<<A, A>>{nbsp}<<B, B>>{nbsp}<<C, C>>{nbsp}<<D, D>>{nbsp}<<E, E>>{nbsp}<<F, F>>{nbsp}<<G, G>>{nbsp}<<H, H>>{nbsp}<<I, I>>{nbsp}<<J, J>>{nbsp}<<K, K>>{nbsp}<<L, L>>{nbsp}<<M, M>>{nbsp}<<N, N>>{nbsp}<<O, O>>{nbsp}<<P, P>>{nbsp}<<Q, Q>>{nbsp}<<R, R>>{nbsp}<<S, S>>{nbsp}<<T, T>>{nbsp}<<U, U>>{nbsp}<<V, V>>{nbsp}<<W, W>>{nbsp}<<X, X>>{nbsp}<<Y, Y>>{nbsp}<<Z, Z>>
 
-Return
-to{nbsp}https://www.agi.org.uk/gemini/40-gemini/1037-uk-gemini-standard-and-inspire-implementing-rules[GEMINI
+Return to link:1037-uk-gemini-standard-and-inspire-implementing-rules.html[GEMINI
 2.3 home page]
 
-[#A]##*acceptable quality level (AQL)*
+*acceptable quality level (AQL)*
+[#A]
 
 threshold value applied to the results of testing data quality to
 determine whether the data meets criteria determined from a standard,
@@ -18,7 +18,8 @@ specification or user requirements
 acceptable quality level for aggregated results from a number of tests,
 e.g. 100% correct
 
-[#C]##*Coordinate Reference System*
+*Coordinate Reference System*
+[#C]
 
 a coordinate system that is related to an object by a datum [ISO 19111]
 
@@ -33,7 +34,8 @@ for OGC Catalogue Service.
 
 Note: see{nbsp}http://www.opengeospatial.org/standards/specifications/catalog
 
-[#D]##*Data Provider*
+*Data Provider*
+[#D]
 
 the organisation that creates the data and supplies the data for web
 publication, along with its metadata.
@@ -85,7 +87,8 @@ blocks of an XML document. It is not relevant in the context of GEMINI2
 metadata instances where{nbsp}_XSD_{nbsp}schemas are used to define the structure
 of XML documents.
 
-*[#E]####EDEN*
+*EDEN*
+[#E]
 
 l’Equipe D’Experts en Normalisation
 
@@ -106,7 +109,8 @@ Note: examples are given of the use of EPSG{nbsp}__URI__s in{nbsp}_metadata
 instances_. This does not imply that the EPSG registry is the{nbsp}_de
 jure_{nbsp}registry of geodetic parameters for UK Location.
 
-*[#G]####GEMET*
+*GEMET*
+[#G]
 
 General Multilingual Environmental Thesaurus.
 
@@ -138,7 +142,8 @@ Geography Markup Language [ISO 19136]
 
 resolution in terms of density or frequency
 
-*[#I]####INSPIRE*
+*INSPIRE*
+[#I]
 
 infrastructure for Spatial Information in Europe
 
@@ -155,11 +160,13 @@ Notes: ISO Technical Committee 211 is responsible for standardisation in
 the field of digital geographic information. The home page of ISO / TC
 211 is{nbsp}http://www.isotc211.org/
 
-*[#L]####location*
+*location*
+[#L]
 
 identifiable geographic place
 
-*[#M]####metadata*
+*metadata*
+[#M]
 
 data about data [ISO 19115]
 
@@ -195,7 +202,8 @@ service that supplies information about data resources
 
 identifiable set of metadata relating to a single data resource
 
-*[#O]####OGC*
+*OGC*
+[#O]
 
 Open Geospatial Consortium.
 
@@ -208,12 +216,14 @@ IT. See{nbsp}http://www.opengeospatial.org/
 
 International Association of Oil and Gas Producers
 
-*[#P]####profile*
+*profile*
+[#P]
 
 set of one or more base standards or subsets of base standards for a
 particular application
 
-*[#Q]####quality assessment*
+*quality assessment*
+[#Q]
 
 review of quality of a data resource
 
@@ -234,7 +244,8 @@ overall process for assessing and controlling quality
 
 value of a quality measure
 
-*[#S]####Schematron*
+*Schematron*
+[#S]
 
 a{nbsp}language for making assertions about patterns in XML documents; ISO
 19757 Document Schema Definition Language
@@ -251,7 +262,8 @@ Spatial Reference System.
 
 Note: a system for specifying position in the real world [ISO 19112]
 
-*[#U]####UK Information Infrastructure*
+*UK Information Infrastructure*
+[#U]
 
 Infrastructure for the publication of location information as part of
 the implementation of the UK Location Strategy.{nbsp} Incorporates the UK
@@ -301,7 +313,8 @@ generated twice by any computer in existence.
 * Format: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 * Example: 3ce4f380-b394-4e5d-b222-6914ea311156
 
-*[#W]####WAF*
+*WAF*
+[#W]
 
 a Web Accessible Folder (WAF) is an HTTP accessible directory of files
 
@@ -318,7 +331,8 @@ Web Mapping Service
 
 Web Feature Service
 
-*[#X]####XLink*
+*XLink*
+[#X]
 
 XML Linking Language
 
@@ -353,8 +367,6 @@ XML Schema Definition language.
 
 Note: an XSD is a document written in XML that defines the structure of
 an XML document.
-
-_Last updated: March 2017_
 
 http://creativecommons.org/licenses/by/4.0/[image:https://i.creativecommons.org/l/by/4.0/88x31.png[Creative
 Commons Licence]] +
