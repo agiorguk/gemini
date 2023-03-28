@@ -91,6 +91,7 @@ Change history...
 ----
 ifdef::variant-dataset[]
 include::../snippets/dataset-abstract.xml[]
+endif::[]
 ifdef::variant-service[]
 include::../snippets/service-abstract.xml[]
 endif::[]

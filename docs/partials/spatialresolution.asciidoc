@@ -110,8 +110,9 @@ ifdef::variant-dataset[]
 ----
 include::../snippets/spatialresolution.xml[]
 ----
-|===
 endif::[]
+|===
+
 ====
 
 .Metadata errors observed...
