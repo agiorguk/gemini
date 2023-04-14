@@ -17,15 +17,40 @@ table th, table td {
 }
 
 table {
-    border: 1px solid #f2f2​f2;
+    border: 1px solid #f2f2f2;
 }
 
 details {
     color: rgb(40,158,197);
     cursor: pointer;
-    list-style: disclosure-closed inside;
+    /*list-style: disclosure-closed inside;*/
 }
 
 details .content {
     color: rgb(103, 97, 97);
 }
+
+/*.highlight pre {
+    background-color: transparent !important;
+    white-space: normal;
+} */
+
+code[data-lang="xml"] {
+    font-size: 0.75em !important;
+    white-space: pre !important;
+    line-height: 1.0 !important;
+    background-color: transparent !important;
+}
+
+#content {
+    max-width: 1500px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#header {
+    max-width: 1500px;
+    margin-right: auto;
+    margin-left: auto;
+}
+

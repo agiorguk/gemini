@@ -1,4 +1,4 @@
-= Additional information
+== Additional information
 include::includes/partials-attributes.adoc[]
 [#27]
 
@@ -65,23 +65,22 @@ MD_DataIdentification.supplementalInformation |Equivalent
 .Encoding guidelines...
 [%collapsible]
 ====
-[width="100%",cols="50%,50%",]
+[cols="a,a"]
 |===
 |Guidelines |No specific rules for this metadata element
-
-|Example a|
-Example one
-
-....
+|Example One
+|
+[source,xml]
+----
 include::../snippets/additionalinformation-characterstring.xml[]
-....
-
-Example two - a link, using gmx:Anchor
-
-....
+----
+|Example two - a link, using gmx:Anchor
+|
+[source,xml]
+----
 include::../snippets/additionalinformation-anchor.xml[]          
 ....
-
+----
 |===
 ====
 

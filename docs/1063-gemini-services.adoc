@@ -1,4 +1,4 @@
-== [[top]]UK GEMINI 2.3 2020-04-07 service
+= [[top]]UK GEMINI 2.3 2020-04-07 service
 include::./includes/attributes.asciidoc[]
 
 == Contents
@@ -6,65 +6,35 @@ include::./includes/attributes.asciidoc[]
 [width="100%",cols="50%,50%",options="header",]
 |===
 |Metadata about the metadata record |Metadata about the resource
-|<<45, File Identifier>>
-|<<4, Abstract>>
-
-|<<47, Hierarchy level name>>
-|<<2, Alternative title>>
-
-|<<30, Metadata date>>
-|<<44, Bounding box>>
-
-|<<33, Metadata language>>
-|<<41, Conformity>>
-
-|<<35, Metadata point of contact>>
-|<<38, Coupled resource>>
-
-|<<54, Metadata standard name>>
-|<<8, Dataset reference date>>
-
-|<<55, Metadata standard version>>
-|<<43, Equivalent scale>>
-
-|<<49, Parent identifier>>
-|<<15, Extent>>
-
-|<<39, Resource type>> 
-|<<6, Keyword>>
-
-|
-|<<25, Limitations on public access>>
-
-|
-|<<48, Quality scope>>
-
-|
-|<<19, Resource locator>>
-
-|
-|<<23, Responsible organisation>>
-
-|
-|<<37, Spatial data service type>>
-
-|
-|<<17, Spatial reference system>>
-
-|
-|<<18, Spatial resolution>>
-
-|
-|<<7, Temporal extent>>
-
-|
-|<<1, Title>>
-
-|
-|<<26, Use constraints>>
-
-|
-|<<16, Vertical extent information>>
+|<<45, File Identifier>> +
+<<47, Hierarchy level name>> +
+<<30, Metadata date>> +
+<<33, Metadata language>> +
+<<35, Metadata point of contact>> +
+<<54, Metadata standard name>> +
+<<55, Metadata standard version>> +
+<<39, Resource type>> + 
+|<<4, Abstract>> +
+<<2, Alternative title>> +
+<<44, Bounding box>> +
+<<41, Conformity>> +
+<<38, Coupled resource>> +
+<<8, Dataset reference date>> +
+<<43, Equivalent scale>> +
+<<49, Parent identifier>> +
+<<15, Extent>> +
+<<6, Keyword>> +
+<<25, Limitations on public access>> +
+<<48, Quality scope>> +
+<<19, Resource locator>> +
+<<23, Responsible organisation>> +
+<<37, Spatial data service type>> +
+<<17, Spatial reference system>> +
+<<18, Spatial resolution>> +
+<<7, Temporal extent>> +
+<<1, Title>> +
+<<26, Use constraints>> +
+<<16, Vertical extent information>> +
 |===
 
 Return to link:1037-uk-gemini-standard-and-inspire-implementing-rules.html[GEMINI

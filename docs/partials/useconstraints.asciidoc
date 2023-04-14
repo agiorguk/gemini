@@ -1,4 +1,4 @@
-= Use constraints
+== Use constraints
 include::includes/partials-attributes.adoc[]
 [#26]
 
@@ -76,8 +76,10 @@ making mandatory to conform with INSPIRE.
 .Encoding guidelines...
 [%collapsible]
 ====
+[cols="a,a"]
 |===
-|Guidelines a|
+|Guidelines
+|
 . This element shall be encoded in a different
 resourceConstraints/MD_LegalConstraints XML element to GEMINI element 25
 Limitations on public access
@@ -100,32 +102,29 @@ list.
 . If there are no limitations the value of gmd:otherConstraints shall be
 'no limitations' (see Example Three).
 . There may be more than one gmd:otherConstraints element
-
-|Example a|
-Example One
-
-....
+|Example One
+|
+[source,xml]
+----
 ifdef::variant-dataset[]
 include::../snippets/dataset-useconstraints.xml[]
 endif::[]
 ifdef::variant-service[]
 include::../snippets/service-useconstraints.xml[]
 endif::[]
-....
-
-Example Two - with external file
-
-....
+----
+| Example Two - with external file
+|
+[source,xml]
+----
 include::../snippets/useconstraints-externalfile.xml[]        
-...
-....
-
-Example Three - no conditions apply
-
-....
+----
+| Example Three - no conditions apply
+|
+[source,xml]
+----
 include::../snippets/useconstraints-noconditions.xml[]           
-....
-
+----
 |===
 ====
 

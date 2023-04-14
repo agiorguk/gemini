@@ -1,4 +1,4 @@
-= Abstract
+== Abstract
 include::includes/partials-attributes.adoc[]
 [#4]
 
@@ -82,20 +82,20 @@ Change history...
 .Encoding guidelines...
 [%collapsible]
 ====
+[cols="a,a"]
 |===
-|Guidelines |Cannot be empty
-
-|Example a|
-
-....
+| Guidelines | Cannot be empty
+| Example
+|
+[source,xml]
+----
 ifdef::variant-dataset[]
 include::../snippets/dataset-abstract.xml[]
 endif::[]
 ifdef::variant-service[]
 include::../snippets/service-abstract.xml[]
 endif::[]
-....
-
+----
 |===
 ====
 

@@ -1,4 +1,4 @@
-= Spatial representation type
+== Spatial representation type
 include::includes/partials-attributes.adoc[]
 [#50]
 
@@ -73,16 +73,16 @@ is a superset of values used by INSPIRE
 .Encoding guidelines...
 [%collapsible]
 ====
+[cols="a,a"]
 |===
 |Guidelines |Only the codeListValue is required, the codeList and the
 free text content are optional and informative only
-
-|Example a|
-
-....
+|Example
+|
+[source,xml]
+----
 include::../snippets/spatialrepresentationtype.xml[]
-....
-
+----
 |===
 ====
 

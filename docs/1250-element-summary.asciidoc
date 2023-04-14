@@ -1,0 +1,115 @@
+= Element Summary
+include::./includes/attributes.asciidoc[]
+
+Return
+to{nbsp}link:1037-uk-gemini-standard-and-inspire-implementing-rules.html[GEMINI
+2.3 home page]
+
+[cols=",,,,,,",]
+|===
+|UK GEMINI id |Element name |Obligation |Number of occurrences |Dataset
+and series |Service |Revision date
+
+|1 |Title |Mandatory |Single |✓ |✓ |March 2019
+
+|2 |Alternative title |Optional |Multiple |✓ |✓ |April 2020
+
+|3 |Dataset language |Mandatory |Multiple |✓ |n/a |September 2018
+
+|4 |Abstract |Mandatory |Single |✓ |✓ |March 2019
+
+|5 |Topic Category |Mandatory when the data resource is a dataset or
+dataset series. Not applicable to services. |Multiple |✓ |n/a |March
+2019
+
+|6 |Keyword |Mandatory |Multiple |✓ |✓ |May 2019
+
+|7 |Temporal extent |Mandatory for datasets and dataset series |Multiple
+|✓ |✓ |May 2018
+
+|8 |Dataset reference date |Mandatory |Multiple |✓ |✓ |March 2019
+
+|10 |Lineage |Mandatory |Single |✓ |n/a |March 2019
+
+|15 |Extent |Optional |Multiple |✓ |✓ |August 2010
+
+|16 |Vertical extent information |Optional |Multiple |✓ |✓ |March 2019
+
+|17 |Spatial reference system |At least one coordinate reference system
+shall be given |Multiple |✓ |✓ |March 2019
+
+|18 |Spatial resolution |Conditional - where a resolution distance can
+be specified |Multiple |✓ |✓ |March 2019
+
+|19 |Resource locator |Conditional - Must be supplied when online access
+is available |Multiple |✓ |✓ |July 2009
+
+|21 |Data format |Mandatory |Multiple |✓ |n/a |March 2019
+
+|23 |Responsible organisation |Mandatory |Multiple |✓ |✓ |July 2009
+
+|25 |Limitations on public access |Mandatory |Multiple |✓ |✓ |January
+2020
+
+|26 |Use constraints |Mandatory |Multiple |✓ |✓ |September 2018
+
+|27 |Additional information |Optional |Single |✓ |n/a |October 2018
+
+|30 |Metadata date* |Mandatory |Single |✓ |✓ |May 2018
+
+|33 |Metadata language* |Mandatory |Single |✓ |✓ |September 2018
+
+|35 |Metadata point of contact* |Mandatory |Multiple |✓ |✓ |July 2009
+
+|36 |Resource identifier |Mandatory for datasets and dataset series
+|Multiple |✓ |n/a |May 2018
+
+|37 |Spatial data service type |Mandatory |Single |n/a |✓ |July 2009
+
+|38 |Coupled resource |Conditional - mandatory for View and Download
+services, optional for other service types. |Multiple |n/a |✓ |March
+2019
+
+|39 |Resource type* |Mandatory |Single |✓ |✓ |July 2009
+
+|41 |Conformity |Mandatory |Multiple |✓ |✓ |April 2020
+
+|43 |Equivalent scale |Optional |Multiple |✓ |✓ |July 2009
+
+|44 |Bounding box |Mandatory |Multiple |✓ |✓ |December 2012
+
+|45 |File Identifier* |Mandatory |Single |✓ |✓ |March 2019
+
+|47 |Hierarchy level name* |Conditional, required when Resource type
+(ISO hierarchyLevel) is not "dataset". |Single |✓ |✓ |April 2020
+
+|48 |Quality scope |Mandatory |Multiple |✓ |✓ |March 2019
+
+|49 |Parent identifier* |Optional |Single |✓ |✓ |May 2018
+
+|50 |Spatial representation type |Mandatory |Multiple |✓ |n/a |May 2018
+
+|51 |Character encoding |Conditional (mandatory if an encoding is used
+that is not based on UTF-8, otherwise optional) |Multiple |✓ |n/a |May
+2018
+
+|52 |Data quality |Conditional: Topological consistency report is
+mandatory if the dataset includes types from the INSPIRE Generic Network
+Model and does not assure centerline topology (connectivity of
+centrelines) for the network, otherwise optional |Multiple |✓ |n/a |May
+2018
+
+|53 |Maintenance information |Optional |Single |✓ |n/a |April 2020
+
+|54 |Metadata standard name* |Optional |Single |✓ |✓ |January 2020
+
+|55 |Metadata standard version* |Optional |Single |✓ |✓ |January 2020
+|===
+
+* indicates metadata on metadata
+
+Note. Element numbers 9, 11, 12, 13, 14, 20, 22, 28, 29, 31, 32, 40 and
+42 have been omitted because they were used to identify elements that
+have now been deleted from the Standard, and have not been reallocated
+to avoid confusion.
+

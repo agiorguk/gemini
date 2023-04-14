@@ -1,8 +1,8 @@
 
 # Gemini documentation DEV branch
 
-* [Services](https://agiorguk.github.io/gemini-dev/services.html) 
-* [Datasets](https://agiorguk.github.io/gemini-dev/datasets.html)
+* [Services](https://agiorguk.github.io/gemini-dev/1063-gemini-services.html) 
+* [Datasets](https://agiorguk.github.io/gemini-dev/1062-gemini-datasets-and-data-series.html)
 
 The files below have been converted but have not been altered to work using the new workflow. Consequently internal links will go to the agi website and there may be other errors.
 * [1037-uk-gemini-standard-and-inspire-implementing-rules](https://agiorguk.github.io/gemini-dev/1037-uk-gemini-standard-and-inspire-implementing-rules.html)
@@ -14,6 +14,8 @@ The files below have been converted but have not been altered to work using the 
 * [1054-operational-guide](https://agiorguk.github.io/gemini-dev/1054-operational-guide.html)
 * [1055-uk-gemini-major-changes-since-1-0](https://agiorguk.github.io/gemini-dev/1055-uk-gemini-major-changes-since-1-0.html)
 * [1056-glossary](https://agiorguk.github.io/gemini-dev/1056-glossary.html)
+* [1046-xml-element-order](https://agiorguk.github.io/gemini-dev/1046-xml-element-order.html)
+* [1250-element-summary](https://agiorguk.github.io/gemini-dev/1250-element-summary.html)
 
 Links above this are to the GitHub pages published in https://agiorguk.github.io/gemini-dev/
 
@@ -29,13 +31,13 @@ Where content differs between datasets and services, an [asciidoctor conditional
 To generate using the asciidoctor docker container, use the `-a` parameter, from the docs folder:
 
 ```
-docker run --rm -v $(pwd):/documents/ asciidoctor/docker-asciidoctor asciidoctor -a docinfo1 -a stylesheet=./assets/gemini.css -a variant-dataset *.adoc
+docker run --rm -v $(pwd):/documents/ asciidoctor/docker-asciidoctor asciidoctor -a docinfo1 -a stylesheet=./assets/gemini.css -T templates -E slim -a variant-dataset *.adoc *.asciidoc
 ```
 
 Then repeat for services:
 
 ```
-docker run --rm -v $(pwd):/documents/ asciidoctor/docker-asciidoctor asciidoctor -a docinfo1 -a stylesheet=./assets/gemini.css -a variant-service *.adoc
+docker run --rm -v $(pwd):/documents/ asciidoctor/docker-asciidoctor asciidoctor -a docinfo1 -a stylesheet=./assets/gemini.css  -T templates -E slim -a variant-service *.adoc *.asciidoc
 ```
 
 ## Styling

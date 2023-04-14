@@ -1,8 +1,7 @@
-== UK GEMINI Changes Log
+= [[top]]UK GEMINI Changes Log
 include::./includes/attributes.asciidoc[]
 
-Return
-to{nbsp}https://www.agi.org.uk/gemini/40-gemini/1037-uk-gemini-standard-and-inspire-implementing-rules[GEMINI
+Return to link:1037-uk-gemini-standard-and-inspire-implementing-rules.html[GEMINI
 2.3 home page]
 
 == UK GEMINI 2.3
@@ -61,34 +60,34 @@ longer just be the century.
 ==== April 2020
 
 Changed
-the{nbsp}https://www.agi.org.uk/40-gemini/1048-uk-gemini-encoding-guidance[XML
+the{nbsp}link:1048-uk-gemini-encoding-guidance.html[XML
 guidance]{nbsp}and examples to cope with the disappearance of the XML
 resources
 from{nbsp}http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/.
 The authoritative location is now on{nbsp}https://schemas.isotc211.org/.
-Note: I didn't mark this as a revision to each element.
+Note: this hasn't been marked as a revision to each element.
 
 Fixed example file on{nbsp}https://github.com/AGIGemini/Schematron[GitHub],
 and changed links to point there.
 
-https://www.agi.org.uk/gemini/40-gemini/1062-gemini-datasets-and-data-series#53[Maintenance
+link:1062-gemini-datasets-and-data-series.html#53[Maintenance
 information]:
 
 * corrected maximum multiplicity;
 * expanded the description of the domain
 
-https://www.agi.org.uk/40-gemini/1062-gemini-datasets-and-data-series#25[Limitations
+link:1062-gemini-datasets-and-data-series.html#25[Limitations
 on public access]:
 
 * clarified guidance on how to express more than one limitation, and
 added an example
 
-https://www.agi.org.uk/40-gemini/1062-gemini-datasets-and-data-series#54[Metadata
+link:1062-gemini-datasets-and-data-series.html#54[Metadata
 standard name]:
 
 * minor change to guidance and example
 
-https://www.agi.org.uk/gemini/40-gemini/1062-gemini-datasets-and-data-series#41[Conformity]:
+link:1062-gemini-datasets-and-data-series.html#41[Conformity]:
 
 * correct the description of what has changed in cases where the
 resource has not been tested against an INSPIRE specification
@@ -98,68 +97,68 @@ relate to an INSPIRE document
 ==== January 2020
 
 Added guidance for two additional
-elements:{nbsp}https://www.agi.org.uk/1062-gemini-datasets-and-data-series#54[Metadata
+elements:{nbsp}link:1062-gemini-datasets-and-data-series.html#54[Metadata
 standard name],
-and{nbsp}https://www.agi.org.uk/1062-gemini-datasets-and-data-series#54[Metadata
+and{nbsp}link:1062-gemini-datasets-and-data-series.html#54[Metadata
 standard version]
 
-https://www.agi.org.uk/1062-gemini-datasets-and-data-series#6[Keyword]{nbsp}for
+link:1062-gemini-datasets-and-data-series.html#6[Keyword]{nbsp}for
 INSPIRE theme: fixed the URL in the encoding example
 
-https://www.agi.org.uk/1062-gemini-datasets-and-data-series#47[Hierarchy
+link:1062-gemini-datasets-and-data-series.html#47[Hierarchy
 level name]: changed guidance and example to match INSPIRE. Note: this
 means the value is fixed depending on the value chosen for Resource type
 (Hierarchy level). +
 
-https://www.agi.org.uk/1062-gemini-datasets-and-data-series#41[Conformity]{nbsp}to
+link:1062-gemini-datasets-and-data-series.html#41[Conformity]{nbsp}to
 an INSPIRE specification: minor fix to guidance, and added a new 'known
 error'
 
-https://www.agi.org.uk/1062-gemini-datasets-and-data-series#25[Limitations
+link:1062-gemini-datasets-and-data-series.html#25[Limitations
 on public access]: improve guidance by listing the allowable INSPIRE
 reasons, with a hyperlink to the register
 
 ==== March 2019
 
 Change
-to{nbsp}https://www.agi.org.uk/40-gemini/1048-uk-gemini-encoding-guidance#2.1,[https://www.agi.org.uk/1048-uk-gemini-encoding-guidance#2.1,]{nbsp}to
+to{nbsp}link:1048-uk-gemini-encoding-guidance#2.1,[1048-uk-gemini-encoding-guidance#2.1],{nbsp}to
 describe a wider choice of relevant XML Schema Definition Files (XSDs)
 that can be used to validate GEMINI instances.
 
-https://www.agi.org.uk/40-gemini/1062-gemini-datasets-and-data-series#8[_Dataset_{nbsp}reference
+link:1062-gemini-datasets-and-data-series.html#8[_Dataset_{nbsp}reference
 date]: removed mention of the maximum occurrence for service records,
 when viewing this element for dataset records.
 
 Corrected the INSPIRE "corresponding element" entry
-for{nbsp}https://www.agi.org.uk/40-gemini/1062-gemini-datasets-and-data-series#41[Conformity],{nbsp}https://www.agi.org.uk/40-gemini/1062-gemini-datasets-and-data-series#4[Abstract],{nbsp}https://www.agi.org.uk/40-gemini/1062-gemini-datasets-and-data-series#5[Topic
-category],{nbsp}https://www.agi.org.uk/40-gemini/1062-gemini-datasets-and-data-series#6[Keyword],{nbsp}https://www.agi.org.uk/40-gemini/1062-gemini-datasets-and-data-series#17[Spatial
+for{nbsp}link:1062-gemini-datasets-and-data-series.html#41[Conformity],{nbsp}link:1062-gemini-datasets-and-data-series.html#4[Abstract],{nbsp}link:1062-gemini-datasets-and-data-series.html#5[Topic
+category],{nbsp}link:1062-gemini-datasets-and-data-series.html#6[Keyword],{nbsp}link:1062-gemini-datasets-and-data-series.html#17[Spatial
 reference
-system],{nbsp}https://www.agi.org.uk/40-gemini/1062-gemini-datasets-and-data-series#21[Data
-format],{nbsp}https://www.agi.org.uk/40-gemini/1062-gemini-datasets-and-data-series#45[File
-Identifier],{nbsp}https://www.agi.org.uk/40-gemini/1062-gemini-datasets-and-data-series#47[Hierarchy
+system],{nbsp}link:1062-gemini-datasets-and-data-series.html#21[Data
+format],{nbsp}link:1062-gemini-datasets-and-data-series.html#45[File
+Identifier],{nbsp}link:1062-gemini-datasets-and-data-series.html#47[Hierarchy
 level name],
-and{nbsp}https://www.agi.org.uk/40-gemini/1062-gemini-datasets-and-data-series#48[Quality
+and{nbsp}link:1062-gemini-datasets-and-data-series.html#48[Quality
 scope].
 
 Corrected the "corresponding element" entries for service elements to
 reference ISO 19119
-for{nbsp}https://www.agi.org.uk/gemini/40-gemini/1063-gemini-services#15[Extent],{nbsp}https://www.agi.org.uk/gemini/40-gemini/1063-gemini-services#16[Vertical
+for{nbsp}link:1063-gemini-services.html#15[Extent],{nbsp}link:1063-gemini-services.html#16[Vertical
 extent
-information],{nbsp}https://www.agi.org.uk/gemini/40-gemini/1063-gemini-services#37[Spatial
+information],{nbsp}link:1063-gemini-services.html#37[Spatial
 data service type],
-and{nbsp}https://www.agi.org.uk/gemini/40-gemini/1063-gemini-services#38[Coupled
+and{nbsp}link:1063-gemini-services.html#38[Coupled
 resource].
 
 Corrected the ISO 19139 "corresponding element" entries for service
-elements{nbsp}https://www.agi.org.uk/gemini/40-gemini/1063-gemini-services#15[Extent],{nbsp}https://www.agi.org.uk/gemini/40-gemini/1063-gemini-services#16[Vertical
+elements{nbsp}link:1063-gemini-services.html#15[Extent],{nbsp}link:1063-gemini-services.html#16[Vertical
 extent information],
-and{nbsp}https://www.agi.org.uk/gemini/40-gemini/1063-gemini-services#18[Spatial
+and{nbsp}link:1063-gemini-services.html#18[Spatial
 resolution]
 
 Corrected the ISO 19139 "corresponding element" entries
-for{nbsp}https://www.agi.org.uk/gemini/40-gemini/1062-gemini-datasets-and-data-series#1[Title],{nbsp}https://www.agi.org.uk/gemini/40-gemini/1062-gemini-datasets-and-data-series#2[Alternative
+for{nbsp}link:1062-gemini-datasets-and-data-series.html#1[Title],{nbsp}link:1062-gemini-datasets-and-data-series.html#2[Alternative
 title],
-and{nbsp}https://www.agi.org.uk/gemini/40-gemini/1062-gemini-datasets-and-data-series#4[Abstract].
+and{nbsp}link:1062-gemini-datasets-and-data-series.html#4[Abstract].
 
 _Note: these are all minor corrections of the way the element is
 referenced, rather than substantive changes to which element we consider
@@ -176,10 +175,10 @@ should use it didn't.
 
 ==== October 2018
 
-*https://www.agi.org.uk/gemini/40-gemini/1062-gemini-datasets-and-data-series#27[Additional
-information]{nbsp}(source)
-and{nbsp}https://www.agi.org.uk/gemini/40-gemini/1062-gemini-datasets-and-data-series#19[Resource
-locator]*
+*link:1062-gemini-datasets-and-data-series.html#27[Additional
+information]*{nbsp}(source)
+and{nbsp}**link:1062-gemini-datasets-and-data-series.html#19[Resource
+locator]**
 
 Clarified that, in line with the underlying ISO standards, Resource
 locator is for links to access the resource, or obtain more information
@@ -199,7 +198,7 @@ than by citation or link.
 
 Note: additional information is not available for services.
 
-*https://www.agi.org.uk/gemini/40-gemini/1062-gemini-datasets-and-data-series#36[Resource
+*link:1062-gemini-datasets-and-data-series.html#36[Resource
 identifier]*
 
 Fixed two typos.
@@ -209,26 +208,25 @@ another, into hyperlinks.
 
 ==== September 2018
 
-*https://www.agi.org.uk/gemini/40-gemini/1062-gemini-datasets-and-data-series#3[Dataset
-language]{nbsp}and{nbsp}https://www.agi.org.uk/gemini/40-gemini/1062-gemini-datasets-and-data-series#33[metadata]https://www.agi.org.uk/gemini/40-gemini/1062-gemini-datasets-and-data-series#33[{nbsp}language]*
+*link:1062-gemini-datasets-and-data-series.html#3[Dataset
+language]*{nbsp}and{nbsp}**link:1062-gemini-datasets-and-data-series.html#33[metadata]link:1062-gemini-datasets-and-data-series.html#33[{nbsp}language]**
 
 Corrected the name of the Irish language.
 
-*https://www.agi.org.uk/gemini/40-gemini/1062-gemini-datasets-and-data-series#17[Spatial
+*link:1062-gemini-datasets-and-data-series.html#17[Spatial
 reference
-system]{nbsp}and{nbsp}https://www.agi.org.uk/gemini/40-gemini/1062-gemini-datasets-and-data-series#48[Quality
-scope] +
-*
+system]*{nbsp}and{nbsp}**link:1062-gemini-datasets-and-data-series.html#48[Quality
+scope]**
 
 Corrected that there is an equivalent INSPIRE requirement, although not
 a 'named' metadata element.
 
-*https://www.agi.org.uk/gemini/40-gemini/1062-gemini-datasets-and-data-series#25[Limitations
+*link:1062-gemini-datasets-and-data-series.html#25[Limitations
 on public access]*
 
 Corrected the equivalent ISO 19115 & 19139 elements
 
-*https://www.agi.org.uk/gemini/40-gemini/1062-gemini-datasets-and-data-series#26[Use
+*link:1062-gemini-datasets-and-data-series.html#26[Use
 constraints]*
 
 Corrected encoding rules & examples, from "gmd:LegalConstraints" (which
@@ -243,7 +241,7 @@ Corrected the equivalent ISO 19115 & 19139 elements.
 *Description of validation*
 
 Fixed the description in section 1.5 of
-the{nbsp}https://www.agi.org.uk/gemini/40-gemini/1053-common-metadata-errors-uk-location-discovery-metadata-service[Common
+the{nbsp}link:1053-common-metadata-errors-uk-location-discovery-metadata-service.html[Common
 Metadata Errors article], which only described the GEMINI 2.2 / UK
 Location / data.gov.uk validation.
 
@@ -268,11 +266,10 @@ Metadata TG, not the Regulations
 
 ==== July 2018
 
-*https://www.agi.org.uk/40-gemini/1048-uk-gemini-encoding-guidance[UK
+*link:1048-uk-gemini-encoding-guidance.html[UK
 GEMINI Encoding Guidance]*
 
-*first line*: remove misleading phrase "using XSD schemas"* +
-*
+*first line*: remove misleading phrase "using XSD schemas"
 
 *section 2.2.14*: minor clarifications, and improved the placement of
 figure captions.
@@ -280,19 +277,19 @@ figure captions.
 *Change log{nbsp}*(this article): reordered to bring newest to top; added
 this section (editorial changes)
 
-https://www.agi.org.uk/gemini/40-gemini/1037-uk-gemini-standard-and-inspire-implementing-rules["*Home
+link:1037-uk-gemini-standard-and-inspire-implementing-rules.html["*Home
 page*"]: fixed link to encoding guidance
 
-*https://www.agi.org.uk/gemini/40-gemini/1052-metadata-guidelines-for-geospatial-data-resources-part-1[Guidelines
+*link:1052-metadata-guidelines-for-geospatial-data-resources-part-1.html[Guidelines
 - part 1 Introduction to Metadata]*: clarifications & general update
 
 *All pages*: introduce a link back to the GEMINI 2.3 "home page".
 
-*https://www.agi.org.uk/gemini/40-gemini/1062-gemini-datasets-and-data-series#3[Guidance
+*link:1062-gemini-datasets-and-data-series.html#3[Guidance
 for element 3 Dataset language]*: fix typo in anchor text for ISO 639
 link
 
-*https://www.agi.org.uk/gemini/40-gemini/1062-gemini-datasets-and-data-series#44[Guidance
+*link:1062-gemini-datasets-and-data-series.html#44[Guidance
 for element 44 Bounding box]*: fix typos in two domain sub element names
 
 == UK GEMINI 2.2
@@ -310,7 +307,7 @@ Box for which multiple occurrences are allowed.
 
 == UK GEMINI 2.1
 
-{nbsp}Resource language, Metadata language:
+Resource language, Metadata language:
 
 * The code for the Ulster Scots language was changed to "sco".
 
