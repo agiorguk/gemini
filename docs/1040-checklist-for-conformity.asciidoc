@@ -1,0 +1,33 @@
+= Checklist for Confirmity
+include::./includes/attributes.asciidoc[]
+
+Return
+to link:1037-uk-gemini-standard-and-inspire-implementing-rules.html[GEMINI
+2.3 home page]
+
+Metadata for a data resource shall be conformant with UK GEMINI if:
+
+{empty}1. It contains entries for all the mandatory metadata elements as
+defined in this Standard;
+
+{empty}2. It contains entries for all those conditional elements where
+the condition for inclusion holds;
+
+{empty}3. Each element included in the metadata contains a valid value
+from the prescribed domain;
+
+{empty}4. The number of occurrences of each element does not exceed the
+maximum number specified;
+
+{empty}5. Each entry is in the prescribed format;
+
+{empty}6. The metadata represents the state of the data resource on the
+specified date.
+
+_Last updated: December 2012_
+
+http://creativecommons.org/licenses/by/4.0/[image:https://i.creativecommons.org/l/by/4.0/88x31.png[Creative
+Commons Licence]] +
+This work is licensed under
+a{nbsp}http://creativecommons.org/licenses/by/4.0/[Creative Commons
+Attribution 4.0 International License]
