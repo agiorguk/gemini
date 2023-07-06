@@ -1,4 +1,4 @@
-= Checklist for Confirmity
+= Checklist for Conformity
 include::./includes/attributes.asciidoc[]
 
 Return
