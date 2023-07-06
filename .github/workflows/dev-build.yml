@@ -5,6 +5,7 @@ on:
     branches:
     - dev
     - patch-styling-code
+    - dev-agi
   workflow_dispatch:
 
 jobs:
