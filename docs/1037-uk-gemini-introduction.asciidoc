@@ -1,0 +1,97 @@
+= UK-GEMINI Introduction
+include::./includes/attributes.asciidoc[]
+
+This page describes the requirements and guidance for metadata
+conforming to the UK standard known as UK GEMINI. There are several
+entry points to the guidance:
+
+* link:1062-gemini-datasets-and-data-series[GEMINI
+for datasets and series]
+* link:1063-gemini-services[GEMINI for
+services]
+* Other material
+** link:1052-metadata-guidelines-for-geospatial-data-resources-part-1.html[General
+introduction to metadata for geographic information]
+** link:1051-uk-gemini-v2-2-specification-for-discovery-metadata-for-geospatial-resources.html[General
+introduction to GEMINI]
+** link:1049-metadata-guidelines-for-geospatial-data-resources-part-2.html[General
+guidance for GEMINI]
+** link:048-uk-gemini-encoding-guidance.html[General
+guidance on the XML encoding of GEMINI]
+** https://github.com/AGIGemini/Schematron[Schematron rules for
+validating GEMINI records (GitHub link)]
+** link:40-gemini/1056-glossary.html[Glossary of terms]
+** link:1047-metadata-guidelines-for-geospatial-data-resources-part-3.html[List
+of references]
+** link:053-common-metadata-errors-uk-location-discovery-metadata-service.html[Common
+errors]
+
+Conformance to GEMINI should ensure conformance to the INSPIRE
+Implementing Rules. UK specific guidance is provided. If you're
+thinking, why GEMINI? Why not just use the INSPIRE Metadata guidance or
+the ISO standards?{nbsp}https://www.agi.org.uk/why-uk-gemini/[Click here for
+some
+reasons.]{nbsp}The{nbsp}https://www.gov.uk/government/publications/recommended-open-standards-for-government/using-metadata-to-describe-data-shared-within-government[UK
+Government Digital Service recommends using GEMINI when describing
+geographic data]{nbsp}and it is the preferred way to catalogue geographic
+data and services at Data.gov.uk.
+
+Both UK GEMINI and the INSPIRE Technical Guidance have been developed
+from the International
+Standard{nbsp}http://www.iso.org/iso/catalogue_detail?csnumber=26020[ISO
+19115:2003]{nbsp}Geographic information - Metadata, with supplementary
+material from ISO 19119:2005 Geographic information - Services. The XML
+encoding follows ISO 19139:2007 Geographic information - Metadata - XML
+encoding. This means that a GEMINI record is widely understood by
+geospatial software and users internationally.
+
+Note that GEMINI (and the INSPIRE Guidance) are about metadata for
+datasets, series, and services (collectively, 'resources'); not
+everything in a GEMINI record can be assumed to be true individually for
+each feature instance in the resource. The underlying ISO standards
+(19115, 19139) do allow for metadata at the instance level, so the
+elements could be used to describe metadata for that, but the guidance
+here may not be appropriate and the resulting record could not be
+validated as a GEMINI (or INSPIRE) record.
+
+Here is
+a{nbsp}link:055-uk-gemini-major-changes-since-1-0.html[summary
+of changes]{nbsp}from earlier versions.
+
+Here is
+a{nbsp}link:1250-element-summary.html/[summary]{nbsp}of
+the GEMINI elements (similar to Table 1 and Table 2 in GEMINI 2.2).
+
+Note: in GEMINI 2.3, the GEMINI Element number is called "GEMINI id";
+the actual numbers have not changed, where the same element was in
+GEMINI 2.2.
+
+== Software that implements GEMINI 2.3
+
+Several software implementations exist and are in use across the UK:
+
+* https://locationmde.data.gov.uk/[UK Location Metadata Editor]: online
+editor owned by the Defra INSPIRE team
+* https://geonetwork-opensource.org/[GeoNetwork Open
+Source]{nbsp}-{nbsp}https://github.com/AstunTechnology/iso19139.gemini23[GEMINI
+plugin]: server software in use in several government departments
+* https://www.medin.org.uk/data/submit-metadata[MEDIN metadata editors]:
+online and downloadable client editors for the MEDIN community profile
+
+== Feedback
+
+We realise that various aspects of the website could be improved and
+that there may be some errors and inconsistencies in the content,
+therefore we would like to hear from you if you spot any of these or you
+would like to see improvements in terms of presentation and usability.
+
+Please send any comments
+to{nbsp}mailto:gemini@agi.org.uk?subject=GEMINI2.3%20feedback[gemini@agi.org.uk]
+
+_Last updated: June 2021_
+
+http://creativecommons.org/licenses/by/4.0/[image:https://i.creativecommons.org/l/by/4.0/88x31.png[Creative
+Commons Licence]] +
+This work is licensed under
+a{nbsp}http://creativecommons.org/licenses/by/4.0/[Creative Commons
+Attribution 4.0 International License]
