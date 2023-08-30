@@ -1,0 +1,126 @@
+= XML element order
+include::./includes/attributes.asciidoc[]
+
+== Dataset and Dataset Series Metadata
+
+Return
+to{nbsp}link:1037-uk-gemini-standard-and-inspire-implementing-rules.html[GEMINI
+2.3 home page]
+
+[cols=",,",]
+|===
+|*ISO 19139 XML Element* |*GEMINI2 Item Number* |*GEMINI2 Item Name*
+|*_gmd:MD_Metadata_* | |
+|gmd:fileIdentifier |45 |File Identifier
+|gmd:language |33 |Metadata language
+|gmd:parentIdentifier |49 |Parent identifier
+|gmd:hierarchyLevel |39 |Resource type
+|gmd:hierarchyLevelName |47 |Hierarchy level name
+|gmd:contact |35 |Metadata point of contact
+|gmd:dateStamp |30 |Metadata date
+|gmd:referenceSystemInfo |17 |Spatial reference system
+|gmd:identificationInfo | |
+|*_gmd:MD_DataIdentification_* | |
+|_  gmd:citation_ | |
+|_    gmd:CI_Citation_ | |
+|      gmd:title |1 |Title
+|      gmd:alternateTitle |2 |Alternative title
+|      gmd:date |8 |Dataset reference date
+|      gmd:identifier |36 |Unique resource identifier
+|  gmd:abstract |4 |Abstract
+|  gmd:pointOfContact |23 |Responsible organisation
+|  gmd:resourceMaintenance |24 |Frequency of update
+|  gmd:descriptiveKeywords |6 |Keyword
+|  _gmd:resourceConstraints_ | |
+|   _gmd:MD_LegalConstraints_ | |
+|     _gmd:accessConstraints_ | |
+|      gmd:otherConstraints |25 |Limitations on public access
+|  _gmd:resourceConstraints_ | |
+|   _gmd:MD_Constraints_ | |
+|      gmd:useLimitation |26 |Use constraints
+| gmd:spatialRepresentationType |50 |Spatial representation type
+| _ gmd:spatialResolution_ | |
+|   _ gmd:MD_Resolution_ | |
+|      gmd:distance |18 |Spatial resolution
+|  _gmd:spatialResolution_ | |
+|_    gmd:MD_Resolution_ | |
+|      gmd:equivalentScale |43 |Equivalent scale
+|  gmd:language |3 |Dataset language
+|  gmd:characterSet |51 |Character encoding
+|  gmd:topicCategory |5 |Topic category
+|_  gmd:extent_ | |
+|   _gmd:EX_Extent_ | |
+|     _gmd:geographicElement_ | |
+|        gmd:EX_GeographicDescription |15 |Extent
+|_      _  gmd:EX_GeographicBoundingBox |44 |Bounding box
+|      gmd:temporalElement |7 |Temporal extent
+|      gmd:verticalElement |16 |Vertical extent information
+|  gmd:supplementalInformation |27 |Additional information source
+|_gmd:distributionInfo_ | |
+|  gmd:distributionFormat |21 |Data format
+|  gmd:transferOptions |19 |Resource locator
+|_gmd:dataQualityInfo_ | |
+|  gmd:scope |48 |Quality scope
+|  _gmd:report_ | |
+|   gmd:DQ_DomainConsistency |41 |Conformity
+|  gmd:lineage |10 |Lineage
+|_gmd:dataQualityInfo_ | |
+|_  gmd:report_ | |
+|   gmd:DQ__XXXXXX_ |52 |Data quality
+|===
+
+== Service Metadata
+
+[cols=",,",]
+|===
+|*ISO 19139 XML Element* |*GEMINI2 Item Number* |*GEMINI2 Item Name*
+|*_gmd:MD_Metadata_* | |
+|gmd:fileIdentifier |45 |File Identifier
+|gmd:language |33 |Metadata language
+|gmd:parentIdentifier |49 |Parent identifier
+|gmd:hierarchyLevel |39 |Resource type
+|gmd:hierarchyLevelName |47 |Hierarchy level name
+|gmd:contact |35 |Metadata point of contact
+|gmd:dateStamp |30 |Metadata date
+|gmd:referenceSystemInfo |17 |Spatial reference system
+|gmd:identificationInfo | |
+|*_srv:SV_Identification_* | |
+|_  gmd:citation_ | |
+|_    gmd:CI_Citation_ | |
+|      gmd:title |1 |Title
+|      gmd:alternateTitle |2 |Alternative title
+|      gmd:date |8 |Dataset reference date
+|      gmd:identifier |- |-
+|  gmd:abstract |4 |Abstract
+|  gmd:pointOfContact |23 |Responsible organisation
+|  gmd:resourceMaintenance |- |-
+|  gmd:descriptiveKeywords |6 |Keyword
+|  _gmd:resourceConstraints_ | |
+|   _gmd:MD_LegalConstraints_ | |
+|     _gmd:accessConstraints_ | |
+|      gmd:otherConstraints |25 |Limitations on public access
+|  _gmd:resourceConstraints_ | |
+|   _gmd:MD_Constraints_ | |
+|      gmd:useLimitation |26 |Use constraints
+|  srv:serviceType |37 |Spatial data service type
+|_ srv:extent_ | |
+|   _gmd:EX_Extent_ | |
+|     _gmd:geographicElement_ | |
+|        gmd:EX_GeographicDescription |15 |Extent
+|_      _  gmd:EX_GeographicBoundingBox |44 |(the bounding coordinates)
+|      gmd:temporalElement |7 |Temporal extent
+|      gmd:verticalElement |16 |Vertical extent information
+|    srv:couplingType |- |-
+|    srv:containsOperations |- |-
+|    srv:operatesOn |38 |Coupled resource
+|_gmd:distributionInfo_ | |
+|  gmd:distributionFormat |- |-
+|  gmd:transferOptions |19 |Resource locator
+|_gmd:dataQualityInfo_ | |
+|  gmd:scope |48 |Quality scope (including levelDescription)
+|  _gmd:report_ | |
+|   gmd:DQ_DomainConsistency |41 |Conformity
+|===
+
+_Last updated: April 2018_
+

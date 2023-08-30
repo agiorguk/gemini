@@ -1,4 +1,4 @@
-= Hierarchy level name
+== Hierarchy level name
 include::includes/partials-attributes.adoc[]
 [#47]
 
@@ -33,8 +33,7 @@ hierarchyLevel) is not "dataset".
 |Revision date |April 2020
 |===
 
-Corresponding element in other standards...
-
+.Corresponding element in other standards...
 [%collapsible]
 ====
 |===
@@ -49,49 +48,45 @@ series |Equivalent
 |===
 ====
 
-Change history...
-
+.Change history...
 [%collapsible]
 ====
 New element in GEMINI 2.3
 ====
 
-Encoding guidelines...
-
+.Encoding guidelines...
 [%collapsible]
 ====
+[cols="a,a"]
 |===
 |Guidelines |No specific rules for this metadata element
-|Example a|
 ifdef::variant-dataset[]
-
-Example 1 - dataset, where hierarchyLevelName could just be omitted
-
-....
+|Example 1 - dataset, where hierarchyLevelName could just be omitted
+|
+[source,xml]
+----
 include::../snippets/dataset-hierarchylevelname.xml[]
-          
-....
-
-Example 2 - series, where hierarchyLevelName is required
-
-....
+----
+|Example 2 - series, where hierarchyLevelName is required
+|
+[source,xml]
+----
 include::../snippets/series-hierarchylevelname.xml[]
-....
+----
 endif::[]
 ifdef::variant-service[]
-|Example a|
-....
+|Example
+|
+[source,xml]
+----
 include::../snippets/service-hierarchylevelname.xml[]
-          
-....
+----
 endif::[]
-
-
-
 |===
 ====
 
-Metadata errors observed...
-
-[[errors47]]
+.Metadata errors observed...
+[%collapsible]
+====
 No error information available
+====

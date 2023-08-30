@@ -1,4 +1,4 @@
-= Parent identifier
+== Parent identifier
 include::includes/partials-attributes.adoc[]
 [#49]
 
@@ -36,8 +36,7 @@ endif::[]
 |Revision date |May 2018
 |===
 
-Corresponding element in other standards...
-
+.Corresponding element in other standards...
 [%collapsible]
 ====
 |===
@@ -47,31 +46,28 @@ Corresponding element in other standards...
 |===
 ====
 
-Change history...
-
+.Change history...
 [%collapsible]
 ====
 New element in GEMINI 2.3
 ====
 
-Encoding guidelines...
-
+.Encoding guidelines...
 [%collapsible]
 ====
+[cols="a,a"]
 |===
 |Guidelines |No specific rules for this metadata element
-
-|Example a|
-
-....
+|Example
+|
+[source,xml]
+----
 include::../snippets/parentidentifier.xml[]
-....
-
+----
 |===
 ====
 
-Metadata errors observed...
-
+.Metadata errors observed...
 [%collapsible]
 ====
 No error information available

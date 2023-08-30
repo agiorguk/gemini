@@ -1,4 +1,4 @@
-= Conformity
+== Conformity
 include::includes/partials-attributes.adoc[]
 [#41]
 
@@ -96,8 +96,7 @@ and would give a publication date of 2010-12-08
 |Revision date |April 2020
 |===
 
-Corresponding element in other standards...
-
+.Corresponding element in other standards...
 [%collapsible]
 ====
 |===
@@ -114,8 +113,7 @@ DQ_ConformanceResult |Equivalent
 |===
 ====
 
-Change history...
-
+.Change history...
 [%collapsible]
 ====
 * GEMINI 1 to 2.0: New element
@@ -123,13 +121,13 @@ Change history...
 been tested against the relevant INSPIRE specification
 ====
 
-Encoding guidelines...
-
+.Encoding guidelines...
 [%collapsible]
 ====
-[width="100%",cols="50%,50%",]
+[cols="a,a"]
 |===
-|Guidelines a|
+| Guidelines
+|
 . The encoding for Conformity is shown in the example.
 . Note that the encoding of conformity requires a specification (encoded
 using gmd:CI_Citation), an explanation and a pass.
@@ -137,7 +135,6 @@ using gmd:CI_Citation), an explanation and a pass.
 possible conformance results: conformant, not conformant and not
 evaluated. Not evaluated is expressed by a conformity statement with a
 nilReason (unknown) specified in the pass element.
-
 ifdef::variant-dataset[]
 . All gmd:dataQualityInfo XML element shall have a gmd:scope XML
 element, set to 'dataset' or 'series' as appropriate.
@@ -149,39 +146,41 @@ element, set to 'service'.
 information is 'service' then the gmd:levelDescription XML element is
 required, as shown below.
 endif::[]
-|Example a|
-
-....
+|Example
+|
+[source,xml]
+----
 ifdef::variant-dataset[]
 include::../snippets/dataset-conformity-inspire-ortho.xml[]
+----
 endif::[]
 ifdef::variant-service[]
 include::../snippets/service-conformity-abstracttestsuite.xml[]
+----
+|===
 endif::[]
-....
 ifdef::variant-dataset[]
-
-Example of a conformity report for Implementing Rule 1089/2010, where
+| Example of a conformity report for Implementing Rule 1089/2010, where
 conformance is not evaluated. +
 Example follows updated guidance to use gmx:Anchor over
 gco:CharacterString for Citation titles
-
-....
+|
+[source,xml]
+----
 include::../snippets/dataset-conformity-inspire-notevaluated.xml[]
-....
-
-Example three ~ Topological consistency, showing mandatory elements for
+----
+| Example three ~ Topological consistency, showing mandatory elements for
 a descriptive topological consistency report
-
-....
+|
+[source,xml]
+----
 include::../snippets/dataset-conformity-inspire-topo.xml[]
-....
-endif::[]
+----
 |===
+endif::[]
 ====
 
-Metadata errors observed...
-
+.Metadata errors observed...
 [%collapsible]
 ====
 |===
