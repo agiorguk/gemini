@@ -1,4 +1,4 @@
-= Coupled resource
+== Coupled resource
 include::includes/partials-attributes.adoc[]
 [#38]
 
@@ -34,8 +34,7 @@ This may be:
 |Revision date |March 2019
 |===
 
-Corresponding element in other standards...
-
+.Corresponding element in other standards...
 [%collapsible]
 ====
 |===
@@ -51,19 +50,19 @@ Corresponding element in other standards...
 |===
 ====
 
-Change history...
-
+.Change history...
 [%collapsible]
 ====
 GEMINI 1 to 2.0: New element, required for INSPIRE
 ====
 
 Encoding guidelines...
-
 [%collapsible]
 ====
+[cols="a,a"]
 |===
-|Guidelines a|
+| Guidelines
+|
 . https://inspire.ec.europa.eu/documents/inspire-metadata-implementing-rules-technical-guidelines-based-en-iso-19115-and-en-iso-1[INSPIRE
 guidance] link:component/content/article?id=1047[[9]] states that
 Coupled resource shall be implemented by reference, i.e. through a URL
@@ -112,40 +111,36 @@ obtain from the metadata instance. In the case of GEMINI and INSPIRE
 metadata it will be the first MD_DataIdentification element in the
 instance (XPath //gmd:identificationInfo[1]) unless a fragment
 identifier is used, in which case it may be in any location.
-
-|Example a|
-`Example One using the by reference mechanism and an OGC CSW request                   `
-
-....
+| Example One using the by reference mechanism and an OGC CSW request
+|
+[source,xml]
+----
 include::../snippets/coupledresource-cswrequest.xml[]
-....
-
-Example Two using WAF
-
-....
+----
+| Example Two using WAF
+|
+[source,xml]
+----
 include::../snippets/coupledresource-waf.xml[]
-....
-
-Example Three using the by reference mechanism and an OGC CSW request
+----
+| Example Three using the by reference mechanism and an OGC CSW request
 with a fragment identifier.
-
-....
+|
+[source,xml]
+----
 include::../snippets/coupledresource-cswrequest-fragment.xml[]
-....
-
+----
 In this example the fragment identifier #BGS-13480426 would correspond
 to the value of the id attribute of the gmd:MD_DataIdentification
 element of the dataset metadata record, like below
-
-....
+[source,xml]
+----
 <gmd:MD_DataIdentification id="BGS-13480426">
-....
-
+----
 |===
 ====
 
-Metadata errors observed...
-
+.Metadata errors observed...
 [%collapsible]
 ====
 |===

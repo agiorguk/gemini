@@ -1,4 +1,4 @@
-= Resource identifier
+== Resource identifier
 include::includes/partials-attributes.adoc[]
 [#36]
 
@@ -81,8 +81,7 @@ element.
 |Revision date |May 2018
 |===
 
-Corresponding element in other standards...
-
+.Corresponding element in other standards...
 [%collapsible]
 ====
 |===
@@ -99,8 +98,7 @@ Corresponding element in other standards...
 |===
 ====
 
-Change history...
-
+.Change history...
 [%collapsible]
 ====
 . GEMINI 1 to 2.0: New item 'Unique resource identifier', required for
@@ -109,12 +107,13 @@ INSPIRE
 reduce confusion with W3C URI
 ====
 
-Encoding guidelines...
-
+.Encoding guidelines...
 [%collapsible]
 ====
+[cols="a,a"]
 |===
-|Guidelines a|
+|Guidelines
+|
 . The resource identifier can be a globally unique identifier such as a
 UUID, in which case it is encoded as shown in Example One.
 . The form used in Example One can also be used if the identifier is
@@ -136,25 +135,22 @@ cannot be an UUID or an URI. The id must also be unique across all id
 attributes in the metadata document
 . See notes on link:component/content/article?id=1048#2.2.12[XML
 Identifiers].
-
-|Example a|
-Example One
-
-....
+|Example One
+|
+[source,xml]
+----
 include::../snippets/resourceidentifier-characterstring.xml[]
-....
-
-Example Two - resolveable identifier using gmx:Anchor
-
-....
+----
+| Example Two - resolveable identifier using gmx:Anchor
+|
+[source,xml]
+----
 include::../snippets/resourceidentifier-anchor.xml[]
-....
-
+----
 |===
 ====
 
-Metadata errors observed...
-
+.Metadata errors observed...
 [%collapsible]
 ====
 No error information available

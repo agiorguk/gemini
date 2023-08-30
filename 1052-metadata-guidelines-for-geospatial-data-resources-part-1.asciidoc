@@ -1,77 +1,21 @@
-== Introduction to Metadata
+= Introduction to Metadata
 include::./includes/attributes.asciidoc[]
 
-=== July 2018
+*July 2018*
 
-Return
-to{nbsp}https://www.agi.org.uk/gemini/40-gemini/1037-uk-gemini-standard-and-inspire-implementing-rules[GEMINI
-2.3 home page]
+Return to link:1037-uk-gemini-standard-and-inspire-implementing-rules[GEMINI 2.3 home page]
 
-https://www.agi.org.uk/40-gemini/1052-metadata-guidelines-for-geospatial-data-resources-part-1#Intro[1.
-Introduction]
+:sectnums:
+:sectnumlevels: 3
 
-https://www.agi.org.uk/40-gemini/1052-metadata-guidelines-for-geospatial-data-resources-part-1#fundamentals[2.
-Fundamentals of Metadata]
-
-https://www.agi.org.uk/40-gemini/1052-metadata-guidelines-for-geospatial-data-resources-part-1#2.1[2.1
-The nature of metadata]
-
-https://www.agi.org.uk/40-gemini/1052-metadata-guidelines-for-geospatial-data-resources-part-1#2.2[2.2
-Metadata services]
-
-https://www.agi.org.uk/40-gemini/1052-metadata-guidelines-for-geospatial-data-resources-part-1#2.3[2.3
-Metadata as a business process]
-
-https://www.agi.org.uk/40-gemini/1052-metadata-guidelines-for-geospatial-data-resources-part-1#2.4[2.4
-Metadata roles]
-
-https://www.agi.org.uk/40-gemini/1052-metadata-guidelines-for-geospatial-data-resources-part-1#2.5[2.5
-Metadata standards]
-
-https://www.agi.org.uk/40-gemini/1052-metadata-guidelines-for-geospatial-data-resources-part-1#principles[3.
-General principles of Metadata]
-
-https://www.agi.org.uk/40-gemini/1052-metadata-guidelines-for-geospatial-data-resources-part-1#3.1[3.1
-Introduction]
-
-https://www.agi.org.uk/40-gemini/1052-metadata-guidelines-for-geospatial-data-resources-part-1#3.2[3.2
-Free text]
-
-https://www.agi.org.uk/40-gemini/1052-metadata-guidelines-for-geospatial-data-resources-part-1#3.3[3.3
-Obligation]
-
-https://www.agi.org.uk/40-gemini/1052-metadata-guidelines-for-geospatial-data-resources-part-1#3.4[3.4
-Element domains]
-
-https://www.agi.org.uk/40-gemini/1052-metadata-guidelines-for-geospatial-data-resources-part-1#3.5[3.5
-Spatial references]
-
-https://www.agi.org.uk/40-gemini/1052-metadata-guidelines-for-geospatial-data-resources-part-1#3.6[3.6
-Date fields]
-
-https://www.agi.org.uk/40-gemini/1052-metadata-guidelines-for-geospatial-data-resources-part-1#scope[4.
-Data resources in Scope]
-
-https://www.agi.org.uk/40-gemini/1052-metadata-guidelines-for-geospatial-data-resources-part-1#4.1[4.1
-What is stated in UK GEMINI2]
-
-https://www.agi.org.uk/40-gemini/1052-metadata-guidelines-for-geospatial-data-resources-part-1#4.2[4.2
-Characteristics of data resources in scope]
-
-https://www.agi.org.uk/40-gemini/1052-metadata-guidelines-for-geospatial-data-resources-part-1#4.3[4.3
-Applicability of UK GEMINI2]
-
-https://www.agi.org.uk/40-gemini/1052-metadata-guidelines-for-geospatial-data-resources-part-1#4.4[4.4
-Levels of data resources for documentation]
-
-=== Preface
+== Preface
 
 These guidelines cover the basics of metadata for geospatial data
 resources and services. They are intended for general use in the UK
 geographic information environment and serve as a preamble to the more
-detailed and specific
-guidelines{nbsp}https://www.agi.org.uk/gemini/40-gemini/1049-metadata-guidelines-for-geospatial-data-resources-part-2[Metadata
-Guidelines for Geospatial Data Resources - Part 2]. They are primarily
+detailed and specific guidelines 
+link:1049-metadata-guidelines-for-geospatial-data-resources-part-2[Metadata Guidelines for Geospatial Data Resources - Part 2].
+They are primarily
 concerned with geospatial data (i.e. that which references data to a
 location on the surface of the Earth), and which has a limited
 geographic extent (i.e. is restricted to a defined territory). Services
@@ -88,7 +32,7 @@ guidance on quality management such that they could be used in the
 context of a national metadata service. A UK discovery metadata service
 forms part of data.gov.uk. As well as the human usable portal, this has
 a machine readable OGC “Catalogue Services for the Web” interface
-(http://csw.data.gov.uk/geonetwork/srv/en/csw?service=CSW&version=2.0.2&request=GetCapabilities[OGC
+(https://ckan.publishing.service.gov.uk/csw?request=GetCapabilities&service=CSW&version=2.0.2[OGC
 Capabilities document link]).
 
 The Guidelines have been revised during 2018 in the light of other
@@ -96,7 +40,7 @@ developments, including revisions to UK GEMINI2. Any comments on these
 Guidelines or on UK GEMINI2 should be sent
 to{nbsp}gemini@agi.org.uk.
 
-=== [#Intro]####1.{nbsp} Introduction
+== Introduction
 
 These guidelines for the creation, maintenance and quality management of
 metadata for geospatial data resources, including the services which
@@ -159,12 +103,11 @@ metadata, and in particular the UK GEMINI2 metadata set designed for
 discovery metadata services, the principles are equally applicable to
 internal metadata.
 
-A glossary of terms is provided
-in{nbsp}https://www.agi.org.uk/40-gemini/1056-glossary[here].
+A glossary of terms is provided in link:1056-glossary[here].
 
-=== [#fundamentals]####2.{nbsp} Fundamentals of metadata
+== Fundamentals of metadata
 
-==== *_[#2.1]####2.1 The nature of metadata_*
+=== The nature of metadata
 
 There are a range of uses for metadata, for discovery, for evaluation
 and for use:
@@ -182,7 +125,7 @@ candidate resource is fit for the intended purpose.
 * *use*: the user has selected a candidate resource, but needs to access
 it and to configure a system or software to process it.
 
-==== *_[#2.2]####2.2 Metadata services_*
+=== Metadata services
 
 Metadata services provide one of the fundamental parts of a Spatial Data
 Infrastructure (SDI). They are used within organisations as part of the
@@ -192,7 +135,7 @@ parameters such as Topic Category and Extent, to carry out a search to
 discover data resources that might be suitable and return information
 about their source, content and availability.
 
-==== *_[#2.3]####2.3 Metadata as a business process_*
+=== Metadata as a business process
 
 A simple process model is presented at Figure 1 and shows the flow from
 metadata creation through to metadata query with quality related
@@ -225,7 +168,7 @@ finally picked up, it may well be assigned to someone who has no
 knowledge of the data resource and no interest in the quality of the
 metadata.
 
-==== *_[#2.4]####2.4 Metadata roles_*
+=== Metadata roles
 
 Three generic roles in the metadata process can be recognised, these are
 illustrated above:
@@ -248,7 +191,7 @@ criteria matching their requirements, performs the searches and finds
 data resources meeting their requirements or, at least, meriting further
 investigation.
 
-==== *_[#2.5]####2.5 Metadata standards_*
+=== Metadata standards
 
 There are many metadata standards in existence. These have been produced
 at different times by different bodies for different purposes. The main
@@ -303,19 +246,15 @@ their GeoDCAT Application Profile.
 At present, GEMINI makes no direct use of DCAT or GeoDCAT, but it does
 share some of the Dublin Core vocabulary.
 
-Formal references for these standards and implementing rules are given
-in
-the{nbsp}https://www.agi.org.uk/40-gemini/1047-metadata-guidelines-for-geospatial-data-resources-part-3[Bibliography].
+== General principles of metadata
 
-=== [#principles]####3.{nbsp} General principles of metadata
-
-==== *_[#3.1]####3.1 Introduction_*
+=== Introduction
 
 This section describes some general high-level rules that apply to the
 creation of metadata. Whilst primarily applying to UK GEMINI2, they are
 also relevant to other metadata specifications.
 
-==== *_[#3.2]####3.2 Free text_*
+=== Free text
 
 The aim of a discovery metadata such as specified in UK GEMINI2 is to
 define metadata in a form that provides easily understood information
@@ -332,7 +271,7 @@ the theme of the dataset, and the nearest option should be chosen. Where
 code lists are used, input and output facilities in a metadata service
 should identify the corresponding element value.
 
-==== *_[#3.3]####3.3 Obligation_*
+=== Obligation
 
 As with other data specifications, elements in UK GEMINI2 are given as
 mandatory, conditional or optional. Mandatory elements must be
@@ -347,18 +286,18 @@ and there is a set of circumstances in which a value should be given,
 roughly corresponding to “is it relevant?” and “is its value known?”
 Optional elements should not be ignored.
 
-==== *_[#3.4]####3.4 Element domains_*
+=== Element domains
 
 Each metadata element has a range of allowable values, called its
 domain. These may be values in a given range (e.g. positive integers) or
 a set of code values chosen from a list. Specifying the domain helps
 with both the initial creation of data and quality checking [For further
 details on quality checking,
-see{nbsp}https://www.agi.org.uk/40-gemini/1047-metadata-guidelines-for-geospatial-data-resources-part-3[Part
-3{nbsp}]of these Guidelines]. In some cases, default values may be used, for
+see https://www.agi.org.uk/wp-content/uploads/2020/11/METADATAGUIDELINESPART32015-04.pdf[Part 3] of these Guidelines].
+In some cases, default values may be used, for
 example for elements relating to the metadata itself.
 
-==== *_[#3.5]####3.5 Spatial references_*
+=== Spatial references
 
 By definition, geographic data contains some form of spatial reference.
 The spatial reference identifies the position of the object of interest
@@ -372,7 +311,7 @@ data resource in the world (e.g. data for Scotland). A consistent set of
 spatial references enables spatial searches to be made for datasets in a
 metadata service.
 
-==== *_[#3.6]####3.6 Date fields_*
+=== Date fields
 
 Metadata can contain a multitude of dates identifying the different
 stages in the life cycle of the data. Key dates are included in
@@ -380,21 +319,21 @@ metadata. To enable searches to be carried out (e.g. date relating to
 the period 1990 to 1999), these dates need to be recorded in
 standardised form. Unfortunately, different standards are used in
 different places. Here it is recommended that the extended format
-defined in{nbsp}https://www.iso.org/iso-8601-date-and-time-format.html[ISO
-8601]{nbsp}(YYYY-MM-DD) is used.
+defined in https://www.iso.org/iso-8601-date-and-time-format.html[ISO
+8601] (YYYY-MM-DD) is used.
 
-=== [#scope]####4.{nbsp} Data resources in scope
+== Data resources in scope
 
-==== *_[#4.1]####4.1 What is stated in{nbsp}__UK GEMINI2_*
+=== What is stated in UK GEMINI2
 
 The purpose of this section is to provide guidance on
 
-{empty}(i) what types of geospatial data can be documented using UK
+(i) what types of geospatial data can be documented using UK
 GEMINI2,
 
-{empty}(ii) the applicability of UK GEMINI2 and
+(ii) the applicability of UK GEMINI2 and
 
-{empty}(iii) how to find an appropriate level for the individual
+(iii) how to find an appropriate level for the individual
 documentation of data resources.
 
 UK GEMINI2 “specifies a set of metadata elements for describing
@@ -409,7 +348,7 @@ it be an individual map or the whole map series?
 There is no simple answer to these questions; it is likely to be a
 compromise. However, some general guidance can be given.
 
-==== *_[#4.2]####4.2 Characteristics of data resources in scope_*
+=== Characteristics of data resources in scope
 
 The general nature of geospatial data and access services is described
 in the Introduction. As is emphasised there, many data resources that at
@@ -429,13 +368,13 @@ video form.
 
 All these types can be documented using UK GEMINI2.
 
-==== *_[#4.3]####4.3 Applicability of{nbsp}__UK GEMINI2_*
+=== Applicability of UK GEMINI2
 
 The primary purpose of UK GEMINI2 is to provide the requirements for
 documenting data resources within the United Kingdom that conforms with
 the INSPIRE Metadata Implementing Rules.
 
-==== *_[#4.4]####4.4 Levels of data resources for documentation_*
+=== Levels of data resources for documentation
 
 There are no absolute rules for deciding on an appropriate level for the
 individual documentation of a data resource. The overriding
@@ -563,10 +502,7 @@ if feasible.
 
 |===
 
-_{nbsp}Last updated: July 2018_
+_Last updated: July 2018_
 
-http://creativecommons.org/licenses/by/4.0/[image:https://i.creativecommons.org/l/by/4.0/88x31.png[Creative
-Commons Licence]] +
-This work is licensed under
-a{nbsp}http://creativecommons.org/licenses/by/4.0/[Creative Commons
-Attribution 4.0 International License]
+http://creativecommons.org/licenses/by/4.0/[image:https://i.creativecommons.org/l/by/4.0/88x31.png[Creative Commons Licence]] +
+This work is licensed under a http://creativecommons.org/licenses/by/4.0/[Creative Commons Attribution 4.0 International License]

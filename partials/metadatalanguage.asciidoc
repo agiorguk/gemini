@@ -1,4 +1,4 @@
-= Metadata language
+== Metadata language
 include::includes/partials-attributes.adoc[]
 [#33]
 
@@ -55,8 +55,7 @@ official European languages, such as English or Irish.
 |Revision date |September 2018
 |===
 
-Corresponding element in other standards...
-
+.Corresponding element in other standards...
 [%collapsible]
 ====
 |===
@@ -71,34 +70,30 @@ Corresponding element in other standards...
 |===
 ====
 
-Change history...
-
+.Change history...
 [%collapsible]
 ====
 [[history33]]
 GEMINI 1 to 2.0: New element
 ====
 
-Encoding guidelines...
-
+.Encoding guidelines...
 [%collapsible]
 ====
-[width="100%",cols="50%,50%",]
+[cols="a,a"]
 |===
 |Guidelines |INSPIRE recommends providing the name of the language as
 content of the gmd:LanguageCode element
-
-|Example a|
-
-....
+|Example
+|
+[source,xml]
+----
 include::../snippets/metadatadate.xml[] 
-....
-
+----
 |===
 ====
 
-Metadata errors observed...
-
+.Metadata errors observed...
 [%collapsible]
 ====
 [width="100%",cols="50%,50%",]

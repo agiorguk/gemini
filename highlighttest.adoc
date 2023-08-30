@@ -1,0 +1,4 @@
+= Testing syntax highlighting for text in tables
+include::./includes/attributes.asciidoc[]
+ 
+include::./partials/abstract.asciidoc[]

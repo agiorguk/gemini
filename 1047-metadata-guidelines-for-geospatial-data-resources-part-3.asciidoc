@@ -1,0 +1,80 @@
+= Metadata Guidelines for Geospatial Data Resources Part 3
+include::./includes/attributes.asciidoc[]
+
+Return
+to link:1037-uk-gemini-standard-and-inspire-implementing-rules.html[GEMINI
+2.3 home page]
+
+[%header,cols="1,.^9"]
+|===
+|Reference Number |Author, Title, Version, Date of publication
+
+| 1|AGI,
+link:40-gemini/1052-metadata-guidelines-for-geospatial-data-resources-part-1.html[Metadata
+Guidelines for Geospatial Data Resources – Part 1&#44; Introduction],
+September 2010
+| 2|AGI,
+link:1049-metadata-guidelines-for-geospatial-data-resources-part-2.html[Metadata
+Guidelines for Geospatial Data Resources - Part 2&#44; Creating metadata
+using UK GEMINI2 (v2.1)], April 2015
+| 3|AGI,
+https://www.agi.org.uk/wp-content/uploads/2020/12/METADATAGUIDELINESPART32015-04.pdf[Metadata
+Guidelines for Geospatial Data Resources in the UK Part 3 – Metadata
+quality] , April 2015
+| 4|AGI,
+https://www.agi.org.uk/wp-content/uploads/2020/12/GEMINI2.2.pdf[UK
+GEMINI&#44; Specification for discovery metadata for geospatial data
+resources&#44; v2.2], December 2012
+| 5|W3C, http://www.w3.org/TR/xml-c14n[Canonical XML, Version 1.1], May 2008
+| 6|EC, https://inspire.ec.europa.eu/network-services/[Commission Regulation (EC) No 976/2009 of 19 October 2009
+implementing Directive 2007/2/EC of the European Parliament and of the
+Council as regards the
+Network Services], October 2009
+| 7|EC, http://inspire.ec.europa.eu/metadata[Commission Regulation (EC) No. 1205/2008 of 3 December 2008
+Implementing Directive 2007/2/EC of the European Parliament and of the
+Council as regards metadata], December 2008
+| 8|EC, http://inspire.ec.europa.eu/inspire-legislation/[Directive 2007/2/EC of the European Parliament and of the
+Council of 14 March 2007 establishing an Infrastructure for Spatial
+Information in the European Community (INSPIRE)], March 2007
+| 9|EC, http://inspire.ec.europa.eu/id/document/tg/metadata-iso19139/2.0[Technical Guidance for implementing dataset and service
+metadata based on ISO/TS 19139:2007 (Version 2.0.1), INSPIRE Maintenance and Implementation Group
+(MIG)], March 2017
+|10|e-Government Metadata Standard (e-GMS). Cabinet Office e-Government
+Unit. (see http://www.gov.uk/government/organisations/cabinet-office, suggest https://cdn.nationalarchives.gov.uk/documents/information-management/egms-metadata-standard.pdf)
+|11|Elliotte Rusty Harold and W. Scott Means, XML in a Nutshell,
+Second Edition, June 2002
+|12|EPSG, http://www.epsg-registry.org/[Geodetic Parameter Registry, Version
+7.5.6]
+|13|Federal Geographic Data Committee, http://www.fgdc.gov/standards/standards_publications[Content Standard for Digital
+Geospatial Metadata, Version 2], 1998
+|14|EU, http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:32008R1205:EN:NOT[Commission Regulation (EC) No 1205/2008 of 3 December 2008 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards metadata], December 2008
+|15|ESD, http://id.esd.org.uk/list/subjects[Integrated Public Sector Vocabulary (IPSV)]
+|16|EC, https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-view-services-1[Technical Guidance for the implementation of INSPIRE View
+Services, Version 3.11], April 2013
+|17|ISO (and national standards bodies), https://www.iso.org/standard/37629.html[ISO 15836: 2003 Dublin Core metadata element set], November 2003
+|18|ISO (and national standards bodies), https://www.iso.org/standard/26020.html[ISO 19115:2003 Geographic information – Metadata], May 2003 
+|19|ISO (and national standards bodies), https://www.iso.org/standard/32557.html[ISO 19139:2007 Geographic information – Metadata – XML schema
+implementation], April 2007 
+|20|ISO (and national standards bodies), https://www.iso.org/standard/20115.html[ISO 8402:1994 Quality management and quality assurance - Vocabulary], March 1994
+|21|ISO (and national standards bodies), https://www.iso.org/standard/40874.html[ISO 8601:2004 Data elements and interchange formats – Information interchange – Representation of dates and times], December 2012
+|22|Ordnance Survey, https://data.ordnancesurvey.co.uk/[Ordnance Survey Linked Data Platform]
+|23|AGI, https://www.agi.org.uk/wp-content/uploads/2020/11/GEMINI2.2.pdf[UK GEMINI2 Standard Version 2.2], August 2010
+|24|UK Location, link:1054-operational-guide.html[Discovery Metadata Service&#44; Operational Guide], Edition 2-2, February 2013
+|25|UK Location, https://data.gov.uk/sites/default/files/Coordinate Reference Systems for UK Location - INSPIRE View Servicev1.1_10.pdf[Coordinate Reference Systems for UK Location], December 2012
+|26|UK Location, https://data.gov.uk/sites/default/files/DMS%20Operational%20Guide%202-2_10.pdf[Discovery Metadata Service Collection Interface
+Specification], February 2013
+|27|UK Location, https://data.gov.uk/location/guidance_and_tools[Getting started - series of guides]
+|28|UK Location, https://data.gov.uk/sites/default/files/UK%20GEMINI%20Encoding%20Guidance%201.4_10.pdf[UK
+GEMINI Encoding Guidance&#44; Version 1.4], February 2013
+|29|UK Location, http://data.gov.uk/library/uk-gemini-schematron-schema-technical-guidance[UK GEMINI Schematron Schema Guidance], January 2013
+|30|UK Location, UK GEMINI Schematron Schema Version 1.3, January 2013
+|31|UK Location, User Guide: Administrators and Editors
+|===
+
+_Last updated: February 2018_
+
+http://creativecommons.org/licenses/by/4.0/[image:https://i.creativecommons.org/l/by/4.0/88x31.png[Creative
+Commons Licence]] +
+This work is licensed under
+a{nbsp}http://creativecommons.org/licenses/by/4.0/[Creative Commons
+Attribution 4.0 International License]

@@ -1,0 +1,111 @@
+= INSPIRE Metadata Requirements
+include::./includes/attributes.asciidoc[]
+
+The INSPIRE Implementing Rules for Metadata requires that a set of
+metadata elements shall be provided. These are grouped in the following
+categories:
+
+. Identification
+. Classification of spatial and data services
+. Keyword
+. Geographic location
+. Temporal reference
+. Quality and validity
+. Conformity
+. Constraint related to access and use
+. Organisations responsible for the establishment, management,
+maintenance and distribution of the resource
+. Metadata on metadata
+
+These are realized as a set of elements shown below. These may be
+implemented in various ways including ISO 19115 and Dublin Core. UK
+GEMINI is an ISO 19115 implementation.
+
+[width="100%",cols="20%,20%,20%,20%,20%",]
+|===
+|*  Metadata category* |*INSPIRE Reference* |*  Metadata element*
+|*Multiplicity^†^* |*  Condition (where applicable)*
+
+|Identification |1.1 |Resource title |1 |
+
+| |1.2 |Resource abstract |1 |
+
+| |1.3 |Resource type |1 |
+
+| |1.4 |Resource locator |0..* |Mandatory if a URL is available to
+obtain more information on the resource, and/or access related services,
+or if linkage to the service is available
+
+| |1.5 |Unique resource identifier |1..* |Not required for services
+
+| |1.6 |Coupled resource |0..* |Only for services, where it is mandatory
+if linkage to data sets on which the service operates are available
+
+| |1.7 |Resource language |0..* |Mandatory if the resource includes
+textual information. Not required for services
+
+|Classification of spatial and data services |2.1 |Topic category |1..*
+|Not required for services
+
+| |2.2 |Spatial data service type |1 |Only for services
+
+|Keyword |3.1 |Keyword value |1..* |
+
+| |3.2 |Originating controlled vocabulary |0..* |Where a vocabulary is
+used as the source of the keywords
+
+|Geographic location |4.1 |Geographic bounding box |1..* |Mandatory for
+datasets and dataset series, and for services with an explicit
+geographic extent
+
+|Temporal reference |5.1 |Temporal extent |1..* |At least one of these
+must be given.
+
+| | 5.2 |Date of publication | |
+
+| | 5.3 |Date of last revision | |
+
+| | 5.4 |Date of creation | |
+
+|Quality and validity |6.1 |Lineage |1 |Not required for services
+
+| |6.2 |Spatial resolution |0..* |Mandatory for datasets and dataset
+series if an equivalent scale or a resolution distance can be specified,
+and for services where there is a restriction on the spatial resolution
+for the service.
+
+|Conformity |7.1 |Specification |1..* |
+
+| | 7.2 |Degree |1..* |
+
+|Constraint related to access and use |8.1 |Conditions applying to
+access and use |1..* |
+
+| |8.2 |Limitations on public access |1..* |
+
+|Organisations responsible for the establishment, management,
+maintenance and distribution of the resource |9.1 |Responsible party
+|1..* |
+
+| | 9.2 |Responsible party role |1..* |
+
+|Metadata on metadata |10.1 |Metadata point of contact |1..* |
+
+| |10.2 |Metadata date |1 |
+
+| |10.3 |Metadata language |1 |
+
+a|
+Notes
+
+**^† ^**1 indicates mandatory, single valued, 1 ..* indicates mandatory,
+multi-valued, 0..* indicates optional multi-valued
+
+| | | |
+|===
+
+http://creativecommons.org/licenses/by/4.0/[image:https://i.creativecommons.org/l/by/4.0/88x31.png[Creative
+Commons Licence]] +
+This work is licensed under
+a{nbsp}http://creativecommons.org/licenses/by/4.0/[Creative Commons
+Attribution 4.0 International License]

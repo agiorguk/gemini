@@ -1,4 +1,4 @@
-= Spatial data service type
+== Spatial data service type
 include::includes/partials-attributes.adoc[]
 [#37]
 
@@ -39,8 +39,7 @@ guidance] link:component/content/article?id=1047[[9]].
 |Revision date |July 2009
 |===
 
-Corresponding element in other standards...
-
+.Corresponding element in other standards...
 [%collapsible]
 ====
 |===
@@ -56,19 +55,19 @@ Corresponding element in other standards...
 |===
 ====
 
-Change history...
-
+.Change history...
 [%collapsible]
 ====
 GEMINI 1 to 2.0: New element
 ====
 
-Encoding guidelines...
-
+.Encoding guidelines...
 [%collapsible]
 ====
+[cols="a,a"]
 |===
-|Guidelines a|
+|Guidelines
+|
 The encoding example for spatial data service type is shown in the
 example below. The value domain of the service type (i.e. the list of
 acceptable values to encode in <gco:LocalName>view</gco:LocalName>) is
@@ -81,18 +80,16 @@ repeated below (the words are to be encoded in lower case):
 * transformation
 * invoke
 * other
-
-|Example a|
-
-....
+|Example
+|
+[source,xml]
+----
 include::../snippets/spatialdataservicetype.xml[]
-....
-
+----
 |===
 ====
 
-Metadata errors observed...
-
+.Metadata errors observed...
 [%collapsible]
 ====
 No error information available

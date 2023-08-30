@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.18">
+<meta name="generator" content="Asciidoctor 2.0.20">
 <title>Metadata Guidelines for Geospatial Data Resources Part 2</title>
 <style>
 @import "./assets/asciidoctor.css"
@@ -27,6 +27,40 @@ table th, table td {
 
 table {
     border: 1px solid #f2f2f2;
+}
+
+details {
+    color: rgb(40,158,197);
+    cursor: pointer;
+    /*list-style: disclosure-closed inside;*/
+}
+
+details .content {
+    color: rgb(103, 97, 97);
+}
+
+/*.highlight pre {
+    background-color: transparent !important;
+    white-space: normal;
+} */
+
+code[data-lang="xml"] {
+    font-size: 0.75em !important;
+    white-space: pre !important;
+    line-height: 1.0 !important;
+    background-color: transparent !important;
+}
+
+#content {
+    max-width: 1500px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#header {
+    max-width: 1500px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 
@@ -609,65 +643,20 @@ Login</span>
 
 
 <div id="header">
+<h1>Metadata Guidelines for Geospatial Data Resources Part 2</h1>
 </div>
 <div id="content">
-<div class="sect1">
-<h2 id="_metadata_guidelines_for_geospatial_data_resources_part_2">Metadata Guidelines for Geospatial Data Resources Part 2</h2>
+<div id="preamble">
 <div class="sectionbody">
-<div class="sect2">
-<h3 id="_creating_metadata_using_uk_gemini_v2_3_may_2018_being_revised"><a class="anchor" href="#_creating_metadata_using_uk_gemini_v2_3_may_2018_being_revised"></a><a class="link" href="#_creating_metadata_using_uk_gemini_v2_3_may_2018_being_revised">Creating metadata using UK GEMINI (v2.3) May 2018 -&#160;_being revised_</a></h3>
 <div class="paragraph">
-<p>Return
-to&#160;<a href="https://www.agi.org.uk/gemini/40-gemini/1037-uk-gemini-standard-and-inspire-implementing-rules">GEMINI
-2.3 home page</a></p>
+<p>Creating metadata using UK GEMINI (v2.3) May 2018 -&#160;_being revised_</p>
 </div>
 <div class="paragraph">
-<p><a href="https://www.agi.org.uk/gemini/40-gemini/1049-metadata-guidelines-for-geospatial-data-resources-part-2#Intro">1.
-Introduction</a></p>
+<p>Return to <a href="1037-uk-gemini-standard-and-inspire-implementing-rules">GEMINI 2.3 home page</a></p>
 </div>
 <div class="paragraph">
-<p><a href="https://www.agi.org.uk/gemini/40-gemini/1049-metadata-guidelines-for-geospatial-data-resources-part-2#gemini">2.
-GEMINI2</a></p>
+<p><strong>Preface</strong></p>
 </div>
-<div class="paragraph">
-<p><a href="https://www.agi.org.uk/gemini/40-gemini/1049-metadata-guidelines-for-geospatial-data-resources-part-2#2.1">2.1
-Metadata elements</a></p>
-</div>
-<div class="paragraph">
-<p><a href="https://www.agi.org.uk/gemini/40-gemini/1049-metadata-guidelines-for-geospatial-data-resources-part-2#2.2">2.2
-Additional metadata elements</a></p>
-</div>
-<div class="paragraph">
-<p><a href="https://www.agi.org.uk/gemini/40-gemini/1049-metadata-guidelines-for-geospatial-data-resources-part-2#2.3">2.3
-Extension code lists</a></p>
-</div>
-<div class="paragraph">
-<p><a href="https://www.agi.org.uk/gemini/40-gemini/1049-metadata-guidelines-for-geospatial-data-resources-part-2#errors">3.
-Possible metadata errors</a></p>
-</div>
-<div class="paragraph">
-<p><a href="https://www.agi.org.uk/gemini/40-gemini/1049-metadata-guidelines-for-geospatial-data-resources-part-2#3.1">3.1
-Impact of metadata errors</a></p>
-</div>
-<div class="paragraph">
-<p><a href="https://www.agi.org.uk/gemini/40-gemini/1049-metadata-guidelines-for-geospatial-data-resources-part-2#3.2">3.2
-Effect on searches</a></p>
-</div>
-<div class="paragraph">
-<p><a href="https://www.agi.org.uk/gemini/40-gemini/1049-metadata-guidelines-for-geospatial-data-resources-part-2#3.3">3.3
-Prevention and correction of errors</a></p>
-</div>
-<div class="paragraph">
-<p><a href="https://www.agi.org.uk/gemini/40-gemini/1049-metadata-guidelines-for-geospatial-data-resources-part-2#3.4">3.4
-Common errors</a></p>
-</div>
-<div class="paragraph">
-<p><a href="https://www.agi.org.uk/gemini/40-gemini/1049-metadata-guidelines-for-geospatial-data-resources-part-2#guidance">4.
-Guidance for individual metadata elements</a></p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_preface"><a class="anchor" href="#_preface"></a><a class="link" href="#_preface">Preface</a></h3>
 <div class="paragraph">
 <p>This is the second part of a set of guidelines for metadata for
 geospatial data resources. These metadata guidelines are primarily
@@ -687,13 +676,11 @@ guidance on quality management such that they could be used in the
 context of a national metadata service.</p>
 </div>
 <div class="paragraph">
-<p><a href="https://www.agi.org.uk/gemini/40-gemini/1052-metadata-guidelines-for-geospatial-data-resources-part-1">Part
-1 of the Guidelines&#160;</a>covers the basics of metadata and provides an
+<p><a href="1052-metadata-guidelines-for-geospatial-data-resources-part-1">Part
+1 of the Guidelines</a> covers the basics of metadata and provides an
 introduction to the other two parts. It includes a glossary of terms and
-set of references. Part 3</p>
-</div>
-<div class="paragraph agi org uk/gemini/40-gemini/1047-metadata-guidelines-for-geospatial-data-resources-part-3[3]">
-<p>deals with metadata quality and covers quality evaluation and quality
+set of references. <a href="https://www.agi.org.uk/wp-content/uploads/2020/12/METADATAGUIDELINESPART32015-04.pdf">Part 3</a>
+deals with metadata quality and covers quality evaluation and quality
 management of metadata including guidance on establishing acceptable
 quality levels. This Part of the Guidelines provides a set of detailed
 guidelines for UK GEMINI2 metadata elements. It has been revised to
@@ -702,11 +689,13 @@ correspond to version 2.3 of UK GEMINI.</p>
 <div class="paragraph">
 <p>Any comments on these guidelines or on the UK GEMINI2 metadata standard
 should be sent
-to&#160;<a href="mailto:gemini@agi.org.uk">gemini@agi.org.uk</a>.</p>
+to <a href="mailto:gemini@agi.org.uk">gemini@agi.org.uk</a>.</p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_intro1_introduction"><a class="anchor" href="#_intro1_introduction"></a><a class="link" href="#_intro1_introduction">[<mark>intro]</mark>#&#160;1. Introduction</a></h3>
+</div>
+<div class="sect1">
+<h2 id="_introduction"><a class="anchor" href="#_introduction"></a><a class="link" href="#_introduction">1. Introduction</a></h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>UK GEMINI2 defines a core set of metadata elements for discovery of data
 resources and other essential purposes. It provides details of what
@@ -719,11 +708,10 @@ area. The data resources may be graphical or textual (tabular or free
 text), hardcopy or digital.</p>
 </div>
 <div class="paragraph">
-<p>This part of the&#160;_Metadata Guidelines for Geospatial Data
-Resources_&#160;provides detailed guidance for the application of UK GEMINI2.
+<p>This part of the <em>Metadata Guidelines for Geospatial Data Resources</em> provides detailed guidance for the application of UK GEMINI2.
 It is aimed at those creating metadata conforming to UK GEMINI2. This
 expands on existing guidance given in the UK GEMINI2
-specification[<a href="https://www.agi.org.uk/gemini/40-gemini/1047-metadata-guidelines-for-geospatial-data-resources-part-3">4</a>].
+specification.
 It also describes possible errors that might occur in such metadata and
 suggests actions to guard against them. It explains how to expand the
 metadata elements in addition to those in UK GEMINI2 if required, and
@@ -734,48 +722,45 @@ how to extend code lists of allowable values.</p>
 guidelines.</p>
 </div>
 </div>
+</div>
+<div class="sect1">
+<h2 id="_gemini2"><a class="anchor" href="#_gemini2"></a><a class="link" href="#_gemini2">2. GEMINI2</a></h2>
+<div class="sectionbody">
 <div class="sect2">
-<h3 id="_gemini2_gemini2"><a class="anchor" href="#_gemini2_gemini2"></a><a class="link" href="#_gemini2_gemini2">[<mark>gemini]</mark>#&#160;2. GEMINI2</a></h3>
-<div class="sect3">
-<h4 id="_2_1_metadata_elements"><a class="anchor" href="#_2_1_metadata_elements"></a><a class="link" href="#_2_1_metadata_elements"><strong><em><span id="2" class="1">#</span>#2.1 Metadata elements</em></strong></a></h4>
+<h3 id="_metadata_elements"><a class="anchor" href="#_metadata_elements"></a><a class="link" href="#_metadata_elements">2.1. Metadata elements</a></h3>
 <div class="paragraph">
 <p>UK GEMINI2 specifies a set of metadata elements for describing
 geospatial data resources. These resources may be a dataset, data set
 series (collection of datasets with a common specification) or data
 service. The type of resource is identified in the element Resource Type
-(39). The metadata elements are summarised
-in&#160;<a href="https://www.agi.org.uk/gemini/40-gemini/1250-element-summary">element
-summary</a>.</p>
+(39). The metadata elements are summarised in <a href="1250-element-summary">element summary</a>.</p>
 </div>
 <div class="paragraph">
 <p>Detailed guidance on how to create each of these elements can be found
 here:</p>
 </div>
 <div class="paragraph">
-<p><a href="https://www.agi.org.uk/gemini/40-gemini/1027-citizens-as-sensors-a-solution-to-pollution">GEMINI
-- Datasets and data series</a></p>
+<p><a href="datasets.html">GEMINI - Datasets and data series</a></p>
 </div>
 <div class="paragraph">
-<p>GEMINI - Services</p>
+<p><a href="services.html">GEMINI - Services</a></p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_2_2_additional_metadata_elements"><a class="anchor" href="#_2_2_additional_metadata_elements"></a><a class="link" href="#_2_2_additional_metadata_elements"><strong><em><span id="2" class="2">#</span>#2.2 Additional metadata elements</em></strong></a></h4>
+<div class="sect2">
+<h3 id="_additional_metadata_elements"><a class="anchor" href="#_additional_metadata_elements"></a><a class="link" href="#_additional_metadata_elements">2.2. Additional metadata elements</a></h3>
 <div class="paragraph">
 <p>In many organisations, there is a need to record additional items of
 metadata to meet specific local requirements. This may be to incorporate
 particular characteristics of the data resources, or for particular
 applications. Additional metadata elements may be included in a metadata
-implementation. These elements should be taken from ISO
-19115&#160;_Geographic information -
-Metadata&#160;_[<a href="https://www.agi.org.uk/gemini/40-gemini/1047-metadata-guidelines-for-geospatial-data-resources-part-3">18</a>],
+implementation. These elements should be taken from ISO 19115:2003 <em>Geographic information - Metadata</em>,
 which includes a comprehensive collection of metadata elements for
 geographic information. An example would be Dataset character set and
 Metadata character set where non-standard characters are used.</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_2_3_extension_of_code_lists"><a class="anchor" href="#_2_3_extension_of_code_lists"></a><a class="link" href="#_2_3_extension_of_code_lists"><strong><em><span id="2" class="3">#</span>#2.3 Extension of code lists</em></strong></a></h4>
+<div class="sect2">
+<h3 id="_extension_of_code_lists"><a class="anchor" href="#_extension_of_code_lists"></a><a class="link" href="#_extension_of_code_lists">2.3. Extension of code lists</a></h3>
 <div class="paragraph">
 <p>Several of the metadata elements specified in UK GEMINI2 use enumerated
 code lists. These are pre-defined sets of values identified by codes.
@@ -811,7 +796,7 @@ created as follows:</p>
 <p>Such code extensions may be either specific to a metadata implementation
 in an organisation or sector, or for general usage. In the latter case,
 proposed new codes should be submitted
-(to&#160;mailto:standards@agi.org[<a href="mailto:gemini@agi.org.uk">gemini@agi.org.uk</a>)
+(to <a href="mailto:standards@agi.org">gemini@agi.org.uk</a>)
 for inclusion in the next version of UK GEMINI2. It is expected that
 future editions of UK GEMINI will incorporate such modified code lists.</p>
 </div>
@@ -822,10 +807,12 @@ for the purposes of INSPIRE.</strong></p>
 </div>
 </div>
 </div>
+</div>
+<div class="sect1">
+<h2 id="_possible_metadata_errors"><a class="anchor" href="#_possible_metadata_errors"></a><a class="link" href="#_possible_metadata_errors">3. Possible metadata errors</a></h2>
+<div class="sectionbody">
 <div class="sect2">
-<h3 id="_errors3_possible_metadata_errors"><a class="anchor" href="#_errors3_possible_metadata_errors"></a><a class="link" href="#_errors3_possible_metadata_errors">[<mark>errors]</mark>#&#160;3. Possible metadata errors</a></h3>
-<div class="sect3">
-<h4 id="_3_1_impact_of_metadata_errors"><a class="anchor" href="#_3_1_impact_of_metadata_errors"></a><a class="link" href="#_3_1_impact_of_metadata_errors"><strong><em><span id="3" class="1">#</span>#3.1 Impact of metadata errors</em></strong></a></h4>
+<h3 id="_impact_of_metadata_errors"><a class="anchor" href="#_impact_of_metadata_errors"></a><a class="link" href="#_impact_of_metadata_errors">3.1. Impact of metadata errors</a></h3>
 <div class="paragraph">
 <p>Errors having the greatest impact are likely to be those that affect
 searches based on:</p>
@@ -833,14 +820,14 @@ searches based on:</p>
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Where?</strong>&#160;- geographical extent expressed in latitude and longitude or
+<p><strong>Where?</strong> - geographical extent expressed in latitude and longitude or
 some named standard area (e.g. administrative area, postcode, country);</p>
 </li>
 <li>
-<p><strong>What?</strong>&#160;- theme, subject or topic;</p>
+<p><strong>What?</strong> - theme, subject or topic;</p>
 </li>
 <li>
-<p><strong>When?</strong>&#160;- date when data resource was current.</p>
+<p><strong>When?</strong> - date when data resource was current.</p>
 </li>
 </ul>
 </div>
@@ -853,8 +840,8 @@ categorisation of data subject or topic, will further erode the quality
 of the discovery service.</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_3_2_effect_on_searches"><a class="anchor" href="#_3_2_effect_on_searches"></a><a class="link" href="#_3_2_effect_on_searches"><strong><em><span id="3" class="2">#</span>#3.2 Effect on searches</em></strong></a></h4>
+<div class="sect2">
+<h3 id="_effect_on_searches"><a class="anchor" href="#_effect_on_searches"></a><a class="link" href="#_effect_on_searches">3.2. Effect on searches</a></h3>
 <div class="paragraph">
 <p>Having discovered a number of candidate data resources, the discovery
 service user then assesses the likelihood that any of these meet their
@@ -873,8 +860,8 @@ uncommon for this to be out-of-date or have incorrect URLs or contact
 details.</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_3_3_prevention_and_correction_of_errors"><a class="anchor" href="#_3_3_prevention_and_correction_of_errors"></a><a class="link" href="#_3_3_prevention_and_correction_of_errors"><strong><em><span id="3" class="3">#</span>#3.3 Prevention and correction of errors</em></strong></a></h4>
+<div class="sect2">
+<h3 id="_prevention_and_correction_of_errors"><a class="anchor" href="#_prevention_and_correction_of_errors"></a><a class="link" href="#_prevention_and_correction_of_errors">3.3. Prevention and correction of errors</a></h3>
 <div class="paragraph">
 <p>Prevention and correction of these errors is usually a combination of:</p>
 </div>
@@ -911,13 +898,11 @@ light of experience and aims to improve overall metadata quality.</p>
 </ul>
 </div>
 <div class="paragraph">
-<p>Further guidance on how to prevent and correct errors is given in Part 3
-[<a href="https://www.agi.org.uk/gemini/40-gemini/1047-metadata-guidelines-for-geospatial-data-resources-part-3">3</a>]&#160;of
-these Guidelines.</p>
+<p>Further guidance on how to prevent and correct errors is given in <a href="https://www.agi.org.uk/wp-content/uploads/2020/12/METADATAGUIDELINESPART32015-04.pdf">Part 3</a> of these Guidelines.</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_3_4_common_errors"><a class="anchor" href="#_3_4_common_errors"></a><a class="link" href="#_3_4_common_errors"><strong><em><span id="3" class="4">#</span>#3.4 Common errors</em></strong></a></h4>
+<div class="sect2">
+<h3 id="_common_errors"><a class="anchor" href="#_common_errors"></a><a class="link" href="#_common_errors">3.4. Common errors</a></h3>
 <div class="paragraph">
 <p>Some common errors that lead to inconsistent results when searching
 across metadatasets are:</p>
@@ -990,8 +975,8 @@ and dates documented using one metadata record.</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Have clear guidance on the “chunking” of data resources for individual
-documentation[See&#160;<a href="https://www.agi.org.uk/gemini/40-gemini/1052-metadata-guidelines-for-geospatial-data-resources-part-1">Part
-1 of these Guidelines</a>] based on:</p>
+documentation (See <a href="1052-metadata-guidelines-for-geospatial-data-resources-part-1">Part
+1 of these Guidelines</a>) based on:</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -1012,6 +997,7 @@ documentation[See&#160;<a href="https://www.agi.org.uk/gemini/40-gemini/1052-met
 </li>
 </ol>
 </div>
+<br/>
 <div class="paragraph">
 <p>Introduce checks to ensure consistency of approach across all metadata.</p>
 </div></div></td>
@@ -1044,6 +1030,7 @@ be used. Where named extents form part of a nesting hierarchy (e.g.
 administrative areas) then any guidance should cover the possible need
 for inclusion of levels in the hierarchy.</p>
 </div>
+<br/>
 <div class="paragraph">
 <p>Introduce checks to ensure consistency of approach across all metadata.</p>
 </div></div></td>
@@ -1061,9 +1048,11 @@ topics.</p></td>
 <p>Use guidance on the recording of topics or themes to promote
 consistency.</p>
 </div>
+<br/>
 <div class="paragraph">
 <p>Use closed lists wherever possible and discourage the use of free text.</p>
 </div>
+<br/>
 <div class="paragraph">
 <p>Introduce checks to ensure consistency of approach across all metadata.</p>
 </div></div></td>
@@ -1075,6 +1064,7 @@ consistency.</p>
 date when the data was captured or last updated and the date when the
 data resource was released, published or made available.</p>
 </div>
+<br/>
 <div class="paragraph">
 <p>There can be further inconsistencies between the frequency of update and
 the recorded currency of the data resource. This can lead to &#160; false
@@ -1094,6 +1084,7 @@ years ago.</p>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Use guidance on the recording of different dates to promote consistency.</p>
 </div>
+<br/>
 <div class="paragraph">
 <p>Introduce checks, preferably by software, to ensure that the ordering of
 dates is consistent.</p>
@@ -1110,6 +1101,7 @@ National Grid of Great Britain.</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Include frequently used standard names in any internal guidance.</p>
 </div>
+<br/>
 <div class="paragraph">
 <p>Introduce checks to ensure consistency of approach across all metadata.</p>
 </div></div></td>
@@ -1212,6 +1204,7 @@ against the wrong metadata element.</p></td>
 <p>Use guidance on the definition and use of the metadata elements
 especially those most commonly confused (see examples).</p>
 </div>
+<br/>
 <div class="paragraph">
 <p>Introduce training and checks to ensure correct use of elements.</p>
 </div></div></td>
@@ -1265,67 +1258,39 @@ user.</p>
 </table>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_4_guidance_for_individual_metadata_elements"><a class="anchor" href="#_4_guidance_for_individual_metadata_elements"></a><a class="link" href="#_4_guidance_for_individual_metadata_elements"><span id="guidance">#</span>#4. Guidance for individual metadata elements</a></h3>
+</div>
+<div class="sect1">
+<h2 id="_guidance_for_individual_metadata_elements"><a class="anchor" href="#_guidance_for_individual_metadata_elements"></a><a class="link" href="#_guidance_for_individual_metadata_elements">4. Guidance for individual metadata elements</a></h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>Detailed guidance on how to create each of these elements can be found
 here:</p>
 </div>
 <div class="paragraph">
-<p><a href="https://www.agi.org.uk/gemini/40-gemini/1062-gemini-datasets-and-data-series/">GEMINI
-- Datasets and data series</a></p>
+<p><a href="datasets.html">GEMINI - Datasets and data series</a></p>
 </div>
 <div class="paragraph">
-<p><a href="https://www.agi.org.uk/gemini/40-gemini/1063-gemini-services/">GEMINI -
-Services</a></p>
+<p><a href="services.html">GEMINI - Services</a></p>
 </div>
 <div class="paragraph">
-<p>Each metadata element is listed&#160;separately, as described
-in&#160;<a href="https://www.agi.org.uk/gemini/40-gemini/1244-uk-gemini-introduction#4.3">UK
-GEMINI Introduction</a>.</p>
+<p>Each metadata element is listed separately, as described
+in <a href="1051-uk-gemini-v2-2-specification-for-discovery-metadata-for-geospatial-resources.html#4.3">UK GEMINI Introduction</a>.</p>
 </div>
 <div class="paragraph">
 <p><em>Last updated: May 2018</em></p>
 </div>
 <div class="paragraph">
 <p><a href="http://creativecommons.org/licenses/by/4.0/"><span class="image"><img src="https://i.creativecommons.org/l/by/4.0/88x31.png" alt="Creative Commons Licence"></span></a><br>
-This work is licensed under
-a&#160;<a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons
-Attribution 4.0 International License</a></p>
-</div>
+This work is licensed under a <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a></p>
 </div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-12-20 14:37:20 UTC
+Last updated 2023-08-30 10:53:23 UTC
 </div>
 </div>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  messageStyle: "none",
-  tex2jax: {
-    inlineMath: [["\\(", "\\)"]],
-    displayMath: [["\\[", "\\]"]],
-    ignoreClass: "nostem|nolatexmath"
-  },
-  asciimath2jax: {
-    delimiters: [["\\$", "\\$"]],
-    ignoreClass: "nostem|noasciimath"
-  },
-  TeX: { equationNumbers: { autoNumber: "none" } }
-})
-MathJax.Hub.Register.StartupHook("AsciiMath Jax Ready", function () {
-  MathJax.InputJax.AsciiMath.postfilterHooks.Add(function (data, node) {
-    if ((node = data.script.parentNode) && (node = node.parentNode) && node.classList.contains("stemblock")) {
-      data.math.root.display = "block"
-    }
-    return data
-  })
-})
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_HTMLorMML"></script>
     <div class="x-bar x-bar-footer x-bar-h x-bar-relative x-bar-outer-spacers e1248-1 myo-0 myo-1" data-x-bar="{&quot;id&quot;:&quot;e1248-1&quot;,&quot;region&quot;:&quot;footer&quot;,&quot;height&quot;:&quot;auto&quot;}">
 <div class="x-bg" aria-hidden="true">
 <div class="x-bg-layer-lower-image" style=" background-image: url(https://www.agi.org.uk/wp-content/uploads/2020/07/pronto-bg.png); background-repeat: repeat; background-position: center; background-size: 150px;">

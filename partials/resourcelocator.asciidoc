@@ -1,4 +1,4 @@
-= Resource locator
+== Resource locator
 include::includes/partials-attributes.adoc[]
 [#19]
 
@@ -102,8 +102,7 @@ http://myserver/INSPIREWM/MapServer/WMSServer?service=WMS&request=GetCapabilitie
 endif::[]
 |===
 
-Corresponding element in other standards...
-
+.Corresponding element in other standards...
 [%collapsible]
 ====
 |===
@@ -120,19 +119,19 @@ CI_OnlineResource.linkage |Equivalent
 |===
 ====
 
-Change history...
-
+.Change history...
 [%collapsible]
 ====
 GEMINI 1 to 2.0: Modification of Online resource
 ====
 
-Encoding guidelines...
-
+.Encoding guidelines...
 [%collapsible]
 ====
+[cols="a,a"]
 |===
-|Guidelines a|
+|Guidelines
+|
 ifdef::variant-dataset[]
 . The two examples illustrate different uses of Resource locator.
 Example one gives direct access to the dataset. Example two gives the
@@ -158,25 +157,24 @@ https://inspire.ec.europa.eu/documents/inspire-metadata-implementing-rules-techn
 guidance] link:component/content/article?id=1047[[9]]. If the format and
 version values are known, then they should be given (see link:#21[Data
 format]).
-
-|Example a|
-Example one, showing only required linkage content (for a dataset)
-
-....
+|Example one, showing only required linkage content (for a dataset)
+|
+[source,xml]
+----
 include::../snippets/dataset-resourcelocator-required.xml[]
-....
-
-Example two - including name, description, and indication of function
+----
+| Example two - including name, description, and indication of function
 (for a dataset ordering page)
-
-....
+|
+[source,xml]
+----
 include::../snippets/dataset-resourcelocator-information.xml[]
-....
-
+----
 |===
 endif::[]
 ifdef::variant-service[]
-|Guidelines a|
+|Guidelines
+|
 . In the examples, the URLs provided are for OGC GetCapabilities
 requests.
 . The gmd:transferOptions XML element of gmd:MD_Distribution is used to
@@ -219,41 +217,38 @@ five entity references:
 * &gt; - The character >
 * &quot; - The character "
 * &apos; - The character '
-
-|Example a|
-`Example one, showing only required linkage content (for a WMS)                   `
-
-....
+|Example one, showing only required linkage content (for a WMS)
+|
+[source,xml]
+----
 include::../snippets/service-resourcelocator-required.xml[]
-....
-
-Example Two - including name, description, and indication of function
+----
+| Example Two - including name, description, and indication of function
 (for a WMS)
-
-....
+|
+[source,xml]
+----
 include::../snippets/service-resourcelocator-function-wms.xml[]
-....
-
-Example Three - including name, description, and indication of function
+----
+|Example Three - including name, description, and indication of function
 (for a WCS)
-
-....
+|
+[source,xml]
+----
 include::../snippets/service-resourcelocator-function-wcs.xml[]
-....
-
-Example Four - including name, description, and indication of function
+----
+|Example Four - including name, description, and indication of function
 (for an invocable spatial data service)
-
-....
+|
+[source,xml]
+----
 include::../snippets/service-resourcelocator-function-invocable.xml[]
-....
-
+----
 |===
 endif::[]
 ====
 
-Metadata errors observed...
-
+.Metadata errors observed...
 [%collapsible]
 ====
 |===
