@@ -1,5 +1,5 @@
 
-# Gemini documentation DEV branch
+# Gemini documentation
 
 * [Services](https://agiorguk.github.io/gemini-dev/1063-gemini-services.html) 
 * [Datasets](https://agiorguk.github.io/gemini-dev/1062-gemini-datasets-and-data-series.html)
