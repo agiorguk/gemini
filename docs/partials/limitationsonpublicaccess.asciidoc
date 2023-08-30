@@ -1,4 +1,4 @@
-= Limitations on public access
+== Limitations on public access
 include::includes/partials-attributes.adoc[]
 [#25]
 
@@ -52,8 +52,7 @@ types of usage, or constraints on the use that can be made of the data.
 |Revision date |June 2021
 |===
 
-Corresponding element in other standards...
-
+.Corresponding element in other standards...
 [%collapsible]
 ====
 |===
@@ -76,8 +75,7 @@ endif::[]
 |===
 ====
 
-Change history...
-
+.Change history...
 [%collapsible]
 ====
 . GEMINI 1 to 2.0: Change of name from 'access constraint', and
@@ -89,13 +87,13 @@ accessConstraint making domain free text.
 . GEMINI 2.3 June 2021 fixed typo in Guidance 6 (a) and (f)
 ====
 
-Encoding guidelines...
-
+.Encoding guidelines...
 [%collapsible]
 ====
-[width="100%",cols="50%,50%",]
+[cols="a,a"]
 |===
-|Guidelines a|
+|Guidelines
+|
 . This element shall be encoded in a different
 resourceConstraints/MD_LegalConstraints XML element to GEMINI element 26
 Use constraints
@@ -113,37 +111,33 @@ http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess
 . Free text content cannot be empty
 . To encode multiple limitations, include more than one
 gmd:otherConstraints element
-
-|Example a|
-Example One
-
-....
+|Example One
+|
+[source,xml]
+----
 ifdef::variant-dataset[]
 include::../snippets/dataset-limitationsonpublicaccess.xml[]
 endif::[]
 ifdef::variant-service[]
 include::../snippets/service-limitationsonpublicaccess.xml[]
 endif::[]
-
-....
-
-Example Two - no limitations
-
-....
+----
+| Example Two - no limitations
+|
+[source,xml]
+----
 include::../snippets/limitationsonpublicaccess-nolimitations.xml[]      
-....
-
-Example Three - two limitations
-
-....
+----
+| Example Three - two limitations
+|
+[source,xml]
+----
 include::../snippets/limitationsonpublicaccess-twolimitations.xml[]   
-....
-
+----
 |===
 ====
 
-Metadata errors observed...
-
+.Metadata errors observed...
 [%collapsible]
 ====
 |===

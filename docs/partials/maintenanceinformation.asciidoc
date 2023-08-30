@@ -1,4 +1,4 @@
-= Maintenance information
+== Maintenance information
 include::includes/partials-attributes.adoc[]
 [#53]
 
@@ -58,8 +58,7 @@ theme specific information
 |Revision date |April 2020
 |===
 
-Corresponding element in other standards...
-
+.Corresponding element in other standards...
 [%collapsible]
 ====
 |===
@@ -76,31 +75,28 @@ more than one resourceMaintenance
 |===
 ====
 
-Change history...
-
+.Change history...
 [%collapsible]
 ====
 New element in GEMINI 2.3
 ====
 
-Encoding guidelines...
-
+.Encoding guidelines...
 [%collapsible]
 ====
+[cols="a,a"]
 |===
 |Guidelines |No specific rules for this metadata element
-
-|Example a|
-
-....
+|Example
+|
+[source,xml]
+----
 include::../snippets/maintenanceinformation.xml[]       
-....
-
+----
 |===
 ====
 
-Metadata errors observed...
-
+.Metadata errors observed...
 [%collapsible]
 ====
 No error information available

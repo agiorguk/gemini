@@ -1,4 +1,4 @@
-= Data quality
+== Data quality
 include::includes/partials-attributes.adoc[]
 [#52]
 
@@ -228,8 +228,7 @@ guidance as interoperability metadata for datasets and dataset series
 |Revision date |May 2018
 |===
 
-Corresponding element in other standards...
-
+.Corresponding element in other standards...
 [%collapsible]
 ====
 |===
@@ -249,20 +248,19 @@ Other types are specified in the data specifications |
 |===
 ====
 
-Change history...
-
+.Change history...
 [%collapsible]
 ====
 New element in GEMINI 2.3
 ====
 
-Encoding guidelines...
-
+.Encoding guidelines...
 [%collapsible]
 ====
+[cols="a,a"]
 |===
-|Guidelines a|
-There shall be exactly one gmd:dataQualityInfo/gmd:DQ_DataQuality
+|Guidelines
+| There shall be exactly one gmd:dataQualityInfo/gmd:DQ_DataQuality
 element scoped to the entire described data set or data set series. So
 if the scope of the quality measure is the entire dataset or series,
 then the result shall be in the same DQ_DataQuality element as the
@@ -288,31 +286,29 @@ declared as xs:double.
 As well as the mandatory elements, it is also recommended to supply a
 name of the measure, a short description of the evaluation method, and a
 date for the evaluation of the consistency check
-
-|Example a|
-
-....
+|Example
+|
+[source,xml]
+----
 include::../snippets/dataquality-mixed.xml[]          
-....
-
-Example two - Topological consistency
-
-....
+----
+| Example two - Topological consistency
+|
+[source,xml]
+----
 include::../snippets/dataquality-topo-qualitative.xml[]  
-....
-
-Example three ~ Topological consistency, showing a quantitative
+----
+| Example three ~ Topological consistency, showing a quantitative
 topological consistency report with recommended elements included
-
-....
+|
+[source,xml]
+----
 include::../snippets/dataquality-topo-quantitative.xml[] 
-....
-
+----
 |===
 ====
 
-Metadata errors observed...
-
+.Metadata errors observed...
 [%collapsible]
 ====
 No error information available

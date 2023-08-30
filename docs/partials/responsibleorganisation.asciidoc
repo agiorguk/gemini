@@ -1,4 +1,4 @@
-= Responsible organisation
+== Responsible organisation
 include::includes/partials-attributes.adoc[]
 [#23]
 
@@ -112,8 +112,7 @@ acting as distributor, publisher, author, etc. !distributor
 |Revision date |July 2009
 |===
 
-Corresponding element in other standards...
-
+.Corresponding element in other standards...
 [%collapsible]
 ====
 |===
@@ -137,8 +136,7 @@ ifdef::variant-service[]
 endif::[]
 ====
 
-Change history...
-
+.Change history...
 [%collapsible]
 ====
 GEMINI 1 to 2.0: This has been generalised from Distributor (and
@@ -147,12 +145,13 @@ Originator) to cover a range of possible roles, by the addition of
 corrected.
 ====
 
-Encoding guidelines...
-
+.Encoding guidelines...
 [%collapsible]
 ====
+[cols="a,a"]
 |===
-|Guidelines a|
+|Guidelines
+|
 . The encoding example for responsible organisation is shown below. The
 example shows the minimum required information.
 . The format of address and contact information is described at
@@ -161,28 +160,26 @@ more fully populated example.
 . Note on role code: the UK Location portal (data.gov.uk site)
 interprets ISO 'owner' as Data Provider, and ISO 'publisher' as Data
 Publisher.
-
-|Example a|
 ifdef::variant-dataset[]
-Example One (datasets/series)
-
-....
+| Example One (datasets/series)
+|
+[source,xml]
+----
 include::../snippets/dataset-responsibleorganisation.xml[]
-....
+----
 endif::[]
 ifdef::variant-service[]
-Example One (service)
-
-....
+| Example One (service)
+|
+[source,xml]
+----
 include::../snippets/service-responsibleorganisation.xml[]
-....
+----
 endif::[]
-
 |===
 ====
 
-Metadata errors observed...
-
+.Metadata errors observed...
 [%collapsible]
 ====
 No error information available
