@@ -1,23 +1,23 @@
 
-# Gemini documentation
+# Gemini documentation DEV branch
 
-* [Services](https://agiorguk.github.io/gemini/1063-gemini-services.html) 
-* [Datasets](https://agiorguk.github.io/gemini/1062-gemini-datasets-and-data-series.html)
+* [Services](https://agiorguk.github.io/gemini-dev/1063-gemini-services.html) 
+* [Datasets](https://agiorguk.github.io/gemini-dev/1062-gemini-datasets-and-data-series.html)
 
 The files below have been converted but have not been altered to work using the new workflow. Consequently internal links will go to the agi website and there may be other errors.
-* [1037-uk-gemini-standard-and-inspire-implementing-rules](https://agiorguk.github.io/gemini/1037-uk-gemini-standard-and-inspire-implementing-rules.html)
-* [1048-uk-gemini-encoding-guidance](https://agiorguk.github.io/gemini/1048-uk-gemini-encoding-guidance.html)
-* [1049-metadata-guidelines-for-geospatial-data-resources-part-2](https://agiorguk.github.io/gemini/1049-metadata-guidelines-for-geospatial-data-resources-part-2.html)
-* [1051-uk-gemini-v2-2-specification-for-discovery-metadata-for-geospatial-resources](https://agiorguk.github.io/gemini/1051-uk-gemini-v2-2-specification-for-discovery-metadata-for-geospatial-resources.html)
-* [1052-metadata-guidelines-for-geospatial-data-resources-part-1](https://agiorguk.github.io/gemini/1052-metadata-guidelines-for-geospatial-data-resources-part-1.html)
-* [1053-common-metadata-errors-uk-location-discovery-metadata-service](https://agiorguk.github.io/gemini/1053-common-metadata-errors-uk-location-discovery-metadata-service.html)
-* [1054-operational-guide](https://agiorguk.github.io/gemini/1054-operational-guide.html)
-* [1055-uk-gemini-major-changes-since-1-0](https://agiorguk.github.io/gemini/1055-uk-gemini-major-changes-since-1-0.html)
-* [1056-glossary](https://agiorguk.github.io/gemini/1056-glossary.html)
-* [1046-xml-element-order](https://agiorguk.github.io/gemini/1046-xml-element-order.html)
-* [1250-element-summary](https://agiorguk.github.io/gemini/1250-element-summary.html)
+* [1037-uk-gemini-standard-and-inspire-implementing-rules](https://agiorguk.github.io/gemini-dev/1037-uk-gemini-standard-and-inspire-implementing-rules.html)
+* [1048-uk-gemini-encoding-guidance](https://agiorguk.github.io/gemini-dev/1048-uk-gemini-encoding-guidance.html)
+* [1049-metadata-guidelines-for-geospatial-data-resources-part-2](https://agiorguk.github.io/gemini-dev/1049-metadata-guidelines-for-geospatial-data-resources-part-2.html)
+* [1051-uk-gemini-v2-2-specification-for-discovery-metadata-for-geospatial-resources](https://agiorguk.github.io/gemini-dev/1051-uk-gemini-v2-2-specification-for-discovery-metadata-for-geospatial-resources.html)
+* [1052-metadata-guidelines-for-geospatial-data-resources-part-1](https://agiorguk.github.io/gemini-dev/1052-metadata-guidelines-for-geospatial-data-resources-part-1.html)
+* [1053-common-metadata-errors-uk-location-discovery-metadata-service](https://agiorguk.github.io/gemini-dev/1053-common-metadata-errors-uk-location-discovery-metadata-service.html)
+* [1054-operational-guide](https://agiorguk.github.io/gemini-dev/1054-operational-guide.html)
+* [1055-uk-gemini-major-changes-since-1-0](https://agiorguk.github.io/gemini-dev/1055-uk-gemini-major-changes-since-1-0.html)
+* [1056-glossary](https://agiorguk.github.io/gemini-dev/1056-glossary.html)
+* [1046-xml-element-order](https://agiorguk.github.io/gemini-dev/1046-xml-element-order.html)
+* [1250-element-summary](https://agiorguk.github.io/gemini-dev/1250-element-summary.html)
 
-Links above this are to the GitHub pages published in https://agiorguk.github.io/gemini/
+Links above this are to the GitHub pages published in https://agiorguk.github.io/gemini-dev/
 
 ## Services and Datasets workflow
 
