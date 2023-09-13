@@ -64,6 +64,7 @@ link:1054-operational-guide.html#Geonetwork[5.2 Geonetwork publishing solution]
 
 link:1054-operational-guide.html#Third_Party[5.3 Third party solutions]
 
+
 == 1. Introduction
 [#Intro]
 
@@ -96,6 +97,7 @@ instance, please use the appropriate contact information listed under
 “Where to obtain more information” below.
 
 === 1.1 Target Audience
+
 [#Target]
 
 The primary audience for the Guide are business managers and information
@@ -112,6 +114,7 @@ is intended to operate.
 
 === 1.2 Assumed Knowledge
 [#Assumed]
+
 
 This guide assumes that the reader is familiar with the creation and
 management of metadata and has read the UK Location “Getting Started'
