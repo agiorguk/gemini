@@ -31,13 +31,13 @@ Where content differs between datasets and services, an [asciidoctor conditional
 To generate using the asciidoctor docker container, use the `-a` parameter, from the docs folder:
 
 ```
-docker run --rm -v $(pwd):/documents/ asciidoctor/docker-asciidoctor asciidoctor -a docinfo1 -a stylesheet=./assets/gemini.css -T templates -E slim -a variant-dataset *.adoc *.asciidoc
+docker run --rm -v $(pwd):/documents/ asciidoctor/docker-asciidoctor asciidoctor -a docinfo1 -T templates -E slim -a variant-dataset *.adoc *.asciidoc
 ```
 
 Then repeat for services:
 
 ```
-docker run --rm -v $(pwd):/documents/ asciidoctor/docker-asciidoctor asciidoctor -a docinfo1 -a stylesheet=./assets/gemini.css  -T templates -E slim -a variant-service *.adoc *.asciidoc
+docker run --rm -v $(pwd):/documents/ asciidoctor/docker-asciidoctor asciidoctor -a docinfo1 -T templates -E slim -a variant-service *.adoc *.asciidoc
 ```
 
 ## Styling

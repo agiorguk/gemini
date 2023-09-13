@@ -1,11 +1,7 @@
-== UK GEMINI v2-2 Specification for Discovery Metadata for Geospatial Resources
+= UK GEMINI v2-2 Specification for Discovery Metadata for Geospatial Resources
 include::./includes/attributes.asciidoc[]
 
-Return to https://www.agi.org.uk/gemini/40-gemini/1037-uk-gemini-standard-and-inspire-implementing-rules[GEMINI
-2.3 home page]
-
-:sectnums:
-:sectnumlevels: 3
+Return to link:1037-uk-gemini-standard-and-inspire-implementing-rules[GEMINI 2.3 home page]
 
 == Foreword
 
@@ -230,9 +226,10 @@ the link:1250-element-summary[summary table].
 
 Details of the metadata elements are given in :
 
-link:datasets.html[GEMINI - Datasets and dataset series]
+link:1062-gemini-datasets-and-data-series.html[GEMINI - Datasets and dataset series]
 
-link:services.html[GEMINI - Services]
+link:1063-gemini-services.html[GEMINI - Services]
+
 
 Each element listed separately, with the following information:
 
