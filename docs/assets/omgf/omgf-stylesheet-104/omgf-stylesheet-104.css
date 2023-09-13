@@ -9,10 +9,10 @@
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url('https://github.com/agiorguk/gemini/blob/main/docs/assets/omgf/omgf-stylesheet-104/source-sans-pro-normal-400.eot');
+    src: url('./assets/omgf/omgf-stylesheet-104/source-sans-pro-normal-400.eot');
     src: 
-    url('https://github.com/agiorguk/gemini/blob/main/docs/assets/omgf/omgf-stylesheet-104/source-sans-pro-normal-400.woff2') format('woff2'),
-    url('https://github.com/agiorguk/gemini/blob/main/docs/assets/omgf/omgf-stylesheet-104/source-sans-pro-normal-400.woff') format('woff'),
-    url('https://github.com/agiorguk/gemini/blob/main/docs/assets/omgf/omgf-stylesheet-104/source-sans-pro-normal-400.ttf') format('ttf'),
-    url('https://github.com/agiorguk/gemini/blob/main/docs/assets/omgf/omgf-stylesheet-104/source-sans-pro-normal-400.svg') format('svg');
+    url('./assets/omgf/omgf-stylesheet-104/source-sans-pro-normal-400.woff2') format('woff2'),
+    url('./assets/omgf/omgf-stylesheet-104/source-sans-pro-normal-400.woff') format('woff'),
+    url('./assets/omgf/omgf-stylesheet-104/source-sans-pro-normal-400.ttf') format('ttf'),
+    url('./assets/omgf/omgf-stylesheet-104/source-sans-pro-normal-400.svg') format('svg');
 }
