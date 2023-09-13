@@ -10,59 +10,60 @@ Contents
 
 link:1054-operational-guide.html#Intro[1.Introduction]
 
-link:1054-operational-guide.html#1.1[1.1 Target audience]
+link:1054-operational-guide.html#Target[1.1 Target audience]
 
-link:1054-operational-guide.html#1.2[1.2 Assumed knowledge]
+link:1054-operational-guide.html#Assumed[1.2 Assumed knowledge]
 
-link:1054-operational-guide.html#1.3[1.3 DMS resources]
+link:1054-operational-guide.html#DMS[1.3 DMS resources]
 
-link:1054-operational-guide.html#1.4[1.4 Where to obtain more information]
+link:1054-operational-guide.html#Info[1.4 Where to obtain more information]
 
 link:1054-operational-guide.html#Pub_Dis_Met[2. Publishing Discovery Metadata]
 
-link:1054-operational-guide.html#2.1[2.1 Requirements on data providers and publishers]
+link:1054-operational-guide.html#Req[2.1 Requirements on data providers and publishers]
 
-link:1054-operational-guide.html#2.2[2.2 Accountability]
+link:1054-operational-guide.html#Account[2.2 Accountability]
 
-link:1054-operational-guide.html#2.3[2.3 Publishing discovery metadata for data]
+link:1054-operational-guide.html#PubDisMet_Data[2.3 Publishing discovery metadata for data]
 
-link:1054-operational-guide.html#2.4[2.4 Publishing discovery metadata for on-line services]
+link:1054-operational-guide.html#PubDisMet_Services[2.4 Publishing discovery metadata for on-line services]
 
-link:1054-operational-guide.html#2.5[2.5 Maintaining discovery metadata]
+link:1054-operational-guide.html#Maintenance[2.5 Maintaining discovery metadata]
 
-link:1054-operational-guide.html#2.6[2.6 Data sharing and charging and licensing]
+link:1054-operational-guide.html#Sharing[2.6 Data sharing and charging and licensing]
 
 link:1054-operational-guide.html#Dis_Met_Req[3. Discovery Metadata Requirements]
 
-link:1054-operational-guide.html#3.1[3.1 Elements of importance to the DMS]
+link:1054-operational-guide.html#Important_elements[3.1 Elements of importance to the DMS]
 
-link:1054-operational-guide.html#3.2[3.2 Data provider licence information]
+link:1054-operational-guide.html#DataProvider_Licence[3.2 Data provider licence information]
 
-link:1054-operational-guide.html#3.3[3.3 Metadata encoding]
+link:1054-operational-guide.html#Encoding[3.3 Metadata encoding]
 
-link:1054-operational-guide.html#3.4[3.4 Metadata validation]
+link:1054-operational-guide.html#Validation[3.4 Metadata validation]
 
-link:1054-operational-guide.html#3.5[3.5 Community extensions to UK GEMINI2]
+link:1054-operational-guide.html#Community_Extensions[3.5 Community extensions to UK GEMINI2]
 
-link:1054-operational-guide.html#3.6[3.6 Extensions to code lists]
+link:1054-operational-guide.html#CodeList_Extensions[3.6 Extensions to code lists]
 
-link:1054-operational-guide.html#3.7[3.7 Local guidance]
+link:1054-operational-guide.html#Guidance[3.7 Local guidance]
 
 link:1054-operational-guide.html#Pub_Dis_Met_rec[4. Publishing Discovery Metadata records]
 
-link:1054-operational-guide.html#4.1[4.1 Publishing discovery metadata records]
+link:1054-operational-guide.html#Pub_Dis_Met_rec_1[4.1 Publishing discovery metadata records]
 
-link:1054-operational-guide.html#4.2[4.2 Registering the harvest location]
+link:1054-operational-guide.html#Register_Harvest[4.2 Registering the harvest location]
 
-link:1054-operational-guide.html#4.3[4.3 Collection]
+link:1054-operational-guide.html#Collection[4.3 Collection]
 
 link:1054-operational-guide.html#Met_Pub_Tec[5. Metadata Publishing and Technology Choices]
 
-link:1054-operational-guide.html#5.1[5.1 UK Location metadata editor]
+link:1054-operational-guide.html#UKLME[5.1 UK Location metadata editor]
 
-link:1054-operational-guide.html#5.2[5.2 Geonetwork publishing solution]
+link:1054-operational-guide.html#Geonetwork[5.2 Geonetwork publishing solution]
 
-link:1054-operational-guide.html#5.3[5.3 Third party solutions]
+link:1054-operational-guide.html#Third_Party[5.3 Third party solutions]
+
 
 == 1. Introduction
 [#Intro]
@@ -96,7 +97,8 @@ instance, please use the appropriate contact information listed under
 “Where to obtain more information” below.
 
 === 1.1 Target Audience
-[#1.1]
+
+[#Target]
 
 The primary audience for the Guide are business managers and information
 officers, located within data provider organisations, and their
@@ -111,7 +113,8 @@ understanding of the UK Location Discovery Metadata Service and how it
 is intended to operate.
 
 === 1.2 Assumed Knowledge
-[#1.2]
+[#Assumed]
+
 
 This guide assumes that the reader is familiar with the creation and
 management of metadata and has read the UK Location “Getting Started'
@@ -146,7 +149,7 @@ If you as a Data Provider publish directly, then you will perform both
 the roles of Data Provider and Data Publisher.
 
 === 1.3 DMS Resources
-[#1.3]
+[#DMS]
 
 The latest versions of all the UK Location resources referred to in this
 guide can be found via the UK Location Resource Centre:
@@ -154,7 +157,7 @@ guide can be found via the UK Location Resource Centre:
 https://data.gov.uk/[http://data.gov.uk/location]
 
 === 1.4 Where to Obtain More Information
-[#1.4]
+[#Info]
 
 The latest information, and additional resources, can be obtained by
 visiting the{nbsp}UK Location{nbsp}web site.
@@ -169,17 +172,17 @@ Wales or Northern Ireland, please contact:
 
 Alex Ramage, Spatial Information Policy, Scottish Government
 
-Email:{nbsp}[#cloak0b5016abbce4537d6078242300c59c9c]#Alex.Ramage@transportscotland.gsi.gov.uk#
+Email:{nbsp}Alex.Ramage@transportscotland.gsi.gov.uk
 
 *Wales*
 
 Geography & Technology, Welsh Assembly Government
 
-E-mail:{nbsp}[#cloak0de48b02b62ff6b0733df4ab33e5b829]#mailto:Bill.Oates@wales.gsi.gov.uk[data@wales.gsi.gov.uk]#
+E-mail:{nbsp}data@wales.gsi.gov.uk
 
 *Northern Ireland*
 
-Email:{nbsp}[#cloak4e2ac9d8ddb12cb122f38a77142a18f4]#ProgrammeOffice@dfpni.gov.uk#{nbsp}or
+Email:{nbsp}ProgrammeOffice@dfpni.gov.uk{nbsp}or
 visit the{nbsp}Spatial NI{nbsp}website at{nbsp}https://www.spatialni.gov.uk/
 
 == 2. Publishing Discovery Metadata
@@ -192,7 +195,7 @@ metadata catalogue, which forms part of the public data access portal,
 data.gov.uk.
 
 === 2.1 Requirements on Data Providers and Publishers
-[#2.1]
+[#Req]
 
 Deciding to publish data into UK Location is a major commitment. INSPIRE
 and UK Location is not a simple cataloguing service of what data exists
@@ -248,7 +251,7 @@ listed in the INSPIRE Data Specifications:
 [link:1047-metadata-guidelines-for-geospatial-data-resources-part-3[8]]
 
 === 2.2 Accountability
-[#2.2]
+[#Account]
 
 Accountability for publishing data and associated resources rests with
 you the Data Provider. If you are a Data Provider and are publishing
@@ -259,7 +262,7 @@ Data Provider, e.g. in relation to INSPIRE compliance and conformance to
 INSPIRE and UK Location technical guidance.
 
 === 2.3 Publishing Discovery Metadata for Data
-[#2.3]
+[#PubDisMet_Data]
 
 The process for publishing metadata records for data is shown as a
 process model below.
@@ -310,7 +313,7 @@ errors are found, then the Data Publisher will need to correct these and
 re-submit the resource.
 
 === 2.4 Publishing Discovery Metadata for On-line Services
-[#2.4]
+[#PubDisMet_Services]
 
 The process for publishing metadata records for on-line services is
 shown as a process model below.
@@ -338,7 +341,7 @@ an existing service, in which case it will be an update of the existing
 registration.
 
 ==== 2.5 Maintaining Discovery Metadata
-[#2.5]
+[#Maintenance]
 
 UK Location requires that Data Providers and their Data Publishers
 maintain their published metadata records in line with the INSPIRE
@@ -349,7 +352,7 @@ view service, then you are responsible for ensuring that these changes
 are updated in your metadata.
 
 ==== 2.6 Data Sharing and Charging and Licensing
-[#2.6]
+[#Sharing]
 
 Data sharing, including charging and licensing, 3rd party intellectual
 property, and e-commerce issues are covered under separate UK Location
@@ -394,7 +397,7 @@ For metadata describing services,
 click{nbsp}link:1063-gemini-services[here].
 
 === 3.1 Elements of importance to the DMS
-[#3.1]
+[#Important_elements]
 
 Some metadata elements are particularly important to the operation of
 the DMS, rather than to the users of the DMS.
@@ -447,7 +450,7 @@ further information about a service.
 |===
 
 === 3.2 Data Provider Licence information
-[#3.2]
+[#DataProvider_Licence]
 
 The following Data Provider licensing information must be provided:
 
@@ -467,7 +470,7 @@ the Use Constraints text field exactly as quoted here, for example “Open
 Government Licence”.
 
 === 3.3 Metadata Encoding
-[#3.3]
+[#Encoding]
 
 UK Location discovery metadata records must be published as an
 Extensible Markup Language (XML) document. This must follow
@@ -476,7 +479,7 @@ Location UK GEMINI Encoding
 Guidance]{nbsp}[link:1047-metadata-guidelines-for-geospatial-data-resources-part-3.html[28]].
 
 === 3.4 Metadata Validation
-[#3.4]
+[#Validation]
 
 Published discovery metadata XML document resources will be validated in
 a three stage process, using:
@@ -492,7 +495,7 @@ on using its Schematron rules
 [link:1047-metadata-guidelines-for-geospatial-data-resources-part-3[29]].
 
 === 3.5 Community Extensions to UK GEMINI2
-[#3.5]
+[#Community_Extensions]
 
 Within a given organisation or thematic community, there may be the need
 to record additional items of metadata to meet local requirements.
@@ -505,7 +508,7 @@ record XML document. These elements must be taken from ISO 19115 and be
 encoded in conformance with ISO 19139.
 
 === 3.6 Extension to Code Lists
-[#3.7]
+[#CodeList_Extensions]
 
 UK GEMINI2 includes a number of code lists taken from ISO 19115. Within
 a given organisation or thematic community, you may wish to extend these
@@ -515,7 +518,7 @@ wish to extend a code list for an INSPIRE metadata element, please
 contact the UK Location Coordination Unit.
 
 === 3.7 Local Guidance
-[#3.7]
+[#Guidance]
 
 The type of data being published will have a strong bearing on the
 content of the metadata created. It is strongly recommended that data
@@ -537,7 +540,7 @@ makes them available within data.gov.uk, and for further collection on
 to Europe.
 
 === 4.1 Publishing Discovery Metadata records
-[#4.1]
+[#Pub_Dis_Met_rec_1]
 
 This involves transferring your completed discovery metadata records to
 an on-line location, which can be machine accessed through the Internet.
@@ -600,7 +603,7 @@ Filtering, by category or element, please contact the UK Location
 Coordination Unit, using the contact form at:{nbsp}https://defra.gov.uk/.
 
 === 4.2 Registering the harvest location
-[#4.2]
+[#Register_Harvest]
 
 UK Location discovery metadata records are registered using the UK
 Government data publishing and discovery
@@ -735,7 +738,7 @@ at an interval specified by the Data Publisher
 address specified by the Data Publisher, e.g. to a central error log
 
 === 4.3 Collection
-[#4.3]
+[#Collection]
 
 The collection task created as described above is only run when
 requested, that is, when you click the ‘Refresh’ button for that harvest
@@ -867,7 +870,7 @@ it is recommended that you then discuss your specific requirements with
 your IT department and/or system supplier.
 
 === 5.1 UK Location Metadata Editor
-[#5.1]
+[#UKLME]
 
 UK Location includes its own Metadata Editor that can be used by Data
 Providers and Publishers to create compliant discovery metadata records.
@@ -881,7 +884,7 @@ For more information, to register for the on-line service or to download
 the configuration package, please visit the UK Location Resource Centre.
 
 === 5.2 GeoNetwork Publishing Solution
-[#5.2]
+[#Geonetwork
 
 The use of GeoNetwork as the basis for the UK Location Metadata Editor
 provides the option for Data Providers and Publishers to extend a local
@@ -898,7 +901,7 @@ products, please
 visit:{nbsp}http://geonetwork-opensource.org/[http://geonetwork-opensource.org]
 
 === 5.3 Third Party Solutions
-[#5.3]
+[#Third_Party]
 
 Most of the providers of Geospatial Information Systems provide metadata
 creation and publishing tools as part of their solution packages.
