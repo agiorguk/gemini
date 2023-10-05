@@ -1,7 +1,7 @@
 = UK GEMINI v2-2 Specification for Discovery Metadata for Geospatial Resources
 include::./includes/attributes.asciidoc[]
 
-Return to link:1037-uk-gemini-standard-and-inspire-implementing-rules[GEMINI 2.3 home page]
+Return to link:1037-uk-gemini-introduction[GEMINI 2.3 home page]
 
 == Foreword
 
