@@ -4,7 +4,7 @@ include::./includes/attributes.asciidoc[]
 
 Creating metadata using UK GEMINI (v2.3) May 2018 -{nbsp}_being revised_
 
-Return to link:1037-uk-gemini-standard-and-inspire-implementing-rules[GEMINI 2.3 home page]
+Return to link:1037-uk-gemini-introduction.html[GEMINI 2.3 home page]
 
 :sectnums:
 :sectnumlevels: 3
