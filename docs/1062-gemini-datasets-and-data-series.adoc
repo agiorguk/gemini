@@ -45,7 +45,7 @@ include::./includes/attributes.asciidoc[]
 <<16, Vertical extent information>> +
 |===
 
-Return to link:1037-uk-gemini-standard-and-inspire-implementing-rules.html[GEMINI
+Return to link:1037-uk-gemini-introduction.html[GEMINI
 2.3 home page]
 
 '''''
