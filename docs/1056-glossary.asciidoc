@@ -3,7 +3,7 @@ include::./includes/attributes.asciidoc[]
 
 <<A, A>>{nbsp}<<B, B>>{nbsp}<<C, C>>{nbsp}<<D, D>>{nbsp}<<E, E>>{nbsp}<<F, F>>{nbsp}<<G, G>>{nbsp}<<H, H>>{nbsp}<<I, I>>{nbsp}<<J, J>>{nbsp}<<K, K>>{nbsp}<<L, L>>{nbsp}<<M, M>>{nbsp}<<N, N>>{nbsp}<<O, O>>{nbsp}<<P, P>>{nbsp}<<Q, Q>>{nbsp}<<R, R>>{nbsp}<<S, S>>{nbsp}<<T, T>>{nbsp}<<U, U>>{nbsp}<<V, V>>{nbsp}<<W, W>>{nbsp}<<X, X>>{nbsp}<<Y, Y>>{nbsp}<<Z, Z>>
 
-Return to link:1037-uk-gemini-standard-and-inspire-implementing-rules.html[GEMINI
+Return to link:1037-uk-gemini-introduction.html[GEMINI
 2.3 home page]
 
 *acceptable quality level (AQL)*
