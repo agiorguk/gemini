@@ -57,6 +57,13 @@ longer just be the century.
 
 === Editorial changes since the launch of GEMINI 2.3
 
+==== October 2023
+
+Simplified home page ("introduction" / "landing page") as requested by Geospatial Commission
+This included resolution of some specific requests for things to mention: https://github.com/agiorguk/gemini/issues/31; https://github.com/agiorguk/gemini/issues/58; https://github.com/agiorguk/gemini/issues/24
+
+Remove mention of IPSV from guidance on Keyword (https://github.com/agiorguk/gemini/issues/19)
+
 ==== September 2023
 
 Migrated maintenance of the pages to GitHub resulting in some changes to layout.
