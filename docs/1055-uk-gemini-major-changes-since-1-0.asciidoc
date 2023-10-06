@@ -57,6 +57,13 @@ longer just be the century.
 
 === Editorial changes since the launch of GEMINI 2.3
 
+==== September 2023
+
+Migrated maintenance of the pages to GitHub resulting in some changes to layout.
+Fixed some editorial inconsistencies (https://github.com/agiorguk/gemini/issues/7; https://github.com/agiorguk/gemini/issues/14)
+Fixed some broken links (https://github.com/agiorguk/gemini/issues/2)
+Fixed some typos (https://github.com/agiorguk/gemini/issues/8; https://github.com/agiorguk/gemini/issues/60)
+
 ==== April 2020
 
 Changed
