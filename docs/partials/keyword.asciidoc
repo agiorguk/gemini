@@ -54,10 +54,7 @@ from a controlled vocabulary
 . Keyword values should if possible be taken from a list of standard
 subject categories, identified in the element 'Originating controlled
 vocabulary'.
-. Possible vocabularies include the
-http://www.esd.org.uk/standards/ipsv/[Integrated Public Sector
-Vocabulary (IPSV)] from the esd-toolkit, which should be used by public
-sector bodies, and http://www.eionet.europa.eu/gemet/en/themes/[GEMET]
+. Possible vocabularies include http://www.eionet.europa.eu/gemet/en/themes/[GEMET] and the https://inspire.ec.europa.eu/featureconcept[the INSPIRE Feature Concept Dictionary]
 . For other Keywords, if drawn from a Controlled Vocabulary, this must
 be stated.
 . Terms covering the subject of the data resource should be selected.
