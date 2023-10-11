@@ -3,7 +3,7 @@ include::./includes/attributes.asciidoc[]
 
 *July 2018*
 
-Return to link:1037-uk-gemini-standard-and-inspire-implementing-rules[GEMINI 2.3 home page]
+Return to link:1037-uk-gemini-introduction[GEMINI 2.3 home page]
 
 :sectnums:
 :sectnumlevels: 3
