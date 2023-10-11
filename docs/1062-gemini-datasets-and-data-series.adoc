@@ -1,4 +1,4 @@
-= [[top]]UK GEMINI 2.3 2020-04-07 dataset or series dev version
+= [[top]]UK GEMINI 2.3 2020-04-07 dataset or series
 include::./includes/attributes.asciidoc[]
 
 == Contents
@@ -45,7 +45,7 @@ include::./includes/attributes.asciidoc[]
 <<16, Vertical extent information>> +
 |===
 
-Return to link:1037-uk-gemini-standard-and-inspire-implementing-rules.html[GEMINI
+Return to link:1037-uk-gemini-introduction.html[GEMINI
 2.3 home page]
 
 '''''
