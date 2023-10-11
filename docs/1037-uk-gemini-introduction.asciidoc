@@ -70,8 +70,6 @@ GEMINI 2.2.
 
 Several software implementations exist and are in use across the UK:
 
-* https://locationmde.data.gov.uk/[UK Location Metadata Editor]: online
-editor owned by the Defra INSPIRE team
 * https://geonetwork-opensource.org/[GeoNetwork Open
 Source]{nbsp}-{nbsp}https://github.com/AstunTechnology/iso19139.gemini23[GEMINI
 plugin]: server software in use in several government departments

@@ -39,12 +39,15 @@ data in the data resource;
 Coordinate Reference Systems) of the INSPIRE
 https://inspire.ec.europa.eu/Technical-Guidelines2/Metadata/[Metadata
 Technical Guidelines]
+. If the spatial reference system is listed in the defaults, the value in the "HTTP URI Identifier" column shall be given as the target or a link, as in Example One below.
 . If the spatial reference system is not listed in the defaults,
 identify a well-known register that defines the coordinate reference
 system or, if the spatial reference system is using geographic
 identifiers (such as Post Codes, NUTS, what3words, Geohashing), supply a
 resolveable HTTP-URI that provides more information about the geographic
-identifier system.
+identifier system, as in Example Two below.
+. Only coordinate reference systems identifiers specified in a
+well-known common register shall be used.
 . Where there appears to be more than one spatial reference system used,
 take the one that is used in resolving any conflict between the spatial
 referencing systems (e.g. if the data is recorded referenced by unit
@@ -54,8 +57,6 @@ coordinate, and unit postcodes are added as an attribute, then it is
 'National Grid of Great Britain').
 
 |Comment a|
-. Only coordinate reference systems identifiers specified in a
-well-known common register shall be used
 . Note that the data resource may be supplied in a range of other
 reference systems in addition to that in which it is recorded.
 
@@ -89,6 +90,7 @@ RS_Identifier.code |Equivalent
 [%collapsible]
 ====
 GEMINI 1 to 2.0: Changed from enumerated list
+October 2023: clarifications to Guidance, to align with slight revision of INSPIRE TG
 ====
 
 .Encoding guidelines...
