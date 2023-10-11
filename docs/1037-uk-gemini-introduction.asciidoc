@@ -5,9 +5,9 @@ This page describes the requirements and guidance for metadata
 conforming to the UK standard known as UK GEMINI. There are several
 entry points to the guidance:
 
-* link:1062-gemini-datasets-and-data-series[GEMINI
+* link:1062-gemini-datasets-and-data-series.html[GEMINI
 for datasets and series]
-* link:1063-gemini-services[GEMINI for
+* link:1063-gemini-services.html[GEMINI for
 services]
 * Other material
 ** link:1052-metadata-guidelines-for-geospatial-data-resources-part-1.html[General
