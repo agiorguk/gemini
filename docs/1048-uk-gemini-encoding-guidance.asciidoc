@@ -3,7 +3,7 @@ include::./includes/attributes.asciidoc[]
 
 Technical guidance on the encoding of UK GEMINI
 
-Return to link:1037-uk-gemini-standard-and-inspire-implementing-rules.html[GEMINI 2.3 home page]
+Return to link:1037-uk-gemini-introudction.html[GEMINI 2.3 home page]
 
 Appendices
 
