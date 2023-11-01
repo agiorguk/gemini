@@ -2,7 +2,7 @@
 include::./includes/attributes.asciidoc[]
 
 Return
-to{nbsp}link:1037-uk-gemini-standard-and-inspire-implementing-rules.html[GEMINI
+to{nbsp}link:1037-uk-gemini-introduction.html[GEMINI
 2.3 home page]
 
 link:1053-common-metadata-errors-uk-location-discovery-metadata-service.html#Intro[1.
