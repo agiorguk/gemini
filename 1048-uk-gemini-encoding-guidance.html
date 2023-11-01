@@ -724,7 +724,7 @@ Login</span>
 <p>Technical guidance on the encoding of UK GEMINI</p>
 </div>
 <div class="paragraph">
-<p>Return to <a href="1037-uk-gemini-standard-and-inspire-implementing-rules.html">GEMINI 2.3 home page</a></p>
+<p>Return to <a href="1037-uk-gemini-introduction.html">GEMINI 2.3 home page</a></p>
 </div>
 <div class="paragraph">
 <p>Appendices</p>
@@ -1109,8 +1109,7 @@ instances of GEMINI2 shall not use a DTD so it is out of scope.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="xml"><span></span>
-<span class="tok-cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span></code></pre>
+<pre class="pygments highlight"><code data-lang="xml"><span></span><span class="tok-cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span></code></pre>
 </div>
 </div>
 </div>
@@ -1134,8 +1133,7 @@ content has been omitted.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="xml"><span></span>
-<span class="tok-cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
+<pre class="pygments highlight"><code data-lang="xml"><span></span><span class="tok-cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
 <span class="tok-nt">&lt;gmd:MD_Metadata</span><span class="tok-w"> </span><span class="tok-na">xmlns:gmd=</span><span class="tok-s">&quot;http://www.isotc211.org/2005/gmd&quot;</span>
 <span class="tok-w">	</span><span class="tok-na">xmlns:gco=</span><span class="tok-s">&quot;http://www.isotc211.org/2005/gco&quot;</span>
 <span class="tok-w">	</span><span class="tok-na">xmlns:srv=</span><span class="tok-s">&quot;http://www.isotc211.org/2005/srv&quot;</span>
@@ -1206,8 +1204,7 @@ required in a GEMINI2 metadata instance.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="xml"><span></span>
-<span class="tok-cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
+<pre class="pygments highlight"><code data-lang="xml"><span></span><span class="tok-cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
 <span class="tok-nt">&lt;gmd:MD_Metadata</span><span class="tok-w"> </span><span class="tok-na">xmlns:gmx=</span><span class="tok-s">&quot;http://www.isotc211.org/2005/gmx&quot;</span>
 <span class="tok-w">	</span><span class="tok-na">xmlns:gmd=</span><span class="tok-s">&quot;http://www.isotc211.org/2005/gmd&quot;</span>
 <span class="tok-w">	</span><span class="tok-na">xmlns:gco=</span><span class="tok-s">&quot;http://www.isotc211.org/2005/gco&quot;</span>
@@ -1289,8 +1286,7 @@ content, such as gmd:identificationInfo (Figure 9).</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="xml"><span></span>
-<span class="tok-w"> </span>...
+<pre class="pygments highlight"><code data-lang="xml"><span></span>...
 <span class="tok-nt">&lt;gmd:alternateTitle&gt;</span>
 <span class="tok-w">	</span><span class="tok-nt">&lt;gco:CharacterString&gt;</span>Digital<span class="tok-w"> </span>Geological<span class="tok-w"> </span>Map<span class="tok-w"> </span>Data<span class="tok-w"> </span>of<span class="tok-w"> </span>Great<span class="tok-w"> </span>Britain<span class="tok-w"> </span>-<span class="tok-w"> </span>625k<span class="tok-nt">&lt;/gco:CharacterString&gt;</span>
 <span class="tok-nt">&lt;/gmd:alternateTitle&gt;</span>
@@ -1766,8 +1762,7 @@ items shall be implemented <em>by value</em>.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="xml"><span></span>
-...
+<pre class="pygments highlight"><code data-lang="xml"><span></span>...
 <span class="tok-nt">&lt;gmd:verticalCRS&gt;</span>
 <span class="tok-w">	</span><span class="tok-nt">&lt;gml:VerticalCRS</span><span class="tok-w"> </span><span class="tok-na">gml:id=</span><span class="tok-s">&quot;epsg-crs-5701&quot;</span><span class="tok-nt">&gt;</span>
 <span class="tok-w">		 </span><span class="tok-nt">&lt;gml:identifier</span><span class="tok-w"> </span><span class="tok-na">codeSpace=</span><span class="tok-s">&quot;OGP&quot;</span><span class="tok-nt">&gt;</span>http://www.opengis.net/def/crs/EPSG/0/5701/<span class="tok-nt">&lt;/gml:identifier&gt;</span>
@@ -1932,7 +1927,6 @@ for IPR reasons, and with a web page describing licences</p>
 <div class="content">
 <pre class="pygments highlight"><code data-lang="xml"><span></span>....
 <span class="tok-cm">&lt;!-- INSPIRE C.17; GEMINI 25 Limitations on public access --&gt;</span>
-
 <span class="tok-nt">&lt;gmd:resourceConstraints&gt;</span>
 <span class="tok-w">	</span><span class="tok-nt">&lt;gmd:MD_LegalConstraints&gt;</span>
 <span class="tok-w">		</span><span class="tok-nt">&lt;gmd:accessConstraints&gt;</span>
@@ -2014,7 +2008,6 @@ access, but plain text conditions of use.</p>
 <div class="content">
 <pre class="pygments highlight"><code data-lang="xml"><span></span>....
 <span class="tok-cm">&lt;!-- INSPIRE C.17; GEMINI 25 Limitations on public access --&gt;</span>
-
 <span class="tok-nt">&lt;gmd:resourceConstraints&gt;</span>
 <span class="tok-w">	</span><span class="tok-nt">&lt;gmd:MD_LegalConstraints&gt;</span>
 <span class="tok-w">		</span><span class="tok-nt">&lt;gmd:accessConstraints&gt;</span>
@@ -2027,7 +2020,6 @@ access, but plain text conditions of use.</p>
 <span class="tok-w">		</span><span class="tok-nt">&lt;/gmd:otherConstraints&gt;</span>
 <span class="tok-w">	</span><span class="tok-nt">&lt;/gmd:MD_LegalConstraints&gt;</span>
 <span class="tok-nt">&lt;/gmd:resourceConstraints&gt;</span>
-
 
 <span class="tok-cm">&lt;!-- INSPIRE C.18; GEMINI 26 use constraints --&gt;</span>
 <span class="tok-nt">&lt;gmd:resourceConstraints&gt;</span>
@@ -2071,8 +2063,7 @@ series, ISO 19115 hierarchyLevelName element must also be set, to
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="xml"><span></span>
-<span class="tok-nt">&lt;gmd:MD_Metadata&gt;</span>
+<pre class="pygments highlight"><code data-lang="xml"><span></span><span class="tok-nt">&lt;gmd:MD_Metadata&gt;</span>
 ...
 <span class="tok-nt">&lt;gmd:hierarchyLevel&gt;</span>
 <span class="tok-w">	</span><span class="tok-nt">&lt;gmd:MD_ScopeCode</span><span class="tok-w"> </span><span class="tok-na">codeList=</span><span class="tok-s">&quot;https://schemas.isotc211.org/schemas/19139/resources/gmxCodelists.xml#MD_ScopeCode&quot;</span><span class="tok-w"> </span><span class="tok-na">codeListValue=</span><span class="tok-s">&quot;dataset&quot;</span><span class="tok-nt">&gt;</span>dataset<span class="tok-nt">&lt;/gmd:MD_ScopeCode&gt;</span>
@@ -2117,8 +2108,7 @@ set, to "service".</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="xml"><span></span>
-<span class="tok-nt">&lt;gmd:MD_Metadata&gt;</span>
+<pre class="pygments highlight"><code data-lang="xml"><span></span><span class="tok-nt">&lt;gmd:MD_Metadata&gt;</span>
 ...
 <span class="tok-nt">&lt;gmd:hierarchyLevel&gt;</span>
 <span class="tok-w">	 </span><span class="tok-nt">&lt;gmd:MD_ScopeCode</span>
@@ -2151,8 +2141,7 @@ with null values with the nil reason being missing (Figure 25).</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="xml"><span></span>
-<span class="tok-nt">&lt;gmd:MD_Metadata&gt;</span>
+<pre class="pygments highlight"><code data-lang="xml"><span></span><span class="tok-nt">&lt;gmd:MD_Metadata&gt;</span>
 ...
 <span class="tok-nt">&lt;gmd:identificationInfo&gt;</span>
 <span class="tok-w"> </span><span class="tok-nt">&lt;srv:SV_ServiceIdentification&gt;</span>
@@ -2186,7 +2175,7 @@ This work is licensed under a <a href="http://creativecommons.org/licenses/by/4.
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2023-09-13 13:03:03 UTC
+Last updated 2023-11-01 09:38:00 UTC
 </div>
 </div>
     <div class="x-bar x-bar-footer x-bar-h x-bar-relative x-bar-outer-spacers e1248-1 myo-0 myo-1" data-x-bar="{&quot;id&quot;:&quot;e1248-1&quot;,&quot;region&quot;:&quot;footer&quot;,&quot;height&quot;:&quot;auto&quot;}">

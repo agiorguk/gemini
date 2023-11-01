@@ -767,7 +767,7 @@ Login</span>
 </tbody>
 </table>
 <div class="paragraph">
-<p>Return to <a href="1037-uk-gemini-standard-and-inspire-implementing-rules.html">GEMINI
+<p>Return to <a href="1037-uk-gemini-introduction.html">GEMINI
 2.3 home page</a></p>
 </div>
 <hr>
@@ -1331,7 +1331,7 @@ Note that the example shows the minimum required information.</p>
 </li>
 <li>
 <p>The format of address and contact information is described at
-<a href="component/content/article?id=1048#2.2.8">Responsible party</a>, with a
+<a href="1048-uk-gemini-encoding-guidance.html#_responsible_party">Responsible party</a>, with a
 more fully populated example.</p>
 </li>
 <li>
@@ -3176,10 +3176,7 @@ subject categories, identified in the element 'Originating controlled
 vocabulary'.</p>
 </li>
 <li>
-<p>Possible vocabularies include the
-<a href="http://www.esd.org.uk/standards/ipsv/">Integrated Public Sector
-Vocabulary (IPSV)</a> from the esd-toolkit, which should be used by public
-sector bodies, and <a href="http://www.eionet.europa.eu/gemet/en/themes/">GEMET</a></p>
+<p>Possible vocabularies include <a href="http://www.eionet.europa.eu/gemet/en/themes/">GEMET</a> and the <a href="https://inspire.ec.europa.eu/featureconcept">the INSPIRE Feature Concept Dictionary</a></p>
 </li>
 <li>
 <p>For other Keywords, if drawn from a Controlled Vocabulary, this must
@@ -5066,12 +5063,19 @@ Technical Guidelines</a></p>
 </div>
 </li>
 <li>
+<p>If the spatial reference system is listed in the defaults, the value in the "HTTP URI Identifier" column shall be given as the target or a link, as in Example One below.</p>
+</li>
+<li>
 <p>If the spatial reference system is not listed in the defaults,
 identify a well-known register that defines the coordinate reference
 system or, if the spatial reference system is using geographic
 identifiers (such as Post Codes, NUTS, what3words, Geohashing), supply a
 resolveable HTTP-URI that provides more information about the geographic
-identifier system.</p>
+identifier system, as in Example Two below.</p>
+</li>
+<li>
+<p>Only coordinate reference systems identifiers specified in a
+well-known common register shall be used.</p>
 </li>
 <li>
 <p>Where there appears to be more than one spatial reference system used,
@@ -5089,10 +5093,6 @@ coordinate, and unit postcodes are added as an attribute, then it is
 <td class="tableblock halign-left valign-top"><p class="tableblock">Comment</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
 <ol class="arabic">
-<li>
-<p>Only coordinate reference systems identifiers specified in a
-well-known common register shall be used</p>
-</li>
 <li>
 <p>Note that the data resource may be supplied in a range of other
 reference systems in addition to that in which it is recorded.</p>
@@ -5150,7 +5150,8 @@ RS_Identifier.code</p></td>
 <summary class="title">Change history&#8230;&#8203;</summary>
 <div class="content">
 <div class="paragraph">
-<p>GEMINI 1 to 2.0: Changed from enumerated list</p>
+<p>GEMINI 1 to 2.0: Changed from enumerated list
+October 2023: clarifications to Guidance, to align with slight revision of INSPIRE TG</p>
 </div>
 </div>
 </details>
@@ -8659,7 +8660,7 @@ provided for any record that is not describing a dataset.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2023-09-13 13:03:03 UTC
+Last updated 2023-11-01 09:38:00 UTC
 </div>
 </div>
     <div class="x-bar x-bar-footer x-bar-h x-bar-relative x-bar-outer-spacers e1248-1 myo-0 myo-1" data-x-bar="{&quot;id&quot;:&quot;e1248-1&quot;,&quot;region&quot;:&quot;footer&quot;,&quot;height&quot;:&quot;auto&quot;}">

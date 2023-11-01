@@ -4,7 +4,7 @@ include::./includes/attributes.asciidoc[]
 == Dataset and Dataset Series Metadata
 
 Return
-to{nbsp}link:1037-uk-gemini-standard-and-inspire-implementing-rules.html[GEMINI
+to{nbsp}link:1037-uk-gemini-introduction.html[GEMINI
 2.3 home page]
 
 [cols=",,",]

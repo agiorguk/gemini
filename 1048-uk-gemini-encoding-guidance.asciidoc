@@ -3,7 +3,7 @@ include::./includes/attributes.asciidoc[]
 
 Technical guidance on the encoding of UK GEMINI
 
-Return to link:1037-uk-gemini-standard-and-inspire-implementing-rules.html[GEMINI 2.3 home page]
+Return to link:1037-uk-gemini-introduction.html[GEMINI 2.3 home page]
 
 Appendices
 
@@ -258,7 +258,6 @@ instances of GEMINI2 shall not use a DTD so it is out of scope.
 *Figure 4 - XML declaration*
 [source, xml]
 ----
-
 <?xml version="1.0" encoding="utf-8"?>
 ----
 
@@ -278,7 +277,6 @@ content has been omitted.
 *Figure 5 - Root Element*
 [source, xml]
 ----
-
 <?xml version="1.0" encoding="utf-8"?>
 <gmd:MD_Metadata xmlns:gmd="http://www.isotc211.org/2005/gmd"
 	xmlns:gco="http://www.isotc211.org/2005/gco"
@@ -334,7 +332,6 @@ required in a GEMINI2 metadata instance.
 *Figure 6 - Using the xsi:schemaLocation attribute*
 [source, xml]
 ----
-
 <?xml version="1.0" encoding="utf-8"?> 
 <gmd:MD_Metadata xmlns:gmx="http://www.isotc211.org/2005/gmx" 
 	xmlns:gmd="http://www.isotc211.org/2005/gmd" 
@@ -396,8 +393,7 @@ content, such as gmd:identificationInfo (Figure 9).
 *Figure 7 - Multiple alternative title elements*
 [source, xml]
 ----
-
- ... 
+... 
 <gmd:alternateTitle> 
 	<gco:CharacterString>Digital Geological Map Data of Great Britain - 625k</gco:CharacterString> 
 </gmd:alternateTitle> 
@@ -761,7 +757,6 @@ items shall be implemented _by value_.
 *Figure 17 - Vertical CRS by value*
 [source, xml]
 ----
-
 ... 
 <gmd:verticalCRS> 
 	<gml:VerticalCRS gml:id="epsg-crs-5701"> 
@@ -906,7 +901,6 @@ for IPR reasons, and with a web page describing licences
 ----
 ....
 <!-- INSPIRE C.17; GEMINI 25 Limitations on public access --> 
-
 <gmd:resourceConstraints>
 	<gmd:MD_LegalConstraints>
 		<gmd:accessConstraints>
@@ -982,7 +976,6 @@ access, but plain text conditions of use.
 ----
 ....
 <!-- INSPIRE C.17; GEMINI 25 Limitations on public access --> 
-
 <gmd:resourceConstraints>
 	<gmd:MD_LegalConstraints>
 		<gmd:accessConstraints>
@@ -995,7 +988,6 @@ access, but plain text conditions of use.
 		</gmd:otherConstraints>
 	</gmd:MD_LegalConstraints>
 </gmd:resourceConstraints>
-
 
 <!-- INSPIRE C.18; GEMINI 26 use constraints --> 
 <gmd:resourceConstraints>
@@ -1034,7 +1026,6 @@ series, ISO 19115 hierarchyLevelName element must also be set, to
 
 [source, xml]
 ----
-
 <gmd:MD_Metadata> 
 ... 
 <gmd:hierarchyLevel> 
@@ -1072,7 +1063,6 @@ set, to "service".
 *Figure 24 - Metadata for services using the srv:SV_ServiceIdentification type*
 [source, xml]
 ----
-
 <gmd:MD_Metadata> 
 ... 
 <gmd:hierarchyLevel> 
@@ -1102,7 +1092,6 @@ with null values with the nil reason being missing (Figure 25).
 *Figure 25 - Coupling Type and Contains Operations – Null values*
 [source, xml]
 ----
-
 <gmd:MD_Metadata> 
 ... 
 <gmd:identificationInfo> 

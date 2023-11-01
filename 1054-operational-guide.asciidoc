@@ -3,7 +3,7 @@ include::./includes/attributes.asciidoc[]
 
 == UK Location Discovery Metadata Service
 
-Return to link:1037-uk-gemini-standard-and-inspire-implementing-rules.html[GEMINI
+Return to link:1037-uk-gemini-introduction.html[GEMINI
 2.3 home page]
 
 Contents
