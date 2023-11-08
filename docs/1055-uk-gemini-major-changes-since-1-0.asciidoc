@@ -57,6 +57,10 @@ longer just be the century.
 
 === Editorial changes since the launch of GEMINI 2.3
 
+==== November 2023
+
+Fix links (URIs) to ISO 19139 code lists, as per revised INSPIRE TG.
+
 ==== October 2023
 
 Simplified home page ("introduction" / "landing page") as requested by Geospatial Commission
