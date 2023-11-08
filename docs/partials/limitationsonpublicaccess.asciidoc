@@ -31,13 +31,21 @@ stated.
 . INSPIRE recognises the following kinds of reasons for limiting public
 access, listed in Article 13(1):
 * (a) confidentiality of the proceedings of public authorities
+https://www.legislation.gov.uk/uksi/2009/3157/regulation/9[Regulation 9(5)(d) of the UK INSPIRE Regulations 2009]
 * (b) international relations, public security or national defence
+https://www.legislation.gov.uk/uksi/2009/3157/regulation/9[Regulation 9(5)(a) of the UK INSPIRE Regulations 2009]
 * (c) the course of justice
+https://www.legislation.gov.uk/uksi/2009/3157/regulation/9[Regulation 9(5)(b) of the UK INSPIRE Regulations 2009]
 * (d) confidentiality of commercial or industrial information
+https://www.legislation.gov.uk/uksi/2009/3157/regulation/9[Regulation 9(5)(e) of the UK INSPIRE Regulations 2009]
 * (e) intellectual property rights
-* (f) confidentiality of personal data
+https://www.legislation.gov.uk/uksi/2009/3157/regulation/9[Regulation 9(5)(c) of the UK INSPIRE Regulations 2009]
+* (f) confidentiality of personal data +
+https://www.legislation.gov.uk/uksi/2009/3157/regulation/9[Regulation 9(2) of the UK INSPIRE Regulations 2009]
 * (g) interests of a person who supplied the data on a voluntary basis
+https://www.legislation.gov.uk/uksi/2009/3157/regulation/9[Regulation 9(5)(f) of the UK INSPIRE Regulations 2009]
 * (h) protection of the environment
+https://www.legislation.gov.uk/uksi/2009/3157/regulation/9[Regulation 9(5)(g) of the UK INSPIRE Regulations 2009]
 +
 Each has an entry with the full text, in the INSPIRE registry,
 http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess
