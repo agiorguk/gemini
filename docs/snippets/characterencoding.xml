@@ -9,7 +9,7 @@
          </gmd:language>
          <gmd:characterSet>
             <gmd:MD_CharacterSetCode 
-              codeList='https://schemas.isotc211.org/schemas/19139/resources/codelist/gmxCodelists.xml#MD_CharacterSetCode' 
+              codeList='https://schemas.isotc211.org/schemas/19139/-/resources/codelist/gmxCodelists.xml#MD_CharacterSetCode' 
               codeListValue='8859part1'>ISO/IEC 8859-1 (also known as Latin 1)</gmd:MD_CharacterSetCode>
          </gmd:characterSet>
          <gmd:topicCategory>
