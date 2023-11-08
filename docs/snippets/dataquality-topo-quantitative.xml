@@ -7,7 +7,7 @@
       </gmd:nameOfMeasure>
       <gmd:evaluationMethodType>
          <gmd:DQ_EvaluationMethodTypeCode 
-           codeList='https://schemas.isotc211.org/schemas/19139/resources/codelist/gmxCodelists.xml#DQ_EvaluationMethodTypeCode' 
+           codeList='https://schemas.isotc211.org/schemas/19139/-/resources/codelist/gmxCodelists.xml#DQ_EvaluationMethodTypeCode' 
            codeListValue='indirect' />
       </gmd:evaluationMethodType>
       <gmd:evaluationMethodDescription>
