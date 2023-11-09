@@ -52,12 +52,12 @@ title
 |Equivalent
 
 |ISO 19139:2007
-ifdef::variant-dataset[]
+# tag::dataset[]
 |/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:alternateTitle
-endif::[]
-ifdef::variant-service[]
+# end::dataset[]
+# tag::service[]
 |/gmd:MD_Metadata/gmd:identificationInfo/srv:SV_ServiceIdentification/gmd:citation/gmd:CI_Citation/gmd:alternateTitle
-endif::[]
+# end::service[]
 |Equivalent
 |===
 ====
@@ -75,7 +75,7 @@ endif::[]
 |Guidelines |Note that more than one alternative title may be presented,
 as shown in the example below.
 |Example
-ifdef::variant-dataset[]
+# tag::dataset[]
 |
 |Example one
 |
@@ -90,8 +90,8 @@ include::../snippets/dataset-alternatetitle-multi.xml[]
 include::../snippets/dataset-alternatetitle-multi.xml[]
 ----
 |===
-endif::[]
-ifdef::variant-service[]
+# end::dataset[]
+# tag::service[]
 |
 [source,xml]
 ----
@@ -99,7 +99,7 @@ include::../snippets/service-alternatetitle-multi.xml[]
 ....
 ----
 |===
-endif::[]
+# end::service[]
 ====
 
 .Metadata errors observed...
