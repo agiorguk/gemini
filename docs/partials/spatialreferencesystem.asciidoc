@@ -89,7 +89,7 @@ RS_Identifier.code |Equivalent
 .Change history...
 [%collapsible]
 ====
-GEMINI 1 to 2.0: Changed from enumerated list
+GEMINI 1 to 2.0: Changed from enumerated list +
 October 2023: clarifications to Guidance, to align with slight revision of INSPIRE TG
 ====
 
