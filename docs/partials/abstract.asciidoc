@@ -65,12 +65,12 @@ the United Kingdom as at February 2017.
 |ISO 19115:2003 |MD_Identification.abstract |Equivalent
 
 |ISO 19139:2007
-ifdef::variant-dataset[]
+# tag::dataset[]
 |/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:abstract
-endif::[]
-ifdef::variant-service[]
+# end::dataset[]
+# tag::service[]
 |/gmd:MD_Metadata/gmd:identificationInfo/srv:SV_ServiceIdentification/gmd:abstract  
-endif::[]
+# end::service[]
 |Equivalent
 |===
 ====
@@ -89,12 +89,12 @@ Change history...
 |
 [source,xml]
 ----
-ifdef::variant-dataset[]
+# tag::dataset[]
 include::../snippets/dataset-abstract.xml[]
-endif::[]
-ifdef::variant-service[]
+# end::dataset[]
+# tag::service[]
 include::../snippets/service-abstract.xml[]
-endif::[]
+# end::service[]
 ----
 |===
 ====

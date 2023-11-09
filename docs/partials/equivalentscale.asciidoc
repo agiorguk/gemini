@@ -40,7 +40,7 @@ distance cannot be determined.
 
 |INSPIRE Metadata |Spatial resolution |Spatial resolution may also be
 expressed as distance
-ifdef::variant-dataset[]
+# tag::dataset[]
 |ISO 19115:2003 |MD_DataIdentification.spatialResolution >
 MD_Resolution.equivalentScale > MD_RepresentativeFraction.denominator
 |Equivalent
@@ -48,10 +48,10 @@ MD_Resolution.equivalentScale > MD_RepresentativeFraction.denominator
 |ISO 19139:2007
 |/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:spatialResolution/gmd:MD_Resolution/gmd:equivalentScale
 |Equivalent
-endif::[]
-ifdef::variant-service[]
+# end::dataset[]
+# tag::service[]
 |ISO 19115:2003 |Describe in the Abstract |no direct equivalent
-endif::[]
+# end::service[]
 |===
 ====
 
@@ -66,7 +66,7 @@ GEMINI 1 to 2.0: New element
 ====
 [cols="a,a"]
 |===
-ifdef::variant-dataset[]
+# tag::dataset[]
 |Guidelines
 |
 |Example
@@ -75,8 +75,8 @@ ifdef::variant-dataset[]
 ----
 include::../snippets/equivalentscale.xml[]
 ----
-endif::[]
-ifdef::variant-service[]
+# end::dataset[]
+# tag::service[]
 |Guidelines
 |
 * For services, it is not possible to express the restriction of a
@@ -86,7 +86,7 @@ Schema.
 * The spatial resolution restriction text shall include either an
 equivalent scale as integer valued scale denominator or a resolution
 distance using a numerical length value and with a unit of length.
-endif::[]
+# end::service[]
 |
 |===
 ====
