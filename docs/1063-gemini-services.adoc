@@ -71,7 +71,7 @@ include::./partials/alternatetitle.asciidoc[tag=!dataset]
 
 include::./partials/abstract.asciidoc[tag=!dataset]
 
-include::./partials/keyword.asciidoc[tag=service]
+include::./partials/keyword.asciidoc[tag=!dataset]
 
 include::./partials/temporalextent.asciidoc[tag=!dataset]
 
