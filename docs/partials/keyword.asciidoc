@@ -94,12 +94,12 @@ broader range of values.
 
 |ISO 19139:2007
 |
-# tag::dataset[]
+// tag::dataset[]
 /gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:descriptiveKeywords/gmd:MD_Keywords
-# end::dataset[]
-# tag::service[]
+// end::dataset[]
+// tag::service[]
 /gmd:MD_Metadata/gmd:identificationInfo/srv:SV_ServiceIdentification/gmd:descriptiveKeywords/gmd:MD_Keywords 
-# end::service[]
+// end::service[]
 |Equivalent
 |===
 ====
