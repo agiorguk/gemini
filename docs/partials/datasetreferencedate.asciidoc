@@ -88,14 +88,14 @@ should be reported for spatial datasets
 |Equivalent
 
 |ISO 19139:2007
-ifdef::variant-dataset[]
+# tag::dataset[]
 |/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:date
 |Equivalent
-endif::[]
-ifdef::variant-service[]
+# end::dataset[]
+# tag::service[]
 |/gmd:MD_Metadata/gmd:identificationInfo/srv:SV_ServiceIdentification/gmd:citation/gmd:CI_Citation/gmd:date
 |Equivalent
-endif::[]
+# end::service[]
 |===
 
 ====
@@ -122,7 +122,7 @@ link:component/content/article?id=1048#2.2.3[Dates and Times]
 * Dataset reference date shall include a date type. The content of this
 XML element is drawn from a
 link:component/content/article?id=1048#2.2.9[code list].
-ifdef::variant-dataset[]
+# tag::dataset[]
 | Example One: date
 |
 [source,xml]
@@ -135,8 +135,8 @@ include::../snippets/dataset-datasetreferencedate-date.xml[]
 ----
 include::../snippets/datasetreferencedate-datetime.xml[]
 ----
-endif::[]
-ifdef::variant-service[]
+# end::dataset[]
+# tag::service[]
 | Example One: date
 |
 [source,xml]
@@ -149,7 +149,7 @@ include::../snippets/service-datasetreferencedate-date.xml[]
 ----
 include::../snippets/datasetreferencedate-datetime.xml[]
 ----
-endif::[]
+# end::service[]
 |===
 ====
 
