@@ -3,6 +3,7 @@ include::./includes/attributes.asciidoc[]
 
 Return to link:1037-uk-gemini-standard-and-inspire-implementing-rules[GEMINI 2.3 home page]
 
+
 == Foreword
 
 UK GEMINI was originally produced in 2004 by collaboration between the
