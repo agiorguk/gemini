@@ -135,31 +135,31 @@ using gmd:CI_Citation), an explanation and a pass.
 possible conformance results: conformant, not conformant and not
 evaluated. Not evaluated is expressed by a conformity statement with a
 nilReason (unknown) specified in the pass element.
-ifdef::variant-dataset[]
+# tag::dataset[]
 . All gmd:dataQualityInfo XML element shall have a gmd:scope XML
 element, set to 'dataset' or 'series' as appropriate.
-endif::[]
-ifdef::variant-service[]
+# end::dataset[]
+# tag::service[]
 . All gmd:dataQualityInfo XML element shall have a gmd:scope XML
 element, set to 'service'.
 . It is important to note that if the scope of the data quality
 information is 'service' then the gmd:levelDescription XML element is
 required, as shown below.
-endif::[]
+# end::service[]
 |Example
 |
 [source,xml]
 ----
-ifdef::variant-dataset[]
+# tag::dataset[]
 include::../snippets/dataset-conformity-inspire-ortho.xml[]
 ----
-endif::[]
-ifdef::variant-service[]
+# end::dataset[]
+# tag::service[]
 include::../snippets/service-conformity-abstracttestsuite.xml[]
 ----
 |===
-endif::[]
-ifdef::variant-dataset[]
+# end::service[]
+# tag::dataset[]
 | Example of a conformity report for Implementing Rule 1089/2010, where
 conformance is not evaluated. +
 Example follows updated guidance to use gmx:Anchor over
@@ -177,7 +177,7 @@ a descriptive topological consistency report
 include::../snippets/dataset-conformity-inspire-topo.xml[]
 ----
 |===
-endif::[]
+# end::dataset[]
 ====
 
 .Metadata errors observed...

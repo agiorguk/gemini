@@ -13,17 +13,17 @@ applies
 of the data resource
 
 |Obligation |Mandatory
-ifdef::variant-dataset[]
+# tag::dataset[]
 |Occurrence |Multiple
-endif::[]
-ifdef::variant-service[]
+# end::dataset[]
+# tag::service[]
 |Occurrence |Single
-endif::[]
+# end::service[]
 
 |Data type |Class
 
 |Domain |DQ_Scope from ISO 19115
-ifdef::variant-dataset[]
+# tag::dataset[]
 |Guidance a|
 . For the conformity statement and lineage of metadata describing:
 * a dataset, set quality scope to 'dataset'
@@ -34,12 +34,12 @@ with their Scope set appropriately
 
 |Comment |Required in the ISO 19115 encoding of GEMINI 2 metadata
 records, to assist in managing related metadata records.
-endif::[]
-ifdef::variant-service[]
+# end::dataset[]
+# tag::service[]
 |Guidance |
 
 |Comment |
-endif::[]
+# end::service[]
 
 |Examples |
 
@@ -53,16 +53,16 @@ endif::[]
 |Standard |Name |Comparison
 
 |INSPIRE Metadata
-ifdef::variant-dataset[]
+# tag::dataset[]
 |metadata/2.0/req/datasets-and-series/one-data-quality-element |INSPIRE
 only allows a maximum of one Data quality element, so only one scope -
 the whole resource
-endif::[]
-ifdef::variant-service[]
+# end::dataset[]
+# tag::service[]
 |INSPIRE Metadata |metadata/2.0/req/sds/only-one-dq-element |INSPIRE
 only allows a maximum of one Data quality element, so only one scope -
 the whole resource
-endif::[]
+# end::service[]
 
 |ISO 19115:2003 |DQ_DataQuality.scope |Equivalent
 
@@ -85,7 +85,7 @@ New element in GEMINI 2.3
 |===
 |Guidelines
 |
-ifdef::variant-dataset[]
+# tag::dataset[]
 All gmd:dataQualityInfo XML element shall have a gmd:scope XML element,
 set to as appropriate.
 
@@ -97,24 +97,24 @@ measures that relate to the the entire dataset or series
 Other quality measures, e.g. for specific feature types, shall be
 separate DQ_DataQuality elements, with the relevant Quality scope. In
 these cases the Level Description must also be set
-endif::[]
-ifdef::variant-service[]
+# end::dataset[]
+# tag::service[]
 * It is important to note that if the scope of the data quality
 information is 'service' then the gmd:levelDescription XML element is
 required
 * The value of gmd:other must be *service* (in the language of the
 metadata), as shown below.
-endif::[]
+# end::service[]
 |Example
 |
 [source,xml]
 ----
-ifdef::variant-dataset[]
+# tag::dataset[]
 include::../snippets/dataset-qualityscope.xml[]
-endif::[]
-ifdef::variant-service[]
+# end::dataset[]
+# tag::service[]
 include::../snippets/service-qualityscope.xml[]
-endif::[]
+# end::service[]
 ----
 |===
 ====
@@ -122,10 +122,10 @@ endif::[]
 .Metadata errors observed...
 [%collapsible]
 ====
-ifdef::variant-dataset[]
+# tag::dataset[]
 No error information available
-endif::[]
-ifdef::variant-service[]
+# end::dataset[]
+# tag::service[]
 |Errors observed |*No level description* +
 ISO 19115 requires that a 'level description' is given for any quality
 statement that is not describing the 'dataset' or 'series' level.
@@ -134,5 +134,5 @@ conformity. This means that any 'service' record must provide a
 gmd:DQ_Scope/gmd:levelDescription element, as shown above. +
 A similar rule applies to link:#47[hierarchyLevelName], which must be
 provided for any record that is not describing a dataset.
-endif::[]
+# end::service[]
 ====

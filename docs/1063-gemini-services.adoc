@@ -43,66 +43,66 @@ Return to link:1037-uk-gemini-introduction.html[GEMINI
 '''''
 == Metadata about the resource
 
-include::./partials/metadatadate.asciidoc[]
+include::./partials/metadatadate.asciidoc[tag=!dataset]
 
-include::./partials/metadatalanguage.asciidoc[]
+include::./partials/metadatalanguage.asciidoc[tag=!dataset]
 
-include::./partials/metadatapointofcontact.asciidoc[]
+include::./partials/metadatapointofcontact.asciidoc[tag=!dataset]
 
-include::./partials/resourcetype.asciidoc[]
+include::./partials/resourcetype.asciidoc[tag=!dataset]
 
-include::./partials/fileidentifier.asciidoc[]
+include::./partials/fileidentifier.asciidoc[tag=!dataset]
 
-include::./partials/hierarchylevelname.asciidoc[]
+include::./partials/hierarchylevelname.asciidoc[tag=!dataset]
 
-include::./partials/parentidentifier.asciidoc[]
+include::./partials/parentidentifier.asciidoc[tag=!dataset]
 
-include::./partials/metadatastandardname.asciidoc[]
+include::./partials/metadatastandardname.asciidoc[tag=!dataset]
 
-include::./partials/metadatastandardversion.asciidoc[]
+include::./partials/metadatastandardversion.asciidoc[tag=!dataset]
 
 Go to <<UK GEMINI 2.3 2020-06-29 service, top of page>>
 
 == Metadata about the resource
 
-include::./partials/title.asciidoc[]
+include::./partials/title.asciidoc[tag=!dataset]
 
-include::./partials/alternatetitle.asciidoc[]
+include::./partials/alternatetitle.asciidoc[tag=!dataset]
 
-include::./partials/abstract.asciidoc[]
+include::./partials/abstract.asciidoc[tag=!dataset]
 
-include::./partials/keyword.asciidoc[]
+include::./partials/keyword.asciidoc[tag=!dataset]
 
-include::./partials/temporalextent.asciidoc[]
+include::./partials/temporalextent.asciidoc[tag=!dataset]
 
-include::./partials/datasetreferencedate.asciidoc[]
+include::./partials/datasetreferencedate.asciidoc[tag=!dataset]
 
-include::./partials/extent.asciidoc[]
+include::./partials/extent.asciidoc[tag=!dataset]
 
-include::./partials/verticalextent.asciidoc[]
+include::./partials/verticalextent.asciidoc[tag=!dataset]
 
-include::./partials/spatialreferencesystem.asciidoc[]
+include::./partials/spatialreferencesystem.asciidoc[tag=!dataset]
 
-include::./partials/spatialresolution.asciidoc[]
+include::./partials/spatialresolution.asciidoc[tag=!dataset]
 
-include::./partials/resourcelocator.asciidoc[]
+include::./partials/resourcelocator.asciidoc[tag=!dataset]
 
-include::./partials/responsibleorganisation.asciidoc[]
+include::./partials/responsibleorganisation.asciidoc[tag=!dataset]
 
-include::./partials/limitationsonpublicaccess.asciidoc[]
+include::./partials/limitationsonpublicaccess.asciidoc[tag=!dataset]
 
-include::./partials/useconstraints.asciidoc[]
+include::./partials/useconstraints.asciidoc[tag=!dataset]
 
-include::./partials/spatialdataservicetype.asciidoc[]
+include::./partials/spatialdataservicetype.asciidoc[tag=!dataset]
 
-include::./partials/coupledresource.asciidoc[]
+include::./partials/coupledresource.asciidoc[tag=!dataset]
 
-include::./partials/conformity.asciidoc[]
+include::./partials/conformity.asciidoc[tag=!dataset]
 
-include::./partials/equivalentscale.asciidoc[]
+include::./partials/equivalentscale.asciidoc[tag=!dataset]
 
-include::./partials/boundingbox.asciidoc[]
+include::./partials/boundingbox.asciidoc[tag=!dataset]
 
-include::./partials/qualityscope.asciidoc[]
+include::./partials/qualityscope.asciidoc[tag=!dataset]
 
 Go to <<top, top of page>>

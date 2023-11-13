@@ -52,82 +52,82 @@ Return to link:1037-uk-gemini-introduction.html[GEMINI
 
 == Metadata about the metadata record
 
-include::./partials/metadatadate.asciidoc[]
+include::./partials/metadatadate.asciidoc[tag=!service]
 
-include::./partials/metadatalanguage.asciidoc[]
+include::./partials/metadatalanguage.asciidoc[tag=!service]
 
-include::./partials/metadatapointofcontact.asciidoc[]
+include::./partials/metadatapointofcontact.asciidoc[tag=!service]
 
-include::./partials/resourcetype.asciidoc[]
+include::./partials/resourcetype.asciidoc[tag=!service]
 
-include::./partials/fileidentifier.asciidoc[]
+include::./partials/fileidentifier.asciidoc[tag=!service]
 
-include::./partials/hierarchylevelname.asciidoc[]
+include::./partials/hierarchylevelname.asciidoc[tag=!service]
 
-include::./partials/parentidentifier.asciidoc[]
+include::./partials/parentidentifier.asciidoc[tag=!service]
 
-include::./partials/metadatastandardname.asciidoc[]
+include::./partials/metadatastandardname.asciidoc[tag=!service]
 
-include::./partials/metadatastandardversion.asciidoc[]
+include::./partials/metadatastandardversion.asciidoc[tag=!service]
 
 Go to <<UK GEMINI 2.3 2020-06-29 dataset or series, top of page>>
 
 == Metadata about the resource
 
-include::./partials/title.asciidoc[]
+include::./partials/title.asciidoc[tag=!service]
 
-include::./partials/alternatetitle.asciidoc[]
+include::./partials/alternatetitle.asciidoc[tag=!service]
 
-include::./partials/datasetlanguage.asciidoc[]
+include::./partials/datasetlanguage.asciidoc[tag=!service]
 
-include::./partials/abstract.asciidoc[]
+include::./partials/abstract.asciidoc[tag=!service]
 
-include::./partials/topiccategory.asciidoc[]
+include::./partials/topiccategory.asciidoc[tag=!service]
 
-include::./partials/keyword.asciidoc[]
+include::./partials/keyword.asciidoc[tag=!service]
 
-include::./partials/temporalextent.asciidoc[]
+include::./partials/temporalextent.asciidoc[tag=!service]
 
-include::./partials/datasetreferencedate.asciidoc[]
+include::./partials/datasetreferencedate.asciidoc[tag=!service]
 
-include::./partials/lineage.asciidoc[]
+include::./partials/lineage.asciidoc[tag=!service]
 
-include::./partials/extent.asciidoc[]
+include::./partials/extent.asciidoc[tag=!service]
 
-include::./partials/verticalextent.asciidoc[]
+include::./partials/verticalextent.asciidoc[tag=!service]
 
-include::./partials/spatialreferencesystem.asciidoc[]
+include::./partials/spatialreferencesystem.asciidoc[tag=!service]
 
-include::./partials/spatialresolution.asciidoc[]
+include::./partials/spatialresolution.asciidoc[tag=!service]
 
-include::./partials/resourcelocator.asciidoc[]
+include::./partials/resourcelocator.asciidoc[tag=!service]
 
-include::./partials/dataformat.asciidoc[]
+include::./partials/dataformat.asciidoc[tag=!service]
 
-include::./partials/responsibleorganisation.asciidoc[]
+include::./partials/responsibleorganisation.asciidoc[tag=!service]
 
-include::./partials/limitationsonpublicaccess.asciidoc[]
+include::./partials/limitationsonpublicaccess.asciidoc[tag=!service]
 
-include::./partials/useconstraints.asciidoc[]
+include::./partials/useconstraints.asciidoc[tag=!service]
 
-include::./partials/additionalinformation.asciidoc[]
+include::./partials/additionalinformation.asciidoc[tag=!service]
 
-include::./partials/resourceidentifier.asciidoc[]
+include::./partials/resourceidentifier.asciidoc[tag=!service]
 
-include::./partials/conformity.asciidoc[]
+include::./partials/conformity.asciidoc[tag=!service]
 
-include::./partials/equivalentscale.asciidoc[]
+include::./partials/equivalentscale.asciidoc[tag=!service]
 
-include::./partials/boundingbox.asciidoc[]
+include::./partials/boundingbox.asciidoc[tag=!service]
 
-include::./partials/qualityscope.asciidoc[]
+include::./partials/qualityscope.asciidoc[tag=!service]
 
-include::./partials/spatialrepresentationtype.asciidoc[]
+include::./partials/spatialrepresentationtype.asciidoc[tag=!service]
 
-include::./partials/characterencoding.asciidoc[]
+include::./partials/characterencoding.asciidoc[tag=!service]
 
-include::./partials/dataquality.asciidoc[]
+include::./partials/dataquality.asciidoc[tag=!service]
 
-include::./partials/maintenanceinformation.asciidoc[]
+include::./partials/maintenanceinformation.asciidoc[tag=!service]
 
 Go to <<top, top of page>>

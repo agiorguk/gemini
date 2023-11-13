@@ -70,13 +70,13 @@ reference systems in addition to that in which it is recorded.
 ====
 |===
 |Standard |Name |Comparison
-ifdef::variant-dataset[]
+# tag::dataset[]
 |INSPIRE Metadata |crs coordinate reference system |Equivalent
-endif::[]
-ifdef::variant-service[]
+# end::dataset[]
+# tag::service[]
 |INSPIRE Metadata |crs coordinate reference system |In INSPIRE it is
 only mandatory for interoperable spatial data services
-endif::[]
+# end::service[]
 |ISO 19115:2003 |MD_ReferenceSystem.referenceSystemIdentifier >
 RS_Identifier.code |Equivalent
 

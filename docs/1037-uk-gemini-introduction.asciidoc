@@ -7,6 +7,7 @@ entry points to the guidance:
 
 * link:1062-gemini-datasets-and-data-series.html[GEMINI for datasets and series]
 * link:1063-gemini-services.html[GEMINI for services]
+
 * Other material
 ** link:1052-metadata-guidelines-for-geospatial-data-resources-part-1.html[General introduction to metadata for geographic information]
 ** link:1051-uk-gemini-v2-2-specification-for-discovery-metadata-for-geospatial-resources.html[General introduction to GEMINI]
