@@ -864,9 +864,13 @@ the United Kingdom as at February 2017.</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Equivalent</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19139:2007</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">/gmd:MD_Metadata/gmd:identificationInfo/srv:SV_ServiceIdentification/gmd:abstract</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Equivalent</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19139:2007
+# tag::dataset[]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:abstract
+# end::dataset[]
+# tag::service[]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">/gmd:MD_Metadata/gmd:identificationInfo/srv:SV_ServiceIdentification/gmd:abstract
+# end::service[]</p></td>
 </tr>
 </tbody>
 </table>
@@ -898,7 +902,30 @@ the United Kingdom as at February 2017.</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="xml"><span></span><span class="tok-nt">&lt;gmd:MD_Metadata&gt;</span>
+<pre class="pygments highlight"><code data-lang="xml"><span></span>#<span class="tok-w"> </span>tag::dataset[]
+<span class="tok-nt">&lt;gmd:MD_Metadata&gt;</span>
+<span class="tok-w">  </span>...
+<span class="tok-w">  </span><span class="tok-nt">&lt;gmd:identificationInfo&gt;</span>
+<span class="tok-w">    </span><span class="tok-nt">&lt;gmd:MD_DataIdentification</span><span class="tok-w"> </span><span class="tok-na">id=</span><span class="tok-s">&quot;BGS-13603180&quot;</span><span class="tok-nt">&gt;</span>
+<span class="tok-w">      </span>...
+<span class="tok-w">      </span><span class="tok-nt">&lt;gmd:abstract&gt;</span>
+<span class="tok-w">        </span><span class="tok-nt">&lt;gco:CharacterString&gt;</span>The<span class="tok-w"> </span>data<span class="tok-w"> </span>shows<span class="tok-w"> </span>polygonal<span class="tok-w"> </span>and<span class="tok-w"> </span>selected<span class="tok-w"> </span>linear<span class="tok-w"> </span>geological<span class="tok-w"> </span>information,<span class="tok-w"> </span>sourced<span class="tok-w"> </span>from<span class="tok-w"> </span>published<span class="tok-w"> </span>
+<span class="tok-w">          </span>BGS<span class="tok-w"> </span>1:625<span class="tok-w"> </span>000<span class="tok-w"> </span>scale<span class="tok-w"> </span>maps<span class="tok-w"> </span>of<span class="tok-w"> </span>Great<span class="tok-w"> </span>Britain.<span class="tok-w"> </span>
+<span class="tok-w">          </span>However,<span class="tok-w"> </span>geological<span class="tok-w"> </span>units<span class="tok-w"> </span>are<span class="tok-w"> </span>identified<span class="tok-w"> </span>using<span class="tok-w"> </span>the<span class="tok-w"> </span>most<span class="tok-w"> </span>up-to-date<span class="tok-w"> </span>nomenclature<span class="tok-w"> </span>that<span class="tok-w"> </span>may<span class="tok-w"> </span>differ<span class="tok-w"> </span>from<span class="tok-w"> </span>that<span class="tok-w"> </span>on<span class="tok-w"> </span>the<span class="tok-w"> </span>
+<span class="tok-w">          </span>printed<span class="tok-w"> </span>maps.<span class="tok-w"> </span>The<span class="tok-w"> </span>maps<span class="tok-w"> </span>are<span class="tok-w"> </span>generally<span class="tok-w"> </span>based<span class="tok-w"> </span>on<span class="tok-w"> </span>published<span class="tok-w"> </span>material<span class="tok-w"> </span>at<span class="tok-w"> </span>1:50<span class="tok-w"> </span>000<span class="tok-w"> </span>scale<span class="tok-w"> </span>and<span class="tok-w"> </span>compiled<span class="tok-w"> </span>using<span class="tok-w"> </span>techniques<span class="tok-w"> </span>of<span class="tok-w"> </span>
+<span class="tok-w">          </span>selection,<span class="tok-w"> </span>generalisation<span class="tok-w"> </span>and<span class="tok-w"> </span>exaggeration.<span class="tok-w"> </span>The<span class="tok-w"> </span>geology<span class="tok-w"> </span>is<span class="tok-w"> </span>fitted<span class="tok-w"> </span>to<span class="tok-w"> </span>a<span class="tok-w"> </span>relevant<span class="tok-w"> </span>topographic<span class="tok-w"> </span>base<span class="tok-w"> </span>at<span class="tok-w"> </span>the<span class="tok-w"> </span>time<span class="tok-w"> </span>of<span class="tok-w"> </span>
+<span class="tok-w">          </span>production.<span class="tok-w"> </span>Full<span class="tok-w"> </span>UK<span class="tok-w"> </span>coverage<span class="tok-w"> </span>is<span class="tok-w"> </span>available.<span class="tok-w"> </span>The<span class="tok-w"> </span>data<span class="tok-w"> </span>is<span class="tok-w"> </span>available<span class="tok-w"> </span>in<span class="tok-w"> </span>vector<span class="tok-w"> </span>format.<span class="tok-w"> </span>BGS<span class="tok-w"> </span>licensing<span class="tok-w"> </span>terms<span class="tok-w"> </span>and<span class="tok-w"> </span>
+<span class="tok-w">          </span>conditions<span class="tok-w"> </span>apply<span class="tok-w"> </span>to<span class="tok-w"> </span>external<span class="tok-w"> </span>use<span class="tok-w"> </span>of<span class="tok-w"> </span>the<span class="tok-w"> </span>data.
+<span class="tok-w">        </span><span class="tok-nt">&lt;/gco:CharacterString&gt;</span>
+<span class="tok-w">      </span><span class="tok-nt">&lt;/gmd:abstract&gt;</span>
+<span class="tok-w">      </span>...
+<span class="tok-w">    </span><span class="tok-nt">&lt;/gmd:MD_DataIdentification&gt;</span>
+<span class="tok-w">  </span><span class="tok-nt">&lt;/gmd:identificationInfo&gt;</span>
+<span class="tok-w">  </span>...
+<span class="tok-nt">&lt;/gmd:MD_Metadata&gt;</span>
+#<span class="tok-w"> </span>end::dataset[]
+#<span class="tok-w"> </span>tag::service[]
+<span class="tok-nt">&lt;gmd:MD_Metadata&gt;</span>
 <span class="tok-w">  </span>...
 <span class="tok-w">  </span><span class="tok-nt">&lt;gmd:identificationInfo&gt;</span>
 <span class="tok-w">    </span><span class="tok-nt">&lt;srv:SV_ServiceIdentification&gt;</span>
@@ -910,7 +937,8 @@ the United Kingdom as at February 2017.</p>
 <span class="tok-w">    </span><span class="tok-nt">&lt;/srv:SV_ServiceIdentification&gt;</span>
 <span class="tok-w">  </span><span class="tok-nt">&lt;/gmd:identificationInfo&gt;</span>
 <span class="tok-w">  </span>...
-<span class="tok-nt">&lt;/gmd:MD_Metadata&gt;</span></code></pre>
+<span class="tok-nt">&lt;/gmd:MD_Metadata&gt;</span>
+#<span class="tok-w"> </span>end::service[]</code></pre>
 </div>
 </div></div></td>
 </tr>
@@ -931,7 +959,7 @@ the United Kingdom as at February 2017.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2023-11-02 11:26:16 UTC
+Last updated 2023-11-13 12:21:16 UTC
 </div>
 </div>
     <div class="x-bar x-bar-footer x-bar-h x-bar-relative x-bar-outer-spacers e1248-1 myo-0 myo-1" data-x-bar="{&quot;id&quot;:&quot;e1248-1&quot;,&quot;region&quot;:&quot;footer&quot;,&quot;height&quot;:&quot;auto&quot;}">

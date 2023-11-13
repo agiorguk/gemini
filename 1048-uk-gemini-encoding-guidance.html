@@ -1414,7 +1414,7 @@ only one date with type 'revision'.</p>
 <span class="tok-w">     </span><span class="tok-nt">&lt;gco:Date&gt;</span>2010-01-13<span class="tok-nt">&lt;/gco:Date&gt;</span>
 <span class="tok-w">   </span><span class="tok-nt">&lt;/gmd:date&gt;</span>
 <span class="tok-w">   </span><span class="tok-nt">&lt;gmd:dateType&gt;</span>
-<span class="tok-w">     </span><span class="tok-nt">&lt;gmd:CI_DateTypeCode</span><span class="tok-w"> </span><span class="tok-na">codeList=</span><span class="tok-s">&quot;https://schemas.isotc211.org/schemas/19139/resources/gmxCodelists.xml#CI_DateTypeCode&quot;</span><span class="tok-w"> </span><span class="tok-na">codeListValue=</span><span class="tok-s">&quot;revision&quot;</span><span class="tok-nt">&gt;</span>revision<span class="tok-nt">&lt;/gmd:CI_DateTypeCode&gt;</span>
+<span class="tok-w">     </span><span class="tok-nt">&lt;gmd:CI_DateTypeCode</span><span class="tok-w"> </span><span class="tok-na">codeList=</span><span class="tok-s">&quot;https://schemas.isotc211.org/schemas/19139/-/resources/codelist/gmxCodelists.xml#CI_DateTypeCode&quot;</span><span class="tok-w"> </span><span class="tok-na">codeListValue=</span><span class="tok-s">&quot;revision&quot;</span><span class="tok-nt">&gt;</span>revision<span class="tok-nt">&lt;/gmd:CI_DateTypeCode&gt;</span>
 <span class="tok-w">   </span><span class="tok-nt">&lt;/gmd:dateType&gt;</span>
 <span class="tok-w"> </span><span class="tok-nt">&lt;/gmd:CI_Date&gt;</span>
 <span class="tok-nt">&lt;/gmd:date&gt;</span>
@@ -1479,7 +1479,7 @@ only one date with type 'revision'.</p>
 <span class="tok-w"> </span><span class="tok-nt">&lt;/gmd:CI_Contact&gt;</span>
 <span class="tok-nt">&lt;/gmd:contactInfo&gt;</span>
 <span class="tok-nt">&lt;gmd:role&gt;</span>
-<span class="tok-w"> </span><span class="tok-nt">&lt;gmd:CI_RoleCode</span><span class="tok-w"> </span><span class="tok-na">codeList=</span><span class="tok-s">&quot;https://schemas.isotc211.org/schemas/19139/resources/gmxCodelists.xml#CI_RoleCode&quot;</span><span class="tok-w"> </span><span class="tok-na">codeListValue=</span><span class="tok-s">&quot;author&quot;</span><span class="tok-nt">&gt;</span>author<span class="tok-nt">&lt;/gmd:CI_RoleCode&gt;</span>
+<span class="tok-w"> </span><span class="tok-nt">&lt;gmd:CI_RoleCode</span><span class="tok-w"> </span><span class="tok-na">codeList=</span><span class="tok-s">&quot;https://schemas.isotc211.org/schemas/19139/-/resources/codelist/gmxCodelists.xml#CI_RoleCode&quot;</span><span class="tok-w"> </span><span class="tok-na">codeListValue=</span><span class="tok-s">&quot;author&quot;</span><span class="tok-nt">&gt;</span>author<span class="tok-nt">&lt;/gmd:CI_RoleCode&gt;</span>
 <span class="tok-nt">&lt;/gmd:role&gt;</span>
 <span class="tok-nt">&lt;/gmd:CI_ResponsibleParty&gt;</span>
 ...</code></pre>
@@ -1532,7 +1532,8 @@ gmd:codeListValue respectively.</p>
 19115 code list catalogue that is published on the ISO website:</p>
 </div>
 <div class="paragraph">
-<p><a href="https://standards.iso.org/iso/19139/resources/gmxCodelists.xml">https://schemas.isotc211.org/schemas/19139/resources/gmxCodelists.xml</a></p>
+<p><a href="https://standards.iso.org/iso/19139/resources/gmxCodelists.xml">https://standards.iso.org/iso/19139/resources/gmxCodelists.xml</a>
+or on the ISO/TC 211 resources site <a href="https://schemas.isotc211.org/schemas/19139/-/resources/codelist/gmxCodelists.xml">https://schemas.isotc211.org/schemas/19139/-/resources/codelist/gmxCodelists.xml</a></p>
 </div>
 <div class="paragraph">
 <p>Plus a hash character acting as a delimiter, and then the identifier of
@@ -1558,7 +1559,7 @@ attribute gmd:codeListValue.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="xml"><span></span><span class="tok-nt">&lt;gmd:MD_ScopeCode</span><span class="tok-w"> </span><span class="tok-na">codeList=</span><span class="tok-s">&quot;https://schemas.isotc211.org/schemas/19139/resources/gmxCodelists.xml#MD_ScopeCode&quot;</span>
+<pre class="pygments highlight"><code data-lang="xml"><span></span><span class="tok-nt">&lt;gmd:MD_ScopeCode</span><span class="tok-w"> </span><span class="tok-na">codeList=</span><span class="tok-s">&quot;https://standards.iso.org/iso/19139/-/resources/codelist/gmxCodelists.xml#MD_ScopeCode&quot;</span>
 <span class="tok-na">codeListValue=</span><span class="tok-s">&quot;dataset&quot;</span><span class="tok-nt">&gt;</span>dataset<span class="tok-nt">&lt;/gmd:MD_ScopeCode&gt;</span></code></pre>
 </div>
 </div>
@@ -1931,7 +1932,7 @@ for IPR reasons, and with a web page describing licences</p>
 <span class="tok-w">	</span><span class="tok-nt">&lt;gmd:MD_LegalConstraints&gt;</span>
 <span class="tok-w">		</span><span class="tok-nt">&lt;gmd:accessConstraints&gt;</span>
 <span class="tok-w">			</span><span class="tok-nt">&lt;gmd:MD_RestrictionCode</span>
-<span class="tok-w">			</span><span class="tok-na">codeList=</span><span class="tok-s">&quot;https://schemas.isotc211.org/schemas/19139/resources/gmxCodelists.xml#MD_RestrictionCode&quot;</span>
+<span class="tok-w">			</span><span class="tok-na">codeList=</span><span class="tok-s">&quot;https://standards.iso.org/iso/19139/-/resources/codelist/gmxCodelists.xml#MD_RestrictionCode&quot;</span>
 <span class="tok-w">			</span><span class="tok-na">codeListValue=</span><span class="tok-s">&quot;otherRestrictions&quot;</span><span class="tok-nt">&gt;</span>otherRestrictions<span class="tok-nt">&lt;/gmd:MD_RestrictionCode&gt;</span>
 <span class="tok-w">		</span><span class="tok-nt">&lt;/gmd:accessConstraints&gt;</span>
 <span class="tok-w">		</span><span class="tok-nt">&lt;gmd:otherConstraints&gt;</span>
@@ -1945,7 +1946,7 @@ for IPR reasons, and with a web page describing licences</p>
 <span class="tok-w">	</span><span class="tok-nt">&lt;gmd:MD_LegalConstraints&gt;</span>
 <span class="tok-w">		</span><span class="tok-nt">&lt;gmd:useConstraints&gt;</span>
 <span class="tok-w">			</span><span class="tok-nt">&lt;gmd:MD_RestrictionCode</span>
-<span class="tok-w">				</span><span class="tok-na">codeList=</span><span class="tok-s">&quot;https://schemas.isotc211.org/schemas/19139/resources/gmxCodelists.xml#MD_RestrictionCode&quot;</span>
+<span class="tok-w">				</span><span class="tok-na">codeList=</span><span class="tok-s">&quot;https://schemas.isotc211.org/schemas/19139/-/resources/codelist/gmxCodelists.xml#MD_RestrictionCode&quot;</span>
 <span class="tok-w">				</span><span class="tok-na">codeListValue=</span><span class="tok-s">&quot;otherRestrictions&quot;</span><span class="tok-nt">&gt;</span>otherRestrictions<span class="tok-nt">&lt;/gmd:MD_RestrictionCode&gt;</span>
 <span class="tok-w">		</span><span class="tok-nt">&lt;/gmd:useConstraints&gt;</span>
 <span class="tok-w">		</span><span class="tok-nt">&lt;gmd:otherConstraints&gt;</span>
@@ -1972,7 +1973,7 @@ text.</p>
 <span class="tok-w">	</span><span class="tok-nt">&lt;gmd:MD_LegalConstraints&gt;</span>
 <span class="tok-w">		</span><span class="tok-nt">&lt;gmd:accessConstraints&gt;</span>
 <span class="tok-w">			</span><span class="tok-nt">&lt;gmd:MD_RestrictionCode</span>
-<span class="tok-w">			</span><span class="tok-na">codeList=</span><span class="tok-s">&quot;https://schemas.isotc211.org/schemas/19139/resources/gmxCodelists.xml#MD_RestrictionCode&quot;</span>
+<span class="tok-w">			</span><span class="tok-na">codeList=</span><span class="tok-s">&quot;https://schemas.isotc211.org/schemas/19139/-/resources/codelist/gmxCodelists.xml#MD_RestrictionCode&quot;</span>
 <span class="tok-w">			</span><span class="tok-na">codeListValue=</span><span class="tok-s">&quot;otherRestrictions&quot;</span><span class="tok-nt">&gt;</span>otherRestrictions<span class="tok-nt">&lt;/gmd:MD_RestrictionCode&gt;</span>
 <span class="tok-w">		</span><span class="tok-nt">&lt;/gmd:accessConstraints&gt;</span>
 <span class="tok-w">		</span><span class="tok-nt">&lt;gmd:otherConstraints&gt;</span>
@@ -1986,7 +1987,7 @@ text.</p>
 <span class="tok-w">	</span><span class="tok-nt">&lt;gmd:MD_LegalConstraints&gt;</span><span class="tok-w"> </span><span class="tok-cm">&lt;!-- change existing example here, was MD_Constraints --&gt;</span>
 <span class="tok-w">		</span><span class="tok-nt">&lt;gmd:useConstraints&gt;</span>
 <span class="tok-w">			</span><span class="tok-nt">&lt;gmd:MD_RestrictionCode</span>
-<span class="tok-w">				</span><span class="tok-na">codeList=</span><span class="tok-s">&quot;https://schemas.isotc211.org/schemas/19139/resources/gmxCodelists.xml#MD_RestrictionCode&quot;</span>
+<span class="tok-w">				</span><span class="tok-na">codeList=</span><span class="tok-s">&quot;https://schemas.isotc211.org/schemas/19139/-/resources/codelist/gmxCodelists.xml#MD_RestrictionCode&quot;</span>
 <span class="tok-w">				</span><span class="tok-na">codeListValue=</span><span class="tok-s">&quot;otherRestrictions&quot;</span><span class="tok-nt">&gt;</span>otherRestrictions<span class="tok-nt">&lt;/gmd:MD_RestrictionCode&gt;</span>
 <span class="tok-w">		</span><span class="tok-nt">&lt;/gmd:useConstraints&gt;</span>
 <span class="tok-w">		</span><span class="tok-nt">&lt;gmd:otherConstraints&gt;</span>
@@ -2012,7 +2013,7 @@ access, but plain text conditions of use.</p>
 <span class="tok-w">	</span><span class="tok-nt">&lt;gmd:MD_LegalConstraints&gt;</span>
 <span class="tok-w">		</span><span class="tok-nt">&lt;gmd:accessConstraints&gt;</span>
 <span class="tok-w">			</span><span class="tok-nt">&lt;gmd:MD_RestrictionCode</span>
-<span class="tok-w">				</span><span class="tok-na">codeList=</span><span class="tok-s">&quot;https://schemas.isotc211.org/schemas/19139/resources/gmxCodelists.xml#MD_RestrictionCode&quot;</span>
+<span class="tok-w">				</span><span class="tok-na">codeList=</span><span class="tok-s">&quot;https://schemas.isotc211.org/schemas/19139/-/resources/codelist/gmxCodelists.xml#MD_RestrictionCode&quot;</span>
 <span class="tok-w">				</span><span class="tok-na">codeListValue=</span><span class="tok-s">&quot;otherRestrictions&quot;</span><span class="tok-nt">&gt;</span>otherRestrictions<span class="tok-nt">&lt;/gmd:MD_RestrictionCode&gt;</span>
 <span class="tok-w">		</span><span class="tok-nt">&lt;/gmd:accessConstraints&gt;</span>
 <span class="tok-w">		</span><span class="tok-nt">&lt;gmd:otherConstraints&gt;</span>
@@ -2026,7 +2027,7 @@ access, but plain text conditions of use.</p>
 <span class="tok-w">	</span><span class="tok-nt">&lt;gmd:MD_LegalConstraints&gt;</span><span class="tok-w"> </span><span class="tok-cm">&lt;!-- change existing example here, was MD_Constraints --&gt;</span>
 <span class="tok-w">		</span><span class="tok-nt">&lt;gmd:useConstraints&gt;</span>
 <span class="tok-w">			</span><span class="tok-nt">&lt;gmd:MD_RestrictionCode</span>
-<span class="tok-w">				</span><span class="tok-na">codeList=</span><span class="tok-s">&quot;https://schemas.isotc211.org/schemas/19139/resources/gmxCodelists.xml#MD_RestrictionCode&quot;</span>
+<span class="tok-w">				</span><span class="tok-na">codeList=</span><span class="tok-s">&quot;https://schemas.isotc211.org/schemas/19139/-/resources/codelist/gmxCodelists.xml#MD_RestrictionCode&quot;</span>
 <span class="tok-w">				</span><span class="tok-na">codeListValue=</span><span class="tok-s">&quot;otherRestrictions&quot;</span><span class="tok-nt">&gt;</span>otherRestrictions<span class="tok-nt">&lt;/gmd:MD_RestrictionCode&gt;</span>
 <span class="tok-w">		</span><span class="tok-nt">&lt;/gmd:useConstraints&gt;</span>
 <span class="tok-w">		</span><span class="tok-nt">&lt;gmd:otherConstraints&gt;</span>
@@ -2066,7 +2067,7 @@ series, ISO 19115 hierarchyLevelName element must also be set, to
 <pre class="pygments highlight"><code data-lang="xml"><span></span><span class="tok-nt">&lt;gmd:MD_Metadata&gt;</span>
 ...
 <span class="tok-nt">&lt;gmd:hierarchyLevel&gt;</span>
-<span class="tok-w">	</span><span class="tok-nt">&lt;gmd:MD_ScopeCode</span><span class="tok-w"> </span><span class="tok-na">codeList=</span><span class="tok-s">&quot;https://schemas.isotc211.org/schemas/19139/resources/gmxCodelists.xml#MD_ScopeCode&quot;</span><span class="tok-w"> </span><span class="tok-na">codeListValue=</span><span class="tok-s">&quot;dataset&quot;</span><span class="tok-nt">&gt;</span>dataset<span class="tok-nt">&lt;/gmd:MD_ScopeCode&gt;</span>
+<span class="tok-w">	</span><span class="tok-nt">&lt;gmd:MD_ScopeCode</span><span class="tok-w"> </span><span class="tok-na">codeList=</span><span class="tok-s">&quot;https://schemas.isotc211.org/schemas/19139/-/resources/codelist/gmxCodelists.xml#MD_ScopeCode&quot;</span><span class="tok-w"> </span><span class="tok-na">codeListValue=</span><span class="tok-s">&quot;dataset&quot;</span><span class="tok-nt">&gt;</span>dataset<span class="tok-nt">&lt;/gmd:MD_ScopeCode&gt;</span>
 <span class="tok-nt">&lt;/gmd:hierarchyLevel&gt;</span>
 ...
 <span class="tok-nt">&lt;gmd:identificationInfo&gt;</span>
@@ -2112,7 +2113,7 @@ set, to "service".</p>
 ...
 <span class="tok-nt">&lt;gmd:hierarchyLevel&gt;</span>
 <span class="tok-w">	 </span><span class="tok-nt">&lt;gmd:MD_ScopeCode</span>
-<span class="tok-w">	   </span><span class="tok-na">codeList=</span><span class="tok-s">&quot;https://schemas.isotc211.org/schemas/19139/resources/codelist/gmxCodelists.xml#MD_ScopeCode&quot;</span>
+<span class="tok-w">	   </span><span class="tok-na">codeList=</span><span class="tok-s">&quot;https://schemas.isotc211.org/schemas/19139/-/resources/codelist/gmxCodelists.xml#MD_ScopeCode&quot;</span>
 <span class="tok-w">	   </span><span class="tok-na">codeListValue=</span><span class="tok-s">&quot;service&quot;</span><span class="tok-nt">&gt;</span>service
 <span class="tok-w"> 	</span><span class="tok-nt">&lt;/gmd:MD_ScopeCode&gt;</span>
 <span class="tok-nt">&lt;/gmd:hierarchyLevel&gt;</span>
@@ -2175,7 +2176,7 @@ This work is licensed under a <a href="http://creativecommons.org/licenses/by/4.
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2023-11-02 11:26:16 UTC
+Last updated 2023-11-13 12:21:16 UTC
 </div>
 </div>
     <div class="x-bar x-bar-footer x-bar-h x-bar-relative x-bar-outer-spacers e1248-1 myo-0 myo-1" data-x-bar="{&quot;id&quot;:&quot;e1248-1&quot;,&quot;region&quot;:&quot;footer&quot;,&quot;height&quot;:&quot;auto&quot;}">

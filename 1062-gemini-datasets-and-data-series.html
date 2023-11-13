@@ -1541,7 +1541,7 @@ series are:</p>
 <span class="tok-w">  </span>...
 <span class="tok-w">  </span><span class="tok-nt">&lt;gmd:hierarchyLevel&gt;</span>
 <span class="tok-w">            </span><span class="tok-nt">&lt;gmd:MD_ScopeCode</span><span class="tok-w"> </span><span class="tok-na">codeListValue=</span><span class="tok-s">&#39;dataset&#39;</span><span class="tok-w"> </span>
-<span class="tok-w">              </span><span class="tok-na">codeList=</span><span class="tok-s">&#39;https://schemas.isotc211.org/schemas/19139/resources/codelist/gmxCodelists.xml#MD_ScopeCode&#39;</span><span class="tok-nt">&gt;</span>dataset<span class="tok-nt">&lt;/gmd:MD_ScopeCode&gt;</span>
+<span class="tok-w">              </span><span class="tok-na">codeList=</span><span class="tok-s">&#39;https://schemas.isotc211.org/schemas/19139/-/resources/codelist/gmxCodelists.xml#MD_ScopeCode&#39;</span><span class="tok-nt">&gt;</span>dataset<span class="tok-nt">&lt;/gmd:MD_ScopeCode&gt;</span>
 <span class="tok-w">  </span><span class="tok-nt">&lt;/gmd:hierarchyLevel&gt;</span>
 <span class="tok-w">  </span>...
 <span class="tok-nt">&lt;/gmd:MD_Metadata&gt;</span></code></pre>
@@ -1910,25 +1910,43 @@ series</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Example</p>
+<p>Example 1 - dataset, where hierarchyLevelName could just be omitted</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="content">
 <pre class="pygments highlight"><code data-lang="xml"><span></span><span class="tok-nt">&lt;gmd:MD_Metadata&gt;</span>
 <span class="tok-w">  </span>...
-<span class="tok-w">  </span><span class="tok-nt">&lt;gmd:hierarchyLevel&gt;</span>
-<span class="tok-w">            </span><span class="tok-nt">&lt;gmd:MD_ScopeCode</span><span class="tok-w"> </span><span class="tok-na">codeListValue=</span><span class="tok-s">&#39;service&#39;</span><span class="tok-w"> </span>
-<span class="tok-w">              </span><span class="tok-na">codeList=</span><span class="tok-s">&#39;https://schemas.isotc211.org/schemas/19139/resources/codelist/gmxCodelists.xml#MD_ScopeCode&#39;</span><span class="tok-nt">&gt;</span>INSPIRE<span class="tok-w"> </span>View<span class="tok-w"> </span>Service<span class="tok-nt">&lt;/gmd:MD_ScopeCode&gt;</span>
-<span class="tok-w">  </span><span class="tok-nt">&lt;/gmd:hierarchyLevel&gt;</span>
+<span class="tok-w">  </span><span class="tok-nt">&lt;gmd:hierarchyLevelName</span><span class="tok-w"> </span><span class="tok-na">gco:nilReason=</span><span class="tok-s">&quot;inapplicable&quot;</span><span class="tok-nt">/&gt;</span>
+<span class="tok-w">  </span>...
+<span class="tok-w">  </span><span class="tok-nt">&lt;gmd:identificationInfo&gt;</span>
+<span class="tok-w">    </span><span class="tok-nt">&lt;gmd:MD_DataIdentification</span><span class="tok-w"> </span><span class="tok-na">id=</span><span class="tok-s">&quot;BGS-13607137&quot;</span><span class="tok-nt">&gt;</span>
+<span class="tok-w">      </span>...
+<span class="tok-w">    </span><span class="tok-nt">&lt;/gmd:MD_DataIdentification&gt;</span>
+<span class="tok-w">  </span><span class="tok-nt">&lt;/gmd:identificationInfo&gt;</span>
+<span class="tok-w">  </span>...
+<span class="tok-nt">&lt;/gmd:MD_Metadata&gt;</span></code></pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Example 2 - series, where hierarchyLevelName is required</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="xml"><span></span><span class="tok-nt">&lt;gmd:MD_Metadata&gt;</span>
+<span class="tok-w">  </span>...
 <span class="tok-w">  </span><span class="tok-nt">&lt;gmd:hierarchyLevelName&gt;</span>
-<span class="tok-w">    </span><span class="tok-nt">&lt;gco:CharacterString&gt;</span>service<span class="tok-nt">&lt;/gco:CharacterString&gt;</span>
+<span class="tok-w">    </span><span class="tok-nt">&lt;gco:CharacterString&gt;</span>series<span class="tok-nt">&lt;/gco:CharacterString&gt;</span>
 <span class="tok-w">  </span><span class="tok-nt">&lt;/gmd:hierarchyLevelName&gt;</span>
 <span class="tok-w">  </span>...
 <span class="tok-w">  </span><span class="tok-nt">&lt;gmd:identificationInfo&gt;</span>
-<span class="tok-w">    </span><span class="tok-nt">&lt;srv:SV_ServiceIdentification&gt;</span>
+<span class="tok-w">    </span><span class="tok-nt">&lt;gmd:MD_DataIdentification</span><span class="tok-w"> </span><span class="tok-na">id=</span><span class="tok-s">&quot;OSTerrain50&quot;</span><span class="tok-nt">&gt;</span>
 <span class="tok-w">      </span>...
-<span class="tok-w">    </span><span class="tok-nt">&lt;/srv:SV_ServiceIdentification&gt;</span>
-<span class="tok-w">  </span><span class="tok-nt">&lt;/gmd:identificationInfo&gt;</span></code></pre>
+<span class="tok-w">    </span><span class="tok-nt">&lt;/gmd:MD_DataIdentification&gt;</span>
+<span class="tok-w">  </span><span class="tok-nt">&lt;/gmd:identificationInfo&gt;</span>
+<span class="tok-w">  </span>...
+<span class="tok-nt">&lt;/gmd:MD_Metadata&gt;</span></code></pre>
 </div>
 </div></div></td>
 </tr>
@@ -1990,7 +2008,7 @@ forms a part.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Guidance</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Only to be used if the service is designed to be part of a set of services</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Only to be used if the dataset is part of a series</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Comment</p></td>
@@ -2637,16 +2655,16 @@ in the abstract or Alternative Title.</p>
 <pre class="pygments highlight"><code data-lang="xml"><span></span><span class="tok-nt">&lt;gmd:MD_Metadata&gt;</span>
 <span class="tok-w">    </span>...
 <span class="tok-w">    </span><span class="tok-nt">&lt;gmd:identificationInfo&gt;</span>
-<span class="tok-w">      </span><span class="tok-nt">&lt;srv:SV_ServiceIdentification&gt;</span>
+<span class="tok-w">      </span><span class="tok-nt">&lt;gmd:MD_DataIdentification</span><span class="tok-w"> </span><span class="tok-na">id=</span><span class="tok-s">&quot;BGS-13606338&quot;</span><span class="tok-nt">&gt;</span>
 <span class="tok-w">        </span><span class="tok-nt">&lt;gmd:citation&gt;</span>
 <span class="tok-w">          </span><span class="tok-nt">&lt;gmd:CI_Citation&gt;</span>
 <span class="tok-w">            </span><span class="tok-nt">&lt;gmd:title&gt;</span>
-<span class="tok-w">              </span><span class="tok-nt">&lt;gco:CharacterString&gt;</span>WMS<span class="tok-w"> </span>publishing<span class="tok-w"> </span>the<span class="tok-w"> </span>Digital<span class="tok-w"> </span>Geological<span class="tok-w"> </span>Map<span class="tok-w"> </span>Data<span class="tok-w"> </span>of<span class="tok-w"> </span>Great<span class="tok-w"> </span>Britain<span class="tok-w"> </span>-<span class="tok-w"> </span>625k<span class="tok-nt">&lt;/gco:CharacterString&gt;</span>
+<span class="tok-w">              </span><span class="tok-nt">&lt;gco:CharacterString&gt;</span>Digital<span class="tok-w"> </span>Geological<span class="tok-w"> </span>Map<span class="tok-w"> </span>Data<span class="tok-w"> </span>of<span class="tok-w"> </span>Great<span class="tok-w"> </span>Britain<span class="tok-w"> </span>-<span class="tok-w"> </span>625k<span class="tok-nt">&lt;/gco:CharacterString&gt;</span>
 <span class="tok-w">            </span><span class="tok-nt">&lt;/gmd:title&gt;</span>
 <span class="tok-w">            </span>...
 <span class="tok-w">          </span><span class="tok-nt">&lt;/gmd:CI_Citation&gt;</span>
 <span class="tok-w">        </span><span class="tok-nt">&lt;/gmd:citation&gt;</span>
-<span class="tok-w">      </span><span class="tok-nt">&lt;/srv:SV_ServiceIdentification&gt;</span>
+<span class="tok-w">      </span><span class="tok-nt">&lt;/gmd:MD_DataIdentification&gt;</span>
 <span class="tok-w">    </span><span class="tok-nt">&lt;/gmd:identificationInfo&gt;</span>
 <span class="tok-w">    </span>...
 <span class="tok-nt">&lt;/gmd:MD_Metadata&gt;</span></code></pre>
@@ -2779,7 +2797,7 @@ title</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19139:2007</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">/gmd:MD_Metadata/gmd:identificationInfo/srv:SV_ServiceIdentification/gmd:citation/gmd:CI_Citation/gmd:alternateTitle</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:alternateTitle</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Equivalent</p></td>
 </tr>
 </tbody>
@@ -2814,29 +2832,63 @@ as shown in the example below.</p>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Example</p>
 </div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Example one</p>
+</div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="content">
 <pre class="pygments highlight"><code data-lang="xml"><span></span><span class="tok-nt">&lt;gmd:MD_Metadata&gt;</span>
-<span class="tok-w">  </span>...
-<span class="tok-w">  </span><span class="tok-nt">&lt;gmd:identificationInfo&gt;</span>
-<span class="tok-w">    </span><span class="tok-nt">&lt;srv:SV_ServiceIdentification&gt;</span>
-<span class="tok-w">      </span><span class="tok-nt">&lt;gmd:citation&gt;</span>
-<span class="tok-w">        </span><span class="tok-nt">&lt;gmd:CI_Citation&gt;</span>
-<span class="tok-w">          </span>...
-<span class="tok-w">          </span><span class="tok-nt">&lt;gmd:alternateTitle&gt;</span>
-<span class="tok-w">            </span><span class="tok-nt">&lt;gco:CharacterString&gt;</span>WMS<span class="tok-w"> </span>publishing<span class="tok-w"> </span>the<span class="tok-w"> </span>Geology<span class="tok-w"> </span>onshore<span class="tok-w"> </span>digital<span class="tok-w"> </span>maps<span class="tok-w"> </span>1:625<span class="tok-w"> </span>000<span class="tok-w"> </span>scale<span class="tok-nt">&lt;/gco:CharacterString&gt;</span>
-<span class="tok-w">          </span><span class="tok-nt">&lt;/gmd:alternateTitle&gt;</span>
-<span class="tok-w">          </span><span class="tok-nt">&lt;gmd:alternateTitle&gt;</span>
-<span class="tok-w">            </span><span class="tok-nt">&lt;gco:CharacterString&gt;</span>Service<span class="tok-w"> </span>publishing<span class="tok-w"> </span>DiGMapGB-625<span class="tok-nt">&lt;/gco:CharacterString&gt;</span>
-<span class="tok-w">          </span><span class="tok-nt">&lt;/gmd:alternateTitle&gt;</span>
-<span class="tok-w">          </span>...
-<span class="tok-w">        </span><span class="tok-nt">&lt;/gmd:CI_Citation&gt;</span>
-<span class="tok-w">      </span><span class="tok-nt">&lt;/gmd:citation&gt;</span>
-<span class="tok-w">    </span><span class="tok-nt">&lt;/srv:SV_ServiceIdentification&gt;</span>
-<span class="tok-w">  </span><span class="tok-nt">&lt;/gmd:identificationInfo&gt;</span>
-<span class="tok-w">  </span>...
-<span class="tok-nt">&lt;/gmd:MD_Metadata&gt;</span>
-....</code></pre>
+...
+<span class="tok-nt">&lt;gmd:identificationInfo&gt;</span>
+<span class="tok-w">  </span><span class="tok-nt">&lt;gmd:MD_DataIdentification</span><span class="tok-w"> </span><span class="tok-na">id=</span><span class="tok-s">&quot;BGS-13480426&quot;</span><span class="tok-nt">&gt;</span>
+<span class="tok-w">    </span><span class="tok-nt">&lt;gmd:citation&gt;</span>
+<span class="tok-w">      </span><span class="tok-nt">&lt;gmd:CI_Citation&gt;</span>
+<span class="tok-w">    </span>...
+<span class="tok-w">    </span><span class="tok-nt">&lt;gmd:alternateTitle&gt;</span>
+<span class="tok-w">      </span><span class="tok-nt">&lt;gco:CharacterString&gt;</span>Geology<span class="tok-w"> </span>onshore<span class="tok-w"> </span>digital<span class="tok-w"> </span>maps<span class="tok-w"> </span>1:625<span class="tok-w"> </span>000<span class="tok-w"> </span>scale<span class="tok-nt">&lt;/gco:CharacterString&gt;</span>
+<span class="tok-w">    </span><span class="tok-nt">&lt;/gmd:alternateTitle&gt;</span>
+<span class="tok-w">    </span><span class="tok-nt">&lt;gmd:alternateTitle&gt;</span>
+<span class="tok-w">      </span><span class="tok-nt">&lt;gco:CharacterString&gt;</span>DiGMapGB-625<span class="tok-nt">&lt;/gco:CharacterString&gt;</span>
+<span class="tok-w">    </span><span class="tok-nt">&lt;/gmd:alternateTitle&gt;</span>
+<span class="tok-w">    </span>...
+<span class="tok-w">      </span><span class="tok-nt">&lt;/gmd:CI_Citation&gt;</span>
+<span class="tok-w">    </span><span class="tok-nt">&lt;/gmd:citation&gt;</span>
+<span class="tok-w">  </span><span class="tok-nt">&lt;/gmd:MD_DataIdentification&gt;</span>
+<span class="tok-nt">&lt;/gmd:identificationInfo&gt;</span>
+...
+<span class="tok-nt">&lt;/gmd:MD_Metadata&gt;</span></code></pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Example two</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="xml"><span></span><span class="tok-nt">&lt;gmd:MD_Metadata&gt;</span>
+...
+<span class="tok-nt">&lt;gmd:identificationInfo&gt;</span>
+<span class="tok-w">  </span><span class="tok-nt">&lt;gmd:MD_DataIdentification</span><span class="tok-w"> </span><span class="tok-na">id=</span><span class="tok-s">&quot;BGS-13480426&quot;</span><span class="tok-nt">&gt;</span>
+<span class="tok-w">    </span><span class="tok-nt">&lt;gmd:citation&gt;</span>
+<span class="tok-w">      </span><span class="tok-nt">&lt;gmd:CI_Citation&gt;</span>
+<span class="tok-w">    </span>...
+<span class="tok-w">    </span><span class="tok-nt">&lt;gmd:alternateTitle&gt;</span>
+<span class="tok-w">      </span><span class="tok-nt">&lt;gco:CharacterString&gt;</span>Geology<span class="tok-w"> </span>onshore<span class="tok-w"> </span>digital<span class="tok-w"> </span>maps<span class="tok-w"> </span>1:625<span class="tok-w"> </span>000<span class="tok-w"> </span>scale<span class="tok-nt">&lt;/gco:CharacterString&gt;</span>
+<span class="tok-w">    </span><span class="tok-nt">&lt;/gmd:alternateTitle&gt;</span>
+<span class="tok-w">    </span><span class="tok-nt">&lt;gmd:alternateTitle&gt;</span>
+<span class="tok-w">      </span><span class="tok-nt">&lt;gco:CharacterString&gt;</span>DiGMapGB-625<span class="tok-nt">&lt;/gco:CharacterString&gt;</span>
+<span class="tok-w">    </span><span class="tok-nt">&lt;/gmd:alternateTitle&gt;</span>
+<span class="tok-w">    </span>...
+<span class="tok-w">      </span><span class="tok-nt">&lt;/gmd:CI_Citation&gt;</span>
+<span class="tok-w">    </span><span class="tok-nt">&lt;/gmd:citation&gt;</span>
+<span class="tok-w">  </span><span class="tok-nt">&lt;/gmd:MD_DataIdentification&gt;</span>
+<span class="tok-nt">&lt;/gmd:identificationInfo&gt;</span>
+...
+<span class="tok-nt">&lt;/gmd:MD_Metadata&gt;</span></code></pre>
 </div>
 </div></div></td>
 </tr>
@@ -3247,7 +3299,7 @@ the United Kingdom as at February 2017.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19139:2007</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">/gmd:MD_Metadata/gmd:identificationInfo/srv:SV_ServiceIdentification/gmd:abstract</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:abstract</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Equivalent</p></td>
 </tr>
 </tbody>
@@ -3283,13 +3335,20 @@ the United Kingdom as at February 2017.</p>
 <pre class="pygments highlight"><code data-lang="xml"><span></span><span class="tok-nt">&lt;gmd:MD_Metadata&gt;</span>
 <span class="tok-w">  </span>...
 <span class="tok-w">  </span><span class="tok-nt">&lt;gmd:identificationInfo&gt;</span>
-<span class="tok-w">    </span><span class="tok-nt">&lt;srv:SV_ServiceIdentification&gt;</span>
+<span class="tok-w">    </span><span class="tok-nt">&lt;gmd:MD_DataIdentification</span><span class="tok-w"> </span><span class="tok-na">id=</span><span class="tok-s">&quot;BGS-13603180&quot;</span><span class="tok-nt">&gt;</span>
 <span class="tok-w">      </span>...
 <span class="tok-w">      </span><span class="tok-nt">&lt;gmd:abstract&gt;</span>
-<span class="tok-w">        </span><span class="tok-nt">&lt;gco:CharacterString&gt;</span>Europe<span class="tok-w"> </span>Mapping<span class="tok-w"> </span>Service<span class="tok-w"> </span>based<span class="tok-w"> </span>on<span class="tok-w"> </span>the<span class="tok-w"> </span>Image2000<span class="tok-w"> </span>European<span class="tok-w"> </span>mosaic<span class="tok-w"> </span>(multispectral)<span class="tok-nt">&lt;/gco:CharacterString&gt;</span>
+<span class="tok-w">        </span><span class="tok-nt">&lt;gco:CharacterString&gt;</span>The<span class="tok-w"> </span>data<span class="tok-w"> </span>shows<span class="tok-w"> </span>polygonal<span class="tok-w"> </span>and<span class="tok-w"> </span>selected<span class="tok-w"> </span>linear<span class="tok-w"> </span>geological<span class="tok-w"> </span>information,<span class="tok-w"> </span>sourced<span class="tok-w"> </span>from<span class="tok-w"> </span>published<span class="tok-w"> </span>
+<span class="tok-w">          </span>BGS<span class="tok-w"> </span>1:625<span class="tok-w"> </span>000<span class="tok-w"> </span>scale<span class="tok-w"> </span>maps<span class="tok-w"> </span>of<span class="tok-w"> </span>Great<span class="tok-w"> </span>Britain.<span class="tok-w"> </span>
+<span class="tok-w">          </span>However,<span class="tok-w"> </span>geological<span class="tok-w"> </span>units<span class="tok-w"> </span>are<span class="tok-w"> </span>identified<span class="tok-w"> </span>using<span class="tok-w"> </span>the<span class="tok-w"> </span>most<span class="tok-w"> </span>up-to-date<span class="tok-w"> </span>nomenclature<span class="tok-w"> </span>that<span class="tok-w"> </span>may<span class="tok-w"> </span>differ<span class="tok-w"> </span>from<span class="tok-w"> </span>that<span class="tok-w"> </span>on<span class="tok-w"> </span>the<span class="tok-w"> </span>
+<span class="tok-w">          </span>printed<span class="tok-w"> </span>maps.<span class="tok-w"> </span>The<span class="tok-w"> </span>maps<span class="tok-w"> </span>are<span class="tok-w"> </span>generally<span class="tok-w"> </span>based<span class="tok-w"> </span>on<span class="tok-w"> </span>published<span class="tok-w"> </span>material<span class="tok-w"> </span>at<span class="tok-w"> </span>1:50<span class="tok-w"> </span>000<span class="tok-w"> </span>scale<span class="tok-w"> </span>and<span class="tok-w"> </span>compiled<span class="tok-w"> </span>using<span class="tok-w"> </span>techniques<span class="tok-w"> </span>of<span class="tok-w"> </span>
+<span class="tok-w">          </span>selection,<span class="tok-w"> </span>generalisation<span class="tok-w"> </span>and<span class="tok-w"> </span>exaggeration.<span class="tok-w"> </span>The<span class="tok-w"> </span>geology<span class="tok-w"> </span>is<span class="tok-w"> </span>fitted<span class="tok-w"> </span>to<span class="tok-w"> </span>a<span class="tok-w"> </span>relevant<span class="tok-w"> </span>topographic<span class="tok-w"> </span>base<span class="tok-w"> </span>at<span class="tok-w"> </span>the<span class="tok-w"> </span>time<span class="tok-w"> </span>of<span class="tok-w"> </span>
+<span class="tok-w">          </span>production.<span class="tok-w"> </span>Full<span class="tok-w"> </span>UK<span class="tok-w"> </span>coverage<span class="tok-w"> </span>is<span class="tok-w"> </span>available.<span class="tok-w"> </span>The<span class="tok-w"> </span>data<span class="tok-w"> </span>is<span class="tok-w"> </span>available<span class="tok-w"> </span>in<span class="tok-w"> </span>vector<span class="tok-w"> </span>format.<span class="tok-w"> </span>BGS<span class="tok-w"> </span>licensing<span class="tok-w"> </span>terms<span class="tok-w"> </span>and<span class="tok-w"> </span>
+<span class="tok-w">          </span>conditions<span class="tok-w"> </span>apply<span class="tok-w"> </span>to<span class="tok-w"> </span>external<span class="tok-w"> </span>use<span class="tok-w"> </span>of<span class="tok-w"> </span>the<span class="tok-w"> </span>data.
+<span class="tok-w">        </span><span class="tok-nt">&lt;/gco:CharacterString&gt;</span>
 <span class="tok-w">      </span><span class="tok-nt">&lt;/gmd:abstract&gt;</span>
 <span class="tok-w">      </span>...
-<span class="tok-w">    </span><span class="tok-nt">&lt;/srv:SV_ServiceIdentification&gt;</span>
+<span class="tok-w">    </span><span class="tok-nt">&lt;/gmd:MD_DataIdentification&gt;</span>
 <span class="tok-w">  </span><span class="tok-nt">&lt;/gmd:identificationInfo&gt;</span>
 <span class="tok-w">  </span>...
 <span class="tok-nt">&lt;/gmd:MD_Metadata&gt;</span></code></pre>
@@ -3875,7 +3934,7 @@ broader range of values.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19139:2007</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">/gmd:MD_Metadata/gmd:identificationInfo/srv:SV_ServiceIdentification/gmd:descriptiveKeywords/gmd:MD_Keywords</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:descriptiveKeywords/gmd:MD_Keywords</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Equivalent</p></td>
 </tr>
 </tbody>
@@ -3911,152 +3970,109 @@ controlled vocabulary</p>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Guidelines</p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"></div></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>The GEMINI2 keyword item comprises keyword value(s) and, conditionally, the specification of an originating controlled vocabulary. If keywords are not selected from a controlled vocabulary the encoding shown in Example One shall be used.</p>
+<p>The GEMINI2 keyword item comprises keyword value(s) and,
+conditionally, the specification of an originating controlled
+vocabulary. If keywords are not selected from a controlled vocabulary
+the encoding shown in Example One shall be used.</p>
 </li>
 <li>
-<p>In the context of INSPIRE the presence of at least one keyword is mandated. For service metadata there shall be at least one keyword defining the category or subcategory of the service using its language neutral name as defined in Part D 4 of the Metadata Implementing Rules (the language neutral names are the words in brackets using lower camel case notation). The keyword shown in Example Two is an example of this</p>
+<p>Where keywords do originate from a controlled vocabulary the encoding
+shown in Example Two shall be used. Note the inclusion of the
+gmd:thesaurusName XML element which contains the XML element
+gmd:CI_Citation. This element must contain at least a title, reference
+date and date type. In the example keywords have been selected from the
+GEMET Concepts controlled vocabulary.</p>
 </li>
 <li>
-<p>Where keywords do originate from a controlled vocabulary the encoding shown in Example Two shall be used. Note the inclusion of the gmd:thesaurusName XML element which contains the XML element gmd:CI_Citation. This element must contain at least a title, reference date and date type. In the example keywords have been selected from the GEMET Concepts controlled vocabulary.</p>
+<p>Metadata records which describe a dataset that relates to one or more
+of the INSPIRE themes must include the appropriate keyword(s) from the
+GEMET INSPIRE themes, as illustrated in Example Two.</p>
 </li>
 <li>
-<p>Example Three shows how the GEMET INSPIRE themes and the GEMET concepts controlled vocabularies should be cited according to the INSPIRE guidance [9].</p>
+<p>Examples Two and Three show how the GEMET INSPIRE themes and the GEMET
+concepts controlled vocabularies should be cited according to the
+<a href="https://inspire.ec.europa.eu/documents/inspire-metadata-implementing-rules-technical-guidelines-based-en-iso-19115-and-en-iso-1">INSPIRE
+guidance</a> <a href="component/content/article?id=1047">[9</a>].</p>
 </li>
 <li>
-<p>Note that more than one keyword value may be selected from a single controlled vocabulary. Note also that keywords may be selected from more than one controlled vocabulary. In this case the encoding shown in Example One shall be used.</p>
+<p>Note that more than one keyword value may be selected from a single
+controlled vocabulary. Note also that keywords may be selected from more
+than one controlled vocabulary. In this case the encoding shown in
+Example Three.</p>
 </li>
 <li>
-<p>The srv:SV_ServiceIdentification XML element has an optional property srv:keywords which exhibits the same behaviour as gmd:descriptiveKeywords. Consequently keywords for service metadata could be encoded in the way shown in Example Five. This approach shall not be followed in GEMINI2 metadata instances</p>
+<p>For INSPIRE if several keywords come from a single controlled
+vocabulary these shall be grouped together.</p>
 </li>
 <li>
-<p>This case arises because the XML element gmd:descriptiveKeywords is a an instance of the property (or role in fact) on the ISO 19115 abstract class MD_Identification, from which both SV_ServiceIdentification and MD_DataIdentification inherit. Therefore, SV_ServiceIdentification inherits the descriptiveKeywords property and adds a similar property called keywords.</p>
+<p>For INSPIRE the use of a gmx:Anchor element is recommended over the
+use gco:CharacterString for terms from controlled vocabularies</p>
 </li>
 <li>
-<p>Recommended best practice is to select a human readable value from a controlled vocabulary. An example from the Marine Geospatial community is <a href="http://seadatanet.maris2.nl/v_bodc_vocab_v2/search.asp?lib=P02" class="bare">http://seadatanet.maris2.nl/v_bodc_vocab_v2/search.asp?lib=P02</a></p>
+<p>Recommended best practice is to select a human readable value from a
+controlled vocabulary. An example from the Marine Geospatial community
+is <a href="http://seadatanet.maris2.nl/v_bodc_vocab_v2/search.asp?lib=P02" class="bare">http://seadatanet.maris2.nl/v_bodc_vocab_v2/search.asp?lib=P02</a></p>
 </li>
 </ol>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Example One (services) - without controlled vocabulary</p>
-</div></div></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Example One (datasets/series) - without originating controlled vocabulary</p>
+</div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="content">
 <pre class="pygments highlight"><code data-lang="xml"><span></span><span class="tok-nt">&lt;gmd:MD_Metadata&gt;</span>
 <span class="tok-w">  </span>...
 <span class="tok-w">  </span><span class="tok-nt">&lt;gmd:identificationInfo&gt;</span>
-<span class="tok-w">    </span><span class="tok-nt">&lt;srv:SV_ServiceIdentification&gt;</span>
+<span class="tok-w">    </span><span class="tok-nt">&lt;gmd:MD_DataIdentification</span><span class="tok-w"> </span><span class="tok-na">id=</span><span class="tok-s">&quot;NERC-54321&quot;</span><span class="tok-nt">&gt;</span>
 <span class="tok-w">      </span>...
 <span class="tok-w">      </span><span class="tok-nt">&lt;gmd:descriptiveKeywords&gt;</span>
 <span class="tok-w">        </span><span class="tok-nt">&lt;gmd:MD_Keywords&gt;</span>
 <span class="tok-w">          </span><span class="tok-nt">&lt;gmd:keyword&gt;</span>
-<span class="tok-w">            </span><span class="tok-nt">&lt;gco:CharacterString&gt;</span>sounding<span class="tok-nt">&lt;/gco:CharacterString&gt;</span>
+<span class="tok-w">            </span><span class="tok-nt">&lt;gco:CharacterString&gt;</span>satellite<span class="tok-w"> </span>imagery<span class="tok-nt">&lt;/gco:CharacterString&gt;</span>
+<span class="tok-w">          </span><span class="tok-nt">&lt;/gmd:keyword&gt;</span>
+<span class="tok-w">          </span><span class="tok-nt">&lt;gmd:keyword&gt;</span>
+<span class="tok-w">            </span><span class="tok-nt">&lt;gco:CharacterString&gt;</span>earth<span class="tok-w"> </span>observation<span class="tok-nt">&lt;/gco:CharacterString&gt;</span>
 <span class="tok-w">          </span><span class="tok-nt">&lt;/gmd:keyword&gt;</span>
 <span class="tok-w">        </span><span class="tok-nt">&lt;/gmd:MD_Keywords&gt;</span>
 <span class="tok-w">      </span><span class="tok-nt">&lt;/gmd:descriptiveKeywords&gt;</span>
 <span class="tok-w">      </span>...
-<span class="tok-w">    </span><span class="tok-nt">&lt;/srv:SV_ServiceIdentification&gt;</span>
+<span class="tok-w">    </span><span class="tok-nt">&lt;/gmd:MD_DataIdentification&gt;</span>
 <span class="tok-w">  </span><span class="tok-nt">&lt;/gmd:identificationInfo&gt;</span>
 <span class="tok-w">  </span>...
 <span class="tok-nt">&lt;/gmd:MD_Metadata&gt;</span></code></pre>
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Example Two (services) - service keyword from part D4 on the INSPIRE
-Metadata Implementing Rules</p>
-</div></div></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Example Two (datasets/series) - INSPIRE theme</p>
+</div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="content">
 <pre class="pygments highlight"><code data-lang="xml"><span></span><span class="tok-nt">&lt;gmd:MD_Metadata&gt;</span>
 <span class="tok-w">  </span>...
 <span class="tok-w">  </span><span class="tok-nt">&lt;gmd:identificationInfo&gt;</span>
-<span class="tok-w">    </span><span class="tok-nt">&lt;srv:SV_ServiceIdentification&gt;</span>
-<span class="tok-w">      </span>...
-<span class="tok-w">      </span><span class="tok-nt">&lt;gmd:keywords&gt;</span>
-<span class="tok-w">        </span><span class="tok-nt">&lt;gmd:MD_Keywords&gt;</span>
-<span class="tok-w">          </span><span class="tok-nt">&lt;gmd:keyword&gt;</span>
-<span class="tok-w">            </span><span class="tok-nt">&lt;gco:CharacterString&gt;</span>humanCatalogueViewer<span class="tok-nt">&lt;/gco:CharacterString&gt;</span>
-<span class="tok-w">          </span><span class="tok-nt">&lt;/gmd:keyword&gt;</span>
-<span class="tok-w">          </span><span class="tok-nt">&lt;gmd:thesaurusName&gt;</span>
-<span class="tok-w">            </span><span class="tok-nt">&lt;gmd:CI_Citation&gt;</span>
-<span class="tok-w">          </span><span class="tok-nt">&lt;gmd:title&gt;</span>
-<span class="tok-w">            </span><span class="tok-nt">&lt;gco:CharacterString&gt;</span>Commission<span class="tok-w"> </span>Regulation<span class="tok-w"> </span>(EC)<span class="tok-w"> </span>No<span class="tok-w"> </span>1205/2008<span class="tok-w"> </span>of<span class="tok-w"> </span>3<span class="tok-w"> </span>December<span class="tok-w"> </span>2008<span class="tok-w"> </span>implementing<span class="tok-w"> </span>Directive<span class="tok-w"> </span>2007/2/
-<span class="tok-w">              </span>EC<span class="tok-w"> </span>of<span class="tok-w"> </span>the<span class="tok-w"> </span>European<span class="tok-w"> </span>Parliament<span class="tok-w"> </span>and<span class="tok-w"> </span>of<span class="tok-w"> </span>the<span class="tok-w"> </span>Council<span class="tok-w"> </span>as<span class="tok-w"> </span>regards<span class="tok-w"> </span>metadata<span class="tok-nt">&lt;/gco:CharacterString&gt;</span>
-<span class="tok-w">          </span><span class="tok-nt">&lt;/gmd:title&gt;</span>
-<span class="tok-w">          </span><span class="tok-nt">&lt;gmd:alternateTitle&gt;</span>
-<span class="tok-w">                    </span><span class="tok-nt">&lt;gco:CharacterString&gt;</span>INSPIRE<span class="tok-w"> </span>Metadata<span class="tok-w"> </span>Implementing<span class="tok-w"> </span>Rules<span class="tok-nt">&lt;/gco:CharacterString&gt;</span>
-<span class="tok-w">          </span><span class="tok-nt">&lt;/gmd:alternateTitle&gt;</span>
-<span class="tok-w">            </span><span class="tok-nt">&lt;gmd:date&gt;</span>
-<span class="tok-w">              </span><span class="tok-nt">&lt;gmd:CI_Date&gt;</span>
-<span class="tok-w">            </span><span class="tok-nt">&lt;gmd:date&gt;</span>
-<span class="tok-w">              </span><span class="tok-nt">&lt;gco:Date&gt;</span>2008-12-03<span class="tok-nt">&lt;/gco:Date&gt;</span>
-<span class="tok-w">            </span><span class="tok-nt">&lt;/gmd:date&gt;</span>
-<span class="tok-w">                  </span><span class="tok-nt">&lt;gmd:dateType&gt;</span>
-<span class="tok-w">                    </span><span class="tok-nt">&lt;gmd:CI_DateTypeCode</span><span class="tok-w"> </span>
-<span class="tok-w">                      </span><span class="tok-na">codeList=</span><span class="tok-s">&#39;https://schemas.isotc211.org/schemas/19139/resources/codelist/gmxCodelists.xml#CI_DateTypeCode&#39;</span><span class="tok-w"> </span>
-<span class="tok-w">                      </span><span class="tok-na">codeListValue=</span><span class="tok-s">&#39;publication&#39;</span><span class="tok-nt">&gt;</span>publication<span class="tok-nt">&lt;/gmd:CI_DateTypeCode&gt;</span>
-<span class="tok-w">                  </span><span class="tok-nt">&lt;/gmd:dateType&gt;</span>
-<span class="tok-w">                </span><span class="tok-nt">&lt;/gmd:CI_Date&gt;</span>
-<span class="tok-w">          </span><span class="tok-nt">&lt;/gmd:date&gt;</span>
-<span class="tok-w">              </span><span class="tok-nt">&lt;gmd:identifier&gt;</span>
-<span class="tok-w">              </span><span class="tok-nt">&lt;gmd:MD_Identifier&gt;</span>
-<span class="tok-w">              </span><span class="tok-nt">&lt;gmd:code&gt;</span>
-<span class="tok-w">                        </span><span class="tok-nt">&lt;gco:CharacterString&gt;</span>OJ:L:2008:326:0012:01<span class="tok-nt">&lt;/gco:CharacterString&gt;</span>
-<span class="tok-w">                  </span><span class="tok-nt">&lt;/gmd:code&gt;</span>
-<span class="tok-w">                </span><span class="tok-nt">&lt;/gmd:MD_Identifier&gt;</span>
-<span class="tok-w">              </span><span class="tok-nt">&lt;/gmd:identifier&gt;</span>
-<span class="tok-w">              </span><span class="tok-nt">&lt;gmd:otherCitationDetails&gt;</span>
-<span class="tok-w">                </span><span class="tok-nt">&lt;gco:CharacterString&gt;</span>D<span class="tok-w"> </span>4<span class="tok-w"> </span>CLASSIFICATION<span class="tok-w"> </span>OF<span class="tok-w"> </span>SPATIAL<span class="tok-w"> </span>DATA<span class="tok-w"> </span>SERVICES<span class="tok-nt">&lt;/gco:CharacterString&gt;</span>
-<span class="tok-w">              </span><span class="tok-nt">&lt;/gmd:otherCitationDetails&gt;</span>
-<span class="tok-w">          </span><span class="tok-nt">&lt;/gmd:CI_Citation&gt;</span>
-<span class="tok-w">          </span><span class="tok-nt">&lt;/gmd:thesaurusName&gt;</span>
-<span class="tok-w">        </span><span class="tok-nt">&lt;/gmd:MD_Keywords&gt;</span>
-<span class="tok-w">      </span><span class="tok-nt">&lt;/gmd:keywords&gt;</span>
-<span class="tok-w">      </span>...
-<span class="tok-w">    </span><span class="tok-nt">&lt;/srv:SV_ServiceIdentification&gt;</span>
-<span class="tok-w">  </span><span class="tok-nt">&lt;/gmd:identificationInfo&gt;</span>
-<span class="tok-w">  </span>...
-<span class="tok-nt">&lt;/gmd:MD_Metadata&gt;</span></code></pre>
-</div>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Example Three (services) - GEMET concepts</p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="xml"><span></span><span class="tok-nt">&lt;gmd:MD_Metadata&gt;</span>
-<span class="tok-w">  </span>...
-<span class="tok-w">  </span><span class="tok-nt">&lt;gmd:identificationInfo&gt;</span>
-<span class="tok-w">    </span><span class="tok-nt">&lt;srv:SV_ServiceIdentification&gt;</span>
+<span class="tok-w">    </span><span class="tok-nt">&lt;gmd:MD_DataIdentification</span><span class="tok-w"> </span><span class="tok-na">id=</span><span class="tok-s">&quot;EA-100100&quot;</span><span class="tok-nt">&gt;</span>
 <span class="tok-w">      </span>...
 <span class="tok-w">      </span><span class="tok-nt">&lt;gmd:descriptiveKeywords&gt;</span>
 <span class="tok-w">        </span><span class="tok-nt">&lt;gmd:MD_Keywords&gt;</span>
 <span class="tok-w">          </span><span class="tok-nt">&lt;gmd:keyword&gt;</span>
-<span class="tok-w">            </span><span class="tok-nt">&lt;gco:CharacterString&gt;</span>water<span class="tok-w"> </span>monitoring<span class="tok-nt">&lt;/gco:CharacterString&gt;</span>
-<span class="tok-w">          </span><span class="tok-nt">&lt;/gmd:keyword&gt;</span>
-<span class="tok-w">          </span><span class="tok-nt">&lt;gmd:keyword&gt;</span>
-<span class="tok-w">            </span><span class="tok-nt">&lt;gco:CharacterString&gt;</span>water<span class="tok-w"> </span>quality<span class="tok-nt">&lt;/gco:CharacterString&gt;</span>
+<span class="tok-w">            </span><span class="tok-nt">&lt;gmx:Anchor</span><span class="tok-w"> </span><span class="tok-na">xlink:href=</span><span class="tok-s">&#39;http://inspire.ec.europa.eu/theme/mf&#39;</span><span class="tok-nt">&gt;</span>Meteorological<span class="tok-w"> </span>geographical<span class="tok-w"> </span>features<span class="tok-nt">&lt;/gmx:Anchor&gt;</span>
 <span class="tok-w">          </span><span class="tok-nt">&lt;/gmd:keyword&gt;</span>
 <span class="tok-w">          </span><span class="tok-nt">&lt;gmd:thesaurusName&gt;</span>
 <span class="tok-w">            </span><span class="tok-nt">&lt;gmd:CI_Citation&gt;</span>
 <span class="tok-w">              </span><span class="tok-nt">&lt;gmd:title&gt;</span>
-<span class="tok-w">                </span><span class="tok-nt">&lt;gco:CharacterString&gt;</span>GEMET<span class="tok-w"> </span>-<span class="tok-w"> </span>Concepts,<span class="tok-w"> </span>version<span class="tok-w"> </span>2.4<span class="tok-nt">&lt;/gco:CharacterString&gt;</span>
+<span class="tok-w">                </span><span class="tok-nt">&lt;gmx:Anchor</span><span class="tok-w"> </span><span class="tok-na">xlink:href=</span><span class="tok-s">&#39;https://www.eionet.europa.eu/gemet/inspire_themes/&#39;</span><span class="tok-nt">&gt;</span>GEMET<span class="tok-w"> </span>-<span class="tok-w"> </span>INSPIRE<span class="tok-w"> </span>themes,<span class="tok-w"> </span>version<span class="tok-w"> </span>1.0<span class="tok-nt">&lt;/gmx:Anchor&gt;</span>
 <span class="tok-w">              </span><span class="tok-nt">&lt;/gmd:title&gt;</span>
 <span class="tok-w">              </span><span class="tok-nt">&lt;gmd:date&gt;</span>
 <span class="tok-w">                </span><span class="tok-nt">&lt;gmd:CI_Date&gt;</span>
 <span class="tok-w">                  </span><span class="tok-nt">&lt;gmd:date&gt;</span>
-<span class="tok-w">                    </span><span class="tok-nt">&lt;gco:Date&gt;</span>2010-01-13<span class="tok-nt">&lt;/gco:Date&gt;</span>
+<span class="tok-w">                    </span><span class="tok-nt">&lt;gco:Date&gt;</span>2008-06-01<span class="tok-nt">&lt;/gco:Date&gt;</span>
 <span class="tok-w">                  </span><span class="tok-nt">&lt;/gmd:date&gt;</span>
 <span class="tok-w">                  </span><span class="tok-nt">&lt;gmd:dateType&gt;</span>
 <span class="tok-w">                    </span><span class="tok-nt">&lt;gmd:CI_DateTypeCode</span><span class="tok-w"> </span>
@@ -4070,14 +4086,85 @@ Metadata Implementing Rules</p>
 <span class="tok-w">        </span><span class="tok-nt">&lt;/gmd:MD_Keywords&gt;</span>
 <span class="tok-w">      </span><span class="tok-nt">&lt;/gmd:descriptiveKeywords&gt;</span>
 <span class="tok-w">      </span>...
-<span class="tok-w">    </span><span class="tok-nt">&lt;/srv:SV_ServiceIdentification&gt;</span>
+<span class="tok-w">    </span><span class="tok-nt">&lt;/gmd:MD_DataIdentification&gt;</span>
 <span class="tok-w">  </span><span class="tok-nt">&lt;/gmd:identificationInfo&gt;</span>
 <span class="tok-w">  </span>...
 <span class="tok-nt">&lt;/gmd:MD_Metadata&gt;</span></code></pre>
 </div>
 </div></div></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Example Four (services) - keywords from two controlled vocabularies</p>
+<p>Example Three (datasets/series) - keywords from 2 controlled vocabularies</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="xml"><span></span><span class="tok-nt">&lt;gmd:MD_Metadata&gt;</span>
+<span class="tok-w">  </span>...
+<span class="tok-w">  </span><span class="tok-nt">&lt;gmd:identificationInfo&gt;</span>
+<span class="tok-w">    </span><span class="tok-nt">&lt;gmd:MD_DataIdentification</span><span class="tok-w"> </span><span class="tok-na">id=</span><span class="tok-s">&quot;CEH-111111&quot;</span><span class="tok-nt">&gt;</span>
+<span class="tok-w">      </span>...
+<span class="tok-w">      </span><span class="tok-nt">&lt;gmd:descriptiveKeywords&gt;</span>
+<span class="tok-w">        </span><span class="tok-nt">&lt;gmd:MD_Keywords&gt;</span>
+<span class="tok-w">          </span><span class="tok-nt">&lt;gmd:keyword&gt;</span>
+<span class="tok-w">            </span><span class="tok-nt">&lt;gmx:Anchor</span><span class="tok-w"> </span><span class="tok-na">xlink:href=</span><span class="tok-s">&#39;http://www.eionet.europa.eu/gemet/en/concept/9196&#39;</span><span class="tok-nt">&gt;</span>water<span class="tok-w"> </span>monitoring<span class="tok-nt">&lt;/gmx:Anchor&gt;</span>
+<span class="tok-w">          </span><span class="tok-nt">&lt;/gmd:keyword&gt;</span>
+<span class="tok-w">          </span><span class="tok-nt">&lt;gmd:keyword&gt;</span>
+<span class="tok-w">             </span><span class="tok-nt">&lt;gmx:Anchor</span><span class="tok-w"> </span><span class="tok-na">xlink:href=</span><span class="tok-s">&#39;http://www.eionet.europa.eu/gemet/en/concept/9214&#39;</span><span class="tok-nt">&gt;</span>water<span class="tok-w"> </span>quality<span class="tok-nt">&lt;/gmx:Anchor&gt;</span>
+<span class="tok-w">          </span><span class="tok-nt">&lt;/gmd:keyword&gt;</span>
+<span class="tok-w">          </span><span class="tok-nt">&lt;gmd:thesaurusName&gt;</span>
+<span class="tok-w">            </span><span class="tok-nt">&lt;gmd:CI_Citation&gt;</span>
+<span class="tok-w">              </span><span class="tok-nt">&lt;gmd:title&gt;</span>
+<span class="tok-w">                </span><span class="tok-nt">&lt;gmx:Anchor</span><span class="tok-w"> </span><span class="tok-na">xlink:href=</span><span class="tok-s">&#39;https://www.eionet.europa.eu/gemet/en/themes/&#39;</span><span class="tok-nt">&gt;</span>GEMET<span class="tok-w"> </span>-<span class="tok-w"> </span>Concepts,<span class="tok-w"> </span>version<span class="tok-w"> </span>2.4<span class="tok-nt">&lt;/gmx:Anchor&gt;</span>
+<span class="tok-w">              </span><span class="tok-nt">&lt;/gmd:title&gt;</span>
+<span class="tok-w">              </span><span class="tok-nt">&lt;gmd:date&gt;</span>
+<span class="tok-w">                </span><span class="tok-nt">&lt;gmd:CI_Date&gt;</span>
+<span class="tok-w">                  </span><span class="tok-nt">&lt;gmd:date&gt;</span>
+<span class="tok-w">                    </span><span class="tok-nt">&lt;gco:Date&gt;</span>2010-01-13<span class="tok-nt">&lt;/gco:Date&gt;</span>
+<span class="tok-w">                  </span><span class="tok-nt">&lt;/gmd:date&gt;</span>
+<span class="tok-w">                  </span><span class="tok-nt">&lt;gmd:dateType&gt;</span>
+<span class="tok-w">                    </span><span class="tok-nt">&lt;gmd:CI_DateTypeCode</span><span class="tok-w"> </span>
+<span class="tok-w">                      </span><span class="tok-na">codeList=</span><span class="tok-s">&#39;https://schemas.isotc211.org/schemas/19139/-/resources/codelist/gmxCodelists.xml#CI_DateTypeCode&#39;</span><span class="tok-w"> </span>
+<span class="tok-w">                      </span><span class="tok-na">codeListValue=</span><span class="tok-s">&#39;publication&#39;</span><span class="tok-nt">&gt;</span>publication<span class="tok-nt">&lt;/gmd:CI_DateTypeCode&gt;</span>
+<span class="tok-w">                  </span><span class="tok-nt">&lt;/gmd:dateType&gt;</span>
+<span class="tok-w">                </span><span class="tok-nt">&lt;/gmd:CI_Date&gt;</span>
+<span class="tok-w">              </span><span class="tok-nt">&lt;/gmd:date&gt;</span>
+<span class="tok-w">            </span><span class="tok-nt">&lt;/gmd:CI_Citation&gt;</span>
+<span class="tok-w">          </span><span class="tok-nt">&lt;/gmd:thesaurusName&gt;</span>
+<span class="tok-w">        </span><span class="tok-nt">&lt;/gmd:MD_Keywords&gt;</span>
+<span class="tok-w">      </span><span class="tok-nt">&lt;/gmd:descriptiveKeywords&gt;</span>
+<span class="tok-w">      </span><span class="tok-nt">&lt;gmd:descriptiveKeywords&gt;</span>
+<span class="tok-w">        </span><span class="tok-nt">&lt;gmd:MD_Keywords&gt;</span>
+<span class="tok-w">          </span><span class="tok-nt">&lt;gmd:keyword&gt;</span>
+<span class="tok-w">            </span><span class="tok-nt">&lt;gmx:Anchor</span><span class="tok-w"> </span><span class="tok-na">xlink:href=</span><span class="tok-s">&quot;http://inspire.ec.europa.eu/theme/lc&quot;</span><span class="tok-nt">&gt;</span>Land<span class="tok-w"> </span>cover<span class="tok-nt">&lt;/gmx:Anchor&gt;</span>
+<span class="tok-w">          </span><span class="tok-nt">&lt;/gmd:keyword&gt;</span>
+<span class="tok-w">          </span><span class="tok-nt">&lt;gmd:thesaurusName&gt;</span>
+<span class="tok-w">            </span><span class="tok-nt">&lt;gmd:CI_Citation&gt;</span>
+<span class="tok-w">              </span><span class="tok-nt">&lt;gmd:title&gt;</span>
+<span class="tok-w">                </span><span class="tok-nt">&lt;gmx:Anchor</span><span class="tok-w"> </span><span class="tok-na">xlink:href=</span><span class="tok-s">&#39;https://www.eionet.europa.eu/gemet/en/inspire-themes/&#39;</span><span class="tok-nt">&gt;</span>GEMET<span class="tok-w"> </span>-<span class="tok-w"> </span>INSPIRE<span class="tok-w"> </span>themes,<span class="tok-w"> </span>version<span class="tok-w"> </span>1.0<span class="tok-nt">&lt;/gmx:Anchor&gt;</span>
+<span class="tok-w">              </span><span class="tok-nt">&lt;/gmd:title&gt;</span>
+<span class="tok-w">              </span><span class="tok-nt">&lt;gmd:date&gt;</span>
+<span class="tok-w">                </span><span class="tok-nt">&lt;gmd:CI_Date&gt;</span>
+<span class="tok-w">                  </span><span class="tok-nt">&lt;gmd:date&gt;</span>
+<span class="tok-w">                    </span><span class="tok-nt">&lt;gco:Date&gt;</span>2008-06-01<span class="tok-nt">&lt;/gco:Date&gt;</span>
+<span class="tok-w">                  </span><span class="tok-nt">&lt;/gmd:date&gt;</span>
+<span class="tok-w">                  </span><span class="tok-nt">&lt;gmd:dateType&gt;</span>
+<span class="tok-w">                    </span><span class="tok-nt">&lt;gmd:CI_DateTypeCode</span><span class="tok-w"> </span>
+<span class="tok-w">                      </span><span class="tok-na">codeList=</span><span class="tok-s">&#39;https://schemas.isotc211.org/schemas/19139/-/resources/codelist/gmxCodelists.xml#CI_DateTypeCode&#39;</span><span class="tok-w"> </span>
+<span class="tok-w">                      </span><span class="tok-na">codeListValue=</span><span class="tok-s">&#39;publication&#39;</span><span class="tok-nt">&gt;</span>publication<span class="tok-nt">&lt;/gmd:CI_DateTypeCode&gt;</span>
+<span class="tok-w">                  </span><span class="tok-nt">&lt;/gmd:dateType&gt;</span>
+<span class="tok-w">                </span><span class="tok-nt">&lt;/gmd:CI_Date&gt;</span>
+<span class="tok-w">              </span><span class="tok-nt">&lt;/gmd:date&gt;</span>
+<span class="tok-w">            </span><span class="tok-nt">&lt;/gmd:CI_Citation&gt;</span>
+<span class="tok-w">          </span><span class="tok-nt">&lt;/gmd:thesaurusName&gt;</span>
+<span class="tok-w">        </span><span class="tok-nt">&lt;/gmd:MD_Keywords&gt;</span>
+<span class="tok-w">      </span><span class="tok-nt">&lt;/gmd:descriptiveKeywords&gt;</span>
+<span class="tok-w">      </span>...
+<span class="tok-w">    </span><span class="tok-nt">&lt;/gmd:MD_DataIdentification&gt;</span>
+<span class="tok-w">  </span><span class="tok-nt">&lt;/gmd:identificationInfo&gt;</span>
+<span class="tok-w">  </span>...
+<span class="tok-nt">&lt;/gmd:MD_Metadata&gt;</span></code></pre>
+</div>
 </div></div></td>
 </tr>
 </tbody>
@@ -4132,8 +4219,7 @@ date at which it is deemed to be current.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Obligation</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Conditional for services - where a temporal extent is
-relevant to the service</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mandatory for datasets and dataset series</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Occurrence</p></td>
@@ -4262,7 +4348,7 @@ optional if another temporal reference is provided.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19139:2007</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">/gmd:MD_Metadata/gmd:identificationInfo/srv:SV_ServiceIdentification/srv:extent/gmd:EX_Extent/gmd:temporalElement</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:extent/gmd:EX_Extent/gmd:temporalElement</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Identical</p></td>
 </tr>
 </tbody>
@@ -4422,33 +4508,33 @@ after the specified date</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Example One (services) : (gml:TimePeriod)</p>
+<p>Example One (datasets/series) : (gml:TimePeriod)</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="content">
 <pre class="pygments highlight"><code data-lang="xml"><span></span><span class="tok-nt">&lt;gmd:MD_Metadata&gt;</span>
 <span class="tok-w">  </span>...
 <span class="tok-w">  </span><span class="tok-nt">&lt;gmd:identificationInfo&gt;</span>
-<span class="tok-w">    </span><span class="tok-nt">&lt;srv:SV_ServiceIdentification&gt;</span>
+<span class="tok-w">    </span><span class="tok-nt">&lt;gmd:MD_DataIdentification</span><span class="tok-w"> </span><span class="tok-na">id=</span><span class="tok-s">&quot;ABC-123456&quot;</span><span class="tok-nt">&gt;</span>
 <span class="tok-w">      </span>...
-<span class="tok-w">      </span><span class="tok-nt">&lt;srv:extent&gt;</span>
+<span class="tok-w">      </span><span class="tok-nt">&lt;gmd:extent&gt;</span>
 <span class="tok-w">        </span><span class="tok-nt">&lt;gmd:EX_Extent&gt;</span>
-<span class="tok-w">          </span>...
-<span class="tok-w">          </span><span class="tok-nt">&lt;gmd:temporalElement&gt;</span>
-<span class="tok-w">            </span><span class="tok-nt">&lt;gmd:EX_TemporalExtent&gt;</span>
-<span class="tok-w">              </span><span class="tok-nt">&lt;gmd:extent&gt;</span>
-<span class="tok-w">                </span><span class="tok-nt">&lt;gml:TimePeriod</span><span class="tok-w"> </span><span class="tok-na">gml:id=</span><span class="tok-s">&#39;_70093470-47df-45ce-b33a-60450e251c4c&#39;</span><span class="tok-nt">&gt;</span>
-<span class="tok-w">                  </span><span class="tok-nt">&lt;gml:beginPosition&gt;</span>2009-01-01<span class="tok-nt">&lt;/gml:beginPosition&gt;</span>
-<span class="tok-w">                  </span><span class="tok-nt">&lt;gml:endPosition&gt;</span>2010-01-25<span class="tok-nt">&lt;/gml:endPosition&gt;</span>
-<span class="tok-w">                </span><span class="tok-nt">&lt;/gml:TimePeriod&gt;</span>
+<span class="tok-w">        </span>...
+<span class="tok-w">        </span><span class="tok-nt">&lt;gmd:temporalElement&gt;</span>
+<span class="tok-w">              </span><span class="tok-nt">&lt;gmd:EX_TemporalExtent&gt;</span>
+<span class="tok-w">                </span><span class="tok-nt">&lt;gmd:extent&gt;</span>
+<span class="tok-w">              </span><span class="tok-nt">&lt;gml:TimePeriod</span><span class="tok-w"> </span><span class="tok-na">gml:id=</span><span class="tok-s">&#39;_70093470-47df-45ce-b33a-60450e251c4c&#39;</span><span class="tok-nt">&gt;</span>
+<span class="tok-w">                </span><span class="tok-nt">&lt;gml:beginPosition&gt;</span>2009-01-01<span class="tok-nt">&lt;/gml:beginPosition&gt;</span>
+<span class="tok-w">                </span><span class="tok-nt">&lt;gml:endPosition&gt;</span>2010-01-25<span class="tok-nt">&lt;/gml:endPosition&gt;</span>
+<span class="tok-w">              </span><span class="tok-nt">&lt;/gml:TimePeriod&gt;</span>
 <span class="tok-w">              </span><span class="tok-nt">&lt;/gmd:extent&gt;</span>
 <span class="tok-w">            </span><span class="tok-nt">&lt;/gmd:EX_TemporalExtent&gt;</span>
 <span class="tok-w">          </span><span class="tok-nt">&lt;/gmd:temporalElement&gt;</span>
 <span class="tok-w">          </span>...
 <span class="tok-w">        </span><span class="tok-nt">&lt;/gmd:EX_Extent&gt;</span>
-<span class="tok-w">      </span><span class="tok-nt">&lt;/srv:extent&gt;</span>
+<span class="tok-w">      </span><span class="tok-nt">&lt;/gmd:extent&gt;</span>
 <span class="tok-w">      </span>...
-<span class="tok-w">    </span><span class="tok-nt">&lt;/srv:SV_ServiceIdentification&gt;</span>
+<span class="tok-w">    </span><span class="tok-nt">&lt;/gmd:MD_DataIdentification&gt;</span>
 <span class="tok-w">  </span><span class="tok-nt">&lt;/gmd:identificationInfo&gt;</span>
 <span class="tok-w">  </span>...
 <span class="tok-nt">&lt;/gmd:MD_Metadata&gt;</span></code></pre>
@@ -4457,32 +4543,32 @@ after the specified date</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Example Two (services) : (gml:TimeInstant)</p>
+<p>Example Two (datasets/series): (gml:TimeInstant)</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="content">
 <pre class="pygments highlight"><code data-lang="xml"><span></span><span class="tok-nt">&lt;gmd:MD_Metadata&gt;</span>
 <span class="tok-w">  </span>...
 <span class="tok-w">  </span><span class="tok-nt">&lt;gmd:identificationInfo&gt;</span>
-<span class="tok-w">    </span><span class="tok-nt">&lt;srv:SV_ServiceIdentification&gt;</span>
+<span class="tok-w">    </span><span class="tok-nt">&lt;gmd:MD_DataIdentification</span><span class="tok-w"> </span><span class="tok-na">id=</span><span class="tok-s">&quot;ABC-234567&quot;</span><span class="tok-nt">&gt;</span>
 <span class="tok-w">      </span>...
-<span class="tok-w">      </span><span class="tok-nt">&lt;srv:extent&gt;</span>
+<span class="tok-w">      </span><span class="tok-nt">&lt;gmd:extent&gt;</span>
 <span class="tok-w">        </span><span class="tok-nt">&lt;gmd:EX_Extent&gt;</span>
-<span class="tok-w">          </span>...
-<span class="tok-w">          </span><span class="tok-nt">&lt;gmd:temporalElement&gt;</span>
-<span class="tok-w">            </span><span class="tok-nt">&lt;gmd:EX_TemporalExtent&gt;</span>
-<span class="tok-w">              </span><span class="tok-nt">&lt;gmd:extent&gt;</span>
-<span class="tok-w">                </span><span class="tok-nt">&lt;gml:TimeInstant</span><span class="tok-w"> </span><span class="tok-na">gml:id=</span><span class="tok-s">&#39;t1&#39;</span><span class="tok-nt">&gt;</span>
-<span class="tok-w">                  </span><span class="tok-nt">&lt;gml:timePosition&gt;</span>2011-04-20<span class="tok-nt">&lt;/gml:timePosition&gt;</span>
-<span class="tok-w">                </span><span class="tok-nt">&lt;/gml:TimeInstant&gt;</span>
-<span class="tok-w">              </span><span class="tok-nt">&lt;/gmd:extent&gt;</span>
-<span class="tok-w">            </span><span class="tok-nt">&lt;/gmd:EX_TemporalExtent&gt;</span>
-<span class="tok-w">          </span><span class="tok-nt">&lt;/gmd:temporalElement&gt;</span>
-<span class="tok-w">          </span>...
-<span class="tok-w">        </span><span class="tok-nt">&lt;/gmd:EX_Extent&gt;</span>
-<span class="tok-w">      </span><span class="tok-nt">&lt;/srv:extent&gt;</span>
 <span class="tok-w">      </span>...
-<span class="tok-w">    </span><span class="tok-nt">&lt;/srv:SV_ServiceIdentification&gt;</span>
+<span class="tok-w">      </span><span class="tok-nt">&lt;gmd:temporalElement&gt;</span>
+<span class="tok-w">        </span><span class="tok-nt">&lt;gmd:EX_TemporalExtent&gt;</span>
+<span class="tok-w">          </span><span class="tok-nt">&lt;gmd:extent&gt;</span>
+<span class="tok-w">            </span><span class="tok-nt">&lt;gml:TimeInstant</span><span class="tok-w"> </span><span class="tok-na">gml:id=</span><span class="tok-s">&#39;t1&#39;</span><span class="tok-nt">&gt;</span>
+<span class="tok-w">          </span><span class="tok-nt">&lt;gml:timePosition&gt;</span>2011-04-20<span class="tok-nt">&lt;/gml:timePosition&gt;</span>
+<span class="tok-w">            </span><span class="tok-nt">&lt;/gml:TimeInstant&gt;</span>
+<span class="tok-w">          </span><span class="tok-nt">&lt;/gmd:extent&gt;</span>
+<span class="tok-w">        </span><span class="tok-nt">&lt;/gmd:EX_TemporalExtent&gt;</span>
+<span class="tok-w">      </span><span class="tok-nt">&lt;/gmd:temporalElement&gt;</span>
+<span class="tok-w">      </span>...
+<span class="tok-w">        </span><span class="tok-nt">&lt;/gmd:EX_Extent&gt;</span>
+<span class="tok-w">      </span><span class="tok-nt">&lt;/gmd:extent&gt;</span>
+<span class="tok-w">      </span>...
+<span class="tok-w">    </span><span class="tok-nt">&lt;/gmd:MD_DataIdentification&gt;</span>
 <span class="tok-w">  </span><span class="tok-nt">&lt;/gmd:identificationInfo&gt;</span>
 <span class="tok-w">  </span>...
 <span class="tok-nt">&lt;/gmd:MD_Metadata&gt;</span></code></pre>
@@ -4491,7 +4577,7 @@ after the specified date</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Example Three (services) : unknown dates</p>
+<p>Example Three (datasets/series): unknown dates</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="content">
@@ -4510,7 +4596,7 @@ after the specified date</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Example Four: other unkown or unspecified dates</p>
+<p>Example Four: other unknown or unspecified dates</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="content">
@@ -4730,7 +4816,7 @@ should be reported for spatial datasets</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19139:2007</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">/gmd:MD_Metadata/gmd:identificationInfo/srv:SV_ServiceIdentification/gmd:citation/gmd:CI_Citation/gmd:date</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:date</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Equivalent</p></td>
 </tr>
 </tbody>
@@ -4789,19 +4875,19 @@ XML element is drawn from a
 <pre class="pygments highlight"><code data-lang="xml"><span></span><span class="tok-nt">&lt;gmd:MD_Metadata&gt;</span>
 <span class="tok-w">  </span>...
 <span class="tok-w">  </span><span class="tok-nt">&lt;gmd:identificationInfo&gt;</span>
-<span class="tok-w">    </span><span class="tok-nt">&lt;srv:SV_ServiceIdentification&gt;</span>
+<span class="tok-w">    </span><span class="tok-nt">&lt;gmd:MD_DataIdentification</span><span class="tok-w"> </span><span class="tok-na">id=</span><span class="tok-s">&quot;BCD-012345&quot;</span><span class="tok-nt">&gt;</span>
 <span class="tok-w">      </span><span class="tok-nt">&lt;gmd:citation&gt;</span>
 <span class="tok-w">        </span><span class="tok-nt">&lt;gmd:CI_Citation&gt;</span>
 <span class="tok-w">          </span>...
 <span class="tok-w">          </span><span class="tok-nt">&lt;gmd:date&gt;</span>
 <span class="tok-w">            </span><span class="tok-nt">&lt;gmd:CI_Date&gt;</span>
 <span class="tok-w">              </span><span class="tok-nt">&lt;gmd:date&gt;</span>
-<span class="tok-w">                </span><span class="tok-nt">&lt;gco:Date&gt;</span>1995-01<span class="tok-nt">&lt;/gco:Date&gt;</span>
+<span class="tok-w">                </span><span class="tok-nt">&lt;gco:Date&gt;</span>1995<span class="tok-nt">&lt;/gco:Date&gt;</span>
 <span class="tok-w">              </span><span class="tok-nt">&lt;/gmd:date&gt;</span>
 <span class="tok-w">              </span><span class="tok-nt">&lt;gmd:dateType&gt;</span>
 <span class="tok-w">                </span><span class="tok-nt">&lt;gmd:CI_DateTypeCode</span><span class="tok-w"> </span>
-<span class="tok-w">                  </span><span class="tok-na">codeList=</span><span class="tok-s">&#39;https://schemas.isotc211.org/schemas/19139/resources/codelist/gmxCodelists.xml#CI_DateTypeCode&#39;</span><span class="tok-w"> </span>
-<span class="tok-w">                  </span><span class="tok-na">codeListValue=</span><span class="tok-s">&#39;publication&#39;</span><span class="tok-nt">&gt;</span>publication<span class="tok-nt">&lt;/gmd:CI_DateTypeCode&gt;</span>
+<span class="tok-w">                    </span><span class="tok-na">codeList=</span><span class="tok-s">&#39;https://schemas.isotc211.org/schemas/19139/resources/codelist/gmxCodelists.xml#CI_DateTypeCode&#39;</span><span class="tok-w"> </span>
+<span class="tok-w">                    </span><span class="tok-na">codeListValue=</span><span class="tok-s">&#39;publication&#39;</span><span class="tok-nt">&gt;</span>publication<span class="tok-nt">&lt;/gmd:CI_DateTypeCode&gt;</span>
 <span class="tok-w">              </span><span class="tok-nt">&lt;/gmd:dateType&gt;</span>
 <span class="tok-w">            </span><span class="tok-nt">&lt;/gmd:CI_Date&gt;</span>
 <span class="tok-w">          </span><span class="tok-nt">&lt;/gmd:date&gt;</span>
@@ -4809,7 +4895,7 @@ XML element is drawn from a
 <span class="tok-w">        </span><span class="tok-nt">&lt;/gmd:CI_Citation&gt;</span>
 <span class="tok-w">      </span><span class="tok-nt">&lt;/gmd:citation&gt;</span>
 <span class="tok-w">      </span>...
-<span class="tok-w">    </span><span class="tok-nt">&lt;srv:SV_ServiceIdentification&gt;</span>
+<span class="tok-w">    </span><span class="tok-nt">&lt;/gmd:MD_DataIdentification&gt;</span>
 <span class="tok-w">  </span><span class="tok-nt">&lt;/gmd:identificationInfo&gt;</span>
 <span class="tok-w">  </span>...
 <span class="tok-nt">&lt;/gmd:MD_Metadata&gt;</span></code></pre>
@@ -5072,7 +5158,7 @@ described dataset or series</p>
 <span class="tok-w">        </span><span class="tok-nt">&lt;gmd:DQ_Scope&gt;</span>
 <span class="tok-w">          </span><span class="tok-nt">&lt;gmd:level&gt;</span>
 <span class="tok-w">            </span><span class="tok-nt">&lt;gmd:MD_ScopeCode</span><span class="tok-w"> </span><span class="tok-na">codeListValue=</span><span class="tok-s">&#39;dataset&#39;</span><span class="tok-w"> </span>
-<span class="tok-w">              </span><span class="tok-na">codeList=</span><span class="tok-s">&#39;https://schemas.isotc211.org/schemas/19139/resources/codelist/gmxCodelists.xml#MD_ScopeCode&#39;</span><span class="tok-nt">&gt;</span>dataset<span class="tok-nt">&lt;/gmd:MD_ScopeCode&gt;</span>
+<span class="tok-w">              </span><span class="tok-na">codeList=</span><span class="tok-s">&#39;https://schemas.isotc211.org/schemas/19139/-/resources/codelist/gmxCodelists.xml#MD_ScopeCode&#39;</span><span class="tok-nt">&gt;</span>dataset<span class="tok-nt">&lt;/gmd:MD_ScopeCode&gt;</span>
 <span class="tok-w">          </span><span class="tok-nt">&lt;/gmd:level&gt;</span>
 <span class="tok-w">        </span><span class="tok-nt">&lt;/gmd:DQ_Scope&gt;</span>
 <span class="tok-w">      </span><span class="tok-nt">&lt;/gmd:scope&gt;</span>
@@ -5241,14 +5327,14 @@ NERC Vocabulary "C64, United Kingdom Charting Progress 2 sea regions"</p>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19119:2006+Amd:1</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">SV_ServiceIdentification.extent &gt; EX_Extent &gt;
+<td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19115:2003</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">MD_DataIdentification.extent &gt; EX_Extent &gt;
 EX_GeographicExtent &gt; EX_ GeographicDescription.geographicIdentifier</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Identical</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19139:2007</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">/gmd:MD_Metadata/gmd:identificationInfo/srv:SV_ServiceIdentification/srv:extent/gmd:EX_Extent/gmd:geographicElement/gmd:EX_GeographicDescription/gmd:geographicIdentifier</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:extent/gmd:EX_Extent/gmd:geographicElement/gmd:EX_GeographicDescription/gmd:geographicIdentifier</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Identical</p></td>
 </tr>
 </tbody>
@@ -5301,9 +5387,9 @@ is <a href="http://seadatanet.maris2.nl/v_bodc_vocab_v2/search.asp?lib=C19" clas
 <p>INSPIRE recommendations for encoding free text values which reference
 a specific external resource or registry is to use gmx:Anchor instead of
 gco:CharacterString
-Note that the extent XML element is in the srv namespace. This differs
-from dataset metadata instances where the extent XML element will be in
-the gmd namespace.</p>
+Note that the extent XML element is in the gmd namespace for
+datasets/series. This differs from service metadata instances where the
+extent XML element will be in the srv namespace.</p>
 </li>
 </ol>
 </div></div></td>
@@ -5317,9 +5403,9 @@ the gmd namespace.</p>
 <pre class="pygments highlight"><code data-lang="xml"><span></span><span class="tok-nt">&lt;gmd:MD_Metadata&gt;</span>
 <span class="tok-w">  </span>...
 <span class="tok-w">  </span><span class="tok-nt">&lt;gmd:identificationInfo&gt;</span>
-<span class="tok-w">    </span><span class="tok-nt">&lt;srv:SV_ServiceIdentification&gt;</span>
+<span class="tok-w">    </span><span class="tok-nt">&lt;gmd:MD_DataIdentification</span><span class="tok-w"> </span><span class="tok-na">id=</span><span class="tok-s">&quot;OS-415463&quot;</span><span class="tok-nt">&gt;</span>
 <span class="tok-w">      </span>...
-<span class="tok-w">      </span><span class="tok-nt">&lt;srv:extent&gt;</span>
+<span class="tok-w">      </span><span class="tok-nt">&lt;gmd:extent&gt;</span>
 <span class="tok-w">        </span><span class="tok-nt">&lt;gmd:EX_Extent&gt;</span>
 <span class="tok-w">          </span><span class="tok-nt">&lt;gmd:geographicElement&gt;</span>
 <span class="tok-w">            </span><span class="tok-nt">&lt;gmd:EX_GeographicDescription&gt;</span>
@@ -5334,9 +5420,9 @@ the gmd namespace.</p>
 <span class="tok-w">          </span><span class="tok-nt">&lt;/gmd:geographicElement&gt;</span>
 <span class="tok-w">          </span>...
 <span class="tok-w">        </span><span class="tok-nt">&lt;/gmd:EX_Extent&gt;</span>
-<span class="tok-w">      </span><span class="tok-nt">&lt;/srv:extent&gt;</span>
+<span class="tok-w">      </span><span class="tok-nt">&lt;/gmd:extent&gt;</span>
 <span class="tok-w">      </span>...
-<span class="tok-w">    </span><span class="tok-nt">&lt;/srv:SV_ServiceIdentification&gt;</span>
+<span class="tok-w">    </span><span class="tok-nt">&lt;/gmd:MD_DataIdentification&gt;</span>
 <span class="tok-w">  </span><span class="tok-nt">&lt;/gmd:identificationInfo&gt;</span>
 <span class="tok-w">  </span>...
 <span class="tok-nt">&lt;/gmd:MD_Metadata&gt;</span></code></pre>
@@ -5345,16 +5431,16 @@ the gmd namespace.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Example Two - Extent encoding example with authority</p>
+<p>Example Two- Extent encoding example with authority</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="content">
 <pre class="pygments highlight"><code data-lang="xml"><span></span><span class="tok-nt">&lt;gmd:MD_Metadata&gt;</span>
 <span class="tok-w">  </span>...
 <span class="tok-w">  </span><span class="tok-nt">&lt;gmd:identificationInfo&gt;</span>
-<span class="tok-w">    </span><span class="tok-nt">&lt;gmd:MD_DataIdentification</span><span class="tok-w"> </span><span class="tok-na">id=</span><span class="tok-s">&quot;XY-000001&quot;</span><span class="tok-nt">&gt;</span>
+<span class="tok-w">    </span><span class="tok-nt">&lt;gmd:MD_DataIdentification</span><span class="tok-w"> </span><span class="tok-na">id=</span><span class="tok-s">&quot;OS-IOIOIO&quot;</span><span class="tok-nt">&gt;</span>
 <span class="tok-w">      </span>...
-<span class="tok-w">      </span><span class="tok-nt">&lt;srv:extent&gt;</span>
+<span class="tok-w">      </span><span class="tok-nt">&lt;gmd:extent&gt;</span>
 <span class="tok-w">        </span><span class="tok-nt">&lt;gmd:EX_Extent&gt;</span>
 <span class="tok-w">          </span><span class="tok-nt">&lt;gmd:geographicElement&gt;</span>
 <span class="tok-w">            </span><span class="tok-nt">&lt;gmd:EX_GeographicDescription&gt;</span>
@@ -5363,12 +5449,12 @@ the gmd namespace.</p>
 <span class="tok-w">                  </span><span class="tok-nt">&lt;gmd:authority&gt;</span>
 <span class="tok-w">                    </span><span class="tok-nt">&lt;gmd:CI_Citation&gt;</span>
 <span class="tok-w">                      </span><span class="tok-nt">&lt;gmd:title&gt;</span>
-<span class="tok-w">                        </span><span class="tok-nt">&lt;gco:CharacterString&gt;</span>ISO<span class="tok-w"> </span>3166-2<span class="tok-nt">&lt;/gco:CharacterString&gt;</span>
+<span class="tok-w">                        </span><span class="tok-nt">&lt;gco:CharacterString&gt;</span>Ordnance<span class="tok-w"> </span>Survey<span class="tok-w"> </span>Linked<span class="tok-w"> </span>Data<span class="tok-nt">&lt;/gco:CharacterString&gt;</span>
 <span class="tok-w">                      </span><span class="tok-nt">&lt;/gmd:title&gt;</span>
 <span class="tok-w">                      </span><span class="tok-nt">&lt;gmd:date&gt;</span>
 <span class="tok-w">                        </span><span class="tok-nt">&lt;gmd:CI_Date&gt;</span>
 <span class="tok-w">                          </span><span class="tok-nt">&lt;gmd:date&gt;</span>
-<span class="tok-w">                            </span><span class="tok-nt">&lt;gco:Date&gt;</span>1998<span class="tok-nt">&lt;/gco:Date&gt;</span>
+<span class="tok-w">                            </span><span class="tok-nt">&lt;gco:Date&gt;</span>2010-10-25<span class="tok-nt">&lt;/gco:Date&gt;</span>
 <span class="tok-w">                          </span><span class="tok-nt">&lt;/gmd:date&gt;</span>
 <span class="tok-w">                          </span><span class="tok-nt">&lt;gmd:dateType&gt;</span>
 <span class="tok-w">                             </span><span class="tok-nt">&lt;gmd:CI_DateTypeCode</span><span class="tok-w"> </span>
@@ -5380,7 +5466,7 @@ the gmd namespace.</p>
 <span class="tok-w">                    </span><span class="tok-nt">&lt;/gmd:CI_Citation&gt;</span>
 <span class="tok-w">                  </span><span class="tok-nt">&lt;/gmd:authority&gt;</span>
 <span class="tok-w">                  </span><span class="tok-nt">&lt;gmd:code&gt;</span>
-<span class="tok-w">                    </span><span class="tok-nt">&lt;gco:CharacterString&gt;</span>GB-ENG<span class="tok-nt">&lt;/gco:CharacterString&gt;</span>
+<span class="tok-w">                    </span><span class="tok-nt">&lt;gco:CharacterString&gt;</span>http://data.os.uk/id/7000000000017765<span class="tok-nt">&lt;/gco:CharacterString&gt;</span>
 <span class="tok-w">                  </span><span class="tok-nt">&lt;/gmd:code&gt;</span>
 <span class="tok-w">                </span><span class="tok-nt">&lt;/gmd:MD_Identifier&gt;</span>
 <span class="tok-w">              </span><span class="tok-nt">&lt;/gmd:geographicIdentifier&gt;</span>
@@ -5388,7 +5474,7 @@ the gmd namespace.</p>
 <span class="tok-w">          </span><span class="tok-nt">&lt;/gmd:geographicElement&gt;</span>
 <span class="tok-w">          </span>...
 <span class="tok-w">        </span><span class="tok-nt">&lt;/gmd:EX_Extent&gt;</span>
-<span class="tok-w">      </span><span class="tok-nt">&lt;/srv:extent&gt;</span>
+<span class="tok-w">      </span><span class="tok-nt">&lt;/gmd:extent&gt;</span>
 <span class="tok-w">      </span>...
 <span class="tok-w">    </span><span class="tok-nt">&lt;/gmd:MD_DataIdentification&gt;</span>
 <span class="tok-w">  </span><span class="tok-nt">&lt;/gmd:identificationInfo&gt;</span>
@@ -5582,14 +5668,14 @@ significant, e.g. in geology, mining, meteorology etc.</p></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19119:2006+Amd:1</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">SV_ServiceIdentification.extent &gt; EX_Extent &gt;
+<td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19115:2003</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">MD_DataIdentification.extent &gt; EX_Extent &gt;
 EX_VerticalExtent</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Identical</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Equivalent</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19139:2007</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">/gmd:MD_Metadata/gmd:identificationInfo/srv:SV_ServiceIdentification/srv:extent/gmd:EX_Extent/gmd:verticalElement</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:extent/gmd:EX_Extent/gmd:verticalElement</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Equivalent</p></td>
 </tr>
 </tbody>
@@ -5672,16 +5758,16 @@ instance altogether.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Example One (services) - Vertical CRS by reference</p>
+<p>Example One (datasets/series) - Vertical CRS by reference</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="content">
 <pre class="pygments highlight"><code data-lang="xml"><span></span><span class="tok-nt">&lt;gmd:MD_Metadata&gt;</span>
 <span class="tok-w">  </span>...
 <span class="tok-w">  </span><span class="tok-nt">&lt;gmd:identificationInfo&gt;</span>
-<span class="tok-w">    </span><span class="tok-nt">&lt;gmd:MD_DataIdentification</span><span class="tok-w"> </span><span class="tok-na">id=</span><span class="tok-s">&quot;XYZ-323232&quot;</span><span class="tok-nt">&gt;</span>
+<span class="tok-w">    </span><span class="tok-nt">&lt;gmd:MD_DataIdentification</span><span class="tok-w"> </span><span class="tok-na">id=</span><span class="tok-s">&quot;XYZ-000010&quot;</span><span class="tok-nt">&gt;</span>
 <span class="tok-w">      </span>...
-<span class="tok-w">      </span><span class="tok-nt">&lt;srv:extent&gt;</span>
+<span class="tok-w">      </span><span class="tok-nt">&lt;gmd:extent&gt;</span>
 <span class="tok-w">        </span><span class="tok-nt">&lt;gmd:EX_Extent&gt;</span>
 <span class="tok-w">          </span>...
 <span class="tok-w">          </span><span class="tok-nt">&lt;gmd:verticalElement&gt;</span>
@@ -5696,7 +5782,7 @@ instance altogether.</p>
 <span class="tok-w">            </span><span class="tok-nt">&lt;/gmd:EX_VerticalExtent&gt;</span>
 <span class="tok-w">          </span><span class="tok-nt">&lt;/gmd:verticalElement&gt;</span>
 <span class="tok-w">        </span><span class="tok-nt">&lt;/gmd:EX_Extent&gt;</span>
-<span class="tok-w">      </span><span class="tok-nt">&lt;/srv:extent&gt;</span>
+<span class="tok-w">      </span><span class="tok-nt">&lt;/gmd:extent&gt;</span>
 <span class="tok-w">      </span>...
 <span class="tok-w">    </span><span class="tok-nt">&lt;/gmd:MD_DataIdentification&gt;</span>
 <span class="tok-w">  </span><span class="tok-nt">&lt;/gmd:identificationInfo&gt;</span>
@@ -5707,16 +5793,16 @@ instance altogether.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Example Two (services) - Vertical CRS by value</p>
+<p>Example Two (datasets/series) - Vertical CRS by value</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="content">
 <pre class="pygments highlight"><code data-lang="xml"><span></span><span class="tok-nt">&lt;gmd:MD_Metadata&gt;</span>
 <span class="tok-w">  </span>...
 <span class="tok-w">  </span><span class="tok-nt">&lt;gmd:dataIdentification&gt;</span>
-<span class="tok-w">    </span><span class="tok-nt">&lt;gmd:MD_DataIdentification</span><span class="tok-w"> </span><span class="tok-na">id=</span><span class="tok-s">&quot;XYZ-234567&quot;</span><span class="tok-nt">&gt;</span>
+<span class="tok-w">    </span><span class="tok-nt">&lt;gmd:MD_DataIdentification</span><span class="tok-w"> </span><span class="tok-na">id=</span><span class="tok-s">&quot;XYZ-101010&quot;</span><span class="tok-nt">&gt;</span>
 <span class="tok-w">      </span>...
-<span class="tok-w">      </span><span class="tok-nt">&lt;srv:extent&gt;</span>
+<span class="tok-w">      </span><span class="tok-nt">&lt;gmd:extent&gt;</span>
 <span class="tok-w">        </span><span class="tok-nt">&lt;gmd:EX_Extent&gt;</span>
 <span class="tok-w">          </span>...
 <span class="tok-w">          </span><span class="tok-nt">&lt;gmd:verticalElement&gt;</span>
@@ -5762,7 +5848,7 @@ instance altogether.</p>
 <span class="tok-w">            </span><span class="tok-nt">&lt;/gmd:EX_VerticalExtent&gt;</span>
 <span class="tok-w">          </span><span class="tok-nt">&lt;/gmd:verticalElement&gt;</span>
 <span class="tok-w">        </span><span class="tok-nt">&lt;/gmd:EX_Extent&gt;</span>
-<span class="tok-w">      </span><span class="tok-nt">&lt;/srv:extent&gt;</span>
+<span class="tok-w">      </span><span class="tok-nt">&lt;/gmd:extent&gt;</span>
 <span class="tok-w">      </span>...
 <span class="tok-w">    </span><span class="tok-nt">&lt;/gmd:MD_DataIdentification&gt;</span>
 <span class="tok-w">  </span><span class="tok-nt">&lt;/gmd:dataIdentification&gt;</span>
@@ -5960,8 +6046,7 @@ reference systems in addition to that in which it is recorded.</p>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">INSPIRE Metadata</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">crs coordinate reference system</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">In INSPIRE it is
-only mandatory for interoperable spatial data services</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Equivalent</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19115:2003</p></td>
@@ -5982,7 +6067,7 @@ RS_Identifier.code</p></td>
 <summary class="title">Change history&#8230;&#8203;</summary>
 <div class="content">
 <div class="paragraph">
-<p>GEMINI 1 to 2.0: Changed from enumerated list
+<p>GEMINI 1 to 2.0: Changed from enumerated list<br>
 October 2023: clarifications to Guidance, to align with slight revision of INSPIRE TG</p>
 </div>
 </div>
@@ -6258,8 +6343,14 @@ either Distance or Equivalent scale.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19115:2003</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Describe in the Abstract</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">no direct equivalent</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">MD_DataIdentification.spatialResolution &gt;
+MD_Resolution.distance</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Equivalent</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19139:2007</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:spatialResolution</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Equivalent</p></td>
 </tr>
 </tbody>
 </table>
@@ -6289,19 +6380,48 @@ either Distance or Equivalent scale.</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>For services, it is not possible to express the restriction of a
-service concerning the spatial resolution in using the ISO 19139 XML
-Schema.</p>
+<p>The encoding example for spatial resolution is shown in the example
+below.</p>
 </li>
 <li>
-<p>It shall be expressed in the Abstract.</p>
+<p>A distance measurement shall be encoded and the unit of measurement
+shall be identified. The unit of measurement is identified using the uom
+attribute of the XML element gco:Distance. In the case of GEMINI2 all
+spatial resolution distance measurements shall be in metres. The value
+of the uom attribute shall be: urn:ogc:def:uom:EPSG::9001</p>
 </li>
 <li>
-<p>The spatial resolution restriction text shall include either an
-equivalent scale as integer valued scale denominator or a resolution
-distance using a numerical length value and with a unit of length.</p>
+<p>This defines the unit of measure as metres by reference to the
+<a href="http://www.epsg-registry.org/">EPSG registry</a>
+<a href="component/content/article?id=1047">[12</a>].</p>
 </li>
 </ol>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Example</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="xml"><span></span><span class="tok-nt">&lt;gmd:MD_Metadata&gt;</span>
+<span class="tok-w">  </span>...
+<span class="tok-w">  </span><span class="tok-nt">&lt;gmd:identificationInfo&gt;</span>
+<span class="tok-w">    </span><span class="tok-nt">&lt;gmd:MD_DataIdentification</span><span class="tok-w"> </span><span class="tok-na">id=</span><span class="tok-s">&quot;OS-100100&quot;</span><span class="tok-nt">&gt;</span>
+<span class="tok-w">      </span>...
+<span class="tok-w">      </span><span class="tok-nt">&lt;gmd:spatialResolution&gt;</span>
+<span class="tok-w">        </span><span class="tok-nt">&lt;gmd:MD_Resolution&gt;</span>
+<span class="tok-w">          </span><span class="tok-nt">&lt;gmd:distance&gt;</span>
+<span class="tok-w">            </span><span class="tok-nt">&lt;gco:Distance</span><span class="tok-w"> </span><span class="tok-na">uom=</span><span class="tok-s">&#39;urn:ogc:def:uom:EPSG::9001&#39;</span><span class="tok-nt">&gt;</span>20<span class="tok-nt">&lt;/gco:Distance&gt;</span>
+<span class="tok-w">          </span><span class="tok-nt">&lt;/gmd:distance&gt;</span>
+<span class="tok-w">        </span><span class="tok-nt">&lt;/gmd:MD_Resolution&gt;</span>
+<span class="tok-w">      </span><span class="tok-nt">&lt;/gmd:spatialResolution&gt;</span>
+<span class="tok-w">      </span>...
+<span class="tok-w">    </span><span class="tok-nt">&lt;/gmd:MD_DataIdentification&gt;</span>
+<span class="tok-w">  </span><span class="tok-nt">&lt;/gmd:identificationInfo&gt;</span>
+<span class="tok-w">  </span>...
+<span class="tok-nt">&lt;/gmd:MD_Metadata&gt;</span></code></pre>
+</div>
 </div></div></td>
 </tr>
 </tbody>
@@ -6367,61 +6487,39 @@ available</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Specify a valid URL to the service.</p>
-</li>
-<li>
-<p>If no online access for the service is available, but there is a
-publicly available online resource providing additional information
-about accessing the described service, the URL pointing to this resource
-shall be given instead.</p>
-</li>
-<li>
-<p>Conditionally (required for invocable spatial data services otherwise
-optional) a description should be provided</p>
-<div class="ulist">
-<ul>
-<li>
-<p>For an invocable spatial data service, the gmd:linkage/gmd:description
-child element gmd:CI_OnlineResource shall contain a gmx:Anchor element
-pointing to the value "accessPoint" of the code list
-OnLineDescriptionCode in the INSPIRE Registry</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Although not mandatory, the following ISO 19115 sub-elements should be
-included, for best results with data.gov.uk:</p>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
-<li>
-<p>function</p>
-</li>
-<li>
-<p>name (this appears on the data.gov.uk site)</p>
-</li>
-</ol>
-</div>
-</li>
-<li>
-<p>In relation to online INSPIRE network services, special guidance
-applies (see
-<a href="component/content/article?id=1054#data_servce_linking">'Data and
-Service Linking'</a>).</p>
-<div class="ulist">
-<ul>
-<li>
 <p>Identify whether the resource may be accessed.</p>
 </li>
 <li>
 <p>Determine the location of the resource (may be a URL).</p>
 </li>
-</ul>
-</div>
+<li>
+<p>The URL of a DOI landing page should be given as a Resource locator
+with a CI_OnlineFunctionCode value of "information".</p>
 </li>
 <li>
-<p>For an invocable spatial data service the gmd:CI_OnLineFunctionCode
-element should point to value "information"</p>
+<p>If no online access for the dataset or dataset series is available,
+but there is a publicly available online resource providing additional
+information about how to access the dataset of dataset series being
+described, the URL pointing to this shall be given instead.</p>
+</li>
+<li>
+<p>Although not mandatory, the following ISO 19115 sub-elements should be
+included, for best results with data.gov.uk:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>function (if provided, the gmd:CI_OnLineFunctionCode element should
+point to one of the values of the ISO 19139 code list
+CI_OnLineFunctionCode)</p>
+</li>
+<li>
+<p>name (this appears on the data.gov.uk site)</p>
+</li>
+<li>
+<p>description (data.gov.uk uses this if no 'name' provided)</p>
+</li>
+</ul>
+</div>
 </li>
 </ol>
 </div></div></td>
@@ -6435,24 +6533,30 @@ one of following type of resources:</p>
 <div class="ulist">
 <ul>
 <li>
-<p>a service metadata (capabilities) document of the described Spatial
-Data Service</p>
+<p>direct access for downloading the described dataset</p>
 </li>
 <li>
-<p>a service WSDL document of the described Spatial Data Service</p>
+<p>a service metadata (capabilities) document of a Spatial Data Service
+used for providing this dataset</p>
+</li>
+<li>
+<p>a service WSDL document of a Spatial Data Service used for providing
+this data set</p>
+</li>
+<li>
+<p>a client application that directly accesses the described dataset</p>
 </li>
 <li>
 <p>a web page with further instructions for accessing the described
-service</p>
+dataset</p>
 </li>
 </ul>
 </div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Examples</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">A Web Map Service (WMS) capabilities document would be given
-like:<br>
-<a href="http://myserver/INSPIREWM/MapServer/WMSServer?service=WMS&amp;request=GetCapabilities&amp" class="bare">http://myserver/INSPIREWM/MapServer/WMSServer?service=WMS&amp;request=GetCapabilities&amp</a>;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A DOI landing page:
+<a href="http://doi.org/10.5285/1e7d5e08-9e24-471b-ae37-49b477f695e3" class="bare">http://doi.org/10.5285/1e7d5e08-9e24-471b-ae37-49b477f695e3</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Revision date</p></td>
@@ -6518,17 +6622,18 @@ CI_OnlineResource.linkage</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Guidelines</p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Guidelines</p>
-</div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>In the examples, the URLs provided are for OGC GetCapabilities
-requests.</p>
+<p>The two examples illustrate different uses of Resource locator.
+Example one gives direct access to the dataset. Example two gives the
+location of further information about ordering the dataset. ISO 19115
+and the ISO 19139 encoding provides a means of indicating the function
+of the online resource using the CI_OnLineFunctionCode code list. Two
+values from this code list provide a means of discriminating between a
+URL that is provided for information (code list value of 'information')
+and a URL that is the address used for downloading (code list value of
+'download') the data.</p>
 </li>
 <li>
 <p>The gmd:transferOptions XML element of gmd:MD_Distribution is used to
@@ -6547,64 +6652,16 @@ guidance</a> <a href="component/content/article?id=1047">[9</a>]. If the format 
 version values are known, then they should be given (see <a href="#21">Data
 format</a>).</p>
 </li>
-<li>
-<p>GEMINI2 allows for a URL which is a link to a point of contact where
-more information is available or where the dataset can be downloaded.</p>
-</li>
-<li>
-<p>ISO 19115 and the ISO 19139 encoding provides a means of indicating
-the function of the online resource by means of the
-CI_OnLineFunctionCode code list. Two values from this code list provide
-a means of discriminating between a URL that is provided for information
-(code list value of 'information') and a URL that is the address used
-for downloading (code list value of 'download') the data.</p>
-</li>
-<li>
-<p>The INSPIRE
-<a href="inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode">OnLineDescriptionCode</a>
-provides a way of further distinguishing between access point URLs and
-end point URLs. Access points call an operation directly; end points
-list operations and their access points.</p>
-</li>
-<li>
-<p>Note that the GetCapabilities URL contains an entity reference
-(sometimes known as an escape sequence) for the ampersand character.
-When an XML parser reads &amp; it replaces the sequence with &amp;. When
-writing XML, XML aware software will escape characters automatically but
-text editing software will not. The ampersand character alone in XML is
-interpreted as beginning an entity or character reference. XML defines
-five entity references:</p>
-<div class="ulist">
-<ul>
-<li>
-<p>&lt; - The character &lt;</p>
-</li>
-<li>
-<p>&amp; - The character &amp;</p>
-</li>
-<li>
-<p>&gt; - The character &gt;</p>
-</li>
-<li>
-<p>&quot; - The character "</p>
-</li>
-<li>
-<p>&apos; - The character '</p>
-</li>
-</ul>
-</div>
-</li>
 </ol>
 </div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Example one, showing only required linkage content (for a WMS)</p>
+<p>Example one, showing only required linkage content (for a dataset)</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="xml"><span></span>
-<span class="tok-nt">&lt;gmd:MD_Metadata&gt;</span>
+<pre class="pygments highlight"><code data-lang="xml"><span></span><span class="tok-nt">&lt;gmd:MD_Metadata&gt;</span>
 <span class="tok-w">  </span>...
 <span class="tok-w">  </span><span class="tok-nt">&lt;gmd:distributionInfo&gt;</span>
 <span class="tok-w">    </span><span class="tok-nt">&lt;gmd:MD_Distribution&gt;</span>
@@ -6622,9 +6679,7 @@ five entity references:</p>
 <span class="tok-w">          </span><span class="tok-nt">&lt;gmd:onLine&gt;</span>
 <span class="tok-w">            </span><span class="tok-nt">&lt;gmd:CI_OnlineResource&gt;</span>
 <span class="tok-w">              </span><span class="tok-nt">&lt;gmd:linkage&gt;</span>
-<span class="tok-w">                </span><span class="tok-nt">&lt;gmd:URL&gt;</span>
-<span class="tok-w">                  </span>http://mapserver.jrc.it/wmsconnector/com.esri.wms.Esrimap/img2k_453_mos?request=GetCapabilities<span class="tok-err">&amp;</span>service=WMS<span class="tok-err">&amp;</span>
-<span class="tok-w">                </span><span class="tok-nt">&lt;/gmd:URL&gt;</span>
+<span class="tok-w">                </span><span class="tok-nt">&lt;gmd:URL&gt;</span>http://ogc.bgs.ac.uk/dppp/wmc/digmap625.xml<span class="tok-nt">&lt;/gmd:URL&gt;</span>
 <span class="tok-w">              </span><span class="tok-nt">&lt;/gmd:linkage&gt;</span>
 <span class="tok-w">            </span><span class="tok-nt">&lt;/gmd:CI_OnlineResource&gt;</span>
 <span class="tok-w">          </span><span class="tok-nt">&lt;/gmd:onLine&gt;</span>
@@ -6639,8 +6694,8 @@ five entity references:</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Example Two - including name, description, and indication of function
-(for a WMS)</p>
+<p>Example two - including name, description, and indication of function
+(for a dataset ordering page)</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="content">
@@ -6657,115 +6712,18 @@ five entity references:</p>
 <span class="tok-w">          </span><span class="tok-nt">&lt;gmd:onLine&gt;</span>
 <span class="tok-w">            </span><span class="tok-nt">&lt;gmd:CI_OnlineResource&gt;</span>
 <span class="tok-w">              </span><span class="tok-nt">&lt;gmd:linkage&gt;</span>
-<span class="tok-w">                </span><span class="tok-nt">&lt;gmd:URL&gt;</span>https://services.bgr.de/wms/geologie/emodnet2_prequaternary_seafloor_geology/?REQUEST=GetCapabilities<span class="tok-err">&amp;</span>SERVICE=WMS<span class="tok-err">&amp;</span><span class="tok-nt">&lt;/gmd:URL&gt;</span>
+<span class="tok-w">                </span><span class="tok-nt">&lt;gmd:URL&gt;</span>https://os.uk/opendatadownload/products.html<span class="tok-nt">&lt;/gmd:URL&gt;</span>
 <span class="tok-w">              </span><span class="tok-nt">&lt;/gmd:linkage&gt;</span>
-<span class="tok-w">              </span>...
 <span class="tok-w">              </span><span class="tok-nt">&lt;gmd:name&gt;</span>
-<span class="tok-w">                </span><span class="tok-nt">&lt;gco:CharacterString&gt;</span>BGR<span class="tok-w"> </span>Geologie:<span class="tok-w"> </span>EMODnet2<span class="tok-nt">&lt;/gco:CharacterString&gt;</span>
+<span class="tok-w">                </span><span class="tok-nt">&lt;gco:CharacterString&gt;</span>Order<span class="tok-w"> </span>OS<span class="tok-w"> </span>OpenData<span class="tok-nt">&lt;/gco:CharacterString&gt;</span>
 <span class="tok-w">              </span><span class="tok-nt">&lt;/gmd:name&gt;</span>
 <span class="tok-w">              </span><span class="tok-nt">&lt;gmd:description&gt;</span>
-<span class="tok-w">                </span><span class="tok-nt">&lt;gmx:Anchor</span>
-<span class="tok-w">                  </span><span class="tok-na">xlink:href=</span><span class="tok-s">&quot;http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/endPoint&quot;</span><span class="tok-nt">&gt;</span>
-<span class="tok-w">                  </span>Capabilities<span class="tok-w"> </span>document<span class="tok-w"> </span>for<span class="tok-w"> </span>BGR<span class="tok-w"> </span>Geologie:<span class="tok-w"> </span>EMODnet2<span class="tok-w"> </span>Web<span class="tok-w"> </span>Map<span class="tok-w"> </span>Service<span class="tok-nt">&lt;/gmx:Anchor&gt;</span>
-<span class="tok-w">              </span><span class="tok-nt">&lt;/gmd:description&gt;</span><span class="tok-w">  </span>
+<span class="tok-w">                </span><span class="tok-nt">&lt;gco:CharacterString&gt;</span>general<span class="tok-w"> </span>ordering<span class="tok-w"> </span>page<span class="tok-w"> </span>for<span class="tok-w"> </span>all<span class="tok-w"> </span>OS<span class="tok-w"> </span>Open<span class="tok-w"> </span>Data<span class="tok-nt">&lt;/gco:CharacterString&gt;</span>
+<span class="tok-w">              </span><span class="tok-nt">&lt;/gmd:description&gt;</span>
 <span class="tok-w">              </span><span class="tok-nt">&lt;gmd:function&gt;</span>
 <span class="tok-w">                </span><span class="tok-nt">&lt;gmd:CI_OnLineFunctionCode</span><span class="tok-w"> </span>
 <span class="tok-w">                  </span><span class="tok-na">codeList=</span><span class="tok-s">&#39;https://schemas.isotc211.org/schemas/19139/resources/codelist/gmxCodelists.xml#CI_OnLineFunctionCode&#39;</span><span class="tok-w"> </span>
-<span class="tok-w">                  </span><span class="tok-na">codeListValue=</span><span class="tok-s">&#39;information&#39;</span><span class="tok-nt">&gt;</span>View<span class="tok-w"> </span>Service<span class="tok-nt">&lt;/gmd:CI_OnLineFunctionCode&gt;</span>
-<span class="tok-w">              </span><span class="tok-nt">&lt;/gmd:function&gt;</span>
-<span class="tok-w">            </span><span class="tok-nt">&lt;/gmd:CI_OnlineResource&gt;</span>
-<span class="tok-w">          </span><span class="tok-nt">&lt;/gmd:onLine&gt;</span>
-<span class="tok-w">        </span><span class="tok-nt">&lt;/gmd:MD_DigitalTransferOptions&gt;</span>
-<span class="tok-w">      </span><span class="tok-nt">&lt;/gmd:transferOptions&gt;</span>
-<span class="tok-w">    </span><span class="tok-nt">&lt;/gmd:MD_Distribution&gt;</span>
-<span class="tok-w">  </span><span class="tok-nt">&lt;/gmd:distributionInfo&gt;</span>
-<span class="tok-w">    </span>...
-<span class="tok-nt">&lt;/gmd:MD_Metadata&gt;</span></code></pre>
-</div>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Example Three - including name, description, and indication of function
-(for a WCS)</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="xml"><span></span><span class="tok-nt">&lt;gmd:MD_Metadata&gt;</span>
-<span class="tok-w">  </span>...
-<span class="tok-w">  </span><span class="tok-nt">&lt;gmd:distributionInfo&gt;</span>
-<span class="tok-w">    </span><span class="tok-nt">&lt;gmd:MD_Distribution&gt;</span>
-<span class="tok-w">      </span><span class="tok-nt">&lt;gmd:distributionFormat&gt;</span>
-<span class="tok-w">        </span>...
-<span class="tok-w">      </span><span class="tok-nt">&lt;/gmd:distributionFormat&gt;</span>
-<span class="tok-w">      </span>...
-<span class="tok-w">      </span><span class="tok-nt">&lt;gmd:transferOptions&gt;</span>
-<span class="tok-w">        </span><span class="tok-nt">&lt;gmd:MD_DigitalTransferOptions&gt;</span>
-<span class="tok-w">          </span><span class="tok-nt">&lt;gmd:onLine&gt;</span>
-<span class="tok-w">            </span><span class="tok-nt">&lt;gmd:CI_OnlineResource&gt;</span>
-<span class="tok-w">              </span><span class="tok-nt">&lt;gmd:linkage&gt;</span>
-<span class="tok-w">                </span><span class="tok-nt">&lt;gmd:URL&gt;</span>http://ogc2.bgs.ac.uk/BGS_EMODNET/wcs?reQuest=GetCapabilities<span class="tok-ni">&amp;servIce=WCSamp;</span><span class="tok-nt">&lt;/gmd:URL&gt;</span>
-<span class="tok-w">              </span><span class="tok-nt">&lt;/gmd:linkage&gt;</span>
-<span class="tok-w">              </span>...
-<span class="tok-w">              </span><span class="tok-nt">&lt;gmd:name&gt;</span>
-<span class="tok-w">                </span><span class="tok-nt">&lt;gco:CharacterString&gt;</span>BGS<span class="tok-w"> </span>EMODnet<span class="tok-w"> </span>bathymetry<span class="tok-nt">&lt;/gco:CharacterString&gt;</span>
-<span class="tok-w">              </span><span class="tok-nt">&lt;/gmd:name&gt;</span>
-<span class="tok-w">              </span><span class="tok-nt">&lt;gmd:description&gt;</span>
-<span class="tok-w">                </span><span class="tok-nt">&lt;gmx:Anchor</span>
-<span class="tok-w">                  </span><span class="tok-na">xlink:href=</span><span class="tok-s">&quot;http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/endPoint&quot;</span><span class="tok-nt">&gt;</span>
-<span class="tok-w">                  </span>Capabilities<span class="tok-w"> </span>document<span class="tok-w"> </span>for<span class="tok-w"> </span>BGS<span class="tok-w"> </span>EMODnet<span class="tok-w"> </span>bathymetry<span class="tok-w"> </span>Web<span class="tok-w"> </span>Coverage<span class="tok-w"> </span>Service<span class="tok-nt">&lt;/gmx:Anchor&gt;</span>
-<span class="tok-w">              </span><span class="tok-nt">&lt;/gmd:description&gt;</span><span class="tok-w">  </span>
-<span class="tok-w">              </span><span class="tok-nt">&lt;gmd:function&gt;</span>
-<span class="tok-w">                </span><span class="tok-nt">&lt;gmd:CI_OnLineFunctionCode</span><span class="tok-w"> </span>
-<span class="tok-w">                  </span><span class="tok-na">codeList=</span><span class="tok-s">&#39;https://schemas.isotc211.org/schemas/19139/resources/codelist/gmxCodelists.xml#CI_OnLineFunctionCode&#39;</span><span class="tok-w"> </span>
-<span class="tok-w">                  </span><span class="tok-na">codeListValue=</span><span class="tok-s">&#39;download&#39;</span><span class="tok-nt">&gt;</span>Download<span class="tok-w"> </span>Service<span class="tok-nt">&lt;/gmd:CI_OnLineFunctionCode&gt;</span>
-<span class="tok-w">              </span><span class="tok-nt">&lt;/gmd:function&gt;</span>
-<span class="tok-w">            </span><span class="tok-nt">&lt;/gmd:CI_OnlineResource&gt;</span>
-<span class="tok-w">          </span><span class="tok-nt">&lt;/gmd:onLine&gt;</span>
-<span class="tok-w">        </span><span class="tok-nt">&lt;/gmd:MD_DigitalTransferOptions&gt;</span>
-<span class="tok-w">      </span><span class="tok-nt">&lt;/gmd:transferOptions&gt;</span>
-<span class="tok-w">    </span><span class="tok-nt">&lt;/gmd:MD_Distribution&gt;</span>
-<span class="tok-w">  </span><span class="tok-nt">&lt;/gmd:distributionInfo&gt;</span>
-<span class="tok-w">  </span>...
-<span class="tok-nt">&lt;/gmd:MD_Metadata&gt;</span></code></pre>
-</div>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Example Four - including name, description, and indication of function
-(for an invocable spatial data service)</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="xml"><span></span><span class="tok-nt">&lt;gmd:MD_Metadata&gt;</span>
-<span class="tok-w">  </span>...
-<span class="tok-w">  </span><span class="tok-nt">&lt;gmd:distributionInfo&gt;</span>
-<span class="tok-w">    </span><span class="tok-nt">&lt;gmd:MD_Distribution&gt;</span>
-<span class="tok-w">      </span><span class="tok-nt">&lt;gmd:distributionFormat&gt;</span>
-<span class="tok-w">        </span>...
-<span class="tok-w">      </span><span class="tok-nt">&lt;/gmd:distributionFormat&gt;</span>
-<span class="tok-w">      </span>...
-<span class="tok-w">      </span><span class="tok-nt">&lt;gmd:transferOptions&gt;</span>
-<span class="tok-w">        </span><span class="tok-nt">&lt;gmd:MD_DigitalTransferOptions&gt;</span>
-<span class="tok-w">          </span><span class="tok-nt">&lt;gmd:onLine&gt;</span>
-<span class="tok-w">            </span><span class="tok-nt">&lt;gmd:CI_OnlineResource&gt;</span>
-<span class="tok-w">              </span><span class="tok-nt">&lt;gmd:linkage&gt;</span>
-<span class="tok-w">                </span><span class="tok-nt">&lt;gmd:URL&gt;</span>http://www.dinoservices.nl:80/geo3dmodelwebservices-1/Geo3DModelService?wsdl<span class="tok-nt">&lt;/gmd:URL&gt;</span>
-<span class="tok-w">              </span><span class="tok-nt">&lt;/gmd:linkage&gt;</span>
-<span class="tok-w">              </span>...
-<span class="tok-w">              </span><span class="tok-nt">&lt;gmd:name&gt;</span>
-<span class="tok-w">                </span><span class="tok-nt">&lt;gco:CharacterString&gt;</span>Geo3DModelService<span class="tok-nt">&lt;/gco:CharacterString&gt;</span>
-<span class="tok-w">              </span><span class="tok-nt">&lt;/gmd:name&gt;</span>
-<span class="tok-w">              </span><span class="tok-nt">&lt;gmd:description&gt;</span>
-<span class="tok-w">                </span><span class="tok-nt">&lt;gmx:Anchor</span>
-<span class="tok-w">                        </span><span class="tok-na">xlink:href=</span><span class="tok-s">&quot;http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint&quot;</span><span class="tok-nt">&gt;</span>
-<span class="tok-w">                        </span>Web<span class="tok-w"> </span>service<span class="tok-w"> </span>for<span class="tok-w"> </span>making<span class="tok-w"> </span>&quot;virtual&quot;<span class="tok-w"> </span>boreholes<span class="tok-w"> </span>in<span class="tok-w"> </span>the<span class="tok-w"> </span>Digital<span class="tok-w"> </span>Subsurface<span class="tok-w"> </span>Models<span class="tok-w"> </span>of<span class="tok-w"> </span>DINO<span class="tok-nt">&lt;/gmx:Anchor&gt;</span>
-<span class="tok-w">              </span><span class="tok-nt">&lt;/gmd:description&gt;</span><span class="tok-w">  </span>
-<span class="tok-w">              </span><span class="tok-nt">&lt;gmd:function&gt;</span>
-<span class="tok-w">                </span><span class="tok-nt">&lt;gmd:CI_OnLineFunctionCode</span><span class="tok-w"> </span>
-<span class="tok-w">                  </span><span class="tok-na">codeList=</span><span class="tok-s">&#39;http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_OnLineFunctionCode&#39;</span>
-<span class="tok-w">                  </span><span class="tok-na">codeListValue=</span><span class="tok-s">&#39;information&#39;</span><span class="tok-nt">&gt;</span>information<span class="tok-nt">&lt;/gmd:CI_OnLineFunctionCode&gt;</span>
+<span class="tok-w">                  </span><span class="tok-na">codeListValue=</span><span class="tok-s">&#39;information&#39;</span><span class="tok-nt">/&gt;</span>
 <span class="tok-w">              </span><span class="tok-nt">&lt;/gmd:function&gt;</span>
 <span class="tok-w">            </span><span class="tok-nt">&lt;/gmd:CI_OnlineResource&gt;</span>
 <span class="tok-w">          </span><span class="tok-nt">&lt;/gmd:onLine&gt;</span>
@@ -7372,7 +7330,7 @@ class</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19139:2007</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">/gmd:MD_Metadata/gmd:identificationInfo/srv:SV_ServiceIdentification/gmd:pointOfContact/gmd:CI_ResponsibleParty</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:pointOfContact/gmd:CI_ResponsibleParty</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Equivalent</p></td>
 </tr>
 </tbody>
@@ -7424,14 +7382,14 @@ Publisher.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Example One (service)</p>
+<p>Example One (datasets/series)</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="content">
 <pre class="pygments highlight"><code data-lang="xml"><span></span><span class="tok-nt">&lt;gmd:MD_Metadata&gt;</span>
 <span class="tok-w">  </span>...
 <span class="tok-w">  </span><span class="tok-nt">&lt;gmd:identificationInfo&gt;</span>
-<span class="tok-w">    </span><span class="tok-nt">&lt;srv:SV_ServiceIdentification&gt;</span>
+<span class="tok-w">    </span><span class="tok-nt">&lt;gmd:MD_DataIdentification</span><span class="tok-w"> </span><span class="tok-na">id=</span><span class="tok-s">&quot;SZ-OO53&quot;</span><span class="tok-nt">&gt;</span>
 <span class="tok-w">      </span>...
 <span class="tok-w">      </span><span class="tok-nt">&lt;gmd:pointOfContact&gt;</span>
 <span class="tok-w">        </span><span class="tok-nt">&lt;gmd:CI_ResponsibleParty&gt;</span>
@@ -7452,12 +7410,12 @@ Publisher.</p>
 <span class="tok-w">          </span><span class="tok-nt">&lt;gmd:role&gt;</span>
 <span class="tok-w">            </span><span class="tok-nt">&lt;gmd:CI_RoleCode</span><span class="tok-w"> </span>
 <span class="tok-w">              </span><span class="tok-na">codeList=</span><span class="tok-s">&#39;https://schemas.isotc211.org/schemas/19139/resources/codelist/gmxCodelists.xml#CI_RoleCode&#39;</span><span class="tok-w"> </span>
-<span class="tok-w">              </span><span class="tok-na">codeListValue=</span><span class="tok-s">&#39;publisher&#39;</span><span class="tok-nt">&gt;</span>publisher<span class="tok-nt">&lt;/gmd:CI_RoleCode&gt;</span>
+<span class="tok-w">              </span><span class="tok-na">codeListValue=</span><span class="tok-s">&#39;distributor&#39;</span><span class="tok-nt">&gt;</span>distributor<span class="tok-nt">&lt;/gmd:CI_RoleCode&gt;</span>
 <span class="tok-w">          </span><span class="tok-nt">&lt;/gmd:role&gt;</span>
 <span class="tok-w">        </span><span class="tok-nt">&lt;/gmd:CI_ResponsibleParty&gt;</span>
 <span class="tok-w">      </span><span class="tok-nt">&lt;/gmd:pointOfContact&gt;</span>
 <span class="tok-w">      </span>...
-<span class="tok-w">    </span><span class="tok-nt">&lt;/srv:SV_ServiceIdentification&gt;</span>
+<span class="tok-w">    </span><span class="tok-nt">&lt;/gmd:MD_DataIdentification&gt;</span>
 <span class="tok-w">  </span><span class="tok-nt">&lt;/gmd:identificationInfo&gt;</span>
 <span class="tok-w">  </span>...
 <span class="tok-nt">&lt;/gmd:MD_Metadata&gt;</span></code></pre>
@@ -7628,7 +7586,7 @@ MD_LegalConstraints.accessConstraints &amp; otherConstraints</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19139:2007</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">/gmd:MD_Metadata/gmd:identificationInfo/srv:SV_ServiceIdentification/gmd:resourceConstraints/gmd:MD_LegalConstraints/gmd:accessConstraints
+<td class="tableblock halign-left valign-top"><p class="tableblock">/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:resourceConstraints/gmd:MD_LegalConstraints/gmd:accessConstraints
 &amp; otherConstraints</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Equivalent</p></td>
 </tr>
@@ -7718,15 +7676,15 @@ gmd:otherConstraints element</p>
 <pre class="pygments highlight"><code data-lang="xml"><span></span><span class="tok-nt">&lt;gmd:MD_Metadata&gt;</span>
 <span class="tok-w">  </span>...
 <span class="tok-w">  </span><span class="tok-nt">&lt;gmd:identificationInfo&gt;</span>
-<span class="tok-w">    </span><span class="tok-nt">&lt;srv:SV_ServiceIdentification&gt;</span>
+<span class="tok-w">    </span><span class="tok-nt">&lt;gmd:MD_DataIdentification</span><span class="tok-w"> </span><span class="tok-na">id=</span><span class="tok-s">&quot;DEF-2000&quot;</span><span class="tok-nt">&gt;</span>
 <span class="tok-w">      </span>...
 <span class="tok-w">      </span><span class="tok-nt">&lt;gmd:resourceConstraints&gt;</span>
 <span class="tok-w">        </span><span class="tok-nt">&lt;gmd:MD_LegalConstraints&gt;</span>
 <span class="tok-w">          </span>...
 <span class="tok-w">          </span><span class="tok-nt">&lt;gmd:accessConstraints&gt;</span>
 <span class="tok-w">            </span><span class="tok-nt">&lt;gmd:MD_RestrictionCode</span><span class="tok-w"> </span>
-<span class="tok-w">              </span><span class="tok-na">codeList=</span><span class="tok-s">&#39;https://schemas.isotc211.org/schemas/19139/resources/codelist/gmxCodelists.xml#MD_RestrictionCode&#39;</span><span class="tok-w"> </span>
-<span class="tok-w">              </span><span class="tok-na">codeListValue=</span><span class="tok-s">&#39;otherRestrictions&#39;</span><span class="tok-nt">&gt;</span>otherRestrictions<span class="tok-nt">&lt;/gmd:MD_RestrictionCode&gt;</span>
+<span class="tok-w">            </span><span class="tok-na">codeList=</span><span class="tok-s">&#39;https://schemas.isotc211.org/schemas/19139/-/resources/codelist/gmxCodelists.xml#MD_RestrictionCode&#39;</span><span class="tok-w"> </span>
+<span class="tok-w">            </span><span class="tok-na">codeListValue=</span><span class="tok-s">&#39;otherRestrictions&#39;</span><span class="tok-nt">&gt;</span>otherRestrictions<span class="tok-nt">&lt;/gmd:MD_RestrictionCode&gt;</span>
 <span class="tok-w">          </span><span class="tok-nt">&lt;/gmd:accessConstraints&gt;</span>
 <span class="tok-w">          </span><span class="tok-nt">&lt;gmd:otherConstraints&gt;</span>
 <span class="tok-w">            </span><span class="tok-nt">&lt;gmx:Anchor</span><span class="tok-w"> </span><span class="tok-na">xlink:href=</span><span class="tok-s">&quot;http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/INSPIRE_Directive_Article13_1e&quot;</span><span class="tok-nt">&gt;</span>
@@ -7735,7 +7693,7 @@ gmd:otherConstraints element</p>
 <span class="tok-w">        </span><span class="tok-nt">&lt;/gmd:MD_LegalConstraints&gt;</span>
 <span class="tok-w">      </span><span class="tok-nt">&lt;/gmd:resourceConstraints&gt;</span>
 <span class="tok-w">      </span>...
-<span class="tok-w">    </span><span class="tok-nt">&lt;/srv:SV_ServiceIdentification&gt;</span>
+<span class="tok-w">    </span><span class="tok-nt">&lt;/gmd:MD_DataIdentification&gt;</span>
 <span class="tok-w">  </span><span class="tok-nt">&lt;/gmd:identificationInfo&gt;</span>
 <span class="tok-w">  </span>...
 <span class="tok-nt">&lt;/gmd:MD_Metadata&gt;</span></code></pre>
@@ -7926,7 +7884,7 @@ MD_LegalConstraints.useConstraints &amp; otherConstraints</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19139:2007</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">/gmd:MD_Metadata/gmd:identificationInfo/srv:SV_ServiceIdentification/gmd:resourceConstraints/gmd:MD_LegalConstraints/gmd:useConstraints
+<td class="tableblock halign-left valign-top"><p class="tableblock">/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:resourceConstraints/gmd:MD_LegalConstraints/gmd:useConstraints
 &amp; gmd:otherConstraints</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Equivalent</p></td>
 </tr>
@@ -8017,13 +7975,13 @@ list.</p>
 <pre class="pygments highlight"><code data-lang="xml"><span></span><span class="tok-nt">&lt;gmd:MD_Metadata&gt;</span>
 <span class="tok-w">  </span>...
 <span class="tok-w">  </span><span class="tok-nt">&lt;gmd:identificationInfo&gt;</span>
-<span class="tok-w">    </span><span class="tok-nt">&lt;srv:SV_ServiceIdentification</span><span class="tok-w"> </span><span class="tok-na">id=</span><span class="tok-s">&quot;bgs-0000-1&quot;</span><span class="tok-nt">&gt;</span>
+<span class="tok-w">    </span><span class="tok-nt">&lt;gmd:MD_DataIdentification</span><span class="tok-w"> </span><span class="tok-na">id=</span><span class="tok-s">&quot;bgs-0000-1&quot;</span><span class="tok-nt">&gt;</span>
 <span class="tok-w">      </span>...
 <span class="tok-w">      </span><span class="tok-nt">&lt;gmd:resourceConstraints&gt;</span>
 <span class="tok-w">        </span><span class="tok-nt">&lt;gmd:MD_LegalConstraints&gt;</span>
 <span class="tok-w">          </span><span class="tok-nt">&lt;gmd:useConstraints&gt;</span>
 <span class="tok-w">            </span><span class="tok-nt">&lt;gmd:MD_RestrictionCode</span><span class="tok-w"> </span>
-<span class="tok-w">              </span><span class="tok-na">codeList=</span><span class="tok-s">&#39;https://schemas.isotc211.org/schemas/19139/resources/codelist/gmxCodelists.xml#MD_RestrictionCode&#39;</span><span class="tok-w"> </span>
+<span class="tok-w">              </span><span class="tok-na">codeList=</span><span class="tok-s">&#39;https://schemas.isotc211.org/schemas/19139/-/resources/codelist/gmxCodelists.xml#MD_RestrictionCode&#39;</span><span class="tok-w"> </span>
 <span class="tok-w">              </span><span class="tok-na">codeListValue=</span><span class="tok-s">&#39;otherRestrictions&#39;</span><span class="tok-nt">&gt;</span>otherRestrictions<span class="tok-nt">&lt;/gmd:MD_RestrictionCode&gt;</span>
 <span class="tok-w">          </span><span class="tok-nt">&lt;/gmd:useConstraints&gt;</span>
 <span class="tok-w">          </span><span class="tok-nt">&lt;gmd:otherConstraints&gt;</span>
@@ -8033,7 +7991,7 @@ list.</p>
 <span class="tok-w">        </span><span class="tok-nt">&lt;/gmd:MD_LegalConstraints&gt;</span>
 <span class="tok-w">      </span><span class="tok-nt">&lt;/gmd:resourceConstraints&gt;</span>
 <span class="tok-w">      </span>...
-<span class="tok-w">    </span><span class="tok-nt">&lt;/srv:SV_ServiceIdentification&gt;</span>
+<span class="tok-w">    </span><span class="tok-nt">&lt;/gmd:MD_DataIdentification&gt;</span>
 <span class="tok-w">  </span><span class="tok-nt">&lt;/gmd:identificationInfo&gt;</span>
 <span class="tok-w">  </span>...
 <span class="tok-nt">&lt;/gmd:MD_Metadata&gt;</span></code></pre>
@@ -8947,12 +8905,7 @@ nilReason (unknown) specified in the pass element.</p>
 </li>
 <li>
 <p>All gmd:dataQualityInfo XML element shall have a gmd:scope XML
-element, set to 'service'.</p>
-</li>
-<li>
-<p>It is important to note that if the scope of the data quality
-information is 'service' then the gmd:levelDescription XML element is
-required, as shown below.</p>
+element, set to 'dataset' or 'series' as appropriate.</p>
 </li>
 </ol>
 </div></div></td>
@@ -8970,17 +8923,10 @@ required, as shown below.</p>
 <span class="tok-w">      </span><span class="tok-nt">&lt;gmd:scope&gt;</span>
 <span class="tok-w">        </span><span class="tok-nt">&lt;gmd:DQ_Scope&gt;</span>
 <span class="tok-w">          </span><span class="tok-nt">&lt;gmd:level&gt;</span>
-<span class="tok-w">            </span><span class="tok-nt">&lt;gmd:MD_ScopeCode</span><span class="tok-w"> </span><span class="tok-na">codeListValue=</span><span class="tok-s">&#39;service&#39;</span><span class="tok-w"> </span>
-<span class="tok-w">              </span><span class="tok-na">codeList=</span><span class="tok-s">&#39;https://schemas.isotc211.org/schemas/19139/resources/codelist/gmxCodelists.xml#MD_ScopeCode&#39;</span><span class="tok-nt">&gt;</span>service<span class="tok-nt">&lt;/gmd:MD_ScopeCode&gt;</span>
+<span class="tok-w">            </span><span class="tok-nt">&lt;gmd:MD_ScopeCode</span><span class="tok-w"> </span><span class="tok-na">codeListValue=</span><span class="tok-s">&#39;dataset&#39;</span><span class="tok-w"> </span>
+<span class="tok-w">              </span><span class="tok-na">codeList=</span><span class="tok-s">&#39;https://schemas.isotc211.org/schemas/19139/-/resources/codelist/gmxCodelists.xml#MD_ScopeCode&#39;</span><span class="tok-nt">&gt;</span>dataset<span class="tok-nt">&lt;/gmd:MD_ScopeCode&gt;</span>
 <span class="tok-w">          </span><span class="tok-nt">&lt;/gmd:level&gt;</span>
 <span class="tok-w">          </span>...
-<span class="tok-w">          </span><span class="tok-nt">&lt;gmd:levelDescription&gt;</span>
-<span class="tok-w">            </span><span class="tok-nt">&lt;gmd:MD_ScopeDescription&gt;</span>
-<span class="tok-w">              </span><span class="tok-nt">&lt;gmd:other&gt;</span>
-<span class="tok-w">            </span><span class="tok-nt">&lt;gco:CharacterString&gt;</span>service<span class="tok-nt">&lt;/gco:CharacterString&gt;</span>
-<span class="tok-w">              </span><span class="tok-nt">&lt;/gmd:other&gt;</span>
-<span class="tok-w">            </span><span class="tok-nt">&lt;/gmd:MD_ScopeDescription&gt;</span>
-<span class="tok-w">          </span><span class="tok-nt">&lt;/gmd:levelDescription&gt;</span>
 <span class="tok-w">        </span><span class="tok-nt">&lt;/gmd:DQ_Scope&gt;</span>
 <span class="tok-w">      </span><span class="tok-nt">&lt;/gmd:scope&gt;</span>
 <span class="tok-w">      </span><span class="tok-nt">&lt;gmd:report&gt;</span>
@@ -8990,25 +8936,25 @@ required, as shown below.</p>
 <span class="tok-w">              </span><span class="tok-nt">&lt;gmd:specification&gt;</span>
 <span class="tok-w">                </span><span class="tok-nt">&lt;gmd:CI_Citation&gt;</span>
 <span class="tok-w">                  </span><span class="tok-nt">&lt;gmd:title&gt;</span>
-<span class="tok-w">                </span><span class="tok-nt">&lt;gco:CharacterString&gt;</span>Service<span class="tok-w"> </span>Abstract<span class="tok-w"> </span>Test<span class="tok-w"> </span>Suite<span class="tok-nt">&lt;/gco:CharacterString&gt;</span>
+<span class="tok-w">                    </span><span class="tok-nt">&lt;gco:CharacterString&gt;</span>INSPIRE<span class="tok-w"> </span>Implementing<span class="tok-w"> </span>rules<span class="tok-w"> </span>laying<span class="tok-w"> </span>down<span class="tok-w"> </span>technical<span class="tok-w"> </span>arrangements<span class="tok-w"> </span>for<span class="tok-w"> </span>the<span class="tok-w"> </span>interoperability<span class="tok-w"> </span>
+<span class="tok-w">                      </span>and<span class="tok-w"> </span>harmonisation<span class="tok-w"> </span>of<span class="tok-w"> </span>orthoimagery<span class="tok-nt">&lt;/gco:CharacterString&gt;</span>
 <span class="tok-w">                  </span><span class="tok-nt">&lt;/gmd:title&gt;</span>
 <span class="tok-w">                  </span><span class="tok-nt">&lt;gmd:date&gt;</span>
 <span class="tok-w">                    </span><span class="tok-nt">&lt;gmd:CI_Date&gt;</span>
 <span class="tok-w">                      </span><span class="tok-nt">&lt;gmd:date&gt;</span>
-<span class="tok-w">                        </span><span class="tok-nt">&lt;gco:Date&gt;</span>2007-11-21<span class="tok-nt">&lt;/gco:Date&gt;</span>
+<span class="tok-w">                        </span><span class="tok-nt">&lt;gco:Date&gt;</span>2011-05-15<span class="tok-nt">&lt;/gco:Date&gt;</span>
 <span class="tok-w">                      </span><span class="tok-nt">&lt;/gmd:date&gt;</span>
 <span class="tok-w">                      </span><span class="tok-nt">&lt;gmd:dateType&gt;</span>
 <span class="tok-w">                        </span><span class="tok-nt">&lt;gmd:CI_DateTypeCode</span>
-<span class="tok-w">              </span><span class="tok-na">codeList=</span><span class="tok-s">&#39;https://schemas.isotc211.org/schemas/19139/resources/</span>
-<span class="tok-s">                codelist/ML_gmxCodelists.xml#CI_DateTypeCode&#39;</span><span class="tok-w"> </span>
-<span class="tok-w">              </span><span class="tok-na">codeListValue=</span><span class="tok-s">&#39;publication&#39;</span><span class="tok-nt">&gt;</span>publication<span class="tok-nt">&lt;/gmd:CI_DateTypeCode&gt;</span>
+<span class="tok-w">                          </span><span class="tok-na">codeList=</span><span class="tok-s">&#39;https://schemas.isotc211.org/schemas/19139/-/resources/codelist/gmxCodelists.xml#CI_DateTypeCode&#39;</span><span class="tok-w"> </span>
+<span class="tok-w">                          </span><span class="tok-na">codeListValue=</span><span class="tok-s">&#39;publication&#39;</span><span class="tok-nt">&gt;</span>publication<span class="tok-nt">&lt;/gmd:CI_DateTypeCode&gt;</span>
 <span class="tok-w">                      </span><span class="tok-nt">&lt;/gmd:dateType&gt;</span>
 <span class="tok-w">                    </span><span class="tok-nt">&lt;/gmd:CI_Date&gt;</span>
 <span class="tok-w">                  </span><span class="tok-nt">&lt;/gmd:date&gt;</span>
 <span class="tok-w">                </span><span class="tok-nt">&lt;/gmd:CI_Citation&gt;</span>
 <span class="tok-w">              </span><span class="tok-nt">&lt;/gmd:specification&gt;</span>
 <span class="tok-w">              </span><span class="tok-nt">&lt;gmd:explanation&gt;</span>
-<span class="tok-w">            </span><span class="tok-nt">&lt;gco:CharacterString&gt;</span>See<span class="tok-w"> </span>the<span class="tok-w"> </span>referenced<span class="tok-w"> </span>specification<span class="tok-nt">&lt;/gco:CharacterString&gt;</span>
+<span class="tok-w">                </span><span class="tok-nt">&lt;gco:CharacterString&gt;</span>See<span class="tok-w"> </span>the<span class="tok-w"> </span>referenced<span class="tok-w"> </span>specification<span class="tok-nt">&lt;/gco:CharacterString&gt;</span>
 <span class="tok-w">              </span><span class="tok-nt">&lt;/gmd:explanation&gt;</span>
 <span class="tok-w">              </span><span class="tok-nt">&lt;gmd:pass&gt;</span>
 <span class="tok-w">                </span><span class="tok-nt">&lt;gco:Boolean&gt;</span>true<span class="tok-nt">&lt;/gco:Boolean&gt;</span>
@@ -9021,6 +8967,101 @@ required, as shown below.</p>
 <span class="tok-w">    </span><span class="tok-nt">&lt;/gmd:DQ_DataQuality&gt;</span>
 <span class="tok-w">  </span><span class="tok-nt">&lt;/gmd:dataQualityInfo&gt;</span>
 <span class="tok-nt">&lt;/gmd:MD_Metadata&gt;</span></code></pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Example of a conformity report for Implementing Rule 1089/2010, where
+conformance is not evaluated.<br>
+Example follows updated guidance to use gmx:Anchor over
+gco:CharacterString for Citation titles</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="xml"><span></span><span class="tok-nt">&lt;gmd:report</span><span class="tok-w"> </span>
+<span class="tok-w">    </span><span class="tok-na">xmlns:gmd=</span><span class="tok-s">&quot;http://www.isotc211.org/2005/gmd&quot;</span><span class="tok-w"> </span>
+<span class="tok-w">    </span><span class="tok-na">xmlns:gco=</span><span class="tok-s">&quot;http://www.isotc211.org/2005/gco&quot;</span><span class="tok-w"> </span>
+<span class="tok-w">    </span><span class="tok-na">xmlns:gmx=</span><span class="tok-s">&quot;http://www.isotc211.org/2005/gmx&quot;</span><span class="tok-w"> </span>
+<span class="tok-w">    </span><span class="tok-na">xmlns:xlink=</span><span class="tok-s">&quot;http://www.w3.org/1999/xlink&quot;</span><span class="tok-nt">&gt;</span>
+<span class="tok-w">    </span><span class="tok-nt">&lt;gmd:DQ_DomainConsistency&gt;</span>
+<span class="tok-w">        </span><span class="tok-nt">&lt;gmd:result&gt;</span>
+<span class="tok-w">            </span><span class="tok-nt">&lt;gmd:DQ_ConformanceResult&gt;</span>
+<span class="tok-w">                </span><span class="tok-nt">&lt;gmd:specification&gt;</span>
+<span class="tok-w">                    </span><span class="tok-nt">&lt;gmd:CI_Citation&gt;</span>
+<span class="tok-w">                        </span><span class="tok-nt">&lt;gmd:title&gt;</span>
+<span class="tok-w">                            </span><span class="tok-nt">&lt;gmx:Anchor</span><span class="tok-w"> </span><span class="tok-na">xlink:href=</span><span class="tok-s">&quot;http://data.europa.eu/eli/reg/2010/1089&quot;</span><span class="tok-nt">&gt;</span>
+<span class="tok-w">                                </span>Commission<span class="tok-w"> </span>Regulation<span class="tok-w"> </span>(EU)<span class="tok-w"> </span>No<span class="tok-w"> </span>1089/2010<span class="tok-w"> </span>of<span class="tok-w"> </span>23<span class="tok-w"> </span>November<span class="tok-w"> </span>2010<span class="tok-w"> </span>implementing<span class="tok-w"> </span>Directive<span class="tok-w"> </span>
+<span class="tok-w">                                </span>2007/2/EC<span class="tok-w"> </span>of<span class="tok-w"> </span>the<span class="tok-w"> </span>European<span class="tok-w"> </span>Parliament<span class="tok-w"> </span>and<span class="tok-w"> </span>of<span class="tok-w"> </span>the<span class="tok-w"> </span>Council<span class="tok-w"> </span>as<span class="tok-w"> </span>regards<span class="tok-w"> </span>interoperability<span class="tok-w"> </span>
+<span class="tok-w">                                </span>of<span class="tok-w"> </span>spatial<span class="tok-w"> </span>data<span class="tok-w"> </span>sets<span class="tok-w"> </span>and<span class="tok-w"> </span>services<span class="tok-nt">&lt;/gmx:Anchor&gt;</span>
+<span class="tok-w">                        </span><span class="tok-nt">&lt;/gmd:title&gt;</span>
+<span class="tok-w">                        </span><span class="tok-nt">&lt;gmd:date&gt;</span>
+<span class="tok-w">                            </span><span class="tok-nt">&lt;gmd:CI_Date&gt;</span>
+<span class="tok-w">                                </span><span class="tok-nt">&lt;gmd:date&gt;</span>
+<span class="tok-w">                                    </span><span class="tok-nt">&lt;gco:Date&gt;</span>2010-12-08<span class="tok-nt">&lt;/gco:Date&gt;</span>
+<span class="tok-w">                                </span><span class="tok-nt">&lt;/gmd:date&gt;</span>
+<span class="tok-w">                                </span><span class="tok-nt">&lt;gmd:dateType&gt;</span>
+<span class="tok-w">                                    </span><span class="tok-nt">&lt;gmd:CI_DateTypeCode</span><span class="tok-w"> </span>
+<span class="tok-w">                                        </span><span class="tok-na">codeList=</span><span class="tok-s">&#39;https://schemas.isotc211.org/schemas/19139/resources/codelist/gmxCodelists.xml#CI_DateTypeCode&#39;</span><span class="tok-w"> </span>
+<span class="tok-w">                                        </span><span class="tok-na">codeListValue=</span><span class="tok-s">&#39;publication&#39;</span><span class="tok-w"> </span><span class="tok-nt">/&gt;</span>
+<span class="tok-w">                                </span><span class="tok-nt">&lt;/gmd:dateType&gt;</span>
+<span class="tok-w">                            </span><span class="tok-nt">&lt;/gmd:CI_Date&gt;</span>
+<span class="tok-w">                        </span><span class="tok-nt">&lt;/gmd:date&gt;</span>
+<span class="tok-w">                    </span><span class="tok-nt">&lt;/gmd:CI_Citation&gt;</span>
+<span class="tok-w">                </span><span class="tok-nt">&lt;/gmd:specification&gt;</span>
+<span class="tok-w">                </span><span class="tok-cm">&lt;!-- Explanation is a required element but can be empty --&gt;</span>
+<span class="tok-w">                </span><span class="tok-nt">&lt;gmd:explanation</span><span class="tok-w"> </span><span class="tok-na">gco:nilReason=</span><span class="tok-s">&quot;inapplicable&quot;</span><span class="tok-nt">/&gt;</span>
+<span class="tok-w">                </span><span class="tok-cm">&lt;!-- Conformance has not been evaluated --&gt;</span>
+<span class="tok-w">                </span><span class="tok-nt">&lt;gmd:pass</span><span class="tok-w"> </span><span class="tok-na">gco:nilReason=</span><span class="tok-s">&quot;unknown&quot;</span><span class="tok-w"> </span><span class="tok-nt">/&gt;</span>
+<span class="tok-w">            </span><span class="tok-nt">&lt;/gmd:DQ_ConformanceResult&gt;</span>
+<span class="tok-w">        </span><span class="tok-nt">&lt;/gmd:result&gt;</span>
+<span class="tok-w">    </span><span class="tok-nt">&lt;/gmd:DQ_DomainConsistency&gt;</span>
+<span class="tok-nt">&lt;/gmd:report&gt;</span></code></pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Example three ~ Topological consistency, showing mandatory elements for
+a descriptive topological consistency report</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="xml"><span></span><span class="tok-nt">&lt;gmd:report&gt;</span>
+<span class="tok-w">   </span><span class="tok-nt">&lt;gmd:DQ_TopologicalConsistency&gt;</span>
+<span class="tok-w">      </span><span class="tok-nt">&lt;gmd:result&gt;</span>
+<span class="tok-w">         </span><span class="tok-nt">&lt;gmd:DQ_ConformanceResult&gt;</span>
+<span class="tok-w">            </span><span class="tok-nt">&lt;gmd:specification&gt;</span>
+<span class="tok-w">               </span><span class="tok-nt">&lt;gmd:CI_Citation&gt;</span>
+<span class="tok-w">                  </span><span class="tok-nt">&lt;gmd:title&gt;</span>
+<span class="tok-w">                     </span><span class="tok-cm">&lt;!-- The title for this report shall always be &quot;INSPIRE Data Specifications - Base Models - Generic Network Model&quot; --&gt;</span>
+<span class="tok-w">                     </span><span class="tok-nt">&lt;gco:CharacterString&gt;</span>INSPIRE<span class="tok-w"> </span>Data<span class="tok-w"> </span>Specifications<span class="tok-w"> </span>-<span class="tok-w"> </span>Base<span class="tok-w"> </span>Models<span class="tok-w"> </span>-<span class="tok-w"> </span>Generic<span class="tok-w"> </span>Network<span class="tok-w"> </span>Model<span class="tok-nt">&lt;/gco:CharacterString&gt;</span>
+<span class="tok-w">                  </span><span class="tok-nt">&lt;/gmd:title&gt;</span>
+<span class="tok-w">                  </span><span class="tok-nt">&lt;gmd:date&gt;</span>
+<span class="tok-w">                     </span><span class="tok-nt">&lt;gmd:CI_Date&gt;</span>
+<span class="tok-w">                        </span><span class="tok-nt">&lt;gmd:date&gt;</span>
+<span class="tok-w">                           </span><span class="tok-cm">&lt;!-- The date shall be the date of publication of the Generic Network Model --&gt;</span>
+<span class="tok-w">                           </span><span class="tok-nt">&lt;gco:Date&gt;</span>2013-04-05<span class="tok-nt">&lt;/gco:Date&gt;</span>
+<span class="tok-w">                        </span><span class="tok-nt">&lt;/gmd:date&gt;</span>
+<span class="tok-w">                        </span><span class="tok-nt">&lt;gmd:dateType&gt;</span>
+<span class="tok-w">                           </span><span class="tok-cm">&lt;!-- The code list value shall always be publication --&gt;</span>
+<span class="tok-w">                           </span><span class="tok-nt">&lt;gmd:CI_DateTypeCode</span><span class="tok-w"> </span><span class="tok-na">codeList=</span><span class="tok-s">&#39;https://schemas.isotc211.org/schemas/19139/resources/codelist/gmxCodelists.xml&#39;</span><span class="tok-w"> </span>
+<span class="tok-w">                           </span><span class="tok-na">codeListValue=</span><span class="tok-s">&#39;publication&#39;</span><span class="tok-nt">/&gt;</span>
+<span class="tok-w">                        </span><span class="tok-nt">&lt;/gmd:dateType&gt;</span>
+<span class="tok-w">                     </span><span class="tok-nt">&lt;/gmd:CI_Date&gt;</span>
+<span class="tok-w">                  </span><span class="tok-nt">&lt;/gmd:date&gt;</span>
+<span class="tok-w">               </span><span class="tok-nt">&lt;/gmd:CI_Citation&gt;</span>
+<span class="tok-w">            </span><span class="tok-nt">&lt;/gmd:specification&gt;</span>
+<span class="tok-w">            </span><span class="tok-cm">&lt;!-- An explanation must be provided --&gt;</span>
+<span class="tok-w">            </span><span class="tok-nt">&lt;gmd:explanation&gt;&lt;gco:CharacterString&gt;</span>[Some<span class="tok-w"> </span>statement<span class="tok-w"> </span>on<span class="tok-w"> </span>topological<span class="tok-w"> </span>consistency]<span class="tok-nt">&lt;/gco:CharacterString&gt;&lt;/gmd:explanation&gt;</span>
+<span class="tok-w">            </span><span class="tok-nt">&lt;gmd:pass&gt;</span>
+<span class="tok-w">               </span><span class="tok-cm">&lt;!-- The value shall always be false to indicate that the data does not assure the centerline topology for the network --&gt;</span>
+<span class="tok-w">               </span><span class="tok-nt">&lt;gco:Boolean&gt;</span>false<span class="tok-nt">&lt;/gco:Boolean&gt;</span>
+<span class="tok-w">            </span><span class="tok-nt">&lt;/gmd:pass&gt;</span>
+<span class="tok-w">         </span><span class="tok-nt">&lt;/gmd:DQ_ConformanceResult&gt;</span>
+<span class="tok-w">      </span><span class="tok-nt">&lt;/gmd:result&gt;</span>
+<span class="tok-w">   </span><span class="tok-nt">&lt;/gmd:DQ_TopologicalConsistency&gt;</span>
+<span class="tok-nt">&lt;/gmd:report&gt;</span></code></pre>
 </div>
 </div></div></td>
 </tr>
@@ -9144,8 +9185,14 @@ expressed as distance</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19115:2003</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Describe in the Abstract</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">no direct equivalent</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">MD_DataIdentification.spatialResolution &gt;
+MD_Resolution.equivalentScale &gt; MD_RepresentativeFraction.denominator</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Equivalent</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19139:2007</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:spatialResolution/gmd:MD_Resolution/gmd:equivalentScale</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Equivalent</p></td>
 </tr>
 </tbody>
 </table>
@@ -9172,22 +9219,36 @@ expressed as distance</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Guidelines</p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
-<ul>
-<li>
-<p>For services, it is not possible to express the restriction of a
-service concerning the spatial resolution when using the ISO 19139 XML
-Schema.</p>
-</li>
-<li>
-<p>It shall be expressed in the Abstract.</p>
-</li>
-<li>
-<p>The spatial resolution restriction text shall include either an
-equivalent scale as integer valued scale denominator or a resolution
-distance using a numerical length value and with a unit of length.</p>
-</li>
-</ul>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Example</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="xml"><span></span><span class="tok-nt">&lt;gmd:MD_Metadata&gt;</span>
+<span class="tok-w">  </span>...
+<span class="tok-w">  </span><span class="tok-nt">&lt;gmd:identificationInfo&gt;</span>
+<span class="tok-w">    </span><span class="tok-nt">&lt;gmd:MD_DataIdentification</span><span class="tok-w"> </span><span class="tok-na">id=</span><span class="tok-s">&quot;def-005000&quot;</span><span class="tok-nt">&gt;</span>
+<span class="tok-w">      </span>...
+<span class="tok-w">      </span><span class="tok-nt">&lt;gmd:spatialResolution&gt;</span>
+<span class="tok-w">        </span><span class="tok-nt">&lt;gmd:MD_Resolution&gt;</span>
+<span class="tok-w">          </span><span class="tok-nt">&lt;gmd:equivalentScale&gt;</span>
+<span class="tok-w">            </span><span class="tok-nt">&lt;gmd:MD_RepresentativeFraction&gt;</span>
+<span class="tok-w">              </span><span class="tok-nt">&lt;gmd:denominator&gt;</span>
+<span class="tok-w">                </span><span class="tok-nt">&lt;gco:Integer&gt;</span>50000<span class="tok-nt">&lt;/gco:Integer&gt;</span>
+<span class="tok-w">              </span><span class="tok-nt">&lt;/gmd:denominator&gt;</span>
+<span class="tok-w">            </span><span class="tok-nt">&lt;/gmd:MD_RepresentativeFraction&gt;</span>
+<span class="tok-w">          </span><span class="tok-nt">&lt;/gmd:equivalentScale&gt;</span>
+<span class="tok-w">        </span><span class="tok-nt">&lt;/gmd:MD_Resolution&gt;</span>
+<span class="tok-w">      </span><span class="tok-nt">&lt;/gmd:spatialResolution&gt;</span>
+<span class="tok-w">      </span>...
+<span class="tok-w">    </span><span class="tok-nt">&lt;/gmd:MD_DataIdentification&gt;</span>
+<span class="tok-w">  </span><span class="tok-nt">&lt;/gmd:identificationInfo&gt;</span>
+<span class="tok-w">  </span>...
+<span class="tok-nt">&lt;/gmd:MD_Metadata&gt;</span></code></pre>
+</div>
 </div></div></td>
 </tr>
 </tbody>
@@ -9376,13 +9437,13 @@ related to the area covered by the resource.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19115:2003</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">SV_ServiceIdentification.extent &gt; EX_Extent &gt;
+<td class="tableblock halign-left valign-top"><p class="tableblock">MD_DataIdentification.extent &gt; EX_Extent &gt;
 EX_GeographicExtent &gt; EX_GeographicBoundingBox</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Minor difference in name</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19139:2007</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">/gmd:MD_Metadata/gmd:identificationInfo/srv:SV_ServiceIdentification/srv:extent/gmd:EX_Extent/gmd:geographicElement/gmd:EX_GeographicBoundingBox</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:extent/gmd:EX_Extent/gmd:geographicElement/gmd:EX_GeographicBoundingBox</p></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 </tbody>
@@ -9440,14 +9501,6 @@ decimal numbers) with axes orientated north and east. The geodetic datum
 is WGS 84.</p>
 </li>
 </ol>
-</div>
-<div class="paragraph">
-<p>Note that the encoding is very similar to that used in metadata
-instances for datasets or series, except that the extent XML element is
-in the srv namespace instead of gmd. This is because extent is a
-property of MD_DataIdentification (ISO 19115) and
-SV_ServiceIdentification (ISO 19119/Amd 1:2008), not a property of the
-parent MD_Identification.</p>
 </div></div></td>
 </tr>
 <tr>
@@ -9459,9 +9512,9 @@ parent MD_Identification.</p>
 <pre class="pygments highlight"><code data-lang="xml"><span></span><span class="tok-nt">&lt;gmd:MD_Metadata&gt;</span>
 <span class="tok-w">  </span>...
 <span class="tok-w">  </span><span class="tok-nt">&lt;gmd:identificationInfo&gt;</span>
-<span class="tok-w">    </span><span class="tok-nt">&lt;srv:SV_ServiceIdentification&gt;</span>
+<span class="tok-w">    </span><span class="tok-nt">&lt;gmd:MD_DataIdentification</span><span class="tok-w"> </span><span class="tok-na">id=</span><span class="tok-s">&quot;xxx-27700-x&quot;</span><span class="tok-nt">&gt;</span>
 <span class="tok-w">      </span>...
-<span class="tok-w">      </span><span class="tok-nt">&lt;srv:extent&gt;</span>
+<span class="tok-w">      </span><span class="tok-nt">&lt;gmd:extent&gt;</span>
 <span class="tok-w">        </span><span class="tok-nt">&lt;gmd:EX_Extent&gt;</span>
 <span class="tok-w">          </span><span class="tok-nt">&lt;gmd:geographicElement&gt;</span>
 <span class="tok-w">            </span><span class="tok-nt">&lt;gmd:EX_GeographicBoundingBox&gt;</span>
@@ -9481,9 +9534,9 @@ parent MD_Identification.</p>
 <span class="tok-w">          </span><span class="tok-nt">&lt;/gmd:geographicElement&gt;</span>
 <span class="tok-w">          </span>...
 <span class="tok-w">        </span><span class="tok-nt">&lt;/gmd:EX_Extent&gt;</span>
-<span class="tok-w">      </span><span class="tok-nt">&lt;/srv:extent&gt;</span>
+<span class="tok-w">      </span><span class="tok-nt">&lt;/gmd:extent&gt;</span>
 <span class="tok-w">      </span>...
-<span class="tok-w">    </span><span class="tok-nt">&lt;/srv:SV_ServiceIdentification&gt;</span>
+<span class="tok-w">    </span><span class="tok-nt">&lt;/gmd:MD_DataIdentification&gt;</span>
 <span class="tok-w">  </span><span class="tok-nt">&lt;/gmd:identificationInfo&gt;</span>
 <span class="tok-w">  </span>...
 <span class="tok-nt">&lt;/gmd:MD_Metadata&gt;</span></code></pre>
@@ -9561,7 +9614,7 @@ of the data resource</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Occurrence</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Single</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Multiple</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Data type</p></td>
@@ -9573,11 +9626,33 @@ of the data resource</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Guidance</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>For the conformity statement and lineage of metadata describing:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>a dataset, set quality scope to 'dataset'</p>
+</li>
+<li>
+<p>a dataset series, set quality scope 'series'</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>If using a Data Quality element to describe something other than the
+whole dataset or series, then provide additional DQ_DataQuality elements
+with their Scope set appropriately</p>
+</li>
+</ol>
+</div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Comment</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Required in the ISO 19115 encoding of GEMINI 2 metadata
+records, to assist in managing related metadata records.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Examples</p></td>
@@ -9608,20 +9683,20 @@ of the data resource</p></td>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">INSPIRE Metadata</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">INSPIRE Metadata</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">metadata/2.0/req/sds/only-one-dq-element</p></td>
-</tr>
-<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">metadata/2.0/req/datasets-and-series/one-data-quality-element</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">INSPIRE
 only allows a maximum of one Data quality element, so only one scope -
 the whole resource</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19115:2003</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">DQ_DataQuality.scope</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19115:2003</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DQ_DataQuality.scope</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Equivalent</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19139:2007</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">/gmd:MD_Metadata/gmd:dataQualityInfo/gmd:DQ_DataQuality/gmd:scope</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Equivalent</p></td>
 </tr>
 </tbody>
 </table>
@@ -9648,18 +9723,20 @@ the whole resource</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Guidelines</p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
-<ul>
-<li>
-<p>It is important to note that if the scope of the data quality
-information is 'service' then the gmd:levelDescription XML element is
-required</p>
-</li>
-<li>
-<p>The value of gmd:other must be <strong>service</strong> (in the language of the
-metadata), as shown below.</p>
-</li>
-</ul>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>All gmd:dataQualityInfo XML element shall have a gmd:scope XML element,
+set to as appropriate.</p>
+</div>
+<div class="paragraph">
+<p>There shall be exactly one gmd:dataQualityInfo/gmd:DQ_DataQuality
+element scoped to the entire described data set or data set series. This
+shall contain the Conformity and Lineage elements, and any Quality
+measures that relate to the the entire dataset or series</p>
+</div>
+<div class="paragraph">
+<p>Other quality measures, e.g. for specific feature types, shall be
+separate DQ_DataQuality elements, with the relevant Quality scope. In
+these cases the Level Description must also be set</p>
 </div></div></td>
 </tr>
 <tr>
@@ -9675,18 +9752,10 @@ metadata), as shown below.</p>
 <span class="tok-w">      </span><span class="tok-nt">&lt;gmd:scope&gt;</span>
 <span class="tok-w">        </span><span class="tok-nt">&lt;gmd:DQ_Scope&gt;</span>
 <span class="tok-w">          </span><span class="tok-nt">&lt;gmd:level&gt;</span>
-<span class="tok-w">            </span><span class="tok-nt">&lt;gmd:MD_ScopeCode</span><span class="tok-w"> </span>
-<span class="tok-w">              </span><span class="tok-na">codeListValue=</span><span class="tok-s">&#39;service&#39;</span>
-<span class="tok-w">              </span><span class="tok-na">codeList=</span><span class="tok-s">&#39;https://schemas.isotc211.org/schemas/19139/resources/codelist/gmxCodelists.xml#MD_ScopeCode&#39;</span><span class="tok-nt">&gt;</span>service<span class="tok-nt">&lt;/gmd:MD_ScopeCode&gt;</span>
+<span class="tok-w">            </span><span class="tok-nt">&lt;gmd:MD_ScopeCode</span><span class="tok-w"> </span><span class="tok-na">codeListValue=</span><span class="tok-s">&#39;dataset&#39;</span><span class="tok-w"> </span>
+<span class="tok-w">              </span><span class="tok-na">codeList=</span><span class="tok-s">&#39;https://schemas.isotc211.org/schemas/19139/-/resources/codelist/gmxCodelists.xml#MD_ScopeCode&#39;</span><span class="tok-nt">&gt;</span>dataset<span class="tok-nt">&lt;/gmd:MD_ScopeCode&gt;</span>
 <span class="tok-w">          </span><span class="tok-nt">&lt;/gmd:level&gt;</span>
 <span class="tok-w">          </span>...
-<span class="tok-w">          </span><span class="tok-nt">&lt;gmd:levelDescription&gt;</span>
-<span class="tok-w">            </span><span class="tok-nt">&lt;gmd:MD_ScopeDescription&gt;</span>
-<span class="tok-w">              </span><span class="tok-nt">&lt;gmd:other&gt;</span>
-<span class="tok-w">            </span><span class="tok-nt">&lt;gco:CharacterString&gt;</span>service<span class="tok-nt">&lt;/gco:CharacterString&gt;</span>
-<span class="tok-w">              </span><span class="tok-nt">&lt;/gmd:other&gt;</span>
-<span class="tok-w">            </span><span class="tok-nt">&lt;/gmd:MD_ScopeDescription&gt;</span>
-<span class="tok-w">          </span><span class="tok-nt">&lt;/gmd:levelDescription&gt;</span>
 <span class="tok-w">        </span><span class="tok-nt">&lt;/gmd:DQ_Scope&gt;</span>
 <span class="tok-w">      </span><span class="tok-nt">&lt;/gmd:scope&gt;</span>
 <span class="tok-w">      </span>...
@@ -9704,14 +9773,7 @@ metadata), as shown below.</p>
 <summary class="title">Metadata errors observed&#8230;&#8203;</summary>
 <div class="content">
 <div class="paragraph">
-<p>|Errors observed |<strong>No level description</strong><br>
-ISO 19115 requires that a 'level description' is given for any quality
-statement that is not describing the 'dataset' or 'series' level.
-INSPIRE and GEMINI use the quality statement for both lineage and
-conformity. This means that any 'service' record must provide a
-gmd:DQ_Scope/gmd:levelDescription element, as shown above.<br>
-A similar rule applies to <a href="#47">hierarchyLevelName</a>, which must be
-provided for any record that is not describing a dataset.</p>
+<p>No error information available</p>
 </div>
 </div>
 </details>
@@ -10066,7 +10128,7 @@ free text content are optional and informative only</p>
 <span class="tok-w">         </span><span class="tok-nt">&lt;/gmd:language&gt;</span>
 <span class="tok-w">         </span><span class="tok-nt">&lt;gmd:characterSet&gt;</span>
 <span class="tok-w">            </span><span class="tok-nt">&lt;gmd:MD_CharacterSetCode</span><span class="tok-w"> </span>
-<span class="tok-w">              </span><span class="tok-na">codeList=</span><span class="tok-s">&#39;https://schemas.isotc211.org/schemas/19139/resources/codelist/gmxCodelists.xml#MD_CharacterSetCode&#39;</span><span class="tok-w"> </span>
+<span class="tok-w">              </span><span class="tok-na">codeList=</span><span class="tok-s">&#39;https://schemas.isotc211.org/schemas/19139/-/resources/codelist/gmxCodelists.xml#MD_CharacterSetCode&#39;</span><span class="tok-w"> </span>
 <span class="tok-w">              </span><span class="tok-na">codeListValue=</span><span class="tok-s">&#39;8859part1&#39;</span><span class="tok-nt">&gt;</span>ISO/IEC<span class="tok-w"> </span>8859-1<span class="tok-w"> </span>(also<span class="tok-w"> </span>known<span class="tok-w"> </span>as<span class="tok-w"> </span>Latin<span class="tok-w"> </span>1)<span class="tok-nt">&lt;/gmd:MD_CharacterSetCode&gt;</span>
 <span class="tok-w">         </span><span class="tok-nt">&lt;/gmd:characterSet&gt;</span>
 <span class="tok-w">         </span><span class="tok-nt">&lt;gmd:topicCategory&gt;</span>
@@ -10911,7 +10973,7 @@ topological consistency report with recommended elements included</p>
 <span class="tok-w">      </span><span class="tok-nt">&lt;/gmd:nameOfMeasure&gt;</span>
 <span class="tok-w">      </span><span class="tok-nt">&lt;gmd:evaluationMethodType&gt;</span>
 <span class="tok-w">         </span><span class="tok-nt">&lt;gmd:DQ_EvaluationMethodTypeCode</span><span class="tok-w"> </span>
-<span class="tok-w">           </span><span class="tok-na">codeList=</span><span class="tok-s">&#39;https://schemas.isotc211.org/schemas/19139/resources/codelist/gmxCodelists.xml#DQ_EvaluationMethodTypeCode&#39;</span><span class="tok-w"> </span>
+<span class="tok-w">           </span><span class="tok-na">codeList=</span><span class="tok-s">&#39;https://schemas.isotc211.org/schemas/19139/-/resources/codelist/gmxCodelists.xml#DQ_EvaluationMethodTypeCode&#39;</span><span class="tok-w"> </span>
 <span class="tok-w">           </span><span class="tok-na">codeListValue=</span><span class="tok-s">&#39;indirect&#39;</span><span class="tok-w"> </span><span class="tok-nt">/&gt;</span>
 <span class="tok-w">      </span><span class="tok-nt">&lt;/gmd:evaluationMethodType&gt;</span>
 <span class="tok-w">      </span><span class="tok-nt">&lt;gmd:evaluationMethodDescription&gt;</span>
@@ -11176,7 +11238,7 @@ more than one resourceMaintenance</p></td>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2023-11-02 11:26:16 UTC
+Last updated 2023-11-13 12:21:16 UTC
 </div>
 </div>
     <div class="x-bar x-bar-footer x-bar-h x-bar-relative x-bar-outer-spacers e1248-1 myo-0 myo-1" data-x-bar="{&quot;id&quot;:&quot;e1248-1&quot;,&quot;region&quot;:&quot;footer&quot;,&quot;height&quot;:&quot;auto&quot;}">

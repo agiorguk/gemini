@@ -61,7 +61,7 @@ NERC Vocabulary "C64, United Kingdom Charting Progress 2 sea regions"
 |Standard |Name |Comparison
 
 |INSPIRE Metadata |None |
-ifdef::variant-dataset[]
+# tag::dataset[]
 |ISO 19115:2003 |MD_DataIdentification.extent > EX_Extent >
 EX_GeographicExtent > EX_ GeographicDescription.geographicIdentifier
 |Identical
@@ -69,8 +69,8 @@ EX_GeographicExtent > EX_ GeographicDescription.geographicIdentifier
 |ISO 19139:2007
 |/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:extent/gmd:EX_Extent/gmd:geographicElement/gmd:EX_GeographicDescription/gmd:geographicIdentifier
 |Identical
-endif::[]
-ifdef::variant-service[]
+# end::dataset[]
+# tag::service[]
 |ISO 19119:2006+Amd:1 |SV_ServiceIdentification.extent > EX_Extent >
 EX_GeographicExtent > EX_ GeographicDescription.geographicIdentifier
 |Identical
@@ -78,7 +78,7 @@ EX_GeographicExtent > EX_ GeographicDescription.geographicIdentifier
 |ISO 19139:2007
 |/gmd:MD_Metadata/gmd:identificationInfo/srv:SV_ServiceIdentification/srv:extent/gmd:EX_Extent/gmd:geographicElement/gmd:EX_GeographicDescription/gmd:geographicIdentifier
 |Identical
-endif::[]
+# end::service[]
 |===
 ====
 
@@ -112,17 +112,17 @@ is http://seadatanet.maris2.nl/v_bodc_vocab_v2/search.asp?lib=C19
 . INSPIRE recommendations for encoding free text values which reference
 a specific external resource or registry is to use gmx:Anchor instead of
 gco:CharacterString
-ifdef::variant-dataset[]
+# tag::dataset[]
 Note that the extent XML element is in the gmd namespace for
 datasets/series. This differs from service metadata instances where the
 extent XML element will be in the srv namespace.
-endif::[]
-ifdef::variant-service[]
+# end::dataset[]
+# tag::service[]
 Note that the extent XML element is in the srv namespace. This differs
 from dataset metadata instances where the extent XML element will be in
 the gmd namespace.
-endif::[]
-ifdef::variant-dataset[]
+# end::service[]
+# tag::dataset[]
 |Example One
 |
 [source,xml]
@@ -135,8 +135,8 @@ include::../snippets/dataset-extent-code.xml[]
 ----
 include::../snippets/dataset-extent-codeauthority.xml[]
 ----
-endif::[]
-ifdef::variant-service[]
+# end::dataset[]
+# tag::service[]
 | Example One
 |
 [source,xml]
@@ -149,7 +149,7 @@ include::../snippets/service-extent-code.xml[]
 ----
 include::../snippets/service-extent-codeauthority.xml[]
 ----
-endif::[]
+# end::service[]
 |===
 ====
 
