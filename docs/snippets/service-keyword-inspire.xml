@@ -6,40 +6,37 @@
       <gmd:keywords>
         <gmd:MD_Keywords>
           <gmd:keyword>
-            <gco:CharacterString>humanCatalogueViewer</gco:CharacterString>
+            <gmx:Anchor xlink:href="https://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceCategory/humanCatalogueViewer">humanCatalogueViewer</gmx:Anchor>
           </gmd:keyword>
           <gmd:thesaurusName>
             <gmd:CI_Citation>
-          <gmd:title>
-            <gco:CharacterString>Commission Regulation (EC) No 1205/2008 of 3 December 2008 implementing Directive 2007/2/
-              EC of the European Parliament and of the Council as regards metadata</gco:CharacterString>
-          </gmd:title>
-          <gmd:alternateTitle>
-                    <gco:CharacterString>INSPIRE Metadata Implementing Rules</gco:CharacterString>
-          </gmd:alternateTitle>
-            <gmd:date>
-              <gmd:CI_Date>
-            <gmd:date>
-              <gco:Date>2008-12-03</gco:Date>
-            </gmd:date>
+              <gmd:title>
+                <gco:CharacterString>Commission Regulation (EC) No 1205/2008 of 3 December 2008 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards metadata</gco:CharacterString>
+              </gmd:title>
+              <gmd:alternateTitle>
+                <gco:CharacterString>INSPIRE Metadata Implementing Rules</gco:CharacterString>
+              </gmd:alternateTitle>
+              <gmd:date>
+                <gmd:CI_Date>
+                  <gmd:date>
+                    <gco:Date>2008-12-03</gco:Date>
+                  </gmd:date>
                   <gmd:dateType>
-                    <gmd:CI_DateTypeCode 
-                      codeList='https://schemas.isotc211.org/schemas/19139/-/resources/codelist/gmxCodelists.xml#CI_DateTypeCode' 
-                      codeListValue='publication'>publication</gmd:CI_DateTypeCode>
+                    <gmd:CI_DateTypeCode codeList='https://schemas.isotc211.org/schemas/19139/-/resources/codelist/gmxCodelists.xml#CI_DateTypeCode' codeListValue='publication'>publication</gmd:CI_DateTypeCode>
                   </gmd:dateType>
                 </gmd:CI_Date>
-          </gmd:date>
+              </gmd:date>
               <gmd:identifier>
-              <gmd:MD_Identifier>
-              <gmd:code>
-                        <gco:CharacterString>OJ:L:2008:326:0012:01</gco:CharacterString>
+                <gmd:MD_Identifier>
+                  <gmd:code>
+                     <gco:CharacterString>OJ:L:2008:326:0012:01</gco:CharacterString>
                   </gmd:code>
                 </gmd:MD_Identifier>
               </gmd:identifier>
               <gmd:otherCitationDetails>
                 <gco:CharacterString>D 4 CLASSIFICATION OF SPATIAL DATA SERVICES</gco:CharacterString>
               </gmd:otherCitationDetails>
-          </gmd:CI_Citation>
+            </gmd:CI_Citation>
           </gmd:thesaurusName>
         </gmd:MD_Keywords>
       </gmd:keywords>
