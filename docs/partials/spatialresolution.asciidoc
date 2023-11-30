@@ -54,17 +54,17 @@ the building, i.e. about 10 metres.
 
 |INSPIRE Metadata |Spatial resolution |INSPIRE allows the option of
 either Distance or Equivalent scale.
-ifdef::variant-dataset[]
+# tag::dataset[]
 |ISO 19115:2003 |MD_DataIdentification.spatialResolution >
 MD_Resolution.distance |Equivalent
 
 |ISO 19139:2007
 |/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:spatialResolution
 |Equivalent
-endif::[]
-ifdef::variant-service[]
+# end::dataset[]
+# tag::service[]
 |ISO 19115:2003 |Describe in the Abstract |no direct equivalent
-endif::[]
+# end::service[]
 |===
 
 ====
@@ -82,7 +82,7 @@ GEMINI 1 to 2.0: made conditional
 |===
 |Guidelines
 |
-ifdef::variant-dataset[]
+# tag::dataset[]
 . The encoding example for spatial resolution is shown in the example
 below.
 . A distance measurement shall be encoded and the unit of measurement
@@ -93,8 +93,8 @@ of the uom attribute shall be: urn:ogc:def:uom:EPSG::9001
 . This defines the unit of measure as metres by reference to the
 http://www.epsg-registry.org/[EPSG registry]
 link:component/content/article?id=1047[[12]].
-endif::[]
-ifdef::variant-service[]
+# end::dataset[]
+# tag::service[]
 . For services, it is not possible to express the restriction of a
 service concerning the spatial resolution in using the ISO 19139 XML
 Schema.
@@ -102,15 +102,15 @@ Schema.
 . The spatial resolution restriction text shall include either an
 equivalent scale as integer valued scale denominator or a resolution
 distance using a numerical length value and with a unit of length.
-endif::[]
-ifdef::variant-dataset[]
+# end::service[]
+# tag::dataset[]
 |Example
 |
 [source,xml]
 ----
 include::../snippets/spatialresolution.xml[]
 ----
-endif::[]
+# end::dataset[]
 |===
 
 ====

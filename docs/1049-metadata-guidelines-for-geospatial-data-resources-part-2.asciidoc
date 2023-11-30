@@ -78,9 +78,9 @@ service. The type of resource is identified in the element Resource Type
 Detailed guidance on how to create each of these elements can be found
 here:
 
-link:datasets.html[GEMINI - Datasets and data series]
+link:1062-gemini-datasets-and-data-series.html[GEMINI - Datasets and data series]
 
-link:services.html[GEMINI - Services]
+link:1063-gemini-services.html[GEMINI - Services]
 
 === Additional metadata elements
 
