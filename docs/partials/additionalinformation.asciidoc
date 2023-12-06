@@ -22,9 +22,8 @@ a reference (e.g. a URL).
 
 |Guidance a|
 . Information about access to the resource should be in
-<<19[Resource locator].
-. Information about fees should be in <<25[Limitations on public
-access]
+<<Resource locator>>.
+. Information about fees should be in <<Limitations on public access>>.
 . Other relevant information should be in this element, or provided by a
 link which is given in this element.
 . References to other documents may be by URL, DOI, or other means.
