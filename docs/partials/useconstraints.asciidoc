@@ -42,7 +42,7 @@ can have open access (e.g. to look at it), but restricted use.
 |Revision date |September 2018
 |===
 
-Corresponding element in other standards...
+.Corresponding element in other standards...
 [%collapsible]
 ====
 |===
