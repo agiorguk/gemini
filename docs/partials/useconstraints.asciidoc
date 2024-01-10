@@ -54,14 +54,14 @@ Corresponding element in other standards...
 MD_LegalConstraints.useConstraints & otherConstraints |Equivalent
 
 |ISO 19139:2007
-ifdef::variant-dataset[]
+# tag::dataset[]
 |/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:resourceConstraints/gmd:MD_LegalConstraints/gmd:useConstraints
 & gmd:otherConstraints |Equivalent
-endif::[]
-ifdef::variant-service[]
+# end::dataset[]
+# tag::service[]
 |/gmd:MD_Metadata/gmd:identificationInfo/srv:SV_ServiceIdentification/gmd:resourceConstraints/gmd:MD_LegalConstraints/gmd:useConstraints
 & gmd:otherConstraints |Equivalent
-endif::[]
+# end::service[]
 |===
 ====
 
@@ -106,12 +106,12 @@ list.
 |
 [source,xml]
 ----
-ifdef::variant-dataset[]
+# tag::dataset[]
 include::../snippets/dataset-useconstraints.xml[]
-endif::[]
-ifdef::variant-service[]
+# end::dataset[]
+# tag::service[]
 include::../snippets/service-useconstraints.xml[]
-endif::[]
+# end::service[]
 ----
 | Example Two - with external file
 |

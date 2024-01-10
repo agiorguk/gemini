@@ -22,7 +22,7 @@ available
 |Data type |CharacterString
 
 |Domain |Valid URL
-ifdef::variant-dataset[]
+# tag::dataset[]
 |Guidance a|
 . Identify whether the resource may be accessed.
 . Determine the location of the resource (may be a URL).
@@ -57,8 +57,8 @@ dataset
 http://doi.org/10.5285/1e7d5e08-9e24-471b-ae37-49b477f695e3
 
 |Revision date |July 2009
-endif::[]
-ifdef::variant-service[]
+# end::dataset[]
+# tag::service[]
 |Guidance a|
 . Specify a valid URL to the service.
 . If no online access for the service is available, but there is a
@@ -99,7 +99,7 @@ like: +
 http://myserver/INSPIREWM/MapServer/WMSServer?service=WMS&request=GetCapabilities&
 
 |Revision date |July 2009
-endif::[]
+# end::service[]
 |===
 
 .Corresponding element in other standards...
@@ -132,7 +132,7 @@ GEMINI 1 to 2.0: Modification of Online resource
 |===
 |Guidelines
 |
-ifdef::variant-dataset[]
+# tag::dataset[]
 . The two examples illustrate different uses of Resource locator.
 Example one gives direct access to the dataset. Example two gives the
 location of further information about ordering the dataset. ISO 19115
@@ -171,8 +171,8 @@ include::../snippets/dataset-resourcelocator-required.xml[]
 include::../snippets/dataset-resourcelocator-information.xml[]
 ----
 |===
-endif::[]
-ifdef::variant-service[]
+# end::dataset[]
+# tag::service[]
 |Guidelines
 |
 . In the examples, the URLs provided are for OGC GetCapabilities
@@ -245,7 +245,7 @@ include::../snippets/service-resourcelocator-function-wcs.xml[]
 include::../snippets/service-resourcelocator-function-invocable.xml[]
 ----
 |===
-endif::[]
+# end::service[]
 ====
 
 .Metadata errors observed...

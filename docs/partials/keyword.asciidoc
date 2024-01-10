@@ -93,12 +93,13 @@ broader range of values.
 |Equivalent
 
 |ISO 19139:2007
-ifdef::variant-dataset[]
-|/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:descriptiveKeywords/gmd:MD_Keywords
-endif::[]
-ifdef::variant-service[]
-|/gmd:MD_Metadata/gmd:identificationInfo/srv:SV_ServiceIdentification/gmd:descriptiveKeywords/gmd:MD_Keywords 
-endif::[]
+|
+// tag::dataset[]
+/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:descriptiveKeywords/gmd:MD_Keywords
+// end::dataset[]
+// tag::service[]
+/gmd:MD_Metadata/gmd:identificationInfo/srv:SV_ServiceIdentification/gmd:descriptiveKeywords/gmd:MD_Keywords 
+// end::service[]
 |Equivalent
 |===
 ====
@@ -117,7 +118,7 @@ controlled vocabulary
 [cols="a,a"]
 |===
 |Guidelines a|
-ifdef::variant-dataset[]
+// tag::dataset[]
 [arabic]
 . The GEMINI2 keyword item comprises keyword value(s) and,
 conditionally, the specification of an originating controlled
@@ -147,9 +148,8 @@ use gco:CharacterString for terms from controlled vocabularies
 . Recommended best practice is to select a human readable value from a
 controlled vocabulary. An example from the Marine Geospatial community
 is http://seadatanet.maris2.nl/v_bodc_vocab_v2/search.asp?lib=P02
-endif::[]
-ifdef::variant-service[]
-|
+// end::dataset[]
+// tag::service[]
 . The GEMINI2 keyword item comprises keyword value(s) and, conditionally, the specification of an originating controlled vocabulary. If keywords are not selected from a controlled vocabulary the encoding shown in Example One shall be used.
 . In the context of INSPIRE the presence of at least one keyword is mandated. For service metadata there shall be at least one keyword defining the category or subcategory of the service using its language neutral name as defined in Part D 4 of the Metadata Implementing Rules (the language neutral names are the words in brackets using lower camel case notation). The keyword shown in Example Two is an example of this
 . Where keywords do originate from a controlled vocabulary the encoding shown in Example Two shall be used. Note the inclusion of the gmd:thesaurusName XML element which contains the XML element gmd:CI_Citation. This element must contain at least a title, reference date and date type. In the example keywords have been selected from the GEMET Concepts controlled vocabulary.
@@ -158,8 +158,8 @@ ifdef::variant-service[]
 . The srv:SV_ServiceIdentification XML element has an optional property srv:keywords which exhibits the same behaviour as gmd:descriptiveKeywords. Consequently keywords for service metadata could be encoded in the way shown in Example Five. This approach shall not be followed in GEMINI2 metadata instances
 . This case arises because the XML element gmd:descriptiveKeywords is a an instance of the property (or role in fact) on the ISO 19115 abstract class MD_Identification, from which both SV_ServiceIdentification and MD_DataIdentification inherit. Therefore, SV_ServiceIdentification inherits the descriptiveKeywords property and adds a similar property called keywords.
 . Recommended best practice is to select a human readable value from a controlled vocabulary. An example from the Marine Geospatial community is http://seadatanet.maris2.nl/v_bodc_vocab_v2/search.asp?lib=P02
-endif::[]
-ifdef::variant-dataset[]
+// end::service[]
+// tag::dataset[]
 | Example One (datasets/series) - without originating controlled vocabulary
 |
 [source,xml]
@@ -170,25 +170,23 @@ include::../snippets/dataset-keyword-freetext.xml[]
 |
 [source,xml]
 ----
-include::../snippets/dataset-keyword-freetext.xml[]
+include::../snippets/dataset-keyword-inspire.xml[]
 ----
-| Example Three (datasets/series) - keywords from 2 controlled
-vocabularies
+| Example Three (datasets/series) - keywords from 2 controlled vocabularies
 |
 [source,xml]
 ----
 include::../snippets/dataset-keyword-controlled.xml[]
 ----
-endif::[]
-ifdef::variant-service[]
+// end::dataset[]
+// tag::service[]
 |Example One (services) - without controlled vocabulary
 |
 [source,xml]
 ----
 include::../snippets/service-keyword-freetext.xml[]
 ----
-| Example Two (services) - service keyword from part D4 on the INSPIRE
-Metadata Implementing Rules
+| Example Two (services) - service keyword from part D4 on the INSPIRE Metadata Implementing Rules
 |
 [source,xml]
 ----
@@ -206,7 +204,7 @@ include::../snippets/service-keyword-gemet.xml[]
 ----
 include::../snippets/service-keyword-controlled.xml[]
 ----
-endif::[]
+// end::service[]
 |===
 ====
 

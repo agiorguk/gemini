@@ -122,18 +122,18 @@ acting as distributor, publisher, author, etc. !distributor
 
 |ISO 19115:2003 |MD_Identification.pointOfContact |Similar high-level
 class
-ifdef::variant-dataset[]
+# tag::dataset[]
 |ISO 19139:2007
 |/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:pointOfContact/gmd:CI_ResponsibleParty
 |Equivalent
 |===
-endif::[]
-ifdef::variant-service[]
+# end::dataset[]
+# tag::service[]
 |ISO 19139:2007
 |/gmd:MD_Metadata/gmd:identificationInfo/srv:SV_ServiceIdentification/gmd:pointOfContact/gmd:CI_ResponsibleParty
 |Equivalent
 |===
-endif::[]
+# end::service[]
 ====
 
 .Change history...
@@ -155,27 +155,27 @@ corrected.
 . The encoding example for responsible organisation is shown below. The
 example shows the minimum required information.
 . The format of address and contact information is described at
-link:component/content/article?id=1048#2.2.8[Responsible party], with a
+xref:1048-uk-gemini-encoding-guidance#_responsible_party[Responsible party], with a
 more fully populated example.
 . Note on role code: the UK Location portal (data.gov.uk site)
 interprets ISO 'owner' as Data Provider, and ISO 'publisher' as Data
 Publisher.
-ifdef::variant-dataset[]
+# tag::dataset[]
 | Example One (datasets/series)
 |
 [source,xml]
 ----
 include::../snippets/dataset-responsibleorganisation.xml[]
 ----
-endif::[]
-ifdef::variant-service[]
+# end::dataset[]
+# tag::service[]
 | Example One (service)
 |
 [source,xml]
 ----
 include::../snippets/service-responsibleorganisation.xml[]
 ----
-endif::[]
+# end::service[]
 |===
 ====
 
