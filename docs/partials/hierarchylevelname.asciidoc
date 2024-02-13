@@ -60,7 +60,7 @@ New element in GEMINI 2.3
 [cols="a,a"]
 |===
 |Guidelines |No specific rules for this metadata element
-ifdef::variant-dataset[]
+# tag::dataset[]
 |Example 1 - dataset, where hierarchyLevelName could just be omitted
 |
 [source,xml]
@@ -73,15 +73,15 @@ include::../snippets/dataset-hierarchylevelname.xml[]
 ----
 include::../snippets/series-hierarchylevelname.xml[]
 ----
-endif::[]
-ifdef::variant-service[]
+# end::dataset[]
+# tag::service[]
 |Example
 |
 [source,xml]
 ----
 include::../snippets/service-hierarchylevelname.xml[]
 ----
-endif::[]
+# end::service[]
 |===
 ====
 

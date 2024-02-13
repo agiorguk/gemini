@@ -7,7 +7,7 @@
         <gmd:MD_LegalConstraints>
           <gmd:useConstraints>
             <gmd:MD_RestrictionCode 
-              codeList='https://schemas.isotc211.org/schemas/19139/resources/codelist/gmxCodelists.xml#MD_RestrictionCode' 
+              codeList='https://schemas.isotc211.org/schemas/19139/-/resources/codelist/gmxCodelists.xml#MD_RestrictionCode' 
               codeListValue='otherRestrictions'>otherRestrictions</gmd:MD_RestrictionCode>
           </gmd:useConstraints>
           <gmd:otherConstraints>

@@ -76,20 +76,20 @@ related to the area covered by the resource.
 |Standard |Name |Comparison
 
 |INSPIRE Metadata |Geographic bounding box |Identical
-ifdef::variant-dataset[]
+# tag::dataset[]
 |ISO 19115:2003 |MD_DataIdentification.extent > EX_Extent >
 EX_GeographicExtent > EX_GeographicBoundingBox |Minor difference in name
 
 |ISO 19139:2007
 |/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:extent/gmd:EX_Extent/gmd:geographicElement/gmd:EX_GeographicBoundingBox
-endif::[]
-ifdef::variant-service[]
+# end::dataset[]
+# tag::service[]
 |ISO 19115:2003 |SV_ServiceIdentification.extent > EX_Extent >
 EX_GeographicExtent > EX_GeographicBoundingBox |Minor difference in name
 
 |ISO 19139:2007
 |/gmd:MD_Metadata/gmd:identificationInfo/srv:SV_ServiceIdentification/srv:extent/gmd:EX_Extent/gmd:geographicElement/gmd:EX_GeographicBoundingBox
-endif::[]
+# end::service[]
 |
 |===
 ====
@@ -123,24 +123,24 @@ coordinate values shall be expressed in units of degrees (encoded using
 decimal numbers) with axes orientated north and east. The geodetic datum
 is WGS 84.
 
-ifdef::variant-service[]
+# tag::service[]
 Note that the encoding is very similar to that used in metadata
 instances for datasets or series, except that the extent XML element is
 in the srv namespace instead of gmd. This is because extent is a
 property of MD_DataIdentification (ISO 19115) and
 SV_ServiceIdentification (ISO 19119/Amd 1:2008), not a property of the
 parent MD_Identification.
-endif::[]
+# end::service[]
 |Example
 |
 [source,xml]
 ----
-ifdef::variant-dataset[]
+# tag::dataset[]
 include::../snippets/dataset-boundingbox.xml[]
-endif::[]
-ifdef::variant-service[]
+# end::dataset[]
+# tag::service[]
 include::../snippets/service-boundingbox.xml[]
-endif::[]
+# end::service[]
 ----
 |===
 ====
