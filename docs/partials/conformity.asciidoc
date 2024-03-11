@@ -59,9 +59,14 @@ Guidelines, publication, 2010-04-26 !true !Only mandatory items included
 !===
 
 |Guidance a|
-. For Gemini compliance, you must provide a conformity statement referring to the INSPIRE specifications, even if the dataset is not conformant, or you didn't test it.
-. Datasets, dataset series and metadata about invocable spatial data services shall declare conformity to [INSPIRE Regulation 1089/2010] and shall use the title and citation date in the example and encoding guidelines below.
+. For Gemini compliance, you shall provide a conformity statement referring to the INSPIRE specifications, even if the dataset or service is not conformant, or you didn't test it.
+# tag::dataset[]
+. Datasets and dataset series shall declare conformity to [INSPIRE Regulation 1089/2010] and shall use the title and citation date in the example and encoding guidelines below.
+# end::dataset[]
+# tag::service[]
+. Metadata about invocable spatial data services shall declare conformity to [INSPIRE Regulation 1089/2010] and shall use the title and citation date in the example and encoding guidelines below.
 . Metadata about network services shall declare conformity to [INSPIRE Regulation 976/2009].
+# end::service[]
 . Other conformity statements may be added, where each conformity statement shall relate to only one specification.
 . Each conformity statement shall relate to only one specification
 . Each conformity statement shall state the specification that it is about, the degree of conformity (true or false) and optionally an 'Explanation', for example to reference the conformance criteria in the specification against which conformance is being claimed.
