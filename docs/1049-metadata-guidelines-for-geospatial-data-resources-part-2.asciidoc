@@ -378,9 +378,9 @@ user.
 Detailed guidance on how to create each of these elements can be found
 here:
 
-link:datasets.html[GEMINI - Datasets and data series]
+link:1062-gemini-datasets-and-data-series.html[GEMINI - Datasets and data series]
 
-link:services.html[GEMINI - Services]
+link:1063-gemini-services.html[GEMINI - Services]
 
 Each metadata element is listed separately, as described 
 in link:1051-uk-gemini-v2-2-specification-for-discovery-metadata-for-geospatial-resources.html#4.3[UK GEMINI Introduction].
