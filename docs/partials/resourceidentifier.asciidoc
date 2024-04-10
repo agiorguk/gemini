@@ -35,7 +35,7 @@ These elements are described in the table below
 pattern defined by a code pace !Identifier of a code space within which
 one or more codes are defined
 
-!Obligation !mandatory !conditional ~ must be suppled if the code by
+!Obligation !mandatory !conditional ~ must be supplied if the code by
 itself does not uniquely identify the resource.
 
 !Occurrence !single !single
@@ -45,7 +45,7 @@ itself does not uniquely identify the resource.
 !Domain !free text !free text
 
 !Other comments !- !This code space is often defined by some authority
-organization, were one organization may define multiple code spaces. The
+organization, where one organization may define multiple code spaces. The
 range and format of each code space identifier is defined by that code
 space authority.
 !===
