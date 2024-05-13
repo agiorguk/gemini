@@ -7,10 +7,10 @@ include::includes/partials-attributes.adoc[]
 |UK GEMINI id |41
 
 |Definition |Statement of conformity with the product specification or
-user requirement against which the data is being evaluated
+user requirement
 
 |Purpose and meaning |The purpose of this is to record the conformity to
-the INSPIRE or other data specification
+INSPIRE and any other data specification
 
 |Obligation |Mandatory
 
@@ -59,25 +59,19 @@ Guidelines, publication, 2010-04-26 !true !Only mandatory items included
 !===
 
 |Guidance a|
-. At least one conformity statement shall be to an INSPIRE
-specification, even if simply to say that the data set is not conformant
-or not tested
-. Other conformity statements may be added, citing INSPIRE technical
-guidance or other specifications
+. For Gemini compliance, you shall provide a conformity statement referring to the INSPIRE specifications, even if the dataset or service is not conformant, or you didn't test it.
+# tag::dataset[]
+. Datasets and dataset series shall declare conformity to [INSPIRE Regulation 1089/2010] and shall use the title and citation date in the example and encoding guidelines below.
+# end::dataset[]
+# tag::service[]
+. Metadata about invocable spatial data services shall declare conformity to [INSPIRE Regulation 1089/2010] and shall use the title and citation date in the example and encoding guidelines below.
+. Metadata about network services shall declare conformity to [INSPIRE Regulation 976/2009].
+# end::service[]
+. Other conformity statements may be added, where each conformity statement shall relate to only one specification.
 . Each conformity statement shall relate to only one specification
-. Assess the conformity of the data resource against its product
-specification or the INSPIRE thematic data specification.
-. State the data specification to which the degree of conformity applied
-and optionally an 'Explanation', for example to reference the
-conformance criteria in the specification against which conformance is
-being claimed.
-. For INSPIRE, Datasets and dataset series shall declare conformity to
-[Regulation 1089/2010].
+. Each conformity statement shall state the specification that it is about, the degree of conformity (true or false) and optionally an 'Explanation', for example to reference the conformance criteria in the specification against which conformance is being claimed.
 
 |Comment a|
-. The specification is identified in the element Specification.
-. The conformance of a data resource may be considered with respect to
-more than one specification.
 . For INSPIRE, the citation title shall be the official title of the
 INSPIRE Implementing Rule, specification document or Conformance Class
 . For INSPIRE, the date given will be the date of publication of the
@@ -85,6 +79,7 @@ INSPIRE Implementing Rule, specification document or Conformance Class
 . For INSPIRE Implementing Rule documents, the value of the title
 element shall match exactly the official title of the cited document in
 the language of the metadata.
+. If conformity with INSPIRE has not been evaluated, the degree (gmd:pass) element shall be empty and contain a nil reason attribute with value "unknown"
 
 |Examples |Conformance of a dataset to Regulation 1089/2010 would have
 the title: +
@@ -93,7 +88,7 @@ Directive 2007/2/EC of the European Parliament and of the Council as
 regards interoperability of spatial data sets and services., +
 and would give a publication date of 2010-12-08
 
-|Revision date |April 2020
+|Revision date |November 2023
 |===
 
 .Corresponding element in other standards...
@@ -119,6 +114,7 @@ DQ_ConformanceResult |Equivalent
 * GEMINI 1 to 2.0: New element
 * GEMINI 2.2 to 2.3: changed the way to encode that a resource has not
 been tested against the relevant INSPIRE specification
+* November 2023 clarified guidance and comments
 ====
 
 .Encoding guidelines...
