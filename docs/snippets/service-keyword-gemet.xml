@@ -6,10 +6,10 @@
       <gmd:descriptiveKeywords>
         <gmd:MD_Keywords>
           <gmd:keyword>
-            <gco:CharacterString>water monitoring</gco:CharacterString>
+            <gmx:Anchor xlink:href="https://www.eionet.europa.eu/gemet/en/concept/9196">water monitoring</gmx:Anchor>
           </gmd:keyword>
           <gmd:keyword>
-            <gco:CharacterString>water quality</gco:CharacterString>
+            <gmx:Anchor xlink:href="https://www.eionet.europa.eu/gemet/en/concept/9214">water quality</gmx:Anchor>
           </gmd:keyword>
           <gmd:thesaurusName>
             <gmd:CI_Citation>

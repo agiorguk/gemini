@@ -14,7 +14,7 @@ entry points to the guidance:
 ** link:1049-metadata-guidelines-for-geospatial-data-resources-part-2.html[General guidance for GEMINI]
 ** link:1048-uk-gemini-encoding-guidance.html[General guidance on the XML encoding of GEMINI]
 ** https://github.com/AGIGemini/Schematron[Schematron rules for validating GEMINI records (GitHub link)]
-** link:1040-gemini/1056-glossary.html[Glossary of terms]
+** link:1056-glossary.html[Glossary of terms]
 ** link:1047-metadata-guidelines-for-geospatial-data-resources-part-3.html[List of references]
 ** link:1053-common-metadata-errors-uk-location-discovery-metadata-service.html[Common errors]
 
