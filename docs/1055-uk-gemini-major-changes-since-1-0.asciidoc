@@ -57,25 +57,28 @@ longer just be the century.
 
 === Editorial changes since the launch of GEMINI 2.3
 
-==== November 2023
+==== May 2024
 
-link:1062-gemini-datasets-and-data-series.html#41[Conformity] 
-
-* Clarified guidance and comments, including how to specify that the resource hasn't been tested against INSPIRE
-
-==== October 2023
-
-Simplified home page ("introduction" / "landing page") as requested by Geospatial Commission. 
-This included resolution of some specific requests for things to mention: https://github.com/agiorguk/gemini/issues/31; https://github.com/agiorguk/gemini/issues/58; https://github.com/agiorguk/gemini/issues/24
-
-Remove mention of IPSV from guidance on Keyword (https://github.com/agiorguk/gemini/issues/19)
-
-==== September 2023
+First release after migrating to GitHub based maintenance and publication
 
 Migrated maintenance of the pages to GitHub resulting in some changes to layout.
 Fixed some editorial inconsistencies (https://github.com/agiorguk/gemini/issues/7; https://github.com/agiorguk/gemini/issues/14)
 Fixed some broken links (https://github.com/agiorguk/gemini/issues/2)
 Fixed some typos (https://github.com/agiorguk/gemini/issues/8; https://github.com/agiorguk/gemini/issues/60)
+
+link:1037-uk-gemini-introduction.asciidoc[Introduction]
+
+Simplified home page ("introduction" / "landing page") as requested by Geospatial Commission. 
+This included resolution of some specific requests for things to mention: https://github.com/agiorguk/gemini/issues/31; https://github.com/agiorguk/gemini/issues/58; https://github.com/agiorguk/gemini/issues/24
+
+link:1062-gemini-datasets-and-data-series.html#41[Conformity] 
+
+Clarified guidance and comments, including how to specify that the resource hasn't been tested against INSPIRE
+
+link:1062-gemini-datasets-and-data-series.html#6[Keyword] 
+
+* Remove mention of IPSV from guidance on Keyword (https://github.com/agiorguk/gemini/issues/19)
+* corrected examples from controlled vocabularies (GEMET; INSPIRE service category)
 
 ==== April 2020
 
