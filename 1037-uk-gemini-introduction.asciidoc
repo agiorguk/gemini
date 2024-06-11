@@ -39,7 +39,7 @@ validated as a GEMINI (or INSPIRE) record.
 Here is
 a link:1055-uk-gemini-major-changes-since-1-0.html[summary of changes] from earlier versions.
 
-Here is a link:1250-element-summary.html/[summary] of the GEMINI elements (similar to Table 1 and Table 2 in GEMINI 2.2).
+Here is a link:1250-element-summary.html[summary] of the GEMINI elements (similar to Table 1 and Table 2 in GEMINI 2.2).
 
 Note: in GEMINI 2.3, the GEMINI Element number is called "GEMINI id";
 the actual numbers have not changed, where the same element was in GEMINI 2.2.
