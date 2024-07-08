@@ -18,6 +18,8 @@ to{nbsp}link:1037-uk-gemini-introduction.html[GEMINI
 |gmd:hierarchyLevelName |47 |Hierarchy level name
 |gmd:contact |35 |Metadata point of contact
 |gmd:dateStamp |30 |Metadata date
+|gmd:metadataStandardName |54 |Metadata standard name
+|gmd:metadataStandardVersion |55 |Metadata standard version
 |gmd:referenceSystemInfo |17 |Spatial reference system
 |gmd:identificationInfo | |
 |*_gmd:MD_DataIdentification_* | |
