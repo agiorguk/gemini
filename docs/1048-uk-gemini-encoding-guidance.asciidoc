@@ -1044,7 +1044,7 @@ series, ISO 19115 hierarchyLevelName element must also be set, to
 
 ==== Detailed guidance for each metadata element
 
-link:datasets.html[Datasets]
+link:1062-gemini-datasets-and-data-series.html[Datasets]
 
 === Metadata for services
 
@@ -1109,7 +1109,7 @@ with null values with the nil reason being missing (Figure 25).
 
 ==== Detailed guidance for each metadata element
 
-link:services.html[Services]
+link:1063-gemini-services.html[Services]
 
 _Last technical update: March 2019_
 
