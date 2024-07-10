@@ -124,5 +124,5 @@ to{nbsp}link:1037-uk-gemini-introduction.html[GEMINI
 |   gmd:DQ_DomainConsistency |41 |Conformity
 |===
 
-_Last updated: April 2018_
+_Last updated: July 2024_
 
