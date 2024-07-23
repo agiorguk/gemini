@@ -118,10 +118,10 @@ GEMINI 1 to 2.0: Addition of date type
 GEMINI2 also allows the date and time to be published in metadata. In
 this case the date encoding shown in Example Two must be used.
 * The format of date and date-time values is described at
-link:component/content/article?id=1048#2.2.3[Dates and Times]
+link:1048-uk-gemini-encoding-guidance.html#_dates_and_times[Dates and Times]
 * Dataset reference date shall include a date type. The content of this
 XML element is drawn from a
-link:component/content/article?id=1048#2.2.9[code list].
+link:1048-uk-gemini-encoding-guidance.html#_code_lists[code list].
 # tag::dataset[]
 | Example One: date
 |
