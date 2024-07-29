@@ -109,11 +109,15 @@ Bounding box, which was made multiple
 |===
 |Guidelines
 |
-. The encoding example for geographic bounding box for datasets is shown
-in the example
-. Note that the extent XML element is in the gmd namespace. This differs
-from service metadata instances where the extent XML element will be in
-the srv namespace.
+# tag::service[]
+. The encoding is very similar to that used in metadata
+instances for datasets or series, except that the extent XML element is
+in the srv namespace instead of gmd. This is because extent is a
+property of MD_DataIdentification (ISO 19115) and
+SV_ServiceIdentification (ISO 19119/Amd 1:2008), not a property of the
+parent MD_Identification.
+. Note that the EX_Extent XML element is in the gmd namespace, even though it is being used to describe a service.
+# end::service[]
 . The definition of the equivalent ISO 19115 class,
 EX_GeographicBoundingBox, is 'Geographic area of the entire dataset
 referenced to WGS 84'. Consequently, the CRS of the coordinates
@@ -122,15 +126,6 @@ http://www.opengis.net/def/crs/EPSG/0/4326). This means that the
 coordinate values shall be expressed in units of degrees (encoded using
 decimal numbers) with axes orientated north and east. The geodetic datum
 is WGS 84.
-
-# tag::service[]
-Note that the encoding is very similar to that used in metadata
-instances for datasets or series, except that the extent XML element is
-in the srv namespace instead of gmd. This is because extent is a
-property of MD_DataIdentification (ISO 19115) and
-SV_ServiceIdentification (ISO 19119/Amd 1:2008), not a property of the
-parent MD_Identification.
-# end::service[]
 |Example
 |
 [source,xml]
