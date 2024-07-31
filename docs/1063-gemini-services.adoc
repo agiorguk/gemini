@@ -106,3 +106,6 @@ include::./partials/boundingbox.asciidoc[tag=!dataset]
 include::./partials/qualityscope.asciidoc[tag=!dataset]
 
 Go to <<top, top of page>>
+
+http://creativecommons.org/licenses/by/4.0/[image:https://i.creativecommons.org/l/by/4.0/88x31.png[Creative Commons Licence]] +
+This work is licensed under a{nbsp}http://creativecommons.org/licenses/by/4.0/[Creative Commons Attribution 4.0 International License]

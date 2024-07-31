@@ -125,4 +125,5 @@ to{nbsp}link:1037-uk-gemini-introduction.html[GEMINI
 |===
 
 _Last updated: July 2024_
-
+http://creativecommons.org/licenses/by/4.0/[image:https://i.creativecommons.org/l/by/4.0/88x31.png[Creative Commons Licence]] +
+This work is licensed under a{nbsp}http://creativecommons.org/licenses/by/4.0/[Creative Commons Attribution 4.0 International License]
