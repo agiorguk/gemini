@@ -438,7 +438,7 @@ content, such as gmd:identificationInfo (Figure 9).
 The first XML child element of any GEMINI2 metadata instance shall be
 gmd:fileIdentifier. The content of this XML element is the identifier of
 the metadata instance. File identifier is not to be confused with the
-metadata item link:datasets.html#36[Resource Identifier].
+metadata item link:1062-gemini-datasets-and-data-series.html#36[Resource Identifier].
 
 The content of the XML element shall be a unique managed identifier,
 such as a system generated UUID. Once the identifier has been set for a
