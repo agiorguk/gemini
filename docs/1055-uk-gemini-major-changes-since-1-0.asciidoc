@@ -57,6 +57,8 @@ longer just be the century.
 
 === Editorial changes since the launch of GEMINI 2.3
 
+====
+Mention possibility of using individualName in link:1062-gemini-datasets-and-data-series.html#23[Responsible organisation}
 ==== May 2024
 
 First release after migrating to GitHub based maintenance and publication
