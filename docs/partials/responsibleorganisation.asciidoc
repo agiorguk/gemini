@@ -82,6 +82,7 @@ for each.
 These appear in the data.gov.uk search results.
 . If the data was created by someone other than the Data Provider, this
 should also be recorded, using the role value 'Originator'.
+. If you need to identify an individual by name, use CI_ResponsibleParty.individualName. 
 
 |Comment |Facsimile number is no longer required
 
@@ -109,7 +110,7 @@ organisation !The mapping product manager
 acting as distributor, publisher, author, etc. !distributor
 !===
 
-|Revision date |July 2009
+|Revision date |July 2024
 |===
 
 .Corresponding element in other standards...

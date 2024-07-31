@@ -22,8 +22,7 @@ alternative titles by which the data resource is known.
 
 |Guidance a|
 . Should be provided when the data resource has more than one title.
-. There is no need to fill in this entry unless there are other names
-used for the dataset, for example historic names.
+. There is no need to fill in this entry unless there are other names in use.
 . Commonly used abbreviations or acronyms should be recorded. If the
 acronym or abbreviation has been used in the main Title, then use the
 full name in the Alternative Title.

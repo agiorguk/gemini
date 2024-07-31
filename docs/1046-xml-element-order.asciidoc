@@ -18,6 +18,8 @@ to{nbsp}link:1037-uk-gemini-introduction.html[GEMINI
 |gmd:hierarchyLevelName |47 |Hierarchy level name
 |gmd:contact |35 |Metadata point of contact
 |gmd:dateStamp |30 |Metadata date
+|gmd:metadataStandardName |54 |Metadata standard name
+|gmd:metadataStandardVersion |55 |Metadata standard version
 |gmd:referenceSystemInfo |17 |Spatial reference system
 |gmd:identificationInfo | |
 |*_gmd:MD_DataIdentification_* | |
@@ -122,6 +124,6 @@ to{nbsp}link:1037-uk-gemini-introduction.html[GEMINI
 |   gmd:DQ_DomainConsistency |41 |Conformity
 |===
 
-_Last updated: April 2018_
+_Last updated: July 2024_
 http://creativecommons.org/licenses/by/4.0/[image:https://i.creativecommons.org/l/by/4.0/88x31.png[Creative Commons Licence]] +
 This work is licensed under a{nbsp}http://creativecommons.org/licenses/by/4.0/[Creative Commons Attribution 4.0 International License]
