@@ -57,8 +57,10 @@ longer just be the century.
 
 === Editorial changes since the launch of GEMINI 2.3
 
-====
-Mention possibility of using individualName in link:1062-gemini-datasets-and-data-series.html#23[Responsible organisation}
+==== TBC
+
+link:1062-gemini-datasets-and-data-series.html#19[Resource locator]: Add guidance on selecting appropriate OnLineFunctionCode
+
 ==== May 2024
 
 First release after migrating to GitHub based maintenance and publication
