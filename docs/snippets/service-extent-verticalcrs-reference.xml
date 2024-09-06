@@ -1,7 +1,7 @@
 <gmd:MD_Metadata>
   ...
   <gmd:identificationInfo>
-    <gmd:MD_DataIdentification id="XYZ-323232">
+    <srv:SV_DataIdentification>
       ...
       <srv:extent>
         <gmd:EX_Extent>
@@ -20,7 +20,7 @@
         </gmd:EX_Extent>
       </srv:extent>
       ...
-    </gmd:MD_DataIdentification>
+    </srv:SV_DataIdentification>
   </gmd:identificationInfo>
   ...
 </gmd:MD_Metadata>
