@@ -50,7 +50,7 @@ https://www.legislation.gov.uk/uksi/2009/3157/regulation/9[Regulation 9(5)(g) of
 Each has an entry with the full text, in the INSPIRE registry,
 http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess
 . At least one limitation on public access shall give an INSPIRE reason.
-. If there is no applicable limitation listed in Article 13, then the closest limitation should be chosen, and 
+. If there is no applicable limitation listed in Article 13, then the closest limitation shall be chosen, and 
 a second limitations on public access element should be used to provide further information.
 
 |Comment |Limitations on public access are different from Use
