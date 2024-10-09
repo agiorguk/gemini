@@ -60,6 +60,7 @@ longer just be the century.
 ==== TBC
 
 link:1062-gemini-datasets-and-data-series.html#19[Resource locator]: Add guidance on selecting appropriate OnLineFunctionCode
+link:1062-gemini-datasets-and-data-series.html#25[Limitations on public access]: For each reason to limit, add link to UK Statutory Instrument
 
 ==== May 2024
 
