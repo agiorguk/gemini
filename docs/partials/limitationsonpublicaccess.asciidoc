@@ -57,7 +57,7 @@ types of usage, or constraints on the use that can be made of the data.
 
 |Examples |No restriction on public access.
 
-|Revision date |June 2021
+|Revision date |October 2024
 |===
 
 .Corresponding element in other standards...
