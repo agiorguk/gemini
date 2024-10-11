@@ -77,7 +77,7 @@ included, for best results with data.gov.uk:
 .. name (this appears on the data.gov.uk site)
 . In relation to online INSPIRE network services, special guidance
 applies (see
-link:component/content/article?id=1054#data_servce_linking['Data and
+link:1054-operational-guide.html#313-data-and-service-linking['Data and
 Service Linking']).
 * Identify whether the resource may be accessed.
 * Determine the location of the resource (may be a URL).
