@@ -63,7 +63,9 @@ extent on a global basis. The bounding box is implicitly in WGS84.
 
 |Comment |The bounding box will often cover areas that are not directly
 related to the area covered by the resource.
-
+# tag::service[]
+The bounding box of a service may be larger or smaller than that of the datasets it can return.
+# end::service[]
 |Examples |-9.23, 2.69, 49.84, 60.85
 
 |Revision date |December 2012
