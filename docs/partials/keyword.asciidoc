@@ -204,6 +204,12 @@ include::../snippets/service-keyword-gemet.xml[]
 ----
 include::../snippets/service-keyword-controlled.xml[]
 ----
+| Example Five (services) - keywords in the srv namespace (this encoding is not to be used)
+|
+[source,xml]
+----
+include::../snippets/service-keyword-controlled.xml[]
+----
 // end::service[]
 |===
 ====
