@@ -113,3 +113,6 @@ Note. Element numbers 9, 11, 12, 13, 14, 20, 22, 28, 29, 31, 32, 40 and
 have now been deleted from the Standard, and have not been reallocated
 to avoid confusion.
 
+http://creativecommons.org/licenses/by/4.0/[image:https://i.creativecommons.org/l/by/4.0/88x31.png[Creative Commons Licence]] +
+This work is licensed under a{nbsp}http://creativecommons.org/licenses/by/4.0/[Creative Commons Attribution 4.0 International License]
+

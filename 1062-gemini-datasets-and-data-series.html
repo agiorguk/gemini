@@ -2737,8 +2737,7 @@ alternative titles by which the data resource is known.</p></td>
 <p>Should be provided when the data resource has more than one title.</p>
 </li>
 <li>
-<p>There is no need to fill in this entry unless there are other names
-used for the dataset, for example historic names.</p>
+<p>There is no need to fill in this entry unless there are other names in use.</p>
 </li>
 <li>
 <p>Commonly used abbreviations or acronyms should be recorded. If the
@@ -4079,7 +4078,7 @@ is <a href="http://seadatanet.maris2.nl/v_bodc_vocab_v2/search.asp?lib=P02" clas
 <span class="tok-w">                  </span><span class="tok-nt">&lt;/gmd:date&gt;</span>
 <span class="tok-w">                  </span><span class="tok-nt">&lt;gmd:dateType&gt;</span>
 <span class="tok-w">                    </span><span class="tok-nt">&lt;gmd:CI_DateTypeCode</span><span class="tok-w"> </span>
-<span class="tok-w">                      </span><span class="tok-na">codeList=</span><span class="tok-s">&#39;https://schemas.isotc211.org/schemas/19139/resources/codelist/gmxCodelists.xml#CI_DateTypeCode&#39;</span><span class="tok-w"> </span>
+<span class="tok-w">                      </span><span class="tok-na">codeList=</span><span class="tok-s">&#39;https://schemas.isotc211.org/schemas/19139/-/resources/codelist/gmxCodelists.xml#CI_DateTypeCode&#39;</span><span class="tok-w"> </span>
 <span class="tok-w">                      </span><span class="tok-na">codeListValue=</span><span class="tok-s">&#39;publication&#39;</span><span class="tok-nt">&gt;</span>publication<span class="tok-nt">&lt;/gmd:CI_DateTypeCode&gt;</span>
 <span class="tok-w">                  </span><span class="tok-nt">&lt;/gmd:dateType&gt;</span>
 <span class="tok-w">                </span><span class="tok-nt">&lt;/gmd:CI_Date&gt;</span>
@@ -4859,12 +4858,12 @@ this case the date encoding shown in Example Two must be used.</p>
 </li>
 <li>
 <p>The format of date and date-time values is described at
-<a href="component/content/article?id=1048#2.2.3">Dates and Times</a></p>
+<a href="1048-uk-gemini-encoding-guidance.html#_dates_and_times">Dates and Times</a></p>
 </li>
 <li>
 <p>Dataset reference date shall include a date type. The content of this
 XML element is drawn from a
-<a href="component/content/article?id=1048#2.2.9">code list</a>.</p>
+<a href="1048-uk-gemini-encoding-guidance.html#_code_lists">code list</a>.</p>
 </li>
 </ul>
 </div></div></td>
@@ -6524,8 +6523,50 @@ CI_OnLineFunctionCode)</p>
 </ul>
 </div>
 </li>
+<li>
+<p>Guidance on selecting appropriate OnLineFunctionCode value for function sub-element.</p>
+</li>
 </ol>
-</div></div></td>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">OnLineFunctionCode</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Meaning</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Example</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">download</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">online instructions for transferring data from one storage device or system to another</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">WFS Direct URL to file</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">information</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">online information about the resource</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">WMS Product page</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">offlineAccess</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">online instructions for requesting the resource from the provider</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">web page containing ordering information</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">order</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">online order process for obtaining the resource</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Product ordering page</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">search</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">online search interface for seeking out information about the resource</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">distributors web site search page</p></td>
+</tr>
+</tbody>
+</table></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Comment</p></td>
@@ -7231,6 +7272,9 @@ for each.</p>
 <p>If the data was created by someone other than the Data Provider, this
 should also be recorded, using the role value 'Originator'.</p>
 </li>
+<li>
+<p>If you need to identify an individual by name, use CI_ResponsibleParty.individualName.</p>
+</li>
 </ol>
 </div></div></td>
 </tr>
@@ -7299,7 +7343,7 @@ acting as distributor, publisher, author, etc.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Revision date</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">July 2009</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">July 2024</p></td>
 </tr>
 </tbody>
 </table>
@@ -7507,28 +7551,36 @@ access, listed in Article 13(1):</p>
 <div class="ulist">
 <ul>
 <li>
-<p>(a) confidentiality of the proceedings of public authorities</p>
+<p>(a) confidentiality of the proceedings of public authorities<br>
+<a href="https://www.legislation.gov.uk/uksi/2009/3157/regulation/9">Regulation 9(5)(d) of the UK INSPIRE Regulations 2009</a></p>
 </li>
 <li>
-<p>(b) international relations, public security or national defence</p>
+<p>(b) international relations, public security or national defence<br>
+<a href="https://www.legislation.gov.uk/uksi/2009/3157/regulation/9">Regulation 9(5)(a) of the UK INSPIRE Regulations 2009</a></p>
 </li>
 <li>
-<p>(c) the course of justice</p>
+<p>(c) the course of justice<br>
+<a href="https://www.legislation.gov.uk/uksi/2009/3157/regulation/9">Regulation 9(5)(b) of the UK INSPIRE Regulations 2009</a></p>
 </li>
 <li>
-<p>(d) confidentiality of commercial or industrial information</p>
+<p>(d) confidentiality of commercial or industrial information<br>
+<a href="https://www.legislation.gov.uk/uksi/2009/3157/regulation/9">Regulation 9(5)(e) of the UK INSPIRE Regulations 2009</a></p>
 </li>
 <li>
-<p>(e) intellectual property rights</p>
+<p>(e) intellectual property rights<br>
+<a href="https://www.legislation.gov.uk/uksi/2009/3157/regulation/9">Regulation 9(5)(c) of the UK INSPIRE Regulations 2009</a></p>
 </li>
 <li>
-<p>(f) confidentiality of personal data</p>
+<p>(f) confidentiality of personal data<br>
+<a href="https://www.legislation.gov.uk/uksi/2009/3157/regulation/9">Regulation 9(2) of the UK INSPIRE Regulations 2009</a></p>
 </li>
 <li>
-<p>(g) interests of a person who supplied the data on a voluntary basis</p>
+<p>(g) interests of a person who supplied the data on a voluntary basis<br>
+<a href="https://www.legislation.gov.uk/uksi/2009/3157/regulation/9">Regulation 9(5)(f) of the UK INSPIRE Regulations 2009</a></p>
 </li>
 <li>
-<p>(h) protection of the environment</p>
+<p>(h) protection of the environment<br>
+<a href="https://www.legislation.gov.uk/uksi/2009/3157/regulation/9">Regulation 9(5)(g) of the UK INSPIRE Regulations 2009</a></p>
 <div class="paragraph">
 <p>Each has an entry with the full text, in the INSPIRE registry,
 <a href="http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess" class="bare">http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess</a></p>
@@ -7538,7 +7590,11 @@ access, listed in Article 13(1):</p>
 </div>
 </li>
 <li>
-<p>At least one limitation on public access shall give an INSPIRE reason</p>
+<p>At least one limitation on public access shall give an INSPIRE reason.</p>
+</li>
+<li>
+<p>If there is no applicable limitation listed in Article 13, then the closest limitation shall be chosen, and
+a second limitations on public access element should be used to provide further information.</p>
 </li>
 </ol>
 </div></div></td>
@@ -7555,7 +7611,7 @@ types of usage, or constraints on the use that can be made of the data.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Revision date</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">June 2021</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">October 2024</p></td>
 </tr>
 </tbody>
 </table>
@@ -7799,7 +7855,7 @@ resource</p></td>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Purpose and meaning</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">The purpose of this element is to describe any
-restrictions on usage of the data (as opposed to access)</p></td>
+restrictions on usage of the data resource (as opposed to access)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Obligation</p></td>
@@ -7940,7 +7996,7 @@ recommends using Limitations on public access for these</p>
 with code list value "otherRestrictions"</p>
 </li>
 <li>
-<p>The LegalConstraints element shall also contain a gmd:otherConstraints
+<p>The MD_LegalConstraints element shall also contain a gmd:otherConstraints
 element, with free text.</p>
 </li>
 <li>
@@ -7955,10 +8011,6 @@ shown in Example Two may be used. This is recommended for licenses, even
 the use of ISO 19115 otherRestrictions would not generally include
 license restrictions, as they have their own term in the ISO 19115 code
 list.</p>
-</li>
-<li>
-<p>If there are no limitations the value of gmd:otherConstraints shall be
-'no limitations' (see Example Three).</p>
 </li>
 <li>
 <p>There may be more than one gmd:otherConstraints element</p>
@@ -8635,7 +8687,7 @@ user requirement</p></td>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Purpose and meaning</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">The purpose of this is to record the conformity to
-INSPIRE and any other data specification</p></td>
+INSPIRE and any other specification</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Obligation</p></td>
@@ -8689,7 +8741,7 @@ INSPIRE and any other data specification</p></td>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Citation of the product specification or user requirement
-against which data resource is evaluated</p></td>
+against which the resource is evaluated</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">degree of conformity with the
 specification</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">meaning of conformance for this result</p></td>
@@ -8699,7 +8751,7 @@ specification</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">The purpose of this element is to identify the specification
 against which conformity is evaluated</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">The purpose of this element is to
-identify the conformity of the data resource to the cited specification</p></td>
+identify the conformity of the resource to the cited specification</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">The purpose of this element is to explain the meaning of conformity in
 this context</p></td>
 </tr>
@@ -8730,11 +8782,11 @@ false if not conformant</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Rules</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Cite the specification to which the data resource should conform</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The data resource should be evaluated against the specification and the
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cite the specification to which the resource should conform</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The resource should be evaluated against the specification and the
 result recorded</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Include a statement about which aspects of the
-specification the data resource conforms and any exceptions</p></td>
+specification the resource conforms to, and any exceptions</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Examples</p></td>
@@ -9468,15 +9520,6 @@ Bounding box, which was made multiple</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
 <ol class="arabic">
-<li>
-<p>The encoding example for geographic bounding box for datasets is shown
-in the example</p>
-</li>
-<li>
-<p>Note that the extent XML element is in the gmd namespace. This differs
-from service metadata instances where the extent XML element will be in
-the srv namespace.</p>
-</li>
 <li>
 <p>The definition of the equivalent ISO 19115 class,
 EX_GeographicBoundingBox, is 'Geographic area of the entire dataset
@@ -11220,12 +11263,16 @@ more than one resourceMaintenance</p></td>
 <div class="paragraph">
 <p>Go to <a href="#top">top of page</a></p>
 </div>
+<div class="paragraph">
+<p><a href="http://creativecommons.org/licenses/by/4.0/"><span class="image"><img src="https://i.creativecommons.org/l/by/4.0/88x31.png" alt="Creative Commons Licence"></span></a><br>
+This work is licensed under a&#160;<a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a></p>
+</div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-07-31 11:41:48 UTC
+Last updated 2025-03-04 17:46:35 UTC
 </div>
 </div>
     <div class="x-bar x-bar-footer x-bar-h x-bar-relative x-bar-outer-spacers e1248-1 myo-0 myo-1" data-x-bar="{&quot;id&quot;:&quot;e1248-1&quot;,&quot;region&quot;:&quot;footer&quot;,&quot;height&quot;:&quot;auto&quot;}">
