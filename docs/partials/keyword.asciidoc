@@ -186,7 +186,7 @@ include::../snippets/dataset-keyword-controlled.xml[]
 ----
 include::../snippets/service-keyword-freetext.xml[]
 ----
-| Example Two (services) - service keyword from part D4 on the INSPIRE Metadata Implementing Rules
+| Example Two (services) - service keyword from part D4 of the INSPIRE Metadata Implementing Rules
 |
 [source,xml]
 ----
@@ -208,7 +208,7 @@ include::../snippets/service-keyword-controlled.xml[]
 |
 [source,xml]
 ----
-include::../snippets/service-keyword-controlled.xml[]
+include::../snippets/service-keyword-incorrect.xml[]
 ----
 // end::service[]
 |===
