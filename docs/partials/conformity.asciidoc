@@ -10,7 +10,7 @@ include::includes/partials-attributes.adoc[]
 user requirement
 
 |Purpose and meaning |The purpose of this is to record the conformity to
-INSPIRE and any other data specification
+INSPIRE and any other specification
 
 |Obligation |Mandatory
 
@@ -31,12 +31,12 @@ For details see below. +
 !===
 !Metadata element name !specification !degree !explanation
 !Definition !Citation of the product specification or user requirement
-against which data resource is evaluated !degree of conformity with the
+against which the resource is evaluated !degree of conformity with the
 specification !meaning of conformance for this result
 
 !Meaning !The purpose of this element is to identify the specification
 against which conformity is evaluated !The purpose of this element is to
-identify the conformity of the data resource to the cited specification
+identify the conformity of the resource to the cited specification
 !The purpose of this element is to explain the meaning of conformity in
 this context
 
@@ -49,10 +49,10 @@ this context
 !Domain ! !true if conformant +
 false if not conformant !free text
 
-!Rules !Cite the specification to which the data resource should conform
-!The data resource should be evaluated against the specification and the
+!Rules !Cite the specification to which the resource should conform
+!The resource should be evaluated against the specification and the
 result recorded !Include a statement about which aspects of the
-specification the data resource conforms and any exceptions
+specification the resource conforms to, and any exceptions
 
 !Examples !D2.8.I.5 INSPIRE Data Specification on Addresses -
 Guidelines, publication, 2010-04-26 !true !Only mandatory items included

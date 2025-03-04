@@ -276,47 +276,6 @@ this element
 
 - *Errors observed* - observations on errors noted with each element
 
-== Extended metadata
-
-=== Additional metadata elements
-
-In many organisations, there is a need to record additional items of
-metadata to meet specific local requirements. This may be to incorporate
-particular characteristics of the data resources, or for particular
-applications. Additional metadata elements may be included in a metadata
-implementation. These elements should be taken from ISO 19115,
-which includes a comprehensive collection of metadata elements for
-geographic information, and also allows for further extensions.
-
-=== Extension of code lists
-
-Several metadata elements specified in UK GEMINI use enumerated code
-lists. These are pre-defined sets of values identified by codes. They
-are useful to standardise the entries to aid searches of metadata for
-specified values. The code lists included in UK GEMINI are taken from
-ISO 19115. In some cases, the explanations of the values have been
-modified to make them more appropriate to the UK context.
-
-Some of these code lists will require extension. Additional codes may be
-created as follows:
-
-. identify the new value, which should be distinct from existing values;
-. choose a name that encapsulates the essential concept;
-. provide a definition that is understandable and concise;
-. chose a new code that has not been used before for this element;
-. document the new codes, and disseminate them to users.
-
-Such code extensions may be either specific to a metadata implementation
-in an organisation or sector, or for general usage. In the latter case,
-proposed new codes should be
-submitted{nbsp}to{nbsp}gemini@agi.org.uk{nbsp}for
-inclusion in the next version of UK GEMINI. It is expected that future
-editions of UK GEMINI will incorporate such modified code lists.
-
-*Note that any new code values cannot be used in a national metadata
-service until incorporated in the Standard, nor will they be valid for
-the purposes of INSPIRE.*
-
 _Last updated: May 2018_
 
 http://creativecommons.org/licenses/by/4.0/[image:https://i.creativecommons.org/l/by/4.0/88x31.png[Creative Commons Licence]] +
