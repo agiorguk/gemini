@@ -54,7 +54,7 @@ from a controlled vocabulary
 . Keyword values should if possible be taken from a list of standard
 subject categories, identified in the element 'Originating controlled
 vocabulary'.
-. Possible vocabularies include http://www.eionet.europa.eu/gemet/en/themes/[GEMET] and the https://inspire.ec.europa.eu/featureconcept[the INSPIRE Feature Concept Dictionary]
+. Possible vocabularies include http://www.eionet.europa.eu/gemet/en/themes/[GEMET] and the https://inspire.ec.europa.eu/featureconcept[INSPIRE Feature Concept Dictionary]
 . For other Keywords, if drawn from a Controlled Vocabulary, this must
 be stated.
 . Terms covering the subject of the data resource should be selected.
@@ -186,7 +186,7 @@ include::../snippets/dataset-keyword-controlled.xml[]
 ----
 include::../snippets/service-keyword-freetext.xml[]
 ----
-| Example Two (services) - service keyword from part D4 on the INSPIRE Metadata Implementing Rules
+| Example Two (services) - service keyword from part D4 of the INSPIRE Metadata Implementing Rules
 |
 [source,xml]
 ----
@@ -203,6 +203,12 @@ include::../snippets/service-keyword-gemet.xml[]
 [source,xml]
 ----
 include::../snippets/service-keyword-controlled.xml[]
+----
+| Example Five (services) - keywords in the srv namespace (this encoding is not to be used)
+|
+[source,xml]
+----
+include::../snippets/service-keyword-incorrect.xml[]
 ----
 // end::service[]
 |===
