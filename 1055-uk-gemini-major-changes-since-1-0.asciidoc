@@ -57,10 +57,21 @@ longer just be the century.
 
 === Editorial changes since the launch of GEMINI 2.3
 
-==== TBC
+==== March 2025
 
-link:1062-gemini-datasets-and-data-series.html#19[Resource locator]: Add guidance on selecting appropriate OnLineFunctionCode
-link:1062-gemini-datasets-and-data-series.html#25[Limitations on public access]: For each reason to limit, add link to UK Statutory Instrument
+* link:1062-gemini-datasets-and-data-series.html#19[Resource locator]: Added guidance on selecting appropriate OnLineFunctionCode
+* link:1062-gemini-datasets-and-data-series.html#25[Limitations on public access]: For each reason to limit, added link to UK Statutory Instrument, and expanded guidance on the approach to use for Limitations where there is no applicable INSPIRE reason
+* Fixed some broken links
+* link:1062-gemini-datasets-and-data-series.html#6[Keywords]: Updated link to ISO/TC211 code list location
+* Updated pages throughout to show that the Gemini documentation is released under CC-BY
+* link:1062-gemini-datasets-and-data-series.html#16[Vertical Extent-Datasets] and link:1063-gemini-services.html#16[Vertical Extent-Services] Updated link to EPSG registry
+* Updated pages throughout for consistent use of "resource" rather than "data" to avoid confusion in the guidance when referring to services
+* Updated link:1049-metadata-guidelines-for-geospatial-data-resources-part-2[Metadata Guidelines part 2] and link:1051-uk-gemini-v2-2-specification-for-discovery-metadata-for-geospatial-resources[UK Gemini v2.2 Specification for Discovery Metadata] to remove unnecessary duplication
+* link:1062-gemini-datasets-and-data-series/#23[Use Constraints]: Updated encoding guidance for consistency
+* link:1062-gemini-datasets-and-data-series/#19[Resource Locator]: Expanded and updated guidance on Function sub-element for clarification and to better match DCAT definition
+* Added "Metadata Standard Name" and "Metadata Standard Version" in link:1046-xml-element-order[XML Element Order]
+* link:1062-gemini-datasets-and-data-series.html#23[Responsible Party]: updated guidance on use of Individual Names
+* link:1063-gemini-services#8[Date of Publication- Services]: clarified guidance on multiplicity of resource reference dates
 
 ==== May 2024
 

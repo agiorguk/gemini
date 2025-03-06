@@ -3178,7 +3178,7 @@ subject categories, identified in the element 'Originating controlled
 vocabulary'.</p>
 </li>
 <li>
-<p>Possible vocabularies include <a href="http://www.eionet.europa.eu/gemet/en/themes/">GEMET</a> and the <a href="https://inspire.ec.europa.eu/featureconcept">the INSPIRE Feature Concept Dictionary</a></p>
+<p>Possible vocabularies include <a href="http://www.eionet.europa.eu/gemet/en/themes/">GEMET</a> and the <a href="https://inspire.ec.europa.eu/featureconcept">INSPIRE Feature Concept Dictionary</a></p>
 </li>
 <li>
 <p>For other Keywords, if drawn from a Controlled Vocabulary, this must
@@ -3357,7 +3357,7 @@ controlled vocabulary</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Example Two (services) - service keyword from part D4 on the INSPIRE Metadata Implementing Rules</p>
+<p>Example Two (services) - service keyword from part D4 of the INSPIRE Metadata Implementing Rules</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="content">
@@ -3506,6 +3506,32 @@ controlled vocabulary</p>
 <span class="tok-w">          </span><span class="tok-nt">&lt;/gmd:thesaurusName&gt;</span>
 <span class="tok-w">        </span><span class="tok-nt">&lt;/gmd:MD_Keywords&gt;</span>
 <span class="tok-w">      </span><span class="tok-nt">&lt;/gmd:descriptiveKeywords&gt;</span>
+<span class="tok-w">      </span>...
+<span class="tok-w">    </span><span class="tok-nt">&lt;/srv:SV_ServiceIdentification&gt;</span>
+<span class="tok-w">  </span><span class="tok-nt">&lt;/gmd:identificationInfo&gt;</span>
+<span class="tok-w">  </span>...
+<span class="tok-nt">&lt;/gmd:MD_Metadata&gt;</span></code></pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Example Five (services) - keywords in the srv namespace (this encoding is not to be used)</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="xml"><span></span><span class="tok-nt">&lt;gmd:MD_Metadata&gt;</span>
+<span class="tok-w">  </span>...
+<span class="tok-w">  </span><span class="tok-nt">&lt;gmd:identificationInfo&gt;</span>
+<span class="tok-w">    </span><span class="tok-nt">&lt;srv:SV_ServiceIdentification&gt;</span>
+<span class="tok-w">      </span>...
+<span class="tok-w">      </span><span class="tok-nt">&lt;srv:keywords&gt;</span>
+<span class="tok-w">        </span><span class="tok-nt">&lt;gmd:MD_Keywords&gt;</span>
+<span class="tok-w">          </span><span class="tok-nt">&lt;gmd:keyword&gt;</span>
+<span class="tok-w">            </span><span class="tok-nt">&lt;gco:CharacterString&gt;</span>humanCatalogueViewer<span class="tok-nt">&lt;/gco:CharacterString&gt;</span>
+<span class="tok-w">          </span><span class="tok-nt">&lt;/gmd:keyword&gt;</span>
+<span class="tok-w">        </span><span class="tok-nt">&lt;/gmd:MD_Keywords&gt;</span>
+<span class="tok-w">      </span><span class="tok-nt">&lt;/srv:keywords&gt;</span>
 <span class="tok-w">      </span>...
 <span class="tok-w">    </span><span class="tok-nt">&lt;/srv:SV_ServiceIdentification&gt;</span>
 <span class="tok-w">  </span><span class="tok-nt">&lt;/gmd:identificationInfo&gt;</span>
@@ -8705,7 +8731,7 @@ This work is licensed under a&#160;<a href="http://creativecommons.org/licenses/
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-03-04 17:46:35 UTC
+Last updated 2025-03-06 15:49:55 UTC
 </div>
 </div>
     <div class="x-bar x-bar-footer x-bar-h x-bar-relative x-bar-outer-spacers e1248-1 myo-0 myo-1" data-x-bar="{&quot;id&quot;:&quot;e1248-1&quot;,&quot;region&quot;:&quot;footer&quot;,&quot;height&quot;:&quot;auto&quot;}">
