@@ -68,7 +68,7 @@ longer just be the century.
 * Updated pages throughout for consistent use of "resource" rather than "data" to avoid confusion in the guidance when referring to services
 * Updated link:1049-metadata-guidelines-for-geospatial-data-resources-part-2[Metadata Guidelines part 2] and link:1051-uk-gemini-v2-2-specification-for-discovery-metadata-for-geospatial-resources[UK Gemini v2.2 Specification for Discovery Metadata] to remove unnecessary duplication
 * link:1062-gemini-datasets-and-data-series/#23[Use Constraints]: Updated encoding guidance for consistency
-* link:1062-gemini-datasets-and-data-series/#19 [Resource Locator]: Expanded and updated guidance on Function sub-element for clarification and to better match DCAT definition
+* link:1062-gemini-datasets-and-data-series/#19[Resource Locator]: Expanded and updated guidance on Function sub-element for clarification and to better match DCAT definition
 * Added "Metadata Standard Name" and "Metadata Standard Version" in link:1046-xml-element-order[XML Element Order]
 * link:1062-gemini-datasets-and-data-series.html#23[Responsible Party]: updated guidance on use of Individual Names
 * link:1063-gemini-services#8[Date of Publication- Services]: clarified guidance on multiplicity of resource reference dates
