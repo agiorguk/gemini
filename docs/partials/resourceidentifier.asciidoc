@@ -66,12 +66,8 @@ as the manager of the spatial data infrastructure.
 the codespace being doi. If a DOI landing page is also available, then
 include this using an Anchor.
 
-|Comment |Since INSPIRE metadata technical guidance version 2, it is no
-longer required to use RS_Identifier if a value for code space value is
-provided. +
-In such cases (where there is a code space provided) it is now strongly
-recommended to use MD_Identifier and encode the complete URI in the code
-element.
+|Comment |Since INSPIRE metadata technical guidance version 2, it is no longer required to use RS_Identifier if a value for code space value is provided. +
+In such cases (where there is a code space provided) it is now strongly recommended to use MD_Identifier and encode the complete URI as a gmx:Anchor in the code element.
 
 |Examples a|
 * image2000_1_nl2_multi
