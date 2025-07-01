@@ -65,6 +65,11 @@ as the manager of the spatial data infrastructure.
 . Where present, a DOI should be recorded as a resource identifier, with
 the codespace being doi. If a DOI landing page is also available, then
 include this using an Anchor.
+. For best practice, ensure assignments are fixed. Do not modify or reuse identifiers.
+. Avoid incorporating changeable details in identifiers such as version numbers, names or organisations.
+. Implement a preferred presentation method, eg all capitals, and using underscores instead of spaces.
+. Ensure the identifier is web-friendly by using only characters that are un-reserved in URIs or html
+(see https://www.w3.org/Addressing/URL/4_URI_Recommentations.html for more information).
 
 |Comment |Since INSPIRE metadata technical guidance version 2, it is no longer required to use RS_Identifier if a value for code space value is provided. +
 In such cases (where there is a code space provided) it is now strongly recommended to use MD_Identifier and encode the complete URI as a gmx:Anchor in the code element.
