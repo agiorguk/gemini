@@ -59,7 +59,10 @@ resource, and determine the coordinates of the boundaries. It may be
 necessary to convert from another coordinate system (e.g. National Grid)
 into lat/long.
 . Only approximate values are required, sufficient to identify the
-extent on a global basis. Following the lead of the INSPIRE technical guidance, use WGS84 to define the bounding box.
+extent on a global basis. Following the lead of the INSPIRE technical guidance, 
+use WGS84 to define the bounding box.
+. More precise spatial extents can also be provided, such as polygon extents, using the
+encoding options within the ISO 19115 EX_Extent.EX_GeographicExtent element. 
 
 |Comment |The bounding box will often cover areas that are not directly
 related to the area covered by the resource.
