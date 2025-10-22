@@ -39,6 +39,7 @@ provided.
 Britain if it only covers England and Wales).
 
 |Comment |
+. This element should be used in preference to a keyword of type "place".
 
 |Examples a|
 * England
@@ -50,6 +51,8 @@ linked data as a gazetteer
 Authority, using GDS "Local authorities in England" as a controlled list
 * http://vocab.nerc.ac.uk/collection/C64/current/5/, Irish Sea, in the
 NERC Vocabulary "C64, United Kingdom Charting Progress 2 sea regions"
+* http://statistics.data.gov.uk/id/statistical-geography/E09000011, Royal 
+Borough of Greenwich ONS Output Area
 
 |Revision date |August 2010
 |===
