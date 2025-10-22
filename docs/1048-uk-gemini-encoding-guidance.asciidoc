@@ -1110,7 +1110,7 @@ with null values with the nil reason being missing (Figure 25).
 
 link:1063-gemini-services.html[Services]
 
-_Last technical update: March 2019_
+_Last technical update: {docdate}_
 
 http://creativecommons.org/licenses/by/4.0/[image:https://i.creativecommons.org/l/by/4.0/88x31.png[Creative
 Commons Licence]] 
