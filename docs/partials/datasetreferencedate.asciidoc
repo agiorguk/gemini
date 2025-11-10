@@ -51,8 +51,9 @@ describe reference date
 . Dates may be to any degree of precision, from year (YYYY) to full date
 and time. The extended date format (YYYY-MM-DD) defined in BS ISO 8601
 should be used, where YYYY is the year, MM the month and DD the day. It
-may be extended to include time (-HH:MM:SS, where HH is the hour, MM the
-minute and SS the second), with 'T' separating the two parts.
+may be extended to include time (HH:MM:SS.ss, where HH is the hour, MM the
+minute, SS the second, and ss is one or more digits representing a fraction of a second), with 'T' separating the two parts.
+. Timezones may be appended, in any form defined in BS ISO 8601, such as Z to designate UTC or a +/- offset like +01:00.
 . Identify whether date refers to creation, last revision or
 publication.
 . More than one Dataset Reference Date may be defined, but there must
@@ -68,12 +69,15 @@ suitable level of resolution.
 should be reported for spatial datasets
 
 |Examples a|
-* 2001, publication
-* 2005-05, publication
-* 1997-10-01, publication
-* 2009-05-02T09:10:01, publication
+* 2001, precise to the calendar year
+* 2005-05, precise to the calendar month
+* 1997-10-01, precide to the calendar date
+* 2009-05-02T09:10:01, precise to the time in minutes
+* 2022-10-27T13:00:15.25, precise to the time in fractions of a second
+* 2022-10-27T13:00Z, precise to the time in minutes, in UTC
+* 2022-10-27T14:00+02:00, precise to the time in minutes 2 hours ahead of UTC
 
-|Revision date |March 2019
+|Revision date |November 2025
 |===
 
 .Corresponding element in other standards...
