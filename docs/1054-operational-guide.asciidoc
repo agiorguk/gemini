@@ -117,15 +117,14 @@ is intended to operate.
 
 
 This guide assumes that the reader is familiar with the creation and
-management of metadata and has read the UK Location “Getting Started'
-series of
-guides[link:1047-metadata-guidelines-for-geospatial-data-resources-part-3[27]].
+management of metadata and has read the xref:1047-metadata-guidelines-for-geospatial-data-resources-part-3#ref27[UK Location “Getting Started'
+series of guides].
 
 Readers requiring an introduction to discovery metadata for geospatial
 data resources are referred to the UK GEMINI guide
-“link:1052-metadata-guidelines-for-geospatial-data-resources-part-1[Metadata
+xref:1047-metadata-guidelines-for-geospatial-data-resources-part-3#ref1["Metadata
 Guidelines for Geospatial Data Resources, Introduction – Part
-1]”[link:1047-metadata-guidelines-for-geospatial-data-resources-part-3[1]]
+1"]
 .
 
 === 1.2.1 Do you know your “Data Provider” from your “Data Publisher”
@@ -238,17 +237,17 @@ Coordination Unit
 
 * For all data:
 ** compliance with the INSPIRE Metadata Regulation
-[link:1047-metadata-guidelines-for-geospatial-data-resources-part-3[6]]
+xref:1047-metadata-guidelines-for-geospatial-data-resources-part-3#ref1[1]
 and the UK Location operational requirements as set out in this guide
 ** if publishing INSPIRE Network (on-line) Services, compliance with the
 INSPIRE Network Services Regulation
-[link:1047-metadata-guidelines-for-geospatial-data-resources-part-3[9]]
+xref:1047-metadata-guidelines-for-geospatial-data-resources-part-3#ref9[9]
 ** the publishing of INSPIRE View Services for a given dataset or data
 series
 * For data that comes under an INSPIRE Theme and contains features
 listed in the INSPIRE Data Specifications:
 ** legal compliance with the INSPIRE Directive
-[link:1047-metadata-guidelines-for-geospatial-data-resources-part-3[8]]
+xref:1047-metadata-guidelines-for-geospatial-data-resources-part-3#ref8[8]
 
 === 2.2 Accountability
 [#Account]
@@ -376,16 +375,16 @@ needs an application profile.
 *Considerable care needs to be taken over the creation of discovery
 metadata. It is strongly recommended that you use a metadata editor
 tool, that fully supports the encoding requirements defined in
-[link:1047-metadata-guidelines-for-geospatial-data-resources-part-3[28]]
+xref:1047-metadata-guidelines-for-geospatial-data-resources-part-3#ref28[28]
 and uses the UK Location XSD and Schematron schemas
-[link:1047-metadata-guidelines-for-geospatial-data-resources-part-3[28,30]],
+xref:1047-metadata-guidelines-for-geospatial-data-resources-part-3#ref28[28],xref:1047-metadata-guidelines-for-geospatial-data-resources-part-3#ref30[30],
 to ensure that your metadata is fully compliant with UKL and INSPIRE
 requirements.*
 
 GEMINI 2.3 metadata is encoded in XML, as described in
 the{nbsp}link:1048-uk-gemini-encoding-guidance[encoding
 guidance{nbsp}]{nbsp}and a Schematron ruled-based validation Schema
-[link:1047-metadata-guidelines-for-geospatial-data-resources-part-3[30]]
+xref:1047-metadata-guidelines-for-geospatial-data-resources-part-3#ref30[30]
 can be used to check these XML instances.
 
 For a detailed explanation of each element, please refer to
@@ -474,9 +473,9 @@ Government Licence”.
 
 UK Location discovery metadata records must be published as an
 Extensible Markup Language (XML) document. This must follow
-the{nbsp}link:1048-uk-gemini-encoding-guidance[UK
+the{nbsp}xref:1047-metadata-guidelines-for-geospatial-data-resources-part-3#ref28[UK
 Location UK GEMINI Encoding
-Guidance]{nbsp}[link:1047-metadata-guidelines-for-geospatial-data-resources-part-3.html[28]].
+Guidance].
 
 === 3.4 Metadata Validation
 [#Validation]
@@ -487,12 +486,12 @@ a three stage process, using:
 * The ISO XML schemas
 * The UK Location variant of the ISO Schematron rules
 * A{nbsp}UK Location GEMINI Schematron schema
-[link:1047-metadata-guidelines-for-geospatial-data-resources-part-3[30]]
+xref:1047-metadata-guidelines-for-geospatial-data-resources-part-3#ref30[30]
 
 Data Publishers are required to validate their metadata records using
 these before resource registration. UK Location has published guidance
 on using its Schematron rules
-[link:1047-metadata-guidelines-for-geospatial-data-resources-part-3[29]].
+xref:1047-metadata-guidelines-for-geospatial-data-resources-part-3#ref29[29].
 
 === 3.5 Community Extensions to UK GEMINI2
 [#Community_Extensions]
@@ -546,14 +545,14 @@ This involves transferring your completed discovery metadata records to
 an on-line location, which can be machine accessed through the Internet.
 The records must be accessible using one of two mechanisms:
 
-* OGC Catalogue Service for the Web (CSW),{nbsp}_or_
+* OGC Catalogue Service for the Web (CSW),{nbsp} _or_
 * Web Accessible Folder (WAF)
 
 These mechanisms will be used by the Discovery Metadata Service, to
 collect registered discovery metadata records. For more information
 about this interface, please refer to the DMS Collection Interface
 Specification
-[link:1047-metadata-guidelines-for-geospatial-data-resources-part-3[26]].
+xref:1047-metadata-guidelines-for-geospatial-data-resources-part-3#ref26[26].
 
 ==== 4.1.1 Discovery Metadata Harvest location
 
@@ -667,7 +666,7 @@ Before you can publish data and services on data.gov.uk, you will need
 to sign up and associate yourself with one or more Publishers.
 
 For further information, see the data.gov.uk User Guide
-[link:1047-metadata-guidelines-for-geospatial-data-resources-part-3[31]]
+xref:1047-metadata-guidelines-for-geospatial-data-resources-part-3#ref31[31]
 
 ==== *_Creating a Publisher_*
 
@@ -781,7 +780,7 @@ Accessible Folder cannot be accessed
 
 INSPIRE carries out its own validation. At present, it does not reject
 any records. A searchable collection of validation reports is available
-at{nbsp}http://inspire-geoportal.ec.europa.eu/proxybrowser/ProxyBrowser/;
+at{nbsp}http://inspire-geoportal.ec.europa.eu/proxybrowser/ProxyBrowser;
 this includes validation reports on metadata records, services, and
 layers within services.
 
@@ -842,7 +841,7 @@ result in the record being removed from the European INSPIRE GeoPortal.
 If you would like advice, please email both the metadata record’s URL
 weblink and the unique Harvest GUID for the metadata record that you
 would like to withdraw, and email to the UK Location
-Helpdesk:{nbsp}[#cloak8b865acef497806498058eabbfa4f7da]#UKLocation.Helpdesk@defra.gsi.gov.uk#
+Helpdesk:{nbsp}UKLocation.Helpdesk@defra.gsi.gov.uk
 
 ==== *_Reinstating a withdrawn record_*
 
@@ -884,7 +883,7 @@ For more information, to register for the on-line service or to download
 the configuration package, please visit the UK Location Resource Centre.
 
 === 5.2 GeoNetwork Publishing Solution
-[#Geonetwork
+[#Geonetwork]
 
 The use of GeoNetwork as the basis for the UK Location Metadata Editor
 provides the option for Data Providers and Publishers to extend a local
@@ -922,7 +921,7 @@ Centre. We would recommend that you speak to your system supplier to
 determine the support they can provide and to discuss how this can be
 best integrated into your existing systems.
 
-_Last updated: February 2018_
+_Last updated: {docdate}_
 
 http://creativecommons.org/licenses/by/4.0/[image:https://i.creativecommons.org/l/by/4.0/88x31.png[Creative
 Commons Licence]] +
