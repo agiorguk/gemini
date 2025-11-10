@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.25">
+<meta name="generator" content="Asciidoctor 2.0.26">
 <title>UK GEMINI 2.3 2020-04-07 service</title>
 <style>
 @import "./assets/asciidoctor.css"
@@ -6217,7 +6217,7 @@ given.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">responsible party role</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">role of the responsible organisation</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">mandatory</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">multiple</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">single</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">CodeList</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">see
 <a href="http://inspire.ec.europa.eu/metadata-codelist/ResponsiblePartyRole">INSPIRE
@@ -6276,6 +6276,9 @@ should also be recorded, using the role value 'Originator'.</p>
 </li>
 <li>
 <p>If you need to identify an individual by name, use CI_ResponsibleParty.individualName.</p>
+</li>
+<li>
+<p>ISO 19115:2003 does not allow an organisation to have more than one role. Where in fact an organisation does carry out more than one role, and you need to express this in the GEMINI record, you will need to create more than one Responsible organisation (ISO 19115 point of contact)</p>
 </li>
 </ol>
 </div></div></td>
@@ -6345,7 +6348,7 @@ acting as distributor, publisher, author, etc.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Revision date</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">July 2024</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">July 2025</p></td>
 </tr>
 </tbody>
 </table>
@@ -6389,11 +6392,18 @@ class</p></td>
 <details>
 <summary class="title">Change history&#8230;&#8203;</summary>
 <div class="content">
-<div class="paragraph">
-<p>GEMINI 1 to 2.0: This has been generalised from Distributor (and
+<div class="ulist">
+<ul>
+<li>
+<p>GEMINI 1 to 2.0: generalised from Distributor (and
 Originator) to cover a range of possible roles, by the addition of
 'responsible party role' and minor errors in the class details have been
 corrected.</p>
+</li>
+<li>
+<p>July 2025: role occurrence set to 'single'; multiple was never supported in ISO 19115 anyway</p>
+</li>
+</ul>
 </div>
 </div>
 </details>
@@ -8740,7 +8750,7 @@ This work is licensed under a&#160;<a href="http://creativecommons.org/licenses/
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-10-22 13:00:49 UTC
+Last updated 2025-11-10 10:46:11 UTC
 </div>
 </div>
     <div class="x-bar x-bar-footer x-bar-h x-bar-relative x-bar-outer-spacers e1248-1 myo-0 myo-1" data-x-bar="{&quot;id&quot;:&quot;e1248-1&quot;,&quot;region&quot;:&quot;footer&quot;,&quot;height&quot;:&quot;auto&quot;}">

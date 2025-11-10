@@ -56,7 +56,7 @@ not provide a personal email address.
 given.
 
 !responsible party role !role of the responsible organisation !mandatory
-!multiple !CodeList !see
+!single !CodeList !see
 http://inspire.ec.europa.eu/metadata-codelist/ResponsiblePartyRole[INSPIRE
 registry] !The role of the responsible party should be identified. +
 For datasets and dataset series, at least a distributor should be given.
@@ -82,7 +82,8 @@ for each.
 These appear in the data.gov.uk search results.
 . If the data was created by someone other than the Data Provider, this
 should also be recorded, using the role value 'Originator'.
-. If you need to identify an individual by name, use CI_ResponsibleParty.individualName. 
+. If you need to identify an individual by name, use CI_ResponsibleParty.individualName.
+. ISO 19115:2003 does not allow an organisation to have more than one role. Where in fact an organisation does carry out more than one role, and you need to express this in the GEMINI record, you will need to create more than one Responsible organisation (ISO 19115 point of contact)
 
 |Comment |Facsimile number is no longer required
 
@@ -110,7 +111,7 @@ organisation !The mapping product manager
 acting as distributor, publisher, author, etc. !distributor
 !===
 
-|Revision date |July 2024
+|Revision date |July 2025
 |===
 
 .Corresponding element in other standards...
@@ -140,10 +141,11 @@ class
 .Change history...
 [%collapsible]
 ====
-GEMINI 1 to 2.0: This has been generalised from Distributor (and
+* GEMINI 1 to 2.0: generalised from Distributor (and
 Originator) to cover a range of possible roles, by the addition of
 'responsible party role' and minor errors in the class details have been
 corrected.
+* July 2025: role occurrence set to 'single'; multiple was never supported in ISO 19115 anyway
 ====
 
 .Encoding guidelines...
