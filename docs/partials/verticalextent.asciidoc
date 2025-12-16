@@ -6,10 +6,10 @@ include::includes/partials-attributes.adoc[]
 |===
 |UK GEMINI id |16
 
-|Definition |Vertical domain of the data resource
+|Definition |Vertical domain of the resource
 
 |Purpose and meaning |The purpose of this element is to describe the
-vertical range of the data resource (where relevant).
+vertical range of the resource (where relevant).
 
 |Obligation |Optional
 
@@ -24,8 +24,8 @@ EX_VerticalExtent, which comprises of three elements
 !===
 ! !minimum value !maximum value !coordinate reference system
 
-!Definition !lowest vertical extent contained in the data resource
-!highest vertical extent contained in the data resource !vertical
+!Definition !lowest vertical extent contained in the resource
+!highest vertical extent contained in the resource !vertical
 coordinate reference system to which the maximum and minimum values are
 measured
 
@@ -60,7 +60,7 @@ significant, e.g. in geology, mining, meteorology etc.
 * Maximum value: 0.0
 * Coordinate reference system: height in metres above Newlyn Datum
 
-|Revision date |July 2024
+|Revision date |December 2025
 |===
 
 .Corresponding element in other standards...
@@ -98,6 +98,7 @@ occurrence changed from multiple to single; +
 description of class EX_VerticalExtent changed to match change to ISO
 19115.
 * GEMINI 2.1 to 2.2: made multiple again
+* GEMINI 2.3 December 2025: "data resource" to "resource"
 ====
 
 .Encoding guidelines...
