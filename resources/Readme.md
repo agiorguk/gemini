@@ -2,31 +2,11 @@
 
 Notes on articles, links, and publishing
 
-Peter Parslow, revised 5 August 2021, to describe the Blue Star hosted AGI site
-
-# Notes on publishing
-
-Files have to be emailed to AGI &amp; Blue Star. Blue Star provide AGI an estimate for the cost of the update, and AGI then have to decide whether to go ahead.
-
-## XML Dynamic content
-
-Recommendation: for configuration control of the XML &amp; XSLT, use file names with dates in.
-
-If you change the XML, regenerate the three pages:
-
-- GEMINI\_YYYYMMDD.xsl with parameter &quot;gemini\_sv&quot; gives a new &quot;service&quot; page to go at [1063 Gemini Services - Association For Geographic Information (agi.org.uk)](https://www.agi.org.uk/gemini/40-gemini/1063-gemini-services/)
-- GEMINI\_YYYYMMDD.xsl with parameter &quot;gemini\_dt&quot; gives a new &quot;dataset&quot; page to go at [1062 Gemini Datasets and Data Series - Association For Geographic Information (agi.org.uk)](https://www.agi.org.uk/gemini/40-gemini/1062-gemini-datasets-and-data-series/)
-- Summary\_YYYYMMDD.xsl gives a new &quot;summary&quot; page to go at [1250-element-summary - Association For Geographic Information (agi.org.uk)](https://www.agi.org.uk/gemini/40-gemini/1250-element-summary/)
-
-Update the &#39;change log&#39;: [1055-uk-gemini-major-changes-since-1-0 - Association For Geographic Information (agi.org.uk)](https://www.agi.org.uk/gemini/40-gemini/1055-uk-gemini-major-changes-since-1-0/)
-
-## Static content
-
-For small changes, a marked up (Word?) file seems to work. For larger changes, Blue Star appreciate a replacement HTML file. The way they insert that into their Content Management System handles styling – along with the GEMINI.css that would rarely need changing.
+Peter Parslow, revised December 2025, removing the "notes on publishing" to the old Blue Star hosted AGI site
 
 # Page list
 
-The numeric part of each URL reflects the article number in the previous web host&#39;s Content Management System. The textual part of the URL reflects a rather old title of the article!
+As at 2021. The numeric part of each URL reflects the article number in the previous web host&#39;s Content Management System. The textual part of the URL reflects a rather old title of the article!
 
 They all work on a stem of [https://www.agi.org.uk/gemini/40-gemini/](https://www.agi.org.uk/gemini/40-gemini/), with [https://www.agi.org.uk/gemini/](https://www.agi.org.uk/gemini/) redirecting to it (i.e. either stem will work).
 
