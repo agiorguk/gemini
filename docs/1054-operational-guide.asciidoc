@@ -121,7 +121,7 @@ management of metadata and has read the xref:1047-metadata-guidelines-for-geospa
 series of guides].
 
 Readers requiring an introduction to discovery metadata for geospatial
-data resources are referred to the UK GEMINI guide
+resources are referred to the UK GEMINI guide
 xref:1047-metadata-guidelines-for-geospatial-data-resources-part-3#ref1["Metadata
 Guidelines for Geospatial Data Resources, Introduction – Part
 1"]
@@ -629,7 +629,7 @@ accountable*{nbsp}for the data being published -{nbsp}*the UK Location “Data
 Provider”.*
 
 *Please note that within data.gov.uk, the Data Provider is referred to
-as the “Publisher” for metadata and data resources, irrespective of
+as the “Publisher” for metadata and resources, irrespective of
 whether they are publishing directly, or indirectly through a third
 party.*
 
@@ -642,7 +642,7 @@ Publisher account already exists for your organisation (this is clear
 within the online application process).
 
 You can then either apply for{nbsp}*_editor access_*{nbsp}(which lets you register
-and administer published data resources) or{nbsp}*_administrator
+and administer published resources) or{nbsp}*_administrator
 access,_*{nbsp}which gives you the same powers as{nbsp}_editor access_{nbsp}but also
 lets you edit publisher’s details (including name, description, and
 contact information), and authorize access for other users to be editor
