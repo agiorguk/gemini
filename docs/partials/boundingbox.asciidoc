@@ -6,7 +6,7 @@ include::includes/partials-attributes.adoc[]
 |===
 |UK GEMINI id |44
 
-|Definition |Rectangle enclosing the extent of the data resource
+|Definition |Rectangle enclosing the extent of the resource
 described in latitude and longitude
 
 |Purpose and meaning |This is to enable the resource to be located
@@ -26,12 +26,12 @@ EX_GeographicBoundingBox
 !Metadata element name !West bounding longitude !East bounding longitude
 !South bounding latitude !North bounding latitude
 
-!Definition !western-most limit of the data resource extent, expressed
+!Definition !western-most limit of the resource extent, expressed
 in longitude in decimal degrees (positive east) !eastern-most limit of
-the data resource extent, expressed in longitude in decimal degrees
-(positive east) !southern-most limit of the data resource extent,
+the resource extent, expressed in longitude in decimal degrees
+(positive east) !southern-most limit of the resource extent,
 expressed in latitude in decimal degrees (positive north) !northern-most
-limit of the data resource extent, expressed in latitude in decimal
+limit of the resource extent, expressed in latitude in decimal
 degrees (positive north)
 
 !Obligation !mandatory !mandatory !mandatory !mandatory
@@ -54,8 +54,7 @@ except when the extent straddles the 180 degree meridian. ! !
 !===
 
 |Guidance a|
-. Identify a bounding box slightly larger than the extent of the data
-resource, and determine the coordinates of the boundaries. It may be
+. Identify a bounding box slightly larger than the extent of the resource, and determine the coordinates of the boundaries. It may be
 necessary to convert from another coordinate system (e.g. National Grid)
 into lat/long.
 . Only approximate values are required, sufficient to identify the
@@ -71,7 +70,7 @@ The bounding box of a service may be larger or smaller than that of the datasets
 # end::service[]
 |Examples |-9.23, 2.69, 49.84, 60.85
 
-|Revision date |December 2012
+|Revision date |December 2025
 |===
 
 .Corresponding element in other standards...
