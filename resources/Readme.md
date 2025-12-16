@@ -10,8 +10,8 @@ As at 2021. The numeric part of each URL reflects the article number in the prev
 
 They all work on a stem of [https://www.agi.org.uk/gemini/40-gemini/](https://www.agi.org.uk/gemini/40-gemini/), with [https://www.agi.org.uk/gemini/](https://www.agi.org.uk/gemini/) redirecting to it (i.e. either stem will work).
 
-| **Title** | **Article** | **Last bit of URL** | **Thoughts** | 
-| --- | --- | --- | --- | --- |
+| **Title** | **Article** | **Last bit of URL** | **Thoughts** |
+| --- | --- | --- | --- |
 | UK GEMINI standard and INSPIRE implementing rules | 1037 | 1037-uk-gemini-standard-and-inspire-implementing-rules | Change title – this is really the &quot;2.3 home page&quot; | 
 | UK GEMINI v2.2 - Specification for discovery metadata for geospatial resources | 1051 | 1051-uk-gemini-v2-2-specification-for-discovery-metadata-for-geospatial-resources | This is really the GEMINI introduction | 
 | Metadata Guidelines for Geospatial Data Resources - Part 1 | 1052 | 1052-metadata-guidelines-for-geospatial-data-resources-part-1 | | 
