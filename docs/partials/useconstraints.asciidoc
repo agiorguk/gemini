@@ -7,11 +7,10 @@ include::includes/partials-attributes.adoc[]
 |===
 |UK GEMINI id |26
 
-|Definition |Restrictions and legal restraints on using the data
-resource
+|Definition |Restrictions and legal restraints on using the resource
 
 |Purpose and meaning |The purpose of this element is to describe any
-restrictions on usage of the data resource (as opposed to access)
+restrictions on usage of the resource (as opposed to access)
 
 |Obligation |Mandatory
 
@@ -34,12 +33,12 @@ page.
 then 'no conditions apply' should be recorded.
 
 |Comment |Use constraints are different from Restrictions on public
-access which describe limitations on access to the data. A data resource
+access which describe limitations on access to the data. A resource
 can have open access (e.g. to look at it), but restricted use.
 
 |Examples |Should not be used for navigation purposes.
 
-|Revision date |September 2018
+|Revision date |December 2025
 |===
 
 .Corresponding element in other standards...
@@ -71,6 +70,7 @@ MD_LegalConstraints.useConstraints & otherConstraints |Equivalent
 * GEMINI 1 to 2.0: Change to free text field from enumerated list, and
 making mandatory to conform with INSPIRE.
 * GEMINI 2.2 to 2.3: Change of encoding
+* GEMINI 2.3 December 2025: "data resource" to "resource"
 ====
 
 .Encoding guidelines...
