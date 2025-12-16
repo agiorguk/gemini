@@ -7,11 +7,9 @@ include::includes/partials-attributes.adoc[]
 |UK GEMINI id |23
 
 |Definition |Details of the organisation(s) responsible for the
-establishment, management, maintenance and distribution of the data
-resource
+establishment, management, maintenance and distribution of the resource
 
-|Purpose and meaning |This informs the user about who is responsible for
-the data resource
+|Purpose and meaning |This informs the user about who is responsible for the resource
 
 |Obligation |Mandatory
 
@@ -29,8 +27,7 @@ organisation:
 !Domain !Rules for how to fill in the entry
 !contact position !role or position of the responsible person !optional
 !single !CharacterString !free text !A general job title or generic role
-should be identified for someone in a position of responsibility for the
-data resource. +
+should be identified for someone in a position of responsibility for the resource. +
 Do not identify an individual by name, as this is subject to change
 without warning and the information is impossible to keep up-to-date.
 
@@ -111,7 +108,7 @@ organisation !The mapping product manager
 acting as distributor, publisher, author, etc. !distributor
 !===
 
-|Revision date |July 2025
+|Revision date |December 2025
 |===
 
 .Corresponding element in other standards...
@@ -146,6 +143,7 @@ Originator) to cover a range of possible roles, by the addition of
 'responsible party role' and minor errors in the class details have been
 corrected.
 * July 2025: role occurrence set to 'single'; multiple was never supported in ISO 19115 anyway
+* December 2025: "data resource" -> "resource"
 ====
 
 .Encoding guidelines...
