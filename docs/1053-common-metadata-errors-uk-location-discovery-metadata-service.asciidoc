@@ -358,7 +358,7 @@ include those soft errors only found by inspection.
 |_Four other errors, one occurrence each_ |
 |===
 
-_{nbsp}Last updated: August 2018_
+_{nbsp}Last updated: December 2025_
 
 http://creativecommons.org/licenses/by/4.0/[image:https://i.creativecommons.org/l/by/4.0/88x31.png[Creative
 Commons Licence]] +
