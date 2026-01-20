@@ -360,7 +360,7 @@ increasing precision:
 * yyyy-MM-ddThh:mm:ss (e.g. 1995-01-25T12:01:55)
 
 The ISO 8601 encoding also allows negative dates to represent BC.
-However, due to the limitations of negative dates in the Gregorian calendar, these should only be used with care. Given the uses that these data types are put to in GEMINI, this is not expected to be an issue
+However, due to the limitations of negative dates in the Gregorian calendar, these should only be used with care. Given the uses that these data types are put to in GEMINI, this is not expected to be an issue.
 
 The GEMINI2 standard states that temporal extents may be given with as
 coarse a granularity as century (e.g. yy or 19). However, unfortunately
