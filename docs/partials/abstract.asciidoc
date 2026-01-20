@@ -29,7 +29,7 @@ and not general background information.
 . State what form the data takes.
 . State any other limiting information, such as time period of validity
 of the data.
-. Add purpose of data resource where relevant (e.g. for survey data).
+. Add purpose of resource where relevant (e.g. for survey data).
 . Include a description of the extent or location.
 . Include legal references.
 . Aim to be understood by non-experts.
@@ -51,7 +51,7 @@ Output Areas (LSOA) as at 31 December 2011 in England and Wales.
 . This file contains the National Statistics Postcode Lookup (NSPL) for
 the United Kingdom as at February 2017.
 
-|Revision date |March 2019
+|Revision date |December 2025
 |===
 
 .Corresponding element in other standards...

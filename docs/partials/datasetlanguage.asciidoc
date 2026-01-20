@@ -6,7 +6,7 @@ include::includes/partials-attributes.adoc[]
 |===
 |UK GEMINI id |3
 
-|Definition |Language used in the data resource
+|Definition |Language used in the resource
 
 |Purpose and meaning |This is the written language used for any text in
 the dataset.
@@ -42,7 +42,7 @@ used.
 . Other official European languages are listed at
 http://ec.europa.eu/languages/policy/linguistic-diversity/official-languages-eu_en.htm[Official
 languages of the EU].
-. If there is no textual information in the data resource, then the
+. If there is no textual information in the resource, then the
 special code value *zxx* of ISO 639-2/B reserved for "no linguistic
 content; not applicable" shall be used.
 
@@ -50,7 +50,7 @@ content; not applicable" shall be used.
 
 |Examples |eng
 
-|Revision date |September 2018
+|Revision date |December 2025
 |===
 
 .Corresponding element in other standards...
@@ -75,6 +75,7 @@ content; not applicable" shall be used.
 ====
 . GEMINI 1 to 2: Obligation changed from mandatory
 . GEMINI 2 to 2.2: Obligation changed (back) to mandatory
+. GEMINI 2.3 December 2025: "data resource" -> resource
 ====
 
 .Encoding guidelines...

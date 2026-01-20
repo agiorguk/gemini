@@ -12,7 +12,7 @@ include::includes/partials-attributes.adoc[]
 indication of how detailed the spatial data is. It is equivalent to the
 ground sample distance. It should not be confused with the scale of a
 map which is purely a display attribute (the spatial resolution should
-be defined in the specification of the data resource).
+be defined in the specification of the resource).
 
 |Obligation |Conditional - where a resolution distance can be specified
 
@@ -43,7 +43,7 @@ the building, i.e. about 10 metres.
 * 10.0
 * 0.001
 
-|Revision date |March 2019
+|Revision date |December 2025
 |===
 
 .Corresponding element in other standards...
@@ -72,7 +72,8 @@ MD_Resolution.distance |Equivalent
 .Change history...
 [%collapsible]
 ====
-GEMINI 1 to 2.0: made conditional
+. GEMINI 1 to 2.0: made conditional
+. GEMINI 2.3 December 2025: "data resource" -> "resource"
 ====
 
 .Encoding guidelines...

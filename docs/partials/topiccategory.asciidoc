@@ -5,12 +5,12 @@ include::includes/partials-attributes.adoc[]
 |===
 |UK GEMINI id |5
 
-|Definition |Main theme(s) of the data resource
+|Definition |Main theme(s) of the resource
 
 |Purpose and meaning |The purpose of this element is to provide a basic
-classification for the data resource for use in initial searches
+classification for the resource for use in initial searches
 
-|Obligation |Mandatory when the data resource is a dataset or dataset
+|Obligation |Mandatory when the resource is a dataset or dataset
 series. Not applicable to services.
 
 |Occurrence |Multiple
@@ -102,8 +102,7 @@ communication, telecommunication, radio
 !===
 
 |Guidance a|
-. Select one or more categories that most closely represent the topic of
-the data resource.
+. Select one or more categories that most closely represent the topic of the resource.
 . If in doubt, go by the topic categories rather than the examples.
 . It is not necessary to include all categories which may be applicable,
 but only a limited number of most relevant should be chosen (e.g.
@@ -114,7 +113,7 @@ link:#6[Keyword]
 
 |Examples |location
 
-|Revision date |March 2019
+|Revision date |December 2025
 |===
 
 .Corresponding element in other standards...
@@ -134,8 +133,8 @@ link:#6[Keyword]
 ====
 
 Change history...
-
-[[history5]]
+[%collapsible]
+December 2025: "data resource" -> "resource"
 
 .Encoding guidelines...
 [%collapsible]

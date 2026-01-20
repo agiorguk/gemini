@@ -6,15 +6,15 @@ include::includes/partials-attributes.adoc[]
 |===
 |UK GEMINI id |6
 
-|Definition |Topic of the content of the data resource
+|Definition |Topic of the content of the resource
 
 |Purpose and meaning |The purpose of this element is to indicate the
-general subject area of the data resource using keywords. This enables
+general subject area of the resource using keywords. This enables
 searches to eliminate resources that are of no interest. Ideally, a
 standardised set of keywords should be used, so that resources can be
 identified in any search. This element is similar to link:#5[Topic
 category], which has a coded list of high-level categories, whereas
-Keyword allows more appropriate terms to describe the data resource.
+Keyword allows more appropriate terms to describe the resource.
 
 |Obligation |Mandatory
 
@@ -34,7 +34,7 @@ These are specified as follows:
 [width="100%",cols="34%,33%,33%",options="header",]
 !===
 ! !Keyword value !Originating controlled vocabulary
-!Definition !topic of the content of the data resource !name of the
+!Definition !topic of the content of the resource !name of the
 formally registered thesaurus or a similar authoritative source of
 keywords
 
@@ -57,7 +57,7 @@ vocabulary'.
 . Possible vocabularies include http://www.eionet.europa.eu/gemet/en/themes/[GEMET] and the https://inspire.ec.europa.eu/featureconcept[INSPIRE Feature Concept Dictionary]
 . For other Keywords, if drawn from a Controlled Vocabulary, this must
 be stated.
-. Terms covering the subject of the data resource should be selected.
+. Terms covering the subject of the resource should be selected.
 . For conformance with INSPIRE, the keyword should describe the relevant
 INSPIRE spatial data theme, such as those contained in GEMET INSPIRE;
 . The formal citation for the vocabulary should be given, including at
@@ -77,7 +77,7 @@ broader range of values.
 * Gazetteer service, General Environmental Multi-Lingual Thesaurus
 (GEMET)
 
-|Revision date |May 2019
+|Revision date |December 2025
 |===
 
 .Corresponding element in other standards...
@@ -108,8 +108,8 @@ broader range of values.
 [%collapsible]
 ====
 . GEMINI 1 to 2.0: Change of name from 'Subject'
-. GEMINI 2.0 to 2.1: expansion to include keyword value and originating
-controlled vocabulary
+. GEMINI 2.0 to 2.1: expansion to include keyword value and originating controlled vocabulary
+. GEMINI 2.3 December 2025: "data resource" -> "resource"
 ====
 
 .Encoding guidelines...

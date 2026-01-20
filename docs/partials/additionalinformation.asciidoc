@@ -6,7 +6,7 @@ include::includes/partials-attributes.adoc[]
 |===
 |UK GEMINI id |27
 
-|Definition |Other descriptive information about the data resource
+|Definition |Other descriptive information about the resource
 
 |Purpose and meaning |The purpose of this element is to record relevant
 information that does not clearly belong in another element. This may be
@@ -58,7 +58,7 @@ MD_DataIdentification.supplementalInformation |Equivalent
 ====
 * GEMINI 2.3 20181031 Rename 'Additional information source' to
 'Additional information'
-* GEMINI 2.3 June 2021 fixed typo (XML syntax error) in example 2
+* GEMINI 2.3 June 2021 fixed typo (XML syntax error) in example 2; December 2025 "data resource" -> resource
 ====
 
 .Encoding guidelines...
