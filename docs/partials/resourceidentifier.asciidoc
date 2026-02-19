@@ -6,10 +6,9 @@ include::includes/partials-attributes.adoc[]
 |===
 |UK GEMINI id |36
 
-|Definition |Value uniquely identifying the data resource
+|Definition |Value uniquely identifying the resource
 
-|Purpose and meaning |The purpose of this is to uniquely identify the
-data resource.
+|Purpose and meaning |The purpose of this is to uniquely identify the resource.
 
 |Obligation |Mandatory for datasets and dataset series
 
@@ -80,7 +79,7 @@ In such cases (where there is a code space provided) it is now strongly recommen
 * doi:10.5285/1e7d5e08-9e24-471b-ae37-49b477f695e3
 * 527c4cac-070c-4bca-9aaf-92bece7be902
 
-|Revision date |May 2018
+|Revision date |December 2025
 |===
 
 .Corresponding element in other standards...
@@ -107,6 +106,7 @@ In such cases (where there is a code space provided) it is now strongly recommen
 INSPIRE
 . GEMINI 2.2 to 2.3: Name changed from Unique resource identifier, to
 reduce confusion with W3C URI
+. GEMINI 2.3 December 2025: "data resource" -> "resource"
 ====
 
 .Encoding guidelines...

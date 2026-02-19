@@ -7,10 +7,10 @@ include::includes/partials-attributes.adoc[]
 |UK GEMINI id |10
 
 |Definition |Information about the events or source data used in the
-construction of the data resource
+construction of the resource
 
 |Purpose and meaning |The purpose of this element is to give an
-indication of how the data resource was created. It is useful in
+indication of how the resource was created. It is useful in
 determining its fitness for purpose.
 
 |Obligation |Mandatory
@@ -44,7 +44,7 @@ a resolution of 1 metre. The dataset is updated from the PAF monthly
 updates. All results are checked by plotting a group of related
 addresses on the map and visually checking for errors.
 
-|Revision date |March 2019
+|Revision date |December 2025
 |===
 
 .Corresponding element in other standards...
@@ -67,8 +67,9 @@ addresses on the map and visually checking for errors.
 .Change history...
 [%collapsible]
 ====
-GEMINI 1 to 2.0: Made mandatory for datasets and dataset series to
+. GEMINI 1 to 2.0: Made mandatory for datasets and dataset series to
 conform to INSPIRE
+. GEMINI 2.3 December 2025: "data resource" -> "resource"
 ====
 
 .Encoding guidelines...

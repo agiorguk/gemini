@@ -1,30 +1,21 @@
 = Common Metadata Errors UK Location Discovery Metadata Service
 include::./includes/attributes.asciidoc[]
 
-Return
-to{nbsp}link:1037-uk-gemini-introduction.html[GEMINI
-2.3 home page]
+Return to link:1037-uk-gemini-introduction.html[GEMINI 2.3 home page]
 
-link:1053-common-metadata-errors-uk-location-discovery-metadata-service.html#Intro[1.
-Introduction]
+link:1053-common-metadata-errors-uk-location-discovery-metadata-service.html#Intro[1. Introduction]
 
-link:1053-common-metadata-errors-uk-location-discovery-metadata-service.html#schema_errors[2.
-Schema errors]
+link:1053-common-metadata-errors-uk-location-discovery-metadata-service.html#schema_errors[2. Schema errors]
 
-link:1053-common-metadata-errors-uk-location-discovery-metadata-service.html#ISO_errors[3.
-ISO 19139 Schematron errors]
+link:1053-common-metadata-errors-uk-location-discovery-metadata-service.html#ISO_errors[3. ISO 19139 Schematron errors]
 
-link:1053-common-metadata-errors-uk-location-discovery-metadata-service.html#proc_errors[4.
-Processing Errors]
+link:1053-common-metadata-errors-uk-location-discovery-metadata-service.html#proc_errors[4. Processing Errors]
 
-link:1053-common-metadata-errors-uk-location-discovery-metadata-service.html#inspire_warnings[5.
-European INSPIRE Geoportal errors and warnings]
+link:1053-common-metadata-errors-uk-location-discovery-metadata-service.html#inspire_warnings[5. European INSPIRE Geoportal errors and warnings]
 
-link:1053-common-metadata-errors-uk-location-discovery-metadata-service.html#soft_errors[6.
-"Soft" errors]
+link:1053-common-metadata-errors-uk-location-discovery-metadata-service.html#soft_errors[6. "Soft" errors]
 
-link:1053-common-metadata-errors-uk-location-discovery-metadata-service.html#winner[7.
-And the winner?]
+link:1053-common-metadata-errors-uk-location-discovery-metadata-service.html#winner[7. And the winner?]
 
 == 1. Introduction
 [#Intro]
@@ -35,7 +26,7 @@ know what data we have'.
 
 The DMS operates by collecting valid metadata records from data
 publishers and making them available on data.gov.uk, and for further
-collection to the European INSPIRE Geoportal.
+collection by other portals.
 
 === 1.1 Target Audience
 
@@ -47,19 +38,18 @@ organisations, and their technical partners.
 
 This document is largely based on an analysis of validation failures
 when metadata validation was first run on the records that had already
-been collected into{nbsp}https://data.gov.uk/[data.gov.uk]. Approximately
+been collected into https://data.gov.uk/[data.gov.uk]. Approximately
 half the records present in data.gov.uk at that time initially failed.
 
 === 1.3 Assumed Knowledge
 
 This guide assumes that the reader is familiar with the creation and
-management of metadata and has read the{nbsp}UK Location “Getting Started'
+management of metadata and has read the UK Location “Getting Started'
 series of
-guides{nbsp}link:1047-metadata-guidelines-for-geospatial-data-resources-part-3.html[27]],
-and the DMS Operational Guide.
+guides link:1047-metadata-guidelines-for-geospatial-data-resources-part-3.html[[27]].
 
 Readers requiring an introduction to discovery metadata for geospatial
-data resources are referred to the UK GEMINI guide “Metadata Guidelines
+resources are referred to the UK GEMINI guide “Metadata Guidelines
 for Geospatial Data Resources, Introduction – Part 1”
 [link:1047-metadata-guidelines-for-geospatial-data-resources-part-3.html[1]].
 
@@ -70,68 +60,31 @@ Metadata Quality
 and AGI's Guidelines - Part 2 have all been consolidated into this
 content. +
 
-=== 1.4 Where to Obtain More Information
-
-The latest information, and additional resources, can be obtained by
-visiting the{nbsp}UK Location{nbsp}web site.
-
-If you would like to contact the UK Location Coordination Unit, contact
-details are at{nbsp}http://data.gov.uk/location/contact_points
-
 === 1.5 Validation
 
 ==== GEMINI 2.3
 
 There is no currently no validation tool for GEMINI 2.3, but some
-software companies are developing tools. {nbsp}To validate a metadata record
+software companies are developing tools. To validate a metadata record
 in your own software you should:
 
 * Validate using the ISO 19139 (APISO) schemas.
 {nbsp}(http://inspire.ec.europa.eu/draft-schemas/inspire-md-schemas/apiso-inspire/apiso-inspire.xsd[http://inspire.ec.europa.eu/draft-schemas/inspire-md-schemas/apiso-inspire/apiso-inspire.xsd])
+* Validate using the GEMINI 2.3 schematron (https://github.com/agiorguk/gemini-schematron)
 
 It doesn't matter which order validation is done in, but to be valid,
 records must validate against both the APISO schema and the GEMINI 2.3
 Schematron.
 
-In addition a second (supplemental) schematron is provided to test for
+A second (supplemental) GEMINI schematron is provided to test for
 recommendations in your metadata structure.
-
-==== GEMINI 2.2 and data.gov.uk
-
-Currently, validating a UK Location metadata (GEMINI 2.2) record is a
-three stage process:
-
-* First, a metadata set is validated against the ISO 19139 schemas. UK
-Location / data.gov.uk use the XSD files provided by EDEN;
-see{nbsp}https://www.agi.org.uk/gemini/40-gemini/1048-uk-gemini-encoding-guidance[_UK
-GEMINI Encoding Guidance{nbsp}_]for details.
-* If the metadata set proves to be schema valid, it is then validated
-against the ISO 19139 Table A.1 Constraints Schematron schema. The
-Schematron schema relies on hardcoded XPath statements which will only
-work effectively on a schema valid XML set.
-* Finally, if the XML is still valid it is validated against the GEMINI2
-Profile Schematron schema.
-
-Any failure of this validation is logged for attention by the
-administrator of the harvest source. The record is loaded into
-data.gov.uk, assuming it passes a very minimal subset.
-
-This is expected to change before late 2019, to only accept GEMINI 2.3
-records.
-
-==== European INSPIRE Geoportal
-
-The European INSPIRE Geoportal carries out its own validation. This uses
-basically the same rules. No records are rejected, but errors are
-reported,
-at{nbsp}https://inspire-geoportal.ec.europa.eu/proxybrowser/[inspire-geoportal.ec.europa.eu/proxybrowser/.]
 
 ==== Warnings, soft errors, recommendations
 
 Even where the metadata is valid, there can be 'soft errors', where the
 metadata may be misleading.
 
-With GEMINI 2.3,{nbsp}a second (supplemental) schematron is provided to test
+With GEMINI 2.3, a second (supplemental) schematron is provided to test
 for recommendations.
 
 == 2. Schema errors
@@ -405,7 +358,7 @@ include those soft errors only found by inspection.
 |_Four other errors, one occurrence each_ |
 |===
 
-_{nbsp}Last updated: August 2018_
+_{nbsp}Last updated: December 2025_
 
 http://creativecommons.org/licenses/by/4.0/[image:https://i.creativecommons.org/l/by/4.0/88x31.png[Creative
 Commons Licence]] +

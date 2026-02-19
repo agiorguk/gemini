@@ -57,6 +57,14 @@ longer just be the century.
 
 === Editorial changes since the launch of GEMINI 2.3
 
+==== November 2025
+
+* link:1062-gemini-datasets-and-data-series.html#23[Responsible Organisation]: Updated guidance to indicate that the role should be a single occurrence, and to advise on use of individual names
+* link:1062-gemini-datasets-and-data-series.html#36[Resource Identifier]: Improved guidance on designing resource identifiers, and stated strong preference for using MD_Identifier rather than RS_Identifier for the encoding
+* link:1062-gemini-datasets-and-data-series.html#44[Bounding Box]: Updated guidance on the use of WGS84, the degree of precision, and how to encode more precise polygon extents.
+* link:1048-uk-gemini-encoding-guidance.html[Encoding Guidance]: Fixed broken links
+* link:1062-gemini-datasets-and-data-series.html#15[Extent]: Added example of an extent keyword such as OS linked data gazetteer, or ONS Output area
+
 ==== March 2025
 
 * link:1062-gemini-datasets-and-data-series.html#19[Resource locator]: Added guidance on selecting appropriate OnLineFunctionCode
@@ -438,7 +446,7 @@ The following elements were added to meet the requirements of INSPIRE:
 
 Other minor changes are identified in the element tables.
 
-_Last updated: August 2018_
+_Last updated: {docdate}_
 
 http://creativecommons.org/licenses/by/4.0/[image:https://i.creativecommons.org/l/by/4.0/88x31.png[Creative
 Commons Licence]] +

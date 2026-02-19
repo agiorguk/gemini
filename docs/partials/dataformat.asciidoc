@@ -28,7 +28,7 @@ The following properties are expected:
 standard or proprietary.
 . Recommended best practice is to use a human readable term from a
 controlled vocabulary.
-. If the data resource is not downloadable (e.g. is view only), then
+. If the resource is not downloadable (e.g. is view only), then
 this should be stated.
 
 |Comment |If the version of the data encoding is unknown or not
@@ -39,7 +39,7 @@ versioned, a nil reason attribute shall be specified with either
 * GML, 3.2.1
 * DTF, 6.3
 
-|Revision date |March 2019
+|Revision date |December 2025
 |===
 
 .Corresponding element in other standards...
@@ -62,6 +62,7 @@ versioned, a nil reason attribute shall be specified with either
 ====
 . GEMINI 1 to 2.0: made optional
 . GEMINI 2.2 to 2.3: made mandatory, but removed from services
+. GEMINI 2.3 December 2025: "data resource" -> resource
 ====
 
 .Encoding guidelines...

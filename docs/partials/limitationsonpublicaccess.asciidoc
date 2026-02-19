@@ -6,7 +6,7 @@ include::includes/partials-attributes.adoc[]
 |===
 |UK GEMINI id |25
 
-|Definition |Restrictions imposed on accessing the data resource for
+|Definition |Restrictions imposed on accessing the resource for
 security and other reasons
 
 |Purpose and meaning |The purpose of this element is to identify any
@@ -59,7 +59,7 @@ types of usage, or constraints on the use that can be made of the data.
 
 |Examples |No restriction on public access.
 
-|Revision date |October 2024
+|Revision date |December 2025
 |===
 
 .Corresponding element in other standards...
@@ -95,6 +95,7 @@ Made mandatory, to conform to INSPIRE.
 accessConstraint making domain free text.
 . GEMINI 2.2 to 2.3: Change of encoding
 . GEMINI 2.3 June 2021 fixed typo in Guidance 6 (a) and (f)
+. GEMINI 2.3 December 2025 "data resource" -> "resource"
 ====
 
 .Encoding guidelines...

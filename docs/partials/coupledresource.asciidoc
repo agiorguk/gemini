@@ -18,10 +18,10 @@ optional for other service types.
 
 |Data type |CharacterString
 
-|Domain |Resource identifier or locator of the data resource
+|Domain |Resource identifier or locator of the resource
 
 |Guidance a|
-. Identify the data resources on which the service operates
+. Identify the resources on which the service operates
 . Enter the corresponding URL for the published data metadata record.
 This may be:
 * an OGC CSW GetRecordById request
@@ -31,7 +31,7 @@ This may be:
 
 |Examples |http://image2000.jrc.ec.europa.eu/#image2000_1_n12_multi
 
-|Revision date |March 2019
+|Revision date |December 2025
 |===
 
 .Corresponding element in other standards...
@@ -54,6 +54,7 @@ This may be:
 [%collapsible]
 ====
 GEMINI 1 to 2.0: New element, required for INSPIRE
+GEMINI 2.3 December 2025 "data resource" -> resource
 ====
 
 Encoding guidelines...

@@ -21,7 +21,7 @@ available
 
 |Data type |CharacterString
 
-|Domain |Valid URL
+|Domain |Valid absolute URL
 # tag::dataset[]
 |Guidance a|
 . Identify whether the resource may be accessed.
