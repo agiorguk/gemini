@@ -3,7 +3,7 @@
   <gmd:identificationInfo>
     <srv:SV_ServiceIdentification>
       ...
-      <srv:operatesOn xlink:href='http://mywaf.com/metadata/dataset.xml'/>
+      <srv:operatesOn xlink:href='http://mywaf.com/metadata/dataset.xml#id=file-uuid'/>
     </srv:SV_ServiceIdentification>
   </gmd:identificationInfo>
   ...
