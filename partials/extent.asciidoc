@@ -6,15 +6,14 @@ include::includes/partials-attributes.adoc[]
 |===
 |UK GEMINI id |15
 
-|Definition |Extent of data resource
+|Definition |Extent of resource
 
 |Purpose and meaning |This element defines the geographical extent of
-coverage of the data resource relative to an administrative hierarchy.
+coverage of the resource relative to an administrative hierarchy.
 It enables searches to be carried out to find data relevant to the area
 of interest. Extent polygons can be implied through reference to an
-external gazetteer. Note that Extent is the coverage of the data
-resource, not the individual objects in the data resource. Thus if the
-data resource was national parks in England, the Extent would be
+external gazetteer. Note that Extent is the coverage of the resource, not the individual objects in the resource. Thus if the
+resource was national parks in England, the Extent would be
 'England', even though many parts of England do not have National Parks.
 
 |Obligation |Optional
@@ -30,7 +29,7 @@ The class comprises two elements:
 * Code identifying the extent
 
 |Guidance a|
-. An area approximating to the extent of coverage of the data resource
+. An area approximating to the extent of coverage of the resource
 should be chosen. Where the extent does not coincide with any defined
 area or areas, then either the nearest equivalent including the area of
 coverage, or a set of multiple areas that make up the coverage should be
@@ -45,16 +44,10 @@ Britain if it only covers England and Wales).
 * England
 * East Anglia
 * The Wash
-* http://data.os.uk/id/7000000000041546 Central Scotland, using OS
-linked data as a gazetteer
-* https://local-authority-eng.register.gov.uk/record/GLA, Greater London
-Authority, using GDS "Local authorities in England" as a controlled list
 * http://vocab.nerc.ac.uk/collection/C64/current/5/, Irish Sea, in the
 NERC Vocabulary "C64, United Kingdom Charting Progress 2 sea regions"
-* http://statistics.data.gov.uk/id/statistical-geography/E09000011, Royal 
-Borough of Greenwich ONS Output Area
 
-|Revision date |August 2010
+|Revision date |December 2025
 |===
 
 .Corresponding element in other standards...
@@ -90,6 +83,7 @@ EX_GeographicExtent > EX_ GeographicDescription.geographicIdentifier
 [%collapsible]
 ====
 GEMINI 1 to 2.0: Made optional
+GEMINI 2.3 December 2025: "data resource" -> "resource" and removed non-working examples
 ====
 
 .Encoding guidelines...

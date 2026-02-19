@@ -10,7 +10,7 @@ include::includes/partials-attributes.adoc[]
 applies
 
 |Purpose and meaning |To enable data quality to be reported on a subset
-of the data resource
+of the resource
 
 |Obligation |Mandatory
 # tag::dataset[]
@@ -43,7 +43,7 @@ records, to assist in managing related metadata records.
 
 |Examples |
 
-|Revision date |March 2019
+|Revision date |December 2025
 |===
 
 .Corresponding element in other standards...
@@ -75,7 +75,8 @@ the whole resource
 .Change history...
 [%collapsible]
 ====
-New element in GEMINI 2.3
+. New element in GEMINI 2.3
+. GEMINI 2.3 December 2025: "data resource" -> "resource"
 ====
 
 .Encoding guidelines...

@@ -15,8 +15,7 @@ specification or user requirements
 
 *aggregated AQL*
 
-acceptable quality level for aggregated results from a number of tests,
-e.g. 100% correct
+acceptable quality level for aggregated results from a number of tests, e.g. 100% correct
 
 *Coordinate Reference System*
 [#C]
@@ -32,7 +31,7 @@ Coordinate Reference System
 Catalogue Services for the{nbsp}Web. Http protocol request/respond binding
 for OGC Catalogue Service.
 
-Note: see{nbsp}http://www.opengeospatial.org/standards/specifications/catalog
+Note: see http://www.opengeospatial.org/standards/specifications/catalog
 
 *Data Provider*
 [#D]
@@ -48,7 +47,7 @@ obligation under the INSPIRE regulations.
 the organisation that publishes the data on the web and supplies data
 services to data users
 
-*data resource*
+*resource*
 
 dataset, collection of datasets or service supplying data
 
@@ -63,16 +62,15 @@ scale map series [ISO 19115]
 
 *discovery metadata*
 
-information about a data or service resource, used to discover and
+information about a resource, used to discover and
 access its suitability for sharing or re-use.
 
 *DMS*
 
 Discovery Metadata Service.
 
-Note: one of a number of business services associated with the UK
-Location Information Infrastructure. Implemented by the CSW interface
-at{nbsp}http://csw.data.gov.uk/geonetwork/srv/en/main.home[http://csw.data.gov.uk/geonetwork/]
+Note: one of a number of business services developed for the UK
+Location Information Infrastructure. Now embedded within data.gov.uk
 
 *domain*
 
@@ -84,7 +82,7 @@ Document Type Definition
 
 Note: DTD is an XML schema language which defines the legal building
 blocks of an XML document. It is not relevant in the context of GEMINI2
-metadata instances where{nbsp}_XSD_{nbsp}schemas are used to define the structure
+metadata instances where _XSD_ schemas are used to define the structure
 of XML documents.
 
 *EDEN*
@@ -128,7 +126,7 @@ see{nbsp}http://www.eionet.europa.eu/gemet
 
 the UK discovery metadata profile of ISO 19115.
 
-Note: in this document the term GEMINI2 means version 2.2 of UK GEMINI.
+Note: in this document the term GEMINI2 means version 2.3 of UK GEMINI.
 
 *geographic identifier*
 
@@ -145,7 +143,7 @@ resolution in terms of density or frequency
 *INSPIRE*
 [#I]
 
-infrastructure for Spatial Information in Europe
+Infrastructure for Spatial Information in Europe
 
 *ISO*
 
@@ -153,12 +151,12 @@ International Organisation for Standardisation
 
 *ISO/TC 211*
 
-The committee is responsible for standards such as ISO 19115, ISO 19136
+The committee responsible for standards such as ISO 19115, ISO 19136
 and ISO 19139.
 
 Notes: ISO Technical Committee 211 is responsible for standardisation in
 the field of digital geographic information. The home page of ISO / TC
-211 is{nbsp}http://www.isotc211.org/
+211 is https://committee.iso.org/home/tc211
 
 *location*
 [#L]
@@ -172,20 +170,18 @@ data about data [ISO 19115]
 
 *metadatabase*
 
-collection of metadata about a set of data resources
+collection of metadata about a set of resources
 
 *metadata element*
 
-individual item of metadata relating to a data resource, e.g. Extent,
-Topic
+individual item of metadata relating to a resource, e.g. Extent, Topic
 
 *metadata instance*
 
 physically instantiated metadata.
 
 Note: in the context of this document a metadata instance will be
-an{nbsp}_XML document_{nbsp}conforming to ISO / TS 19139 and other associated
-standards.
+_XML document_ conforming to ISO / TS 19139 and other associated standards.
 
 *metadata item*
 
@@ -200,7 +196,7 @@ service that supplies information about data resources
 
 *metadataset*
 
-identifiable set of metadata relating to a single data resource
+identifiable set of metadata relating to a single resource
 
 *OGC*
 [#O]
@@ -225,7 +221,7 @@ particular application
 *quality assessment*
 [#Q]
 
-review of quality of a data resource
+review of quality of a resource
 
 *quality assurance*
 
@@ -262,24 +258,8 @@ Spatial Reference System.
 
 Note: a system for specifying position in the real world [ISO 19112]
 
-*UK Information Infrastructure*
-[#U]
-
-Infrastructure for the publication of location information as part of
-the implementation of the UK Location Strategy.{nbsp} Incorporates the UK
-member state implementation of INSPIRE.
-
-*UK Location Coordination Unit*
-
-legal entity for the day-to-day coordination and management of the UK
-Location Information Infrastructure and the UK member state element of
-INSPIRE.
-
-*UKLII*
-
-UK Location Information Infrastructure
-
 *universe of discourse*
+[#U]
 
 view of the real or hypothetical world that includes everything of
 interest
@@ -353,7 +333,7 @@ at{nbsp}http://www.w3.org/TR/REC-xml/
 
 a collection of data represented in XML
 
-*XML parser{nbsp}*
+*XML parser*
 
 software component responsible for reading an XML document and dividing
 it into individual elements and attributes.

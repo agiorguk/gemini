@@ -5,7 +5,7 @@ include::includes/partials-attributes.adoc[]
 |===
 |UK GEMINI id |7
 
-|Definition |Date for the content of the data resource
+|Definition |Date for the content of the resource
 
 |Purpose and meaning |This is the date or date range that identifies the
 currency of the data. It may refer to the period of collection, or the
@@ -38,14 +38,14 @@ left blank to indicate uncertainty.
 . The coarsest resolution allowable is 'year'.
 
 |Comment a|
-. If the data resource relates to a historic period, then this is part
+. If the resource relates to a historic period, then this is part
 of the subject, e.g. 'cretaceous period'. In this case the date is the
 date of discovery or observation.
 . This element should not be confused with Dataset reference date which
-is an identifying date for the data resource.
+is an identifying date for the resource.
 . Temporal extent is the date of the validity of the data and is
 different from link:#8[Dataset reference date] which is an identifying
-date for the data resource. For example, an atlas might represent data
+date for the resource. For example, an atlas might represent data
 collected up to the end of one year, but have a reference date of the
 following year.
 
@@ -57,7 +57,7 @@ following year.
 * 2000/
 * 19
 
-|Revision date |May 2018
+|Revision date |December 2025
 |===
 
 .Corresponding element in other standards...
@@ -87,8 +87,8 @@ optional if another temporal reference is provided.
 [%collapsible]
 ====
 . GEMINI 1 to 2.0: Name changed from Date
-. GEMINI 2.1 to 2.2: Coarsest resolution changed from 'century' to
-'year'
+. GEMINI 2.1 to 2.2: Coarsest resolution changed from 'century' to 'year'
+. GEMINI 2.3 December 2025: "data resource" -> "resource"
 ====
 
 .Encoding guidelines...

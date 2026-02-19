@@ -8,10 +8,10 @@ include::includes/partials-attributes.adoc[]
 
 |Definition |Identifier, name or description of the system of spatial
 referencing, whether by coordinates or geographic identifiers, used in
-the data resource
+the resource
 
 |Purpose and meaning |The purpose of this element is to identify the way
-in which the data is spatially referenced in the data resource. This may
+in which the data is spatially referenced in the resource. This may
 be by coordinates (e.g. the National Grid of Great Britain) or
 geographic identifiers (e.g. unit postcodes).
 
@@ -34,7 +34,7 @@ Default Coordinate Reference Systems
 |Guidance a|
 . For each spatial reference system
 * Identify the spatial reference systems used to spatially reference the
-data in the data resource;
+data in the resource;
 * Check if the spatial reference system is listed in Annex D.4 (Default
 Coordinate Reference Systems) of the INSPIRE
 https://inspire.ec.europa.eu/Technical-Guidelines2/Metadata/[Metadata
@@ -57,12 +57,12 @@ coordinate, and unit postcodes are added as an attribute, then it is
 'National Grid of Great Britain').
 
 |Comment a|
-. Note that the data resource may be supplied in a range of other
+. Note that the resource may be supplied in a range of other
 reference systems in addition to that in which it is recorded.
 
 |Examples |British National Grid
 
-|Revision date |March 2019
+|Revision date |December 2025
 |===
 
 .Corresponding element in other standards...
@@ -89,8 +89,9 @@ RS_Identifier.code |Equivalent
 .Change history...
 [%collapsible]
 ====
-GEMINI 1 to 2.0: Changed from enumerated list +
+. GEMINI 1 to 2.0: Changed from enumerated list +
 October 2023: clarifications to Guidance, to align with slight revision of INSPIRE TG
+. GEMINI 2.3 December 2025: "data resource" -> "resource"
 ====
 
 .Encoding guidelines...

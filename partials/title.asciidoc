@@ -22,14 +22,10 @@ readily recognisable name for the resource.
 
 |Guidance a|
 . The name should be readily recognisable
-. The title should be the formal or product name for the data resource,
-if existing.
+. The title should be the formal or product name for the resource, if existing.
 . If no name exists, then a title should be created that is short,
-encapsulates the subject, temporal and spatial coverage of the data
-resource, and does not contain terms or jargon that make it
-incomprehensible.
-. Acronyms are acceptable in the Title providing they are fully expanded
-in the abstract or Alternative Title.
+encapsulates the subject, temporal and spatial coverage of the resource, and does not contain terms or jargon that make it incomprehensible.
+. Acronyms are acceptable in the Title providing they are fully expanded in the abstract or Alternative Title.
 
 |Comment |
 
@@ -37,7 +33,7 @@ in the abstract or Alternative Title.
 * OS MasterMap Topography Layer
 * Voter participation in Liverpool local elections, 1994, by ward
 
-|Revision date |March 2019
+|Revision date |December 2025
 |===
 
 .Corresponding element in other standards...
@@ -58,7 +54,7 @@ in the abstract or Alternative Title.
 .Change history...
 [%collapsible]
 ====
-No error information available
+December 2025: "data resource" -> "resource"
 ====
 
 .Encoding guidelines...
@@ -92,3 +88,4 @@ include::../snippets/service-title.xml[]
 ====
 No error information available
 ====
+

@@ -18,9 +18,8 @@ and series |Service |Revision date
 
 |4 |Abstract |Mandatory |Single |✓ |✓ |March 2019
 
-|5 |Topic Category |Mandatory when the data resource is a dataset or
-dataset series. Not applicable to services. |Multiple |✓ |n/a |March
-2019
+|5 |Topic Category |Mandatory when the resource is a dataset or
+dataset series. Not applicable to services. |Multiple |✓ |n/a |December 2025
 
 |6 |Keyword |Mandatory |Multiple |✓ |✓ |May 2019
 
