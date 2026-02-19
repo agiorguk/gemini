@@ -378,7 +378,7 @@ tool, that fully supports the encoding requirements defined in
 xref:1047-metadata-guidelines-for-geospatial-data-resources-part-3#ref28[28]
 and uses the UK Location XSD and Schematron schemas
 xref:1047-metadata-guidelines-for-geospatial-data-resources-part-3#ref28[28],xref:1047-metadata-guidelines-for-geospatial-data-resources-part-3#ref30[30],
-to ensure that your metadata is fully compliant with UKL and INSPIRE
+to ensure that your metadata is fully compliant with UK Location and INSPIRE
 requirements.*
 
 GEMINI 2.3 metadata is encoded in XML, as described in
@@ -447,6 +447,17 @@ one giving the URL of an OGC web service ‘GetCapabilities request’,
 e.g.service=WMS&amp;request=GetCapabilities&amp;, or the location of
 further information about a service.
 |===
+
+==== 3.1.4 Validation against Gemini 2.3
+
+When harvesting Gemini 2.3 records to the DMS it is important that the correct configuration
+is used in the harvest settings. Specifically, in the *harvest Configuration* settings, the following
+json must be included:
+
+[source,json]
+----
+{"validator_profiles": ["iso19139eden", "constraints-1.4", "gemini2-3"]}
+----
 
 === 3.2 Data Provider Licence information
 [#DataProvider_Licence]
