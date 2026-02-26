@@ -59,15 +59,15 @@ implementation], April 2007
 |[[ref21]]21|ISO (and national standards bodies), https://www.iso.org/standard/40874.html[ISO 8601:2004 Data elements and interchange formats – Information interchange – Representation of dates and times], December 2012
 |[[ref22]]22|Ordnance Survey, https://data.ordnancesurvey.co.uk/[Ordnance Survey Linked Data Platform]
 |[[ref23]]23|AGI, https://www.agi.org.uk/wp-content/uploads/2020/11/GEMINI2.2.pdf[UK GEMINI2 Standard Version 2.2], August 2010
-|[[ref25]]25|UK Location, https://data.gov.uk/sites/default/files/Coordinate Reference Systems for UK Location - INSPIRE View Servicev1.1_10.pdf[Coordinate Reference Systems for UK Location], December 2012
-|[[ref26]]26|UK Location, https://data.gov.uk/sites/default/files/DMS%20Operational%20Guide%202-2_10.pdf[Discovery Metadata Service Collection Interface
+|[[ref25]]24|UK Location, https://data.gov.uk/sites/default/files/Coordinate Reference Systems for UK Location - INSPIRE View Servicev1.1_10.pdf[Coordinate Reference Systems for UK Location], December 2012
+|[[ref26]]25|UK Location, https://data.gov.uk/sites/default/files/DMS%20Operational%20Guide%202-2_10.pdf[Discovery Metadata Service Collection Interface
 Specification], February 2013
-|[[ref27]]27 |UK Location, https://data.gov.uk/location/guidance_and_tools[Getting started - series of guides]
-|[[ref28]]28 |UK Location, https://data.gov.uk/sites/default/files/UK%20GEMINI%20Encoding%20Guidance%201.4_10.pdf[UK
+|[[ref27]]26 |UK Location, https://data.gov.uk/location/guidance_and_tools[Getting started - series of guides]
+|[[ref28]]27 |UK Location, https://data.gov.uk/sites/default/files/UK%20GEMINI%20Encoding%20Guidance%201.4_10.pdf[UK
 GEMINI Encoding Guidance&#44; Version 1.4], February 2013
-|[[ref29]]29|UK Location, http://data.gov.uk/library/uk-gemini-schematron-schema-technical-guidance[UK GEMINI Schematron Schema Guidance], January 2013
-|[[ref30]]30|UK Location, UK GEMINI Schematron Schema Version 1.3, January 2013
-|[[ref31]]31|UK Location, User Guide: Administrators and Editors
+|[[ref29]]28|UK Location, http://data.gov.uk/library/uk-gemini-schematron-schema-technical-guidance[UK GEMINI Schematron Schema Guidance], January 2013
+|[[ref30]]29|UK Location, UK GEMINI Schematron Schema Version 1.3, January 2013
+|[[ref31]]30|UK Location, User Guide: Administrators and Editors
 |===
 
 _Last updated: {docdate}_
