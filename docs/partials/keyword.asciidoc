@@ -27,20 +27,17 @@ This class comprises the following elements:
 
 . Keyword value (mandatory)
 . Keyword type
-. Originating controlled vocabulary (conditional - if keywords originate
-from a controlled vocabulary)
+. Originating controlled vocabulary (conditional - if keywords originate from a controlled vocabulary)
 
 These are specified as follows:
 
-[width="100%",cols="34%,33%,33%",options="header",]
+[width="100%",cols="25%,25%,25%,25%",options="header",]
 !===
 ! !Keyword value !Keyword type !Originating controlled vocabulary
 !Definition !topic of the content of the resource !identifies and groups keywords with a particular purpose !name of the
-formally registered thesaurus or a similar authoritative source of
-keywords
+formally registered thesaurus or a similar authoritative source of keywords
 
-!Obligation !mandatory !optional !conditional - required if keywords originate
-from a controlled vocabulary
+!Obligation !mandatory !optional !conditional - required if keywords originate from a controlled vocabulary
 
 !Occurrence !multiple !single !single
 
@@ -71,7 +68,6 @@ communities may need to create their own lists of subject areas.
 these may come from more than one originating controlled vocabulary.
 . Keyword type is used to identify the purpose of the keyword and group keywords with a similar purpose
 . Keyword type takes a value from https://def.isotc211.org/common/KeywordTypeCode
-.
 
 |Comment |This element is similar to Topic Category, but allows a
 broader range of values. Avoid keywords of type 'place'; use #15 Extent instead
