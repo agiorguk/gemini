@@ -26,6 +26,7 @@ Keyword allows more appropriate terms to describe the resource.
 This class comprises the following elements:
 
 . Keyword value (mandatory)
+. Keyword type
 . Originating controlled vocabulary (conditional - if keywords originate
 from a controlled vocabulary)
 
@@ -33,21 +34,21 @@ These are specified as follows:
 
 [width="100%",cols="34%,33%,33%",options="header",]
 !===
-! !Keyword value !Originating controlled vocabulary
-!Definition !topic of the content of the resource !name of the
+! !Keyword value !Keyword type !Originating controlled vocabulary
+!Definition !topic of the content of the resource !identifies and groups keywords with a particular purpose !name of the
 formally registered thesaurus or a similar authoritative source of
 keywords
 
-!Obligation !mandatory !conditional - required if keywords originate
+!Obligation !mandatory !optional !conditional - required if keywords originate
 from a controlled vocabulary
 
-!Occurrence !multiple !single
+!Occurrence !multiple !single !single
 
-!Data type !CharacterString !Class CI_Citation (from ISO19115)
+!Data type !CharacterString !Code list !Class CI_Citation (from ISO19115)
 
-!Domain !free text !
+!Domain !free text !ISO/TC 211 Keyword type code!
 
-!Other Comments !- !a default value will generally be assigned for this
+!Other Comments !- !Available at  https://def.isotc211.org/common/KeywordTypeCode !a default value will generally be assigned for this
 !===
 
 |Guidance a|
@@ -68,9 +69,12 @@ acceptable within the Keyword element.
 communities may need to create their own lists of subject areas.
 . Multiple keywords may be stored in an individual metadata record, and
 these may come from more than one originating controlled vocabulary.
+. Keyword type is used to identify the purpose of the keyword and group keywords with a similar purpose
+. Keyword type takes a value from https://def.isotc211.org/common/KeywordTypeCode
+.
 
 |Comment |This element is similar to Topic Category, but allows a
-broader range of values.
+broader range of values. Avoid keywords of type 'place'; use #15 Extent instead
 
 |Examples a|
 * Land cover, General Environmental Multi-Lingual Thesaurus (GEMET)
@@ -110,6 +114,7 @@ broader range of values.
 . GEMINI 1 to 2.0: Change of name from 'Subject'
 . GEMINI 2.0 to 2.1: expansion to include keyword value and originating controlled vocabulary
 . GEMINI 2.3 December 2025: "data resource" -> "resource"
+. GEMINI 2.3 March 2026: add sub element Keyword type
 ====
 
 .Encoding guidelines...
@@ -148,6 +153,7 @@ use gco:CharacterString for terms from controlled vocabularies
 . Recommended best practice is to select a human readable value from a
 controlled vocabulary. An example from the Marine Geospatial community
 is http://seadatanet.maris2.nl/v_bodc_vocab_v2/search.asp?lib=P02
+. Keyword type is only populated in Example 2
 // end::dataset[]
 // tag::service[]
 . The GEMINI2 keyword item comprises keyword value(s) and, conditionally, the specification of an originating controlled vocabulary. If keywords are not selected from a controlled vocabulary the encoding shown in Example One shall be used.
