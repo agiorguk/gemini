@@ -77,7 +77,7 @@ broader range of values. Avoid keywords of type 'place'; use #15 Extent instead
 * Gazetteer service, General Environmental Multi-Lingual Thesaurus
 (GEMET)
 
-|Revision date |December 2025
+|Revision date |March 2026
 |===
 
 .Corresponding element in other standards...
