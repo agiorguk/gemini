@@ -76,18 +76,17 @@ GEMINI 1 to 2.0: New element
 include::../snippets/equivalentscale.xml[]
 ----
 # end::dataset[]
+
 # tag::service[]
 |Guidelines
-|
-* For services, it is not possible to express the restriction of a
-service concerning the spatial resolution when using the ISO 19139 XML
-Schema.
-* It shall be expressed in the Abstract.
-* The spatial resolution restriction text shall include either an
-equivalent scale as integer valued scale denominator or a resolution
-distance using a numerical length value and with a unit of length.
+|* For services, it is not possible to express the restriction of a
+  service concerning the spatial resolution when using the ISO 19139 XML
+  Schema.
+  * It shall be expressed in the Abstract.
+  * The spatial resolution restriction text shall include either an
+    equivalent scale as integer valued scale denominator or a resolution
+    distance using a numerical length value and with a unit of length.
 # end::service[]
-|
 |===
 ====
 
