@@ -8,6 +8,11 @@
           <gmd:keyword>
             <gmx:Anchor xlink:href='http://inspire.ec.europa.eu/theme/mf'>Meteorological geographical features</gmx:Anchor>
           </gmd:keyword>
+          <gmd:type>
+            <gmd:MD_KeywordTypeCode codeList="https://def.isotc211.org/common/KeywordTypeCode" codeListValue="theme">
+              <gmx:Anchor xlink:href="https://def.isotc211.org/common/KeywordTypeCode/theme" xlink:title="theme">theme</gmx:Anchor>
+            </gmd:MD_KeywordTypeCode>
+          </gmd:type>
           <gmd:thesaurusName>
             <gmd:CI_Citation>
               <gmd:title>
