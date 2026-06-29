@@ -448,11 +448,11 @@ e.g.service=WMS&amp;request=GetCapabilities&amp;, or the location of
 further information about a service.
 |===
 
-==== 3.1.4 Validation against Gemini 2.3
+==== 3.1.4 Validation against GEMINI 2.3
 
-When harvesting Gemini 2.3 records to the DMS it is important that the correct configuration
+When harvesting GEMINI 2.3 records to the DMS, it is important that the correct configuration
 is used in the harvest settings. Specifically, in the *harvest Configuration* settings, the following
-json must be included:
+JSON must be included:
 
 [source,json]
 ----
