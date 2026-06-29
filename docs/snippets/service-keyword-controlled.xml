@@ -6,8 +6,30 @@
       <gmd:descriptiveKeywords>
         <gmd:MD_Keywords>
           <gmd:keyword>
-            <gco:CharacterString>humanCatalogueViewer</gco:CharacterString>
-          </gmd:keyword>
+    <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceCategory/humanCatalogueViewer">
+      humanCatalogViewer
+    </gmx:Anchor>
+  </gmd:keyword>
+  <gmd:thesaurusName>
+    <gmd:CI_Citation>
+      <gmd:title>
+        <gco:CharacterString>
+          COMMISSION REGULATION (EC) No 1205/2008 of 3 December 2008 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards metadata, Part D 4, Classification of Spatial Data Services
+        </gco:CharacterString>
+      </gmd:title>
+      <gmd:date>
+        <gmd:CI_Date>
+          <gmd:date>
+            <gco:date>2008-12-03</gco:date>
+          </gmd:date>
+          <gmd:dateType>
+            <gmd:CI_DateTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">
+            </gmd:CI_DateTypeCode>
+          </gmd:dateType>
+        </gmd:CI_Date>
+      </gmd:date>
+    </gmd:CI_Citation>
+  </gmd:thesaurusName>
         </gmd:MD_Keywords>
       </gmd:descriptiveKeywords>
       <gmd:descriptiveKeywords>
