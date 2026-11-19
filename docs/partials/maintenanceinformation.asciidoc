@@ -36,7 +36,7 @@ maintaining the resource
 
 !Obligation !Mandatory !Optional !Optional
 
-!Occurence !single !single !single
+!Occurrence !single !single !single
 
 !Domain !Maintenance frequency code (ISO 19115) !Scope code (ISO 19115)
 !free text

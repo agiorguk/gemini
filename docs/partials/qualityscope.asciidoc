@@ -82,12 +82,12 @@ the whole resource
 |
 # tag::dataset[]
 All gmd:dataQualityInfo XML element shall have a gmd:scope XML element,
-set to as appropriate.
+set to 'dataset' or 'series' as appropriate.
 
 There shall be exactly one gmd:dataQualityInfo/gmd:DQ_DataQuality
 element scoped to the entire described data set or data set series. This
 shall contain the Conformity and Lineage elements, and any Quality
-measures that relate to the the entire dataset or series
+measures that relate to the entire dataset or series
 
 Other quality measures, e.g. for specific feature types, shall be
 separate DQ_DataQuality elements, with the relevant Quality scope. In
