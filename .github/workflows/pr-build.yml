@@ -1,0 +1,30 @@
+name: check build
+
+# Builds the pages for every pull request into dev or main, so problems
+# show up in review rather than after merge. Nothing is deployed.
+on:
+  pull_request:
+    branches:
+    - dev
+    - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Asciidoctor build (fails on warnings)
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      with:
+        persist-credentials: false
+    - name: Build pages
+      # --failure-level WARN turns Asciidoctor warnings and errors (broken
+      # tables, missing include files, bad include tags) into a failed check.
+      run: >-
+        docker run --rm -v "${{ github.workspace }}:/documents"
+        asciidoctor/docker-asciidoctor:1.108.1@sha256:0b75447cc4b616e18746a77cd2739ec4eedc0d2fb3d7e6db121a9dd2dd9dc078
+        asciidoctor --failure-level WARN -a docinfo1 -T docs/templates -E slim 'docs/*.asciidoc' 'docs/*.adoc'
