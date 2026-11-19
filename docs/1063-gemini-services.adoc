@@ -41,7 +41,7 @@ Return to link:1037-uk-gemini-introduction.html[GEMINI
 2.3 home page]
 
 '''''
-== Metadata about the resource
+== Metadata about the metadata record
 
 include::./partials/metadatadate.asciidoc[tag=!dataset]
 
