@@ -11,7 +11,7 @@
           <gmd:onLine>
             <gmd:CI_OnlineResource>
               <gmd:linkage>
-                <gmd:URL>https://services.bgr.de/wms/geologie/emodnet2_prequaternary_seafloor_geology/?REQUEST=GetCapabilities&SERVICE=WMS&</gmd:URL>
+                <gmd:URL>https://services.bgr.de/wms/geologie/emodnet2_prequaternary_seafloor_geology/?REQUEST=GetCapabilities&amp;SERVICE=WMS&amp;</gmd:URL>
               </gmd:linkage>
               ...
               <gmd:name>

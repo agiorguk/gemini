@@ -11,7 +11,7 @@
           <gmd:onLine>
             <gmd:CI_OnlineResource>
               <gmd:linkage>
-                <gmd:URL>http://ogc2.bgs.ac.uk/BGS_EMODNET/wcs?reQuest=GetCapabilities&servIce=WCSamp;</gmd:URL>
+                <gmd:URL>http://ogc2.bgs.ac.uk/BGS_EMODNET/wcs?reQuest=GetCapabilities&amp;servIce=WCS</gmd:URL>
               </gmd:linkage>
               ...
               <gmd:name>
