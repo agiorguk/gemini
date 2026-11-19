@@ -46,8 +46,12 @@ encapsulates the subject, temporal and spatial coverage of the resource, and doe
 
 |ISO 19115:2003|MD_Identification.citation > CI_Citation.title|Equivalent
 
-|ISO 19139:2007|[.dataset]/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:title
-[.service]/gmd:MD_Metadata/gmd:identificationInfo/srv:SV_ServiceIdentification/gmd:citation/gmd:CI_Citation/gmd:title|Equivalent
+# tag::dataset[]
+|ISO 19139:2007|/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:title|Equivalent
+# end::dataset[]
+# tag::service[]
+|ISO 19139:2007|/gmd:MD_Metadata/gmd:identificationInfo/srv:SV_ServiceIdentification/gmd:citation/gmd:CI_Citation/gmd:title|Equivalent
+# end::service[]
 |===
 ====
 
