@@ -65,7 +65,7 @@ Encoding guidelines...
 | Guidelines
 |
 . https://inspire.ec.europa.eu/documents/inspire-metadata-implementing-rules-technical-guidelines-based-en-iso-19115-and-en-iso-1[INSPIRE
-guidance] link:component/content/article?id=1047[[9]] states that
+guidance] link:1047-metadata-guidelines-for-geospatial-data-resources-part-3.html#ref9[[9]] states that
 Coupled resource shall be implemented by reference, i.e. through a URL
 that points to the metadata record of the data on which the service
 operates; a Coupled resource is implemented using XLinking.
@@ -83,7 +83,7 @@ instance, which may be:
 . The approach defined here follows
 https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-view-services-1[INSPIRE
 technical guidance for view services]
-link:component/content/article?id=1047[[16]] (see page 23 Implementation
+link:1047-metadata-guidelines-for-geospatial-data-resources-part-3.html#ref16[[16]] (see page 23 Implementation
 Requirement 14)
 . The obligation on coupled resource is conditional: it is mandatory (in
 INSPIRE metadata regulations and hence GEMINI2) if a linkage to the

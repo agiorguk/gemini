@@ -10,7 +10,7 @@ to link:1037-uk-gemini-introduction.html[GEMINI
 |Reference Number |Author, Title, Version, Date of publication
 
 | [[ref1]]1 |AGI,
-link:40-gemini/1052-metadata-guidelines-for-geospatial-data-resources-part-1.html[Metadata
+link:1052-metadata-guidelines-for-geospatial-data-resources-part-1.html[Metadata
 Guidelines for Geospatial Data Resources – Part 1&#44; Introduction],
 September 2010
 | [[ref2]]2|AGI,

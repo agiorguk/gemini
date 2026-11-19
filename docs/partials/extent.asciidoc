@@ -95,7 +95,7 @@ GEMINI 2.3 December 2025: "data resource" -> "resource" and removed non-working 
 |
 . The examples shown below use codes (URIs in URL form) from the
 http://data.os.uk[Ordnance Survey Linked Data]
-link:component/content/article?id=1047[[22]]
+link:1047-metadata-guidelines-for-geospatial-data-resources-part-3.html#ref22[[22]]
 http://data.os.uk/datasets/boundary-line[boundary data]. The code
 element can be used as a URL returning a page on the internet providing
 further information. The code in Example One, ending in

@@ -21,7 +21,7 @@ metadata
 
 |Guidance |The relevant version or edition number of the standard shall
 be given, with any profile version in brackets. +
-See also link:#57[Metadata standard name]
+See also link:#54[Metadata standard name]
 
 |Comment |This will be important when metadata is passed from one
 metadata system to another.

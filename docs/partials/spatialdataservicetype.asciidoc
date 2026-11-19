@@ -30,7 +30,7 @@ names to be used):
 |Guidance |Select generic type from list +
 These service types are explained in the
 https://inspire.ec.europa.eu/documents/inspire-metadata-implementing-rules-technical-guidelines-based-en-iso-19115-and-en-iso-1[INSPIRE
-guidance] link:component/content/article?id=1047[[9]].
+guidance] link:1047-metadata-guidelines-for-geospatial-data-resources-part-3.html#ref9[[9]].
 
 |Comment |Not applicable to datasets or dataset series.
 
