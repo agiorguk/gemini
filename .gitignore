@@ -1,5 +1,6 @@
 
+# Asciidoctor output, written next to the sources
 docs/**/*.html
-pending/
-.github/workflows/*.yml
+# ...except the docinfo files, which are hand-written and tracked
+!docs/docinfo*.html
 /.vscode
