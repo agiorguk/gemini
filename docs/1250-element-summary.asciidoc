@@ -10,49 +10,48 @@ to{nbsp}link:1037-uk-gemini-introduction.html[GEMINI
 |UK GEMINI id |Element name |Obligation |Number of occurrences |Dataset
 and series |Service |Revision date
 
-|1 |Title |Mandatory |Single |✓ |✓ |March 2019
+|1 |Title |Mandatory |Single |✓ |✓ |December 2025
 
-|2 |Alternative title |Optional |Multiple |✓ |✓ |April 2020
+|2 |Alternative title |Optional |Multiple |✓ |✓ |December 2025
 
-|3 |Dataset language |Mandatory |Multiple |✓ |n/a |September 2018
+|3 |Dataset language |Mandatory |Multiple |✓ |n/a |December 2025
 
-|4 |Abstract |Mandatory |Single |✓ |✓ |March 2019
+|4 |Abstract |Mandatory |Single |✓ |✓ |December 2025
 
 |5 |Topic Category |Mandatory when the resource is a dataset or
 dataset series. Not applicable to services. |Multiple |✓ |n/a |December 2025
 
-|6 |Keyword |Mandatory |Multiple |✓ |✓ |May 2019
+|6 |Keyword |Mandatory |Multiple |✓ |✓ |March 2026
 
 |7 |Temporal extent |Mandatory for datasets and dataset series |Multiple
-|✓ |✓ |May 2018
+|✓ |✓ |December 2025
 
-|8 |Dataset reference date |Mandatory |Multiple |✓ |✓ |March 2019
+|8 |Dataset reference date |Mandatory |Multiple |✓ |✓ |December 2025
 
-|10 |Lineage |Mandatory |Single |✓ |n/a |March 2019
+|10 |Lineage |Mandatory |Single |✓ |n/a |December 2025
 
-|15 |Extent |Optional |Multiple |✓ |✓ |August 2010
+|15 |Extent |Optional |Multiple |✓ |✓ |December 2025
 
-|16 |Vertical extent information |Optional |Multiple |✓ |✓ |March 2019
+|16 |Vertical extent information |Optional |Multiple |✓ |✓ |December 2025
 
 |17 |Spatial reference system |At least one coordinate reference system
-shall be given |Multiple |✓ |✓ |March 2019
+shall be given |Multiple |✓ |✓ |December 2025
 
 |18 |Spatial resolution |Conditional - where a resolution distance can
-be specified |Multiple |✓ |✓ |March 2019
+be specified |Multiple |✓ |✓ |December 2025
 
 |19 |Resource locator |Conditional - Must be supplied when online access
 is available |Multiple |✓ |✓ |July 2009
 
-|21 |Data format |Mandatory |Multiple |✓ |n/a |March 2019
+|21 |Data format |Mandatory |Multiple |✓ |n/a |December 2025
 
-|23 |Responsible organisation |Mandatory |Multiple |✓ |✓ |July 2009
+|23 |Responsible organisation |Mandatory |Multiple |✓ |✓ |December 2025
 
-|25 |Limitations on public access |Mandatory |Multiple |✓ |✓ |January
-2020
+|25 |Limitations on public access |Mandatory |Multiple |✓ |✓ |December 2025
 
-|26 |Use constraints |Mandatory |Multiple |✓ |✓ |September 2018
+|26 |Use constraints |Mandatory |Multiple |✓ |✓ |December 2025
 
-|27 |Additional information |Optional |Single |✓ |n/a |October 2018
+|27 |Additional information |Optional |Single |✓ |n/a |June 2021
 
 |30 |Metadata date* |Mandatory |Single |✓ |✓ |May 2018
 
@@ -61,28 +60,27 @@ is available |Multiple |✓ |✓ |July 2009
 |35 |Metadata point of contact* |Mandatory |Multiple |✓ |✓ |July 2009
 
 |36 |Resource identifier |Mandatory for datasets and dataset series
-|Multiple |✓ |n/a |May 2018
+|Multiple |✓ |n/a |December 2025
 
 |37 |Spatial data service type |Mandatory |Single |n/a |✓ |July 2009
 
 |38 |Coupled resource |Conditional - mandatory for View and Download
-services, optional for other service types. |Multiple |n/a |✓ |March
-2019
+services, optional for other service types. |Multiple |n/a |✓ |February 2026
 
 |39 |Resource type* |Mandatory |Single |✓ |✓ |July 2009
 
-|41 |Conformity |Mandatory |Multiple |✓ |✓ |April 2020
+|41 |Conformity |Mandatory |Multiple |✓ |✓ |November 2023
 
 |43 |Equivalent scale |Optional |Multiple |✓ |✓ |July 2009
 
-|44 |Bounding box |Mandatory |Multiple |✓ |✓ |December 2012
+|44 |Bounding box |Mandatory |Multiple |✓ |✓ |December 2025
 
 |45 |File Identifier* |Mandatory |Single |✓ |✓ |March 2019
 
 |47 |Hierarchy level name* |Conditional, required when Resource type
 (ISO hierarchyLevel) is not "dataset". |Single |✓ |✓ |April 2020
 
-|48 |Quality scope |Mandatory |Multiple |✓ |✓ |March 2019
+|48 |Quality scope |Mandatory |Multiple |✓ |✓ |December 2025
 
 |49 |Parent identifier* |Optional |Single |✓ |✓ |May 2018
 
@@ -102,13 +100,13 @@ centrelines) for the network, otherwise optional |Multiple |✓ |n/a |May
 
 |54 |Metadata standard name* |Optional |Single |✓ |✓ |January 2020
 
-|55 |Metadata standard version* |Optional |Single |✓ |✓ |January 2020
+|55 |Metadata standard version* |Optional |Single |✓ |✓ |June 2021
 |===
 
 * indicates metadata on metadata
 
-Note. Element numbers 9, 11, 12, 13, 14, 20, 22, 28, 29, 31, 32, 40 and
-42 have been omitted because they were used to identify elements that
+Note. Element numbers 9, 11, 12, 13, 14, 20, 22, 24, 28, 29, 31, 32, 34,
+40, 42 and 46 have been omitted because they were used to identify elements that
 have now been deleted from the Standard, and have not been reallocated
 to avoid confusion.
 
