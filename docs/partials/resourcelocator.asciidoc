@@ -162,7 +162,7 @@ ISO 19115. Format information may not always be known in which case the
 encoding of the element gmd:MD_Format shown in Example One shall be
 used, following the
 https://inspire.ec.europa.eu/documents/inspire-metadata-implementing-rules-technical-guidelines-based-en-iso-19115-and-en-iso-1[INSPIRE
-guidance] link:component/content/article?id=1047[[9]]. If the format and
+guidance] link:1047-metadata-guidelines-for-geospatial-data-resources-part-3.html#ref9[[9]]. If the format and
 version values are known, then they should be given (see link:#21[Data
 format]).
 |Example one, showing only required linkage content (for a dataset)
@@ -197,8 +197,8 @@ ISO 19115. Format information may not always be known in which case the
 encoding of the element gmd:MD_Format shown in Example One shall be
 used, following the
 https://inspire.ec.europa.eu/documents/inspire-metadata-implementing-rules-technical-guidelines-based-en-iso-19115-and-en-iso-1[INSPIRE
-guidance] link:component/content/article?id=1047[[9]]. If the format and
-version values are known, then they should be given (see link:#21[Data
+guidance] link:1047-metadata-guidelines-for-geospatial-data-resources-part-3.html#ref9[[9]]. If the format and
+version values are known, then they should be given (see link:1062-gemini-datasets-and-data-series.html#21[Data
 format]).
 . GEMINI2 allows for a URL which is a link to a point of contact where
 more information is available or where the dataset can be downloaded.
@@ -209,7 +209,7 @@ a means of discriminating between a URL that is provided for information
 (code list value of 'information') and a URL that is the address used
 for downloading (code list value of 'download') the data.
 . The INSPIRE
-link:inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode[OnLineDescriptionCode]
+https://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode[OnLineDescriptionCode]
 provides a way of further distinguishing between access point URLs and
 end point URLs. Access points call an operation directly; end points
 list operations and their access points.

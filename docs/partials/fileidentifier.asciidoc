@@ -38,7 +38,7 @@ use curly brackets
 that it is a UUID
 
 |Comment |File Identifier should not be confused with the UK GEMINI2
-metadata item link:#36[Resource identifier], which identifies the data
+metadata item link:1062-gemini-datasets-and-data-series.html#36[Resource identifier], which identifies the data
 resource being described. +
 
 |Examples |
@@ -74,7 +74,7 @@ resource being described. +
 gmd:fileIdentifier. The content of this XML element is the identifier of
 the metadata instance. File identifier is not a metadata item of
 GEMINI2. It is not to be confused with the metadata item
-link:#36[Resource identifier].
+link:1062-gemini-datasets-and-data-series.html#36[Resource identifier].
 . The content of the XML element shall be a unique managed identifier,
 such as a system generated UUID. Once the identifier has been set for a
 metadata instance it shall not change.

@@ -52,19 +52,24 @@ The Working Group hasn't formally defined which parts of GEMINI are normative. R
 
 ## How the site is published
 
-The pages are written in [AsciiDoc](https://docs.asciidoctor.org/asciidoc/latest/) and converted to HTML with Asciidoctor by GitHub Actions:
+The pages are written in [AsciiDoc](https://docs.asciidoctor.org/asciidoc/latest/) and converted to HTML with Asciidoctor by GitHub Actions. The [`pages.yml`](.github/workflows/pages.yml) workflow publishes both branches as one GitHub Pages site:
 
-| Branch | Published at | Workflow |
-| --- | --- | --- |
-| `main` (live) | https://agiorguk.github.io/gemini/ | [`build-adocs.yml`](.github/workflows/build-adocs.yml) pushes the HTML to this repository's `gh-pages` branch |
-| `dev` (preview) | https://agiorguk.github.io/gemini-dev/ | [`dev-build.yml`](.github/workflows/dev-build.yml) pushes the HTML to the `gh-pages` branch of [agiorguk/gemini-dev](https://github.com/agiorguk/gemini-dev) |
+| Branch | Published at |
+| --- | --- |
+| `main` (live) | https://agiorguk.github.io/gemini/ |
+| `dev` (preview) | https://agiorguk.github.io/gemini/dev/ |
 
-Each takes a few minutes to appear after a push.
+A push to either branch rebuilds both, because each Pages deployment replaces the whole site. The site appears a few minutes after a push.
+
+The workflow does the same in a fork, so a fork's `dev` branch previews at `https://<your-account>.github.io/gemini/dev/`. To set it up in a fork, or in this repository:
+
+1. In **Settings → Pages → Build and deployment**, set **Source** to **GitHub Actions**.
+2. In **Settings → Environments → github-pages → Deployment branches and tags**, add `dev`. GitHub only allows `main` by default, so without this pushes to `dev` fail to deploy.
 
 ## Making changes
 
 1. Make changes on the `dev` branch, either directly or through a pull request into `dev`.
-2. Check the result on the preview site.
+2. Check the result on the [preview site](https://agiorguk.github.io/gemini/dev/).
 3. Open a pull request from `dev` into `main`. `main` is protected, so another member of the Working Group has to review it before it's merged and goes live.
 
 The wiki page [How the Gemini documentation is compiled](https://github.com/agiorguk/gemini/wiki/How-the-Gemini-documentation-is-compiled) walks through editing on GitHub and on your own computer.

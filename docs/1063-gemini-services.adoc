@@ -41,7 +41,7 @@ Return to link:1037-uk-gemini-introduction.html[GEMINI
 2.3 home page]
 
 '''''
-== Metadata about the resource
+== Metadata about the metadata record
 
 include::./partials/metadatadate.asciidoc[tag=!dataset]
 
@@ -61,7 +61,7 @@ include::./partials/metadatastandardname.asciidoc[tag=!dataset]
 
 include::./partials/metadatastandardversion.asciidoc[tag=!dataset]
 
-Go to <<UK GEMINI 2.3 2020-06-29 service, top of page>>
+Go to <<top, top of page>>
 
 == Metadata about the resource
 

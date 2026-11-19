@@ -43,7 +43,7 @@ of values) against a specified acceptable conformance quality level
 
 !Obligation !mandatory !optional !optional
 
-!Occurence !single !single !single
+!Occurrence !single !single !single
 
 !Data type !DQ_QuantitativeResult !DateTime !CharacterString
 
@@ -59,7 +59,7 @@ result !the data type of the result
 
 !Obligation !mandatory !mandatory !mandatory
 
-!Occurence !single !multiple !single
+!Occurrence !single !multiple !single
 
 !Data type !UnitOfMeasure !Record !RecordType
 
@@ -208,7 +208,7 @@ Other attributes of ISO 19115 DQ_Element may be included, e.g.:
 
 !Obligation !optional !optional
 
-!Occurence !single !single
+!Occurrence !single !single
 
 !Data type !DQ_EvaluationMethodTypeCode !free text
 

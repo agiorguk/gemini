@@ -12,7 +12,7 @@ include::includes/partials-attributes.adoc[]
 general subject area of the resource using keywords. This enables
 searches to eliminate resources that are of no interest. Ideally, a
 standardised set of keywords should be used, so that resources can be
-identified in any search. This element is similar to link:#5[Topic
+identified in any search. This element is similar to link:1062-gemini-datasets-and-data-series.html#5[Topic
 category], which has a coded list of high-level categories, whereas
 Keyword allows more appropriate terms to describe the resource.
 
@@ -137,7 +137,7 @@ GEMET INSPIRE themes, as illustrated in Example Two.
 . Examples Two and Three show how the GEMET INSPIRE themes and the GEMET
 concepts controlled vocabularies should be cited according to the
 https://inspire.ec.europa.eu/documents/inspire-metadata-implementing-rules-technical-guidelines-based-en-iso-19115-and-en-iso-1[INSPIRE
-guidance] link:component/content/article?id=1047[[9]].
+guidance] link:1047-metadata-guidelines-for-geospatial-data-resources-part-3.html#ref9[[9]].
 . Note that more than one keyword value may be selected from a single
 controlled vocabulary. Note also that keywords may be selected from more
 than one controlled vocabulary. In this case the encoding shown in

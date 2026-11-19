@@ -57,6 +57,20 @@ longer just be the century.
 
 === Editorial changes since the launch of GEMINI 2.3
 
+==== November 2026
+
+* link:1062-gemini-datasets-and-data-series.html#6[Keyword]: Added an optional Keyword type sub-element, taking a value from the ISO/TC 211 KeywordTypeCode code list, and advised against keywords of type 'place' (use Extent instead)
+* link:1062-gemini-datasets-and-data-series.html#2[Alternative title]: Clarified when to give an alternative title, and how to record abbreviations and acronyms
+* link:1063-gemini-services.html#38[Coupled resource]: Clarified the Web Accessible Folder (WAF) example, which now points to the dataset's MD_DataIdentification element
+* link:1063-gemini-services.html#6[Keyword (services)]: The example now cites the INSPIRE classification of spatial data services as a controlled vocabulary
+* link:1062-gemini-datasets-and-data-series.html#48[Quality scope]: Restored wording lost when the pages were converted: the scope is set to 'dataset' or 'series' as appropriate
+* link:1062-gemini-datasets-and-data-series.html#1[Title]: Each page now shows only its own ISO 19139 path
+* link:1250-element-summary.html[Element summary]: Updated revision dates to match the element pages, and completed the list of retired element numbers
+* The UK Location Operational Guide has been archived, and removed from the link:1047-metadata-guidelines-for-geospatial-data-resources-part-3.html[references]
+* Fixed XML examples that were not well-formed or not valid against the ISO 19139 schemas
+* Fixed broken links throughout, including links left over from the previous website
+* Fixed typos and headings
+
 ==== November 2025
 
 * link:1062-gemini-datasets-and-data-series.html#23[Responsible Organisation]: Updated guidance to indicate that the role should be a single occurrence, and to advise on use of individual names
@@ -75,8 +89,8 @@ longer just be the century.
 * link:1062-gemini-datasets-and-data-series.html#16[Vertical Extent-Datasets] and link:1063-gemini-services.html#16[Vertical Extent-Services] Updated link to EPSG registry
 * Updated pages throughout for consistent use of "resource" rather than "data" to avoid confusion in the guidance when referring to services
 * Updated link:1049-metadata-guidelines-for-geospatial-data-resources-part-2[Metadata Guidelines part 2] and link:1051-uk-gemini-v2-2-specification-for-discovery-metadata-for-geospatial-resources[UK Gemini v2.2 Specification for Discovery Metadata] to remove unnecessary duplication
-* link:1062-gemini-datasets-and-data-series/#23[Use Constraints]: Updated encoding guidance for consistency
-* link:1062-gemini-datasets-and-data-series/#19[Resource Locator]: Expanded and updated guidance on Function sub-element for clarification and to better match DCAT definition
+* link:1062-gemini-datasets-and-data-series.html#26[Use Constraints]: Updated encoding guidance for consistency
+* link:1062-gemini-datasets-and-data-series.html#19[Resource Locator]: Expanded and updated guidance on Function sub-element for clarification and to better match DCAT definition
 * Added "Metadata Standard Name" and "Metadata Standard Version" in link:1046-xml-element-order[XML Element Order]
 * link:1062-gemini-datasets-and-data-series.html#23[Responsible Party]: updated guidance on use of Individual Names
 * link:1063-gemini-services#8[Date of Publication- Services]: clarified guidance on multiplicity of resource reference dates
@@ -90,7 +104,7 @@ Fixed some editorial inconsistencies (https://github.com/agiorguk/gemini/issues/
 Fixed some broken links (https://github.com/agiorguk/gemini/issues/2)
 Fixed some typos (https://github.com/agiorguk/gemini/issues/8; https://github.com/agiorguk/gemini/issues/60)
 
-link:1037-uk-gemini-introduction.asciidoc[Introduction]
+link:1037-uk-gemini-introduction.html[Introduction]
 
 Simplified home page ("introduction" / "landing page") as requested by Geospatial Commission. 
 This included resolution of some specific requests for things to mention: https://github.com/agiorguk/gemini/issues/31; https://github.com/agiorguk/gemini/issues/58; https://github.com/agiorguk/gemini/issues/24
@@ -168,7 +182,7 @@ reasons, with a hyperlink to the register
 ==== March 2019
 
 Change
-to{nbsp}link:1048-uk-gemini-encoding-guidance#2.1,[1048-uk-gemini-encoding-guidance#2.1],{nbsp}to
+to{nbsp}link:1048-uk-gemini-encoding-guidance.html#_schemas[UK GEMINI Encoding Guidance, Schemas],{nbsp}to
 describe a wider choice of relevant XML Schema Definition Files (XSDs)
 that can be used to validate GEMINI instances.
 

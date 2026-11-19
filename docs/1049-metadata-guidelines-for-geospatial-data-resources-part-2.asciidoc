@@ -383,7 +383,7 @@ link:1062-gemini-datasets-and-data-series.html[GEMINI - Datasets and data series
 link:1063-gemini-services.html[GEMINI - Services]
 
 Each metadata element is listed separately, as described 
-in link:1051-uk-gemini-v2-2-specification-for-discovery-metadata-for-geospatial-resources.html#4.3[UK GEMINI Introduction].
+in link:1051-uk-gemini-v2-2-specification-for-discovery-metadata-for-geospatial-resources.html#_element_details[UK GEMINI Introduction].
 
 _Last updated: May 2018_
 

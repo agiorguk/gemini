@@ -5,6 +5,7 @@
       <gmd:citation>
         <gmd:CI_Citation>
           ...
+          <gmd:identifier>
             <gmd:MD_Identifier>
               <gmd:code>
                 <gmx:Anchor xlink:href='http://image2000.jrc.it#image2000_1_nl2_multi'>Image 2000 and Corine Land Cover 2000 Project</gmx:Anchor>

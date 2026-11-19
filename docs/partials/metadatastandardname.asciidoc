@@ -23,7 +23,7 @@ another.
 
 |Domain |Free text
 
-|Guidance |See also link:#58[Metadata standard version]
+|Guidance |See also link:#55[Metadata standard version]
 
 |Comment |In order to add a new metadata (profile) standard name to the
 NERC vocab server, contact GEMINI at AGI
