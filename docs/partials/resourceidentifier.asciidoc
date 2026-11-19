@@ -128,14 +128,14 @@ instance
 be added to the 'id' attribute of the gmd:MD_DataIdentification type.
 This follows the examples in the
 https://inspire.ec.europa.eu/documents/inspire-metadata-implementing-rules-technical-guidelines-based-en-iso-19115-and-en-iso-1[INSPIRE
-guidance] link:component/content/article?id=1047[[9]].
+guidance] link:1047-metadata-guidelines-for-geospatial-data-resources-part-3.html#ref9[[9]].
 . Care must be taken with the value of the id attribute code. The
 attribute 'id' has the data type xs:ID which must have as its value an
 XML name. This means that it cannot start with a number, and has a
 restricted set of characters it can include. This means that normally it
 cannot be an UUID or an URI. The id must also be unique across all id
 attributes in the metadata document
-. See notes on link:component/content/article?id=1048#2.2.12[XML
+. See notes on link:1048-uk-gemini-encoding-guidance.html#_identifiers[XML
 Identifiers].
 |Example One
 |

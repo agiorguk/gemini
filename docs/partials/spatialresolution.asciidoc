@@ -93,7 +93,7 @@ spatial resolution distance measurements shall be in metres. The value
 of the uom attribute shall be: urn:ogc:def:uom:EPSG::9001
 . This defines the unit of measure as metres by reference to the
 http://www.epsg-registry.org/[EPSG registry]
-link:component/content/article?id=1047[[12]].
+link:1047-metadata-guidelines-for-geospatial-data-resources-part-3.html#ref12[[12]].
 # end::dataset[]
 # tag::service[]
 . For services, it is not possible to express the restriction of a

@@ -75,8 +75,8 @@ longer just be the century.
 * link:1062-gemini-datasets-and-data-series.html#16[Vertical Extent-Datasets] and link:1063-gemini-services.html#16[Vertical Extent-Services] Updated link to EPSG registry
 * Updated pages throughout for consistent use of "resource" rather than "data" to avoid confusion in the guidance when referring to services
 * Updated link:1049-metadata-guidelines-for-geospatial-data-resources-part-2[Metadata Guidelines part 2] and link:1051-uk-gemini-v2-2-specification-for-discovery-metadata-for-geospatial-resources[UK Gemini v2.2 Specification for Discovery Metadata] to remove unnecessary duplication
-* link:1062-gemini-datasets-and-data-series/#23[Use Constraints]: Updated encoding guidance for consistency
-* link:1062-gemini-datasets-and-data-series/#19[Resource Locator]: Expanded and updated guidance on Function sub-element for clarification and to better match DCAT definition
+* link:1062-gemini-datasets-and-data-series.html#26[Use Constraints]: Updated encoding guidance for consistency
+* link:1062-gemini-datasets-and-data-series.html#19[Resource Locator]: Expanded and updated guidance on Function sub-element for clarification and to better match DCAT definition
 * Added "Metadata Standard Name" and "Metadata Standard Version" in link:1046-xml-element-order[XML Element Order]
 * link:1062-gemini-datasets-and-data-series.html#23[Responsible Party]: updated guidance on use of Individual Names
 * link:1063-gemini-services#8[Date of Publication- Services]: clarified guidance on multiplicity of resource reference dates
@@ -90,7 +90,7 @@ Fixed some editorial inconsistencies (https://github.com/agiorguk/gemini/issues/
 Fixed some broken links (https://github.com/agiorguk/gemini/issues/2)
 Fixed some typos (https://github.com/agiorguk/gemini/issues/8; https://github.com/agiorguk/gemini/issues/60)
 
-link:1037-uk-gemini-introduction.asciidoc[Introduction]
+link:1037-uk-gemini-introduction.html[Introduction]
 
 Simplified home page ("introduction" / "landing page") as requested by Geospatial Commission. 
 This included resolution of some specific requests for things to mention: https://github.com/agiorguk/gemini/issues/31; https://github.com/agiorguk/gemini/issues/58; https://github.com/agiorguk/gemini/issues/24
@@ -168,7 +168,7 @@ reasons, with a hyperlink to the register
 ==== March 2019
 
 Change
-to{nbsp}link:1048-uk-gemini-encoding-guidance#2.1,[1048-uk-gemini-encoding-guidance#2.1],{nbsp}to
+to{nbsp}link:1048-uk-gemini-encoding-guidance.html#_schemas[UK GEMINI Encoding Guidance, Schemas],{nbsp}to
 describe a wider choice of relevant XML Schema Definition Files (XSDs)
 that can be used to validate GEMINI instances.
 
