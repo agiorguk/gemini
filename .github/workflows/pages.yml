@@ -1,0 +1,134 @@
+name: Deploy pages
+
+# Publishes the site with GitHub Pages:
+#   main -> https://<owner>.github.io/gemini/      (live)
+#   dev  -> https://<owner>.github.io/gemini/dev/  (preview)
+#
+# A Pages deployment replaces the whole site, so every run builds both
+# branches and deploys them together, whichever branch was pushed.
+# This works the same in agiorguk/gemini and in any fork.
+#
+# One-off repository setup:
+#   1. Settings > Pages > Build and deployment > Source: GitHub Actions.
+#   2. Settings > Environments > github-pages > Deployment branches and
+#      tags: add "dev" alongside "main", so pushes to dev can deploy.
+
+on:
+  push:
+    branches:
+    - main
+    - dev
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# Run one deployment at a time, and let a running one finish. Each run
+# builds the latest main and dev, so a queued run still publishes both.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+env:
+  ASCIIDOCTOR_IMAGE: asciidoctor/docker-asciidoctor:1.108.1@sha256:0b75447cc4b616e18746a77cd2739ec4eedc0d2fb3d7e6db121a9dd2dd9dc078
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Build main and dev
+    outputs:
+      has_dev: ${{ steps.dev.outputs.exists }}
+    steps:
+    - name: Check out main
+      uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      with:
+        ref: main
+        path: main
+        persist-credentials: false
+
+    # Forks made with "copy the main branch only" have no dev branch.
+    - name: Look for a dev branch
+      id: dev
+      env:
+        GH_TOKEN: ${{ github.token }}
+      run: |
+        if gh api "repos/$GITHUB_REPOSITORY/branches/dev" --silent 2>/dev/null; then
+          echo "exists=true" >> "$GITHUB_OUTPUT"
+        else
+          echo "exists=false" >> "$GITHUB_OUTPUT"
+          echo "::notice::No dev branch, so the site will have no /dev/ preview."
+        fi
+
+    - name: Check out dev
+      if: steps.dev.outputs.exists == 'true'
+      uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      with:
+        ref: dev
+        path: dev
+        persist-credentials: false
+
+    - name: Build pages
+      run: |
+        set -euo pipefail
+        site="$RUNNER_TEMP/site"
+
+        # Convert one branch's docs/ to HTML and copy the folder to $2.
+        build() {
+          docker run --rm --user "$(id -u):$(id -g)" \
+            -v "$GITHUB_WORKSPACE/$1:/documents" "$ASCIIDOCTOR_IMAGE" \
+            asciidoctor -a docinfo1 -T docs/templates -E slim 'docs/*.asciidoc' 'docs/*.adoc'
+          mkdir -p "$2"
+          cp -R "$1/docs/." "$2/"
+          # Pages doesn't run Jekyll for Actions deployments, so README.md
+          # is no longer turned into a home page. Unless the branch builds
+          # its own index.html, send visitors to the introduction page.
+          if [ ! -e "$2/index.html" ]; then
+            printf '%s\n' \
+              '<!DOCTYPE html>' \
+              '<html lang="en">' \
+              '<head>' \
+              '<meta charset="utf-8">' \
+              '<title>UK GEMINI</title>' \
+              '<meta http-equiv="refresh" content="0; url=1037-uk-gemini-introduction.html">' \
+              '</head>' \
+              '<body><p><a href="1037-uk-gemini-introduction.html">UK GEMINI introduction</a></p></body>' \
+              '</html>' > "$2/index.html"
+          fi
+        }
+
+        build main "$site"
+        if [ -d dev ]; then
+          build dev "$site/dev"
+        fi
+
+    - name: Upload site
+      uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
+      with:
+        path: ${{ runner.temp }}/site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    name: Deploy to GitHub Pages
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+    - name: Deploy
+      id: deployment
+      uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1
+    - name: Summary
+      env:
+        PAGE_URL: ${{ steps.deployment.outputs.page_url }}
+        HAS_DEV: ${{ needs.build.outputs.has_dev }}
+      run: |
+        {
+          echo "Live (main): ${PAGE_URL%/}/"
+          if [ "$HAS_DEV" = "true" ]; then
+            echo
+            echo "Preview (dev): ${PAGE_URL%/}/dev/"
+          fi
+        } >> "$GITHUB_STEP_SUMMARY"
