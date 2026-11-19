@@ -31,7 +31,7 @@ This may be:
 
 |Examples |http://image2000.jrc.ec.europa.eu/#image2000_1_n12_multi
 
-|Revision date |December 2025
+|Revision date |February 2026
 |===
 
 .Corresponding element in other standards...

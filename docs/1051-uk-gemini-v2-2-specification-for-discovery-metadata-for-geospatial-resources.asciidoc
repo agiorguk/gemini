@@ -71,8 +71,8 @@ geospatial metadata service, _gigateway_. They were developed within the
 context of a national geospatial metadata service, and UK GEMINI. These
 Guidelines have now been updated to incorporate the changes made in the
 revised version of UK GEMINI, 2.3, and their content made available on
-the AGI website: link:1052-metadata-guidelines-for-geospatial-data-resources-part-1[Introduction to Metadata]; 
-parts of link:1049-metadata-guidelines-for-geospatial-data-resources-part-2[Creating metadata using GEMINI]; 
+the AGI website: link:1052-metadata-guidelines-for-geospatial-data-resources-part-1[Introduction to Metadata];
+parts of link:1049-metadata-guidelines-for-geospatial-data-resources-part-2[Creating metadata using GEMINI];
 material in Part 2 which was specific to particular elements has been moved to the element descriptions.
 
 This Standard is maintained by the AGI Standards Committee. Any feedback
@@ -145,10 +145,6 @@ specific guidance is designed to ensure that the metadata records work
 correctly with the national
 catalogue, https://data.gov.uk/[https://data.gov.uk]
 
-Guidance on transferring metadata records to the national catalogue are
-given
-at link:1054-operational-guide[Operational Guide].
-
 This Standard is applicable to data creators, data owners, data
 publishers and suppliers of metadata services. Although it is primarily
 designed for data resources held within the UK on a national basis, by
@@ -193,7 +189,7 @@ The metadata elements are listed in
 the link:1250-element-summary[summary table], which shows the metadata element names, their GEMINI element id
 (consistent with element numbers in previous versions of GEMINI), the
 obligation (whether their inclusion is mandatory, optional or
-conditional, and the number of possible occurrences of the element
+conditional), and the number of possible occurrences of the element
 (whether there may be many (N), or only one (1)), and whether the
 element is available for both data and services.
 

@@ -2,20 +2,20 @@
 include::includes/partials-attributes.adoc[]
 [#48]
 
-[width="100%",cols="50%,50%",]
+[width="100%",cols="50%,50%"]
 |===
 |UK GEMINI id |48
 
-|Definition |The specific data to which the data quality information
-applies
+|Definition |The specific data to which the data quality information applies
 
-|Purpose and meaning |To enable data quality to be reported on a subset
-of the resource
+|Purpose and meaning |To enable data quality to be reported on a subset of the resource
 
 |Obligation |Mandatory
+
 # tag::dataset[]
 |Occurrence |Multiple
 # end::dataset[]
+
 # tag::service[]
 |Occurrence |Single
 # end::service[]
@@ -23,26 +23,21 @@ of the resource
 |Data type |Class
 
 |Domain |DQ_Scope from ISO 19115
-# tag::dataset[]
-|Guidance a|
-. For the conformity statement and lineage of metadata describing:
-* a dataset, set quality scope to 'dataset'
-* a dataset series, set quality scope 'series'
-. If using a Data Quality element to describe something other than the
-whole dataset or series, then provide additional DQ_DataQuality elements
-with their Scope set appropriately
 
-|Comment |Required in the ISO 19115 encoding of GEMINI 2 metadata
-records, to assist in managing related metadata records.
+|Guidance a|
+# tag::dataset[]
+
+For the conformity statement and lineage of metadata describing:
+
+*  a dataset, set quality scope to 'dataset'
+*  a dataset series, set quality scope to 'series'
+
+If using a Data Quality element to describe something other than the whole dataset or series, then provide additional DQ_DataQuality elements with their Scope set appropriately
 # end::dataset[]
 # tag::service[]
-|Guidance |
-
-|Comment |
 # end::service[]
-
-|Examples |
-
+|Comment |Required in the ISO 19115 encoding of GEMINI 2 metadata records, to assist in managing related metadata records.
+|Example |
 |Revision date |December 2025
 |===
 
@@ -52,20 +47,19 @@ records, to assist in managing related metadata records.
 |===
 |Standard |Name |Comparison
 
-|INSPIRE Metadata
 # tag::dataset[]
-|metadata/2.0/req/datasets-and-series/one-data-quality-element |INSPIRE
-only allows a maximum of one Data quality element, so only one scope -
+|INSPIRE Metadata
+|metadata/2.0/req/datasets-and-series/one-data-quality-element
+|INSPIRE only allows a maximum of one Data quality element, so only one scope -
 the whole resource
 # end::dataset[]
 # tag::service[]
-|INSPIRE Metadata |metadata/2.0/req/sds/only-one-dq-element |INSPIRE
-only allows a maximum of one Data quality element, so only one scope -
+|INSPIRE Metadata
+|metadata/2.0/req/sds/only-one-dq-element
+|INSPIRE only allows a maximum of one Data quality element, so only one scope -
 the whole resource
 # end::service[]
-
 |ISO 19115:2003 |DQ_DataQuality.scope |Equivalent
-
 |ISO 19139:2007
 |/gmd:MD_Metadata/gmd:dataQualityInfo/gmd:DQ_DataQuality/gmd:scope
 |Equivalent
@@ -127,6 +121,8 @@ include::../snippets/service-qualityscope.xml[]
 No error information available
 # end::dataset[]
 # tag::service[]
+[cols="a,a"]
+|===
 |Errors observed |*No level description* +
 ISO 19115 requires that a 'level description' is given for any quality
 statement that is not describing the 'dataset' or 'series' level.
@@ -135,5 +131,6 @@ conformity. This means that any 'service' record must provide a
 gmd:DQ_Scope/gmd:levelDescription element, as shown above. +
 A similar rule applies to link:#47[hierarchyLevelName], which must be
 provided for any record that is not describing a dataset.
+|===
 # end::service[]
 ====

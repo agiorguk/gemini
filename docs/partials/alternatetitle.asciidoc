@@ -22,14 +22,16 @@ alternative titles by which the resource is known.
 
 |Guidance a|
 . Should be provided when the resource has more than one title.
+. Where the Title is a formal title, then use Alternative Title for a shorter
+or a more search-engine-friendly version.
 . There is no need to fill in this entry unless there are other names in use.
-. Commonly used abbreviations or acronyms should be recorded. If the
-acronym or abbreviation has been used in the main Title, then use the
-full name in the Alternative Title.
+. Abbreviations or acronyms not in common usage should be expanded, with
+the full name recorded in the Alternative Title. If an acronym or
+abbreviation has been used in the main Title, do not duplicate it here;
+use the full name in the Alternative Title instead.
 . Other language equivalents should be recorded where they exist, for
 example the Welsh language title (although this title may refer to a
 different resource).
-. Entries should be short and concise.
 
 |Comment |
 
