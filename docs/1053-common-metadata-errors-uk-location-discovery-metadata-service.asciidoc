@@ -46,7 +46,7 @@ half the records present in data.gov.uk at that time initially failed.
 This guide assumes that the reader is familiar with the creation and
 management of metadata and has read the UK Location “Getting Started'
 series of
-guides link:1047-metadata-guidelines-for-geospatial-data-resources-part-3.html[[27]].
+guides link:1047-metadata-guidelines-for-geospatial-data-resources-part-3.html#ref26[[26]].
 
 Readers requiring an introduction to discovery metadata for geospatial
 resources are referred to the UK GEMINI guide “Metadata Guidelines
